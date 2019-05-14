@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test Suite for Nexus Portal]">
+  <listeners>
+    <listener class-name="com.NexusPortalAutomation.Utilities.Java.CustTestNGListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID">
+        <methods>
+          <include name="TestSearchID"/>
+          <include name="TearDown"/>
+          <include name="readProp"/>
+        </methods>
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Test Suite for Nexus Portal] -->

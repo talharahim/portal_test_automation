@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite for Nexus Portal"
+	configfailurepolicy="skip" thread-count="10" verbose="10">
+	<listeners>
+		<listener
+			class-name="com.NexusPortalAutomation.Utilities.Java.CustTestNGListener" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<test thread-count="5" name="NexusTest">
+		<classes>
+			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID" />
+			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName" />
+			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName" />
+			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction" />
+			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks" />
+			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad" />
+			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection" />
+		</classes>
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
