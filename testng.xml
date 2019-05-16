@@ -25,6 +25,8 @@
 				name="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad" />
 			<class
 				name="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection" />
+				<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID" />
 		</classes>
 
 	</test> <!-- Test -->

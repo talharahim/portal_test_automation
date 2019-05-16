@@ -3,6 +3,7 @@ package com.NexusPortalAutomation.Utilities.Java;
 import java.io.File;
 import java.io.IOException;
 import java.util.Calendar;
+import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -11,6 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 
 public class CustTestNGListener implements ITestListener {
 
@@ -40,13 +42,25 @@ public class CustTestNGListener implements ITestListener {
 	}
 
 	public void takeScreenShot(String methodName, WebDriver driver) {
-		String fileName = String.format(methodName+"Screenshot-%s.jpg", Calendar.getInstance().getTimeInMillis());
+
+		String fileName = String.format(methodName + "Screenshot-%s.jpg", Calendar.getInstance().getTimeInMillis());
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		// The below method will save the screen shot in d drive with test method name
 		try {
 			String filePath = Read.ReadFile("ScreenShots");
+			String screenShotName = filePath + fileName;
 			FileUtils.copyFile(scrFile, new File(filePath + fileName));
-			System.out.println("***Placed screen shot in " + filePath + " ***");
+			/*
+			 * Reporter.log("<p>***Placed screen shot at " + filePath + " ***</p>");
+			 * Reporter.log("<p>  <img src='" + filePath + fileName +
+			 * "' height='500' width='1500' />"); Reporter.log("<a alt=" + methodName +
+			 * "></a></p>");
+			 */
+			Reporter.log(
+					"<a href=\"" + screenShotName + "\"><p align=\"left\">Error screenshot at " + new Date() + "</p>");
+			Reporter.log("<p><img width=\"1024\" src=\"" + screenShotName + "\" alt=\"screenshot at " + new Date()
+					+ "\"/></p></a><br />");
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

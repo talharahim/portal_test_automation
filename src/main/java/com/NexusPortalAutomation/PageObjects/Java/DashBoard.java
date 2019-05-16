@@ -2,6 +2,7 @@ package com.NexusPortalAutomation.PageObjects.Java;
 
 import java.util.HashMap;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -20,9 +21,8 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
  * @since 2019-04-25
  */
 
-public class DashBoard {
+public class DashBoard extends CommonMethods {
 
-	CommonMethods Com = new CommonMethods();
 	WebDriver driver;
 	@FindBy(css = ".user > a:nth-child(1)")
 	@CacheLookup
@@ -35,6 +35,10 @@ public class DashBoard {
 	@FindBy(css = ".customer-info-id")
 	@CacheLookup
 	WebElement CustomerId;
+
+	@FindBy(id = "'LOC_Location_Id'")
+	@CacheLookup
+	WebElement CustomerLocId;
 
 	@FindBy(css = ".text-heading > span:nth-child(1)")
 	@CacheLookup
@@ -121,6 +125,20 @@ public class DashBoard {
 
 	}
 
+	public String GetLoggedCustomerLocationId() throws InterruptedException {
+		String result = "";
+		try {
+			if (CustomerLocId.isDisplayed())
+				result = CustomerLocId.getText();
+			Reporter.log("Customer Location Id found " + result);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+
+	}
+
 	public String GetLoggedCustomerName() throws InterruptedException {
 		String result = "";
 		try {
@@ -147,10 +165,10 @@ public class DashBoard {
 	}
 
 	public void LogOut() throws InterruptedException {
-		Com.waitForObject(this.driver, LoggedUserLink);
+		waitForObject(this.driver, LoggedUserLink);
 		if (LoggedUserLink.isDisplayed()) {
 			LoggedUserLink.click();
-			Com.waitForObject(this.driver, LogOutLink);
+			waitForObject(this.driver, LogOutLink);
 			LogOutLink.click();
 		} else {
 			Assert.assertFalse(true, "Log out link not found");
@@ -159,16 +177,29 @@ public class DashBoard {
 	}
 
 	public void ClickOk() throws InterruptedException {
-		Com.waitForObject(this.driver, AlertOk);
+		waitForObject(this.driver, AlertOk);
 		if (AlertOk.isDisplayed()) {
 			AlertOk.click();
 			Reporter.log("Click Ok");
 		}
 	}
+	
+	public void ClickDynamicOk()  {
+		try {
+		if (AlertOk.isDisplayed()) {
+			AlertOk.click();
+			Reporter.log("Click Ok");
+		}
+		}
+		catch (NoSuchElementException e)
+		{
+			Reporter.log("Alert not configured");
+		}
+	}
+
 
 	public void ClickAlertDescription() throws InterruptedException {
-		Com.waitForObject(this.driver, AlertDesc);
-
+		waitForObject(this.driver, AlertDesc);
 		AlertDesc.click();
 		Reporter.log("Click Description");
 	}

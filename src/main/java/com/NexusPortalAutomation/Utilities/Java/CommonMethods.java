@@ -15,6 +15,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.Reporter;
 
 /**
  * 
@@ -33,7 +34,7 @@ public class CommonMethods {
 		if (str1 != "" && str2 != "") {
 			Assert.assertEquals(str1, str2);
 			result = true;
-			System.out.println("Strings Matched: " + str1 + " =" + str2);
+			Reporter.log("Strings Matched: " + str1 + " =" + str2);
 		} else {
 			Assert.assertFalse(true);
 		}
@@ -41,16 +42,9 @@ public class CommonMethods {
 
 	}
 
-	// This method will wait until object is visible
-	public void WaitForObject(WebDriver driver, String xpath) {
-		long begin = System.currentTimeMillis();
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
-		if (element.isDisplayed()) {
-			long end = System.currentTimeMillis();
-			long dt = end - begin;
-			System.out.println(element.getText() + "is displayed in " + dt / 1000 + "seconds");
-		}
+	public void log(String message)
+	{
+		Reporter.log("<p>"+message+"</p>");
 	}
 
 	public void WaitForObjectbyId(WebDriver driver, String id) {
@@ -60,7 +54,18 @@ public class CommonMethods {
 		if (element.isDisplayed()) {
 			long end = System.currentTimeMillis();
 			long dt = end - begin;
-			System.out.println(element.getText() + "is displayed in " + dt / 1000 + "seconds");
+			log(element.getText() + "is displayed in " + dt + "ms");
+		}
+	}
+	
+	public void WaitForObjectbyXpath(WebDriver driver, String path) {
+		long begin = System.currentTimeMillis();
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(path)));
+		if (element.isDisplayed()) {
+			long end = System.currentTimeMillis();
+			long dt = end - begin;
+			log(element.getText() + "is displayed in " + dt + "ms");
 		}
 	}
 
@@ -71,19 +76,26 @@ public class CommonMethods {
 		try {
 			String filePath = Read.ReadFile("PassScreenShot");
 			FileUtils.copyFile(scrFile, new File(filePath + fileName));
-			System.out.println("***Placed screen shot in " + filePath + " ***");
+			log("***Placed screen shot in " + filePath + " ***");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 
 	public void waitForObject(WebDriver driver, WebElement element) {
+		long begin = System.currentTimeMillis();
 		WebDriverWait wait = new WebDriverWait(driver, 90);
 		try {
 			wait.until(ExpectedConditions.visibilityOf(element));
+			
 		} catch (TimeoutException e) {
+			
 			throw new TimeoutException("Object Not Found", e);
+			
 		}
+		long end = System.currentTimeMillis();
+		long dt = end - begin;
+		log(element.getText() + "is displayed in " + dt + "ms");
 	}
 
 	public boolean CheckStringmapsAreEqual(Map<String, String> mapA, Map<String, String> mapB) {

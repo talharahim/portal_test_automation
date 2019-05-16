@@ -21,12 +21,12 @@ public class TC0007_TestSummarySection extends BaseClass {
 		DashBoard dashBoard = new DashBoard(driver);
 		WaitAngular();
 		login();
-		ComMethd.WaitForObject(driver, "//input[@id='SRCH_Input']");
+		ComMethd.WaitForObjectbyXpath(driver, "//input[@id='SRCH_Input']");
 		ComMethd.WaitForObjectbyId(driver, "toolbar-saved");
 		WaitAngular();
 		dbSrch.EnterSearchText("Automation");
 		dbSrch.ClickCustomer();
-		ComMethd.WaitForObject(driver, "//div[@class='address-details']");
+		ComMethd.WaitForObjectbyXpath(driver, "//div[@class='address-details']");
 		// Verify Login Name
 		boolean Match = ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
 		if (!Match) {

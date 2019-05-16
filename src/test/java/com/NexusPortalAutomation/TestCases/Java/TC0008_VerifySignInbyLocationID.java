@@ -9,33 +9,32 @@ import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 
-public class TC0001_VerifySignInbyID extends BaseClass {
+public class TC0008_VerifySignInbyLocationID extends BaseClass {
 
-	public String CustomerID = "0000011111";
+	public String LocationID = "LOC@0001";
 	CommonMethods ComMethd = new CommonMethods();
-	
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
-	public void TestSearchID() throws IOException, InterruptedException {
+	public void TestSearchbyLocationID() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		WaitAngular();
 		login();
 		WaitAngular();
-		dbSrch.EnterSearchText(CustomerID);
+		dbSrch.EnterSearchText(LocationID);
 		WaitAngular();
 		dbSrch.ClickCustomer();
 		WaitAngular();
 		// Verify Login Name Updated for Test
-		boolean Match = ComMethd.VerifyString(CustomerID, dashBoard.GetLoggedCustomerId());
+		boolean Match = ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
 		if (!Match) {
-			log("Customer ID Not Matched");
+			log("Location ID Not Matched");
 		} else {
-			log("Customer ID Matched =" + CustomerID);
+			log("LocationID ID Matched =" + LocationID);
 		}
 		dashBoard.LogOut();
-		
+
 	}
 
 }

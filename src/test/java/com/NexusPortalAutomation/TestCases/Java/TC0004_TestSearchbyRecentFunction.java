@@ -20,13 +20,14 @@ public class TC0004_TestSearchbyRecentFunction extends BaseClass {
 		DashBoard dashBoard = new DashBoard(driver);
 		WaitAngular();
 		login();
-		ComMethd.WaitForObject(driver, "//input[@id='SRCH_Input']");
+		ComMethd.WaitForObjectbyXpath(driver, "//input[@id='SRCH_Input']");
 		dbSrch.ClickRecent();
 		CustomerAddress = dbSrch.GetRecentCustomerName();
 		dbSrch.ClickCustomer();
-		dashBoard.ClickOk();
+		
+		dashBoard.ClickDynamicOk();
 
-		ComMethd.WaitForObject(driver, "//div[@class='address-details']");
+		ComMethd.WaitForObjectbyXpath(driver, "//div[@class='address-details']");
 		boolean Match = ComMethd.VerifyString(CustomerAddress, dashBoard.GetLoggedCustomerAddress());
 		if (!Match) {
 			log("User Name Not Verified for Recent Functionality");

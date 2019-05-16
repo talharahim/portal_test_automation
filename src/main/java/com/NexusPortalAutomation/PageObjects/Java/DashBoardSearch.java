@@ -7,6 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
 
+import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
+
 /**
  * 
  * This Class will be for DashBoard Search Page (First Page After Login) All
@@ -16,7 +18,7 @@ import org.testng.Reporter;
  * @since 2019-04-25
  */
 
-public class DashBoardSearch {
+public class DashBoardSearch extends CommonMethods {
 
 	WebDriver driver;
 	@FindBy(id = "SRCH_Input")
@@ -38,12 +40,11 @@ public class DashBoardSearch {
 	@FindBy(css = "#SRCH_Button_Favorites > svg:nth-child(1)")
 	@CacheLookup
 	WebElement HistCustomer;
-	
-	
+
 	@FindBy(id = "SRCH_Option_1_Address_Line")
 	@CacheLookup
 	WebElement RecentCustomerName;
-	
+
 	// @ByAngularBinding.FindBy(rootSelector = "i18n", binding = "cheese")
 	// public WebElement findBy_binding;
 
@@ -53,35 +54,35 @@ public class DashBoardSearch {
 	}
 
 	public void EnterSearchText(String txt) {
-		Reporter.log("Enter Text for Search ="+txt);
+		log("Enter Text for Search =" + txt);
+		waitForObject(this.driver, searchBar);
 		searchBar.sendKeys(txt);
 	}
 
 	public void ClickRecent() {
-		Reporter.log("Click Recent");
+		log("Click Recent");
 		recentBar.click();
 	}
 
 	public void ClickSaved() throws InterruptedException {
 
-		Reporter.log("Tool Bar Clicked");
+		log("Tool Bar Clicked");
 		toolBarSaved.click();
 	}
 
 	public void ClickCustomer() {
-		Reporter.log("Click Customer");
+		log("Click Customer");
 		SrchCustomer.click();
 	}
-	
+
 	public String GetRecentCustomerName() {
-		Reporter.log("Recent Customer ="+RecentCustomerName.getText());
+		log("Recent Customer =" + RecentCustomerName.getText());
 		return RecentCustomerName.getText();
 	}
 
 	public void ClickHistoryCustomer() {
-		Reporter.log("Click History Customer");
+		log("Click History Customer");
 		HistCustomer.click();
 	}
-	
 
 }

@@ -7,6 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
+
 /**
  * 
  * All WebElements are identified by @FindBy annotation
@@ -15,7 +17,7 @@ import org.testng.Assert;
  * @since 2019-04-25
  */
 
-public class LoginPage {
+public class LoginPage extends CommonMethods {
 
 	WebDriver driver;
 	@FindBy(xpath = "//input[@id='mat-input-0']")
@@ -40,6 +42,7 @@ public class LoginPage {
 
 	public void VerifyTitle(String title) {
 		Assert.assertEquals(titleText.getText(), title, "Verifying Title");
+		log("Sign in Page Title Verified");
 	}
 
 	public void Login(String Username, String Password) throws InterruptedException {
