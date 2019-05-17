@@ -2,19 +2,10 @@ package com.NexusPortalAutomation.TestCases.Java;
 
 import static org.testng.Assert.assertEquals;
 
-import java.io.File;
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.FileUtils;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -41,20 +32,17 @@ public class BaseClass extends ReadProjectProperties {
 
 	public static WebDriver driver;
 	public static String browserName;
-	private static Logger LOG = LogManager.getLogger(BaseClass.class);
 	public static NgWebDriver ngWebDriver;
 	public static ReadProjectProperties Read = new ReadProjectProperties();
 	public static int delay = 2000;
-	final String ESCAPE_PROPERTY = "org.uncommons.reportng.escape-output";
-   
 
-	public void log(String message)
-	{
-		Reporter.log("<p>"+message+"</p>");
+	public void log(String message) {
+		Reporter.log(message);
 	}
+
 	public static void WaitAngular() {
 		ngWebDriver.waitForAngularRequestsToFinish();
-		//Delay();
+		// Delay();
 	}
 
 	public static void Delay() {
@@ -74,12 +62,10 @@ public class BaseClass extends ReadProjectProperties {
 
 			if (browserName.contains("Firefox")) {
 				// Launching Firefox
-				LOG.info("Launching Firefox");
 				// Setting up Webdriver and path
 				String fDriver = Read.ReadFile("FirefoxDriverPath");
 				String browserPath = Read.ReadFile("FirefoxInstallPath");
 				System.setProperty("webdriver.gecko.driver", fDriver);
-				System.setProperty(ESCAPE_PROPERTY, "false");
 				// Creating Instance for Firefox
 				FirefoxOptions firefoxOptions = new FirefoxOptions();
 				firefoxOptions.setBinary(browserPath);
@@ -92,7 +78,7 @@ public class BaseClass extends ReadProjectProperties {
 			else if (browserName.contains("Chrome")) {
 
 				// Launching Chrome
-				LOG.info("Launching Chrome");
+				log("Launching Chrome");
 				// Setting up Webdriver and path
 				String cDriver = Read.ReadFile("ChromeDriverPath");
 				String browserPath = Read.ReadFile("ChromeInstallPath");
@@ -105,12 +91,12 @@ public class BaseClass extends ReadProjectProperties {
 			}
 
 			else {
-				LOG.error("Browser Name not found");
+				log("Browser Name not found");
 			}
 			ngWebDriver = new NgWebDriver((JavascriptExecutor) driver);
 			driver.manage().window().maximize();
 			log("Browser Maximised");
-			driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			context.setAttribute("webDriver", driver);
 
 		} catch (IOException e) {
@@ -129,15 +115,14 @@ public class BaseClass extends ReadProjectProperties {
 		String actualTitle = driver.getTitle();
 		String expectedTitle = "Portal";
 		assertEquals(expectedTitle, actualTitle);
-		log("User signed "+Read.ReadFile("UserName"));
+		log("User signed " + Read.ReadFile("UserName"));
 
 	}
-	
-		
+
 	@AfterClass
 	void TearDown() {
 
-		LOG.info("Closing Browser");
+		log("Closing Browser");
 		log("All Tests Completed...");
 		driver.close();
 

@@ -50,6 +50,8 @@ public class TC0007_TestSummarySection extends BaseClass {
 		try {
 			for (String k : BillingMap2.keySet()) {
 				if (!BillingMap1.get(k).equals(BillingMap2.get(k))) {
+					System.err.println("values not matched" + BillingMap1.get(k) + " != " + BillingMap2.get(k));
+					log("values not matched" + BillingMap1.get(k) + " != " + BillingMap2.get(k));
 					Assert.assertTrue(false);
 				} else {
 					log(BillingMap1.get(k) + " equals" + BillingMap2.get(k));

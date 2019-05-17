@@ -12,11 +12,110 @@
 <body>
 <h1>NexusTest</h1>
 <p>
-  Test duration: 642.049s
+  Test duration: 325.867s
 </p>
 
 
 
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TestSearchAlertOnLoad
+      </td>
+  <td class="duration">
+    26.535s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Sign in Page Title Verified<br />
+                                User signed Admin<br />
+                                is displayed in 156ms<br />
+                                is displayed in 156ms<br />
+                                Enter Text for Search =Alert<br />
+                                is displayed in 78ms<br />
+                                Click Customer<br />
+                                Cloudis displayed in 184ms<br />
+                                Customer Name found Mr. Alert Test<br />
+                                Strings Matched: Mr. Alert Test =Mr. Alert Test<br />
+                                User Name Verified for Alert Functionality<br />
+                                OKis displayed in 876ms<br />
+                                Click Ok<br />
+                                Alert on Load Clicked<br />
+                                Automation Messageis displayed in 47ms<br />
+                                Click Description<br />
+                                OKis displayed in 65ms<br />
+                                &lt;a href=&quot;F:\FailedTestsScreenshots\TestSearchAlertOnLoadScreenshot-1558111267207.jpg&quot;&gt;&lt;align=&quot;left&quot;&gt;Error screenshot at Fri May 17 11:41:08 CDT 2019<br />
+                                &lt;img width=&quot;1024&quot; src=&quot;F:\FailedTestsScreenshots\TestSearchAlertOnLoadScreenshot-1558111267207.jpg&quot; alt=&quot;screenshot at Fri May 17 11:41:08 CDT 2019&quot;/&gt;&lt;/a&gt;&lt;br /&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button mat-button=&quot;&quot; class=&quot;button-class secondary-action&quot; ng-reflect-disabled=&quot;false&quot; id=&quot;ALERTO_Action_Button&quot;&gt;...&lt;/button&gt; is not clickable at point (695, 531). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;<br/>
+&nbsp; (Session info: chrome=74.0.3729.157)<br/>
+&nbsp; (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 0 milliseconds<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;RND-BASE-A&apos;, ip: &apos;192.168.1.102&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60731}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.157, webStorageEnabled: true}<br/>
+Session ID: 61a3a342227f7795edfe5211b7f14ea3</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)<br />
+              org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)<br />
+              org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)<br />
+              org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)<br />
+              sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)<br />
+              com.sun.proxy.$Proxy10.click(Unknown Source)<br />
+              com.NexusPortalAutomation.PageObjects.Java.DashBoard.ClickOk(DashBoard.java:211)<br />
+              com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad.TestSearchAlertOnLoad(TC0006_TestAlertOnLoad.java:38)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+              org.testng.TestNG.run(TestNG.java:1017)<br />
+              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                </div>
+      </td>
+</tr>
+      </table>
 
 
   <table class="resultsTable">
@@ -30,22 +129,22 @@
                   TestSearchID
       </td>
   <td class="duration">
-    36.266s
+    34.313s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        <p>Sign in Page Title Verified</p>
-                                <p>User signed Admin</p>
-                                <p>Enter Text for Search =0000011111</p>
-                                <p>is displayed in 110ms</p>
-                                <p>Click Customer</p>
-                                CustomerId found 0000011111
-                                Strings Matched: 0000011111 =0000011111
-                                <p>Customer ID Matched =0000011111</p>
-                                <p>Adminis displayed in 47ms</p>
-                                <p>Sign Outis displayed in 94ms</p>
+                        Sign in Page Title Verified<br />
+                                User signed Admin<br />
+                                Enter Text for Search =0000011111<br />
+                                is displayed in 141ms<br />
+                                Click Customer<br />
+                                CustomerId found 0000011111<br />
+                                Strings Matched: 0000011111 =0000011111<br />
+                                Customer ID Matched =0000011111<br />
+                                Adminis displayed in 78ms<br />
+                                Sign Outis displayed in 62ms<br />
                   </div>
     
 
@@ -60,22 +159,22 @@
                   TestSearchAutobyFirstName
       </td>
   <td class="duration">
-    92.555s
+    38.289s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        <p>Sign in Page Title Verified</p>
-                                <p>User signed Admin</p>
-                                <p>Enter Text for Search =Automation</p>
-                                <p>is displayed in 531ms</p>
-                                <p>Click Customer</p>
-                                Customer Name found Mr. Automation Mate
-                                Strings Matched: Mr. Automation Mate =Mr. Automation Mate
-                                <p>User Name Matched =Mr. Automation Mate</p>
-                                <p>Adminis displayed in 109ms</p>
-                                <p>Sign Outis displayed in 101ms</p>
+                        Sign in Page Title Verified<br />
+                                User signed Admin<br />
+                                Enter Text for Search =Automation<br />
+                                is displayed in 58ms<br />
+                                Click Customer<br />
+                                Customer Name found Mr. Automation Mate<br />
+                                Strings Matched: Mr. Automation Mate =Mr. Automation Mate<br />
+                                User Name Matched =Mr. Automation Mate<br />
+                                Adminis displayed in 63ms<br />
+                                Sign Outis displayed in 113ms<br />
                   </div>
     
 
@@ -90,22 +189,22 @@
                   TestSearchAutobyLastName
       </td>
   <td class="duration">
-    30.359s
+    38.456s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        <p>Sign in Page Title Verified</p>
-                                <p>User signed Admin</p>
-                                <p>Enter Text for Search =Mate</p>
-                                <p>is displayed in 111ms</p>
-                                <p>Click Customer</p>
-                                Customer Name found Mr. Automation Mate
-                                Strings Matched: Mr. Automation Mate =Mr. Automation Mate
-                                <p>User Name Matched =Mr. Automation Mate</p>
-                                <p>Adminis displayed in 70ms</p>
-                                <p>Sign Outis displayed in 69ms</p>
+                        Sign in Page Title Verified<br />
+                                User signed Admin<br />
+                                Enter Text for Search =Mate<br />
+                                is displayed in 48ms<br />
+                                Click Customer<br />
+                                Customer Name found Mr. Automation Mate<br />
+                                Strings Matched: Mr. Automation Mate =Mr. Automation Mate<br />
+                                User Name Matched =Mr. Automation Mate<br />
+                                Adminis displayed in 63ms<br />
+                                Sign Outis displayed in 39ms<br />
                   </div>
     
 
@@ -120,24 +219,26 @@
                   TestSearchAutobyRecent
       </td>
   <td class="duration">
-    37.719s
+    52.180s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        <p>Sign in Page Title Verified</p>
-                                <p>User signed Admin</p>
-                                <p>is displayed in 109ms</p>
-                                <p>Click Recent</p>
-                                <p>Recent Customer =007 Test</p>
-                                <p>Click Customer</p>
-                                Click Ok
-                                <p>Cloudis displayed in 93ms</p>
-                                Strings Matched: 007 Test =007 Test
-                                <p>User Name Verified for Recent Functionality =007 Test</p>
-                                <p>Adminis displayed in 63ms</p>
-                                <p>Sign Outis displayed in 63ms</p>
+                        Sign in Page Title Verified<br />
+                                User signed Admin<br />
+                                is displayed in 172ms<br />
+                                Click Recent<br />
+                                Recent Customer =1200 Locust<br />
+                                Click Customer<br />
+                                Alert not configured<br />
+                                New Smyrna Beach<br/>
+FL<br/>
+32169-3021is displayed in 157ms<br />
+                                Strings Matched: 1200 Locust =1200 Locust<br />
+                                User Name Verified for Recent Functionality =1200 Locust<br />
+                                Adminis displayed in 60ms<br />
+                                Sign Outis displayed in 35ms<br />
                   </div>
     
 
@@ -152,67 +253,26 @@
                   TestSearchAutobyBookMark
       </td>
   <td class="duration">
-    121.484s
+    29.245s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        <p>Sign in Page Title Verified</p>
-                                <p>User signed Admin</p>
-                                <p>is displayed in 109ms</p>
-                                <p>is displayed in 141ms</p>
-                                <p>Click History Customer</p>
-                                <p>Click Customer</p>
-                                <p>NEW SMYRNA BEACH
-FL
-321693021is displayed in 451ms</p>
-                                Customer Name found Noel Ford
-                                Strings Matched: Noel Ford =Noel Ford
-                                <p>User Name Verified for Bookmark Functionality</p>
-                                <p>Adminis displayed in 48ms</p>
-                                <p>Sign Outis displayed in 124ms</p>
-                  </div>
-    
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  TestSearchAlertOnLoad
-      </td>
-  <td class="duration">
-    102.359s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        <p>Sign in Page Title Verified</p>
-                                <p>User signed Admin</p>
-                                <p>is displayed in 989ms</p>
-                                <p>is displayed in 114ms</p>
-                                <p>Enter Text for Search =Alert</p>
-                                <p>is displayed in 47ms</p>
-                                <p>Click Customer</p>
-                                <p>Cloudis displayed in 1312ms</p>
-                                Customer Name found Mr. Alert Test
-                                Strings Matched: Mr. Alert Test =Mr. Alert Test
-                                <p>User Name Verified for Alert Functionality</p>
-                                <p>OKis displayed in 109ms</p>
-                                Click Ok
-                                <p>Alert on Load Clicked</p>
-                                <p>Automation Messageis displayed in 41ms</p>
-                                Click Description
-                                <p>OKis displayed in 890ms</p>
-                                Click Ok
-                                <p>Alert on description Clicked</p>
-                                <p>Adminis displayed in 1125ms</p>
-                                <p>Sign Outis displayed in 50ms</p>
+                        Sign in Page Title Verified<br />
+                                User signed Admin<br />
+                                is displayed in 156ms<br />
+                                is displayed in 141ms<br />
+                                Click History Customer<br />
+                                Click Customer<br />
+                                New Smyrna Beach<br/>
+FL<br/>
+32169-3021is displayed in 609ms<br />
+                                Customer Name found Noel Ford<br />
+                                Strings Matched: Noel Ford =Noel Ford<br />
+                                User Name Verified for Bookmark Functionality<br />
+                                Adminis displayed in 50ms<br />
+                                Sign Outis displayed in 731ms<br />
                   </div>
     
 
@@ -227,37 +287,45 @@ FL
                   TestSummarySectionOnChange
       </td>
   <td class="duration">
-    69.984s
+    32.176s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        <p>Sign in Page Title Verified</p>
-                                <p>User signed Admin</p>
-                                <p>is displayed in 126ms</p>
-                                <p>is displayed in 219ms</p>
-                                <p>Enter Text for Search =Automation</p>
-                                <p>is displayed in 48ms</p>
-                                <p>Click Customer</p>
-                                <p>CLOUDY
-D
-00720019is displayed in 1119ms</p>
-                                Customer Name found Mr. Automation Mate
-                                Strings Matched: Mr. Automation Mate =Mr. Automation Mate
-                                <p>User Name verified =Mr. Automation Mate</p>
-                                Transaction Link Clicked
-                                Summary Link Clicked
-                                <p>$0.00 equals$0.00</p>
-                                <p>-$14.74 equals-$14.74</p>
-                                <p>$50.00 equals$50.00</p>
-                                <p>$0.00 equals$0.00</p>
-                                <p>$0.00 equals$0.00</p>
-                                <p>-$14.74 equals-$14.74</p>
-                                <p>$50.00 equals$50.00</p>
-                                <p>$0.00 equals$0.00</p>
-                                <p>Adminis displayed in 155ms</p>
-                                <p>Sign Outis displayed in 94ms</p>
+                        Sign in Page Title Verified<br />
+                                User signed Admin<br />
+                                is displayed in 172ms<br />
+                                is displayed in 78ms<br />
+                                Enter Text for Search =Automation<br />
+                                is displayed in 46ms<br />
+                                Click Customer<br />
+                                Cloudy<br/>
+D<br/>
+00720-019is displayed in 414ms<br />
+                                Customer Name found Mr. Automation Mate<br />
+                                Strings Matched: Mr. Automation Mate =Mr. Automation Mate<br />
+                                User Name verified =Mr. Automation Mate<br />
+                                $0.00is displayed in 74ms<br />
+                                $50.00is displayed in 125ms<br />
+                                $0.00is displayed in 67ms<br />
+                                $0.00is displayed in 70ms<br />
+                                Transaction Link Clicked<br />
+                                Summary Link Clicked<br />
+                                -$14.74is displayed in 152ms<br />
+                                $50.00is displayed in 117ms<br />
+                                $0.00is displayed in 125ms<br />
+                                $0.00is displayed in 93ms<br />
+                                $0.00 equals$0.00<br />
+                                -$14.74 equals-$14.74<br />
+                                $50.00 equals$50.00<br />
+                                $0.00 equals$0.00<br />
+                                $0.00 equals$0.00<br />
+                                -$14.74 equals-$14.74<br />
+                                $50.00 equals$50.00<br />
+                                $0.00 equals$0.00<br />
+                                Adminis displayed in 78ms<br />
+                                Sign Outis displayed in 35ms<br />
                   </div>
     
 
@@ -272,22 +340,27 @@ D
                   TestSearchbyLocationID
       </td>
   <td class="duration">
-    57.094s
+    28.304s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        <p>Sign in Page Title Verified</p>
-                                <p>User signed Admin</p>
-                                <p>Enter Text for Search =LOC@0001</p>
-                                <p>is displayed in 47ms</p>
-                                <p>Click Customer</p>
-                                Customer Location Id found LOC@0001
-                                Strings Matched: LOC@0001 =LOC@0001
-                                <p>LocationID ID Matched =LOC@0001</p>
-                                <p>Adminis displayed in 46ms</p>
-                                <p>Sign Outis displayed in 62ms</p>
+                        Sign in Page Title Verified<br />
+                                User signed Admin<br />
+                                Enter Text for Search =LOC@0001<br />
+                                is displayed in 94ms<br />
+                                Click Customer<br />
+                                Customer Location Id found LOC@0001<br />
+                                Strings Matched: LOC@0001 =LOC@0001<br />
+                                LocationID ID Matched =LOC@0001<br />
+                                Verifying Address Details<br />
+                                Strings Matched: 007 Aut Automation Street Rt 20001 Apt =007 Aut Automation Street Rt 20001 Apt<br />
+                                Strings Matched: Cloudy =Cloudy<br />
+                                Strings Matched: D =D<br />
+                                Strings Matched: 00720-019 =00720-019<br />
+                                Adminis displayed in 110ms<br />
+                                Sign Outis displayed in 39ms<br />
                   </div>
     
 

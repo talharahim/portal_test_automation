@@ -29,22 +29,27 @@ public class CommonMethods {
 //This method will compare string values
 	public static ReadProjectProperties Read = new ReadProjectProperties();
 
+	public CommonMethods()
+	{
+		//this is the default const
+	}
 	public boolean VerifyString(String str1, String str2) {
 		boolean result = false;
 		if (str1 != "" && str2 != "") {
-			Assert.assertEquals(str1, str2);
-			result = true;
-			Reporter.log("Strings Matched: " + str1 + " =" + str2);
-		} else {
-			Assert.assertFalse(true);
+			if (str1.equals(str2)) {
+				result = true;
+				Reporter.log("Strings Matched: " + str1 + " =" + str2);
+			} else {
+				Reporter.log("Strings Not Matched: " + str1 + " =" + str2);
+				Assert.assertEquals(str1, str2);
+			}
 		}
 		return result;
 
 	}
 
-	public void log(String message)
-	{
-		Reporter.log("<p>"+message+"</p>");
+	public void log(String message) {
+		Reporter.log(message);
 	}
 
 	public void WaitForObjectbyId(WebDriver driver, String id) {
@@ -57,7 +62,7 @@ public class CommonMethods {
 			log(element.getText() + "is displayed in " + dt + "ms");
 		}
 	}
-	
+
 	public void WaitForObjectbyXpath(WebDriver driver, String path) {
 		long begin = System.currentTimeMillis();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -87,11 +92,11 @@ public class CommonMethods {
 		WebDriverWait wait = new WebDriverWait(driver, 90);
 		try {
 			wait.until(ExpectedConditions.visibilityOf(element));
-			
+
 		} catch (TimeoutException e) {
-			
+
 			throw new TimeoutException("Object Not Found", e);
-			
+
 		}
 		long end = System.currentTimeMillis();
 		long dt = end - begin;

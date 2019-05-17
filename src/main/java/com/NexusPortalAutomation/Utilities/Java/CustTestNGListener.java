@@ -57,9 +57,9 @@ public class CustTestNGListener implements ITestListener {
 			 * "></a></p>");
 			 */
 			Reporter.log(
-					"<a href=\"" + screenShotName + "\"><p align=\"left\">Error screenshot at " + new Date() + "</p>");
-			Reporter.log("<p><img width=\"1024\" src=\"" + screenShotName + "\" alt=\"screenshot at " + new Date()
-					+ "\"/></p></a><br />");
+					"<a href=\"" + screenShotName + "\"><align=\"left\">Error screenshot at " + new Date());
+			Reporter.log("<img width=\"1024\" src=\"" + screenShotName + "\" alt=\"screenshot at " + new Date()
+					+ "\"/></a><br />");
 
 		} catch (IOException e) {
 			e.printStackTrace();

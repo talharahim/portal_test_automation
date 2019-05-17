@@ -25,11 +25,9 @@ public class DashBoard extends CommonMethods {
 
 	WebDriver driver;
 	@FindBy(css = ".user > a:nth-child(1)")
-	@CacheLookup
 	WebElement LoggedUserLink;
 
 	@FindBy(css = ".logout-label")
-	@CacheLookup
 	WebElement LogOutLink;
 
 	@FindBy(css = ".customer-info-id")
@@ -75,9 +73,35 @@ public class DashBoard extends CommonMethods {
 	@CacheLookup
 	WebElement SummaryLink;
 
+	@FindBy(id = "'LOC_Address_Line'")
+	@CacheLookup
+	WebElement AddressLine;
+
+	@FindBy(id = "'LOC_Address_City'")
+	@CacheLookup
+	WebElement AddressCity;
+
+	@FindBy(id = "'LOC_Address_State'")
+	@CacheLookup
+	WebElement AddressState;
+
+	@FindBy(id = "'LOC_Address_ZipCode'")
+	@CacheLookup
+	WebElement AddressZipCode;
+
 	public DashBoard(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+	}
+
+	public void verifyAddressDetails(String addline, String addCity, String addState, String addZip) {
+		log("Verifying Address Details");
+
+		VerifyString(addline, AddressLine.getText());
+		VerifyString(addCity, AddressCity.getText());
+		VerifyString(addState, AddressState.getText());
+		VerifyString(addZip, AddressZipCode.getText());
+
 	}
 
 	public void ClickSummaryLink() {
@@ -91,6 +115,10 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public HashMap<String, String> GetBillingInfo() {
+		WaitForObjectbyId(driver, "BILL_Current_Balance");
+		WaitForObjectbyId(driver, "BILL_Unposted_Balance");
+		WaitForObjectbyId(driver, "BILL_Account_Balance");
+		WaitForObjectbyId(driver, "BILL_Past_Due");
 		HashMap<String, String> BillingInfo = new HashMap<String, String>();
 		BillingInfo.put("BillDue", BILL_PastDue.getText());
 		BillingInfo.put("BillCurrent", BILL_CurrentBalance.getText());
@@ -165,6 +193,7 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void LogOut() throws InterruptedException {
+
 		waitForObject(this.driver, LoggedUserLink);
 		if (LoggedUserLink.isDisplayed()) {
 			LoggedUserLink.click();
@@ -177,26 +206,24 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void ClickOk() throws InterruptedException {
-		waitForObject(this.driver, AlertOk);
+		WaitForObjectbyId(this.driver, "ALERTO_Action_Button");
+		Thread.sleep(300);
 		if (AlertOk.isDisplayed()) {
 			AlertOk.click();
 			Reporter.log("Click Ok");
-		}
-	}
-	
-	public void ClickDynamicOk()  {
-		try {
-		if (AlertOk.isDisplayed()) {
-			AlertOk.click();
-			Reporter.log("Click Ok");
-		}
-		}
-		catch (NoSuchElementException e)
-		{
-			Reporter.log("Alert not configured");
 		}
 	}
 
+	public void ClickDynamicOk() {
+		try {
+			if (AlertOk.isDisplayed()) {
+				AlertOk.click();
+				Reporter.log("Click Ok");
+			}
+		} catch (NoSuchElementException e) {
+			Reporter.log("Alert not configured");
+		}
+	}
 
 	public void ClickAlertDescription() throws InterruptedException {
 		waitForObject(this.driver, AlertDesc);
