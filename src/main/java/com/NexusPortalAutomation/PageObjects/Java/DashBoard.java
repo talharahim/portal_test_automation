@@ -2,6 +2,7 @@ package com.NexusPortalAutomation.PageObjects.Java;
 
 import java.util.HashMap;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -94,12 +95,11 @@ public class DashBoard extends CommonMethods {
 	@CacheLookup
 	WebElement AccountDropdown;
 
-	@FindBy(css = "#mat-input-3")
+	@FindBy(xpath = "/html[1]/body[1]/wo-root[1]/wo-dashboard[1]/div[1]/mat-drawer-container[1]/mat-drawer-content[1]/div[1]/div[1]/div[1]/csm-customer-card[1]/csm-selector-inline[1]/csm-generic-expandable-selector[1]/div[1]/input[1]")
 	@CacheLookup
 	WebElement AccountSearchText;
 
-	@FindBy(xpath = "//input[@id='mat-input-3']")
-	@CacheLookup
+	@FindBy(xpath = "//div[@class='section']//div[2]//div[2]")
 	WebElement AccountSearchResult;
 
 	// SSN 'CUST_SSN'
@@ -153,18 +153,19 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void SearchAccountWidget(String AccountId) throws InterruptedException {
-		Thread.sleep(1000);
+		WaitAngular(driver);
 		log("Click on Account Drop down");
-		waitForObject(this.driver, AccountDropdown);
+		waitForObject(driver, AccountDropdown);
 		AccountDropdown.click();
 		log("Enter Account Name");
-		Thread.sleep(1000);
-		driver.findElement(ByAngular.binding("searchWrapper ng-star-inserted")).click();
-		// waitForObject(this.driver, AccountSearchText);
-		// AccountSearchText.click();
-		// AccountSearchText.sendKeys(AccountId);
-		// waitForObject(this.driver, AccountSearchResult);
-		// AccountSearchResult.click();
+		WaitAngular(driver);
+		//driver.findElement(By.xpath("/html[1]/body[1]/wo-root[1]/wo-dashboard[1]/div[1]/mat-drawer-container[1]/mat-drawer-content[1]/div[1]/div[1]/div[1]/csm-customer-card[1]/csm-selector-inline[1]/csm-generic-expandable-selector[1]/div[1]/input[1]"));
+		waitForObject(driver, AccountSearchText);
+		AccountSearchText.click();
+		AccountSearchText.sendKeys(AccountId);
+		WaitAngular(driver);
+		waitForObject(driver, AccountSearchResult);
+		AccountSearchResult.click();
 
 	}
 

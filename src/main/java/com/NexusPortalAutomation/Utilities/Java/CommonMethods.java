@@ -7,6 +7,7 @@ import java.util.Map;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.TimeoutException;
@@ -16,6 +17,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
+
+import com.paulhammant.ngwebdriver.NgWebDriver;
 
 /**
  * 
@@ -28,10 +31,19 @@ import org.testng.Reporter;
 public class CommonMethods {
 //This method will compare string values
 	public static ReadProjectProperties Read = new ReadProjectProperties();
+	public static NgWebDriver ngWebDriver;
+
 
 	public CommonMethods()
 	{
 		//this is the default const
+	}
+	
+	public static void WaitAngular(WebDriver driver) {
+		NgWebDriver ngWebDriver = new NgWebDriver((JavascriptExecutor) driver);
+		ngWebDriver.waitForAngularRequestsToFinish();
+		
+		// Delay();
 	}
 	public boolean VerifyString(String str1, String str2) {
 		boolean result = false;
@@ -89,7 +101,7 @@ public class CommonMethods {
 
 	public void waitForObject(WebDriver driver, WebElement element) {
 		long begin = System.currentTimeMillis();
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, 20);
 		try {
 			wait.until(ExpectedConditions.visibilityOf(element));
 

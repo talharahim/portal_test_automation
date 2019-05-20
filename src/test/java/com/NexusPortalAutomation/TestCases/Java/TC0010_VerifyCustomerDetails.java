@@ -41,7 +41,6 @@ public class TC0010_VerifyCustomerDetails extends BaseClass {
 		}
 		// Enter Account Details
 		dashBoard.VerifyCustomerDetails(ssn, lic, phone, ext, email, add, acsz);
-
 		dashBoard.LogOut();
 
 	}
