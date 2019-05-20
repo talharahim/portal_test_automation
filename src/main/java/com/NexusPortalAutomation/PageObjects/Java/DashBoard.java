@@ -12,6 +12,7 @@ import org.testng.Assert;
 import org.testng.Reporter;
 
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
+import com.paulhammant.ngwebdriver.ByAngular;
 
 /**
  * 
@@ -89,9 +90,82 @@ public class DashBoard extends CommonMethods {
 	@CacheLookup
 	WebElement AddressZipCode;
 
+	@FindBy(id = "_Label")
+	@CacheLookup
+	WebElement AccountDropdown;
+
+	@FindBy(css = "#mat-input-3")
+	@CacheLookup
+	WebElement AccountSearchText;
+
+	@FindBy(xpath = "//input[@id='mat-input-3']")
+	@CacheLookup
+	WebElement AccountSearchResult;
+
+	// SSN 'CUST_SSN'
+	@FindBy(id = "'CUST_SSN'")
+	@CacheLookup
+	WebElement CustomerSSN;
+
+	@FindBy(id = "'CUST_Drivers_License'")
+	@CacheLookup
+	WebElement DriverLic;
+
+	@FindBy(id = "CUST_Phone_Number_1")
+	@CacheLookup
+	WebElement Phone1;
+
+	@FindBy(id = "CUST_Phone_Number_Ext_1")
+	@CacheLookup
+	WebElement PhoneExt1;
+
+	// 'CUST_Email'
+
+	@FindBy(id = "'CUST_Email'")
+	@CacheLookup
+	WebElement Email;
+
+	@FindBy(id = "'CUST_Address_Line'")
+	@CacheLookup
+	WebElement AddressLine1;
+
+	@FindBy(id = "'CUST_Address_City_State_Zip'")
+	@CacheLookup
+	WebElement AddressCityStateZip;
+
 	public DashBoard(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+	}
+
+	public void VerifyCustomerDetails(String ssn, String Lic, String phone, String ext, String email, String add,
+			String acsz) {
+
+		log("Verifying Customer Details");
+		VerifyString(ssn, CustomerSSN.getText());
+		VerifyString(Lic, DriverLic.getText());
+		VerifyString(phone, Phone1.getText());
+		VerifyString(ext, PhoneExt1.getText());
+		VerifyString(email, Email.getText());
+		VerifyString(add, AddressLine1.getText());
+		VerifyString(acsz, AddressCityStateZip.getText());
+
+	}
+
+	public void SearchAccountWidget(String AccountId) throws InterruptedException {
+		Thread.sleep(1000);
+		log("Click on Account Drop down");
+		waitForObject(this.driver, AccountDropdown);
+		AccountDropdown.click();
+		log("Enter Account Name");
+		Thread.sleep(1000);
+		driver.findElement(ByAngular.binding("searchWrapper ng-star-inserted")).click();
+		// waitForObject(this.driver, AccountSearchText);
+		// AccountSearchText.click();
+		// AccountSearchText.sendKeys(AccountId);
+		// waitForObject(this.driver, AccountSearchResult);
+		// AccountSearchResult.click();
+
 	}
 
 	public void verifyAddressDetails(String addline, String addCity, String addState, String addZip) {

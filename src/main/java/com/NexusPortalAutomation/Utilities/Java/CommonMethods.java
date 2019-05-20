@@ -89,7 +89,7 @@ public class CommonMethods {
 
 	public void waitForObject(WebDriver driver, WebElement element) {
 		long begin = System.currentTimeMillis();
-		WebDriverWait wait = new WebDriverWait(driver, 90);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
 		try {
 			wait.until(ExpectedConditions.visibilityOf(element));
 
