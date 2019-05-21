@@ -2,7 +2,6 @@ package com.NexusPortalAutomation.TestCases.Java;
 
 import java.io.IOException;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
@@ -14,18 +13,14 @@ public class TC0002_TestSearchAutobyFirstName extends BaseClass {
 	public String UserName = "Mr. Automation Mate";
 	CommonMethods ComMethd = new CommonMethods();
 
-//This Test will test the search by Customer Name
+//This Test will test the search by Customer's First Name
 	@Test(priority = 2)
 	public void TestSearchAutobyFirstName() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
-		WaitAngular();
 		login();
-		WaitAngular();
 		dbSrch.EnterSearchText("Automation");
-		WaitAngular();
 		dbSrch.ClickCustomer();
-		WaitAngular();
 		// Verify Login Name
 		boolean Match = ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
 		if (!Match) {
@@ -34,7 +29,7 @@ public class TC0002_TestSearchAutobyFirstName extends BaseClass {
 			log("User Name Matched =" + UserName);
 		}
 		dashBoard.LogOut();
-		
+
 	}
 
 }

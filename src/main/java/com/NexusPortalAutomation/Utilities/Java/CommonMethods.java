@@ -33,18 +33,16 @@ public class CommonMethods {
 	public static ReadProjectProperties Read = new ReadProjectProperties();
 	public static NgWebDriver ngWebDriver;
 
-
-	public CommonMethods()
-	{
-		//this is the default const
+	public CommonMethods() {
+		// this is the default const
 	}
-	
+
+	// This method will be utilized in for PF classes not in TestCases
 	public static void WaitAngular(WebDriver driver) {
 		NgWebDriver ngWebDriver = new NgWebDriver((JavascriptExecutor) driver);
 		ngWebDriver.waitForAngularRequestsToFinish();
-		
-		// Delay();
 	}
+
 	public boolean VerifyString(String str1, String str2) {
 		boolean result = false;
 		if (str1 != "" && str2 != "") {
@@ -62,6 +60,7 @@ public class CommonMethods {
 
 	public void log(String message) {
 		Reporter.log(message);
+		System.out.println(message);
 	}
 
 	public void WaitForObjectbyId(WebDriver driver, String id) {

@@ -2,7 +2,7 @@ package com.NexusPortalAutomation.PageObjects.Java;
 
 import java.util.HashMap;
 
-import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,7 +13,6 @@ import org.testng.Assert;
 import org.testng.Reporter;
 
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
-import com.paulhammant.ngwebdriver.ByAngular;
 
 /**
  * 
@@ -133,6 +132,31 @@ public class DashBoard extends CommonMethods {
 	@CacheLookup
 	WebElement AddressCityStateZip;
 
+	@FindBy(xpath = "/html/body/wo-root/wo-dashboard/div/mat-drawer-container/mat-drawer-content/div/div/div[1]/csm-customer-card/div/div/div/div[2]/div[2]/div[1]")
+	@CacheLookup
+	WebElement BookMarkIconEnabled;
+
+	@FindBy(xpath = "/html/body/wo-root/wo-dashboard/div/mat-drawer-container/mat-drawer-content/div/div/div[1]/csm-customer-card/div/div/div/div[2]/div[2]/div[1]/a/span/span/svg")
+	@CacheLookup
+	WebElement BookMarkIconDisabled;
+
+	@FindBy(id = "credit-great")
+	@CacheLookup
+	WebElement creditGreat;
+
+	@FindBy(id = "'CUST_Drillback_Button'")
+	@CacheLookup
+	WebElement ContactEdit;
+
+	@FindBy(id = "ECI_Phone_Number_1")
+	WebElement ContactPhone1;
+
+	@FindBy(id = "ECI_Email")
+	WebElement ContactEmail1;
+	
+	@FindBy(id="ECI_Action_Button")
+	WebElement ContactUpdateBtn;
+
 	public DashBoard(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -140,7 +164,6 @@ public class DashBoard extends CommonMethods {
 
 	public void VerifyCustomerDetails(String ssn, String Lic, String phone, String ext, String email, String add,
 			String acsz) {
-
 		log("Verifying Customer Details");
 		VerifyString(ssn, CustomerSSN.getText());
 		VerifyString(Lic, DriverLic.getText());
@@ -149,6 +172,84 @@ public class DashBoard extends CommonMethods {
 		VerifyString(email, Email.getText());
 		VerifyString(add, AddressLine1.getText());
 		VerifyString(acsz, AddressCityStateZip.getText());
+	}
+
+	public void ClickContactEdit() {
+		try {
+			WaitAngular(driver);
+			ContactEdit.click();
+			WaitAngular(driver);
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+		}
+
+	}
+	
+	public void updatePhone1(String phoneNum) {
+		try {
+			WaitAngular(driver);
+			ContactPhone1.clear();
+			WaitAngular(driver);
+			ContactPhone1.sendKeys(phoneNum);
+			WaitAngular(driver);
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+		}
+
+	}
+	
+	public void updateEmail(String email) {
+		try {
+			WaitAngular(driver);
+			ContactEmail1.clear();
+			WaitAngular(driver);
+			ContactEmail1.sendKeys(email);
+			WaitAngular(driver);
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+		}
+     }
+	
+	public void clickContactUpdate()
+	{
+		try {
+			WaitAngular(driver);
+			ContactUpdateBtn.click();
+			WaitAngular(driver);
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+		}
+     }
+
+
+	public void ClickBookMarkDisabled() {
+		try {
+			log("Click Bookmark");
+			BookMarkIconEnabled.click();
+			WaitAngular(driver);
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+		}
+	}
+
+	public void VerifyGoodCredit() {
+		log("Verify Credit Status");
+		if (creditGreat.isDisplayed()) {
+			Assert.assertTrue(true);
+		} else {
+			Assert.assertTrue(false);
+		}
+		WaitAngular(driver);
+	}
+
+	public void ClickBookMarkEnabled() {
+		try {
+			log("Click Bookmark");
+			BookMarkIconDisabled.click();
+			WaitAngular(driver);
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+		}
 
 	}
 
@@ -159,19 +260,19 @@ public class DashBoard extends CommonMethods {
 		AccountDropdown.click();
 		log("Enter Account Name");
 		WaitAngular(driver);
-		//driver.findElement(By.xpath("/html[1]/body[1]/wo-root[1]/wo-dashboard[1]/div[1]/mat-drawer-container[1]/mat-drawer-content[1]/div[1]/div[1]/div[1]/csm-customer-card[1]/csm-selector-inline[1]/csm-generic-expandable-selector[1]/div[1]/input[1]"));
 		waitForObject(driver, AccountSearchText);
 		AccountSearchText.click();
 		AccountSearchText.sendKeys(AccountId);
 		WaitAngular(driver);
 		waitForObject(driver, AccountSearchResult);
 		AccountSearchResult.click();
+		WaitAngular(driver);
 
 	}
 
 	public void verifyAddressDetails(String addline, String addCity, String addState, String addZip) {
+		WaitAngular(driver);
 		log("Verifying Address Details");
-
 		VerifyString(addline, AddressLine.getText());
 		VerifyString(addCity, AddressCity.getText());
 		VerifyString(addState, AddressState.getText());
@@ -180,16 +281,29 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void ClickSummaryLink() {
-		SummaryLink.click();
-		Reporter.log("Summary Link Clicked");
+
+		try {
+			SummaryLink.click();
+			WaitAngular(driver);
+			Reporter.log("Summary Link Clicked");
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+		}
 	}
 
 	public void ClickTransactionLink() {
-		TransactionLink.click();
-		Reporter.log("Transaction Link Clicked");
+
+		try {
+			TransactionLink.click();
+			WaitAngular(driver);
+			Reporter.log("Transaction Link Clicked");
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+		}
 	}
 
 	public HashMap<String, String> GetBillingInfo() {
+		WaitAngular(driver);
 		WaitForObjectbyId(driver, "BILL_Current_Balance");
 		WaitForObjectbyId(driver, "BILL_Unposted_Balance");
 		WaitForObjectbyId(driver, "BILL_Account_Balance");
@@ -203,8 +317,10 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public String GetLogUserName() throws InterruptedException {
+
 		String result = "";
 		try {
+			WaitAngular(driver);
 			if (LoggedUserLink.isDisplayed())
 				result = LoggedUserLink.getText();
 			Reporter.log("UserName found " + result);
@@ -215,8 +331,10 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public String GetLoggedCustomerId() throws InterruptedException {
+
 		String result = "";
 		try {
+			WaitAngular(driver);
 			if (CustomerId.isDisplayed())
 				result = CustomerId.getText();
 			Reporter.log("CustomerId found " + result);
@@ -229,8 +347,10 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public String GetLoggedCustomerLocationId() throws InterruptedException {
+
 		String result = "";
 		try {
+			WaitAngular(driver);
 			if (CustomerLocId.isDisplayed())
 				result = CustomerLocId.getText();
 			Reporter.log("Customer Location Id found " + result);
@@ -243,8 +363,10 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public String GetLoggedCustomerName() throws InterruptedException {
+
 		String result = "";
 		try {
+			WaitAngular(driver);
 			if (CustomerName.isDisplayed())
 				result = CustomerName.getText();
 			Reporter.log("Customer Name found " + result);
@@ -255,45 +377,61 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public String GetLoggedCustomerAddress() throws InterruptedException {
-		String result = "";
 
+		String result = "";
 		try {
+			WaitAngular(driver);
 			if (CustomerAddress.isDisplayed())
 				result = CustomerAddress.getText();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
 		return result;
 
 	}
 
 	public void LogOut() throws InterruptedException {
-
-		waitForObject(this.driver, LoggedUserLink);
-		if (LoggedUserLink.isDisplayed()) {
-			LoggedUserLink.click();
-			waitForObject(this.driver, LogOutLink);
-			LogOutLink.click();
-		} else {
-			Assert.assertFalse(true, "Log out link not found");
+		try {
+			WaitAngular(driver);
+			waitForObject(this.driver, LoggedUserLink);
+			if (LoggedUserLink.isDisplayed()) {
+				LoggedUserLink.click();
+				waitForObject(this.driver, LogOutLink);
+				LogOutLink.click();
+				WaitAngular(driver);
+			} else {
+				Assert.assertFalse(true, "Log out link not found");
+			}
+		} catch (NoSuchElementException | ElementClickInterceptedException e) {
+			log(e.getMessage());
 		}
 
 	}
 
 	public void ClickOk() throws InterruptedException {
-		WaitForObjectbyId(this.driver, "ALERTO_Action_Button");
-		Thread.sleep(300);
-		if (AlertOk.isDisplayed()) {
-			AlertOk.click();
-			Reporter.log("Click Ok");
+
+		try {
+			WaitAngular(driver);
+			WaitForObjectbyId(this.driver, "ALERTO_Action_Button");
+			if (AlertOk.isDisplayed()) {
+				AlertOk.click();
+				WaitAngular(driver);
+				Reporter.log("Click Ok");
+			}
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
 		}
 	}
 
 	public void ClickDynamicOk() {
+
 		try {
 			if (AlertOk.isDisplayed()) {
+				WaitAngular(driver);
 				AlertOk.click();
 				Reporter.log("Click Ok");
+				WaitAngular(driver);
 			}
 		} catch (NoSuchElementException e) {
 			Reporter.log("Alert not configured");
@@ -301,9 +439,15 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void ClickAlertDescription() throws InterruptedException {
-		waitForObject(this.driver, AlertDesc);
-		AlertDesc.click();
-		Reporter.log("Click Description");
+		try {
+			WaitAngular(driver);
+			waitForObject(this.driver, AlertDesc);
+			AlertDesc.click();
+			WaitAngular(driver);
+			Reporter.log("Click Description");
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+		}
 	}
 
 }

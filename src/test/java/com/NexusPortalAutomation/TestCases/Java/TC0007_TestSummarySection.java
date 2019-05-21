@@ -19,7 +19,6 @@ public class TC0007_TestSummarySection extends BaseClass {
 	public void TestSummarySectionOnChange() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
-		WaitAngular();
 		login();
 		ComMethd.WaitForObjectbyXpath(driver, "//input[@id='SRCH_Input']");
 		ComMethd.WaitForObjectbyId(driver, "toolbar-saved");
@@ -39,12 +38,9 @@ public class TC0007_TestSummarySection extends BaseClass {
 			// Adding to Report
 
 		}
-
 		HashMap<String, String> BillingMap1 = dashBoard.GetBillingInfo();
 		dashBoard.ClickTransactionLink();
-		WaitAngular();
 		dashBoard.ClickSummaryLink();
-		WaitAngular();
 		HashMap<String, String> BillingMap2 = dashBoard.GetBillingInfo();
 
 		try {

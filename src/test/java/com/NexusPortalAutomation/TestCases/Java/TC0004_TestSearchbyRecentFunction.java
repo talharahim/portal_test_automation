@@ -2,7 +2,6 @@ package com.NexusPortalAutomation.TestCases.Java;
 
 import java.io.IOException;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
@@ -18,15 +17,12 @@ public class TC0004_TestSearchbyRecentFunction extends BaseClass {
 	public void TestSearchAutobyRecent() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
-		WaitAngular();
 		login();
 		ComMethd.WaitForObjectbyXpath(driver, "//input[@id='SRCH_Input']");
 		dbSrch.ClickRecent();
 		CustomerAddress = dbSrch.GetRecentCustomerName();
 		dbSrch.ClickCustomer();
-		
 		dashBoard.ClickDynamicOk();
-
 		ComMethd.WaitForObjectbyXpath(driver, "//div[@class='address-details']");
 		boolean Match = ComMethd.VerifyString(CustomerAddress, dashBoard.GetLoggedCustomerAddress());
 		if (!Match) {
@@ -35,7 +31,7 @@ public class TC0004_TestSearchbyRecentFunction extends BaseClass {
 			log("User Name Verified for Recent Functionality =" + CustomerAddress);
 		}
 		dashBoard.LogOut();
-	
+
 	}
 
 }

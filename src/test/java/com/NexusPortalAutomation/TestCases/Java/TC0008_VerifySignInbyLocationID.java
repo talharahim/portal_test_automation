@@ -2,7 +2,6 @@ package com.NexusPortalAutomation.TestCases.Java;
 
 import java.io.IOException;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
@@ -18,18 +17,14 @@ public class TC0008_VerifySignInbyLocationID extends BaseClass {
 	String addState = "D";
 	String addZip = "00720-019";
 
-//This Test will test the search by Customer ID
+	// This Test will test the search by Customer ID
 	@Test(priority = 1)
 	public void TestSearchbyLocationID() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
-		WaitAngular();
 		login();
-		WaitAngular();
 		dbSrch.EnterSearchText(LocationID);
-		WaitAngular();
 		dbSrch.ClickCustomer();
-		WaitAngular();
 		// Verify Customer Location Id Updated for Test
 		boolean Match = ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
 		if (!Match) {
@@ -40,9 +35,7 @@ public class TC0008_VerifySignInbyLocationID extends BaseClass {
 
 		// Verify Address Details
 		dashBoard.verifyAddressDetails(addLine, addCity, addState, addZip);
-
 		dashBoard.LogOut();
-
 	}
 
 }

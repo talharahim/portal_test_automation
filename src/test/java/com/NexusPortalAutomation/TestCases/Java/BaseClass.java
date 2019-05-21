@@ -36,13 +36,19 @@ public class BaseClass extends ReadProjectProperties {
 	public static ReadProjectProperties Read = new ReadProjectProperties();
 	public static int delay = 2000;
 
+	// This method writes in report
 	public void log(String message) {
 		Reporter.log(message);
+		System.out.println(message);
 	}
 
 	public static void WaitAngular() {
+		long begin = System.currentTimeMillis();
 		ngWebDriver.waitForAngularRequestsToFinish();
-		// Delay();
+		long end = System.currentTimeMillis();
+		long dt = end - begin;
+		Reporter.log("Angular Request Completed in " + dt + "ms");
+		System.out.println("Angular Request Completed in " + dt + "ms");
 	}
 
 	public static void Delay() {
@@ -56,6 +62,7 @@ public class BaseClass extends ReadProjectProperties {
 
 	@BeforeClass
 	public void readProp(ITestContext context) {
+
 		try {
 
 			browserName = Read.ReadFile("CurrentBrowser");

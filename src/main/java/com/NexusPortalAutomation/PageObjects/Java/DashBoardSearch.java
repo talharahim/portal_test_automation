@@ -58,6 +58,7 @@ public class DashBoardSearch extends CommonMethods {
 		log("Enter Text for Search =" + txt);
 		waitForObject(this.driver, searchBar);
 		searchBar.sendKeys(txt);
+		WaitAngular(driver);
 	}
 
 	public void ClickRecent() {
@@ -74,6 +75,7 @@ public class DashBoardSearch extends CommonMethods {
 	public void ClickCustomer() {
 		log("Click Customer");
 		SrchCustomer.click();
+		WaitAngular(driver);
 	}
 
 	public String GetRecentCustomerName() {

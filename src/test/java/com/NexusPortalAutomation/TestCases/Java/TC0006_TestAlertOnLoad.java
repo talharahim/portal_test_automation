@@ -17,11 +17,9 @@ public class TC0006_TestAlertOnLoad extends BaseClass {
 	public void TestSearchAlertOnLoad() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
-		WaitAngular();
 		login();
 		ComMethd.WaitForObjectbyXpath(driver, "//input[@id='SRCH_Input']");
 		ComMethd.WaitForObjectbyId(driver, "toolbar-saved");
-		WaitAngular();
 		dbSrch.EnterSearchText("Alert");
 		dbSrch.ClickCustomer();
 		ComMethd.WaitForObjectbyXpath(driver, "//div[@class='address-details']");
@@ -35,6 +33,7 @@ public class TC0006_TestAlertOnLoad extends BaseClass {
 		dashBoard.ClickOk();
 		log("Alert on Load Clicked");
 		dashBoard.ClickAlertDescription();
+		Thread.sleep(300);
 		dashBoard.ClickOk();
 		log("Alert on description Clicked");
 		dashBoard.LogOut();

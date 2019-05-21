@@ -2,7 +2,6 @@ package com.NexusPortalAutomation.TestCases.Java;
 
 import java.io.IOException;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
@@ -14,19 +13,17 @@ public class TC0005_TestSearchbyBookMarks extends BaseClass {
 	public String UserName = "Noel Ford";
 	public CommonMethods ComMethd = new CommonMethods();
 
-	@Test(priority = 2)
+	@Test(priority = 1)
 	public void TestSearchAutobyBookMark() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
-		WaitAngular();
 		login();
 		ComMethd.WaitForObjectbyXpath(driver, "//input[@id='SRCH_Input']");
 		ComMethd.WaitForObjectbyId(driver, "toolbar-saved");
-		WaitAngular();
 		dbSrch.ClickHistoryCustomer();
 		dbSrch.ClickCustomer();
 		ComMethd.WaitForObjectbyXpath(driver, "//div[@class='address-details']");
-		// Verify Login Name
+		// Verify Correct User is appearing by Bookmark
 		boolean Match = ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
 		if (!Match) {
 			log("User Name Not Verified for Bookmark Functionality");
@@ -34,7 +31,7 @@ public class TC0005_TestSearchbyBookMarks extends BaseClass {
 			log("User Name Verified for Bookmark Functionality");
 		}
 		dashBoard.LogOut();
-	
+
 	}
 
 }
