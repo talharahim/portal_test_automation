@@ -22,14 +22,8 @@ public class TC0001_VerifySignInbyID extends BaseClass {
 		dbSrch.EnterSearchText(CustomerID);
 		dbSrch.ClickCustomer();
 		// Verify Login Name Updated for Test
-		boolean Match = ComMethd.VerifyString(CustomerID, dashBoard.GetLoggedCustomerId());
-		if (!Match) {
-			log("Customer ID Not Matched");
-		} else {
-			log("Customer ID Matched =" + CustomerID);
-		}
+		ComMethd.VerifyString(CustomerID, dashBoard.GetLoggedCustomerId());
 		dashBoard.LogOut();
-
 	}
 
 }

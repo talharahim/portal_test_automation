@@ -22,13 +22,8 @@ public class TC0011_VerifyBookMark extends BaseClass {
 		dbSrch.EnterSearchText(LocationID);
 		dbSrch.ClickCustomer();
 		// Verify Customer Location Id Updated for Test
-		boolean Match = ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
-		if (!Match) {
-			log("Location ID Not Matched");
-		} else {
-			log("LocationID ID Matched =" + LocationID);
-		}
-		// Click BookMark
+	    ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+	    // Click BookMark
 		dashBoard.ClickBookMarkDisabled();
 		dashBoard.ClickBookMarkEnabled();
 		//Verify if it is Marked

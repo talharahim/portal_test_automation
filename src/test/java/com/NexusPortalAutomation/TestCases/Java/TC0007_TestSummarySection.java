@@ -27,17 +27,7 @@ public class TC0007_TestSummarySection extends BaseClass {
 		dbSrch.ClickCustomer();
 		ComMethd.WaitForObjectbyXpath(driver, "//div[@class='address-details']");
 		// Verify Login Name
-		boolean Match = ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
-		if (!Match) {
-			log("User Name Not Matched");
-			Assert.assertTrue(false);
-
-		} else {
-			log("User Name verified =" + UserName);
-			Assert.assertTrue(true);
-			// Adding to Report
-
-		}
+		ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
 		HashMap<String, String> BillingMap1 = dashBoard.GetBillingInfo();
 		dashBoard.ClickTransactionLink();
 		dashBoard.ClickSummaryLink();

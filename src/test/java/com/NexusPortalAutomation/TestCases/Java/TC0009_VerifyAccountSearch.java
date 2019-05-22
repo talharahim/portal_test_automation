@@ -26,12 +26,7 @@ public class TC0009_VerifyAccountSearch extends BaseClass {
 		dbSrch.EnterSearchText(LocationID);
 		dbSrch.ClickCustomer();
 		// Verify Customer Location Id Updated for Test
-		boolean Match = ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
-		if (!Match) {
-			log("Location ID Not Matched");
-		} else {
-			log("LocationID ID Matched =" + LocationID);
-		}
+	    ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
 		// Verify Customer Details for location Provided
 		dashBoard.SearchAccountWidget(LocationID);
 		dashBoard.LogOut();

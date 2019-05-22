@@ -24,14 +24,8 @@ public class TC0005_TestSearchbyBookMarks extends BaseClass {
 		dbSrch.ClickCustomer();
 		ComMethd.WaitForObjectbyXpath(driver, "//div[@class='address-details']");
 		// Verify Correct User is appearing by Bookmark
-		boolean Match = ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
-		if (!Match) {
-			log("User Name Not Verified for Bookmark Functionality");
-		} else {
-			log("User Name Verified for Bookmark Functionality");
-		}
+	    ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
 		dashBoard.LogOut();
-
 	}
 
 }

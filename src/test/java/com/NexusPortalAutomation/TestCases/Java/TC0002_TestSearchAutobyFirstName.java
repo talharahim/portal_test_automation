@@ -22,13 +22,8 @@ public class TC0002_TestSearchAutobyFirstName extends BaseClass {
 		dbSrch.EnterSearchText("Automation");
 		dbSrch.ClickCustomer();
 		// Verify Login Name
-		boolean Match = ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
-		if (!Match) {
-			log("User Name Not Matched");
-		} else {
-			log("User Name Matched =" + UserName);
-		}
-		dashBoard.LogOut();
+	    ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
+	 	dashBoard.LogOut();
 
 	}
 

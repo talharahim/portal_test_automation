@@ -24,12 +24,7 @@ public class TC0004_TestSearchbyRecentFunction extends BaseClass {
 		dbSrch.ClickCustomer();
 		dashBoard.ClickDynamicOk();
 		ComMethd.WaitForObjectbyXpath(driver, "//div[@class='address-details']");
-		boolean Match = ComMethd.VerifyString(CustomerAddress, dashBoard.GetLoggedCustomerAddress());
-		if (!Match) {
-			log("User Name Not Verified for Recent Functionality");
-		} else {
-			log("User Name Verified for Recent Functionality =" + CustomerAddress);
-		}
+		ComMethd.VerifyString(CustomerAddress, dashBoard.GetLoggedCustomerAddress());
 		dashBoard.LogOut();
 
 	}

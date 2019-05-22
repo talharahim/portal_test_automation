@@ -8,23 +8,32 @@ import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 
-public class TC0012_VerifyCreditStatus extends BaseClass {
+public class TC0014_VerifySecondaryContact extends BaseClass {
 
-	public String LocationID = "LOC@0001";
+	public String LocationID = "LOC@0004";
+	String ssn = "2312";
+	String lic = "Driv12312OUL312";
+	String phone = "(900) 786-0102";
+	String ext = "+ Ext. 0112";
+	String email = "automation@cogsdale.com";
+	String add = "007 Test Apt";
+	String acsz = "New York NY 12345-67890";
 	CommonMethods ComMethd = new CommonMethods();
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
-	public void TestCreditStatus() throws IOException, InterruptedException {
+	public void TestContactEdit() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
 		dbSrch.EnterSearchText(LocationID);
 		dbSrch.ClickCustomer();
 		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
-		// Verify Good Credit
-		dashBoard.VerifyGoodCredit();
+	    ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+		// Verify Contact is updated accordingly
+		
+		// Verify Updated details
+		
 		dashBoard.LogOut();
 	}
 

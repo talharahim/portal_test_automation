@@ -153,8 +153,8 @@ public class DashBoard extends CommonMethods {
 
 	@FindBy(id = "ECI_Email")
 	WebElement ContactEmail1;
-	
-	@FindBy(id="ECI_Action_Button")
+
+	@FindBy(id = "ECI_Action_Button")
 	WebElement ContactUpdateBtn;
 
 	public DashBoard(WebDriver driver) {
@@ -162,11 +162,12 @@ public class DashBoard extends CommonMethods {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void VerifyCustomerDetails(String ssn, String Lic, String phone, String ext, String email, String add,
+	public void VerifyCustomerDetails(String ssn, String lic, String phone, String ext, String email, String add,
 			String acsz) {
+		WaitAngular(driver);
 		log("Verifying Customer Details");
 		VerifyString(ssn, CustomerSSN.getText());
-		VerifyString(Lic, DriverLic.getText());
+		VerifyString(lic, DriverLic.getText());
 		VerifyString(phone, Phone1.getText());
 		VerifyString(ext, PhoneExt1.getText());
 		VerifyString(email, Email.getText());
@@ -181,10 +182,11 @@ public class DashBoard extends CommonMethods {
 			WaitAngular(driver);
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
+			Assert.assertTrue(false, "Edit button not found");
 		}
 
 	}
-	
+
 	public void updatePhone1(String phoneNum) {
 		try {
 			WaitAngular(driver);
@@ -194,10 +196,11 @@ public class DashBoard extends CommonMethods {
 			WaitAngular(driver);
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
+			Assert.assertTrue(false, "Phone field not found");
 		}
 
 	}
-	
+
 	public void updateEmail(String email) {
 		try {
 			WaitAngular(driver);
@@ -207,20 +210,20 @@ public class DashBoard extends CommonMethods {
 			WaitAngular(driver);
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
+			Assert.assertTrue(false, "Email field not found");
 		}
-     }
-	
-	public void clickContactUpdate()
-	{
+	}
+
+	public void clickContactUpdate() {
 		try {
 			WaitAngular(driver);
 			ContactUpdateBtn.click();
 			WaitAngular(driver);
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
+			Assert.assertTrue(false, "Contact Update button not found");
 		}
-     }
-
+	}
 
 	public void ClickBookMarkDisabled() {
 		try {
@@ -288,6 +291,7 @@ public class DashBoard extends CommonMethods {
 			Reporter.log("Summary Link Clicked");
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
+			Assert.assertTrue(false, "Summary Link not found");
 		}
 	}
 
@@ -299,6 +303,7 @@ public class DashBoard extends CommonMethods {
 			Reporter.log("Transaction Link Clicked");
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
+			Assert.assertTrue(false, "Transaction Link not found");
 		}
 	}
 
@@ -323,9 +328,10 @@ public class DashBoard extends CommonMethods {
 			WaitAngular(driver);
 			if (LoggedUserLink.isDisplayed())
 				result = LoggedUserLink.getText();
-			Reporter.log("UserName found " + result);
+			log("UserName found " + result);
 		} catch (Exception e) {
 			e.printStackTrace();
+			Assert.assertTrue(false, "User Name not found");
 		}
 		return result;
 	}
@@ -337,10 +343,11 @@ public class DashBoard extends CommonMethods {
 			WaitAngular(driver);
 			if (CustomerId.isDisplayed())
 				result = CustomerId.getText();
-			Reporter.log("CustomerId found " + result);
+			log("CustomerId found " + result);
 
 		} catch (Exception e) {
 			e.printStackTrace();
+			Assert.assertTrue(false, "Customer Id not found");
 		}
 		return result;
 
@@ -353,10 +360,12 @@ public class DashBoard extends CommonMethods {
 			WaitAngular(driver);
 			if (CustomerLocId.isDisplayed())
 				result = CustomerLocId.getText();
-			Reporter.log("Customer Location Id found " + result);
+			log("Customer Location Id found " + result);
+		
 
 		} catch (Exception e) {
 			e.printStackTrace();
+			Assert.assertTrue(false, "Customer Location not found");
 		}
 		return result;
 
@@ -369,9 +378,10 @@ public class DashBoard extends CommonMethods {
 			WaitAngular(driver);
 			if (CustomerName.isDisplayed())
 				result = CustomerName.getText();
-			Reporter.log("Customer Name found " + result);
+			log("Customer Name found " + result);
 		} catch (Exception e) {
 			e.printStackTrace();
+			Assert.assertTrue(false, "Customer Nuame not found");
 		}
 		return result;
 	}
@@ -385,6 +395,7 @@ public class DashBoard extends CommonMethods {
 				result = CustomerAddress.getText();
 		} catch (Exception e) {
 			e.printStackTrace();
+			Assert.assertTrue(false, "Customer Address not found");
 		}
 
 		return result;
@@ -398,6 +409,7 @@ public class DashBoard extends CommonMethods {
 			if (LoggedUserLink.isDisplayed()) {
 				LoggedUserLink.click();
 				waitForObject(this.driver, LogOutLink);
+				Thread.sleep(300);
 				LogOutLink.click();
 				WaitAngular(driver);
 			} else {
@@ -405,6 +417,7 @@ public class DashBoard extends CommonMethods {
 			}
 		} catch (NoSuchElementException | ElementClickInterceptedException e) {
 			log(e.getMessage());
+			Assert.assertTrue(false, "Unable to logout");
 		}
 
 	}
@@ -417,10 +430,11 @@ public class DashBoard extends CommonMethods {
 			if (AlertOk.isDisplayed()) {
 				AlertOk.click();
 				WaitAngular(driver);
-				Reporter.log("Click Ok");
+				log("Click Ok");
 			}
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
+			Assert.assertTrue(false, "Ok not found");
 		}
 	}
 
@@ -430,11 +444,12 @@ public class DashBoard extends CommonMethods {
 			if (AlertOk.isDisplayed()) {
 				WaitAngular(driver);
 				AlertOk.click();
-				Reporter.log("Click Ok");
+				log("Click Ok");
 				WaitAngular(driver);
 			}
 		} catch (NoSuchElementException e) {
-			Reporter.log("Alert not configured");
+			log("Alert not configured");
+			Assert.assertTrue(false, "A;ert not configured for this user");
 		}
 	}
 
@@ -444,9 +459,10 @@ public class DashBoard extends CommonMethods {
 			waitForObject(this.driver, AlertDesc);
 			AlertDesc.click();
 			WaitAngular(driver);
-			Reporter.log("Click Description");
+			log("Click Description");
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
+			Assert.assertTrue(false, "Alert description not found");
 		}
 	}
 

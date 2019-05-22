@@ -24,12 +24,7 @@ public class TC0006_TestAlertOnLoad extends BaseClass {
 		dbSrch.ClickCustomer();
 		ComMethd.WaitForObjectbyXpath(driver, "//div[@class='address-details']");
 		// Verify Login Name
-		boolean Match = ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
-		if (!Match) {
-			log("User Name Not Verified for Alert Functionality");
-		} else {
-			log("User Name Verified for Alert Functionality");
-		}
+		ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
 		dashBoard.ClickOk();
 		log("Alert on Load Clicked");
 		dashBoard.ClickAlertDescription();

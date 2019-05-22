@@ -39,8 +39,12 @@ public class CommonMethods {
 
 	// This method will be utilized in for PF classes not in TestCases
 	public static void WaitAngular(WebDriver driver) {
+		long begin = System.currentTimeMillis();
 		NgWebDriver ngWebDriver = new NgWebDriver((JavascriptExecutor) driver);
 		ngWebDriver.waitForAngularRequestsToFinish();
+		long end = System.currentTimeMillis();
+		long dt = end - begin;
+		log("Angular request time " + dt + "ms");
 	}
 
 	public boolean VerifyString(String str1, String str2) {
@@ -48,9 +52,9 @@ public class CommonMethods {
 		if (str1 != "" && str2 != "") {
 			if (str1.equals(str2)) {
 				result = true;
-				Reporter.log("Strings Matched: " + str1 + " =" + str2);
+				log("Strings Matched: " + str1 + " = " + str2);
 			} else {
-				Reporter.log("Strings Not Matched: " + str1 + " =" + str2);
+				log("Strings Not Matched: " + str1 + " != " + str2);
 				Assert.assertEquals(str1, str2);
 			}
 		}
@@ -58,7 +62,7 @@ public class CommonMethods {
 
 	}
 
-	public void log(String message) {
+	public static void log(String message) {
 		Reporter.log(message);
 		System.out.println(message);
 	}
@@ -67,10 +71,11 @@ public class CommonMethods {
 		long begin = System.currentTimeMillis();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id(id)));
+		
 		if (element.isDisplayed()) {
 			long end = System.currentTimeMillis();
 			long dt = end - begin;
-			log(element.getText() + "is displayed in " + dt + "ms");
+			log("Element is displayed in " + dt + "ms");
 		}
 	}
 
@@ -81,7 +86,7 @@ public class CommonMethods {
 		if (element.isDisplayed()) {
 			long end = System.currentTimeMillis();
 			long dt = end - begin;
-			log(element.getText() + "is displayed in " + dt + "ms");
+			log("Element is displayed in " + dt + "ms");
 		}
 	}
 
@@ -95,6 +100,7 @@ public class CommonMethods {
 			log("***Placed screen shot in " + filePath + " ***");
 		} catch (IOException e) {
 			e.printStackTrace();
+			Assert.assertFalse(false, "Unable to take Screenshot");
 		}
 	}
 
@@ -106,12 +112,12 @@ public class CommonMethods {
 
 		} catch (TimeoutException e) {
 
+			Assert.assertTrue(false, "Object Not Found");
 			throw new TimeoutException("Object Not Found", e);
-
 		}
 		long end = System.currentTimeMillis();
 		long dt = end - begin;
-		log(element.getText() + "is displayed in " + dt + "ms");
+		log("Element displayed in " + dt + "ms");
 	}
 
 	public boolean CheckStringmapsAreEqual(Map<String, String> mapA, Map<String, String> mapB) {

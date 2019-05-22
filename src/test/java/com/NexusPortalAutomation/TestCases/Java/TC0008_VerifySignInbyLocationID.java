@@ -26,13 +26,7 @@ public class TC0008_VerifySignInbyLocationID extends BaseClass {
 		dbSrch.EnterSearchText(LocationID);
 		dbSrch.ClickCustomer();
 		// Verify Customer Location Id Updated for Test
-		boolean Match = ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
-		if (!Match) {
-			log("Location ID Not Matched");
-		} else {
-			log("LocationID ID Matched =" + LocationID);
-		}
-
+		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
 		// Verify Address Details
 		dashBoard.verifyAddressDetails(addLine, addCity, addState, addZip);
 		dashBoard.LogOut();

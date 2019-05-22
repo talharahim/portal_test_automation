@@ -22,12 +22,7 @@ public class TC0003_TestSearchAutobyLastName extends BaseClass {
 		dbSrch.EnterSearchText("Mate");
 		dbSrch.ClickCustomer();
 		// Verify Login by Last Name
-		boolean Match = ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
-		if (!Match) {
-			log("User Name Not Matched");
-		} else {
-			log("User Name Matched =" + UserName);
-		}
+	    ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
 		dashBoard.LogOut();
 
 	}

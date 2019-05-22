@@ -30,8 +30,12 @@
 			<class
 				name="com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch" />
 			<class
-			name="com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails" />
-	</classes>
+				name="com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails" />
+			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus" />
+			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit" />
+		</classes>
 
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

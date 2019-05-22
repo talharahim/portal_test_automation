@@ -130,8 +130,8 @@ public class BaseClass extends ReadProjectProperties {
 	void TearDown() {
 
 		log("Closing Browser");
-		log("All Tests Completed...");
 		driver.close();
+		log("Test Completed...");
 
 	}
 
