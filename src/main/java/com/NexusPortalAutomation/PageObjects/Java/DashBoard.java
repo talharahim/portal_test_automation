@@ -157,9 +157,42 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "ECI_Action_Button")
 	WebElement ContactUpdateBtn;
 
+	@FindBy(id = "SCUST_Label")
+	WebElement SecondCust;
+
+	@FindBy(id = "SCUST_1_Customer_Name")
+	WebElement SecondCustName;
+
 	public DashBoard(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+	}
+
+	public void ClickSecondCust() {
+		try {
+			WaitAngular(driver);
+			SecondCust.click();
+			WaitAngular(driver);
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "Secondary Customer not found");
+		}
+
+	}
+
+	public String getSecondCustName() {
+		String name = "";
+		try {
+			WaitAngular(driver);
+			name = SecondCustName.getText();
+			WaitAngular(driver);
+
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "Secondary Customer not found");
+		}
+		return name;
+
 	}
 
 	public void VerifyCustomerDetails(String ssn, String lic, String phone, String ext, String email, String add,
@@ -361,7 +394,6 @@ public class DashBoard extends CommonMethods {
 			if (CustomerLocId.isDisplayed())
 				result = CustomerLocId.getText();
 			log("Customer Location Id found " + result);
-		
 
 		} catch (Exception e) {
 			e.printStackTrace();

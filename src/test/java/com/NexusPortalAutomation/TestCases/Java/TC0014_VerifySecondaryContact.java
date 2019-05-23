@@ -11,29 +11,23 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 public class TC0014_VerifySecondaryContact extends BaseClass {
 
 	public String LocationID = "LOC@0004";
-	String ssn = "2312";
-	String lic = "Driv12312OUL312";
-	String phone = "(900) 786-0102";
-	String ext = "+ Ext. 0112";
-	String email = "automation@cogsdale.com";
-	String add = "007 Test Apt";
-	String acsz = "New York NY 12345-67890";
+	public String SecondCust = "Secondary Customer (SECONDARY)";
 	CommonMethods ComMethd = new CommonMethods();
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
-	public void TestContactEdit() throws IOException, InterruptedException {
+	public void TestSecondayContact() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
 		dbSrch.EnterSearchText(LocationID);
 		dbSrch.ClickCustomer();
 		// Verify Customer Location Id Updated for Test
-	    ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
-		
+		dashBoard.ClickSecondCust();
+		ComMethd.VerifyString(dashBoard.getSecondCustName(), SecondCust);
 		// Verify Updated details
-		
 		dashBoard.LogOut();
 	}
 

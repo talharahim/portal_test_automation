@@ -46,6 +46,8 @@ public class CommonMethods {
 		long dt = end - begin;
 		log("Angular request time " + dt + "ms");
 	}
+	
+	
 
 	public boolean VerifyString(String str1, String str2) {
 		boolean result = false;
@@ -53,6 +55,7 @@ public class CommonMethods {
 			if (str1.equals(str2)) {
 				result = true;
 				log("Strings Matched: " + str1 + " = " + str2);
+				
 			} else {
 				log("Strings Not Matched: " + str1 + " != " + str2);
 				Assert.assertEquals(str1, str2);
@@ -100,7 +103,7 @@ public class CommonMethods {
 			log("***Placed screen shot in " + filePath + " ***");
 		} catch (IOException e) {
 			e.printStackTrace();
-			Assert.assertFalse(false, "Unable to take Screenshot");
+			Assert.assertTrue(false, "Unable to take Screenshot");
 		}
 	}
 
@@ -138,5 +141,7 @@ public class CommonMethods {
 		}
 		return true;
 	}
+	
+	
 
 }
