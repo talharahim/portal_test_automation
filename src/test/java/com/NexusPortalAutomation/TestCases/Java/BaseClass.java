@@ -123,7 +123,7 @@ public class BaseClass extends ReadProjectProperties {
 		String expectedTitle = "Portal";
 		assertEquals(expectedTitle, actualTitle);
 		log("User signed " + Read.ReadFile("UserName"));
-
+		
 	}
 
 	@AfterClass

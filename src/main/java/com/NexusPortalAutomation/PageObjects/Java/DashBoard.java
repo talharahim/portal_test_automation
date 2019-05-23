@@ -163,6 +163,15 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "SCUST_1_Customer_Name")
 	WebElement SecondCustName;
 
+	@FindBy(id = "'CL_Note'")
+	WebElement Notes;
+
+	@FindBy(id = "CL_Action_Button")
+	WebElement SubmitNotes;
+
+	@FindBy(id = "'CL_Historical_Note_Additional_Text'")
+	WebElement AddedNotes;
+
 	public DashBoard(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -178,6 +187,31 @@ public class DashBoard extends CommonMethods {
 			Assert.assertTrue(false, "Secondary Customer not found");
 		}
 
+	}
+
+	public void AddNotes(String notes) {
+		try {
+			WaitAngular(driver);
+			Notes.sendKeys(notes);
+			WaitAngular(driver);
+			SubmitNotes.click();
+			WaitAngular(driver);
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "Notes Text not found");
+		}
+	}
+
+	public String GetNotes() {
+		try {
+			WaitAngular(driver);
+			return AddedNotes.getText();
+
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "Notes Text not found");
+		}
+		return null;
 	}
 
 	public String getSecondCustName() {

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Test Suite for Nexus Portal]">
+  <listeners>
+    <listener class-name="com.NexusPortalAutomation.Utilities.Java.CustTestNGListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="10" verbose="0" name="NexusTest(failed)">
+    <classes>
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName">
+        <methods>
+          <include name="TestSearchAutobyLastName"/>
+          <include name="TearDown"/>
+          <include name="readProp"/>
+        </methods>
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName -->
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad">
+        <methods>
+          <include name="TestSearchAlertOnLoad"/>
+          <include name="TearDown"/>
+          <include name="readProp"/>
+        </methods>
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad -->
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit">
+        <methods>
+          <include name="TearDown"/>
+          <include name="readProp"/>
+          <include name="TestContactEdit"/>
+        </methods>
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit -->
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID">
+        <methods>
+          <include name="TestSearchID"/>
+          <include name="TearDown"/>
+          <include name="readProp"/>
+        </methods>
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID -->
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus">
+        <methods>
+          <include name="TestCreditStatus"/>
+          <include name="TearDown"/>
+          <include name="readProp"/>
+        </methods>
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus -->
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks">
+        <methods>
+          <include name="TestSearchAutobyBookMark"/>
+          <include name="TearDown"/>
+          <include name="readProp"/>
+        </methods>
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks -->
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails">
+        <methods>
+          <include name="TearDown"/>
+          <include name="TestCustomerDetails"/>
+          <include name="readProp"/>
+        </methods>
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails -->
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch">
+        <methods>
+          <include name="TestSearchAccount"/>
+          <include name="TearDown"/>
+          <include name="readProp"/>
+        </methods>
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch -->
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction">
+        <methods>
+          <include name="TestSearchAutobyRecent"/>
+          <include name="TearDown"/>
+          <include name="readProp"/>
+        </methods>
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction -->
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection">
+        <methods>
+          <include name="TestSummarySectionOnChange"/>
+          <include name="TearDown"/>
+          <include name="readProp"/>
+        </methods>
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection -->
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName">
+        <methods>
+          <include name="TestSearchAutobyFirstName"/>
+          <include name="TearDown"/>
+          <include name="readProp"/>
+        </methods>
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName -->
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID">
+        <methods>
+          <include name="TestSearchbyLocationID"/>
+          <include name="TearDown"/>
+          <include name="readProp"/>
+        </methods>
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID -->
+    </classes>
+  </test> <!-- NexusTest(failed) -->
+</suite> <!-- Failed suite [Test Suite for Nexus Portal] -->

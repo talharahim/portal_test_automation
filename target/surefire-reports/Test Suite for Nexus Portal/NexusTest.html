@@ -1,0 +1,495 @@
+<html>
+<head>
+<title>TestNG:  NexusTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>NexusTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu May 23 12:41:16 CDT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>303 seconds (303890 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit.TestContactEdit()'><b>TestContactEdit</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit<br/>
+<a href="#Output-851480926" onClick='toggleBox("Output-851480926", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-851480926" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-851480926">
+Angular Request Completed in 15ms<br/>
+Sign in Page Title Verified<br/>
+Angular Request Completed in 37ms<br/>
+User signed Admin<br/>
+Enter Text for Search =LOC@0004<br/>
+Element displayed in 47ms<br/>
+Angular request time 990ms<br/>
+Click Customer<br/>
+Angular request time 1737ms<br/>
+Angular request time 26ms<br/>
+Customer Location Id found LOC@0004<br/>
+Strings Matched: LOC@0004 = LOC@0004<br/>
+Angular request time 11ms<br/>
+Angular request time 18ms<br/>
+Angular request time 17ms<br/>
+Angular request time 28ms<br/>
+Angular request time 10ms<br/>
+Angular request time 8ms<br/>
+Angular request time 9ms<br/>
+Angular request time 11ms<br/>
+Angular request time 8ms<br/>
+Angular request time 463ms<br/>
+Angular request time 448ms<br/>
+Verifying Customer Details<br/>
+Strings Matched: 2312 = 2312<br/>
+Strings Matched: Driv12312OUL312 = Driv12312OUL312<br/>
+Strings Matched: (900) 786-0102 = (900) 786-0102<br/>
+Strings Matched: + Ext. 0112 = + Ext. 0112<br/>
+Strings Matched: automation@cogsdale.com = automation@cogsdale.com<br/>
+Strings Matched: 007 Test Apt = 007 Test Apt<br/>
+Strings Matched: New York NY 12345-67890 = New York NY 12345-67890<br/>
+Angular request time 16ms<br/>
+Element displayed in 31ms<br/>
+Element displayed in 32ms<br/>
+Angular request time 35ms<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit@55d56113</td></tr>
+<tr>
+<td title='com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus.TestCreditStatus()'><b>TestCreditStatus</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus<br/>
+<a href="#Output-1416665097" onClick='toggleBox("Output-1416665097", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1416665097" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1416665097">
+Angular Request Completed in 26ms<br/>
+Sign in Page Title Verified<br/>
+Angular Request Completed in 30ms<br/>
+User signed Admin<br/>
+Enter Text for Search =LOC@0001<br/>
+Element displayed in 62ms<br/>
+Angular request time 961ms<br/>
+Click Customer<br/>
+Angular request time 1748ms<br/>
+Angular request time 9ms<br/>
+Customer Location Id found LOC@0001<br/>
+Strings Matched: LOC@0001 = LOC@0001<br/>
+Verify Credit Status<br/>
+Angular request time 10ms<br/>
+Angular request time 10ms<br/>
+Element displayed in 28ms<br/>
+Element displayed in 39ms<br/>
+Angular request time 12ms<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus@64bf3bbf</td></tr>
+<tr>
+<td title='com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails.TestCustomerDetails()'><b>TestCustomerDetails</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails<br/>
+<a href="#Output-747158012" onClick='toggleBox("Output-747158012", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-747158012" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-747158012">
+Angular Request Completed in 12ms<br/>
+Sign in Page Title Verified<br/>
+Angular Request Completed in 7ms<br/>
+User signed Admin<br/>
+Enter Text for Search =LOC@0001<br/>
+Element displayed in 63ms<br/>
+Angular request time 941ms<br/>
+Click Customer<br/>
+Angular request time 1920ms<br/>
+Angular request time 18ms<br/>
+Customer Location Id found LOC@0001<br/>
+Strings Matched: LOC@0001 = LOC@0001<br/>
+Angular request time 10ms<br/>
+Verifying Customer Details<br/>
+Strings Matched: 2312 = 2312<br/>
+Strings Matched: Driv12312OUL312 = Driv12312OUL312<br/>
+Strings Matched: (900) 786-0102 = (900) 786-0102<br/>
+Strings Matched: + Ext. 0112 = + Ext. 0112<br/>
+Strings Matched: automation@cogsdale.com = automation@cogsdale.com<br/>
+Strings Matched: 007 Test Apt = 007 Test Apt<br/>
+Strings Matched: New York NY 12345-67890 = New York NY 12345-67890<br/>
+Angular request time 12ms<br/>
+Element displayed in 37ms<br/>
+Element displayed in 33ms<br/>
+Angular request time 29ms<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails@64bfbc86</td></tr>
+<tr>
+<td title='com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch.TestSearchAccount()'><b>TestSearchAccount</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch<br/>
+<a href="#Output-107994825" onClick='toggleBox("Output-107994825", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-107994825" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-107994825">
+Angular Request Completed in 18ms<br/>
+Sign in Page Title Verified<br/>
+Angular Request Completed in 16ms<br/>
+User signed Admin<br/>
+Enter Text for Search =LOC@0004<br/>
+Element displayed in 62ms<br/>
+Angular request time 1066ms<br/>
+Click Customer<br/>
+Angular request time 1783ms<br/>
+Angular request time 10ms<br/>
+Customer Location Id found LOC@0004<br/>
+Strings Matched: LOC@0004 = LOC@0004<br/>
+Angular request time 12ms<br/>
+Click on Account Drop down<br/>
+Element displayed in 31ms<br/>
+Enter Account Name<br/>
+Angular request time 12ms<br/>
+Element displayed in 33ms<br/>
+Angular request time 115ms<br/>
+Element displayed in 23ms<br/>
+Angular request time 348ms<br/>
+Angular request time 16ms<br/>
+Element displayed in 31ms<br/>
+Element displayed in 33ms<br/>
+Angular request time 17ms<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch@192b07fd</td></tr>
+<tr>
+<td title='com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad.TestSearchAlertOnLoad()'><b>TestSearchAlertOnLoad</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad<br/>
+<a href="#Output-1047873000" onClick='toggleBox("Output-1047873000", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1047873000" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1047873000">
+Angular Request Completed in 18ms<br/>
+Sign in Page Title Verified<br/>
+Angular Request Completed in 15ms<br/>
+User signed Admin<br/>
+Element is displayed in 62ms<br/>
+Element is displayed in 63ms<br/>
+Enter Text for Search =Alert<br/>
+Element displayed in 31ms<br/>
+Angular request time 963ms<br/>
+Click Customer<br/>
+Angular request time 1818ms<br/>
+Element is displayed in 83ms<br/>
+Angular request time 10ms<br/>
+Customer Name found Mr. Alert Test<br/>
+Strings Matched: Mr. Alert Test = Mr. Alert Test<br/>
+Angular request time 10ms<br/>
+Element is displayed in 56ms<br/>
+Angular request time 10ms<br/>
+Click Ok<br/>
+Alert on Load Clicked<br/>
+Angular request time 11ms<br/>
+Element displayed in 33ms<br/>
+Angular request time 11ms<br/>
+Click Description<br/>
+Angular request time 11ms<br/>
+Element is displayed in 56ms<br/>
+Angular request time 8ms<br/>
+Click Ok<br/>
+Alert on description Clicked<br/>
+Angular request time 8ms<br/>
+Element displayed in 31ms<br/>
+Element displayed in 45ms<br/>
+Angular request time 13ms<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad@5025a98f</td></tr>
+<tr>
+<td title='com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks.TestSearchAutobyBookMark()'><b>TestSearchAutobyBookMark</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks<br/>
+<a href="#Output-1684541910" onClick='toggleBox("Output-1684541910", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1684541910" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1684541910">
+Angular Request Completed in 21ms<br/>
+Sign in Page Title Verified<br/>
+Angular Request Completed in 62ms<br/>
+User signed Admin<br/>
+Element is displayed in 62ms<br/>
+Element is displayed in 63ms<br/>
+Click History Customer<br/>
+Click Customer<br/>
+Angular request time 2249ms<br/>
+Element is displayed in 56ms<br/>
+Angular request time 16ms<br/>
+Customer Name found Noel Ford<br/>
+Strings Matched: Noel Ford = Noel Ford<br/>
+Angular request time 15ms<br/>
+Element displayed in 32ms<br/>
+Element displayed in 32ms<br/>
+Angular request time 14ms<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks@2d928643</td></tr>
+<tr>
+<td title='com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName.TestSearchAutobyFirstName()'><b>TestSearchAutobyFirstName</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName<br/>
+<a href="#Output-1015539383" onClick='toggleBox("Output-1015539383", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1015539383" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1015539383">
+Angular Request Completed in 17ms<br/>
+Sign in Page Title Verified<br/>
+Angular Request Completed in 47ms<br/>
+User signed Admin<br/>
+Enter Text for Search =Automation<br/>
+Element displayed in 62ms<br/>
+Angular request time 1057ms<br/>
+Click Customer<br/>
+Angular request time 1797ms<br/>
+Angular request time 18ms<br/>
+Customer Name found Mr. Automation Mate<br/>
+Strings Matched: Mr. Automation Mate = Mr. Automation Mate<br/>
+Angular request time 9ms<br/>
+Element displayed in 31ms<br/>
+Element displayed in 32ms<br/>
+Angular request time 12ms<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName@29ca901e</td></tr>
+<tr>
+<td title='com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName.TestSearchAutobyLastName()'><b>TestSearchAutobyLastName</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName<br/>
+<a href="#Output-1174478906" onClick='toggleBox("Output-1174478906", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1174478906" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1174478906">
+Angular Request Completed in 13ms<br/>
+Sign in Page Title Verified<br/>
+Angular Request Completed in 47ms<br/>
+User signed Admin<br/>
+Enter Text for Search =Mate<br/>
+Element displayed in 94ms<br/>
+Angular request time 971ms<br/>
+Click Customer<br/>
+Angular request time 1750ms<br/>
+Angular request time 9ms<br/>
+Customer Name found Mr. Automation Mate<br/>
+Strings Matched: Mr. Automation Mate = Mr. Automation Mate<br/>
+Angular request time 9ms<br/>
+Element displayed in 29ms<br/>
+Element displayed in 31ms<br/>
+Angular request time 16ms<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName@5649fd9b</td></tr>
+<tr>
+<td title='com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction.TestSearchAutobyRecent()'><b>TestSearchAutobyRecent</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction<br/>
+<a href="#Output-288797801" onClick='toggleBox("Output-288797801", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-288797801" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-288797801">
+Angular Request Completed in 24ms<br/>
+Sign in Page Title Verified<br/>
+Angular Request Completed in 16ms<br/>
+User signed Admin<br/>
+Element is displayed in 62ms<br/>
+Click Recent<br/>
+Recent Customer =007 Test<br/>
+Click Customer<br/>
+Angular request time 2048ms<br/>
+Angular request time 10ms<br/>
+Click Ok<br/>
+Angular request time 8ms<br/>
+Element is displayed in 52ms<br/>
+Angular request time 10ms<br/>
+Strings Matched: 007 Test = 007 Test<br/>
+Angular request time 8ms<br/>
+Element displayed in 31ms<br/>
+Element displayed in 34ms<br/>
+Angular request time 19ms<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction@6adede5</td></tr>
+<tr>
+<td title='com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID.TestSearchID()'><b>TestSearchID</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID<br/>
+<a href="#Output-502848122" onClick='toggleBox("Output-502848122", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-502848122" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-502848122">
+Angular Request Completed in 67ms<br/>
+Sign in Page Title Verified<br/>
+Angular Request Completed in 46ms<br/>
+User signed Admin<br/>
+Enter Text for Search =0000011111<br/>
+Element displayed in 47ms<br/>
+Angular request time 1075ms<br/>
+Click Customer<br/>
+Angular request time 1964ms<br/>
+Angular request time 12ms<br/>
+CustomerId found 0000011111<br/>
+Strings Matched: 0000011111 = 0000011111<br/>
+Angular request time 11ms<br/>
+Element displayed in 31ms<br/>
+Element displayed in 43ms<br/>
+Angular request time 15ms<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID@4bec1f0c</td></tr>
+<tr>
+<td title='com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID.TestSearchbyLocationID()'><b>TestSearchbyLocationID</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID<br/>
+<a href="#Output-71016405" onClick='toggleBox("Output-71016405", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-71016405" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-71016405">
+Angular Request Completed in 17ms<br/>
+Sign in Page Title Verified<br/>
+Angular Request Completed in 31ms<br/>
+User signed Admin<br/>
+Enter Text for Search =LOC@0001<br/>
+Element displayed in 109ms<br/>
+Angular request time 951ms<br/>
+Click Customer<br/>
+Angular request time 1848ms<br/>
+Angular request time 8ms<br/>
+Customer Location Id found LOC@0001<br/>
+Strings Matched: LOC@0001 = LOC@0001<br/>
+Angular request time 11ms<br/>
+Verifying Address Details<br/>
+Strings Matched: 007 Aut Automation Street Rt 20001 Apt = 007 Aut Automation Street Rt 20001 Apt<br/>
+Strings Matched: Cloudy = Cloudy<br/>
+Strings Matched: D = D<br/>
+Strings Matched: 00720-019 = 00720-019<br/>
+Angular request time 16ms<br/>
+Element displayed in 47ms<br/>
+Element displayed in 32ms<br/>
+Angular request time 17ms<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID@20322d26</td></tr>
+<tr>
+<td title='com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection.TestSummarySectionOnChange()'><b>TestSummarySectionOnChange</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection<br/>
+<a href="#Output-1680365850" onClick='toggleBox("Output-1680365850", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1680365850" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1680365850">
+Angular Request Completed in 17ms<br/>
+Sign in Page Title Verified<br/>
+Angular Request Completed in 16ms<br/>
+User signed Admin<br/>
+Element is displayed in 63ms<br/>
+Element is displayed in 62ms<br/>
+Angular Request Completed in 16ms<br/>
+Enter Text for Search =Automation<br/>
+Element displayed in 31ms<br/>
+Angular request time 1064ms<br/>
+Click Customer<br/>
+Angular request time 2005ms<br/>
+Element is displayed in 57ms<br/>
+Angular request time 6ms<br/>
+Customer Name found Mr. Automation Mate<br/>
+Strings Matched: Mr. Automation Mate = Mr. Automation Mate<br/>
+Angular request time 7ms<br/>
+Element is displayed in 70ms<br/>
+Element is displayed in 43ms<br/>
+Element is displayed in 62ms<br/>
+Element is displayed in 62ms<br/>
+Angular request time 797ms<br/>
+Transaction Link Clicked<br/>
+Angular request time 1071ms<br/>
+Summary Link Clicked<br/>
+Angular request time 9ms<br/>
+Element is displayed in 40ms<br/>
+Element is displayed in 110ms<br/>
+Element is displayed in 46ms<br/>
+Element is displayed in 47ms<br/>
+$0.00 equals$0.00<br/>
+-$14.74 equals-$14.74<br/>
+$0.00 equals$0.00<br/>
+-$14.74 equals-$14.74<br/>
+$0.00 equals$0.00<br/>
+-$14.74 equals-$14.74<br/>
+$0.00 equals$0.00<br/>
+-$14.74 equals-$14.74<br/>
+Angular request time 16ms<br/>
+Element displayed in 31ms<br/>
+Element displayed in 41ms<br/>
+Angular request time 12ms<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection@49993335</td></tr>
+</table><p>
+</body>
+</html>

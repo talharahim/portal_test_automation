@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Test_Suite_for_Nexus_Portal">
+              <span class="suite-name border-passed">Test Suite for Nexus Portal</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Test_Suite_for_Nexus_Portal">
+                    <span>F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Test_Suite_for_Nexus_Portal">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Test_Suite_for_Nexus_Portal">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Test_Suite_for_Nexus_Portal">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Test_Suite_for_Nexus_Portal">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Test_Suite_for_Nexus_Portal">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Test_Suite_for_Nexus_Portal">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Test_Suite_for_Nexus_Portal" class="hide-methods passed suite-Test_Suite_for_Nexus_Portal"> (hide)</a> <!-- hide-methods passed suite-Test_Suite_for_Nexus_Portal -->
+                      <a href="#" panel-name="suite-Test_Suite_for_Nexus_Portal" class="show-methods passed suite-Test_Suite_for_Nexus_Portal"> (show)</a> <!-- show-methods passed suite-Test_Suite_for_Nexus_Portal -->
+                    </span>
+                    <div class="method-list-content passed suite-Test_Suite_for_Nexus_Portal">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_for_Nexus_Portal" title="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit" hash-for-method="TestContactEdit">TestContactEdit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_for_Nexus_Portal" title="com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus" hash-for-method="TestCreditStatus">TestCreditStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_for_Nexus_Portal" title="com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails" hash-for-method="TestCustomerDetails">TestCustomerDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_for_Nexus_Portal" title="com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch" hash-for-method="TestSearchAccount">TestSearchAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_for_Nexus_Portal" title="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad" hash-for-method="TestSearchAlertOnLoad">TestSearchAlertOnLoad</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_for_Nexus_Portal" title="com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks" hash-for-method="TestSearchAutobyBookMark">TestSearchAutobyBookMark</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_for_Nexus_Portal" title="com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName" hash-for-method="TestSearchAutobyFirstName">TestSearchAutobyFirstName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_for_Nexus_Portal" title="com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName" hash-for-method="TestSearchAutobyLastName">TestSearchAutobyLastName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_for_Nexus_Portal" title="com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction" hash-for-method="TestSearchAutobyRecent">TestSearchAutobyRecent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_for_Nexus_Portal" title="com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID" hash-for-method="TestSearchID">TestSearchID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_for_Nexus_Portal" title="com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID" hash-for-method="TestSearchbyLocationID">TestSearchbyLocationID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite_for_Nexus_Portal" title="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection" hash-for-method="TestSummarySectionOnChange">TestSummarySectionOnChange</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Test_Suite_for_Nexus_Portal -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Test_Suite_for_Nexus_Portal" class="panel Test_Suite_for_Nexus_Portal">
+          <div class="suite-Test_Suite_for_Nexus_Portal-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestSearchAutobyLastName">
+                  </a> <!-- TestSearchAutobyLastName -->
+                  <span class="method-name">TestSearchAutobyLastName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite_for_Nexus_Portal-class-passed -->
+          <div class="suite-Test_Suite_for_Nexus_Portal-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestSearchAlertOnLoad">
+                  </a> <!-- TestSearchAlertOnLoad -->
+                  <span class="method-name">TestSearchAlertOnLoad</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite_for_Nexus_Portal-class-passed -->
+          <div class="suite-Test_Suite_for_Nexus_Portal-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestContactEdit">
+                  </a> <!-- TestContactEdit -->
+                  <span class="method-name">TestContactEdit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite_for_Nexus_Portal-class-passed -->
+          <div class="suite-Test_Suite_for_Nexus_Portal-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestSearchAccount">
+                  </a> <!-- TestSearchAccount -->
+                  <span class="method-name">TestSearchAccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite_for_Nexus_Portal-class-passed -->
+          <div class="suite-Test_Suite_for_Nexus_Portal-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestSearchAutobyRecent">
+                  </a> <!-- TestSearchAutobyRecent -->
+                  <span class="method-name">TestSearchAutobyRecent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite_for_Nexus_Portal-class-passed -->
+          <div class="suite-Test_Suite_for_Nexus_Portal-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestSummarySectionOnChange">
+                  </a> <!-- TestSummarySectionOnChange -->
+                  <span class="method-name">TestSummarySectionOnChange</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite_for_Nexus_Portal-class-passed -->
+          <div class="suite-Test_Suite_for_Nexus_Portal-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestSearchbyLocationID">
+                  </a> <!-- TestSearchbyLocationID -->
+                  <span class="method-name">TestSearchbyLocationID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite_for_Nexus_Portal-class-passed -->
+          <div class="suite-Test_Suite_for_Nexus_Portal-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestSearchAutobyFirstName">
+                  </a> <!-- TestSearchAutobyFirstName -->
+                  <span class="method-name">TestSearchAutobyFirstName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite_for_Nexus_Portal-class-passed -->
+          <div class="suite-Test_Suite_for_Nexus_Portal-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestSearchID">
+                  </a> <!-- TestSearchID -->
+                  <span class="method-name">TestSearchID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite_for_Nexus_Portal-class-passed -->
+          <div class="suite-Test_Suite_for_Nexus_Portal-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCreditStatus">
+                  </a> <!-- TestCreditStatus -->
+                  <span class="method-name">TestCreditStatus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite_for_Nexus_Portal-class-passed -->
+          <div class="suite-Test_Suite_for_Nexus_Portal-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestSearchAutobyBookMark">
+                  </a> <!-- TestSearchAutobyBookMark -->
+                  <span class="method-name">TestSearchAutobyBookMark</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite_for_Nexus_Portal-class-passed -->
+          <div class="suite-Test_Suite_for_Nexus_Portal-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestCustomerDetails">
+                  </a> <!-- TestCustomerDetails -->
+                  <span class="method-name">TestCustomerDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite_for_Nexus_Portal-class-passed -->
+        </div> <!-- panel Test_Suite_for_Nexus_Portal -->
+        <div panel-name="test-xml-Test_Suite_for_Nexus_Portal" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;10&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Test Suite for Nexus Portal&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.NexusPortalAutomation.Utilities.Java.CustTestNGListener&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;NexusTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID&quot;/&gt;
+      &lt;class name=&quot;com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName&quot;/&gt;
+      &lt;class name=&quot;com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName&quot;/&gt;
+      &lt;class name=&quot;com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction&quot;/&gt;
+      &lt;class name=&quot;com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks&quot;/&gt;
+      &lt;class name=&quot;com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad&quot;/&gt;
+      &lt;class name=&quot;com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection&quot;/&gt;
+      &lt;class name=&quot;com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID&quot;/&gt;
+      &lt;class name=&quot;com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch&quot;/&gt;
+      &lt;class name=&quot;com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails&quot;/&gt;
+      &lt;class name=&quot;com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus&quot;/&gt;
+      &lt;class name=&quot;com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- NexusTest --&gt;
+&lt;/suite&gt; &lt;!-- Test Suite for Nexus Portal --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Test_Suite_for_Nexus_Portal" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Test Suite for Nexus Portal</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">NexusTest (12 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Test_Suite_for_Nexus_Portal" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Test Suite for Nexus Portal</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Test_Suite_for_Nexus_Portal" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Test Suite for Nexus Portal</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Test_Suite_for_Nexus_Portal');
+function tableData_Test_Suite_for_Nexus_Portal() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TestSummarySectionOnChange')
+data.setCell(0, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection')
+data.setCell(0, 3, 23610);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TestContactEdit')
+data.setCell(1, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit')
+data.setCell(1, 3, 22874);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TestSearchAlertOnLoad')
+data.setCell(2, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad')
+data.setCell(2, 3, 20822);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TestSearchbyLocationID')
+data.setCell(3, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID')
+data.setCell(3, 3, 20684);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TestSearchAccount')
+data.setCell(4, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch')
+data.setCell(4, 3, 20516);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TestSearchAutobyBookMark')
+data.setCell(5, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks')
+data.setCell(5, 3, 20424);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TestCreditStatus')
+data.setCell(6, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus')
+data.setCell(6, 3, 20409);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TestCustomerDetails')
+data.setCell(7, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails')
+data.setCell(7, 3, 20274);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TestSearchAutobyFirstName')
+data.setCell(8, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName')
+data.setCell(8, 3, 20273);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TestSearchAutobyLastName')
+data.setCell(9, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName')
+data.setCell(9, 3, 20080);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TestSearchID')
+data.setCell(10, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID')
+data.setCell(10, 3, 20059);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'TestSearchAutobyRecent')
+data.setCell(11, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction')
+data.setCell(11, 3, 19696);
+window.suiteTableData['Test_Suite_for_Nexus_Portal']= { tableData: data, tableDiv: 'times-div-Test_Suite_for_Nexus_Portal'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-Test_Suite_for_Nexus_Portal">
+              </div> <!-- times-div-Test_Suite_for_Nexus_Portal -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Test_Suite_for_Nexus_Portal" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Test Suite for Nexus Portal</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TestSearchID</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Angular Request Completed in 67ms</span>
+                <span class="reporter-method-output">Sign in Page Title Verified</span>
+                <span class="reporter-method-output">Angular Request Completed in 46ms</span>
+                <span class="reporter-method-output">User signed Admin</span>
+                <span class="reporter-method-output">Enter Text for Search =0000011111</span>
+                <span class="reporter-method-output">Element displayed in 47ms</span>
+                <span class="reporter-method-output">Angular request time 1075ms</span>
+                <span class="reporter-method-output">Click Customer</span>
+                <span class="reporter-method-output">Angular request time 1964ms</span>
+                <span class="reporter-method-output">Angular request time 12ms</span>
+                <span class="reporter-method-output">CustomerId found 0000011111</span>
+                <span class="reporter-method-output">Strings Matched: 0000011111 = 0000011111</span>
+                <span class="reporter-method-output">Angular request time 11ms</span>
+                <span class="reporter-method-output">Element displayed in 31ms</span>
+                <span class="reporter-method-output">Element displayed in 43ms</span>
+                <span class="reporter-method-output">Angular request time 15ms</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TestSearchAccount</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Angular Request Completed in 18ms</span>
+                <span class="reporter-method-output">Sign in Page Title Verified</span>
+                <span class="reporter-method-output">Angular Request Completed in 16ms</span>
+                <span class="reporter-method-output">User signed Admin</span>
+                <span class="reporter-method-output">Enter Text for Search =LOC@0004</span>
+                <span class="reporter-method-output">Element displayed in 62ms</span>
+                <span class="reporter-method-output">Angular request time 1066ms</span>
+                <span class="reporter-method-output">Click Customer</span>
+                <span class="reporter-method-output">Angular request time 1783ms</span>
+                <span class="reporter-method-output">Angular request time 10ms</span>
+                <span class="reporter-method-output">Customer Location Id found LOC@0004</span>
+                <span class="reporter-method-output">Strings Matched: LOC@0004 = LOC@0004</span>
+                <span class="reporter-method-output">Angular request time 12ms</span>
+                <span class="reporter-method-output">Click on Account Drop down</span>
+                <span class="reporter-method-output">Element displayed in 31ms</span>
+                <span class="reporter-method-output">Enter Account Name</span>
+                <span class="reporter-method-output">Angular request time 12ms</span>
+                <span class="reporter-method-output">Element displayed in 33ms</span>
+                <span class="reporter-method-output">Angular request time 115ms</span>
+                <span class="reporter-method-output">Element displayed in 23ms</span>
+                <span class="reporter-method-output">Angular request time 348ms</span>
+                <span class="reporter-method-output">Angular request time 16ms</span>
+                <span class="reporter-method-output">Element displayed in 31ms</span>
+                <span class="reporter-method-output">Element displayed in 33ms</span>
+                <span class="reporter-method-output">Angular request time 17ms</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TestSearchbyLocationID</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Angular Request Completed in 17ms</span>
+                <span class="reporter-method-output">Sign in Page Title Verified</span>
+                <span class="reporter-method-output">Angular Request Completed in 31ms</span>
+                <span class="reporter-method-output">User signed Admin</span>
+                <span class="reporter-method-output">Enter Text for Search =LOC@0001</span>
+                <span class="reporter-method-output">Element displayed in 109ms</span>
+                <span class="reporter-method-output">Angular request time 951ms</span>
+                <span class="reporter-method-output">Click Customer</span>
+                <span class="reporter-method-output">Angular request time 1848ms</span>
+                <span class="reporter-method-output">Angular request time 8ms</span>
+                <span class="reporter-method-output">Customer Location Id found LOC@0001</span>
+                <span class="reporter-method-output">Strings Matched: LOC@0001 = LOC@0001</span>
+                <span class="reporter-method-output">Angular request time 11ms</span>
+                <span class="reporter-method-output">Verifying Address Details</span>
+                <span class="reporter-method-output">Strings Matched: 007 Aut Automation Street Rt 20001 Apt = 007 Aut Automation Street Rt 20001 Apt</span>
+                <span class="reporter-method-output">Strings Matched: Cloudy = Cloudy</span>
+                <span class="reporter-method-output">Strings Matched: D = D</span>
+                <span class="reporter-method-output">Strings Matched: 00720-019 = 00720-019</span>
+                <span class="reporter-method-output">Angular request time 16ms</span>
+                <span class="reporter-method-output">Element displayed in 47ms</span>
+                <span class="reporter-method-output">Element displayed in 32ms</span>
+                <span class="reporter-method-output">Angular request time 17ms</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TestSearchAutobyFirstName</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Angular Request Completed in 17ms</span>
+                <span class="reporter-method-output">Sign in Page Title Verified</span>
+                <span class="reporter-method-output">Angular Request Completed in 47ms</span>
+                <span class="reporter-method-output">User signed Admin</span>
+                <span class="reporter-method-output">Enter Text for Search =Automation</span>
+                <span class="reporter-method-output">Element displayed in 62ms</span>
+                <span class="reporter-method-output">Angular request time 1057ms</span>
+                <span class="reporter-method-output">Click Customer</span>
+                <span class="reporter-method-output">Angular request time 1797ms</span>
+                <span class="reporter-method-output">Angular request time 18ms</span>
+                <span class="reporter-method-output">Customer Name found Mr. Automation Mate</span>
+                <span class="reporter-method-output">Strings Matched: Mr. Automation Mate = Mr. Automation Mate</span>
+                <span class="reporter-method-output">Angular request time 9ms</span>
+                <span class="reporter-method-output">Element displayed in 31ms</span>
+                <span class="reporter-method-output">Element displayed in 32ms</span>
+                <span class="reporter-method-output">Angular request time 12ms</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TestSummarySectionOnChange</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Angular Request Completed in 17ms</span>
+                <span class="reporter-method-output">Sign in Page Title Verified</span>
+                <span class="reporter-method-output">Angular Request Completed in 16ms</span>
+                <span class="reporter-method-output">User signed Admin</span>
+                <span class="reporter-method-output">Element is displayed in 63ms</span>
+                <span class="reporter-method-output">Element is displayed in 62ms</span>
+                <span class="reporter-method-output">Angular Request Completed in 16ms</span>
+                <span class="reporter-method-output">Enter Text for Search =Automation</span>
+                <span class="reporter-method-output">Element displayed in 31ms</span>
+                <span class="reporter-method-output">Angular request time 1064ms</span>
+                <span class="reporter-method-output">Click Customer</span>
+                <span class="reporter-method-output">Angular request time 2005ms</span>
+                <span class="reporter-method-output">Element is displayed in 57ms</span>
+                <span class="reporter-method-output">Angular request time 6ms</span>
+                <span class="reporter-method-output">Customer Name found Mr. Automation Mate</span>
+                <span class="reporter-method-output">Strings Matched: Mr. Automation Mate = Mr. Automation Mate</span>
+                <span class="reporter-method-output">Angular request time 7ms</span>
+                <span class="reporter-method-output">Element is displayed in 70ms</span>
+                <span class="reporter-method-output">Element is displayed in 43ms</span>
+                <span class="reporter-method-output">Element is displayed in 62ms</span>
+                <span class="reporter-method-output">Element is displayed in 62ms</span>
+                <span class="reporter-method-output">Angular request time 797ms</span>
+                <span class="reporter-method-output">Transaction Link Clicked</span>
+                <span class="reporter-method-output">Angular request time 1071ms</span>
+                <span class="reporter-method-output">Summary Link Clicked</span>
+                <span class="reporter-method-output">Angular request time 9ms</span>
+                <span class="reporter-method-output">Element is displayed in 40ms</span>
+                <span class="reporter-method-output">Element is displayed in 110ms</span>
+                <span class="reporter-method-output">Element is displayed in 46ms</span>
+                <span class="reporter-method-output">Element is displayed in 47ms</span>
+                <span class="reporter-method-output">$0.00 equals$0.00</span>
+                <span class="reporter-method-output">-$14.74 equals-$14.74</span>
+                <span class="reporter-method-output">$0.00 equals$0.00</span>
+                <span class="reporter-method-output">-$14.74 equals-$14.74</span>
+                <span class="reporter-method-output">$0.00 equals$0.00</span>
+                <span class="reporter-method-output">-$14.74 equals-$14.74</span>
+                <span class="reporter-method-output">$0.00 equals$0.00</span>
+                <span class="reporter-method-output">-$14.74 equals-$14.74</span>
+                <span class="reporter-method-output">Angular request time 16ms</span>
+                <span class="reporter-method-output">Element displayed in 31ms</span>
+                <span class="reporter-method-output">Element displayed in 41ms</span>
+                <span class="reporter-method-output">Angular request time 12ms</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TestCustomerDetails</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Angular Request Completed in 12ms</span>
+                <span class="reporter-method-output">Sign in Page Title Verified</span>
+                <span class="reporter-method-output">Angular Request Completed in 7ms</span>
+                <span class="reporter-method-output">User signed Admin</span>
+                <span class="reporter-method-output">Enter Text for Search =LOC@0001</span>
+                <span class="reporter-method-output">Element displayed in 63ms</span>
+                <span class="reporter-method-output">Angular request time 941ms</span>
+                <span class="reporter-method-output">Click Customer</span>
+                <span class="reporter-method-output">Angular request time 1920ms</span>
+                <span class="reporter-method-output">Angular request time 18ms</span>
+                <span class="reporter-method-output">Customer Location Id found LOC@0001</span>
+                <span class="reporter-method-output">Strings Matched: LOC@0001 = LOC@0001</span>
+                <span class="reporter-method-output">Angular request time 10ms</span>
+                <span class="reporter-method-output">Verifying Customer Details</span>
+                <span class="reporter-method-output">Strings Matched: 2312 = 2312</span>
+                <span class="reporter-method-output">Strings Matched: Driv12312OUL312 = Driv12312OUL312</span>
+                <span class="reporter-method-output">Strings Matched: (900) 786-0102 = (900) 786-0102</span>
+                <span class="reporter-method-output">Strings Matched: + Ext. 0112 = + Ext. 0112</span>
+                <span class="reporter-method-output">Strings Matched: automation@cogsdale.com = automation@cogsdale.com</span>
+                <span class="reporter-method-output">Strings Matched: 007 Test Apt = 007 Test Apt</span>
+                <span class="reporter-method-output">Strings Matched: New York NY 12345-67890 = New York NY 12345-67890</span>
+                <span class="reporter-method-output">Angular request time 12ms</span>
+                <span class="reporter-method-output">Element displayed in 37ms</span>
+                <span class="reporter-method-output">Element displayed in 33ms</span>
+                <span class="reporter-method-output">Angular request time 29ms</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TestCreditStatus</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Angular Request Completed in 26ms</span>
+                <span class="reporter-method-output">Sign in Page Title Verified</span>
+                <span class="reporter-method-output">Angular Request Completed in 30ms</span>
+                <span class="reporter-method-output">User signed Admin</span>
+                <span class="reporter-method-output">Enter Text for Search =LOC@0001</span>
+                <span class="reporter-method-output">Element displayed in 62ms</span>
+                <span class="reporter-method-output">Angular request time 961ms</span>
+                <span class="reporter-method-output">Click Customer</span>
+                <span class="reporter-method-output">Angular request time 1748ms</span>
+                <span class="reporter-method-output">Angular request time 9ms</span>
+                <span class="reporter-method-output">Customer Location Id found LOC@0001</span>
+                <span class="reporter-method-output">Strings Matched: LOC@0001 = LOC@0001</span>
+                <span class="reporter-method-output">Verify Credit Status</span>
+                <span class="reporter-method-output">Angular request time 10ms</span>
+                <span class="reporter-method-output">Angular request time 10ms</span>
+                <span class="reporter-method-output">Element displayed in 28ms</span>
+                <span class="reporter-method-output">Element displayed in 39ms</span>
+                <span class="reporter-method-output">Angular request time 12ms</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TestSearchAutobyLastName</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Angular Request Completed in 13ms</span>
+                <span class="reporter-method-output">Sign in Page Title Verified</span>
+                <span class="reporter-method-output">Angular Request Completed in 47ms</span>
+                <span class="reporter-method-output">User signed Admin</span>
+                <span class="reporter-method-output">Enter Text for Search =Mate</span>
+                <span class="reporter-method-output">Element displayed in 94ms</span>
+                <span class="reporter-method-output">Angular request time 971ms</span>
+                <span class="reporter-method-output">Click Customer</span>
+                <span class="reporter-method-output">Angular request time 1750ms</span>
+                <span class="reporter-method-output">Angular request time 9ms</span>
+                <span class="reporter-method-output">Customer Name found Mr. Automation Mate</span>
+                <span class="reporter-method-output">Strings Matched: Mr. Automation Mate = Mr. Automation Mate</span>
+                <span class="reporter-method-output">Angular request time 9ms</span>
+                <span class="reporter-method-output">Element displayed in 29ms</span>
+                <span class="reporter-method-output">Element displayed in 31ms</span>
+                <span class="reporter-method-output">Angular request time 16ms</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TestSearchAlertOnLoad</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Angular Request Completed in 18ms</span>
+                <span class="reporter-method-output">Sign in Page Title Verified</span>
+                <span class="reporter-method-output">Angular Request Completed in 15ms</span>
+                <span class="reporter-method-output">User signed Admin</span>
+                <span class="reporter-method-output">Element is displayed in 62ms</span>
+                <span class="reporter-method-output">Element is displayed in 63ms</span>
+                <span class="reporter-method-output">Enter Text for Search =Alert</span>
+                <span class="reporter-method-output">Element displayed in 31ms</span>
+                <span class="reporter-method-output">Angular request time 963ms</span>
+                <span class="reporter-method-output">Click Customer</span>
+                <span class="reporter-method-output">Angular request time 1818ms</span>
+                <span class="reporter-method-output">Element is displayed in 83ms</span>
+                <span class="reporter-method-output">Angular request time 10ms</span>
+                <span class="reporter-method-output">Customer Name found Mr. Alert Test</span>
+                <span class="reporter-method-output">Strings Matched: Mr. Alert Test = Mr. Alert Test</span>
+                <span class="reporter-method-output">Angular request time 10ms</span>
+                <span class="reporter-method-output">Element is displayed in 56ms</span>
+                <span class="reporter-method-output">Angular request time 10ms</span>
+                <span class="reporter-method-output">Click Ok</span>
+                <span class="reporter-method-output">Alert on Load Clicked</span>
+                <span class="reporter-method-output">Angular request time 11ms</span>
+                <span class="reporter-method-output">Element displayed in 33ms</span>
+                <span class="reporter-method-output">Angular request time 11ms</span>
+                <span class="reporter-method-output">Click Description</span>
+                <span class="reporter-method-output">Angular request time 11ms</span>
+                <span class="reporter-method-output">Element is displayed in 56ms</span>
+                <span class="reporter-method-output">Angular request time 8ms</span>
+                <span class="reporter-method-output">Click Ok</span>
+                <span class="reporter-method-output">Alert on description Clicked</span>
+                <span class="reporter-method-output">Angular request time 8ms</span>
+                <span class="reporter-method-output">Element displayed in 31ms</span>
+                <span class="reporter-method-output">Element displayed in 45ms</span>
+                <span class="reporter-method-output">Angular request time 13ms</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TestContactEdit</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Angular Request Completed in 15ms</span>
+                <span class="reporter-method-output">Sign in Page Title Verified</span>
+                <span class="reporter-method-output">Angular Request Completed in 37ms</span>
+                <span class="reporter-method-output">User signed Admin</span>
+                <span class="reporter-method-output">Enter Text for Search =LOC@0004</span>
+                <span class="reporter-method-output">Element displayed in 47ms</span>
+                <span class="reporter-method-output">Angular request time 990ms</span>
+                <span class="reporter-method-output">Click Customer</span>
+                <span class="reporter-method-output">Angular request time 1737ms</span>
+                <span class="reporter-method-output">Angular request time 26ms</span>
+                <span class="reporter-method-output">Customer Location Id found LOC@0004</span>
+                <span class="reporter-method-output">Strings Matched: LOC@0004 = LOC@0004</span>
+                <span class="reporter-method-output">Angular request time 11ms</span>
+                <span class="reporter-method-output">Angular request time 18ms</span>
+                <span class="reporter-method-output">Angular request time 17ms</span>
+                <span class="reporter-method-output">Angular request time 28ms</span>
+                <span class="reporter-method-output">Angular request time 10ms</span>
+                <span class="reporter-method-output">Angular request time 8ms</span>
+                <span class="reporter-method-output">Angular request time 9ms</span>
+                <span class="reporter-method-output">Angular request time 11ms</span>
+                <span class="reporter-method-output">Angular request time 8ms</span>
+                <span class="reporter-method-output">Angular request time 463ms</span>
+                <span class="reporter-method-output">Angular request time 448ms</span>
+                <span class="reporter-method-output">Verifying Customer Details</span>
+                <span class="reporter-method-output">Strings Matched: 2312 = 2312</span>
+                <span class="reporter-method-output">Strings Matched: Driv12312OUL312 = Driv12312OUL312</span>
+                <span class="reporter-method-output">Strings Matched: (900) 786-0102 = (900) 786-0102</span>
+                <span class="reporter-method-output">Strings Matched: + Ext. 0112 = + Ext. 0112</span>
+                <span class="reporter-method-output">Strings Matched: automation@cogsdale.com = automation@cogsdale.com</span>
+                <span class="reporter-method-output">Strings Matched: 007 Test Apt = 007 Test Apt</span>
+                <span class="reporter-method-output">Strings Matched: New York NY 12345-67890 = New York NY 12345-67890</span>
+                <span class="reporter-method-output">Angular request time 16ms</span>
+                <span class="reporter-method-output">Element displayed in 31ms</span>
+                <span class="reporter-method-output">Element displayed in 32ms</span>
+                <span class="reporter-method-output">Angular request time 35ms</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TestSearchAutobyBookMark</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Angular Request Completed in 21ms</span>
+                <span class="reporter-method-output">Sign in Page Title Verified</span>
+                <span class="reporter-method-output">Angular Request Completed in 62ms</span>
+                <span class="reporter-method-output">User signed Admin</span>
+                <span class="reporter-method-output">Element is displayed in 62ms</span>
+                <span class="reporter-method-output">Element is displayed in 63ms</span>
+                <span class="reporter-method-output">Click History Customer</span>
+                <span class="reporter-method-output">Click Customer</span>
+                <span class="reporter-method-output">Angular request time 2249ms</span>
+                <span class="reporter-method-output">Element is displayed in 56ms</span>
+                <span class="reporter-method-output">Angular request time 16ms</span>
+                <span class="reporter-method-output">Customer Name found Noel Ford</span>
+                <span class="reporter-method-output">Strings Matched: Noel Ford = Noel Ford</span>
+                <span class="reporter-method-output">Angular request time 15ms</span>
+                <span class="reporter-method-output">Element displayed in 32ms</span>
+                <span class="reporter-method-output">Element displayed in 32ms</span>
+                <span class="reporter-method-output">Angular request time 14ms</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TestSearchAutobyRecent</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Angular Request Completed in 24ms</span>
+                <span class="reporter-method-output">Sign in Page Title Verified</span>
+                <span class="reporter-method-output">Angular Request Completed in 16ms</span>
+                <span class="reporter-method-output">User signed Admin</span>
+                <span class="reporter-method-output">Element is displayed in 62ms</span>
+                <span class="reporter-method-output">Click Recent</span>
+                <span class="reporter-method-output">Recent Customer =007 Test</span>
+                <span class="reporter-method-output">Click Customer</span>
+                <span class="reporter-method-output">Angular request time 2048ms</span>
+                <span class="reporter-method-output">Angular request time 10ms</span>
+                <span class="reporter-method-output">Click Ok</span>
+                <span class="reporter-method-output">Angular request time 8ms</span>
+                <span class="reporter-method-output">Element is displayed in 52ms</span>
+                <span class="reporter-method-output">Angular request time 10ms</span>
+                <span class="reporter-method-output">Strings Matched: 007 Test = 007 Test</span>
+                <span class="reporter-method-output">Angular request time 8ms</span>
+                <span class="reporter-method-output">Element displayed in 31ms</span>
+                <span class="reporter-method-output">Element displayed in 34ms</span>
+                <span class="reporter-method-output">Angular request time 19ms</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Test_Suite_for_Nexus_Portal" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Test_Suite_for_Nexus_Portal" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">readProp(org.testng.TestRunner@33a55bd8)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TestSearchID</span>
+                <span class="method-start">4250 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">24309 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">readProp(org.testng.TestRunner@33a55bd8)</span>
+                <span class="method-start">26423 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TestSearchbyLocationID</span>
+                <span class="method-start">29719 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">50403 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">readProp(org.testng.TestRunner@33a55bd8)</span>
+                <span class="method-start">52547 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TestSearchAccount</span>
+                <span class="method-start">55767 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">76284 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">readProp(org.testng.TestRunner@33a55bd8)</span>
+                <span class="method-start">78438 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TestCustomerDetails</span>
+                <span class="method-start">81657 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">101931 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">readProp(org.testng.TestRunner@33a55bd8)</span>
+                <span class="method-start">102047 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TestCreditStatus</span>
+                <span class="method-start">105422 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">125831 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">readProp(org.testng.TestRunner@33a55bd8)</span>
+                <span class="method-start">128016 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TestContactEdit</span>
+                <span class="method-start">131344 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">154218 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">readProp(org.testng.TestRunner@33a55bd8)</span>
+                <span class="method-start">156344 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TestSearchAutobyRecent</span>
+                <span class="method-start">159657 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">179353 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">readProp(org.testng.TestRunner@33a55bd8)</span>
+                <span class="method-start">179485 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TestSearchAutobyBookMark</span>
+                <span class="method-start">182703 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">203128 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">readProp(org.testng.TestRunner@33a55bd8)</span>
+                <span class="method-start">205454 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TestSearchAlertOnLoad</span>
+                <span class="method-start">208720 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">229542 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">readProp(org.testng.TestRunner@33a55bd8)</span>
+                <span class="method-start">229656 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TestSummarySectionOnChange</span>
+                <span class="method-start">232969 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">256579 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">readProp(org.testng.TestRunner@33a55bd8)</span>
+                <span class="method-start">256688 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TestSearchAutobyFirstName</span>
+                <span class="method-start">259969 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">280242 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">readProp(org.testng.TestRunner@33a55bd8)</span>
+                <span class="method-start">280406 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TestSearchAutobyLastName</span>
+                <span class="method-start">283719 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">303799 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

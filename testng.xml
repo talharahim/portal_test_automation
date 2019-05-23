@@ -35,6 +35,8 @@
 				name="com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus" />
 			<class
 				name="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit" />
+			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondartContact" />
 		</classes>
 
 	</test> <!-- Test -->
