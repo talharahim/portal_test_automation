@@ -78,18 +78,19 @@ public class CommonMethods {
 		if (element.isDisplayed()) {
 			long end = System.currentTimeMillis();
 			long dt = end - begin;
-			log("Element is displayed in " + dt + "ms");
+			log("Element '"+id+"' is displayed in " + dt + "ms");
 		}
 	}
 
 	public void WaitForObjectbyXpath(WebDriver driver, String path) {
 		long begin = System.currentTimeMillis();
+		
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(path)));
 		if (element.isDisplayed()) {
 			long end = System.currentTimeMillis();
 			long dt = end - begin;
-			log("Element is displayed in " + dt + "ms");
+			log("Element '"+path+"' is displayed in " + dt + "ms");
 		}
 	}
 
@@ -120,7 +121,7 @@ public class CommonMethods {
 		}
 		long end = System.currentTimeMillis();
 		long dt = end - begin;
-		log("Element displayed in " + dt + "ms");
+		log("Element "+ element.toString()+ " displayed in " + dt + "ms");
 	}
 
 	public boolean CheckStringmapsAreEqual(Map<String, String> mapA, Map<String, String> mapB) {

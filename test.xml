@@ -11,7 +11,7 @@
 	</listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs"/>
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0009_public"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

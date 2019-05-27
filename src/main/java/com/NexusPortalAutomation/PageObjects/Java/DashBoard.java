@@ -66,6 +66,12 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "BILL_Account_Balance")
 	WebElement BILL_AccountBalance;
 
+	@FindBy(id = "BILL_Installment_Budget")
+	WebElement BILL_Installment;
+	
+	@FindBy(id = "BILL_Over_Short")
+	WebElement BILL_Over_Short;
+	
 	@FindBy(css = "#mat-tab-label-0-1 > div:nth-child(1)")
 	@CacheLookup
 	WebElement TransactionLink;
@@ -171,7 +177,10 @@ public class DashBoard extends CommonMethods {
 
 	@FindBy(id = "'CL_Historical_Note_Additional_Text'")
 	WebElement AddedNotes;
-
+	
+	@FindBy(id = "BILL_Amount_Due")
+	WebElement BILL_Amount_Due;
+	
 	public DashBoard(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -380,11 +389,18 @@ public class DashBoard extends CommonMethods {
 		WaitForObjectbyId(driver, "BILL_Unposted_Balance");
 		WaitForObjectbyId(driver, "BILL_Account_Balance");
 		WaitForObjectbyId(driver, "BILL_Past_Due");
+		WaitForObjectbyId(driver, "BILL_Installment_Budget");
+		WaitForObjectbyId(driver, "BILL_Over_Short");
+		
 		HashMap<String, String> BillingInfo = new HashMap<String, String>();
 		BillingInfo.put("BillDue", BILL_PastDue.getText());
 		BillingInfo.put("BillCurrent", BILL_CurrentBalance.getText());
 		BillingInfo.put("BillUnposted", BILL_UnpostedBalance.getText());
 		BillingInfo.put("BillAccount", BILL_AccountBalance.getText());
+		BillingInfo.put("BillInstallment", BILL_Installment.getText());
+		BillingInfo.put("BillOverDue", BILL_Over_Short.getText());
+		BillingInfo.put("AmountDue", BILL_Amount_Due.getText());
+		
 		return BillingInfo;
 	}
 
@@ -514,8 +530,9 @@ public class DashBoard extends CommonMethods {
 				WaitAngular(driver);
 			}
 		} catch (NoSuchElementException e) {
+			//Not throwing error due to dynamic data
 			log("Alert not configured");
-			Assert.assertTrue(false, "A;ert not configured for this user");
+		
 		}
 	}
 

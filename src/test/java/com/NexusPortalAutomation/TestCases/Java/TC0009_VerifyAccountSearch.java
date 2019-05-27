@@ -11,10 +11,10 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 public class TC0009_VerifyAccountSearch extends BaseClass {
 
 	String LocationID = "LOC@0004";
-	String addLine = "007 Aut Automation Street Rt 20001 Apt";
+	String addLine = "007AAutomation Street Rt 20001 Apt";
 	String addCity = "Cloudy";
 	String addState = "D";
-	String addZip = "00720-019";
+	String addZip = "00720-017";
 	CommonMethods ComMethd = new CommonMethods();
 
 //This Test will test the search by Customer ID
