@@ -1,14 +1,16 @@
 package com.NexusPortalAutomation.TestCases.Java;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 
-public class TC0012_VerifyCreditStatus extends BaseClass {
+public class TC0017_StatementsValue extends BaseClass {
 
 	/*
 	 * This test the search by Recent Customer Name
@@ -20,12 +22,15 @@ public class TC0012_VerifyCreditStatus extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String LocationID = "LOC@0001";
+	public String LocationID = "STATEMENTS001";
+	public String StatmentDateValue = "Jul 31, 2019";
+	public String StatmentValue = "$56.71";
+
 	CommonMethods ComMethd = new CommonMethods();
 
-//This Test will test the search by Customer ID
+//This Test will test the 
 	@Test(priority = 1)
-	public void TestCreditStatus() throws IOException, InterruptedException {
+	public void TestBillingStatements() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
@@ -33,8 +38,16 @@ public class TC0012_VerifyCreditStatus extends BaseClass {
 		dbSrch.ClickCustomer();
 		// Verify Customer Location Id Updated for Test
 		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
-		// Verify Good Credit
-		dashBoard.VerifyGoodCredit();
+		// Verify Contact is updated accordingly
+		// "Verify Billing Information
+		System.out.print(driver.getCurrentUrl());
+		dashBoard.ClickBillStatementBtn();
+		//
+		ComMethd.VerifyString(dashBoard.getBillStatementDate(), StatmentDateValue);
+		//
+		ComMethd.VerifyString(dashBoard.getBillStatementAmount(), StatmentValue);
+		//To set the focus back
+		dashBoard.OverLay.click();
 		dashBoard.LogOut();
 	}
 

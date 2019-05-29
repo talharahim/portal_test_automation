@@ -12,6 +12,15 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 
 public class TC0007_TestSummarySection extends BaseClass {
 
+	/*
+	 * This test the search by Recent Customer Name
+	 * 
+	 * @author Talha Rahim
+	 * 
+	 * @version 1.0
+	 * 
+	 * @Since 2019-04-11
+	 */
 	public String UserName = "Mr. Automation Mate";
 	public CommonMethods ComMethd = new CommonMethods();
 

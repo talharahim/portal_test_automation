@@ -12,6 +12,15 @@ public class TC0002_TestSearchAutobyFirstName extends BaseClass {
 
 	public String UserName = "Mr. Automation Mate";
 	CommonMethods ComMethd = new CommonMethods();
+	/*
+	 * This test the search by Customer's First Name
+	 * 
+	 * @author Talha Rahim
+	 * 
+	 * @version 1.0
+	 * 
+	 * @Since 2019-04-11
+	 */
 
 //This Test will test the search by Customer's First Name
 	@Test(priority = 2)
@@ -22,8 +31,8 @@ public class TC0002_TestSearchAutobyFirstName extends BaseClass {
 		dbSrch.EnterSearchText("Automation");
 		dbSrch.ClickCustomer();
 		// Verify Login Name
-	    ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
-	 	dashBoard.LogOut();
+		ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
+		dashBoard.LogOut();
 
 	}
 

@@ -11,15 +11,17 @@ import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 
-/**
- * 
- * This Class will be used for to Test Contact Logs
- * 
- * @author Talha Rahim
- * @since 2019-05-24
- */
-
 public class TC0015_VerifyContactLogs extends BaseClass {
+
+	/*
+	 * This test the search by Recent Customer Name
+	 * 
+	 * @author Talha Rahim
+	 * 
+	 * @version 1.0
+	 * 
+	 * @Since 2019-04-11
+	 */
 
 	public String LocationID = "LOC@0004";
 	CommonMethods ComMethd = new CommonMethods();

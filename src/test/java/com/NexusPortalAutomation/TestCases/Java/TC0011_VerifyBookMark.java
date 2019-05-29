@@ -10,6 +10,16 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 
 public class TC0011_VerifyBookMark extends BaseClass {
 
+	/*
+	 * This test the search by Recent Customer Name
+	 * 
+	 * @author Talha Rahim
+	 * 
+	 * @version 1.0
+	 * 
+	 * @Since 2019-04-11
+	 */
+
 	public String LocationID = "LOC@0001";
 	CommonMethods ComMethd = new CommonMethods();
 

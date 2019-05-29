@@ -10,6 +10,16 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 
 public class TC0004_TestSearchbyRecentFunction extends BaseClass {
 
+	/*
+	 * This test the search by Recent Customer Name
+	 * 
+	 * @author Talha Rahim
+	 * 
+	 * @version 1.0
+	 * 
+	 * @Since 2019-04-11
+	 */
+
 	public String CustomerAddress;
 	public CommonMethods ComMethd = new CommonMethods();
 

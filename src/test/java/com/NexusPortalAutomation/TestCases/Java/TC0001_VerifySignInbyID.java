@@ -12,6 +12,16 @@ public class TC0001_VerifySignInbyID extends BaseClass {
 
 	public String CustomerID = "0000011111";
 	CommonMethods ComMethd = new CommonMethods();
+	/*
+	 * This Class Will Test the search by Customer ID
+	 * 
+	 * 
+	 * @author Talha Rahim
+	 * 
+	 * @version 1.0
+	 * 
+	 * @Since 2019-04-11
+	 */
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)

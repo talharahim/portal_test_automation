@@ -9,6 +9,16 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 
 public class TC0013_VerifyContactEdit extends BaseClass {
 
+	/*
+	 * This test the search by Recent Customer Name
+	 * 
+	 * @author Talha Rahim
+	 * 
+	 * @version 1.0
+	 * 
+	 * @Since 2019-04-11
+	 */
+
 	public String LocationID = "LOC@0004";
 	String ssn = "2312";
 	String lic = "Driv12312OUL312";

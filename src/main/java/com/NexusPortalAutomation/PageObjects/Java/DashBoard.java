@@ -68,10 +68,10 @@ public class DashBoard extends CommonMethods {
 
 	@FindBy(id = "BILL_Installment_Budget")
 	WebElement BILL_Installment;
-	
+
 	@FindBy(id = "BILL_Over_Short")
 	WebElement BILL_Over_Short;
-	
+
 	@FindBy(css = "#mat-tab-label-0-1 > div:nth-child(1)")
 	@CacheLookup
 	WebElement TransactionLink;
@@ -177,13 +177,133 @@ public class DashBoard extends CommonMethods {
 
 	@FindBy(id = "'CL_Historical_Note_Additional_Text'")
 	WebElement AddedNotes;
-	
+
 	@FindBy(id = "BILL_Amount_Due")
 	WebElement BILL_Amount_Due;
+
+	@FindBy(id = "BILL_Statement_Button")
+	WebElement BILLStatementBtn;
+
+	@FindBy(id = "BILL_Statement_1")
+	WebElement BILLStatement1;
+	// *[@id=""]
+
+	@FindBy(id = "BILL_Auto_Pay")
+	WebElement AutoPay;
+
+	@FindBy(id = "BILL_E_Bill")
+	WebElement EBill;
+
+	@FindBy(id = "BILL_Deposit_Amount")
+	WebElement DepositAmount;
+
+	@FindBy(xpath = "//*[@id=\"cdk-overlay-1\"]/div/div/button/span[2]")
+	WebElement BillStatementValue;
 	
+	@FindBy(css = "#cdk-overlay-1")
+	public WebElement OverLay;
+	
+
 	public DashBoard(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+	}
+
+	public String getAutoPay() {
+		String result = "OFF";
+		try {
+			waitForObject(driver, AutoPay);
+			if (!AutoPay.getText().equals("OFF")) {
+				result = "ON";
+			}
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "BILL Statement Button not found");
+		}
+
+		return result;
+	}
+
+	public String getDepositAmount() {
+		String result = "";
+		try {
+			waitForObject(driver, DepositAmount);
+			if (!DepositAmount.getText().equals("")) {
+				result = DepositAmount.getText();
+			}
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "BILL Statement Button not found");
+		}
+
+		return result;
+	}
+
+	public String getEBill() {
+		String result = "OFF";
+		try {
+			waitForObject(driver, EBill);
+			if (!EBill.getText().equals("OFF")) {
+				result = "ON";
+			}
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "BILL Statement Button not found");
+		}
+
+		return result;
+	}
+
+	public void ClickBillStatementBtn() {
+		try {
+			WaitAngular(driver);
+			BILLStatementBtn.click();
+			WaitAngular(driver);
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "BILL Statement Button not found");
+		}
+
+	}
+
+	public void ClickBillStatement() {
+		try {
+			WaitAngular(driver);
+			waitForObject(driver, BILLStatement1);
+			BILLStatement1.click();
+			WaitAngular(driver);
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "BILL Statement Button not found");
+		}
+
+	}
+
+	public String getBillStatementDate() {
+		log("Verify Bill Statement Date");
+		try {
+			WaitAngular(driver);
+			waitForObject(driver, BILLStatement1);
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "BILL Statement Button not found");
+		}
+
+		return BILLStatement1.getText();
+
+	}
+
+	public String getBillStatementAmount() {
+		try {
+			WaitAngular(driver);
+			waitForObject(driver, BillStatementValue);
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "BILL Statement Button not found");
+		}
+
+		return BillStatementValue.getText();
+
 	}
 
 	public void ClickSecondCust() {
@@ -391,7 +511,7 @@ public class DashBoard extends CommonMethods {
 		WaitForObjectbyId(driver, "BILL_Past_Due");
 		WaitForObjectbyId(driver, "BILL_Installment_Budget");
 		WaitForObjectbyId(driver, "BILL_Over_Short");
-		
+
 		HashMap<String, String> BillingInfo = new HashMap<String, String>();
 		BillingInfo.put("BillDue", BILL_PastDue.getText());
 		BillingInfo.put("BillCurrent", BILL_CurrentBalance.getText());
@@ -400,7 +520,7 @@ public class DashBoard extends CommonMethods {
 		BillingInfo.put("BillInstallment", BILL_Installment.getText());
 		BillingInfo.put("BillOverDue", BILL_Over_Short.getText());
 		BillingInfo.put("AmountDue", BILL_Amount_Due.getText());
-		
+
 		return BillingInfo;
 	}
 
@@ -488,18 +608,28 @@ public class DashBoard extends CommonMethods {
 		try {
 			WaitAngular(driver);
 			waitForObject(this.driver, LoggedUserLink);
-			if (LoggedUserLink.isDisplayed()) {
-				LoggedUserLink.click();
-				waitForObject(this.driver, LogOutLink);
-				Thread.sleep(300);
-				LogOutLink.click();
-				WaitAngular(driver);
-			} else {
-				Assert.assertFalse(true, "Log out link not found");
-			}
+			LoggedUserLink.click();
+			waitForObject(this.driver, LogOutLink);
+			Thread.sleep(300);
+			LogOutLink.click();
+			WaitAngular(driver);
+
 		} catch (NoSuchElementException | ElementClickInterceptedException e) {
 			log(e.getMessage());
 			Assert.assertTrue(false, "Unable to logout");
+		}
+
+	}
+
+	public void ClickUserName() throws InterruptedException {
+		try {
+			WaitAngular(driver);
+			waitForObject(this.driver, LoggedUserLink);
+			LoggedUserLink.click();
+
+		} catch (NoSuchElementException | ElementClickInterceptedException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "Unable to Click User");
 		}
 
 	}
@@ -530,9 +660,9 @@ public class DashBoard extends CommonMethods {
 				WaitAngular(driver);
 			}
 		} catch (NoSuchElementException e) {
-			//Not throwing error due to dynamic data
+			// Not throwing error due to dynamic data
 			log("Alert not configured");
-		
+
 		}
 	}
 

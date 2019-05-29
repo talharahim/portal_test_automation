@@ -10,6 +10,16 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 
 public class TC0010_VerifyCustomerDetails extends BaseClass {
 
+	/*
+	 * This test the search by Recent Customer Name
+	 * 
+	 * @author Talha Rahim
+	 * 
+	 * @version 1.0
+	 * 
+	 * @Since 2019-04-11
+	 */
+
 	String LocationID = "LOC@0001";
 	String ssn = "2312";
 	String lic = "Driv12312OUL312";
