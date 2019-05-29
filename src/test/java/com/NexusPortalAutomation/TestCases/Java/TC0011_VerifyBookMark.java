@@ -35,6 +35,7 @@ public class TC0011_VerifyBookMark extends BaseClass {
 	    ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
 	    // Click BookMark
 		dashBoard.ClickBookMarkDisabled();
+		
 		dashBoard.ClickBookMarkEnabled();
 		//Verify if it is Marked
 		//Click BookMark

@@ -2,6 +2,7 @@ package com.NexusPortalAutomation.PageObjects.Java;
 
 import java.util.HashMap;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -25,7 +26,7 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 public class DashBoard extends CommonMethods {
 
 	WebDriver driver;
-	@FindBy(css = ".user > a:nth-child(1)")
+	@FindBy(css = "body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account")
 	WebElement LoggedUserLink;
 
 	@FindBy(css = ".logout-label")
@@ -72,6 +73,16 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "BILL_Over_Short")
 	WebElement BILL_Over_Short;
 
+	@FindBy(id = "SERV_Service_1_1")
+	WebElement Service1;
+
+	@FindBy(id = "SERV_Service_1_2")
+	WebElement Service2;
+	@FindBy(id = "SERV_Service_1_3")
+	WebElement Service3;
+	@FindBy(id = "SERV_Service_1_4")
+	WebElement Service4;
+
 	@FindBy(css = "#mat-tab-label-0-1 > div:nth-child(1)")
 	@CacheLookup
 	WebElement TransactionLink;
@@ -96,16 +107,25 @@ public class DashBoard extends CommonMethods {
 	@CacheLookup
 	WebElement AddressZipCode;
 
-	@FindBy(id = "_Label")
+	@FindBy(id = "SRCH_Accounts_Label")
 	@CacheLookup
 	WebElement AccountDropdown;
 
-	@FindBy(xpath = "/html[1]/body[1]/wo-root[1]/wo-dashboard[1]/div[1]/mat-drawer-container[1]/mat-drawer-content[1]/div[1]/div[1]/div[1]/csm-customer-card[1]/csm-selector-inline[1]/csm-generic-expandable-selector[1]/div[1]/input[1]")
+	@FindBy(id = "SRCH_Accounts")
 	@CacheLookup
 	WebElement AccountSearchText;
 
-	@FindBy(xpath = "//div[@class='section']//div[2]//div[2]")
-	WebElement AccountSearchResult;
+	@FindBy(id = "SRCH_Accounts_Result1")
+	WebElement AccountSearchResult1;
+
+	@FindBy(id = "SRCH_Accounts_Result2")
+	WebElement AccountSearchResult2;
+
+	@FindBy(id = "SRCH_Accounts_Result3")
+	WebElement AccountSearchResult3;
+
+	@FindBy(id = "SRCH_Accounts_Result4")
+	WebElement AccountSearchResult4;
 
 	// SSN 'CUST_SSN'
 	@FindBy(id = "'CUST_SSN'")
@@ -199,10 +219,9 @@ public class DashBoard extends CommonMethods {
 
 	@FindBy(xpath = "//*[@id=\"cdk-overlay-1\"]/div/div/button/span[2]")
 	WebElement BillStatementValue;
-	
+
 	@FindBy(css = "#cdk-overlay-1")
 	public WebElement OverLay;
-	
 
 	public DashBoard(WebDriver driver) {
 		this.driver = driver;
@@ -463,10 +482,39 @@ public class DashBoard extends CommonMethods {
 		AccountSearchText.click();
 		AccountSearchText.sendKeys(AccountId);
 		WaitAngular(driver);
-		waitForObject(driver, AccountSearchResult);
-		AccountSearchResult.click();
-		WaitAngular(driver);
 
+	}
+
+	public void VerifySearchAccountResult1(String AccountName) throws InterruptedException {
+		WaitAngular(driver);
+		log("Verify Account Name =" + AccountName);
+		waitForObject(driver, AccountSearchResult1);
+		VerifyString(AccountSearchResult1.getText(), AccountName);
+		WaitAngular(driver);
+	}
+
+	public void VerifySearchAccountResult2(String AccountName) throws InterruptedException {
+		WaitAngular(driver);
+		log("Verify Account Name =" + AccountName);
+		waitForObject(driver, AccountSearchResult2);
+		VerifyString(AccountName, AccountSearchResult2.getText());
+		WaitAngular(driver);
+	}
+
+	public void VerifySearchAccountResult3(String AccountName) throws InterruptedException {
+		WaitAngular(driver);
+		log("Verify Account Name =" + AccountName);
+		waitForObject(driver, AccountSearchResult3);
+		VerifyString(AccountName, AccountSearchResult3.getText());
+		WaitAngular(driver);
+	}
+
+	public void VerifySearchAccountResult4(String AccountName) throws InterruptedException {
+		WaitAngular(driver);
+		log("Verify Account Name =" + AccountName);
+		waitForObject(driver, AccountSearchResult4);
+		VerifyString(AccountName, AccountSearchResult4.getText());
+		WaitAngular(driver);
 	}
 
 	public void verifyAddressDetails(String addline, String addCity, String addState, String addZip) {
@@ -522,6 +570,40 @@ public class DashBoard extends CommonMethods {
 		BillingInfo.put("AmountDue", BILL_Amount_Due.getText());
 
 		return BillingInfo;
+	}
+
+	public HashMap<String, String> GetBillingServiceInfo() {
+		WaitAngular(driver);
+		WaitForObjectbyId(driver, "SERV_Service_1_1");
+		WaitForObjectbyId(driver, "SERV_Service_1_2");
+		WaitForObjectbyId(driver, "SERV_Service_1_3");
+		WaitForObjectbyId(driver, "SERV_Service_1_4");
+
+		HashMap<String, String> BillingSrvcInfo = new HashMap<String, String>();
+		BillingSrvcInfo.put("Service1", Service1.findElement(By.id("SERV_Service_1_Service_Type_1")).getText());
+		BillingSrvcInfo.put("Service1Equipment", Service1.findElement(By.id("SERV_Service_1_Equipment_Id_1")).getText());
+		BillingSrvcInfo.put("Service1Rate", Service1.findElement(By.id("SERV_Service_1_Rate_Id_1")).getText());
+		BillingSrvcInfo.put("Service1Multi", Service1.findElement(By.id("SERV_Service_1_Multiplier_1")).getText());
+		BillingSrvcInfo.put("Service1Status", Service1.findElement(By.id("SERV_Service_1_Connection_Status")).getText());
+		
+		BillingSrvcInfo.put("Service2", Service2.findElement(By.id("SERV_Service_1_Service_Type_2")).getText());
+		BillingSrvcInfo.put("Service2Equipment", Service2.findElement(By.id("SERV_Service_1_Equipment_Id_2")).getText());
+		BillingSrvcInfo.put("Service2Rate", Service2.findElement(By.id("SERV_Service_1_Rate_Id_2")).getText());
+		BillingSrvcInfo.put("Service2Multi", Service2.findElement(By.id("SERV_Service_1_Multiplier_2")).getText());
+		BillingSrvcInfo.put("Service2Status", Service2.findElement(By.id("SERV_Service_1_Connection_Status")).getText());
+		
+		BillingSrvcInfo.put("Service3", Service3.findElement(By.id("SERV_Service_1_Service_Type_3")).getText());
+		BillingSrvcInfo.put("Service3Equipment", Service3.findElement(By.id("SERV_Service_1_Equipment_Id_3")).getText());
+		BillingSrvcInfo.put("Service3Rate", Service3.findElement(By.id("SERV_Service_1_Rate_Id_3")).getText());
+		BillingSrvcInfo.put("Service3Multi", Service3.findElement(By.id("SERV_Service_1_Multiplier_3")).getText());
+		BillingSrvcInfo.put("Service3Status", Service3.findElement(By.id("SERV_Service_1_Connection_Status")).getText());
+		
+		BillingSrvcInfo.put("Service4", Service4.findElement(By.id("SERV_Service_1_Service_Type_4")).getText());
+		BillingSrvcInfo.put("Service4Equipment", Service4.findElement(By.id("SERV_Service_1_Equipment_Id_4")).getText());
+		BillingSrvcInfo.put("Service4Rate", Service4.findElement(By.id("SERV_Service_1_Rate_Id_4")).getText());
+		BillingSrvcInfo.put("Service4Multi", Service4.findElement(By.id("SERV_Service_1_Multiplier_4")).getText());
+		BillingSrvcInfo.put("Service4Status", Service4.findElement(By.id("SERV_Service_1_Connection_Status")).getText());
+		return BillingSrvcInfo;
 	}
 
 	public String GetLogUserName() throws InterruptedException {

@@ -1,7 +1,9 @@
 package com.NexusPortalAutomation.TestCases.Java;
 
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 
 import org.testng.annotations.Test;
 
@@ -34,6 +36,11 @@ public class TC0016_VerifyBillingDetails extends BaseClass {
 	String EBill = "ON";
 	String Deposit = "$0.00";
 
+	List<String> Electric = Arrays.asList("ELECTRIC", "163598645", "GS-PK ENERGY", "1.00000", "Active");
+	List<String> Gas1 = Arrays.asList("GAS", "EQUIP-GAS-3", "GRESMTR40", "1.00000", "Active");
+	List<String> Internet = Arrays.asList("INTERNET", "EQUIP-PHONE-02", "INTERNET-60", "1.00000", "Active");
+	List<String> Gas2 = Arrays.asList("GAS", "GAS100001", "GRESMTR40", "1.00000", "Active");
+
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
 	public void TestSecondayContact() throws IOException, InterruptedException {
@@ -58,8 +65,33 @@ public class TC0016_VerifyBillingDetails extends BaseClass {
 		ComMethd.VerifyString(dashBoard.getAutoPay(), AutoPay);
 		ComMethd.VerifyString(dashBoard.getDepositAmount(), Deposit);
 		/*
-		 * Ids required for Service Order Section
+		 * Verify Text required for Service Order Section
 		 */
+		HashMap<String, String> BillingSrvInfo = dashBoard.GetBillingServiceInfo();
+		ComMethd.VerifyString(BillingSrvInfo.get("Service1"), Electric.get(0));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service1Equipment"), Electric.get(1));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service1Rate"), Electric.get(2));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service1Multi"), Electric.get(3));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service1Status"), Electric.get(4));
+
+		ComMethd.VerifyString(BillingSrvInfo.get("Service2"), Gas1.get(0));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service2Equipment"), Gas1.get(1));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service2Rate"), Gas1.get(2));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service2Multi"), Gas1.get(3));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service2Status"), Gas1.get(4));
+
+		ComMethd.VerifyString(BillingSrvInfo.get("Service3"), Internet.get(0));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service3Equipment"), Internet.get(1));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service3Rate"), Internet.get(2));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service3Multi"), Internet.get(3));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service3Status"), Internet.get(4));
+
+		ComMethd.VerifyString(BillingSrvInfo.get("Service4"), Gas2.get(0));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service4Equipment"), Gas2.get(1));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service4Rate"), Gas2.get(2));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service4Multi"), Gas2.get(3));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service4Status"), Gas2.get(4));
+
 		dashBoard.LogOut();
 	}
 
