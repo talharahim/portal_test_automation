@@ -64,6 +64,22 @@ public class CommonMethods {
 		return result;
 
 	}
+	
+	public boolean VerifyStringContains(String str1, String str2) {
+		boolean result = false;
+		if (str1 != "" && str2 != "") {
+			if (str1.contains(str2)) {
+				result = true;
+				log("Strings Matched: " + str1 + " = " + str2);
+				
+			} else {
+				log("Strings Not Matched: " + str1 + " != " + str2);
+				Assert.assertEquals(str1, str2);
+			}
+		}
+		return result;
+
+	}
 
 	public static void log(String message) {
 		Reporter.log(message);
@@ -81,6 +97,19 @@ public class CommonMethods {
 			log("Element '"+id+"' is displayed in " + dt + "ms");
 		}
 	}
+	
+	public void WaitForObjectbyElement(WebDriver driver, WebElement webElement) {
+		long begin = System.currentTimeMillis();
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(webElement));
+		
+		if (element.isDisplayed()) {
+			long end = System.currentTimeMillis();
+			long dt = end - begin;
+			log("Element '"+webElement.toString()+"' is displayed in " + dt + "ms");
+		}
+	}
+
 
 	public void WaitForObjectbyXpath(WebDriver driver, String path) {
 		long begin = System.currentTimeMillis();

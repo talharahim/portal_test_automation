@@ -1,9 +1,7 @@
 package com.NexusPortalAutomation.TestCases.Java;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
@@ -40,13 +38,13 @@ public class TC0017_StatementsValue extends BaseClass {
 		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
 		// "Verify Billing Information
-		System.out.print(driver.getCurrentUrl());
+		// System.out.print(driver.getCurrentUrl());
 		dashBoard.ClickBillStatementBtn();
 		//
 		ComMethd.VerifyString(dashBoard.getBillStatementDate(), StatmentDateValue);
 		//
 		ComMethd.VerifyString(dashBoard.getBillStatementAmount(), StatmentValue);
-		//To set the focus back
+		// To set the focus back
 		dashBoard.OverLay.click();
 		dashBoard.LogOut();
 	}

@@ -21,7 +21,7 @@ public class TC0009_VerifyAccountSearch extends BaseClass {
 	 */
 
 	String LocationID = "LOC@0004";
-	String AccntSrchResult = "1 Water 1 Bldg\r\n" + "New Smyrna Beach FL 12312-3\r\n" + "LOC@0004\r\n" + "$0.00";
+	String AccntSrchResult = "1 Water 1 Bldg";
 	String addLine = "007AAutomation Street Rt 20001 Apt";
 	String addCity = "Cloudy";
 	String addState = "D";
@@ -41,7 +41,6 @@ public class TC0009_VerifyAccountSearch extends BaseClass {
 		// Verify Customer Details for location Provided
 		dashBoard.SearchAccountWidget(LocationID);
 		dashBoard.VerifySearchAccountResult1(AccntSrchResult);
-
 		dashBoard.LogOut();
 	}
 }

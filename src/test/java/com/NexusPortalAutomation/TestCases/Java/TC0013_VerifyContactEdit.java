@@ -22,8 +22,8 @@ public class TC0013_VerifyContactEdit extends BaseClass {
 	public String LocationID = "LOC@0004";
 	String ssn = "2312";
 	String lic = "Driv12312OUL312";
-	String phone = "(900) 786-0102";
-	String ext = "+ Ext. 0112";
+	String phone = "(090) 078-6010";
+	String ext = "+ Ext. 2112";
 	String email = "automation@cogsdale.com";
 	String add = "007 Test Apt";
 	String acsz = "New York NY 12345-67890";

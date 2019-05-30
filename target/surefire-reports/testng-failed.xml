@@ -8,13 +8,13 @@
   </listeners>
   <test thread-count="10" verbose="0" name="NexusTest(failed)">
     <classes>
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails">
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks">
         <methods>
+          <include name="TestSearchAutobyBookMark"/>
           <include name="TearDown"/>
           <include name="readProp"/>
-          <include name="TestSecondayContact"/>
         </methods>
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails -->
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks -->
     </classes>
   </test> <!-- NexusTest(failed) -->
 </suite> <!-- Failed suite [Test Suite for Nexus Portal] -->

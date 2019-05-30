@@ -29,7 +29,7 @@ public class TC0005_TestSearchbyBookMarks extends BaseClass {
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
 		ComMethd.WaitForObjectbyXpath(driver, "//input[@id='SRCH_Input']");
-		ComMethd.WaitForObjectbyId(driver, "toolbar-saved");
+		ComMethd.WaitForObjectbyId(driver, "SRCH_Button_Favorites");
 		dbSrch.ClickHistoryCustomer();
 		dbSrch.ClickCustomer();
 		ComMethd.WaitForObjectbyXpath(driver, "//div[@class='address-details']");

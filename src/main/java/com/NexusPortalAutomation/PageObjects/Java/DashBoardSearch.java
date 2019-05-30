@@ -38,7 +38,7 @@ public class DashBoardSearch extends CommonMethods {
 	@CacheLookup
 	WebElement SrchCustomer;
 
-	@FindBy(css = "#SRCH_Button_Favorites > svg:nth-child(1)")
+	@FindBy(id = "SRCH_Button_Favorites")
 	@CacheLookup
 	WebElement HistCustomer;
 

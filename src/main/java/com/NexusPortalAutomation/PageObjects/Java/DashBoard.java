@@ -137,7 +137,6 @@ public class DashBoard extends CommonMethods {
 	WebElement DriverLic;
 
 	@FindBy(id = "CUST_Phone_Number_1")
-	@CacheLookup
 	WebElement Phone1;
 
 	@FindBy(id = "CUST_Phone_Number_Ext_1")
@@ -217,6 +216,9 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "BILL_Deposit_Amount")
 	WebElement DepositAmount;
 
+	@FindBy(id = "BILL_Statement_1")
+	WebElement BillStatementDate;
+	
 	@FindBy(xpath = "//*[@id=\"cdk-overlay-1\"]/div/div/button/span[2]")
 	WebElement BillStatementValue;
 
@@ -302,13 +304,13 @@ public class DashBoard extends CommonMethods {
 		log("Verify Bill Statement Date");
 		try {
 			WaitAngular(driver);
-			waitForObject(driver, BILLStatement1);
+			waitForObject(driver, BillStatementDate);
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
 			Assert.assertTrue(false, "BILL Statement Button not found");
 		}
 
-		return BILLStatement1.getText();
+		return BillStatementDate.getText();
 
 	}
 
@@ -320,10 +322,11 @@ public class DashBoard extends CommonMethods {
 			log(e.getMessage());
 			Assert.assertTrue(false, "BILL Statement Button not found");
 		}
-
 		return BillStatementValue.getText();
 
 	}
+	
+
 
 	public void ClickSecondCust() {
 		try {
@@ -393,6 +396,7 @@ public class DashBoard extends CommonMethods {
 	public void ClickContactEdit() {
 		try {
 			WaitAngular(driver);
+			WaitForObjectbyElement(driver, ContactEdit);
 			ContactEdit.click();
 			WaitAngular(driver);
 		} catch (NoSuchElementException e) {
@@ -405,6 +409,7 @@ public class DashBoard extends CommonMethods {
 	public void updatePhone1(String phoneNum) {
 		try {
 			WaitAngular(driver);
+			WaitForObjectbyElement(driver, ContactPhone1);
 			ContactPhone1.clear();
 			WaitAngular(driver);
 			ContactPhone1.sendKeys(phoneNum);
@@ -419,6 +424,7 @@ public class DashBoard extends CommonMethods {
 	public void updateEmail(String email) {
 		try {
 			WaitAngular(driver);
+			WaitForObjectbyElement(driver, ContactEmail1);
 			ContactEmail1.clear();
 			WaitAngular(driver);
 			ContactEmail1.sendKeys(email);
@@ -432,6 +438,7 @@ public class DashBoard extends CommonMethods {
 	public void clickContactUpdate() {
 		try {
 			WaitAngular(driver);
+			WaitForObjectbyElement(driver, ContactUpdateBtn);
 			ContactUpdateBtn.click();
 			WaitAngular(driver);
 		} catch (NoSuchElementException e) {
@@ -489,7 +496,7 @@ public class DashBoard extends CommonMethods {
 		WaitAngular(driver);
 		log("Verify Account Name =" + AccountName);
 		waitForObject(driver, AccountSearchResult1);
-		VerifyString(AccountSearchResult1.getText(), AccountName);
+		VerifyStringContains(AccountSearchResult1.getText(), AccountName);
 		WaitAngular(driver);
 	}
 
@@ -497,7 +504,7 @@ public class DashBoard extends CommonMethods {
 		WaitAngular(driver);
 		log("Verify Account Name =" + AccountName);
 		waitForObject(driver, AccountSearchResult2);
-		VerifyString(AccountName, AccountSearchResult2.getText());
+		VerifyStringContains(AccountName, AccountSearchResult2.getText());
 		WaitAngular(driver);
 	}
 
@@ -505,7 +512,7 @@ public class DashBoard extends CommonMethods {
 		WaitAngular(driver);
 		log("Verify Account Name =" + AccountName);
 		waitForObject(driver, AccountSearchResult3);
-		VerifyString(AccountName, AccountSearchResult3.getText());
+		VerifyStringContains(AccountName, AccountSearchResult3.getText());
 		WaitAngular(driver);
 	}
 
@@ -513,7 +520,7 @@ public class DashBoard extends CommonMethods {
 		WaitAngular(driver);
 		log("Verify Account Name =" + AccountName);
 		waitForObject(driver, AccountSearchResult4);
-		VerifyString(AccountName, AccountSearchResult4.getText());
+		VerifyStringContains(AccountName, AccountSearchResult4.getText());
 		WaitAngular(driver);
 	}
 
@@ -579,6 +586,7 @@ public class DashBoard extends CommonMethods {
 		WaitForObjectbyId(driver, "SERV_Service_1_3");
 		WaitForObjectbyId(driver, "SERV_Service_1_4");
 
+		log("Verifying Service Type 1");
 		HashMap<String, String> BillingSrvcInfo = new HashMap<String, String>();
 		BillingSrvcInfo.put("Service1", Service1.findElement(By.id("SERV_Service_1_Service_Type_1")).getText());
 		BillingSrvcInfo.put("Service1Equipment", Service1.findElement(By.id("SERV_Service_1_Equipment_Id_1")).getText());
@@ -586,18 +594,21 @@ public class DashBoard extends CommonMethods {
 		BillingSrvcInfo.put("Service1Multi", Service1.findElement(By.id("SERV_Service_1_Multiplier_1")).getText());
 		BillingSrvcInfo.put("Service1Status", Service1.findElement(By.id("SERV_Service_1_Connection_Status")).getText());
 		
+		log("Verifying Service Type 2");
 		BillingSrvcInfo.put("Service2", Service2.findElement(By.id("SERV_Service_1_Service_Type_2")).getText());
 		BillingSrvcInfo.put("Service2Equipment", Service2.findElement(By.id("SERV_Service_1_Equipment_Id_2")).getText());
 		BillingSrvcInfo.put("Service2Rate", Service2.findElement(By.id("SERV_Service_1_Rate_Id_2")).getText());
 		BillingSrvcInfo.put("Service2Multi", Service2.findElement(By.id("SERV_Service_1_Multiplier_2")).getText());
 		BillingSrvcInfo.put("Service2Status", Service2.findElement(By.id("SERV_Service_1_Connection_Status")).getText());
 		
+		log("Verifying Service Type 3");
 		BillingSrvcInfo.put("Service3", Service3.findElement(By.id("SERV_Service_1_Service_Type_3")).getText());
 		BillingSrvcInfo.put("Service3Equipment", Service3.findElement(By.id("SERV_Service_1_Equipment_Id_3")).getText());
 		BillingSrvcInfo.put("Service3Rate", Service3.findElement(By.id("SERV_Service_1_Rate_Id_3")).getText());
 		BillingSrvcInfo.put("Service3Multi", Service3.findElement(By.id("SERV_Service_1_Multiplier_3")).getText());
 		BillingSrvcInfo.put("Service3Status", Service3.findElement(By.id("SERV_Service_1_Connection_Status")).getText());
 		
+		log("Verifying Service Type 4");
 		BillingSrvcInfo.put("Service4", Service4.findElement(By.id("SERV_Service_1_Service_Type_4")).getText());
 		BillingSrvcInfo.put("Service4Equipment", Service4.findElement(By.id("SERV_Service_1_Equipment_Id_4")).getText());
 		BillingSrvcInfo.put("Service4Rate", Service4.findElement(By.id("SERV_Service_1_Rate_Id_4")).getText());
