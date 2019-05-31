@@ -37,12 +37,8 @@ public class TC0017_StatementsValue extends BaseClass {
 		// Verify Customer Location Id Updated for Test
 		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
-		// "Verify Billing Information
-		// System.out.print(driver.getCurrentUrl());
 		dashBoard.ClickBillStatementBtn();
-		//
 		ComMethd.VerifyString(dashBoard.getBillStatementDate(), StatmentDateValue);
-		//
 		ComMethd.VerifyString(dashBoard.getBillStatementAmount(), StatmentValue);
 		// To set the focus back
 		dashBoard.OverLay.click();

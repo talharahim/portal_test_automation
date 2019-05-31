@@ -2,7 +2,6 @@ package com.NexusPortalAutomation.TestCases.Java;
 
 import java.io.IOException;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
@@ -13,7 +12,7 @@ public class TC0003_TestSearchAutobyLastName extends BaseClass {
 
 	/*
 	 * This test the search by Customer's Last Name
-	 *  
+	 * 
 	 * @author Talha Rahim
 	 * 
 	 * @version 1.0

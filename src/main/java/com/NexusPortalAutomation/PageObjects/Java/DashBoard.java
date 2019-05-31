@@ -76,10 +76,21 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "SERV_Service_1_1")
 	WebElement Service1;
 
+	@FindBy(id = "SERV_Service_2_1")
+	WebElement Service1Tab;
+
 	@FindBy(id = "SERV_Service_1_2")
 	WebElement Service2;
+
+	@FindBy(id = "SERV_Service_3_1")
+	WebElement Service2Tab;
+
 	@FindBy(id = "SERV_Service_1_3")
 	WebElement Service3;
+
+	@FindBy(id = "SERV_Service_4_1")
+	WebElement Service3Tab;
+
 	@FindBy(id = "SERV_Service_1_4")
 	WebElement Service4;
 
@@ -218,16 +229,61 @@ public class DashBoard extends CommonMethods {
 
 	@FindBy(id = "BILL_Statement_1")
 	WebElement BillStatementDate;
-	
+
 	@FindBy(xpath = "//*[@id=\"cdk-overlay-1\"]/div/div/button/span[2]")
 	WebElement BillStatementValue;
 
 	@FindBy(css = "#cdk-overlay-1")
 	public WebElement OverLay;
 
+	@FindBy(id = "SERV_Tab_Type_1_Icon")
+	@CacheLookup
+	WebElement ServElectricIcon;
+
+	@FindBy(id = "SERV_Tab_Type_2_Icon")
+	@CacheLookup
+	WebElement ServGasIcon;
+
+	@FindBy(id = "SERV_Tab_Type_3_Icon")
+	@CacheLookup
+	WebElement ServInternetIcon;
+
 	public DashBoard(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+	}
+
+	public void ClickServElecIcon() {
+		try {
+			waitForObject(driver, ServElectricIcon);
+			ServElectricIcon.click();
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "Electric Icon not found");
+		}
+
+	}
+
+	public void ClickServGasIcon() {
+		try {
+			waitForObject(driver, ServGasIcon);
+			ServGasIcon.click();
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "Gas Icon not found");
+		}
+
+	}
+
+	public void ClickServInternetIcon() {
+		try {
+			waitForObject(driver, ServInternetIcon);
+			ServInternetIcon.click();
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "Internet Icon not found");
+		}
+
 	}
 
 	public String getAutoPay() {
@@ -325,8 +381,6 @@ public class DashBoard extends CommonMethods {
 		return BillStatementValue.getText();
 
 	}
-	
-
 
 	public void ClickSecondCust() {
 		try {
@@ -579,44 +633,94 @@ public class DashBoard extends CommonMethods {
 		return BillingInfo;
 	}
 
-	public HashMap<String, String> GetBillingServiceInfo() {
+	public HashMap<String, String> GetBillingServiceElectricInfo() {
 		WaitAngular(driver);
-		WaitForObjectbyId(driver, "SERV_Service_1_1");
-		WaitForObjectbyId(driver, "SERV_Service_1_2");
-		WaitForObjectbyId(driver, "SERV_Service_1_3");
-		WaitForObjectbyId(driver, "SERV_Service_1_4");
-
 		log("Verifying Service Type 1");
 		HashMap<String, String> BillingSrvcInfo = new HashMap<String, String>();
 		BillingSrvcInfo.put("Service1", Service1.findElement(By.id("SERV_Service_1_Service_Type_1")).getText());
-		BillingSrvcInfo.put("Service1Equipment", Service1.findElement(By.id("SERV_Service_1_Equipment_Id_1")).getText());
+		BillingSrvcInfo.put("Service1Equipment",
+				Service1.findElement(By.id("SERV_Service_1_Equipment_Id_1")).getText());
 		BillingSrvcInfo.put("Service1Rate", Service1.findElement(By.id("SERV_Service_1_Rate_Id_1")).getText());
 		BillingSrvcInfo.put("Service1Multi", Service1.findElement(By.id("SERV_Service_1_Multiplier_1")).getText());
-		BillingSrvcInfo.put("Service1Status", Service1.findElement(By.id("SERV_Service_1_Connection_Status")).getText());
-		
-		log("Verifying Service Type 2");
+		BillingSrvcInfo.put("Service1Status",
+				Service1.findElement(By.id("SERV_Service_1_Connection_Status")).getText());
+		return BillingSrvcInfo;
+
+	}
+
+	public HashMap<String, String> GetBillingServiceElectricTABInfo() {
+		WaitAngular(driver);
+		log("Verifying Service TAB, Row 1");
+		HashMap<String, String> BillingSrvcInfo = new HashMap<String, String>();
+		BillingSrvcInfo.put("Service1", Service1Tab.findElement(By.id("SERV_Service_2_Service_Type_1")).getText());
+		BillingSrvcInfo.put("Service1Equipment",
+				Service1Tab.findElement(By.id("SERV_Service_2_Equipment_Id_1")).getText());
+		BillingSrvcInfo.put("Service1Rate", Service1Tab.findElement(By.id("SERV_Service_2_Rate_Id_1")).getText());
+		BillingSrvcInfo.put("Service1Multi", Service1Tab.findElement(By.id("SERV_Service_2_Multiplier_1")).getText());
+		BillingSrvcInfo.put("Service1Status",
+				Service1Tab.findElement(By.id("SERV_Service_2_Connection_Status")).getText());
+		return BillingSrvcInfo;
+
+	}
+
+	public HashMap<String, String> GetBillingServiceGasInfo() {
+		WaitAngular(driver);
+		HashMap<String, String> BillingSrvcInfo = new HashMap<String, String>();
+		log("Verifying Service GAS ");
 		BillingSrvcInfo.put("Service2", Service2.findElement(By.id("SERV_Service_1_Service_Type_2")).getText());
-		BillingSrvcInfo.put("Service2Equipment", Service2.findElement(By.id("SERV_Service_1_Equipment_Id_2")).getText());
+		BillingSrvcInfo.put("Service2Equipment",
+				Service2.findElement(By.id("SERV_Service_1_Equipment_Id_2")).getText());
 		BillingSrvcInfo.put("Service2Rate", Service2.findElement(By.id("SERV_Service_1_Rate_Id_2")).getText());
 		BillingSrvcInfo.put("Service2Multi", Service2.findElement(By.id("SERV_Service_1_Multiplier_2")).getText());
-		BillingSrvcInfo.put("Service2Status", Service2.findElement(By.id("SERV_Service_1_Connection_Status")).getText());
-		
-		log("Verifying Service Type 3");
-		BillingSrvcInfo.put("Service3", Service3.findElement(By.id("SERV_Service_1_Service_Type_3")).getText());
-		BillingSrvcInfo.put("Service3Equipment", Service3.findElement(By.id("SERV_Service_1_Equipment_Id_3")).getText());
-		BillingSrvcInfo.put("Service3Rate", Service3.findElement(By.id("SERV_Service_1_Rate_Id_3")).getText());
-		BillingSrvcInfo.put("Service3Multi", Service3.findElement(By.id("SERV_Service_1_Multiplier_3")).getText());
-		BillingSrvcInfo.put("Service3Status", Service3.findElement(By.id("SERV_Service_1_Connection_Status")).getText());
-		
-		log("Verifying Service Type 4");
-		BillingSrvcInfo.put("Service4", Service4.findElement(By.id("SERV_Service_1_Service_Type_4")).getText());
-		BillingSrvcInfo.put("Service4Equipment", Service4.findElement(By.id("SERV_Service_1_Equipment_Id_4")).getText());
-		BillingSrvcInfo.put("Service4Rate", Service4.findElement(By.id("SERV_Service_1_Rate_Id_4")).getText());
-		BillingSrvcInfo.put("Service4Multi", Service4.findElement(By.id("SERV_Service_1_Multiplier_4")).getText());
-		BillingSrvcInfo.put("Service4Status", Service4.findElement(By.id("SERV_Service_1_Connection_Status")).getText());
+		BillingSrvcInfo.put("Service2Status",
+				Service2.findElement(By.id("SERV_Service_1_Connection_Status")).getText());
 		return BillingSrvcInfo;
 	}
 
+	public HashMap<String, String> GetBillingServiceGasTABInfo() {
+		WaitAngular(driver);
+		HashMap<String, String> BillingSrvcInfo = new HashMap<String, String>();
+		log("Verifying Service GAS Row 1");
+		BillingSrvcInfo.put("Service2", Service2Tab.findElement(By.id("SERV_Service_3_Service_Type_1")).getText());
+		BillingSrvcInfo.put("Service2Equipment",
+				Service2Tab.findElement(By.id("SERV_Service_3_Equipment_Id_1")).getText());
+		BillingSrvcInfo.put("Service2Rate", Service2Tab.findElement(By.id("SERV_Service_3_Rate_Id_1")).getText());
+		BillingSrvcInfo.put("Service2Multi", Service2Tab.findElement(By.id("SERV_Service_3_Multiplier_1")).getText());
+		BillingSrvcInfo.put("Service2Status",
+				Service2Tab.findElement(By.id("SERV_Service_3_Connection_Status")).getText());
+		return BillingSrvcInfo;
+	}
+
+	public HashMap<String, String> GetBillingServiceInternetInfo() {
+		WaitAngular(driver);
+
+		HashMap<String, String> BillingSrvcInfo = new HashMap<String, String>();
+		log("Verifying Service Type Internet");
+		BillingSrvcInfo.put("Service3", Service3.findElement(By.id("SERV_Service_1_Service_Type_3")).getText());
+		BillingSrvcInfo.put("Service3Equipment",
+				Service3.findElement(By.id("SERV_Service_1_Equipment_Id_3")).getText());
+		BillingSrvcInfo.put("Service3Rate", Service3.findElement(By.id("SERV_Service_1_Rate_Id_3")).getText());
+		BillingSrvcInfo.put("Service3Multi", Service3.findElement(By.id("SERV_Service_1_Multiplier_3")).getText());
+		BillingSrvcInfo.put("Service3Status",
+				Service3.findElement(By.id("SERV_Service_1_Connection_Status")).getText());
+		return BillingSrvcInfo;
+	}
+
+	
+	public HashMap<String, String> GetBillingServiceInternetTABInfo() {
+		WaitAngular(driver);
+
+		HashMap<String, String> BillingSrvcInfo = new HashMap<String, String>();
+		log("Verifying Service Type Internet Tab Row 1");
+		BillingSrvcInfo.put("Service3", Service3Tab.findElement(By.id("SERV_Service_4_Service_Type_1")).getText());
+		BillingSrvcInfo.put("Service3Equipment",
+				Service3Tab.findElement(By.id("SERV_Service_4_Equipment_Id_1")).getText());
+		BillingSrvcInfo.put("Service3Rate", Service3Tab.findElement(By.id("SERV_Service_4_Rate_Id_1")).getText());
+		BillingSrvcInfo.put("Service3Multi", Service3Tab.findElement(By.id("SERV_Service_4_Multiplier_1")).getText());
+		BillingSrvcInfo.put("Service3Status",
+				Service3Tab.findElement(By.id("SERV_Service_4_Connection_Status")).getText());
+		return BillingSrvcInfo;
+	}
 	public String GetLogUserName() throws InterruptedException {
 
 		String result = "";

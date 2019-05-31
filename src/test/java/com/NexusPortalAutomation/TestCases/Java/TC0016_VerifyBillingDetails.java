@@ -67,12 +67,14 @@ public class TC0016_VerifyBillingDetails extends BaseClass {
 		/*
 		 * Verify Text required for Service Order Section
 		 */
-		HashMap<String, String> BillingSrvInfo = dashBoard.GetBillingServiceInfo();
+		HashMap<String, String> BillingSrvInfo = dashBoard.GetBillingServiceElectricInfo();
 		ComMethd.VerifyString(BillingSrvInfo.get("Service1"), Electric.get(0));
 		ComMethd.VerifyString(BillingSrvInfo.get("Service1Equipment"), Electric.get(1));
 		ComMethd.VerifyString(BillingSrvInfo.get("Service1Rate"), Electric.get(2));
 		ComMethd.VerifyString(BillingSrvInfo.get("Service1Multi"), Electric.get(3));
 		ComMethd.VerifyString(BillingSrvInfo.get("Service1Status"), Electric.get(4));
+
+		BillingSrvInfo = dashBoard.GetBillingServiceGasInfo();
 
 		ComMethd.VerifyString(BillingSrvInfo.get("Service2"), Gas1.get(0));
 		ComMethd.VerifyString(BillingSrvInfo.get("Service2Equipment"), Gas1.get(1));
@@ -80,17 +82,40 @@ public class TC0016_VerifyBillingDetails extends BaseClass {
 		ComMethd.VerifyString(BillingSrvInfo.get("Service2Multi"), Gas1.get(3));
 		ComMethd.VerifyString(BillingSrvInfo.get("Service2Status"), Gas1.get(4));
 
+		BillingSrvInfo = dashBoard.GetBillingServiceInternetInfo();
+
 		ComMethd.VerifyString(BillingSrvInfo.get("Service3"), Internet.get(0));
 		ComMethd.VerifyString(BillingSrvInfo.get("Service3Equipment"), Internet.get(1));
 		ComMethd.VerifyString(BillingSrvInfo.get("Service3Rate"), Internet.get(2));
 		ComMethd.VerifyString(BillingSrvInfo.get("Service3Multi"), Internet.get(3));
 		ComMethd.VerifyString(BillingSrvInfo.get("Service3Status"), Internet.get(4));
 
-		ComMethd.VerifyString(BillingSrvInfo.get("Service4"), Gas2.get(0));
-		ComMethd.VerifyString(BillingSrvInfo.get("Service4Equipment"), Gas2.get(1));
-		ComMethd.VerifyString(BillingSrvInfo.get("Service4Rate"), Gas2.get(2));
-		ComMethd.VerifyString(BillingSrvInfo.get("Service4Multi"), Gas2.get(3));
-		ComMethd.VerifyString(BillingSrvInfo.get("Service4Status"), Gas2.get(4));
+		// Verify Service by Clicking on Electricity icon
+		dashBoard.ClickServElecIcon();
+		BillingSrvInfo = dashBoard.GetBillingServiceElectricTABInfo();
+		ComMethd.VerifyString(BillingSrvInfo.get("Service1"), Electric.get(0));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service1Equipment"), Electric.get(1));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service1Rate"), Electric.get(2));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service1Multi"), Electric.get(3));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service1Status"), Electric.get(4));
+
+		dashBoard.ClickServGasIcon();
+		BillingSrvInfo = dashBoard.GetBillingServiceGasTABInfo();
+		
+		ComMethd.VerifyString(BillingSrvInfo.get("Service2"), Gas1.get(0));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service2Equipment"), Gas1.get(1));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service2Rate"), Gas1.get(2));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service2Multi"), Gas1.get(3));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service2Status"), Gas1.get(4));
+
+		dashBoard.ClickServInternetIcon();
+		BillingSrvInfo = dashBoard.GetBillingServiceInternetTABInfo();
+
+		ComMethd.VerifyString(BillingSrvInfo.get("Service3"), Internet.get(0));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service3Equipment"), Internet.get(1));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service3Rate"), Internet.get(2));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service3Multi"), Internet.get(3));
+		ComMethd.VerifyString(BillingSrvInfo.get("Service3Status"), Internet.get(4));
 
 		dashBoard.LogOut();
 	}
