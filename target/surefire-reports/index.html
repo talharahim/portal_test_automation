@@ -207,35 +207,10 @@
                   <a name="TestSearchAutobyBookMark">
                   </a> <!-- TestSearchAutobyBookMark -->
                   <span class="method-name">TestSearchAutobyBookMark</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;SRCH_Button_Favorites&quot;}
-  (Session info: chrome=74.0.3729.169)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;RND-BASE-A&apos;, ip: &apos;10.14.13.231&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60221}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
-Session ID: cededaa4b5da8cdc0cc5cf7d480e0a97
-*** Element info: {Using=css selector, value=SRCH_Button_Favorites}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:416)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch.ClickHistoryCustomer(DashBoardSearch.java:88)
-	at com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks.TestSearchAutobyBookMark(TC0005_TestSearchbyBookMarks.java:33)
-... Removed 33 stack frames
+                  <div class="stack-trace">java.lang.AssertionError: expected [Mr. Talha Rahim] but found [Noel Ford]
+	at com.NexusPortalAutomation.Utilities.Java.CommonMethods.VerifyString(CommonMethods.java:61)
+	at com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks.TestSearchAutobyBookMark(TC0005_TestSearchbyBookMarks.java:37)
+... Removed 35 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -259,21 +234,6 @@ Session ID: cededaa4b5da8cdc0cc5cf7d480e0a97
           <div class="suite-Test_Suite_for_Nexus_Portal-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestContactEdit">
-                  </a> <!-- TestContactEdit -->
-                  <span class="method-name">TestContactEdit</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_Suite_for_Nexus_Portal-class-passed -->
-          <div class="suite-Test_Suite_for_Nexus_Portal-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -282,6 +242,21 @@ Session ID: cededaa4b5da8cdc0cc5cf7d480e0a97
                   <a name="TestSearchAlertOnLoad">
                   </a> <!-- TestSearchAlertOnLoad -->
                   <span class="method-name">TestSearchAlertOnLoad</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite_for_Nexus_Portal-class-passed -->
+          <div class="suite-Test_Suite_for_Nexus_Portal-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestContactEdit">
+                  </a> <!-- TestContactEdit -->
+                  <span class="method-name">TestContactEdit</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -349,21 +324,6 @@ Session ID: cededaa4b5da8cdc0cc5cf7d480e0a97
           <div class="suite-Test_Suite_for_Nexus_Portal-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestSearchAutobyFirstName">
-                  </a> <!-- TestSearchAutobyFirstName -->
-                  <span class="method-name">TestSearchAutobyFirstName</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_Suite_for_Nexus_Portal-class-passed -->
-          <div class="suite-Test_Suite_for_Nexus_Portal-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -372,6 +332,21 @@ Session ID: cededaa4b5da8cdc0cc5cf7d480e0a97
                   <a name="TestSearchbyLocationID">
                   </a> <!-- TestSearchbyLocationID -->
                   <span class="method-name">TestSearchbyLocationID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite_for_Nexus_Portal-class-passed -->
+          <div class="suite-Test_Suite_for_Nexus_Portal-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestSearchAutobyFirstName">
+                  </a> <!-- TestSearchAutobyFirstName -->
+                  <span class="method-name">TestSearchAutobyFirstName</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -524,70 +499,70 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(15);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TestSearchID')
-data.setCell(0, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID')
-data.setCell(0, 3, 31672);
+data.setCell(0, 1, 'TestSearchAutobyLastName')
+data.setCell(0, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName')
+data.setCell(0, 3, 55269);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TestSearchAutobyRecent')
-data.setCell(1, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction')
-data.setCell(1, 3, 30859);
+data.setCell(1, 1, 'TestSearchAutobyFirstName')
+data.setCell(1, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName')
+data.setCell(1, 3, 54530);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TestSummarySectionOnChange')
-data.setCell(2, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection')
-data.setCell(2, 3, 27423);
+data.setCell(2, 1, 'TestSearchAlertOnLoad')
+data.setCell(2, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad')
+data.setCell(2, 3, 50277);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TestContactEdit')
-data.setCell(3, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit')
-data.setCell(3, 3, 24576);
+data.setCell(3, 1, 'TestSearchAutobyBookMark')
+data.setCell(3, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks')
+data.setCell(3, 3, 46921);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TestBillingStatements')
-data.setCell(4, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue')
-data.setCell(4, 3, 23964);
+data.setCell(4, 1, 'TestSearchAutobyRecent')
+data.setCell(4, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction')
+data.setCell(4, 3, 46152);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TestSecondayContact')
-data.setCell(5, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact')
-data.setCell(5, 3, 23525);
+data.setCell(5, 1, 'TestContactEdit')
+data.setCell(5, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit')
+data.setCell(5, 3, 42438);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'TestCustomerDetails')
 data.setCell(6, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails')
-data.setCell(6, 3, 23120);
+data.setCell(6, 3, 40019);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TestSearchbyLocationID')
-data.setCell(7, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID')
-data.setCell(7, 3, 23005);
+data.setCell(7, 1, 'TestSummarySectionOnChange')
+data.setCell(7, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection')
+data.setCell(7, 3, 38327);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TestSearchAlertOnLoad')
-data.setCell(8, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad')
-data.setCell(8, 3, 22855);
+data.setCell(8, 1, 'TestSecondayContact')
+data.setCell(8, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact')
+data.setCell(8, 3, 37582);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TestSearchAccount')
-data.setCell(9, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch')
-data.setCell(9, 3, 22435);
+data.setCell(9, 1, 'TestCreditStatus')
+data.setCell(9, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus')
+data.setCell(9, 3, 37321);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'TestSearchAutobyFirstName')
-data.setCell(10, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName')
-data.setCell(10, 3, 22354);
+data.setCell(10, 1, 'TestSearchID')
+data.setCell(10, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID')
+data.setCell(10, 3, 37140);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'TestNotesSection')
-data.setCell(11, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs')
-data.setCell(11, 3, 22193);
+data.setCell(11, 1, 'TestSearchbyLocationID')
+data.setCell(11, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID')
+data.setCell(11, 3, 36570);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'TestCreditStatus')
-data.setCell(12, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus')
-data.setCell(12, 3, 22187);
+data.setCell(12, 1, 'TestSearchAccount')
+data.setCell(12, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch')
+data.setCell(12, 3, 35914);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'TestSearchAutobyBookMark')
-data.setCell(13, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks')
-data.setCell(13, 3, 22045);
+data.setCell(13, 1, 'TestBillingStatements')
+data.setCell(13, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue')
+data.setCell(13, 3, 29831);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'TestSearchAutobyLastName')
-data.setCell(14, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName')
-data.setCell(14, 3, 21030);
+data.setCell(14, 1, 'TestNotesSection')
+data.setCell(14, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs')
+data.setCell(14, 3, 29617);
 window.suiteTableData['Test_Suite_for_Nexus_Portal']= { tableData: data, tableDiv: 'times-div-Test_Suite_for_Nexus_Portal'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <span class="suite-total-time">Total running time: 10 minutes</span>
               <div id="times-div-Test_Suite_for_Nexus_Portal">
               </div> <!-- times-div-Test_Suite_for_Nexus_Portal -->
             </div> <!-- times-div -->
@@ -599,108 +574,66 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">TestSummarySectionOnChange</span>
+              <span class="reporter-method-name">TestSearchAccount</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Angular Request Completed in 14ms</span>
+                <span class="reporter-method-output">Angular Request Completed in 23ms</span>
                 <span class="reporter-method-output">Sign in Page Title Verified</span>
-                <span class="reporter-method-output">Angular Request Completed in 453ms</span>
+                <span class="reporter-method-output">Angular Request Completed in 371ms</span>
                 <span class="reporter-method-output">User signed Admin</span>
-                <span class="reporter-method-output">Element '//input[@id='SRCH_Input']' is displayed in 63ms</span>
-                <span class="reporter-method-output">Element 'toolbar-saved' is displayed in 61ms</span>
-                <span class="reporter-method-output">Angular Request Completed in 16ms</span>
-                <span class="reporter-method-output">Enter Text for Search =Automation</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (86413b4371b515e3cc123a735466b241)] -> id: SRCH_Input] displayed in 31ms</span>
-                <span class="reporter-method-output">Angular request time 1115ms</span>
+                <span class="reporter-method-output">Enter Text for Search =LOC@0004</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (348e6f69d1831009a7bbb7c1c988676e)] -> id: SRCH_Input] displayed in 97ms</span>
+                <span class="reporter-method-output">Angular request time 1312ms</span>
                 <span class="reporter-method-output">Click Customer</span>
-                <span class="reporter-method-output">Angular request time 2099ms</span>
-                <span class="reporter-method-output">Element '//div[@class='address-details']' is displayed in 49ms</span>
-                <span class="reporter-method-output">Angular request time 7ms</span>
-                <span class="reporter-method-output">Customer Name found Mr. Automation Mate</span>
-                <span class="reporter-method-output">Strings Matched: Mr. Automation Mate = Mr. Automation Mate</span>
-                <span class="reporter-method-output">Angular request time 9ms</span>
-                <span class="reporter-method-output">Element 'BILL_Current_Balance' is displayed in 67ms</span>
-                <span class="reporter-method-output">Element 'BILL_Unposted_Balance' is displayed in 51ms</span>
-                <span class="reporter-method-output">Element 'BILL_Account_Balance' is displayed in 47ms</span>
-                <span class="reporter-method-output">Element 'BILL_Past_Due' is displayed in 63ms</span>
-                <span class="reporter-method-output">Element 'BILL_Installment_Budget' is displayed in 94ms</span>
-                <span class="reporter-method-output">Element 'BILL_Over_Short' is displayed in 124ms</span>
-                <span class="reporter-method-output">Angular request time 807ms</span>
-                <span class="reporter-method-output">Transaction Link Clicked</span>
-                <span class="reporter-method-output">Angular request time 1088ms</span>
-                <span class="reporter-method-output">Summary Link Clicked</span>
-                <span class="reporter-method-output">Angular request time 8ms</span>
-                <span class="reporter-method-output">Element 'BILL_Current_Balance' is displayed in 61ms</span>
-                <span class="reporter-method-output">Element 'BILL_Unposted_Balance' is displayed in 79ms</span>
-                <span class="reporter-method-output">Element 'BILL_Account_Balance' is displayed in 46ms</span>
-                <span class="reporter-method-output">Element 'BILL_Past_Due' is displayed in 47ms</span>
-                <span class="reporter-method-output">Element 'BILL_Installment_Budget' is displayed in 58ms</span>
-                <span class="reporter-method-output">Element 'BILL_Over_Short' is displayed in 60ms</span>
-                <span class="reporter-method-output">$35.26 equals$35.26</span>
-                <span class="reporter-method-output">$35.26 equals$35.26</span>
-                <span class="reporter-method-output">$0.00 equals$0.00</span>
-                <span class="reporter-method-output">$57.24 equals$57.24</span>
-                <span class="reporter-method-output">$50.00 equals$50.00</span>
-                <span class="reporter-method-output">$0.00 equals$0.00</span>
-                <span class="reporter-method-output">$92.50 equals$92.50</span>
-                <span class="reporter-method-output">$35.26 equals$35.26</span>
-                <span class="reporter-method-output">$35.26 equals$35.26</span>
-                <span class="reporter-method-output">$0.00 equals$0.00</span>
-                <span class="reporter-method-output">$57.24 equals$57.24</span>
-                <span class="reporter-method-output">$50.00 equals$50.00</span>
-                <span class="reporter-method-output">$0.00 equals$0.00</span>
-                <span class="reporter-method-output">$92.50 equals$92.50</span>
+                <span class="reporter-method-output">Angular request time 1762ms</span>
                 <span class="reporter-method-output">Angular request time 15ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (86413b4371b515e3cc123a735466b241)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 46ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (86413b4371b515e3cc123a735466b241)] -> css selector: .logout-label] displayed in 33ms</span>
-                <span class="reporter-method-output">Angular request time 21ms</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">TestSearchAutobyFirstName</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Angular Request Completed in 14ms</span>
-                <span class="reporter-method-output">Sign in Page Title Verified</span>
-                <span class="reporter-method-output">Angular Request Completed in 31ms</span>
-                <span class="reporter-method-output">User signed Admin</span>
-                <span class="reporter-method-output">Enter Text for Search =Automation</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (848f267f0ed4d0d8ad53b1d4a99d1fc5)] -> id: SRCH_Input] displayed in 31ms</span>
-                <span class="reporter-method-output">Angular request time 1151ms</span>
-                <span class="reporter-method-output">Click Customer</span>
-                <span class="reporter-method-output">Angular request time 1697ms</span>
-                <span class="reporter-method-output">Angular request time 9ms</span>
-                <span class="reporter-method-output">Customer Name found Mr. Automation Mate</span>
-                <span class="reporter-method-output">Strings Matched: Mr. Automation Mate = Mr. Automation Mate</span>
-                <span class="reporter-method-output">Angular request time 11ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (848f267f0ed4d0d8ad53b1d4a99d1fc5)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 28ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (848f267f0ed4d0d8ad53b1d4a99d1fc5)] -> css selector: .logout-label] displayed in 34ms</span>
-                <span class="reporter-method-output">Angular request time 27ms</span>
+                <span class="reporter-method-output">Customer Location Id found LOC@0004</span>
+                <span class="reporter-method-output">Strings Matched: LOC@0004 = LOC@0004</span>
+                <span class="reporter-method-output">Angular request time 31ms</span>
+                <span class="reporter-method-output">Click on Account Drop down</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (348e6f69d1831009a7bbb7c1c988676e)] -> id: SRCH_Accounts_Label] displayed in 86ms</span>
+                <span class="reporter-method-output">Enter Account Name</span>
+                <span class="reporter-method-output">Angular request time 47ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (348e6f69d1831009a7bbb7c1c988676e)] -> id: SRCH_Accounts] displayed in 78ms</span>
+                <span class="reporter-method-output">Angular request time 121ms</span>
+                <span class="reporter-method-output">Angular request time 8ms</span>
+                <span class="reporter-method-output">Verify Account Name =1 Water 1 Bldg</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (348e6f69d1831009a7bbb7c1c988676e)] -> id: SRCH_Accounts_Result1] displayed in 78ms</span>
+                <span class="reporter-method-output">Strings Matched: 1 Water 1 Bldg
+New Smyrna Beach FL 12312-3
+LOC@0004
+$0.00 = 1 Water 1 Bldg</span>
+                <span class="reporter-method-output">Angular request time 15ms</span>
+                <span class="reporter-method-output">Angular request time 16ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (348e6f69d1831009a7bbb7c1c988676e)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 78ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (348e6f69d1831009a7bbb7c1c988676e)] -> css selector: .logout-label] displayed in 86ms</span>
+                <span class="reporter-method-output">Angular request time 51ms</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">TestSearchbyLocationID</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Angular Request Completed in 17ms</span>
+                <span class="reporter-method-output">Angular Request Completed in 164ms</span>
                 <span class="reporter-method-output">Sign in Page Title Verified</span>
-                <span class="reporter-method-output">Angular Request Completed in 22ms</span>
+                <span class="reporter-method-output">Angular Request Completed in 1211ms</span>
                 <span class="reporter-method-output">User signed Admin</span>
                 <span class="reporter-method-output">Enter Text for Search =LOC@0001</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (2a87daaa364f3b9187efbc2e048941de)] -> id: SRCH_Input] displayed in 46ms</span>
-                <span class="reporter-method-output">Angular request time 940ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (6d663c22ed47e119dc6ff7d6ca226aa4)] -> id: SRCH_Input] displayed in 79ms</span>
+                <span class="reporter-method-output">Angular request time 1106ms</span>
                 <span class="reporter-method-output">Click Customer</span>
-                <span class="reporter-method-output">Angular request time 1833ms</span>
-                <span class="reporter-method-output">Angular request time 22ms</span>
+                <span class="reporter-method-output">Angular request time 2578ms</span>
+                <span class="reporter-method-output">Angular request time 16ms</span>
                 <span class="reporter-method-output">Customer Location Id found LOC@0001</span>
                 <span class="reporter-method-output">Strings Matched: LOC@0001 = LOC@0001</span>
-                <span class="reporter-method-output">Angular request time 9ms</span>
+                <span class="reporter-method-output">Angular request time 24ms</span>
                 <span class="reporter-method-output">Verifying Address Details</span>
                 <span class="reporter-method-output">Strings Matched: 007 Aut Automation Street Rt 20001 Apt = 007 Aut Automation Street Rt 20001 Apt</span>
                 <span class="reporter-method-output">Strings Matched: Cloudy = Cloudy</span>
                 <span class="reporter-method-output">Strings Matched: D = D</span>
                 <span class="reporter-method-output">Strings Matched: 00720-019 = 00720-019</span>
-                <span class="reporter-method-output">Angular request time 16ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (2a87daaa364f3b9187efbc2e048941de)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 31ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (2a87daaa364f3b9187efbc2e048941de)] -> css selector: .logout-label] displayed in 30ms</span>
-                <span class="reporter-method-output">Angular request time 32ms</span>
+                <span class="reporter-method-output">Angular request time 15ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (6d663c22ed47e119dc6ff7d6ca226aa4)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 110ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (6d663c22ed47e119dc6ff7d6ca226aa4)] -> css selector: .logout-label] displayed in 102ms</span>
+                <span class="reporter-method-output">Angular request time 50ms</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -708,330 +641,378 @@ return data;
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Angular Request Completed in 34ms</span>
                 <span class="reporter-method-output">Sign in Page Title Verified</span>
-                <span class="reporter-method-output">Angular Request Completed in 31ms</span>
+                <span class="reporter-method-output">Angular Request Completed in 269ms</span>
                 <span class="reporter-method-output">User signed Admin</span>
                 <span class="reporter-method-output">Enter Text for Search =LOC@0001</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (d9edcdf9336961db3f128e0844cf29b9)] -> id: SRCH_Input] displayed in 63ms</span>
-                <span class="reporter-method-output">Angular request time 1187ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (959f9541f6ef7917bce3282a1d79945c)] -> id: SRCH_Input] displayed in 70ms</span>
+                <span class="reporter-method-output">Angular request time 1086ms</span>
                 <span class="reporter-method-output">Click Customer</span>
-                <span class="reporter-method-output">Angular request time 1885ms</span>
-                <span class="reporter-method-output">Angular request time 18ms</span>
+                <span class="reporter-method-output">Angular request time 1973ms</span>
+                <span class="reporter-method-output">Angular request time 23ms</span>
                 <span class="reporter-method-output">Customer Location Id found LOC@0001</span>
                 <span class="reporter-method-output">Strings Matched: LOC@0001 = LOC@0001</span>
                 <span class="reporter-method-output">Verify Credit Status</span>
-                <span class="reporter-method-output">Angular request time 9ms</span>
-                <span class="reporter-method-output">Angular request time 9ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (d9edcdf9336961db3f128e0844cf29b9)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 44ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (d9edcdf9336961db3f128e0844cf29b9)] -> css selector: .logout-label] displayed in 39ms</span>
-                <span class="reporter-method-output">Angular request time 38ms</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">TestSearchAutobyLastName</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Angular Request Completed in 15ms</span>
-                <span class="reporter-method-output">Sign in Page Title Verified</span>
-                <span class="reporter-method-output">Angular Request Completed in 31ms</span>
-                <span class="reporter-method-output">User signed Admin</span>
-                <span class="reporter-method-output">Enter Text for Search =Mate</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (bf4fa622bcf05d01d4ef214d7f693f65)] -> id: SRCH_Input] displayed in 64ms</span>
-                <span class="reporter-method-output">Angular request time 1028ms</span>
-                <span class="reporter-method-output">Click Customer</span>
-                <span class="reporter-method-output">Angular request time 1773ms</span>
-                <span class="reporter-method-output">Angular request time 9ms</span>
-                <span class="reporter-method-output">Customer Name found Mr. Automation Mate</span>
-                <span class="reporter-method-output">Strings Matched: Mr. Automation Mate = Mr. Automation Mate</span>
-                <span class="reporter-method-output">Angular request time 9ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (bf4fa622bcf05d01d4ef214d7f693f65)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 28ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (bf4fa622bcf05d01d4ef214d7f693f65)] -> css selector: .logout-label] displayed in 31ms</span>
-                <span class="reporter-method-output">Angular request time 18ms</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">TestBillingStatements</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Angular Request Completed in 19ms</span>
-                <span class="reporter-method-output">Sign in Page Title Verified</span>
-                <span class="reporter-method-output">Angular Request Completed in 31ms</span>
-                <span class="reporter-method-output">User signed Admin</span>
-                <span class="reporter-method-output">Enter Text for Search =STATEMENTS001</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (b4370ed68fd12d058a7f2b23ee82f635)] -> id: SRCH_Input] displayed in 62ms</span>
-                <span class="reporter-method-output">Angular request time 937ms</span>
-                <span class="reporter-method-output">Click Customer</span>
-                <span class="reporter-method-output">Angular request time 2122ms</span>
-                <span class="reporter-method-output">Angular request time 1253ms</span>
-                <span class="reporter-method-output">Customer Location Id found STATEMENTS001</span>
-                <span class="reporter-method-output">Strings Matched: STATEMENTS001 = STATEMENTS001</span>
-                <span class="reporter-method-output">Angular request time 16ms</span>
-                <span class="reporter-method-output">Angular request time 10ms</span>
-                <span class="reporter-method-output">Verify Bill Statement Date</span>
-                <span class="reporter-method-output">Angular request time 13ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (b4370ed68fd12d058a7f2b23ee82f635)] -> id: BILL_Statement_1] displayed in 34ms</span>
-                <span class="reporter-method-output">Strings Matched: Jul 31, 2019 = Jul 31, 2019</span>
-                <span class="reporter-method-output">Angular request time 11ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (b4370ed68fd12d058a7f2b23ee82f635)] -> xpath: //*[@id="cdk-overlay-1"]/div/div/button/span[2]] displayed in 29ms</span>
-                <span class="reporter-method-output">Strings Matched: $56.71 = $56.71</span>
-                <span class="reporter-method-output">Angular request time 11ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (b4370ed68fd12d058a7f2b23ee82f635)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 29ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (b4370ed68fd12d058a7f2b23ee82f635)] -> css selector: .logout-label] displayed in 33ms</span>
-                <span class="reporter-method-output">Angular request time 18ms</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">TestSearchAutobyRecent</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Angular Request Completed in 21ms</span>
-                <span class="reporter-method-output">Sign in Page Title Verified</span>
-                <span class="reporter-method-output">Angular Request Completed in 16ms</span>
-                <span class="reporter-method-output">User signed Admin</span>
-                <span class="reporter-method-output">Element '//input[@id='SRCH_Input']' is displayed in 62ms</span>
-                <span class="reporter-method-output">Click Recent</span>
-                <span class="reporter-method-output">Recent Customer =Aut Statement</span>
-                <span class="reporter-method-output">Click Customer</span>
-                <span class="reporter-method-output">Angular request time 2122ms</span>
-                <span class="reporter-method-output">Alert not configured</span>
-                <span class="reporter-method-output">Element '//div[@class='address-details']' is displayed in 126ms</span>
-                <span class="reporter-method-output">Angular request time 15ms</span>
-                <span class="reporter-method-output">Strings Matched: Aut Statement = Aut Statement</span>
-                <span class="reporter-method-output">Angular request time 16ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (e54ab41df04fdadcc9974f2c97cfbcad)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 31ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (e54ab41df04fdadcc9974f2c97cfbcad)] -> css selector: .logout-label] displayed in 39ms</span>
-                <span class="reporter-method-output">Angular request time 12ms</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">TestSecondayContact</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Angular Request Completed in 19ms</span>
-                <span class="reporter-method-output">Sign in Page Title Verified</span>
-                <span class="reporter-method-output">Angular Request Completed in 31ms</span>
-                <span class="reporter-method-output">User signed Admin</span>
-                <span class="reporter-method-output">Enter Text for Search =LOC@0004</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (afa61d84f1bec6bed07b84df8ab52003)] -> id: SRCH_Input] displayed in 94ms</span>
-                <span class="reporter-method-output">Angular request time 1094ms</span>
-                <span class="reporter-method-output">Click Customer</span>
-                <span class="reporter-method-output">Angular request time 1653ms</span>
-                <span class="reporter-method-output">Angular request time 11ms</span>
-                <span class="reporter-method-output">Customer Location Id found LOC@0004</span>
-                <span class="reporter-method-output">Strings Matched: LOC@0004 = LOC@0004</span>
-                <span class="reporter-method-output">Angular request time 14ms</span>
-                <span class="reporter-method-output">Angular request time 19ms</span>
-                <span class="reporter-method-output">Angular request time 9ms</span>
-                <span class="reporter-method-output">Angular request time 6ms</span>
-                <span class="reporter-method-output">Strings Matched: Secondary Customer (SECONDARY) = Secondary Customer (SECONDARY)</span>
-                <span class="reporter-method-output">Angular request time 9ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (afa61d84f1bec6bed07b84df8ab52003)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 26ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (afa61d84f1bec6bed07b84df8ab52003)] -> css selector: .logout-label] displayed in 43ms</span>
-                <span class="reporter-method-output">Angular request time 17ms</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">TestCustomerDetails</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Angular Request Completed in 21ms</span>
-                <span class="reporter-method-output">Sign in Page Title Verified</span>
-                <span class="reporter-method-output">Angular Request Completed in 62ms</span>
-                <span class="reporter-method-output">User signed Admin</span>
-                <span class="reporter-method-output">Enter Text for Search =LOC@0001</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (e8a5128bc89f02124161b3be7e8b582e)] -> id: SRCH_Input] displayed in 46ms</span>
-                <span class="reporter-method-output">Angular request time 944ms</span>
-                <span class="reporter-method-output">Click Customer</span>
-                <span class="reporter-method-output">Angular request time 1758ms</span>
-                <span class="reporter-method-output">Angular request time 11ms</span>
-                <span class="reporter-method-output">Customer Location Id found LOC@0001</span>
-                <span class="reporter-method-output">Strings Matched: LOC@0001 = LOC@0001</span>
-                <span class="reporter-method-output">Angular request time 10ms</span>
-                <span class="reporter-method-output">Verifying Customer Details</span>
-                <span class="reporter-method-output">Strings Matched: 2312 = 2312</span>
-                <span class="reporter-method-output">Strings Matched: Driv12312OUL312 = Driv12312OUL312</span>
-                <span class="reporter-method-output">Strings Matched: (090) 078-6010 = (090) 078-6010</span>
-                <span class="reporter-method-output">Strings Matched: + Ext. 2112 = + Ext. 2112</span>
-                <span class="reporter-method-output">Strings Matched: automation@cogsdale.com = automation@cogsdale.com</span>
-                <span class="reporter-method-output">Strings Matched: 007 Test Apt = 007 Test Apt</span>
-                <span class="reporter-method-output">Strings Matched: New York NY 12345-67890 = New York NY 12345-67890</span>
-                <span class="reporter-method-output">Angular request time 16ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (e8a5128bc89f02124161b3be7e8b582e)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 47ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (e8a5128bc89f02124161b3be7e8b582e)] -> css selector: .logout-label] displayed in 31ms</span>
-                <span class="reporter-method-output">Angular request time 35ms</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">TestSearchID</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Angular Request Completed in 54ms</span>
-                <span class="reporter-method-output">Sign in Page Title Verified</span>
-                <span class="reporter-method-output">Angular Request Completed in 31ms</span>
-                <span class="reporter-method-output">User signed Admin</span>
-                <span class="reporter-method-output">Enter Text for Search =0000011111</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (44bde0c6b4ddd4db669585e2b91a60e4)] -> id: SRCH_Input] displayed in 439ms</span>
-                <span class="reporter-method-output">Angular request time 1042ms</span>
-                <span class="reporter-method-output">Click Customer</span>
-                <span class="reporter-method-output">Angular request time 1825ms</span>
-                <span class="reporter-method-output">Angular request time 12ms</span>
-                <span class="reporter-method-output">CustomerId found 0000011111</span>
-                <span class="reporter-method-output">Strings Matched: 0000011111 = 0000011111</span>
-                <span class="reporter-method-output">Angular request time 16ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (44bde0c6b4ddd4db669585e2b91a60e4)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 89ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (44bde0c6b4ddd4db669585e2b91a60e4)] -> css selector: .logout-label] displayed in 46ms</span>
-                <span class="reporter-method-output">Angular request time 24ms</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">TestContactEdit</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Angular Request Completed in 18ms</span>
-                <span class="reporter-method-output">Sign in Page Title Verified</span>
-                <span class="reporter-method-output">Angular Request Completed in 28ms</span>
-                <span class="reporter-method-output">User signed Admin</span>
-                <span class="reporter-method-output">Enter Text for Search =LOC@0004</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (ad8aca1f71078bb5b54b3818a694d1ee)] -> id: SRCH_Input] displayed in 47ms</span>
-                <span class="reporter-method-output">Angular request time 1054ms</span>
-                <span class="reporter-method-output">Click Customer</span>
-                <span class="reporter-method-output">Angular request time 1724ms</span>
-                <span class="reporter-method-output">Angular request time 8ms</span>
-                <span class="reporter-method-output">Customer Location Id found LOC@0004</span>
-                <span class="reporter-method-output">Strings Matched: LOC@0004 = LOC@0004</span>
-                <span class="reporter-method-output">Angular request time 9ms</span>
-                <span class="reporter-method-output">Element '[[ChromeDriver: chrome on XP (ad8aca1f71078bb5b54b3818a694d1ee)] -> id: 'CUST_Drillback_Button']' is displayed in 50ms</span>
-                <span class="reporter-method-output">Angular request time 20ms</span>
-                <span class="reporter-method-output">Angular request time 25ms</span>
-                <span class="reporter-method-output">Element '[[ChromeDriver: chrome on XP (ad8aca1f71078bb5b54b3818a694d1ee)] -> id: ECI_Phone_Number_1]' is displayed in 80ms</span>
-                <span class="reporter-method-output">Angular request time 53ms</span>
-                <span class="reporter-method-output">Angular request time 9ms</span>
-                <span class="reporter-method-output">Angular request time 10ms</span>
-                <span class="reporter-method-output">Element '[[ChromeDriver: chrome on XP (ad8aca1f71078bb5b54b3818a694d1ee)] -> id: ECI_Email]' is displayed in 93ms</span>
-                <span class="reporter-method-output">Angular request time 8ms</span>
-                <span class="reporter-method-output">Angular request time 10ms</span>
-                <span class="reporter-method-output">Angular request time 8ms</span>
-                <span class="reporter-method-output">Element '[[ChromeDriver: chrome on XP (ad8aca1f71078bb5b54b3818a694d1ee)] -> id: ECI_Action_Button]' is displayed in 73ms</span>
-                <span class="reporter-method-output">Angular request time 456ms</span>
-                <span class="reporter-method-output">Angular request time 460ms</span>
-                <span class="reporter-method-output">Verifying Customer Details</span>
-                <span class="reporter-method-output">Strings Matched: 2312 = 2312</span>
-                <span class="reporter-method-output">Strings Matched: Driv12312OUL312 = Driv12312OUL312</span>
-                <span class="reporter-method-output">Strings Matched: (090) 078-6010 = (090) 078-6010</span>
-                <span class="reporter-method-output">Strings Matched: + Ext. 2112 = + Ext. 2112</span>
-                <span class="reporter-method-output">Strings Matched: automation@cogsdale.com = automation@cogsdale.com</span>
-                <span class="reporter-method-output">Strings Matched: 007 Test Apt = 007 Test Apt</span>
-                <span class="reporter-method-output">Strings Matched: New York NY 12345-67890 = New York NY 12345-67890</span>
-                <span class="reporter-method-output">Angular request time 16ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (ad8aca1f71078bb5b54b3818a694d1ee)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 31ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (ad8aca1f71078bb5b54b3818a694d1ee)] -> css selector: .logout-label] displayed in 34ms</span>
-                <span class="reporter-method-output">Angular request time 23ms</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">TestSearchAccount</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Angular Request Completed in 17ms</span>
-                <span class="reporter-method-output">Sign in Page Title Verified</span>
-                <span class="reporter-method-output">Angular Request Completed in 32ms</span>
-                <span class="reporter-method-output">User signed Admin</span>
-                <span class="reporter-method-output">Enter Text for Search =LOC@0004</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (e67ac13db7e529d58579330ba2c76d89)] -> id: SRCH_Input] displayed in 63ms</span>
-                <span class="reporter-method-output">Angular request time 1067ms</span>
-                <span class="reporter-method-output">Click Customer</span>
-                <span class="reporter-method-output">Angular request time 1650ms</span>
-                <span class="reporter-method-output">Angular request time 25ms</span>
-                <span class="reporter-method-output">Customer Location Id found LOC@0004</span>
-                <span class="reporter-method-output">Strings Matched: LOC@0004 = LOC@0004</span>
-                <span class="reporter-method-output">Angular request time 13ms</span>
-                <span class="reporter-method-output">Click on Account Drop down</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (e67ac13db7e529d58579330ba2c76d89)] -> id: SRCH_Accounts_Label] displayed in 31ms</span>
-                <span class="reporter-method-output">Enter Account Name</span>
-                <span class="reporter-method-output">Angular request time 10ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (e67ac13db7e529d58579330ba2c76d89)] -> id: SRCH_Accounts] displayed in 36ms</span>
-                <span class="reporter-method-output">Angular request time 216ms</span>
-                <span class="reporter-method-output">Angular request time 9ms</span>
-                <span class="reporter-method-output">Verify Account Name =1 Water 1 Bldg</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (e67ac13db7e529d58579330ba2c76d89)] -> id: SRCH_Accounts_Result1] displayed in 21ms</span>
-                <span class="reporter-method-output">Strings Matched: 1 Water 1 Bldg
-New Smyrna Beach FL 12312-3
-LOC@0004
-$0.00 = 1 Water 1 Bldg</span>
-                <span class="reporter-method-output">Angular request time 16ms</span>
-                <span class="reporter-method-output">Angular request time 15ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (e67ac13db7e529d58579330ba2c76d89)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 31ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (e67ac13db7e529d58579330ba2c76d89)] -> css selector: .logout-label] displayed in 35ms</span>
-                <span class="reporter-method-output">Angular request time 19ms</span>
+                <span class="reporter-method-output">Angular request time 46ms</span>
+                <span class="reporter-method-output">Angular request time 32ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (959f9541f6ef7917bce3282a1d79945c)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 78ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (959f9541f6ef7917bce3282a1d79945c)] -> css selector: .logout-label] displayed in 109ms</span>
+                <span class="reporter-method-output">Angular request time 36ms</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">TestSearchAlertOnLoad</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Angular Request Completed in 24ms</span>
+                <span class="reporter-method-output">Angular Request Completed in 19ms</span>
+                <span class="reporter-method-output">Sign in Page Title Verified</span>
+                <span class="reporter-method-output">Angular Request Completed in 46ms</span>
+                <span class="reporter-method-output">User signed Admin</span>
+                <span class="reporter-method-output">Element '//input[@id='SRCH_Input']' is displayed in 126ms</span>
+                <span class="reporter-method-output">Element 'toolbar-saved' is displayed in 171ms</span>
+                <span class="reporter-method-output">Enter Text for Search =Alert</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (b1641c859f3642e2fa80e65b68ff3922)] -> id: SRCH_Input] displayed in 79ms</span>
+                <span class="reporter-method-output">Angular request time 1078ms</span>
+                <span class="reporter-method-output">Click Customer</span>
+                <span class="reporter-method-output">Angular request time 2102ms</span>
+                <span class="reporter-method-output">Element '//div[@class='address-details']' is displayed in 58ms</span>
+                <span class="reporter-method-output">Angular request time 8ms</span>
+                <span class="reporter-method-output">Customer Name found Mr. Alert Test</span>
+                <span class="reporter-method-output">Strings Matched: Mr. Alert Test = Mr. Alert Test</span>
+                <span class="reporter-method-output">Angular request time 23ms</span>
+                <span class="reporter-method-output">Element 'ALERTO_Action_Button' is displayed in 129ms</span>
+                <span class="reporter-method-output">Angular request time 39ms</span>
+                <span class="reporter-method-output">Click Ok</span>
+                <span class="reporter-method-output">Alert on Load Clicked</span>
+                <span class="reporter-method-output">Angular request time 23ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (b1641c859f3642e2fa80e65b68ff3922)] -> id: ALERT_1_Description] displayed in 66ms</span>
+                <span class="reporter-method-output">Angular request time 180ms</span>
+                <span class="reporter-method-output">Click Description</span>
+                <span class="reporter-method-output">Angular request time 16ms</span>
+                <span class="reporter-method-output">Element 'ALERTO_Action_Button' is displayed in 125ms</span>
+                <span class="reporter-method-output">Angular request time 43ms</span>
+                <span class="reporter-method-output">Click Ok</span>
+                <span class="reporter-method-output">Alert on description Clicked</span>
+                <span class="reporter-method-output">Angular request time 43ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (b1641c859f3642e2fa80e65b68ff3922)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 82ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (b1641c859f3642e2fa80e65b68ff3922)] -> css selector: .logout-label] displayed in 79ms</span>
+                <span class="reporter-method-output">Angular request time 43ms</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TestBillingStatements</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Angular Request Completed in 23ms</span>
+                <span class="reporter-method-output">Sign in Page Title Verified</span>
+                <span class="reporter-method-output">Angular Request Completed in 31ms</span>
+                <span class="reporter-method-output">User signed Admin</span>
+                <span class="reporter-method-output">Enter Text for Search =STATEMENTS001</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (34e81b4a5b82221d10cfb06c572cc4da)] -> id: SRCH_Input] displayed in 124ms</span>
+                <span class="reporter-method-output">Angular request time 1023ms</span>
+                <span class="reporter-method-output">Click Customer</span>
+                <span class="reporter-method-output">Angular request time 1970ms</span>
+                <span class="reporter-method-output">Angular request time 1019ms</span>
+                <span class="reporter-method-output">Customer Location Id found STATEMENTS001</span>
+                <span class="reporter-method-output">Strings Matched: STATEMENTS001 = STATEMENTS001</span>
+                <span class="reporter-method-output">Angular request time 16ms</span>
+                <span class="reporter-method-output">Angular request time 13ms</span>
+                <span class="reporter-method-output">Verify Bill Statement Date</span>
+                <span class="reporter-method-output">Angular request time 15ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (34e81b4a5b82221d10cfb06c572cc4da)] -> id: BILL_Statement_1] displayed in 39ms</span>
+                <span class="reporter-method-output">Strings Matched: Jul 31, 2019 = Jul 31, 2019</span>
+                <span class="reporter-method-output">Angular request time 12ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (34e81b4a5b82221d10cfb06c572cc4da)] -> xpath: //*[@id="cdk-overlay-1"]/div/div/button/span[2]] displayed in 35ms</span>
+                <span class="reporter-method-output">Strings Matched: $56.71 = $56.71</span>
+                <span class="reporter-method-output">Angular request time 15ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (34e81b4a5b82221d10cfb06c572cc4da)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 40ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (34e81b4a5b82221d10cfb06c572cc4da)] -> css selector: .logout-label] displayed in 44ms</span>
+                <span class="reporter-method-output">Angular request time 22ms</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TestSearchAutobyRecent</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Angular Request Completed in 15ms</span>
+                <span class="reporter-method-output">Sign in Page Title Verified</span>
+                <span class="reporter-method-output">Angular Request Completed in 46ms</span>
+                <span class="reporter-method-output">User signed Admin</span>
+                <span class="reporter-method-output">Element '//input[@id='SRCH_Input']' is displayed in 203ms</span>
+                <span class="reporter-method-output">Click Recent</span>
+                <span class="reporter-method-output">Recent Customer =Aut Statement</span>
+                <span class="reporter-method-output">Click Customer</span>
+                <span class="reporter-method-output">Angular request time 2722ms</span>
+                <span class="reporter-method-output">Alert not configured</span>
+                <span class="reporter-method-output">Element '//div[@class='address-details']' is displayed in 172ms</span>
+                <span class="reporter-method-output">Angular request time 63ms</span>
+                <span class="reporter-method-output">Strings Matched: Aut Statement = Aut Statement</span>
+                <span class="reporter-method-output">Angular request time 48ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (d6a583b6adf69be10ff08c4f8c793757)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 93ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (d6a583b6adf69be10ff08c4f8c793757)] -> css selector: .logout-label] displayed in 46ms</span>
+                <span class="reporter-method-output">Angular request time 11ms</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TestSecondayContact</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Angular Request Completed in 36ms</span>
+                <span class="reporter-method-output">Sign in Page Title Verified</span>
+                <span class="reporter-method-output">Angular Request Completed in 702ms</span>
+                <span class="reporter-method-output">User signed Admin</span>
+                <span class="reporter-method-output">Enter Text for Search =LOC@0004</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (3602c964a9475d991ec663fc7897f36b)] -> id: SRCH_Input] displayed in 47ms</span>
+                <span class="reporter-method-output">Angular request time 1281ms</span>
+                <span class="reporter-method-output">Click Customer</span>
+                <span class="reporter-method-output">Angular request time 1777ms</span>
+                <span class="reporter-method-output">Angular request time 15ms</span>
+                <span class="reporter-method-output">Customer Location Id found LOC@0004</span>
+                <span class="reporter-method-output">Strings Matched: LOC@0004 = LOC@0004</span>
+                <span class="reporter-method-output">Angular request time 16ms</span>
+                <span class="reporter-method-output">Angular request time 24ms</span>
+                <span class="reporter-method-output">Angular request time 20ms</span>
+                <span class="reporter-method-output">Angular request time 19ms</span>
+                <span class="reporter-method-output">Strings Matched: Secondary Customer (SECONDARY) = Secondary Customer (SECONDARY)</span>
+                <span class="reporter-method-output">Angular request time 17ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (3602c964a9475d991ec663fc7897f36b)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 62ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (3602c964a9475d991ec663fc7897f36b)] -> css selector: .logout-label] displayed in 137ms</span>
+                <span class="reporter-method-output">Angular request time 12ms</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TestCustomerDetails</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Angular Request Completed in 32ms</span>
+                <span class="reporter-method-output">Sign in Page Title Verified</span>
+                <span class="reporter-method-output">Angular Request Completed in 308ms</span>
+                <span class="reporter-method-output">User signed Admin</span>
+                <span class="reporter-method-output">Enter Text for Search =LOC@0001</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (6dadffbbb372ef1a1b0b66b6589315c6)] -> id: SRCH_Input] displayed in 78ms</span>
+                <span class="reporter-method-output">Angular request time 1074ms</span>
+                <span class="reporter-method-output">Click Customer</span>
+                <span class="reporter-method-output">Angular request time 2250ms</span>
+                <span class="reporter-method-output">Angular request time 24ms</span>
+                <span class="reporter-method-output">Customer Location Id found LOC@0001</span>
+                <span class="reporter-method-output">Strings Matched: LOC@0001 = LOC@0001</span>
+                <span class="reporter-method-output">Angular request time 23ms</span>
+                <span class="reporter-method-output">Verifying Customer Details</span>
+                <span class="reporter-method-output">Strings Matched: 2312 = 2312</span>
+                <span class="reporter-method-output">Strings Matched: Driv12312OUL312 = Driv12312OUL312</span>
+                <span class="reporter-method-output">Strings Matched: (090) 078-6010 = (090) 078-6010</span>
+                <span class="reporter-method-output">Strings Matched: + Ext. 2112 = + Ext. 2112</span>
+                <span class="reporter-method-output">Strings Matched: automation@cogsdale.com = automation@cogsdale.com</span>
+                <span class="reporter-method-output">Strings Matched: 007 Test Apt = 007 Test Apt</span>
+                <span class="reporter-method-output">Strings Matched: New York NY 12345-67890 = New York NY 12345-67890</span>
+                <span class="reporter-method-output">Angular request time 27ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (6dadffbbb372ef1a1b0b66b6589315c6)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 67ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (6dadffbbb372ef1a1b0b66b6589315c6)] -> css selector: .logout-label] displayed in 94ms</span>
+                <span class="reporter-method-output">Angular request time 47ms</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TestSearchAutobyFirstName</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Angular Request Completed in 33ms</span>
+                <span class="reporter-method-output">Sign in Page Title Verified</span>
+                <span class="reporter-method-output">Angular Request Completed in 31ms</span>
+                <span class="reporter-method-output">User signed Admin</span>
+                <span class="reporter-method-output">Enter Text for Search =Automation</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (3e98ff7d687979dd568172928ffcfe5f)] -> id: SRCH_Input] displayed in 77ms</span>
+                <span class="reporter-method-output">Angular request time 1160ms</span>
+                <span class="reporter-method-output">Click Customer</span>
+                <span class="reporter-method-output">Angular request time 1789ms</span>
+                <span class="reporter-method-output">Angular request time 31ms</span>
+                <span class="reporter-method-output">Customer Name found Mr. Automation Mate</span>
+                <span class="reporter-method-output">Strings Matched: Mr. Automation Mate = Mr. Automation Mate</span>
+                <span class="reporter-method-output">Angular request time 23ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (3e98ff7d687979dd568172928ffcfe5f)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 47ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (3e98ff7d687979dd568172928ffcfe5f)] -> css selector: .logout-label] displayed in 43ms</span>
+                <span class="reporter-method-output">Angular request time 19ms</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TestSearchID</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Angular Request Completed in 78ms</span>
+                <span class="reporter-method-output">Sign in Page Title Verified</span>
+                <span class="reporter-method-output">Angular Request Completed in 1063ms</span>
+                <span class="reporter-method-output">User signed Admin</span>
+                <span class="reporter-method-output">Enter Text for Search =0000011111</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (4cf11b4badf75a9177f7557235cd73fa)] -> id: SRCH_Input] displayed in 125ms</span>
+                <span class="reporter-method-output">Angular request time 1308ms</span>
+                <span class="reporter-method-output">Click Customer</span>
+                <span class="reporter-method-output">Angular request time 2001ms</span>
+                <span class="reporter-method-output">Angular request time 23ms</span>
+                <span class="reporter-method-output">CustomerId found 0000011111</span>
+                <span class="reporter-method-output">Strings Matched: 0000011111 = 0000011111</span>
+                <span class="reporter-method-output">Angular request time 23ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (4cf11b4badf75a9177f7557235cd73fa)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 63ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (4cf11b4badf75a9177f7557235cd73fa)] -> css selector: .logout-label] displayed in 47ms</span>
+                <span class="reporter-method-output">Angular request time 19ms</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TestSearchAutobyLastName</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Angular Request Completed in 31ms</span>
                 <span class="reporter-method-output">Sign in Page Title Verified</span>
                 <span class="reporter-method-output">Angular Request Completed in 32ms</span>
                 <span class="reporter-method-output">User signed Admin</span>
-                <span class="reporter-method-output">Element '//input[@id='SRCH_Input']' is displayed in 62ms</span>
-                <span class="reporter-method-output">Element 'toolbar-saved' is displayed in 62ms</span>
-                <span class="reporter-method-output">Enter Text for Search =Alert</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (0d43ee81de9b1501ec3cbadafbad0bed)] -> id: SRCH_Input] displayed in 31ms</span>
-                <span class="reporter-method-output">Angular request time 1007ms</span>
+                <span class="reporter-method-output">Enter Text for Search =Mate</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (460efe0d0e2043785e3fb62eb2acf003)] -> id: SRCH_Input] displayed in 48ms</span>
+                <span class="reporter-method-output">Angular request time 1140ms</span>
                 <span class="reporter-method-output">Click Customer</span>
-                <span class="reporter-method-output">Angular request time 1913ms</span>
-                <span class="reporter-method-output">Element '//div[@class='address-details']' is displayed in 47ms</span>
-                <span class="reporter-method-output">Angular request time 7ms</span>
-                <span class="reporter-method-output">Customer Name found Mr. Alert Test</span>
-                <span class="reporter-method-output">Strings Matched: Mr. Alert Test = Mr. Alert Test</span>
-                <span class="reporter-method-output">Angular request time 9ms</span>
-                <span class="reporter-method-output">Element 'ALERTO_Action_Button' is displayed in 49ms</span>
-                <span class="reporter-method-output">Angular request time 9ms</span>
-                <span class="reporter-method-output">Click Ok</span>
-                <span class="reporter-method-output">Alert on Load Clicked</span>
-                <span class="reporter-method-output">Angular request time 12ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (0d43ee81de9b1501ec3cbadafbad0bed)] -> id: ALERT_1_Description] displayed in 39ms</span>
-                <span class="reporter-method-output">Angular request time 10ms</span>
-                <span class="reporter-method-output">Click Description</span>
-                <span class="reporter-method-output">Angular request time 13ms</span>
-                <span class="reporter-method-output">Element 'ALERTO_Action_Button' is displayed in 63ms</span>
+                <span class="reporter-method-output">Angular request time 2332ms</span>
+                <span class="reporter-method-output">Angular request time 39ms</span>
+                <span class="reporter-method-output">Customer Name found Mr. Automation Mate</span>
+                <span class="reporter-method-output">Strings Matched: Mr. Automation Mate = Mr. Automation Mate</span>
                 <span class="reporter-method-output">Angular request time 16ms</span>
-                <span class="reporter-method-output">Click Ok</span>
-                <span class="reporter-method-output">Alert on description Clicked</span>
-                <span class="reporter-method-output">Angular request time 12ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (0d43ee81de9b1501ec3cbadafbad0bed)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 34ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (0d43ee81de9b1501ec3cbadafbad0bed)] -> css selector: .logout-label] displayed in 34ms</span>
-                <span class="reporter-method-output">Angular request time 18ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (460efe0d0e2043785e3fb62eb2acf003)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 47ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (460efe0d0e2043785e3fb62eb2acf003)] -> css selector: .logout-label] displayed in 35ms</span>
+                <span class="reporter-method-output">Angular request time 35ms</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TestContactEdit</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Angular Request Completed in 31ms</span>
+                <span class="reporter-method-output">Sign in Page Title Verified</span>
+                <span class="reporter-method-output">Angular Request Completed in 298ms</span>
+                <span class="reporter-method-output">User signed Admin</span>
+                <span class="reporter-method-output">Enter Text for Search =LOC@0004</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (acb75d7bb4ba56e3e6f51cae324ec363)] -> id: SRCH_Input] displayed in 66ms</span>
+                <span class="reporter-method-output">Angular request time 1320ms</span>
+                <span class="reporter-method-output">Click Customer</span>
+                <span class="reporter-method-output">Angular request time 1738ms</span>
+                <span class="reporter-method-output">Angular request time 24ms</span>
+                <span class="reporter-method-output">Customer Location Id found LOC@0004</span>
+                <span class="reporter-method-output">Strings Matched: LOC@0004 = LOC@0004</span>
+                <span class="reporter-method-output">Angular request time 19ms</span>
+                <span class="reporter-method-output">Element '[[ChromeDriver: chrome on XP (acb75d7bb4ba56e3e6f51cae324ec363)] -> id: 'CUST_Drillback_Button']' is displayed in 125ms</span>
+                <span class="reporter-method-output">Angular request time 40ms</span>
+                <span class="reporter-method-output">Angular request time 22ms</span>
+                <span class="reporter-method-output">Element '[[ChromeDriver: chrome on XP (acb75d7bb4ba56e3e6f51cae324ec363)] -> id: ECI_Phone_Number_1]' is displayed in 196ms</span>
+                <span class="reporter-method-output">Angular request time 28ms</span>
+                <span class="reporter-method-output">Angular request time 24ms</span>
+                <span class="reporter-method-output">Angular request time 24ms</span>
+                <span class="reporter-method-output">Element '[[ChromeDriver: chrome on XP (acb75d7bb4ba56e3e6f51cae324ec363)] -> id: ECI_Email]' is displayed in 179ms</span>
+                <span class="reporter-method-output">Angular request time 15ms</span>
+                <span class="reporter-method-output">Angular request time 20ms</span>
+                <span class="reporter-method-output">Angular request time 16ms</span>
+                <span class="reporter-method-output">Element '[[ChromeDriver: chrome on XP (acb75d7bb4ba56e3e6f51cae324ec363)] -> id: ECI_Action_Button]' is displayed in 187ms</span>
+                <span class="reporter-method-output">Angular request time 531ms</span>
+                <span class="reporter-method-output">Angular request time 349ms</span>
+                <span class="reporter-method-output">Verifying Customer Details</span>
+                <span class="reporter-method-output">Strings Matched: 2312 = 2312</span>
+                <span class="reporter-method-output">Strings Matched: Driv12312OUL312 = Driv12312OUL312</span>
+                <span class="reporter-method-output">Strings Matched: (090) 078-6010 = (090) 078-6010</span>
+                <span class="reporter-method-output">Strings Matched: + Ext. 2112 = + Ext. 2112</span>
+                <span class="reporter-method-output">Strings Matched: automation@cogsdale.com = automation@cogsdale.com</span>
+                <span class="reporter-method-output">Strings Matched: 007 Test Apt = 007 Test Apt</span>
+                <span class="reporter-method-output">Strings Matched: New York NY 12345-67890 = New York NY 12345-67890</span>
+                <span class="reporter-method-output">Angular request time 32ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (acb75d7bb4ba56e3e6f51cae324ec363)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 62ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (acb75d7bb4ba56e3e6f51cae324ec363)] -> css selector: .logout-label] displayed in 86ms</span>
+                <span class="reporter-method-output">Angular request time 36ms</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TestSummarySectionOnChange</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Angular Request Completed in 13ms</span>
+                <span class="reporter-method-output">Sign in Page Title Verified</span>
+                <span class="reporter-method-output">Angular Request Completed in 593ms</span>
+                <span class="reporter-method-output">User signed Admin</span>
+                <span class="reporter-method-output">Element '//input[@id='SRCH_Input']' is displayed in 156ms</span>
+                <span class="reporter-method-output">Element 'toolbar-saved' is displayed in 156ms</span>
+                <span class="reporter-method-output">Angular Request Completed in 47ms</span>
+                <span class="reporter-method-output">Enter Text for Search =Automation</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (128091e4afd5804e1a6ddf781262a5ad)] -> id: SRCH_Input] displayed in 78ms</span>
+                <span class="reporter-method-output">Angular request time 1262ms</span>
+                <span class="reporter-method-output">Click Customer</span>
+                <span class="reporter-method-output">Angular request time 1847ms</span>
+                <span class="reporter-method-output">Element '//div[@class='address-details']' is displayed in 102ms</span>
+                <span class="reporter-method-output">Angular request time 8ms</span>
+                <span class="reporter-method-output">Customer Name found Mr. Automation Mate</span>
+                <span class="reporter-method-output">Strings Matched: Mr. Automation Mate = Mr. Automation Mate</span>
+                <span class="reporter-method-output">Angular request time 15ms</span>
+                <span class="reporter-method-output">Element 'BILL_Current_Balance' is displayed in 63ms</span>
+                <span class="reporter-method-output">Element 'BILL_Unposted_Balance' is displayed in 63ms</span>
+                <span class="reporter-method-output">Element 'BILL_Account_Balance' is displayed in 70ms</span>
+                <span class="reporter-method-output">Element 'BILL_Past_Due' is displayed in 70ms</span>
+                <span class="reporter-method-output">Element 'BILL_Installment_Budget' is displayed in 62ms</span>
+                <span class="reporter-method-output">Element 'BILL_Over_Short' is displayed in 63ms</span>
+                <span class="reporter-method-output">Angular request time 707ms</span>
+                <span class="reporter-method-output">Transaction Link Clicked</span>
+                <span class="reporter-method-output">Angular request time 1200ms</span>
+                <span class="reporter-method-output">Summary Link Clicked</span>
+                <span class="reporter-method-output">Angular request time 15ms</span>
+                <span class="reporter-method-output">Element 'BILL_Current_Balance' is displayed in 141ms</span>
+                <span class="reporter-method-output">Element 'BILL_Unposted_Balance' is displayed in 141ms</span>
+                <span class="reporter-method-output">Element 'BILL_Account_Balance' is displayed in 125ms</span>
+                <span class="reporter-method-output">Element 'BILL_Past_Due' is displayed in 145ms</span>
+                <span class="reporter-method-output">Element 'BILL_Installment_Budget' is displayed in 120ms</span>
+                <span class="reporter-method-output">Element 'BILL_Over_Short' is displayed in 126ms</span>
+                <span class="reporter-method-output">$35.26 equals$35.26</span>
+                <span class="reporter-method-output">$35.26 equals$35.26</span>
+                <span class="reporter-method-output">$0.00 equals$0.00</span>
+                <span class="reporter-method-output">$57.24 equals$57.24</span>
+                <span class="reporter-method-output">$50.00 equals$50.00</span>
+                <span class="reporter-method-output">$0.00 equals$0.00</span>
+                <span class="reporter-method-output">$92.50 equals$92.50</span>
+                <span class="reporter-method-output">$35.26 equals$35.26</span>
+                <span class="reporter-method-output">$35.26 equals$35.26</span>
+                <span class="reporter-method-output">$0.00 equals$0.00</span>
+                <span class="reporter-method-output">$57.24 equals$57.24</span>
+                <span class="reporter-method-output">$50.00 equals$50.00</span>
+                <span class="reporter-method-output">$0.00 equals$0.00</span>
+                <span class="reporter-method-output">$92.50 equals$92.50</span>
+                <span class="reporter-method-output">Angular request time 31ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (128091e4afd5804e1a6ddf781262a5ad)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 47ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (128091e4afd5804e1a6ddf781262a5ad)] -> css selector: .logout-label] displayed in 35ms</span>
+                <span class="reporter-method-output">Angular request time 31ms</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">TestNotesSection</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Angular Request Completed in 15ms</span>
+                <span class="reporter-method-output">Angular Request Completed in 23ms</span>
                 <span class="reporter-method-output">Sign in Page Title Verified</span>
-                <span class="reporter-method-output">Angular Request Completed in 30ms</span>
+                <span class="reporter-method-output">Angular Request Completed in 47ms</span>
                 <span class="reporter-method-output">User signed Admin</span>
                 <span class="reporter-method-output">Enter Text for Search =LOC@0004</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (345ff13eb2082432077c1a9d61e04bf0)] -> id: SRCH_Input] displayed in 94ms</span>
-                <span class="reporter-method-output">Angular request time 1058ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9b2fb873f04a2c32e64cab22dadd4754)] -> id: SRCH_Input] displayed in 125ms</span>
+                <span class="reporter-method-output">Angular request time 1429ms</span>
                 <span class="reporter-method-output">Click Customer</span>
-                <span class="reporter-method-output">Angular request time 1965ms</span>
-                <span class="reporter-method-output">Angular request time 30ms</span>
+                <span class="reporter-method-output">Angular request time 1984ms</span>
+                <span class="reporter-method-output">Angular request time 32ms</span>
                 <span class="reporter-method-output">Customer Location Id found LOC@0004</span>
                 <span class="reporter-method-output">Strings Matched: LOC@0004 = LOC@0004</span>
+                <span class="reporter-method-output">Angular request time 32ms</span>
                 <span class="reporter-method-output">Angular request time 11ms</span>
-                <span class="reporter-method-output">Angular request time 14ms</span>
-                <span class="reporter-method-output">Angular request time 520ms</span>
-                <span class="reporter-method-output">Angular request time 328ms</span>
-                <span class="reporter-method-output">Strings Matched: Notes added2019/05/30 12:15:17 = Notes added2019/05/30 12:15:17</span>
-                <span class="reporter-method-output">Angular request time 9ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (345ff13eb2082432077c1a9d61e04bf0)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 62ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (345ff13eb2082432077c1a9d61e04bf0)] -> css selector: .logout-label] displayed in 30ms</span>
-                <span class="reporter-method-output">Angular request time 18ms</span>
+                <span class="reporter-method-output">Angular request time 464ms</span>
+                <span class="reporter-method-output">Angular request time 352ms</span>
+                <span class="reporter-method-output">Strings Matched: Notes added2019/06/03 07:19:38 = Notes added2019/06/03 07:19:38</span>
+                <span class="reporter-method-output">Angular request time 28ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9b2fb873f04a2c32e64cab22dadd4754)] -> css selector: body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account] displayed in 109ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9b2fb873f04a2c32e64cab22dadd4754)] -> css selector: .logout-label] displayed in 43ms</span>
+                <span class="reporter-method-output">Angular request time 28ms</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">TestSearchAutobyBookMark</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Angular Request Completed in 14ms</span>
+                <span class="reporter-method-output">Angular Request Completed in 58ms</span>
                 <span class="reporter-method-output">Sign in Page Title Verified</span>
-                <span class="reporter-method-output">Angular Request Completed in 15ms</span>
+                <span class="reporter-method-output">Angular Request Completed in 62ms</span>
                 <span class="reporter-method-output">User signed Admin</span>
-                <span class="reporter-method-output">Element '//input[@id='SRCH_Input']' is displayed in 78ms</span>
-                <span class="reporter-method-output">Element 'SRCH_Button_Favorites' is displayed in 63ms</span>
+                <span class="reporter-method-output">Element '//input[@id='SRCH_Input']' is displayed in 156ms</span>
+                <span class="reporter-method-output">Element 'SRCH_Button_Favorites' is displayed in 79ms</span>
                 <span class="reporter-method-output">Click History Customer</span>
-                <span class="reporter-method-output"><a href="F:\FailedTestsScreenshots\TestSearchAutobyBookMarkScreenshot-1559236838402.jpg"><align="left">Error screenshot at Thu May 30 12:20:38 CDT 2019</span>
-                <span class="reporter-method-output"><img width="1024" src="F:\FailedTestsScreenshots\TestSearchAutobyBookMarkScreenshot-1559236838402.jpg" alt="screenshot at Thu May 30 12:20:39 CDT 2019"/></a><br /></span>
+                <span class="reporter-method-output">Click Customer</span>
+                <span class="reporter-method-output">Angular request time 2102ms</span>
+                <span class="reporter-method-output">Element '//div[@class='address-details']' is displayed in 157ms</span>
+                <span class="reporter-method-output">Angular request time 31ms</span>
+                <span class="reporter-method-output">Customer Name found Mr. Talha Rahim</span>
+                <span class="reporter-method-output">Strings Not Matched: Noel Ford != Mr. Talha Rahim</span>
+                <span class="reporter-method-output"><a href="F:\FailedTestsScreenshots\TestSearchAutobyBookMarkScreenshot-1559564848231.jpg"><align="left">Error screenshot at Mon Jun 03 07:27:28 CDT 2019</span>
+                <span class="reporter-method-output"><img width="1024" src="F:\FailedTestsScreenshots\TestSearchAutobyBookMarkScreenshot-1559564848231.jpg" alt="screenshot at Mon Jun 03 07:27:28 CDT 2019"/></a><br /></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -1051,228 +1032,228 @@ $0.00 = 1 Water 1 Bldg</span>
             <div class="chronological-class">
               <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">readProp(org.testng.TestRunner@3dbd7107)</span>
+                <span class="method-name">readProp(org.testng.TestRunner@7d2c9361)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TestSearchID</span>
-                <span class="method-start">5250 ms</span>
+                <span class="method-start">4744 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">36922 ms</span>
+                <span class="method-start">41888 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">readProp(org.testng.TestRunner@3dbd7107)</span>
-                <span class="method-start">37156 ms</span>
+                <span class="method-name">readProp(org.testng.TestRunner@7d2c9361)</span>
+                <span class="method-start">44009 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TestSearchbyLocationID</span>
-                <span class="method-start">40938 ms</span>
+                <span class="method-start">47634 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">63944 ms</span>
+                <span class="method-start">84204 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">readProp(org.testng.TestRunner@3dbd7107)</span>
-                <span class="method-start">64172 ms</span>
+                <span class="method-name">readProp(org.testng.TestRunner@7d2c9361)</span>
+                <span class="method-start">86415 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TestSearchAccount</span>
-                <span class="method-start">67594 ms</span>
+                <span class="method-start">89962 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">90029 ms</span>
+                <span class="method-start">125876 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">readProp(org.testng.TestRunner@3dbd7107)</span>
-                <span class="method-start">92438 ms</span>
+                <span class="method-name">readProp(org.testng.TestRunner@7d2c9361)</span>
+                <span class="method-start">126181 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TestCustomerDetails</span>
-                <span class="method-start">95781 ms</span>
+                <span class="method-start">129728 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">118901 ms</span>
+                <span class="method-start">169747 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">readProp(org.testng.TestRunner@3dbd7107)</span>
-                <span class="method-start">119125 ms</span>
+                <span class="method-name">readProp(org.testng.TestRunner@7d2c9361)</span>
+                <span class="method-start">169884 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TestCreditStatus</span>
-                <span class="method-start">122422 ms</span>
+                <span class="method-start">173595 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">144609 ms</span>
+                <span class="method-start">210916 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">readProp(org.testng.TestRunner@3dbd7107)</span>
-                <span class="method-start">144875 ms</span>
+                <span class="method-name">readProp(org.testng.TestRunner@7d2c9361)</span>
+                <span class="method-start">211166 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TestContactEdit</span>
-                <span class="method-start">148187 ms</span>
+                <span class="method-start">214868 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">172763 ms</span>
+                <span class="method-start">257306 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">readProp(org.testng.TestRunner@3dbd7107)</span>
-                <span class="method-start">174954 ms</span>
+                <span class="method-name">readProp(org.testng.TestRunner@7d2c9361)</span>
+                <span class="method-start">257494 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TestSecondayContact</span>
-                <span class="method-start">178312 ms</span>
+                <span class="method-start">261150 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">201837 ms</span>
+                <span class="method-start">298732 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">readProp(org.testng.TestRunner@3dbd7107)</span>
-                <span class="method-start">204218 ms</span>
+                <span class="method-name">readProp(org.testng.TestRunner@7d2c9361)</span>
+                <span class="method-start">300900 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TestNotesSection</span>
-                <span class="method-start">207470 ms</span>
+                <span class="method-start">304431 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">229663 ms</span>
+                <span class="method-start">334052 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">readProp(org.testng.TestRunner@3dbd7107)</span>
-                <span class="method-start">232001 ms</span>
+                <span class="method-name">readProp(org.testng.TestRunner@7d2c9361)</span>
+                <span class="method-start">334154 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TestBillingStatements</span>
-                <span class="method-start">235297 ms</span>
+                <span class="method-start">337650 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">259261 ms</span>
+                <span class="method-start">367481 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">readProp(org.testng.TestRunner@3dbd7107)</span>
-                <span class="method-start">261469 ms</span>
+                <span class="method-name">readProp(org.testng.TestRunner@7d2c9361)</span>
+                <span class="method-start">367634 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TestSearchAutobyRecent</span>
-                <span class="method-start">264735 ms</span>
+                <span class="method-start">371056 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">295594 ms</span>
+                <span class="method-start">417208 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">readProp(org.testng.TestRunner@3dbd7107)</span>
-                <span class="method-start">295672 ms</span>
+                <span class="method-name">readProp(org.testng.TestRunner@7d2c9361)</span>
+                <span class="method-start">419306 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TestSearchAutobyBookMark</span>
-                <span class="method-start">298986 ms</span>
+                <span class="method-start">422603 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">321641 ms</span>
+                <span class="method-start">470055 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">readProp(org.testng.TestRunner@3dbd7107)</span>
-                <span class="method-start">324000 ms</span>
+                <span class="method-name">readProp(org.testng.TestRunner@7d2c9361)</span>
+                <span class="method-start">472400 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TestSearchAlertOnLoad</span>
-                <span class="method-start">327907 ms</span>
+                <span class="method-start">475822 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">350763 ms</span>
+                <span class="method-start">526099 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">readProp(org.testng.TestRunner@3dbd7107)</span>
-                <span class="method-start">353109 ms</span>
+                <span class="method-name">readProp(org.testng.TestRunner@7d2c9361)</span>
+                <span class="method-start">526220 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TestSummarySectionOnChange</span>
-                <span class="method-start">356685 ms</span>
+                <span class="method-start">529635 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">384108 ms</span>
+                <span class="method-start">567962 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">readProp(org.testng.TestRunner@3dbd7107)</span>
-                <span class="method-start">386438 ms</span>
+                <span class="method-name">readProp(org.testng.TestRunner@7d2c9361)</span>
+                <span class="method-start">568111 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TestSearchAutobyFirstName</span>
-                <span class="method-start">389735 ms</span>
+                <span class="method-start">571619 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">412089 ms</span>
+                <span class="method-start">626149 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">readProp(org.testng.TestRunner@3dbd7107)</span>
-                <span class="method-start">414422 ms</span>
+                <span class="method-name">readProp(org.testng.TestRunner@7d2c9361)</span>
+                <span class="method-start">626368 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TestSearchAutobyLastName</span>
-                <span class="method-start">417985 ms</span>
+                <span class="method-start">629775 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">439015 ms</span>
+                <span class="method-start">685044 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
