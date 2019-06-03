@@ -37,7 +37,6 @@ public class DashBoard extends CommonMethods {
 	WebElement CustomerId;
 
 	@FindBy(id = "'LOC_Location_Id'")
-	@CacheLookup
 	WebElement CustomerLocId;
 
 	@FindBy(css = ".text-heading > span:nth-child(1)")
@@ -168,11 +167,11 @@ public class DashBoard extends CommonMethods {
 	@CacheLookup
 	WebElement AddressCityStateZip;
 
-	@FindBy(xpath = "/html/body/wo-root/wo-dashboard/div/mat-drawer-container/mat-drawer-content/div/div/div[1]/csm-customer-card/div/div/div/div[2]/div[2]/div[1]")
+	@FindBy(id = "ACTION_BOOKMARK")
 	@CacheLookup
 	WebElement BookMarkIconEnabled;
 
-	@FindBy(xpath = "/html/body/wo-root/wo-dashboard/div/mat-drawer-container/mat-drawer-content/div/div/div[1]/csm-customer-card/div/div/div/div[2]/div[2]/div[1]/a/span/span/svg")
+	@FindBy(id = "ACTION_BOOKMARK_Selected")
 	@CacheLookup
 	WebElement BookMarkIconDisabled;
 
@@ -508,6 +507,7 @@ public class DashBoard extends CommonMethods {
 			WaitAngular(driver);
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
+			Assert.assertTrue(false,"Bookmark not found");
 		}
 	}
 
@@ -528,6 +528,7 @@ public class DashBoard extends CommonMethods {
 			WaitAngular(driver);
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
+			Assert.assertTrue(false);
 		}
 
 	}

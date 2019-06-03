@@ -2,6 +2,9 @@ package com.NexusPortalAutomation.TestCases.Java;
 
 import static org.testng.Assert.assertEquals;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
@@ -61,7 +64,13 @@ public class BaseClass extends ReadProjectProperties {
 	}
 
 	@BeforeClass
-	public void readProp(ITestContext context) {
+	public void readProp(ITestContext context) throws AWTException {
+		//Minimize all windows
+	    Robot robot = new Robot();
+	    robot.keyPress(KeyEvent.VK_WINDOWS);
+	    robot.keyPress(KeyEvent.VK_D);
+	    robot.keyRelease(KeyEvent.VK_D);
+	    robot.keyRelease(KeyEvent.VK_WINDOWS);
 
 		try {
 

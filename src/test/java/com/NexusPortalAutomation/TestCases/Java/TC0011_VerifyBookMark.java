@@ -20,7 +20,7 @@ public class TC0011_VerifyBookMark extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String LocationID = "LOC@0001";
+	public String LocationID = "STATEMENTS001";
 	CommonMethods ComMethd = new CommonMethods();
 
 //This Test will test the search by Customer ID
@@ -30,17 +30,22 @@ public class TC0011_VerifyBookMark extends BaseClass {
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
 		dbSrch.EnterSearchText(LocationID);
-		dbSrch.ClickCustomer();
+		dbSrch.ClickRecentCustomerName();
 		// Verify Customer Location Id Updated for Test
-	    ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
-	    // Click BookMark
+		ComMethd.VerifyString(dashBoard.GetLoggedCustomerLocationId(), LocationID);
+		// Click BookMark
 		dashBoard.ClickBookMarkDisabled();
-		
+		dashBoard.LogOut();
+		login();
+		dbSrch.ClickHistoryCustomer();
+		dbSrch.ClickRecentCustomerName();
+		ComMethd.VerifyString(dashBoard.GetLoggedCustomerLocationId(), LocationID);
+		// Clear BookMark
 		dashBoard.ClickBookMarkEnabled();
-		//Verify if it is Marked
-		//Click BookMark
-		//Verify if it is UnMarked
-		
+		// Verify if it is Marked
+		// Click BookMark
+		// Verify if it is UnMarked
+
 		dashBoard.LogOut();
 
 	}

@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-import org.testng.Reporter;
 
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 
@@ -34,13 +32,13 @@ public class DashBoardSearch extends CommonMethods {
 	@CacheLookup
 	WebElement toolBarSaved;
 
-	@FindBy(xpath = "/html/body/div[2]/div/div/mat-option[1]/span/div[1]/div[1]/div/div[1]")
+	@FindBy(id = "SRCH_Option_1_Address_Line")
 	@CacheLookup
 	WebElement SrchCustomer;
 
 	@FindBy(id = "SRCH_Button_Favorites")
 	@CacheLookup
-	WebElement HistCustomer;
+	WebElement BookMarked;
 
 	@FindBy(id = "SRCH_Option_1_Address_Line")
 	@CacheLookup
@@ -83,9 +81,14 @@ public class DashBoardSearch extends CommonMethods {
 		return RecentCustomerName.getText();
 	}
 
+	public void ClickRecentCustomerName() {
+		log("Recent Customer =" + RecentCustomerName.getText());
+		RecentCustomerName.click();
+	}
+
 	public void ClickHistoryCustomer() {
-		log("Click History Customer");
-		HistCustomer.click();
+		log("Click BookMarked Customer");
+		BookMarked.click();
 	}
 
 }
