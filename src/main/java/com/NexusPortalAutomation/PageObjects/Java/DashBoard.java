@@ -7,6 +7,7 @@ import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -232,7 +233,7 @@ public class DashBoard extends CommonMethods {
 	@FindBy(xpath = "//*[@id=\"cdk-overlay-1\"]/div/div/button/span[2]")
 	WebElement BillStatementValue;
 
-	@FindBy(css = "#cdk-overlay-1")
+	@FindBy(id = "cdk-overlay-1")
 	public WebElement OverLay;
 
 	@FindBy(id = "SERV_Tab_Type_1_Icon")
@@ -250,37 +251,67 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "ACTION_DRILLBACK")
 	@CacheLookup
 	WebElement CustDrillBack;
-	
+
 	@FindBy(id = "")
 	@CacheLookup
 	WebElement SecondayCustDrillBack;
-	
+
 	@FindBy(id = "SERV_Tab_Drillback")
 	@CacheLookup
 	WebElement ServiceTabDrillBack;
-	
+
 	@FindBy(id = "ACCIT_1_Drillback")
 	@CacheLookup
 	WebElement contLogTabDrillBack;
-	
+
 	@FindBy(id = "ACTION_Button")
 	@CacheLookup
 	WebElement actionDropDown;
-	
-	public void clickActionDropDown() {
-	try {
-		waitForObject(driver, actionDropDown);
-		actionDropDown.click();
 
-	} catch (NoSuchElementException e) {
-		log(e.getMessage());
-		Assert.assertTrue(false, "Action Drop Down not found");
-		
+	public void clickActionDropDown() {
+		try {
+			waitForObject(driver, actionDropDown);
+			actionDropDown.click();
+
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "Action Drop Down not found");
+
+		}
+
 	}
-	
+
+	public WebElement findElementByid(String id) {
+
+		WebElement element = driver.findElement(By.id(id));
+
+		try {
+			waitForObject(driver, element);
+
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "Element not found using id " + id);
+
+		}
+		return element;
 	}
-	
-	
+
+	// This method will find the elements of Action Panel using the URL
+	public void VerifyActionDrillBacks(String Csharing, String Cmemo, String Depo, String Misc, String PayAr,
+			String PayExt, String Void, String ContLog, String Mreader) throws InterruptedException {
+		Thread.sleep(1000);
+		findElementByid("ACTION_Cashiering").getAttribute(Csharing);
+		findElementByid("ACTION_Credit_Memo").getAttribute(Cmemo);
+		findElementByid("ACTION_Deposit").getAttribute(Depo);
+		findElementByid("ACTION_Misc._Charge").getAttribute(Misc);
+		findElementByid("ACTION_Payment_Arrangement").getAttribute(PayAr);
+		findElementByid("ACTION_Payment_Extension").getAttribute(PayExt);
+		findElementByid("ACTION_Void").getAttribute(Void);
+		findElementByid("ACTION_Contact_Log").getAttribute(Mreader);
+		findElementByid("ACTION_Meter_Reading").getAttribute(ContLog);
+
+	}
+
 	public String getContLogDrillBackUrl() {
 		try {
 			waitForObject(driver, contLogTabDrillBack);
@@ -291,8 +322,6 @@ public class DashBoard extends CommonMethods {
 		}
 		return contLogTabDrillBack.getAttribute("href");
 	}
-	
-	
 
 	public String GetCustDrillBackUrl() {
 		try {
@@ -316,7 +345,6 @@ public class DashBoard extends CommonMethods {
 		return ServiceTabDrillBack.getAttribute("href");
 	}
 
-	
 	public DashBoard(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -873,7 +901,23 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void LogOut() throws InterruptedException {
+
 		try {
+
+			WaitAngular(driver);
+			if (OverLay.isDisplayed()) {
+				// Use Actions to specify an x,y coordinate for your click,
+				Actions a = new Actions(driver);
+				a.moveToElement(OverLay, 1, 1).click().perform();
+
+			}
+
+		} catch (NoSuchElementException | ElementClickInterceptedException e) {
+			log(e.getMessage());
+
+		}
+		try {
+
 			WaitAngular(driver);
 			waitForObject(this.driver, LoggedUserLink);
 			LoggedUserLink.click();
@@ -884,7 +928,7 @@ public class DashBoard extends CommonMethods {
 
 		} catch (NoSuchElementException | ElementClickInterceptedException e) {
 			log(e.getMessage());
-			Assert.assertTrue(false, "Unable to logout");
+			Assert.assertTrue(false, "Unable to logout or Element not found");
 		}
 
 	}

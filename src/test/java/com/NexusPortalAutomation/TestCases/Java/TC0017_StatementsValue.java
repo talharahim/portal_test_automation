@@ -41,7 +41,7 @@ public class TC0017_StatementsValue extends BaseClass {
 		ComMethd.VerifyString(dashBoard.getBillStatementDate(), StatmentDateValue);
 		ComMethd.VerifyString(dashBoard.getBillStatementAmount(), StatmentValue);
 		// To set the focus back
-		dashBoard.OverLay.click();
+		//dashBoard.OverLay.click();
 		dashBoard.LogOut();
 	}
 
