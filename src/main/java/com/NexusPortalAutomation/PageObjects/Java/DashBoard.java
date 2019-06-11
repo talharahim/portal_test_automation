@@ -247,6 +247,76 @@ public class DashBoard extends CommonMethods {
 	@CacheLookup
 	WebElement ServInternetIcon;
 
+	@FindBy(id = "ACTION_DRILLBACK")
+	@CacheLookup
+	WebElement CustDrillBack;
+	
+	@FindBy(id = "")
+	@CacheLookup
+	WebElement SecondayCustDrillBack;
+	
+	@FindBy(id = "SERV_Tab_Drillback")
+	@CacheLookup
+	WebElement ServiceTabDrillBack;
+	
+	@FindBy(id = "ACCIT_1_Drillback")
+	@CacheLookup
+	WebElement contLogTabDrillBack;
+	
+	@FindBy(id = "ACTION_Button")
+	@CacheLookup
+	WebElement actionDropDown;
+	
+	public void clickActionDropDown() {
+	try {
+		waitForObject(driver, actionDropDown);
+		actionDropDown.click();
+
+	} catch (NoSuchElementException e) {
+		log(e.getMessage());
+		Assert.assertTrue(false, "Action Drop Down not found");
+		
+	}
+	
+	}
+	
+	
+	public String getContLogDrillBackUrl() {
+		try {
+			waitForObject(driver, contLogTabDrillBack);
+
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "Contat Log Drillback not found");
+		}
+		return contLogTabDrillBack.getAttribute("href");
+	}
+	
+	
+
+	public String GetCustDrillBackUrl() {
+		try {
+			waitForObject(driver, CustDrillBack);
+
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "Customer Drillback not found");
+		}
+		return CustDrillBack.getAttribute("href");
+	}
+
+	public String GetServiceTabDrillBackUrl() {
+		try {
+			waitForObject(driver, ServiceTabDrillBack);
+
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "Service Drillback not found");
+		}
+		return ServiceTabDrillBack.getAttribute("href");
+	}
+
+	
 	public DashBoard(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -507,7 +577,7 @@ public class DashBoard extends CommonMethods {
 			WaitAngular(driver);
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
-			Assert.assertTrue(false,"Bookmark not found");
+			Assert.assertTrue(false, "Bookmark not found");
 		}
 	}
 
@@ -707,7 +777,6 @@ public class DashBoard extends CommonMethods {
 		return BillingSrvcInfo;
 	}
 
-	
 	public HashMap<String, String> GetBillingServiceInternetTABInfo() {
 		WaitAngular(driver);
 
@@ -722,6 +791,7 @@ public class DashBoard extends CommonMethods {
 				Service3Tab.findElement(By.id("SERV_Service_4_Connection_Status")).getText());
 		return BillingSrvcInfo;
 	}
+
 	public String GetLogUserName() throws InterruptedException {
 
 		String result = "";

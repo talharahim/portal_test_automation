@@ -38,6 +38,20 @@ public class BaseClass extends ReadProjectProperties {
 	public static NgWebDriver ngWebDriver;
 	public static ReadProjectProperties Read = new ReadProjectProperties();
 	public static int delay = 2000;
+	public static String DrillBackServURL;
+	
+	public  String GetDrillBackServerURL() {
+		try {
+			DrillBackServURL = Read.ReadFile("DrillBackServ");
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		return DrillBackServURL;
+
+	}
+
+	
 
 	// This method writes in report
 	public void log(String message) {
@@ -65,12 +79,12 @@ public class BaseClass extends ReadProjectProperties {
 
 	@BeforeClass
 	public void readProp(ITestContext context) throws AWTException {
-		//Minimize all windows
-	    Robot robot = new Robot();
-	    robot.keyPress(KeyEvent.VK_WINDOWS);
-	    robot.keyPress(KeyEvent.VK_D);
-	    robot.keyRelease(KeyEvent.VK_D);
-	    robot.keyRelease(KeyEvent.VK_WINDOWS);
+		// Minimize all windows
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_WINDOWS);
+		robot.keyPress(KeyEvent.VK_D);
+		robot.keyRelease(KeyEvent.VK_D);
+		robot.keyRelease(KeyEvent.VK_WINDOWS);
 
 		try {
 
@@ -118,6 +132,8 @@ public class BaseClass extends ReadProjectProperties {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
+	
 
 	}
 
@@ -132,7 +148,7 @@ public class BaseClass extends ReadProjectProperties {
 		String expectedTitle = "Portal";
 		assertEquals(expectedTitle, actualTitle);
 		log("User signed " + Read.ReadFile("UserName"));
-		
+
 	}
 
 	@AfterClass
