@@ -1,28 +1,119 @@
 package com.NexusPortalAutomation.Utilities.Java;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 import org.testng.annotations.Test;
 
+import com.microsoft.sqlserver.jdbc.SQLServerException;
+
 public class DataBackupRestore {
 
-	@Test
-	public void BackupCommand()
-	{
-		
-		 try {
-			 Runtime.getRuntime().gc();
-			 String[] strCmd = {"cmd /c sqlcmd -m 11 -S SERVER -d DB -U USER -P PASS -r0 -i \"SCRIPT.sql\" 2> \"ERRORS.log\" 1> NULL"};
-			 Process proc = Runtime.getRuntime().exec(strCmd);
-			 proc.waitFor();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	public void CreateDb() throws ClassNotFoundException, SQLException {
+		// Following will created database
+		String CreatCommand1 = "USE [master] " + "CREATE DATABASE [SQLTestDB] ";
+		String CreatCommand2 = "USE [SQLTestDB]" + "CREATE TABLE SQLTest (" + "ID INT NOT NULL PRIMARY KEY,"
+				+ "c1 VARCHAR(100) NOT NULL," + "dt1 DATETIME NOT NULL DEFAULT getdate())";
+
+		String CreateCommand3 = "USE [SQLTestDB] " + "INSERT INTO SQLTest (ID, c1) VALUES (1, 'test1') "
+				+ "INSERT INTO SQLTest (ID, c1) VALUES (2, 'test2') "
+				+ "INSERT INTO SQLTest (ID, c1) VALUES (3, 'test3') "
+				+ "INSERT INTO SQLTest (ID, c1) VALUES (4, 'test4') "
+				+ "INSERT INTO SQLTest (ID, c1) VALUES (5, 'test5') ";
+
+		// Load SQL SERVER JDBC Driver
+		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+		// Creating connection to the database
+
+		Connection con = DriverManager
+				.getConnection("jdbc:sqlserver://RND-BASE-A\\SQL_2017;" + "databaseName=master;user=sa;password=cogs;");
+		Statement st = con.createStatement();
+
+		// Executing the SQL Query and store the results in ResultSet
+		// st.executeQuery(CreatCommand1);
+		// st.executeQuery(CreatCommand2);
+		st.executeQuery(CreateCommand3);
+		// While loop to iterate through all data and print results
+
+		con.close();
+
 	}
+
+	@Test
+	void BackupDB() throws SQLException, ClassNotFoundException {
+
+		String Backup = "USE SQLTestDB;   " + "BACKUP DATABASE SQLTestDB   "
+				+ "TO DISK = 'F:\\TestDBBackup\\SQLTestDB.Bak'   " + "   WITH FORMAT,   "
+				+ "      MEDIANAME = 'Z_SQLServerBackups'," + "      NAME = 'Full Backup of SQLTestDB';";
+
+		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+		// Creating connection to the database
+
+		Connection con = DriverManager
+				.getConnection("jdbc:sqlserver://RND-BASE-A\\SQL_2017;" + "databaseName=master;user=sa;password=cogs;");
+		Statement st = con.createStatement();
+
+		// Executing the SQL Query and store the results in ResultSet
+		st.executeUpdate(Backup);
+		// While loop to iterate through all data and print results
+
+		con.close();
+
+	}
+
 	
+	void RestoreDB() throws SQLException, ClassNotFoundException{
+
+		String Restore = "USE master;   " + "RESTORE DATABASE SQLTestDB FROM DISK = 'F:\\TestDBBackup\\SQLTestDB.Bak' WITH REPLACE;";
+
+		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+
+		Connection con = DriverManager
+				.getConnection("jdbc:sqlserver://RND-BASE-A\\SQL_2017;" + "databaseName=master;user=sa;password=cogs;");
+		Statement st = con.createStatement();
+
+		// Executing the SQL Query and store the results in ResultSet
+		
+		st.executeUpdate(Restore);
+		
+		// While loop to iterate through all data and print results
+
+		con.close();
+
+	}
+
+	void GetDb() throws ClassNotFoundException {
+
+		// Load SQL SERVER JDBC Driver
+		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+		// Creating connection to the database
+		try {
+			Connection con = DriverManager.getConnection(
+					"jdbc:sqlserver://RND-BASE-A\\SQL_2017;" + "databaseName=TWO;user=auto;password=password123;");
+			Statement st = con.createStatement();
+			String selectquery = "SELECT * FROM TWO.dbo.UM00600 ";
+			// Executing the SQL Query and store the results in ResultSet
+			ResultSet rs = st.executeQuery(selectquery);
+			// While loop to iterate through all data and print results
+
+			while (rs.next()) {
+				String locationID = rs.getString("umLocationID");
+				System.out.print(locationID);
+
+			}
+			// Closing DB Connection
+			con.close();
+		} catch (SQLException ex) {
+			// handle any errors
+			System.out.println("SQLException: " + ex.getMessage());
+			System.out.println("SQLState: " + ex.getSQLState());
+			System.out.println("VendorError: " + ex.getErrorCode());
+		}
+
+	}
 
 }

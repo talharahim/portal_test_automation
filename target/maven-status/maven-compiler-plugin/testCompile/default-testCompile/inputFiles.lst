@@ -5,6 +5,7 @@ F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPorta
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0010_VerifyCustomerDetails.java
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0002_TestSearchAutobyFirstName.java
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\BaseClass.java
+F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0018_VerifyDrillBacksGeneral.java
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0013_VerifyContactEdit.java
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0007_TestSummarySection.java
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0009_VerifyAccountSearch.java
@@ -13,6 +14,7 @@ F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPorta
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\ngWebDriver.java
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0015_VerifyContactLogs.java
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0003_TestSearchAutobyLastName.java
+F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0018_VerifyDrillBackTransactions.java
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0001_VerifySignInbyID.java
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0006_TestAlertOnLoad.java
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0012_VerifyCreditStatus.java

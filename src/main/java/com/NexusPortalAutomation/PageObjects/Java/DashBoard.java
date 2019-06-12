@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,7 +28,7 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 public class DashBoard extends CommonMethods {
 
 	WebDriver driver;
-	@FindBy(css = "body > wo-root > wo-dashboard > header > div.user.layout-col-3.flex > a.user__account")
+	@FindBy(id = "USR_Name")
 	WebElement LoggedUserLink;
 
 	@FindBy(css = ".logout-label")
@@ -230,10 +231,13 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "BILL_Statement_1")
 	WebElement BillStatementDate;
 
-	@FindBy(xpath = "//*[@id=\"cdk-overlay-1\"]/div/div/button/span[2]")
+	@FindBy(id = "BILL_Statement_Value_1")
 	WebElement BillStatementValue;
 
-	@FindBy(id = "cdk-overlay-1")
+	//@FindBy(id = "cdk-overlay-1")
+	//public WebElement OverLay;
+	
+	@FindBy(className = "cdk-overlay-container")
 	public WebElement OverLay;
 
 	@FindBy(id = "SERV_Tab_Type_1_Icon")
@@ -252,7 +256,7 @@ public class DashBoard extends CommonMethods {
 	@CacheLookup
 	WebElement CustDrillBack;
 
-	@FindBy(id = "")
+	@FindBy(id = "SCUST_Drillback")
 	@CacheLookup
 	WebElement SecondayCustDrillBack;
 
@@ -332,6 +336,17 @@ public class DashBoard extends CommonMethods {
 			Assert.assertTrue(false, "Customer Drillback not found");
 		}
 		return CustDrillBack.getAttribute("href");
+	}
+
+	public String GetSecondCustDrillBackUrl() {
+		try {
+			waitForObject(driver, SecondayCustDrillBack);
+
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "Seconday Customer Drillback not found");
+		}
+		return SecondayCustDrillBack.getAttribute("href");
 	}
 
 	public String GetServiceTabDrillBackUrl() {
@@ -901,34 +916,35 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void LogOut() throws InterruptedException {
-
 		try {
-
 			WaitAngular(driver);
-			if (OverLay.isDisplayed()) {
-				// Use Actions to specify an x,y coordinate for your click,
-				Actions a = new Actions(driver);
-				a.moveToElement(OverLay, 1, 1).click().perform();
+			// Use Actions to specify an x,y coordinate for your click,
+			Actions a = new Actions(driver);
+			a.moveToElement(OverLay, 1, 1).click().perform();
+			
 
-			}
-
-		} catch (NoSuchElementException | ElementClickInterceptedException e) {
+		} catch (NoSuchElementException e) {
 			log(e.getMessage());
 
 		}
 		try {
-
 			WaitAngular(driver);
 			waitForObject(this.driver, LoggedUserLink);
 			LoggedUserLink.click();
+
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "Unable to find User Link");
+		}
+
+		try {
 			waitForObject(this.driver, LogOutLink);
 			Thread.sleep(300);
 			LogOutLink.click();
 			WaitAngular(driver);
-
-		} catch (NoSuchElementException | ElementClickInterceptedException e) {
+		} catch (NoSuchElementException e) {
 			log(e.getMessage());
-			Assert.assertTrue(false, "Unable to logout or Element not found");
+			Assert.assertTrue(false, "Logout Link not found");
 		}
 
 	}

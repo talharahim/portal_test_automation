@@ -1,4 +1,4 @@
-# Created at 2019-06-03T12:43:52.285
+# Created at 2019-06-12T08:22:41.225
 Boot Manifest-JAR contains absolute paths in classpath 'F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 

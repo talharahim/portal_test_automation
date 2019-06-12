@@ -26,6 +26,9 @@ public class TC0018_VerifyDrillBacksGeneral extends BaseClass {
 
 	public String custURL = ServerURL
 			+ "Prod=229&Act=OPEN&Func=CustomerMaintenance&CustomerID="+CustomerID+"&LocationID="+LocationID+"&CogsDrillback=1";
+	
+	public String secondCustURL = ServerURL
+			+ "Prod=229&Act=OPEN&Func=CustomerMaintenance&CustomerID="+CustomerID+"&LocationID="+LocationID+"&CogsDrillback=1";
 
 	public String servTabURL = ServerURL + "kk";
 
@@ -82,6 +85,7 @@ public class TC0018_VerifyDrillBacksGeneral extends BaseClass {
 
 		ComMethd.VerifyString(custURL, dashBoard.GetCustDrillBackUrl());
 		// ComMethd.VerifyString(servTabURL, dashBoard.GetServiceTabDrillBackUrl());
+		ComMethd.VerifyString(secondCustURL,dashBoard.GetSecondCustDrillBackUrl());
 		ComMethd.VerifyString(contLogURL, dashBoard.getContLogDrillBackUrl());
 		dashBoard.clickActionDropDown();
 		dashBoard.VerifyActionDrillBacks(cashieringURL, creditMemoURL, depositURL, miscChargesURL, paymentArrURL, paymentExtURL, voidURL, contactLogURL, meterReadingURL);

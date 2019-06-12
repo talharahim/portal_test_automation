@@ -1,3 +1,4 @@
+com\NexusPortalAutomation\TestCases\Java\TC0018_VerifyDrillBackTransactions.class
 com\NexusPortalAutomation\TestCases\Java\TC0001_VerifySignInbyID.class
 com\NexusPortalAutomation\TestCases\Java\TC0003_TestSearchAutobyLastName.class
 com\NexusPortalAutomation\TestCases\Java\TC0007_TestSummarySection.class
@@ -5,6 +6,7 @@ com\NexusPortalAutomation\TestCases\Java\TC0014_VerifySecondaryContact.class
 com\NexusPortalAutomation\TestCases\Java\TC0009_VerifyAccountSearch.class
 com\NexusPortalAutomation\TestCases\Java\TC0016_VerifyBillingDetails.class
 com\NexusPortalAutomation\TestCases\Java\TC0006_TestAlertOnLoad.class
+com\NexusPortalAutomation\TestCases\Java\TC0018_VerifyDrillBacksGeneral.class
 com\NexusPortalAutomation\TestCases\Java\TC0010_VerifyCustomerDetails.class
 com\NexusPortalAutomation\TestCases\Java\TC0011_VerifyBookMark.class
 com\NexusPortalAutomation\TestCases\Java\TC0015_VerifyContactLogs.class

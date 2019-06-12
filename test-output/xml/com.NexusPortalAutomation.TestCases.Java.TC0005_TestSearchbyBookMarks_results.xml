@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="21.763">
+           time="30.134">
   <properties />
   
   
-            <testcase name="TestSearchAutobyBookMark" time="21.763" classname="com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks" />
+            <testcase name="TestSearchAutobyBookMark" time="30.134" classname="com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks" />
       
 </testsuite>
