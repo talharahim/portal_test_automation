@@ -1,20 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 15, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 447.078 s <<< FAILURE! - in TestSuite
-TestSearchAlertOnLoad(com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad)  Time elapsed: 18.421 s  <<< FAILURE!
+Tests run: 15, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 494.328 s <<< FAILURE! - in TestSuite
+TestSearchAlertOnLoad(com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad)  Time elapsed: 18.671 s  <<< FAILURE!
 java.lang.AssertionError: expected [Alert Test] but found [Mr. Alert Test]
 	at com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad.TestSearchAlertOnLoad(TC0006_TestAlertOnLoad.java:37)
 
-TestSummarySectionOnChange(com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection)  Time elapsed: 16.329 s  <<< FAILURE!
+TestSummarySectionOnChange(com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection)  Time elapsed: 19.353 s  <<< FAILURE!
 java.lang.AssertionError: expected [Automation Mate] but found [Mr. Automation Mate]
 	at com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection.TestSummarySectionOnChange(TC0007_TestSummarySection.java:39)
 
-TestSearchAutobyFirstName(com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName)  Time elapsed: 16.843 s  <<< FAILURE!
+TestSearchAutobyFirstName(com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName)  Time elapsed: 19.828 s  <<< FAILURE!
 java.lang.AssertionError: expected [Automation Mate] but found [Mr. Automation Mate]
 	at com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName.TestSearchAutobyFirstName(TC0002_TestSearchAutobyFirstName.java:34)
 
-TestSearchAutobyLastName(com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName)  Time elapsed: 17.234 s  <<< FAILURE!
+TestSearchAutobyLastName(com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName)  Time elapsed: 19.118 s  <<< FAILURE!
 java.lang.AssertionError: expected [Automation Mate] but found [Mr. Automation Mate]
 	at com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName.TestSearchAutobyLastName(TC0003_TestSearchAutobyLastName.java:34)
 

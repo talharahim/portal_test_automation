@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="18.421">
+           time="18.657">
   <properties />
-            <testcase name="TestSearchAlertOnLoad" time="18.421" classname="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad">
+            <testcase name="TestSearchAlertOnLoad" time="18.657" classname="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad">
                 <failure type="java.lang.AssertionError"
                   message="expected [Alert Test] but found [Mr. Alert Test]"
               >

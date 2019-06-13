@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="16.329">
+           time="19.352">
   <properties />
-            <testcase name="TestSummarySectionOnChange" time="16.329" classname="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection">
+            <testcase name="TestSummarySectionOnChange" time="19.352" classname="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection">
                 <failure type="java.lang.AssertionError"
                   message="expected [Automation Mate] but found [Mr. Automation Mate]"
               >

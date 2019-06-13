@@ -8,7 +8,7 @@
       <![CDATA[Browser Maximised]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 106ms]]>
+      <![CDATA[Angular Request Completed in 86ms]]>
     </line>
     <line>
       <![CDATA[Sign in Page Title Verified]]>
@@ -23,16 +23,16 @@
       <![CDATA[Enter Text for Search =0000011111]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (c03c777d82594fa27526d17acb8a3aea)] -> id: SRCH_Input] displayed in 78ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (7a636ed1c9f996e1175f086e0735d9a5)] -> id: SRCH_Input] displayed in 63ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 1061ms]]>
+      <![CDATA[Angular request time 1066ms]]>
     </line>
     <line>
       <![CDATA[Click Customer]]>
     </line>
     <line>
-      <![CDATA[Angular request time 2085ms]]>
+      <![CDATA[Angular request time 1948ms]]>
     </line>
     <line>
       <![CDATA[Angular request time 23ms]]>
@@ -44,19 +44,19 @@
       <![CDATA[Strings Matched: 0000011111 = 0000011111]]>
     </line>
     <line>
-      <![CDATA[Angular request time 11ms]]>
+      <![CDATA[Angular request time 16ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 413ms]]>
+      <![CDATA[Angular request time 66ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (c03c777d82594fa27526d17acb8a3aea)] -> id: USR_Name] displayed in 55ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (7a636ed1c9f996e1175f086e0735d9a5)] -> id: USR_Name] displayed in 43ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (c03c777d82594fa27526d17acb8a3aea)] -> css selector: .logout-label] displayed in 56ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (7a636ed1c9f996e1175f086e0735d9a5)] -> css selector: .logout-label] displayed in 54ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 28ms]]>
+      <![CDATA[Angular request time 16ms]]>
     </line>
     <line>
       <![CDATA[Closing Browser]]>
@@ -71,13 +71,13 @@
       <![CDATA[Browser Maximised]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 137ms]]>
+      <![CDATA[Angular Request Completed in 166ms]]>
     </line>
     <line>
       <![CDATA[Sign in Page Title Verified]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 15ms]]>
+      <![CDATA[Angular Request Completed in 406ms]]>
     </line>
     <line>
       <![CDATA[User signed Admin]]>
@@ -86,19 +86,19 @@
       <![CDATA[Enter Text for Search =LOC@0001]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (59c5bb17da116fb8c1c64a07a63959ca)] -> id: SRCH_Input] displayed in 47ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (7bd86124f0bd12c0baf1e8931d9dab5f)] -> id: SRCH_Input] displayed in 31ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 1292ms]]>
+      <![CDATA[Angular request time 765ms]]>
     </line>
     <line>
       <![CDATA[Click Customer]]>
     </line>
     <line>
-      <![CDATA[Angular request time 3206ms]]>
+      <![CDATA[Angular request time 2268ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 12ms]]>
+      <![CDATA[Angular request time 489ms]]>
     </line>
     <line>
       <![CDATA[Customer Location Id found LOC@0001]]>
@@ -107,7 +107,7 @@
       <![CDATA[Strings Matched: LOC@0001 = LOC@0001]]>
     </line>
     <line>
-      <![CDATA[Angular request time 14ms]]>
+      <![CDATA[Angular request time 16ms]]>
     </line>
     <line>
       <![CDATA[Verifying Address Details]]>
@@ -125,19 +125,19 @@
       <![CDATA[Strings Matched: 00720-019 = 00720-019]]>
     </line>
     <line>
-      <![CDATA[Angular request time 30ms]]>
+      <![CDATA[Angular request time 16ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 12ms]]>
+      <![CDATA[Angular request time 14ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (59c5bb17da116fb8c1c64a07a63959ca)] -> id: USR_Name] displayed in 119ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (7bd86124f0bd12c0baf1e8931d9dab5f)] -> id: USR_Name] displayed in 132ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (59c5bb17da116fb8c1c64a07a63959ca)] -> css selector: .logout-label] displayed in 45ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (7bd86124f0bd12c0baf1e8931d9dab5f)] -> css selector: .logout-label] displayed in 469ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 31ms]]>
+      <![CDATA[Angular request time 16ms]]>
     </line>
     <line>
       <![CDATA[Closing Browser]]>
@@ -152,13 +152,13 @@
       <![CDATA[Browser Maximised]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 25ms]]>
+      <![CDATA[Angular Request Completed in 240ms]]>
     </line>
     <line>
       <![CDATA[Sign in Page Title Verified]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 16ms]]>
+      <![CDATA[Angular Request Completed in 15ms]]>
     </line>
     <line>
       <![CDATA[User signed Admin]]>
@@ -167,16 +167,16 @@
       <![CDATA[Enter Text for Search =LOC@0004]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (6753fb691ff4a3e2f62482eea33e8f01)] -> id: SRCH_Input] displayed in 46ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (b9f73f10bd7e286039923108d68845be)] -> id: SRCH_Input] displayed in 32ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 1162ms]]>
+      <![CDATA[Angular request time 1087ms]]>
     </line>
     <line>
       <![CDATA[Click Customer]]>
     </line>
     <line>
-      <![CDATA[Angular request time 2069ms]]>
+      <![CDATA[Angular request time 2084ms]]>
     </line>
     <line>
       <![CDATA[Angular request time 14ms]]>
@@ -188,34 +188,34 @@
       <![CDATA[Strings Matched: LOC@0004 = LOC@0004]]>
     </line>
     <line>
-      <![CDATA[Angular request time 20ms]]>
+      <![CDATA[Angular request time 12ms]]>
     </line>
     <line>
       <![CDATA[Click on Account Drop down]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (6753fb691ff4a3e2f62482eea33e8f01)] -> id: SRCH_Accounts_Label] displayed in 55ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (b9f73f10bd7e286039923108d68845be)] -> id: SRCH_Accounts_Label] displayed in 67ms]]>
     </line>
     <line>
       <![CDATA[Enter Account Name]]>
     </line>
     <line>
-      <![CDATA[Angular request time 32ms]]>
+      <![CDATA[Angular request time 28ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (6753fb691ff4a3e2f62482eea33e8f01)] -> id: SRCH_Accounts] displayed in 43ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (b9f73f10bd7e286039923108d68845be)] -> id: SRCH_Accounts] displayed in 57ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 207ms]]>
+      <![CDATA[Angular request time 123ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 16ms]]>
+      <![CDATA[Angular request time 12ms]]>
     </line>
     <line>
       <![CDATA[Verify Account Name =1 Water 1 Bldg]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (6753fb691ff4a3e2f62482eea33e8f01)] -> id: SRCH_Accounts_Result1] displayed in 47ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (b9f73f10bd7e286039923108d68845be)] -> id: SRCH_Accounts_Result1] displayed in 54ms]]>
     </line>
     <line>
       <![CDATA[Strings Matched: 1 Water 1 Bldg
@@ -226,22 +226,22 @@ Apr 2019 - Current
 Current = 1 Water 1 Bldg]]>
     </line>
     <line>
-      <![CDATA[Angular request time 16ms]]>
+      <![CDATA[Angular request time 15ms]]>
     </line>
     <line>
       <![CDATA[Angular request time 16ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 13ms]]>
+      <![CDATA[Angular request time 17ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (6753fb691ff4a3e2f62482eea33e8f01)] -> id: USR_Name] displayed in 36ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (b9f73f10bd7e286039923108d68845be)] -> id: USR_Name] displayed in 47ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (6753fb691ff4a3e2f62482eea33e8f01)] -> css selector: .logout-label] displayed in 59ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (b9f73f10bd7e286039923108d68845be)] -> css selector: .logout-label] displayed in 50ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 21ms]]>
+      <![CDATA[Angular request time 28ms]]>
     </line>
     <line>
       <![CDATA[Closing Browser]]>
@@ -256,13 +256,13 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Browser Maximised]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 45ms]]>
+      <![CDATA[Angular Request Completed in 53ms]]>
     </line>
     <line>
       <![CDATA[Sign in Page Title Verified]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 31ms]]>
+      <![CDATA[Angular Request Completed in 202ms]]>
     </line>
     <line>
       <![CDATA[User signed Admin]]>
@@ -271,19 +271,19 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Enter Text for Search =LOC@0001]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (b60b6a851c328b05628f32cd88d1c41e)] -> id: SRCH_Input] displayed in 62ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (6261a6d3855a15b11691d1c596b09cd4)] -> id: SRCH_Input] displayed in 47ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 973ms]]>
+      <![CDATA[Angular request time 1364ms]]>
     </line>
     <line>
       <![CDATA[Click Customer]]>
     </line>
     <line>
-      <![CDATA[Angular request time 2043ms]]>
+      <![CDATA[Angular request time 1945ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 13ms]]>
+      <![CDATA[Angular request time 29ms]]>
     </line>
     <line>
       <![CDATA[Customer Location Id found LOC@0001]]>
@@ -292,7 +292,7 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Strings Matched: LOC@0001 = LOC@0001]]>
     </line>
     <line>
-      <![CDATA[Angular request time 10ms]]>
+      <![CDATA[Angular request time 6ms]]>
     </line>
     <line>
       <![CDATA[Verifying Customer Details]]>
@@ -317,222 +317,21 @@ Current = 1 Water 1 Bldg]]>
     </line>
     <line>
       <![CDATA[Strings Matched: New York NY 12345-67890 = New York NY 12345-67890]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 12ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 10ms]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (b60b6a851c328b05628f32cd88d1c41e)] -> id: USR_Name] displayed in 35ms]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (b60b6a851c328b05628f32cd88d1c41e)] -> css selector: .logout-label] displayed in 35ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 33ms]]>
-    </line>
-    <line>
-      <![CDATA[Closing Browser]]>
-    </line>
-    <line>
-      <![CDATA[Test Completed...]]>
-    </line>
-    <line>
-      <![CDATA[Launching Chrome]]>
-    </line>
-    <line>
-      <![CDATA[Browser Maximised]]>
-    </line>
-    <line>
-      <![CDATA[Angular Request Completed in 35ms]]>
-    </line>
-    <line>
-      <![CDATA[Sign in Page Title Verified]]>
-    </line>
-    <line>
-      <![CDATA[Angular Request Completed in 16ms]]>
-    </line>
-    <line>
-      <![CDATA[User signed Admin]]>
-    </line>
-    <line>
-      <![CDATA[Enter Text for Search =LOC@0001]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (5336110f9860c906300678e9f75f5396)] -> id: SRCH_Input] displayed in 48ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 1065ms]]>
-    </line>
-    <line>
-      <![CDATA[Click Customer]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 2138ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 12ms]]>
-    </line>
-    <line>
-      <![CDATA[Customer Location Id found LOC@0001]]>
-    </line>
-    <line>
-      <![CDATA[Strings Matched: LOC@0001 = LOC@0001]]>
-    </line>
-    <line>
-      <![CDATA[Verify Credit Status]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 15ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 15ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 11ms]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (5336110f9860c906300678e9f75f5396)] -> id: USR_Name] displayed in 28ms]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (5336110f9860c906300678e9f75f5396)] -> css selector: .logout-label] displayed in 49ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 30ms]]>
-    </line>
-    <line>
-      <![CDATA[Closing Browser]]>
-    </line>
-    <line>
-      <![CDATA[Test Completed...]]>
-    </line>
-    <line>
-      <![CDATA[Launching Chrome]]>
-    </line>
-    <line>
-      <![CDATA[Browser Maximised]]>
-    </line>
-    <line>
-      <![CDATA[Angular Request Completed in 380ms]]>
-    </line>
-    <line>
-      <![CDATA[Sign in Page Title Verified]]>
-    </line>
-    <line>
-      <![CDATA[Angular Request Completed in 50ms]]>
-    </line>
-    <line>
-      <![CDATA[User signed Admin]]>
-    </line>
-    <line>
-      <![CDATA[Enter Text for Search =LOC@0004]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (573aa00095d936b50bc515087d8f7018)] -> id: SRCH_Input] displayed in 78ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 1046ms]]>
-    </line>
-    <line>
-      <![CDATA[Click Customer]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 1523ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 321ms]]>
-    </line>
-    <line>
-      <![CDATA[Customer Location Id found LOC@0004]]>
-    </line>
-    <line>
-      <![CDATA[Strings Matched: LOC@0004 = LOC@0004]]>
     </line>
     <line>
       <![CDATA[Angular request time 8ms]]>
     </line>
     <line>
-      <![CDATA[Element '[[ChromeDriver: chrome on XP (573aa00095d936b50bc515087d8f7018)] -> id: 'CUST_Drillback_Button']' is displayed in 56ms]]>
+      <![CDATA[Angular request time 22ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 19ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (6261a6d3855a15b11691d1c596b09cd4)] -> id: USR_Name] displayed in 34ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 10ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (6261a6d3855a15b11691d1c596b09cd4)] -> css selector: .logout-label] displayed in 43ms]]>
     </line>
     <line>
-      <![CDATA[Element '[[ChromeDriver: chrome on XP (573aa00095d936b50bc515087d8f7018)] -> id: ECI_Phone_Number_1]' is displayed in 92ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 23ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 25ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 12ms]]>
-    </line>
-    <line>
-      <![CDATA[Element '[[ChromeDriver: chrome on XP (573aa00095d936b50bc515087d8f7018)] -> id: ECI_Email]' is displayed in 109ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 9ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 12ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 10ms]]>
-    </line>
-    <line>
-      <![CDATA[Element '[[ChromeDriver: chrome on XP (573aa00095d936b50bc515087d8f7018)] -> id: ECI_Action_Button]' is displayed in 80ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 374ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 335ms]]>
-    </line>
-    <line>
-      <![CDATA[Verifying Customer Details]]>
-    </line>
-    <line>
-      <![CDATA[Strings Matched: 2312 = 2312]]>
-    </line>
-    <line>
-      <![CDATA[Strings Matched: Driv12312OUL312 = Driv12312OUL312]]>
-    </line>
-    <line>
-      <![CDATA[Strings Matched: (090) 078-6010 = (090) 078-6010]]>
-    </line>
-    <line>
-      <![CDATA[Strings Matched: + Ext. 2112 = + Ext. 2112]]>
-    </line>
-    <line>
-      <![CDATA[Strings Matched: automation@cogsdale.com = automation@cogsdale.com]]>
-    </line>
-    <line>
-      <![CDATA[Strings Matched: 007 Test Apt = 007 Test Apt]]>
-    </line>
-    <line>
-      <![CDATA[Strings Matched: New York NY 12345-67890 = New York NY 12345-67890]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 15ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 10ms]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (573aa00095d936b50bc515087d8f7018)] -> id: USR_Name] displayed in 29ms]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (573aa00095d936b50bc515087d8f7018)] -> css selector: .logout-label] displayed in 49ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 29ms]]>
+      <![CDATA[Angular request time 16ms]]>
     </line>
     <line>
       <![CDATA[Closing Browser]]>
@@ -553,142 +352,55 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Sign in Page Title Verified]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 16ms]]>
+      <![CDATA[Angular Request Completed in 62ms]]>
     </line>
     <line>
       <![CDATA[User signed Admin]]>
     </line>
     <line>
-      <![CDATA[Enter Text for Search =LOC@0004]]>
+      <![CDATA[Enter Text for Search =LOC@0001]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (3ce6bb779a4131eef08d15dc1aab54ef)] -> id: SRCH_Input] displayed in 31ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9af8117e841d73d3fea8d92712ed7f95)] -> id: SRCH_Input] displayed in 47ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 1106ms]]>
-    </line>
-    <line>
-      <![CDATA[Click Customer]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 1502ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 329ms]]>
-    </line>
-    <line>
-      <![CDATA[Customer Location Id found LOC@0004]]>
-    </line>
-    <line>
-      <![CDATA[Strings Matched: LOC@0004 = LOC@0004]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 10ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 11ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 10ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 13ms]]>
-    </line>
-    <line>
-      <![CDATA[Strings Matched: Secondary Customer (SECONDARY) = Secondary Customer (SECONDARY)]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 8ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 11ms]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (3ce6bb779a4131eef08d15dc1aab54ef)] -> id: USR_Name] displayed in 30ms]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (3ce6bb779a4131eef08d15dc1aab54ef)] -> css selector: .logout-label] displayed in 51ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 39ms]]>
-    </line>
-    <line>
-      <![CDATA[Closing Browser]]>
-    </line>
-    <line>
-      <![CDATA[Test Completed...]]>
-    </line>
-    <line>
-      <![CDATA[Launching Chrome]]>
-    </line>
-    <line>
-      <![CDATA[Browser Maximised]]>
-    </line>
-    <line>
-      <![CDATA[Angular Request Completed in 147ms]]>
-    </line>
-    <line>
-      <![CDATA[Sign in Page Title Verified]]>
-    </line>
-    <line>
-      <![CDATA[Angular Request Completed in 4ms]]>
-    </line>
-    <line>
-      <![CDATA[User signed Admin]]>
-    </line>
-    <line>
-      <![CDATA[Enter Text for Search =LOC@0004]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (5bc7826d35f15a1251d9eacd4d085032)] -> id: SRCH_Input] displayed in 31ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 1276ms]]>
+      <![CDATA[Angular request time 920ms]]>
     </line>
     <line>
       <![CDATA[Click Customer]]>
     </line>
     <line>
-      <![CDATA[Angular request time 2532ms]]>
+      <![CDATA[Angular request time 2244ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 20ms]]>
+      <![CDATA[Angular request time 12ms]]>
     </line>
     <line>
-      <![CDATA[Customer Location Id found LOC@0004]]>
+      <![CDATA[Customer Location Id found LOC@0001]]>
     </line>
     <line>
-      <![CDATA[Strings Matched: LOC@0004 = LOC@0004]]>
+      <![CDATA[Strings Matched: LOC@0001 = LOC@0001]]>
+    </line>
+    <line>
+      <![CDATA[Verify Credit Status]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 16ms]]>
     </line>
     <line>
       <![CDATA[Angular request time 15ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 7ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 435ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 334ms]]>
-    </line>
-    <line>
-      <![CDATA[Strings Matched: Notes added2019/06/12 08:22:42 = Notes added2019/06/12 08:22:42]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 11ms]]>
-    </line>
-    <line>
       <![CDATA[Angular request time 10ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (5bc7826d35f15a1251d9eacd4d085032)] -> id: USR_Name] displayed in 29ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9af8117e841d73d3fea8d92712ed7f95)] -> id: USR_Name] displayed in 27ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (5bc7826d35f15a1251d9eacd4d085032)] -> css selector: .logout-label] displayed in 39ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9af8117e841d73d3fea8d92712ed7f95)] -> css selector: .logout-label] displayed in 47ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 26ms]]>
+      <![CDATA[Angular request time 627ms]]>
     </line>
     <line>
       <![CDATA[Closing Browser]]>
@@ -703,13 +415,301 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Browser Maximised]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 26ms]]>
+      <![CDATA[Angular Request Completed in 172ms]]>
     </line>
     <line>
       <![CDATA[Sign in Page Title Verified]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 46ms]]>
+      <![CDATA[Angular Request Completed in 31ms]]>
+    </line>
+    <line>
+      <![CDATA[User signed Admin]]>
+    </line>
+    <line>
+      <![CDATA[Enter Text for Search =LOC@0004]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (5696ae2fe3138cc7048c15b1bda5bb91)] -> id: SRCH_Input] displayed in 47ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 1279ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Customer]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 1990ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 12ms]]>
+    </line>
+    <line>
+      <![CDATA[Customer Location Id found LOC@0004]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: LOC@0004 = LOC@0004]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 14ms]]>
+    </line>
+    <line>
+      <![CDATA[Element '[[ChromeDriver: chrome on XP (5696ae2fe3138cc7048c15b1bda5bb91)] -> id: 'CUST_Drillback_Button']' is displayed in 574ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 30ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 31ms]]>
+    </line>
+    <line>
+      <![CDATA[Element '[[ChromeDriver: chrome on XP (5696ae2fe3138cc7048c15b1bda5bb91)] -> id: ECI_Phone_Number_1]' is displayed in 158ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 29ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 13ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 11ms]]>
+    </line>
+    <line>
+      <![CDATA[Element '[[ChromeDriver: chrome on XP (5696ae2fe3138cc7048c15b1bda5bb91)] -> id: ECI_Email]' is displayed in 105ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 9ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 16ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 13ms]]>
+    </line>
+    <line>
+      <![CDATA[Element '[[ChromeDriver: chrome on XP (5696ae2fe3138cc7048c15b1bda5bb91)] -> id: ECI_Action_Button]' is displayed in 98ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 484ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 331ms]]>
+    </line>
+    <line>
+      <![CDATA[Verifying Customer Details]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: 2312 = 2312]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Driv12312OUL312 = Driv12312OUL312]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: (090) 078-6010 = (090) 078-6010]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: + Ext. 2112 = + Ext. 2112]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: automation@cogsdale.com = automation@cogsdale.com]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: 007 Test Apt = 007 Test Apt]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: New York NY 12345-67890 = New York NY 12345-67890]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 15ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 10ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (5696ae2fe3138cc7048c15b1bda5bb91)] -> id: USR_Name] displayed in 37ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (5696ae2fe3138cc7048c15b1bda5bb91)] -> css selector: .logout-label] displayed in 60ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 16ms]]>
+    </line>
+    <line>
+      <![CDATA[Closing Browser]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed...]]>
+    </line>
+    <line>
+      <![CDATA[Launching Chrome]]>
+    </line>
+    <line>
+      <![CDATA[Browser Maximised]]>
+    </line>
+    <line>
+      <![CDATA[Angular Request Completed in 17ms]]>
+    </line>
+    <line>
+      <![CDATA[Sign in Page Title Verified]]>
+    </line>
+    <line>
+      <![CDATA[Angular Request Completed in 62ms]]>
+    </line>
+    <line>
+      <![CDATA[User signed Admin]]>
+    </line>
+    <line>
+      <![CDATA[Enter Text for Search =LOC@0004]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (fe41e02a751efbf9228b25e1d789d0c9)] -> id: SRCH_Input] displayed in 31ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 1050ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Customer]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 1811ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 429ms]]>
+    </line>
+    <line>
+      <![CDATA[Customer Location Id found LOC@0004]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: LOC@0004 = LOC@0004]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 10ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 291ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 11ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 10ms]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Secondary Customer (SECONDARY) = Secondary Customer (SECONDARY)]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 11ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 12ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (fe41e02a751efbf9228b25e1d789d0c9)] -> id: USR_Name] displayed in 38ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (fe41e02a751efbf9228b25e1d789d0c9)] -> css selector: .logout-label] displayed in 36ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 31ms]]>
+    </line>
+    <line>
+      <![CDATA[Closing Browser]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed...]]>
+    </line>
+    <line>
+      <![CDATA[Launching Chrome]]>
+    </line>
+    <line>
+      <![CDATA[Browser Maximised]]>
+    </line>
+    <line>
+      <![CDATA[Angular Request Completed in 49ms]]>
+    </line>
+    <line>
+      <![CDATA[Sign in Page Title Verified]]>
+    </line>
+    <line>
+      <![CDATA[Angular Request Completed in 47ms]]>
+    </line>
+    <line>
+      <![CDATA[User signed Admin]]>
+    </line>
+    <line>
+      <![CDATA[Enter Text for Search =LOC@0004]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (b16a04bd2c2ff404d9d29db91b75736b)] -> id: SRCH_Input] displayed in 63ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 1051ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Customer]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 1785ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 324ms]]>
+    </line>
+    <line>
+      <![CDATA[Customer Location Id found LOC@0004]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: LOC@0004 = LOC@0004]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 10ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 12ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 431ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 329ms]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Notes added2019/06/12 14:27:55 = Notes added2019/06/12 14:27:55]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 11ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 10ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (b16a04bd2c2ff404d9d29db91b75736b)] -> id: USR_Name] displayed in 37ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (b16a04bd2c2ff404d9d29db91b75736b)] -> css selector: .logout-label] displayed in 36ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 22ms]]>
+    </line>
+    <line>
+      <![CDATA[Closing Browser]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed...]]>
+    </line>
+    <line>
+      <![CDATA[Launching Chrome]]>
+    </line>
+    <line>
+      <![CDATA[Browser Maximised]]>
+    </line>
+    <line>
+      <![CDATA[Angular Request Completed in 105ms]]>
+    </line>
+    <line>
+      <![CDATA[Sign in Page Title Verified]]>
+    </line>
+    <line>
+      <![CDATA[Angular Request Completed in 14ms]]>
     </line>
     <line>
       <![CDATA[User signed Admin]]>
@@ -718,19 +718,19 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Enter Text for Search =STATEMENTS001]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ec8d185cb43650d55b2453a0e4db5aab)] -> id: SRCH_Input] displayed in 63ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (8996f8ada4a658c8863160612d3b2ed9)] -> id: SRCH_Input] displayed in 78ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 1074ms]]>
+      <![CDATA[Angular request time 956ms]]>
     </line>
     <line>
       <![CDATA[Click Customer]]>
     </line>
     <line>
-      <![CDATA[Angular request time 1801ms]]>
+      <![CDATA[Angular request time 2877ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 1259ms]]>
+      <![CDATA[Angular request time 78ms]]>
     </line>
     <line>
       <![CDATA[Customer Location Id found STATEMENTS001]]>
@@ -742,43 +742,43 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Angular request time 15ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 12ms]]>
+      <![CDATA[Angular request time 22ms]]>
     </line>
     <line>
       <![CDATA[Verify Bill Statement Date]]>
     </line>
     <line>
-      <![CDATA[Angular request time 10ms]]>
+      <![CDATA[Angular request time 19ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ec8d185cb43650d55b2453a0e4db5aab)] -> id: BILL_Statement_1] displayed in 42ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (8996f8ada4a658c8863160612d3b2ed9)] -> id: BILL_Statement_1] displayed in 79ms]]>
     </line>
     <line>
       <![CDATA[Strings Matched: Jul 31, 2019 = Jul 31, 2019]]>
     </line>
     <line>
-      <![CDATA[Angular request time 12ms]]>
+      <![CDATA[Angular request time 44ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ec8d185cb43650d55b2453a0e4db5aab)] -> id: BILL_Statement_Value_1] displayed in 32ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (8996f8ada4a658c8863160612d3b2ed9)] -> id: BILL_Statement_Value_1] displayed in 68ms]]>
     </line>
     <line>
       <![CDATA[Strings Matched: $56.71 = $56.71]]>
     </line>
     <line>
-      <![CDATA[Angular request time 10ms]]>
+      <![CDATA[Angular request time 30ms]]>
     </line>
     <line>
       <![CDATA[Angular request time 16ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ec8d185cb43650d55b2453a0e4db5aab)] -> id: USR_Name] displayed in 36ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (8996f8ada4a658c8863160612d3b2ed9)] -> id: USR_Name] displayed in 58ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ec8d185cb43650d55b2453a0e4db5aab)] -> css selector: .logout-label] displayed in 46ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (8996f8ada4a658c8863160612d3b2ed9)] -> css selector: .logout-label] displayed in 64ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 19ms]]>
+      <![CDATA[Angular request time 24ms]]>
     </line>
     <line>
       <![CDATA[Closing Browser]]>
@@ -793,19 +793,19 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Browser Maximised]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 242ms]]>
+      <![CDATA[Angular Request Completed in 79ms]]>
     </line>
     <line>
       <![CDATA[Sign in Page Title Verified]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 15ms]]>
+      <![CDATA[Angular Request Completed in 13ms]]>
     </line>
     <line>
       <![CDATA[User signed Admin]]>
     </line>
     <line>
-      <![CDATA[Element '//input[@id='SRCH_Input']' is displayed in 63ms]]>
+      <![CDATA[Element '//input[@id='SRCH_Input']' is displayed in 110ms]]>
     </line>
     <line>
       <![CDATA[Click Recent]]>
@@ -817,13 +817,13 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Click Customer]]>
     </line>
     <line>
-      <![CDATA[Angular request time 2014ms]]>
+      <![CDATA[Angular request time 3453ms]]>
     </line>
     <line>
       <![CDATA[Alert not configured]]>
     </line>
     <line>
-      <![CDATA[Element '//div[@class='address-details']' is displayed in 109ms]]>
+      <![CDATA[Element '//div[@class='address-details']' is displayed in 78ms]]>
     </line>
     <line>
       <![CDATA[Angular request time 16ms]]>
@@ -832,19 +832,19 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Strings Matched: Aut Statement = Aut Statement]]>
     </line>
     <line>
-      <![CDATA[Angular request time 30ms]]>
+      <![CDATA[Angular request time 16ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 10ms]]>
+      <![CDATA[Angular request time 14ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ffb40d0d1e9368d62cf607c34b138fed)] -> id: USR_Name] displayed in 28ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (e934354f3e03db83bee6453ed6c4ca68)] -> id: USR_Name] displayed in 38ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ffb40d0d1e9368d62cf607c34b138fed)] -> css selector: .logout-label] displayed in 39ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (e934354f3e03db83bee6453ed6c4ca68)] -> css selector: .logout-label] displayed in 58ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 13ms]]>
+      <![CDATA[Angular request time 25ms]]>
     </line>
     <line>
       <![CDATA[Closing Browser]]>
@@ -859,7 +859,7 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Browser Maximised]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 126ms]]>
+      <![CDATA[Angular Request Completed in 15ms]]>
     </line>
     <line>
       <![CDATA[Sign in Page Title Verified]]>
@@ -871,10 +871,10 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[User signed Admin]]>
     </line>
     <line>
-      <![CDATA[Element '//input[@id='SRCH_Input']' is displayed in 78ms]]>
+      <![CDATA[Element '//input[@id='SRCH_Input']' is displayed in 93ms]]>
     </line>
     <line>
-      <![CDATA[Element 'SRCH_Button_Favorites' is displayed in 62ms]]>
+      <![CDATA[Element 'SRCH_Button_Favorites' is displayed in 95ms]]>
     </line>
     <line>
       <![CDATA[Click BookMarked Customer]]>
@@ -883,10 +883,10 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Click Customer]]>
     </line>
     <line>
-      <![CDATA[Angular request time 2315ms]]>
+      <![CDATA[Angular request time 2552ms]]>
     </line>
     <line>
-      <![CDATA[Element '//div[@class='address-details']' is displayed in 93ms]]>
+      <![CDATA[Element '//div[@class='address-details']' is displayed in 66ms]]>
     </line>
     <line>
       <![CDATA[Angular request time 16ms]]>
@@ -898,19 +898,19 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Strings Matched: Noel Ford = Noel Ford]]>
     </line>
     <line>
-      <![CDATA[Angular request time 10ms]]>
+      <![CDATA[Angular request time 14ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 10ms]]>
+      <![CDATA[Angular request time 12ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (b80800e0e24f8225cee8d137d28def74)] -> id: USR_Name] displayed in 28ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (70793c6ab1a91b7bc56f901ef1f21385)] -> id: USR_Name] displayed in 41ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (b80800e0e24f8225cee8d137d28def74)] -> css selector: .logout-label] displayed in 47ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (70793c6ab1a91b7bc56f901ef1f21385)] -> css selector: .logout-label] displayed in 50ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 16ms]]>
+      <![CDATA[Angular request time 17ms]]>
     </line>
     <line>
       <![CDATA[Closing Browser]]>
@@ -925,43 +925,43 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Browser Maximised]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 236ms]]>
+      <![CDATA[Angular Request Completed in 74ms]]>
     </line>
     <line>
       <![CDATA[Sign in Page Title Verified]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 27ms]]>
+      <![CDATA[Angular Request Completed in 16ms]]>
     </line>
     <line>
       <![CDATA[User signed Admin]]>
     </line>
     <line>
-      <![CDATA[Element '//input[@id='SRCH_Input']' is displayed in 141ms]]>
+      <![CDATA[Element '//input[@id='SRCH_Input']' is displayed in 78ms]]>
     </line>
     <line>
-      <![CDATA[Element 'toolbar-saved' is displayed in 78ms]]>
+      <![CDATA[Element 'toolbar-saved' is displayed in 63ms]]>
     </line>
     <line>
       <![CDATA[Enter Text for Search =Alert]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (1cf24d8e9edb601e36ef9c175ed45827)] -> id: SRCH_Input] displayed in 31ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9818ccde9ce530609e766f430964ab9e)] -> id: SRCH_Input] displayed in 62ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 949ms]]>
+      <![CDATA[Angular request time 993ms]]>
     </line>
     <line>
       <![CDATA[Click Customer]]>
     </line>
     <line>
-      <![CDATA[Angular request time 1916ms]]>
+      <![CDATA[Angular request time 2271ms]]>
     </line>
     <line>
-      <![CDATA[Element '//div[@class='address-details']' is displayed in 386ms]]>
+      <![CDATA[Element '//div[@class='address-details']' is displayed in 112ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 9ms]]>
+      <![CDATA[Angular request time 16ms]]>
     </line>
     <line>
       <![CDATA[Customer Name found Alert Test]]>
@@ -970,10 +970,10 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Strings Not Matched: Mr. Alert Test != Alert Test]]>
     </line>
     <line>
-      <![CDATA[<a href="F:\FailedTestsScreenshots\TestSearchAlertOnLoadScreenshot-1560346136881.jpg"><align="left">Error screenshot at Wed Jun 12 08:28:57 CDT 2019]]>
+      <![CDATA[<a href="F:\FailedTestsScreenshots\TestSearchAlertOnLoadScreenshot-1560368087093.jpg"><align="left">Error screenshot at Wed Jun 12 14:34:47 CDT 2019]]>
     </line>
     <line>
-      <![CDATA[<img width="1024" src="F:\FailedTestsScreenshots\TestSearchAlertOnLoadScreenshot-1560346136881.jpg" alt="screenshot at Wed Jun 12 08:28:57 CDT 2019"/></a><br />]]>
+      <![CDATA[<img width="1024" src="F:\FailedTestsScreenshots\TestSearchAlertOnLoadScreenshot-1560368087093.jpg" alt="screenshot at Wed Jun 12 14:34:47 CDT 2019"/></a><br />]]>
     </line>
     <line>
       <![CDATA[Closing Browser]]>
@@ -988,7 +988,7 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Browser Maximised]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 96ms]]>
+      <![CDATA[Angular Request Completed in 157ms]]>
     </line>
     <line>
       <![CDATA[Sign in Page Title Verified]]>
@@ -1012,22 +1012,22 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Enter Text for Search =Automation]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (98cab7bfacc07277c7c3020a89d889c0)] -> id: SRCH_Input] displayed in 31ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (e1ae22df133b603b422d990feabeb758)] -> id: SRCH_Input] displayed in 31ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 1082ms]]>
+      <![CDATA[Angular request time 1154ms]]>
     </line>
     <line>
       <![CDATA[Click Customer]]>
     </line>
     <line>
-      <![CDATA[Angular request time 2145ms]]>
+      <![CDATA[Angular request time 1881ms]]>
     </line>
     <line>
-      <![CDATA[Element '//div[@class='address-details']' is displayed in 77ms]]>
+      <![CDATA[Element '//div[@class='address-details']' is displayed in 81ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 10ms]]>
+      <![CDATA[Angular request time 11ms]]>
     </line>
     <line>
       <![CDATA[Customer Name found Automation Mate]]>
@@ -1036,10 +1036,10 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Strings Not Matched: Mr. Automation Mate != Automation Mate]]>
     </line>
     <line>
-      <![CDATA[<a href="F:\FailedTestsScreenshots\TestSummarySectionOnChangeScreenshot-1560346159226.jpg"><align="left">Error screenshot at Wed Jun 12 08:29:19 CDT 2019]]>
+      <![CDATA[<a href="F:\FailedTestsScreenshots\TestSummarySectionOnChangeScreenshot-1560368112743.jpg"><align="left">Error screenshot at Wed Jun 12 14:35:13 CDT 2019]]>
     </line>
     <line>
-      <![CDATA[<img width="1024" src="F:\FailedTestsScreenshots\TestSummarySectionOnChangeScreenshot-1560346159226.jpg" alt="screenshot at Wed Jun 12 08:29:19 CDT 2019"/></a><br />]]>
+      <![CDATA[<img width="1024" src="F:\FailedTestsScreenshots\TestSummarySectionOnChangeScreenshot-1560368112743.jpg" alt="screenshot at Wed Jun 12 14:35:13 CDT 2019"/></a><br />]]>
     </line>
     <line>
       <![CDATA[Closing Browser]]>
@@ -1054,13 +1054,13 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Browser Maximised]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 138ms]]>
+      <![CDATA[Angular Request Completed in 27ms]]>
     </line>
     <line>
       <![CDATA[Sign in Page Title Verified]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 16ms]]>
+      <![CDATA[Angular Request Completed in 17ms]]>
     </line>
     <line>
       <![CDATA[User signed Admin]]>
@@ -1069,19 +1069,19 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Enter Text for Search =Automation]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (6cd274bebf8f316c953cf4fc39025c2c)] -> id: SRCH_Input] displayed in 47ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (ca7f5a5f2b80aef6679f58d52647c7b6)] -> id: SRCH_Input] displayed in 48ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 1119ms]]>
+      <![CDATA[Angular request time 1500ms]]>
     </line>
     <line>
       <![CDATA[Click Customer]]>
     </line>
     <line>
-      <![CDATA[Angular request time 2343ms]]>
+      <![CDATA[Angular request time 2340ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 8ms]]>
+      <![CDATA[Angular request time 15ms]]>
     </line>
     <line>
       <![CDATA[Customer Name found Automation Mate]]>
@@ -1090,10 +1090,10 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Strings Not Matched: Mr. Automation Mate != Automation Mate]]>
     </line>
     <line>
-      <![CDATA[<a href="F:\FailedTestsScreenshots\TestSearchAutobyFirstNameScreenshot-1560346182162.jpg"><align="left">Error screenshot at Wed Jun 12 08:29:42 CDT 2019]]>
+      <![CDATA[<a href="F:\FailedTestsScreenshots\TestSearchAutobyFirstNameScreenshot-1560368138985.jpg"><align="left">Error screenshot at Wed Jun 12 14:35:39 CDT 2019]]>
     </line>
     <line>
-      <![CDATA[<img width="1024" src="F:\FailedTestsScreenshots\TestSearchAutobyFirstNameScreenshot-1560346182162.jpg" alt="screenshot at Wed Jun 12 08:29:42 CDT 2019"/></a><br />]]>
+      <![CDATA[<img width="1024" src="F:\FailedTestsScreenshots\TestSearchAutobyFirstNameScreenshot-1560368138985.jpg" alt="screenshot at Wed Jun 12 14:35:39 CDT 2019"/></a><br />]]>
     </line>
     <line>
       <![CDATA[Closing Browser]]>
@@ -1108,7 +1108,7 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Browser Maximised]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 12ms]]>
+      <![CDATA[Angular Request Completed in 29ms]]>
     </line>
     <line>
       <![CDATA[Sign in Page Title Verified]]>
@@ -1123,19 +1123,19 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Enter Text for Search =Mate]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (4e259c23247034c2c3c37c2769e7c295)] -> id: SRCH_Input] displayed in 32ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (ef5aebe979f7550d83122a1d3c6ba504)] -> id: SRCH_Input] displayed in 63ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 1059ms]]>
+      <![CDATA[Angular request time 1024ms]]>
     </line>
     <line>
       <![CDATA[Click Customer]]>
     </line>
     <line>
-      <![CDATA[Angular request time 1846ms]]>
+      <![CDATA[Angular request time 1722ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 7ms]]>
+      <![CDATA[Angular request time 13ms]]>
     </line>
     <line>
       <![CDATA[Customer Name found Automation Mate]]>
@@ -1144,10 +1144,10 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Strings Not Matched: Mr. Automation Mate != Automation Mate]]>
     </line>
     <line>
-      <![CDATA[<a href="F:\FailedTestsScreenshots\TestSearchAutobyLastNameScreenshot-1560346205584.jpg"><align="left">Error screenshot at Wed Jun 12 08:30:05 CDT 2019]]>
+      <![CDATA[<a href="F:\FailedTestsScreenshots\TestSearchAutobyLastNameScreenshot-1560368164852.jpg"><align="left">Error screenshot at Wed Jun 12 14:36:05 CDT 2019]]>
     </line>
     <line>
-      <![CDATA[<img width="1024" src="F:\FailedTestsScreenshots\TestSearchAutobyLastNameScreenshot-1560346205584.jpg" alt="screenshot at Wed Jun 12 08:30:05 CDT 2019"/></a><br />]]>
+      <![CDATA[<img width="1024" src="F:\FailedTestsScreenshots\TestSearchAutobyLastNameScreenshot-1560368164852.jpg" alt="screenshot at Wed Jun 12 14:36:05 CDT 2019"/></a><br />]]>
     </line>
     <line>
       <![CDATA[Closing Browser]]>
@@ -1156,12 +1156,12 @@ Current = 1 Water 1 Bldg]]>
       <![CDATA[Test Completed...]]>
     </line>
   </reporter-output>
-  <suite name="Test Suite for Nexus Portal" duration-ms="445985" started-at="2019-06-12T13:22:42Z" finished-at="2019-06-12T13:30:08Z">
+  <suite name="Test Suite for Nexus Portal" duration-ms="493234" started-at="2019-06-12T19:27:55Z" finished-at="2019-06-12T19:36:08Z">
     <groups>
     </groups>
-    <test name="NexusTest" duration-ms="445985" started-at="2019-06-12T13:22:42Z" finished-at="2019-06-12T13:30:08Z">
+    <test name="NexusTest" duration-ms="493234" started-at="2019-06-12T19:27:55Z" finished-at="2019-06-12T19:36:08Z">
       <class name="com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue">
-        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue@617faa95]" name="readProp" is-config="true" duration-ms="3375" started-at="2019-06-12T13:26:57Z" finished-at="2019-06-12T13:27:00Z">
+        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue@617faa95]" name="readProp" is-config="true" duration-ms="3437" started-at="2019-06-12T19:32:26Z" finished-at="2019-06-12T19:32:30Z">
           <params>
             <param index="0">
               <value>
@@ -1178,16 +1178,16 @@ Current = 1 Water 1 Bldg]]>
             </line>
           </reporter-output>
         </test-method> <!-- readProp -->
-        <test-method status="PASS" signature="TestBillingStatements()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue@617faa95]" name="TestBillingStatements" duration-ms="27091" started-at="2019-06-12T13:27:00Z" finished-at="2019-06-12T13:27:27Z">
+        <test-method status="PASS" signature="TestBillingStatements()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue@617faa95]" name="TestBillingStatements" duration-ms="30880" started-at="2019-06-12T19:32:30Z" finished-at="2019-06-12T19:33:00Z">
           <reporter-output>
             <line>
-              <![CDATA[Angular Request Completed in 26ms]]>
+              <![CDATA[Angular Request Completed in 105ms]]>
             </line>
             <line>
               <![CDATA[Sign in Page Title Verified]]>
             </line>
             <line>
-              <![CDATA[Angular Request Completed in 46ms]]>
+              <![CDATA[Angular Request Completed in 14ms]]>
             </line>
             <line>
               <![CDATA[User signed Admin]]>
@@ -1196,19 +1196,19 @@ Current = 1 Water 1 Bldg]]>
               <![CDATA[Enter Text for Search =STATEMENTS001]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ec8d185cb43650d55b2453a0e4db5aab)] -> id: SRCH_Input] displayed in 63ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (8996f8ada4a658c8863160612d3b2ed9)] -> id: SRCH_Input] displayed in 78ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 1074ms]]>
+              <![CDATA[Angular request time 956ms]]>
             </line>
             <line>
               <![CDATA[Click Customer]]>
             </line>
             <line>
-              <![CDATA[Angular request time 1801ms]]>
+              <![CDATA[Angular request time 2877ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 1259ms]]>
+              <![CDATA[Angular request time 78ms]]>
             </line>
             <line>
               <![CDATA[Customer Location Id found STATEMENTS001]]>
@@ -1220,47 +1220,47 @@ Current = 1 Water 1 Bldg]]>
               <![CDATA[Angular request time 15ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 12ms]]>
+              <![CDATA[Angular request time 22ms]]>
             </line>
             <line>
               <![CDATA[Verify Bill Statement Date]]>
             </line>
             <line>
-              <![CDATA[Angular request time 10ms]]>
+              <![CDATA[Angular request time 19ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ec8d185cb43650d55b2453a0e4db5aab)] -> id: BILL_Statement_1] displayed in 42ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (8996f8ada4a658c8863160612d3b2ed9)] -> id: BILL_Statement_1] displayed in 79ms]]>
             </line>
             <line>
               <![CDATA[Strings Matched: Jul 31, 2019 = Jul 31, 2019]]>
             </line>
             <line>
-              <![CDATA[Angular request time 12ms]]>
+              <![CDATA[Angular request time 44ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ec8d185cb43650d55b2453a0e4db5aab)] -> id: BILL_Statement_Value_1] displayed in 32ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (8996f8ada4a658c8863160612d3b2ed9)] -> id: BILL_Statement_Value_1] displayed in 68ms]]>
             </line>
             <line>
               <![CDATA[Strings Matched: $56.71 = $56.71]]>
             </line>
             <line>
-              <![CDATA[Angular request time 10ms]]>
+              <![CDATA[Angular request time 30ms]]>
             </line>
             <line>
               <![CDATA[Angular request time 16ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ec8d185cb43650d55b2453a0e4db5aab)] -> id: USR_Name] displayed in 36ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (8996f8ada4a658c8863160612d3b2ed9)] -> id: USR_Name] displayed in 58ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ec8d185cb43650d55b2453a0e4db5aab)] -> css selector: .logout-label] displayed in 46ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (8996f8ada4a658c8863160612d3b2ed9)] -> css selector: .logout-label] displayed in 64ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 19ms]]>
+              <![CDATA[Angular request time 24ms]]>
             </line>
           </reporter-output>
         </test-method> <!-- TestBillingStatements -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue@617faa95]" name="TearDown" is-config="true" duration-ms="127" started-at="2019-06-12T13:27:27Z" finished-at="2019-06-12T13:27:27Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue@617faa95]" name="TearDown" is-config="true" duration-ms="261" started-at="2019-06-12T19:33:00Z" finished-at="2019-06-12T19:33:01Z">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
@@ -1272,7 +1272,7 @@ Current = 1 Water 1 Bldg]]>
         </test-method> <!-- TearDown -->
       </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue -->
       <class name="com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus">
-        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus@dc24521]" name="readProp" is-config="true" duration-ms="4157" started-at="2019-06-12T13:24:54Z" finished-at="2019-06-12T13:24:58Z">
+        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus@dc24521]" name="readProp" is-config="true" duration-ms="3517" started-at="2019-06-12T19:30:17Z" finished-at="2019-06-12T19:30:21Z">
           <params>
             <param index="0">
               <value>
@@ -1289,16 +1289,16 @@ Current = 1 Water 1 Bldg]]>
             </line>
           </reporter-output>
         </test-method> <!-- readProp -->
-        <test-method status="PASS" signature="TestCreditStatus()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus@dc24521]" name="TestCreditStatus" duration-ms="25445" started-at="2019-06-12T13:24:58Z" finished-at="2019-06-12T13:25:23Z">
+        <test-method status="PASS" signature="TestCreditStatus()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus@dc24521]" name="TestCreditStatus" duration-ms="28677" started-at="2019-06-12T19:30:21Z" finished-at="2019-06-12T19:30:49Z">
           <reporter-output>
             <line>
-              <![CDATA[Angular Request Completed in 35ms]]>
+              <![CDATA[Angular Request Completed in 21ms]]>
             </line>
             <line>
               <![CDATA[Sign in Page Title Verified]]>
             </line>
             <line>
-              <![CDATA[Angular Request Completed in 16ms]]>
+              <![CDATA[Angular Request Completed in 62ms]]>
             </line>
             <line>
               <![CDATA[User signed Admin]]>
@@ -1307,16 +1307,16 @@ Current = 1 Water 1 Bldg]]>
               <![CDATA[Enter Text for Search =LOC@0001]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (5336110f9860c906300678e9f75f5396)] -> id: SRCH_Input] displayed in 48ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9af8117e841d73d3fea8d92712ed7f95)] -> id: SRCH_Input] displayed in 47ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 1065ms]]>
+              <![CDATA[Angular request time 920ms]]>
             </line>
             <line>
               <![CDATA[Click Customer]]>
             </line>
             <line>
-              <![CDATA[Angular request time 2138ms]]>
+              <![CDATA[Angular request time 2244ms]]>
             </line>
             <line>
               <![CDATA[Angular request time 12ms]]>
@@ -1331,26 +1331,26 @@ Current = 1 Water 1 Bldg]]>
               <![CDATA[Verify Credit Status]]>
             </line>
             <line>
-              <![CDATA[Angular request time 15ms]]>
+              <![CDATA[Angular request time 16ms]]>
             </line>
             <line>
               <![CDATA[Angular request time 15ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 11ms]]>
+              <![CDATA[Angular request time 10ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (5336110f9860c906300678e9f75f5396)] -> id: USR_Name] displayed in 28ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9af8117e841d73d3fea8d92712ed7f95)] -> id: USR_Name] displayed in 27ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (5336110f9860c906300678e9f75f5396)] -> css selector: .logout-label] displayed in 49ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9af8117e841d73d3fea8d92712ed7f95)] -> css selector: .logout-label] displayed in 47ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 30ms]]>
+              <![CDATA[Angular request time 627ms]]>
             </line>
           </reporter-output>
         </test-method> <!-- TestCreditStatus -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus@dc24521]" name="TearDown" is-config="true" duration-ms="163" started-at="2019-06-12T13:25:23Z" finished-at="2019-06-12T13:25:23Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus@dc24521]" name="TearDown" is-config="true" duration-ms="85" started-at="2019-06-12T19:30:49Z" finished-at="2019-06-12T19:30:49Z">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
@@ -1362,7 +1362,7 @@ Current = 1 Water 1 Bldg]]>
         </test-method> <!-- TearDown -->
       </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus -->
       <class name="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection">
-        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection@64bfbc86]" name="readProp" is-config="true" duration-ms="3358" started-at="2019-06-12T13:28:59Z" finished-at="2019-06-12T13:29:02Z">
+        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection@64bfbc86]" name="readProp" is-config="true" duration-ms="3469" started-at="2019-06-12T19:34:49Z" finished-at="2019-06-12T19:34:53Z">
           <params>
             <param index="0">
               <value>
@@ -1379,7 +1379,7 @@ Current = 1 Water 1 Bldg]]>
             </line>
           </reporter-output>
         </test-method> <!-- readProp -->
-        <test-method status="FAIL" signature="TestSummarySectionOnChange()[pri:2, instance:com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection@64bfbc86]" name="TestSummarySectionOnChange" duration-ms="16329" started-at="2019-06-12T13:29:02Z" finished-at="2019-06-12T13:29:19Z">
+        <test-method status="FAIL" signature="TestSummarySectionOnChange()[pri:2, instance:com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection@64bfbc86]" name="TestSummarySectionOnChange" duration-ms="19352" started-at="2019-06-12T19:34:53Z" finished-at="2019-06-12T19:35:12Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Automation Mate] but found [Mr. Automation Mate]]]>
@@ -1428,7 +1428,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Angular Request Completed in 96ms]]>
+              <![CDATA[Angular Request Completed in 157ms]]>
             </line>
             <line>
               <![CDATA[Sign in Page Title Verified]]>
@@ -1452,22 +1452,22 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               <![CDATA[Enter Text for Search =Automation]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (98cab7bfacc07277c7c3020a89d889c0)] -> id: SRCH_Input] displayed in 31ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (e1ae22df133b603b422d990feabeb758)] -> id: SRCH_Input] displayed in 31ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 1082ms]]>
+              <![CDATA[Angular request time 1154ms]]>
             </line>
             <line>
               <![CDATA[Click Customer]]>
             </line>
             <line>
-              <![CDATA[Angular request time 2145ms]]>
+              <![CDATA[Angular request time 1881ms]]>
             </line>
             <line>
-              <![CDATA[Element '//div[@class='address-details']' is displayed in 77ms]]>
+              <![CDATA[Element '//div[@class='address-details']' is displayed in 81ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 10ms]]>
+              <![CDATA[Angular request time 11ms]]>
             </line>
             <line>
               <![CDATA[Customer Name found Automation Mate]]>
@@ -1476,14 +1476,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               <![CDATA[Strings Not Matched: Mr. Automation Mate != Automation Mate]]>
             </line>
             <line>
-              <![CDATA[<a href="F:\FailedTestsScreenshots\TestSummarySectionOnChangeScreenshot-1560346159226.jpg"><align="left">Error screenshot at Wed Jun 12 08:29:19 CDT 2019]]>
+              <![CDATA[<a href="F:\FailedTestsScreenshots\TestSummarySectionOnChangeScreenshot-1560368112743.jpg"><align="left">Error screenshot at Wed Jun 12 14:35:13 CDT 2019]]>
             </line>
             <line>
-              <![CDATA[<img width="1024" src="F:\FailedTestsScreenshots\TestSummarySectionOnChangeScreenshot-1560346159226.jpg" alt="screenshot at Wed Jun 12 08:29:19 CDT 2019"/></a><br />]]>
+              <![CDATA[<img width="1024" src="F:\FailedTestsScreenshots\TestSummarySectionOnChangeScreenshot-1560368112743.jpg" alt="screenshot at Wed Jun 12 14:35:13 CDT 2019"/></a><br />]]>
             </line>
           </reporter-output>
         </test-method> <!-- TestSummarySectionOnChange -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection@64bfbc86]" name="TearDown" is-config="true" duration-ms="2359" started-at="2019-06-12T13:29:19Z" finished-at="2019-06-12T13:29:21Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection@64bfbc86]" name="TearDown" is-config="true" duration-ms="2251" started-at="2019-06-12T19:35:13Z" finished-at="2019-06-12T19:35:15Z">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
@@ -1495,7 +1495,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
         </test-method> <!-- TearDown -->
       </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection -->
       <class name="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad">
-        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad@192b07fd]" name="readProp" is-config="true" duration-ms="3344" started-at="2019-06-12T13:28:35Z" finished-at="2019-06-12T13:28:38Z">
+        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad@192b07fd]" name="readProp" is-config="true" duration-ms="3344" started-at="2019-06-12T19:34:25Z" finished-at="2019-06-12T19:34:28Z">
           <params>
             <param index="0">
               <value>
@@ -1512,7 +1512,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
             </line>
           </reporter-output>
         </test-method> <!-- readProp -->
-        <test-method status="FAIL" signature="TestSearchAlertOnLoad()[pri:2, instance:com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad@192b07fd]" name="TestSearchAlertOnLoad" duration-ms="18421" started-at="2019-06-12T13:28:38Z" finished-at="2019-06-12T13:28:56Z">
+        <test-method status="FAIL" signature="TestSearchAlertOnLoad()[pri:2, instance:com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad@192b07fd]" name="TestSearchAlertOnLoad" duration-ms="18657" started-at="2019-06-12T19:34:28Z" finished-at="2019-06-12T19:34:47Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Alert Test] but found [Mr. Alert Test]]]>
@@ -1561,43 +1561,43 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Angular Request Completed in 236ms]]>
+              <![CDATA[Angular Request Completed in 74ms]]>
             </line>
             <line>
               <![CDATA[Sign in Page Title Verified]]>
             </line>
             <line>
-              <![CDATA[Angular Request Completed in 27ms]]>
+              <![CDATA[Angular Request Completed in 16ms]]>
             </line>
             <line>
               <![CDATA[User signed Admin]]>
             </line>
             <line>
-              <![CDATA[Element '//input[@id='SRCH_Input']' is displayed in 141ms]]>
+              <![CDATA[Element '//input[@id='SRCH_Input']' is displayed in 78ms]]>
             </line>
             <line>
-              <![CDATA[Element 'toolbar-saved' is displayed in 78ms]]>
+              <![CDATA[Element 'toolbar-saved' is displayed in 63ms]]>
             </line>
             <line>
               <![CDATA[Enter Text for Search =Alert]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (1cf24d8e9edb601e36ef9c175ed45827)] -> id: SRCH_Input] displayed in 31ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9818ccde9ce530609e766f430964ab9e)] -> id: SRCH_Input] displayed in 62ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 949ms]]>
+              <![CDATA[Angular request time 993ms]]>
             </line>
             <line>
               <![CDATA[Click Customer]]>
             </line>
             <line>
-              <![CDATA[Angular request time 1916ms]]>
+              <![CDATA[Angular request time 2271ms]]>
             </line>
             <line>
-              <![CDATA[Element '//div[@class='address-details']' is displayed in 386ms]]>
+              <![CDATA[Element '//div[@class='address-details']' is displayed in 112ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 9ms]]>
+              <![CDATA[Angular request time 16ms]]>
             </line>
             <line>
               <![CDATA[Customer Name found Alert Test]]>
@@ -1606,14 +1606,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               <![CDATA[Strings Not Matched: Mr. Alert Test != Alert Test]]>
             </line>
             <line>
-              <![CDATA[<a href="F:\FailedTestsScreenshots\TestSearchAlertOnLoadScreenshot-1560346136881.jpg"><align="left">Error screenshot at Wed Jun 12 08:28:57 CDT 2019]]>
+              <![CDATA[<a href="F:\FailedTestsScreenshots\TestSearchAlertOnLoadScreenshot-1560368087093.jpg"><align="left">Error screenshot at Wed Jun 12 14:34:47 CDT 2019]]>
             </line>
             <line>
-              <![CDATA[<img width="1024" src="F:\FailedTestsScreenshots\TestSearchAlertOnLoadScreenshot-1560346136881.jpg" alt="screenshot at Wed Jun 12 08:28:57 CDT 2019"/></a><br />]]>
+              <![CDATA[<img width="1024" src="F:\FailedTestsScreenshots\TestSearchAlertOnLoadScreenshot-1560368087093.jpg" alt="screenshot at Wed Jun 12 14:34:47 CDT 2019"/></a><br />]]>
             </line>
           </reporter-output>
         </test-method> <!-- TestSearchAlertOnLoad -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad@192b07fd]" name="TearDown" is-config="true" duration-ms="2220" started-at="2019-06-12T13:28:57Z" finished-at="2019-06-12T13:28:59Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad@192b07fd]" name="TearDown" is-config="true" duration-ms="2359" started-at="2019-06-12T19:34:47Z" finished-at="2019-06-12T19:34:49Z">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
@@ -1625,7 +1625,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
         </test-method> <!-- TearDown -->
       </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad -->
       <class name="com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails">
-        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails@148080bb]" name="readProp" is-config="true" duration-ms="3359" started-at="2019-06-12T13:24:20Z" finished-at="2019-06-12T13:24:23Z">
+        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails@148080bb]" name="readProp" is-config="true" duration-ms="3468" started-at="2019-06-12T19:29:40Z" finished-at="2019-06-12T19:29:44Z">
           <params>
             <param index="0">
               <value>
@@ -1642,16 +1642,16 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
             </line>
           </reporter-output>
         </test-method> <!-- readProp -->
-        <test-method status="PASS" signature="TestCustomerDetails()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails@148080bb]" name="TestCustomerDetails" duration-ms="28047" started-at="2019-06-12T13:24:23Z" finished-at="2019-06-12T13:24:51Z">
+        <test-method status="PASS" signature="TestCustomerDetails()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails@148080bb]" name="TestCustomerDetails" duration-ms="30791" started-at="2019-06-12T19:29:44Z" finished-at="2019-06-12T19:30:14Z">
           <reporter-output>
             <line>
-              <![CDATA[Angular Request Completed in 45ms]]>
+              <![CDATA[Angular Request Completed in 53ms]]>
             </line>
             <line>
               <![CDATA[Sign in Page Title Verified]]>
             </line>
             <line>
-              <![CDATA[Angular Request Completed in 31ms]]>
+              <![CDATA[Angular Request Completed in 202ms]]>
             </line>
             <line>
               <![CDATA[User signed Admin]]>
@@ -1660,19 +1660,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               <![CDATA[Enter Text for Search =LOC@0001]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (b60b6a851c328b05628f32cd88d1c41e)] -> id: SRCH_Input] displayed in 62ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (6261a6d3855a15b11691d1c596b09cd4)] -> id: SRCH_Input] displayed in 47ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 973ms]]>
+              <![CDATA[Angular request time 1364ms]]>
             </line>
             <line>
               <![CDATA[Click Customer]]>
             </line>
             <line>
-              <![CDATA[Angular request time 2043ms]]>
+              <![CDATA[Angular request time 1945ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 13ms]]>
+              <![CDATA[Angular request time 29ms]]>
             </line>
             <line>
               <![CDATA[Customer Location Id found LOC@0001]]>
@@ -1681,7 +1681,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               <![CDATA[Strings Matched: LOC@0001 = LOC@0001]]>
             </line>
             <line>
-              <![CDATA[Angular request time 10ms]]>
+              <![CDATA[Angular request time 6ms]]>
             </line>
             <line>
               <![CDATA[Verifying Customer Details]]>
@@ -1708,23 +1708,23 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               <![CDATA[Strings Matched: New York NY 12345-67890 = New York NY 12345-67890]]>
             </line>
             <line>
-              <![CDATA[Angular request time 12ms]]>
+              <![CDATA[Angular request time 8ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 10ms]]>
+              <![CDATA[Angular request time 22ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (b60b6a851c328b05628f32cd88d1c41e)] -> id: USR_Name] displayed in 35ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (6261a6d3855a15b11691d1c596b09cd4)] -> id: USR_Name] displayed in 34ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (b60b6a851c328b05628f32cd88d1c41e)] -> css selector: .logout-label] displayed in 35ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (6261a6d3855a15b11691d1c596b09cd4)] -> css selector: .logout-label] displayed in 43ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 33ms]]>
+              <![CDATA[Angular request time 16ms]]>
             </line>
           </reporter-output>
         </test-method> <!-- TestCustomerDetails -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails@148080bb]" name="TearDown" is-config="true" duration-ms="2312" started-at="2019-06-12T13:24:51Z" finished-at="2019-06-12T13:24:54Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails@148080bb]" name="TearDown" is-config="true" duration-ms="2693" started-at="2019-06-12T19:30:14Z" finished-at="2019-06-12T19:30:17Z">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
@@ -1736,7 +1736,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
         </test-method> <!-- TearDown -->
       </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails -->
       <class name="com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName">
-        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName@2d928643]" name="readProp" is-config="true" duration-ms="3344" started-at="2019-06-12T13:29:21Z" finished-at="2019-06-12T13:29:25Z">
+        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName@2d928643]" name="readProp" is-config="true" duration-ms="3688" started-at="2019-06-12T19:35:15Z" finished-at="2019-06-12T19:35:19Z">
           <params>
             <param index="0">
               <value>
@@ -1753,7 +1753,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
             </line>
           </reporter-output>
         </test-method> <!-- readProp -->
-        <test-method status="FAIL" signature="TestSearchAutobyFirstName()[pri:2, instance:com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName@2d928643]" name="TestSearchAutobyFirstName" duration-ms="16842" started-at="2019-06-12T13:29:25Z" finished-at="2019-06-12T13:29:42Z">
+        <test-method status="FAIL" signature="TestSearchAutobyFirstName()[pri:2, instance:com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName@2d928643]" name="TestSearchAutobyFirstName" duration-ms="19828" started-at="2019-06-12T19:35:19Z" finished-at="2019-06-12T19:35:38Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Automation Mate] but found [Mr. Automation Mate]]]>
@@ -1802,13 +1802,13 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Angular Request Completed in 138ms]]>
+              <![CDATA[Angular Request Completed in 27ms]]>
             </line>
             <line>
               <![CDATA[Sign in Page Title Verified]]>
             </line>
             <line>
-              <![CDATA[Angular Request Completed in 16ms]]>
+              <![CDATA[Angular Request Completed in 17ms]]>
             </line>
             <line>
               <![CDATA[User signed Admin]]>
@@ -1817,19 +1817,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               <![CDATA[Enter Text for Search =Automation]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (6cd274bebf8f316c953cf4fc39025c2c)] -> id: SRCH_Input] displayed in 47ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (ca7f5a5f2b80aef6679f58d52647c7b6)] -> id: SRCH_Input] displayed in 48ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 1119ms]]>
+              <![CDATA[Angular request time 1500ms]]>
             </line>
             <line>
               <![CDATA[Click Customer]]>
             </line>
             <line>
-              <![CDATA[Angular request time 2343ms]]>
+              <![CDATA[Angular request time 2340ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 8ms]]>
+              <![CDATA[Angular request time 15ms]]>
             </line>
             <line>
               <![CDATA[Customer Name found Automation Mate]]>
@@ -1838,14 +1838,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               <![CDATA[Strings Not Matched: Mr. Automation Mate != Automation Mate]]>
             </line>
             <line>
-              <![CDATA[<a href="F:\FailedTestsScreenshots\TestSearchAutobyFirstNameScreenshot-1560346182162.jpg"><align="left">Error screenshot at Wed Jun 12 08:29:42 CDT 2019]]>
+              <![CDATA[<a href="F:\FailedTestsScreenshots\TestSearchAutobyFirstNameScreenshot-1560368138985.jpg"><align="left">Error screenshot at Wed Jun 12 14:35:39 CDT 2019]]>
             </line>
             <line>
-              <![CDATA[<img width="1024" src="F:\FailedTestsScreenshots\TestSearchAutobyFirstNameScreenshot-1560346182162.jpg" alt="screenshot at Wed Jun 12 08:29:42 CDT 2019"/></a><br />]]>
+              <![CDATA[<img width="1024" src="F:\FailedTestsScreenshots\TestSearchAutobyFirstNameScreenshot-1560368138985.jpg" alt="screenshot at Wed Jun 12 14:35:39 CDT 2019"/></a><br />]]>
             </line>
           </reporter-output>
         </test-method> <!-- TestSearchAutobyFirstName -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName@2d928643]" name="TearDown" is-config="true" duration-ms="2344" started-at="2019-06-12T13:29:42Z" finished-at="2019-06-12T13:29:44Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName@2d928643]" name="TearDown" is-config="true" duration-ms="2391" started-at="2019-06-12T19:35:39Z" finished-at="2019-06-12T19:35:41Z">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
@@ -1857,7 +1857,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
         </test-method> <!-- TearDown -->
       </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName -->
       <class name="com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks">
-        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks@20322d26]" name="readProp" is-config="true" duration-ms="3328" started-at="2019-06-12T13:28:07Z" finished-at="2019-06-12T13:28:10Z">
+        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks@20322d26]" name="readProp" is-config="true" duration-ms="3579" started-at="2019-06-12T19:33:46Z" finished-at="2019-06-12T19:33:50Z">
           <params>
             <param index="0">
               <value>
@@ -1874,10 +1874,10 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
             </line>
           </reporter-output>
         </test-method> <!-- readProp -->
-        <test-method status="PASS" signature="TestSearchAutobyBookMark()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks@20322d26]" name="TestSearchAutobyBookMark" duration-ms="24652" started-at="2019-06-12T13:28:10Z" finished-at="2019-06-12T13:28:35Z">
+        <test-method status="PASS" signature="TestSearchAutobyBookMark()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks@20322d26]" name="TestSearchAutobyBookMark" duration-ms="32755" started-at="2019-06-12T19:33:50Z" finished-at="2019-06-12T19:34:22Z">
           <reporter-output>
             <line>
-              <![CDATA[Angular Request Completed in 126ms]]>
+              <![CDATA[Angular Request Completed in 15ms]]>
             </line>
             <line>
               <![CDATA[Sign in Page Title Verified]]>
@@ -1889,10 +1889,10 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               <![CDATA[User signed Admin]]>
             </line>
             <line>
-              <![CDATA[Element '//input[@id='SRCH_Input']' is displayed in 78ms]]>
+              <![CDATA[Element '//input[@id='SRCH_Input']' is displayed in 93ms]]>
             </line>
             <line>
-              <![CDATA[Element 'SRCH_Button_Favorites' is displayed in 62ms]]>
+              <![CDATA[Element 'SRCH_Button_Favorites' is displayed in 95ms]]>
             </line>
             <line>
               <![CDATA[Click BookMarked Customer]]>
@@ -1901,10 +1901,10 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               <![CDATA[Click Customer]]>
             </line>
             <line>
-              <![CDATA[Angular request time 2315ms]]>
+              <![CDATA[Angular request time 2552ms]]>
             </line>
             <line>
-              <![CDATA[Element '//div[@class='address-details']' is displayed in 93ms]]>
+              <![CDATA[Element '//div[@class='address-details']' is displayed in 66ms]]>
             </line>
             <line>
               <![CDATA[Angular request time 16ms]]>
@@ -1916,23 +1916,23 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               <![CDATA[Strings Matched: Noel Ford = Noel Ford]]>
             </line>
             <line>
-              <![CDATA[Angular request time 10ms]]>
+              <![CDATA[Angular request time 14ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 10ms]]>
+              <![CDATA[Angular request time 12ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (b80800e0e24f8225cee8d137d28def74)] -> id: USR_Name] displayed in 28ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (70793c6ab1a91b7bc56f901ef1f21385)] -> id: USR_Name] displayed in 41ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (b80800e0e24f8225cee8d137d28def74)] -> css selector: .logout-label] displayed in 47ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (70793c6ab1a91b7bc56f901ef1f21385)] -> css selector: .logout-label] displayed in 50ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 16ms]]>
+              <![CDATA[Angular request time 17ms]]>
             </line>
           </reporter-output>
         </test-method> <!-- TestSearchAutobyBookMark -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks@20322d26]" name="TearDown" is-config="true" duration-ms="114" started-at="2019-06-12T13:28:35Z" finished-at="2019-06-12T13:28:35Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks@20322d26]" name="TearDown" is-config="true" duration-ms="2166" started-at="2019-06-12T19:34:22Z" finished-at="2019-06-12T19:34:25Z">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
@@ -1944,7 +1944,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
         </test-method> <!-- TearDown -->
       </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks -->
       <class name="com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact">
-        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact@6e1ec318]" name="readProp" is-config="true" duration-ms="3453" started-at="2019-06-12T13:25:57Z" finished-at="2019-06-12T13:26:01Z">
+        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact@6e1ec318]" name="readProp" is-config="true" duration-ms="3265" started-at="2019-06-12T19:31:25Z" finished-at="2019-06-12T19:31:29Z">
           <params>
             <param index="0">
               <value>
@@ -1961,16 +1961,16 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
             </line>
           </reporter-output>
         </test-method> <!-- readProp -->
-        <test-method status="PASS" signature="TestSecondayContact()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact@6e1ec318]" name="TestSecondayContact" duration-ms="24279" started-at="2019-06-12T13:26:01Z" finished-at="2019-06-12T13:26:25Z">
+        <test-method status="PASS" signature="TestSecondayContact()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact@6e1ec318]" name="TestSecondayContact" duration-ms="25660" started-at="2019-06-12T19:31:29Z" finished-at="2019-06-12T19:31:54Z">
           <reporter-output>
             <line>
-              <![CDATA[Angular Request Completed in 21ms]]>
+              <![CDATA[Angular Request Completed in 17ms]]>
             </line>
             <line>
               <![CDATA[Sign in Page Title Verified]]>
             </line>
             <line>
-              <![CDATA[Angular Request Completed in 16ms]]>
+              <![CDATA[Angular Request Completed in 62ms]]>
             </line>
             <line>
               <![CDATA[User signed Admin]]>
@@ -1979,19 +1979,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               <![CDATA[Enter Text for Search =LOC@0004]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (3ce6bb779a4131eef08d15dc1aab54ef)] -> id: SRCH_Input] displayed in 31ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (fe41e02a751efbf9228b25e1d789d0c9)] -> id: SRCH_Input] displayed in 31ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 1106ms]]>
+              <![CDATA[Angular request time 1050ms]]>
             </line>
             <line>
               <![CDATA[Click Customer]]>
             </line>
             <line>
-              <![CDATA[Angular request time 1502ms]]>
+              <![CDATA[Angular request time 1811ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 329ms]]>
+              <![CDATA[Angular request time 429ms]]>
             </line>
             <line>
               <![CDATA[Customer Location Id found LOC@0004]]>
@@ -2003,35 +2003,35 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               <![CDATA[Angular request time 10ms]]>
             </line>
             <line>
+              <![CDATA[Angular request time 291ms]]>
+            </line>
+            <line>
               <![CDATA[Angular request time 11ms]]>
             </line>
             <line>
               <![CDATA[Angular request time 10ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 13ms]]>
-            </line>
-            <line>
               <![CDATA[Strings Matched: Secondary Customer (SECONDARY) = Secondary Customer (SECONDARY)]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 8ms]]>
             </line>
             <line>
               <![CDATA[Angular request time 11ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (3ce6bb779a4131eef08d15dc1aab54ef)] -> id: USR_Name] displayed in 30ms]]>
+              <![CDATA[Angular request time 12ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (3ce6bb779a4131eef08d15dc1aab54ef)] -> css selector: .logout-label] displayed in 51ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (fe41e02a751efbf9228b25e1d789d0c9)] -> id: USR_Name] displayed in 38ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 39ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (fe41e02a751efbf9228b25e1d789d0c9)] -> css selector: .logout-label] displayed in 36ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 31ms]]>
             </line>
           </reporter-output>
         </test-method> <!-- TestSecondayContact -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact@6e1ec318]" name="TearDown" is-config="true" duration-ms="236" started-at="2019-06-12T13:26:25Z" finished-at="2019-06-12T13:26:25Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact@6e1ec318]" name="TearDown" is-config="true" duration-ms="137" started-at="2019-06-12T19:31:54Z" finished-at="2019-06-12T19:31:54Z">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
@@ -2043,7 +2043,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
         </test-method> <!-- TearDown -->
       </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact -->
       <class name="com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch">
-        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch@55d56113]" name="readProp" is-config="true" duration-ms="3375" started-at="2019-06-12T13:23:47Z" finished-at="2019-06-12T13:23:50Z">
+        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch@55d56113]" name="readProp" is-config="true" duration-ms="4016" started-at="2019-06-12T19:29:05Z" finished-at="2019-06-12T19:29:09Z">
           <params>
             <param index="0">
               <value>
@@ -2060,16 +2060,16 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
             </line>
           </reporter-output>
         </test-method> <!-- readProp -->
-        <test-method status="PASS" signature="TestSearchAccount()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch@55d56113]" name="TestSearchAccount" duration-ms="27703" started-at="2019-06-12T13:23:50Z" finished-at="2019-06-12T13:24:18Z">
+        <test-method status="PASS" signature="TestSearchAccount()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch@55d56113]" name="TestSearchAccount" duration-ms="29078" started-at="2019-06-12T19:29:09Z" finished-at="2019-06-12T19:29:38Z">
           <reporter-output>
             <line>
-              <![CDATA[Angular Request Completed in 25ms]]>
+              <![CDATA[Angular Request Completed in 240ms]]>
             </line>
             <line>
               <![CDATA[Sign in Page Title Verified]]>
             </line>
             <line>
-              <![CDATA[Angular Request Completed in 16ms]]>
+              <![CDATA[Angular Request Completed in 15ms]]>
             </line>
             <line>
               <![CDATA[User signed Admin]]>
@@ -2078,16 +2078,16 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               <![CDATA[Enter Text for Search =LOC@0004]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (6753fb691ff4a3e2f62482eea33e8f01)] -> id: SRCH_Input] displayed in 46ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (b9f73f10bd7e286039923108d68845be)] -> id: SRCH_Input] displayed in 32ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 1162ms]]>
+              <![CDATA[Angular request time 1087ms]]>
             </line>
             <line>
               <![CDATA[Click Customer]]>
             </line>
             <line>
-              <![CDATA[Angular request time 2069ms]]>
+              <![CDATA[Angular request time 2084ms]]>
             </line>
             <line>
               <![CDATA[Angular request time 14ms]]>
@@ -2099,34 +2099,34 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               <![CDATA[Strings Matched: LOC@0004 = LOC@0004]]>
             </line>
             <line>
-              <![CDATA[Angular request time 20ms]]>
+              <![CDATA[Angular request time 12ms]]>
             </line>
             <line>
               <![CDATA[Click on Account Drop down]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (6753fb691ff4a3e2f62482eea33e8f01)] -> id: SRCH_Accounts_Label] displayed in 55ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (b9f73f10bd7e286039923108d68845be)] -> id: SRCH_Accounts_Label] displayed in 67ms]]>
             </line>
             <line>
               <![CDATA[Enter Account Name]]>
             </line>
             <line>
-              <![CDATA[Angular request time 32ms]]>
+              <![CDATA[Angular request time 28ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (6753fb691ff4a3e2f62482eea33e8f01)] -> id: SRCH_Accounts] displayed in 43ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (b9f73f10bd7e286039923108d68845be)] -> id: SRCH_Accounts] displayed in 57ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 207ms]]>
+              <![CDATA[Angular request time 123ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 16ms]]>
+              <![CDATA[Angular request time 12ms]]>
             </line>
             <line>
               <![CDATA[Verify Account Name =1 Water 1 Bldg]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (6753fb691ff4a3e2f62482eea33e8f01)] -> id: SRCH_Accounts_Result1] displayed in 47ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (b9f73f10bd7e286039923108d68845be)] -> id: SRCH_Accounts_Result1] displayed in 54ms]]>
             </line>
             <line>
               <![CDATA[Strings Matched: 1 Water 1 Bldg
@@ -2137,26 +2137,26 @@ Apr 2019 - Current
 Current = 1 Water 1 Bldg]]>
             </line>
             <line>
-              <![CDATA[Angular request time 16ms]]>
+              <![CDATA[Angular request time 15ms]]>
             </line>
             <line>
               <![CDATA[Angular request time 16ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 13ms]]>
+              <![CDATA[Angular request time 17ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (6753fb691ff4a3e2f62482eea33e8f01)] -> id: USR_Name] displayed in 36ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (b9f73f10bd7e286039923108d68845be)] -> id: USR_Name] displayed in 47ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (6753fb691ff4a3e2f62482eea33e8f01)] -> css selector: .logout-label] displayed in 59ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (b9f73f10bd7e286039923108d68845be)] -> css selector: .logout-label] displayed in 50ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 21ms]]>
+              <![CDATA[Angular request time 28ms]]>
             </line>
           </reporter-output>
         </test-method> <!-- TestSearchAccount -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch@55d56113]" name="TearDown" is-config="true" duration-ms="2171" started-at="2019-06-12T13:24:18Z" finished-at="2019-06-12T13:24:20Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch@55d56113]" name="TearDown" is-config="true" duration-ms="2297" started-at="2019-06-12T19:29:38Z" finished-at="2019-06-12T19:29:40Z">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
@@ -2168,7 +2168,7 @@ Current = 1 Water 1 Bldg]]>
         </test-method> <!-- TearDown -->
       </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch -->
       <class name="com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs">
-        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs@7e0b0338]" name="readProp" is-config="true" duration-ms="3469" started-at="2019-06-12T13:26:25Z" finished-at="2019-06-12T13:26:29Z">
+        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs@7e0b0338]" name="readProp" is-config="true" duration-ms="3610" started-at="2019-06-12T19:31:54Z" finished-at="2019-06-12T19:31:58Z">
           <params>
             <param index="0">
               <value>
@@ -2185,16 +2185,16 @@ Current = 1 Water 1 Bldg]]>
             </line>
           </reporter-output>
         </test-method> <!-- readProp -->
-        <test-method status="PASS" signature="TestNotesSection()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs@7e0b0338]" name="TestNotesSection" duration-ms="27775" started-at="2019-06-12T13:26:29Z" finished-at="2019-06-12T13:26:57Z">
+        <test-method status="PASS" signature="TestNotesSection()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs@7e0b0338]" name="TestNotesSection" duration-ms="27820" started-at="2019-06-12T19:31:58Z" finished-at="2019-06-12T19:32:26Z">
           <reporter-output>
             <line>
-              <![CDATA[Angular Request Completed in 147ms]]>
+              <![CDATA[Angular Request Completed in 49ms]]>
             </line>
             <line>
               <![CDATA[Sign in Page Title Verified]]>
             </line>
             <line>
-              <![CDATA[Angular Request Completed in 4ms]]>
+              <![CDATA[Angular Request Completed in 47ms]]>
             </line>
             <line>
               <![CDATA[User signed Admin]]>
@@ -2203,19 +2203,19 @@ Current = 1 Water 1 Bldg]]>
               <![CDATA[Enter Text for Search =LOC@0004]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (5bc7826d35f15a1251d9eacd4d085032)] -> id: SRCH_Input] displayed in 31ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (b16a04bd2c2ff404d9d29db91b75736b)] -> id: SRCH_Input] displayed in 63ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 1276ms]]>
+              <![CDATA[Angular request time 1051ms]]>
             </line>
             <line>
               <![CDATA[Click Customer]]>
             </line>
             <line>
-              <![CDATA[Angular request time 2532ms]]>
+              <![CDATA[Angular request time 1785ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 20ms]]>
+              <![CDATA[Angular request time 324ms]]>
             </line>
             <line>
               <![CDATA[Customer Location Id found LOC@0004]]>
@@ -2224,19 +2224,19 @@ Current = 1 Water 1 Bldg]]>
               <![CDATA[Strings Matched: LOC@0004 = LOC@0004]]>
             </line>
             <line>
-              <![CDATA[Angular request time 15ms]]>
+              <![CDATA[Angular request time 10ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 7ms]]>
+              <![CDATA[Angular request time 12ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 435ms]]>
+              <![CDATA[Angular request time 431ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 334ms]]>
+              <![CDATA[Angular request time 329ms]]>
             </line>
             <line>
-              <![CDATA[Strings Matched: Notes added2019/06/12 08:22:42 = Notes added2019/06/12 08:22:42]]>
+              <![CDATA[Strings Matched: Notes added2019/06/12 14:27:55 = Notes added2019/06/12 14:27:55]]>
             </line>
             <line>
               <![CDATA[Angular request time 11ms]]>
@@ -2245,17 +2245,17 @@ Current = 1 Water 1 Bldg]]>
               <![CDATA[Angular request time 10ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (5bc7826d35f15a1251d9eacd4d085032)] -> id: USR_Name] displayed in 29ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (b16a04bd2c2ff404d9d29db91b75736b)] -> id: USR_Name] displayed in 37ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (5bc7826d35f15a1251d9eacd4d085032)] -> css selector: .logout-label] displayed in 39ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (b16a04bd2c2ff404d9d29db91b75736b)] -> css selector: .logout-label] displayed in 36ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 26ms]]>
+              <![CDATA[Angular request time 22ms]]>
             </line>
           </reporter-output>
         </test-method> <!-- TestNotesSection -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs@7e0b0338]" name="TearDown" is-config="true" duration-ms="208" started-at="2019-06-12T13:26:57Z" finished-at="2019-06-12T13:26:57Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs@7e0b0338]" name="TearDown" is-config="true" duration-ms="210" started-at="2019-06-12T19:32:26Z" finished-at="2019-06-12T19:32:26Z">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
@@ -2267,7 +2267,7 @@ Current = 1 Water 1 Bldg]]>
         </test-method> <!-- TearDown -->
       </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs -->
       <class name="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit">
-        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit@10bdf5e5]" name="readProp" is-config="true" duration-ms="3328" started-at="2019-06-12T13:25:23Z" finished-at="2019-06-12T13:25:27Z">
+        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit@10bdf5e5]" name="readProp" is-config="true" duration-ms="4078" started-at="2019-06-12T19:30:49Z" finished-at="2019-06-12T19:30:53Z">
           <params>
             <param index="0">
               <value>
@@ -2284,16 +2284,16 @@ Current = 1 Water 1 Bldg]]>
             </line>
           </reporter-output>
         </test-method> <!-- readProp -->
-        <test-method status="PASS" signature="TestContactEdit()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit@10bdf5e5]" name="TestContactEdit" duration-ms="28498" started-at="2019-06-12T13:25:27Z" finished-at="2019-06-12T13:25:55Z">
+        <test-method status="PASS" signature="TestContactEdit()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit@10bdf5e5]" name="TestContactEdit" duration-ms="29824" started-at="2019-06-12T19:30:53Z" finished-at="2019-06-12T19:31:23Z">
           <reporter-output>
             <line>
-              <![CDATA[Angular Request Completed in 380ms]]>
+              <![CDATA[Angular Request Completed in 172ms]]>
             </line>
             <line>
               <![CDATA[Sign in Page Title Verified]]>
             </line>
             <line>
-              <![CDATA[Angular Request Completed in 50ms]]>
+              <![CDATA[Angular Request Completed in 31ms]]>
             </line>
             <line>
               <![CDATA[User signed Admin]]>
@@ -2302,19 +2302,19 @@ Current = 1 Water 1 Bldg]]>
               <![CDATA[Enter Text for Search =LOC@0004]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (573aa00095d936b50bc515087d8f7018)] -> id: SRCH_Input] displayed in 78ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (5696ae2fe3138cc7048c15b1bda5bb91)] -> id: SRCH_Input] displayed in 47ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 1046ms]]>
+              <![CDATA[Angular request time 1279ms]]>
             </line>
             <line>
               <![CDATA[Click Customer]]>
             </line>
             <line>
-              <![CDATA[Angular request time 1523ms]]>
+              <![CDATA[Angular request time 1990ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 321ms]]>
+              <![CDATA[Angular request time 12ms]]>
             </line>
             <line>
               <![CDATA[Customer Location Id found LOC@0004]]>
@@ -2323,49 +2323,49 @@ Current = 1 Water 1 Bldg]]>
               <![CDATA[Strings Matched: LOC@0004 = LOC@0004]]>
             </line>
             <line>
-              <![CDATA[Angular request time 8ms]]>
+              <![CDATA[Angular request time 14ms]]>
             </line>
             <line>
-              <![CDATA[Element '[[ChromeDriver: chrome on XP (573aa00095d936b50bc515087d8f7018)] -> id: 'CUST_Drillback_Button']' is displayed in 56ms]]>
+              <![CDATA[Element '[[ChromeDriver: chrome on XP (5696ae2fe3138cc7048c15b1bda5bb91)] -> id: 'CUST_Drillback_Button']' is displayed in 574ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 19ms]]>
+              <![CDATA[Angular request time 30ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 10ms]]>
+              <![CDATA[Angular request time 31ms]]>
             </line>
             <line>
-              <![CDATA[Element '[[ChromeDriver: chrome on XP (573aa00095d936b50bc515087d8f7018)] -> id: ECI_Phone_Number_1]' is displayed in 92ms]]>
+              <![CDATA[Element '[[ChromeDriver: chrome on XP (5696ae2fe3138cc7048c15b1bda5bb91)] -> id: ECI_Phone_Number_1]' is displayed in 158ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 23ms]]>
+              <![CDATA[Angular request time 29ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 25ms]]>
+              <![CDATA[Angular request time 13ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 12ms]]>
+              <![CDATA[Angular request time 11ms]]>
             </line>
             <line>
-              <![CDATA[Element '[[ChromeDriver: chrome on XP (573aa00095d936b50bc515087d8f7018)] -> id: ECI_Email]' is displayed in 109ms]]>
+              <![CDATA[Element '[[ChromeDriver: chrome on XP (5696ae2fe3138cc7048c15b1bda5bb91)] -> id: ECI_Email]' is displayed in 105ms]]>
             </line>
             <line>
               <![CDATA[Angular request time 9ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 12ms]]>
+              <![CDATA[Angular request time 16ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 10ms]]>
+              <![CDATA[Angular request time 13ms]]>
             </line>
             <line>
-              <![CDATA[Element '[[ChromeDriver: chrome on XP (573aa00095d936b50bc515087d8f7018)] -> id: ECI_Action_Button]' is displayed in 80ms]]>
+              <![CDATA[Element '[[ChromeDriver: chrome on XP (5696ae2fe3138cc7048c15b1bda5bb91)] -> id: ECI_Action_Button]' is displayed in 98ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 374ms]]>
+              <![CDATA[Angular request time 484ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 335ms]]>
+              <![CDATA[Angular request time 331ms]]>
             </line>
             <line>
               <![CDATA[Verifying Customer Details]]>
@@ -2398,17 +2398,17 @@ Current = 1 Water 1 Bldg]]>
               <![CDATA[Angular request time 10ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (573aa00095d936b50bc515087d8f7018)] -> id: USR_Name] displayed in 29ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (5696ae2fe3138cc7048c15b1bda5bb91)] -> id: USR_Name] displayed in 37ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (573aa00095d936b50bc515087d8f7018)] -> css selector: .logout-label] displayed in 49ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (5696ae2fe3138cc7048c15b1bda5bb91)] -> css selector: .logout-label] displayed in 60ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 29ms]]>
+              <![CDATA[Angular request time 16ms]]>
             </line>
           </reporter-output>
         </test-method> <!-- TestContactEdit -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit@10bdf5e5]" name="TearDown" is-config="true" duration-ms="2159" started-at="2019-06-12T13:25:55Z" finished-at="2019-06-12T13:25:57Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit@10bdf5e5]" name="TearDown" is-config="true" duration-ms="2098" started-at="2019-06-12T19:31:23Z" finished-at="2019-06-12T19:31:25Z">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
@@ -2420,7 +2420,7 @@ Current = 1 Water 1 Bldg]]>
         </test-method> <!-- TearDown -->
       </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit -->
       <class name="com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID">
-        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID@64bf3bbf]" name="readProp" is-config="true" duration-ms="3546" started-at="2019-06-12T13:23:13Z" finished-at="2019-06-12T13:23:17Z">
+        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID@64bf3bbf]" name="readProp" is-config="true" duration-ms="3877" started-at="2019-06-12T19:28:29Z" finished-at="2019-06-12T19:28:32Z">
           <params>
             <param index="0">
               <value>
@@ -2437,16 +2437,16 @@ Current = 1 Water 1 Bldg]]>
             </line>
           </reporter-output>
         </test-method> <!-- readProp -->
-        <test-method status="PASS" signature="TestSearchbyLocationID()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID@64bf3bbf]" name="TestSearchbyLocationID" duration-ms="29771" started-at="2019-06-12T13:23:17Z" finished-at="2019-06-12T13:23:47Z">
+        <test-method status="PASS" signature="TestSearchbyLocationID()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID@64bf3bbf]" name="TestSearchbyLocationID" duration-ms="30242" started-at="2019-06-12T19:28:32Z" finished-at="2019-06-12T19:29:03Z">
           <reporter-output>
             <line>
-              <![CDATA[Angular Request Completed in 137ms]]>
+              <![CDATA[Angular Request Completed in 166ms]]>
             </line>
             <line>
               <![CDATA[Sign in Page Title Verified]]>
             </line>
             <line>
-              <![CDATA[Angular Request Completed in 15ms]]>
+              <![CDATA[Angular Request Completed in 406ms]]>
             </line>
             <line>
               <![CDATA[User signed Admin]]>
@@ -2455,19 +2455,19 @@ Current = 1 Water 1 Bldg]]>
               <![CDATA[Enter Text for Search =LOC@0001]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (59c5bb17da116fb8c1c64a07a63959ca)] -> id: SRCH_Input] displayed in 47ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (7bd86124f0bd12c0baf1e8931d9dab5f)] -> id: SRCH_Input] displayed in 31ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 1292ms]]>
+              <![CDATA[Angular request time 765ms]]>
             </line>
             <line>
               <![CDATA[Click Customer]]>
             </line>
             <line>
-              <![CDATA[Angular request time 3206ms]]>
+              <![CDATA[Angular request time 2268ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 12ms]]>
+              <![CDATA[Angular request time 489ms]]>
             </line>
             <line>
               <![CDATA[Customer Location Id found LOC@0001]]>
@@ -2476,7 +2476,7 @@ Current = 1 Water 1 Bldg]]>
               <![CDATA[Strings Matched: LOC@0001 = LOC@0001]]>
             </line>
             <line>
-              <![CDATA[Angular request time 14ms]]>
+              <![CDATA[Angular request time 16ms]]>
             </line>
             <line>
               <![CDATA[Verifying Address Details]]>
@@ -2494,23 +2494,23 @@ Current = 1 Water 1 Bldg]]>
               <![CDATA[Strings Matched: 00720-019 = 00720-019]]>
             </line>
             <line>
-              <![CDATA[Angular request time 30ms]]>
+              <![CDATA[Angular request time 16ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 12ms]]>
+              <![CDATA[Angular request time 14ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (59c5bb17da116fb8c1c64a07a63959ca)] -> id: USR_Name] displayed in 119ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (7bd86124f0bd12c0baf1e8931d9dab5f)] -> id: USR_Name] displayed in 132ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (59c5bb17da116fb8c1c64a07a63959ca)] -> css selector: .logout-label] displayed in 45ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (7bd86124f0bd12c0baf1e8931d9dab5f)] -> css selector: .logout-label] displayed in 469ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 31ms]]>
+              <![CDATA[Angular request time 16ms]]>
             </line>
           </reporter-output>
         </test-method> <!-- TestSearchbyLocationID -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID@64bf3bbf]" name="TearDown" is-config="true" duration-ms="166" started-at="2019-06-12T13:23:47Z" finished-at="2019-06-12T13:23:47Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID@64bf3bbf]" name="TearDown" is-config="true" duration-ms="2114" started-at="2019-06-12T19:29:03Z" finished-at="2019-06-12T19:29:05Z">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
@@ -2522,7 +2522,7 @@ Current = 1 Water 1 Bldg]]>
         </test-method> <!-- TearDown -->
       </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID -->
       <class name="com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction">
-        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction@49993335]" name="readProp" is-config="true" duration-ms="3203" started-at="2019-06-12T13:27:27Z" finished-at="2019-06-12T13:27:31Z">
+        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction@49993335]" name="readProp" is-config="true" duration-ms="3531" started-at="2019-06-12T19:33:01Z" finished-at="2019-06-12T19:33:04Z">
           <params>
             <param index="0">
               <value>
@@ -2539,22 +2539,22 @@ Current = 1 Water 1 Bldg]]>
             </line>
           </reporter-output>
         </test-method> <!-- readProp -->
-        <test-method status="PASS" signature="TestSearchAutobyRecent()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction@49993335]" name="TestSearchAutobyRecent" duration-ms="33502" started-at="2019-06-12T13:27:31Z" finished-at="2019-06-12T13:28:04Z">
+        <test-method status="PASS" signature="TestSearchAutobyRecent()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction@49993335]" name="TestSearchAutobyRecent" duration-ms="41703" started-at="2019-06-12T19:33:04Z" finished-at="2019-06-12T19:33:46Z">
           <reporter-output>
             <line>
-              <![CDATA[Angular Request Completed in 242ms]]>
+              <![CDATA[Angular Request Completed in 79ms]]>
             </line>
             <line>
               <![CDATA[Sign in Page Title Verified]]>
             </line>
             <line>
-              <![CDATA[Angular Request Completed in 15ms]]>
+              <![CDATA[Angular Request Completed in 13ms]]>
             </line>
             <line>
               <![CDATA[User signed Admin]]>
             </line>
             <line>
-              <![CDATA[Element '//input[@id='SRCH_Input']' is displayed in 63ms]]>
+              <![CDATA[Element '//input[@id='SRCH_Input']' is displayed in 110ms]]>
             </line>
             <line>
               <![CDATA[Click Recent]]>
@@ -2566,13 +2566,13 @@ Current = 1 Water 1 Bldg]]>
               <![CDATA[Click Customer]]>
             </line>
             <line>
-              <![CDATA[Angular request time 2014ms]]>
+              <![CDATA[Angular request time 3453ms]]>
             </line>
             <line>
               <![CDATA[Alert not configured]]>
             </line>
             <line>
-              <![CDATA[Element '//div[@class='address-details']' is displayed in 109ms]]>
+              <![CDATA[Element '//div[@class='address-details']' is displayed in 78ms]]>
             </line>
             <line>
               <![CDATA[Angular request time 16ms]]>
@@ -2581,23 +2581,23 @@ Current = 1 Water 1 Bldg]]>
               <![CDATA[Strings Matched: Aut Statement = Aut Statement]]>
             </line>
             <line>
-              <![CDATA[Angular request time 30ms]]>
+              <![CDATA[Angular request time 16ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 10ms]]>
+              <![CDATA[Angular request time 14ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ffb40d0d1e9368d62cf607c34b138fed)] -> id: USR_Name] displayed in 28ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (e934354f3e03db83bee6453ed6c4ca68)] -> id: USR_Name] displayed in 38ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ffb40d0d1e9368d62cf607c34b138fed)] -> css selector: .logout-label] displayed in 39ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (e934354f3e03db83bee6453ed6c4ca68)] -> css selector: .logout-label] displayed in 58ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 13ms]]>
+              <![CDATA[Angular request time 25ms]]>
             </line>
           </reporter-output>
         </test-method> <!-- TestSearchAutobyRecent -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction@49993335]" name="TearDown" is-config="true" duration-ms="2325" started-at="2019-06-12T13:28:04Z" finished-at="2019-06-12T13:28:07Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction@49993335]" name="TearDown" is-config="true" duration-ms="188" started-at="2019-06-12T19:33:46Z" finished-at="2019-06-12T19:33:46Z">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
@@ -2609,7 +2609,7 @@ Current = 1 Water 1 Bldg]]>
         </test-method> <!-- TearDown -->
       </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction -->
       <class name="com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID">
-        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID@6adede5]" name="readProp" is-config="true" duration-ms="4937" started-at="2019-06-12T13:22:42Z" finished-at="2019-06-12T13:22:47Z">
+        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID@6adede5]" name="readProp" is-config="true" duration-ms="4688" started-at="2019-06-12T19:27:55Z" finished-at="2019-06-12T19:27:59Z">
           <params>
             <param index="0">
               <value>
@@ -2626,10 +2626,10 @@ Current = 1 Water 1 Bldg]]>
             </line>
           </reporter-output>
         </test-method> <!-- readProp -->
-        <test-method status="PASS" signature="TestSearchID()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID@6adede5]" name="TestSearchID" duration-ms="26641" started-at="2019-06-12T13:22:47Z" finished-at="2019-06-12T13:23:13Z">
+        <test-method status="PASS" signature="TestSearchID()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID@6adede5]" name="TestSearchID" duration-ms="28796" started-at="2019-06-12T19:27:59Z" finished-at="2019-06-12T19:28:28Z">
           <reporter-output>
             <line>
-              <![CDATA[Angular Request Completed in 106ms]]>
+              <![CDATA[Angular Request Completed in 86ms]]>
             </line>
             <line>
               <![CDATA[Sign in Page Title Verified]]>
@@ -2644,16 +2644,16 @@ Current = 1 Water 1 Bldg]]>
               <![CDATA[Enter Text for Search =0000011111]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (c03c777d82594fa27526d17acb8a3aea)] -> id: SRCH_Input] displayed in 78ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (7a636ed1c9f996e1175f086e0735d9a5)] -> id: SRCH_Input] displayed in 63ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 1061ms]]>
+              <![CDATA[Angular request time 1066ms]]>
             </line>
             <line>
               <![CDATA[Click Customer]]>
             </line>
             <line>
-              <![CDATA[Angular request time 2085ms]]>
+              <![CDATA[Angular request time 1948ms]]>
             </line>
             <line>
               <![CDATA[Angular request time 23ms]]>
@@ -2665,23 +2665,23 @@ Current = 1 Water 1 Bldg]]>
               <![CDATA[Strings Matched: 0000011111 = 0000011111]]>
             </line>
             <line>
-              <![CDATA[Angular request time 11ms]]>
+              <![CDATA[Angular request time 16ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 413ms]]>
+              <![CDATA[Angular request time 66ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (c03c777d82594fa27526d17acb8a3aea)] -> id: USR_Name] displayed in 55ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (7a636ed1c9f996e1175f086e0735d9a5)] -> id: USR_Name] displayed in 43ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (c03c777d82594fa27526d17acb8a3aea)] -> css selector: .logout-label] displayed in 56ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (7a636ed1c9f996e1175f086e0735d9a5)] -> css selector: .logout-label] displayed in 54ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 28ms]]>
+              <![CDATA[Angular request time 16ms]]>
             </line>
           </reporter-output>
         </test-method> <!-- TestSearchID -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID@6adede5]" name="TearDown" is-config="true" duration-ms="93" started-at="2019-06-12T13:23:13Z" finished-at="2019-06-12T13:23:13Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID@6adede5]" name="TearDown" is-config="true" duration-ms="250" started-at="2019-06-12T19:28:28Z" finished-at="2019-06-12T19:28:29Z">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
@@ -2693,7 +2693,7 @@ Current = 1 Water 1 Bldg]]>
         </test-method> <!-- TearDown -->
       </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID -->
       <class name="com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName">
-        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName@5025a98f]" name="readProp" is-config="true" duration-ms="3406" started-at="2019-06-12T13:29:44Z" finished-at="2019-06-12T13:29:48Z">
+        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName@5025a98f]" name="readProp" is-config="true" duration-ms="3797" started-at="2019-06-12T19:35:41Z" finished-at="2019-06-12T19:35:45Z">
           <params>
             <param index="0">
               <value>
@@ -2710,7 +2710,7 @@ Current = 1 Water 1 Bldg]]>
             </line>
           </reporter-output>
         </test-method> <!-- readProp -->
-        <test-method status="FAIL" signature="TestSearchAutobyLastName()[pri:3, instance:com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName@5025a98f]" name="TestSearchAutobyLastName" duration-ms="17233" started-at="2019-06-12T13:29:48Z" finished-at="2019-06-12T13:30:05Z">
+        <test-method status="FAIL" signature="TestSearchAutobyLastName()[pri:3, instance:com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName@5025a98f]" name="TestSearchAutobyLastName" duration-ms="19118" started-at="2019-06-12T19:35:45Z" finished-at="2019-06-12T19:36:04Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Automation Mate] but found [Mr. Automation Mate]]]>
@@ -2759,7 +2759,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Angular Request Completed in 12ms]]>
+              <![CDATA[Angular Request Completed in 29ms]]>
             </line>
             <line>
               <![CDATA[Sign in Page Title Verified]]>
@@ -2774,19 +2774,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               <![CDATA[Enter Text for Search =Mate]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (4e259c23247034c2c3c37c2769e7c295)] -> id: SRCH_Input] displayed in 32ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (ef5aebe979f7550d83122a1d3c6ba504)] -> id: SRCH_Input] displayed in 63ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 1059ms]]>
+              <![CDATA[Angular request time 1024ms]]>
             </line>
             <line>
               <![CDATA[Click Customer]]>
             </line>
             <line>
-              <![CDATA[Angular request time 1846ms]]>
+              <![CDATA[Angular request time 1722ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 7ms]]>
+              <![CDATA[Angular request time 13ms]]>
             </line>
             <line>
               <![CDATA[Customer Name found Automation Mate]]>
@@ -2795,14 +2795,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
               <![CDATA[Strings Not Matched: Mr. Automation Mate != Automation Mate]]>
             </line>
             <line>
-              <![CDATA[<a href="F:\FailedTestsScreenshots\TestSearchAutobyLastNameScreenshot-1560346205584.jpg"><align="left">Error screenshot at Wed Jun 12 08:30:05 CDT 2019]]>
+              <![CDATA[<a href="F:\FailedTestsScreenshots\TestSearchAutobyLastNameScreenshot-1560368164852.jpg"><align="left">Error screenshot at Wed Jun 12 14:36:05 CDT 2019]]>
             </line>
             <line>
-              <![CDATA[<img width="1024" src="F:\FailedTestsScreenshots\TestSearchAutobyLastNameScreenshot-1560346205584.jpg" alt="screenshot at Wed Jun 12 08:30:05 CDT 2019"/></a><br />]]>
+              <![CDATA[<img width="1024" src="F:\FailedTestsScreenshots\TestSearchAutobyLastNameScreenshot-1560368164852.jpg" alt="screenshot at Wed Jun 12 14:36:05 CDT 2019"/></a><br />]]>
             </line>
           </reporter-output>
         </test-method> <!-- TestSearchAutobyLastName -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName@5025a98f]" name="TearDown" is-config="true" duration-ms="2079" started-at="2019-06-12T13:30:05Z" finished-at="2019-06-12T13:30:08Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName@5025a98f]" name="TearDown" is-config="true" duration-ms="3234" started-at="2019-06-12T19:36:05Z" finished-at="2019-06-12T19:36:08Z">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>

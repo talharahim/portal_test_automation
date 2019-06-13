@@ -41,12 +41,7 @@ public class BaseClass extends ReadProjectProperties {
 	public static String DrillBackServURL;
 	
 	public  String GetDrillBackServerURL() {
-		try {
-			DrillBackServURL = Read.ReadFile("DrillBackServ");
-		} catch (IOException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
+		DrillBackServURL = Read.ReadFile("DrillBackServ");
 		return DrillBackServURL;
 
 	}
@@ -78,7 +73,7 @@ public class BaseClass extends ReadProjectProperties {
 	}
 
 	@BeforeClass
-	public void readProp(ITestContext context) throws AWTException {
+	public void readProp(ITestContext context) throws AWTException, IOException {
 		// Minimize all windows
 		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_WINDOWS);
@@ -86,52 +81,46 @@ public class BaseClass extends ReadProjectProperties {
 		robot.keyRelease(KeyEvent.VK_D);
 		robot.keyRelease(KeyEvent.VK_WINDOWS);
 
-		try {
+		browserName = Read.ReadFile("CurrentBrowser");
 
-			browserName = Read.ReadFile("CurrentBrowser");
+		if (browserName.contains("Firefox")) {
+			// Launching Firefox
+			// Setting up Webdriver and path
+			String fDriver = Read.ReadFile("FirefoxDriverPath");
+			String browserPath = Read.ReadFile("FirefoxInstallPath");
+			System.setProperty("webdriver.gecko.driver", fDriver);
+			// Creating Instance for Firefox
+			FirefoxOptions firefoxOptions = new FirefoxOptions();
+			firefoxOptions.setBinary(browserPath);
+			firefoxOptions.setCapability("marionette", true);
+			driver = new FirefoxDriver(firefoxOptions);
+			log("Firefox Launched");
 
-			if (browserName.contains("Firefox")) {
-				// Launching Firefox
-				// Setting up Webdriver and path
-				String fDriver = Read.ReadFile("FirefoxDriverPath");
-				String browserPath = Read.ReadFile("FirefoxInstallPath");
-				System.setProperty("webdriver.gecko.driver", fDriver);
-				// Creating Instance for Firefox
-				FirefoxOptions firefoxOptions = new FirefoxOptions();
-				firefoxOptions.setBinary(browserPath);
-				firefoxOptions.setCapability("marionette", true);
-				driver = new FirefoxDriver(firefoxOptions);
-				log("Firefox Launched");
-
-			}
-
-			else if (browserName.contains("Chrome")) {
-
-				// Launching Chrome
-				log("Launching Chrome");
-				// Setting up Webdriver and path
-				String cDriver = Read.ReadFile("ChromeDriverPath");
-				String browserPath = Read.ReadFile("ChromeInstallPath");
-				System.setProperty("webdriver.chrome.driver", cDriver);
-				// Creating Instance for Chrome
-				ChromeOptions ChromeOptions = new ChromeOptions();
-				ChromeOptions.setBinary(browserPath);
-				driver = new ChromeDriver(ChromeOptions);
-
-			}
-
-			else {
-				log("Browser Name not found");
-			}
-			ngWebDriver = new NgWebDriver((JavascriptExecutor) driver);
-			driver.manage().window().maximize();
-			log("Browser Maximised");
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			context.setAttribute("webDriver", driver);
-
-		} catch (IOException e) {
-			e.printStackTrace();
 		}
+
+		else if (browserName.contains("Chrome")) {
+
+			// Launching Chrome
+			log("Launching Chrome");
+			// Setting up Webdriver and path
+			String cDriver = Read.ReadFile("ChromeDriverPath");
+			String browserPath = Read.ReadFile("ChromeInstallPath");
+			System.setProperty("webdriver.chrome.driver", cDriver);
+			// Creating Instance for Chrome
+			ChromeOptions ChromeOptions = new ChromeOptions();
+			ChromeOptions.setBinary(browserPath);
+			driver = new ChromeDriver(ChromeOptions);
+
+		}
+
+		else {
+			log("Browser Name not found");
+		}
+		ngWebDriver = new NgWebDriver((JavascriptExecutor) driver);
+		driver.manage().window().maximize();
+		log("Browser Maximised");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		context.setAttribute("webDriver", driver);
 		
 	
 
