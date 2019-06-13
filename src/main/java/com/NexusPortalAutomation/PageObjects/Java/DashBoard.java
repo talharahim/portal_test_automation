@@ -4,7 +4,6 @@ import java.util.HashMap;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -31,7 +30,7 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "USR_Name")
 	WebElement LoggedUserLink;
 
-	@FindBy(css = ".logout-label")
+	@FindBy(id = "ACTION_Logout")
 	WebElement LogOutLink;
 
 	@FindBy(css = ".customer-info-id")
@@ -98,6 +97,10 @@ public class DashBoard extends CommonMethods {
 	@FindBy(css = "#mat-tab-label-0-1 > div:nth-child(1)")
 	@CacheLookup
 	WebElement TransactionLink;
+
+	@FindBy(css = "#mat-tab-label-0-2 > div")
+	@CacheLookup
+	WebElement ServiceOrderLink;
 
 	@FindBy(css = "#mat-tab-label-0-0 > div:nth-child(1)")
 	@CacheLookup
@@ -234,9 +237,9 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "BILL_Statement_Value_1")
 	WebElement BillStatementValue;
 
-	//@FindBy(id = "cdk-overlay-1")
-	//public WebElement OverLay;
-	
+	// @FindBy(id = "cdk-overlay-1")
+	// public WebElement OverLay;
+
 	@FindBy(className = "cdk-overlay-container")
 	public WebElement OverLay;
 
@@ -313,6 +316,22 @@ public class DashBoard extends CommonMethods {
 		findElementByid("ACTION_Void").getAttribute(Void);
 		findElementByid("ACTION_Contact_Log").getAttribute(Mreader);
 		findElementByid("ACTION_Meter_Reading").getAttribute(ContLog);
+
+	}
+
+	// This method will find the elements of Transaction Panel using the URL
+	public void VerifyTransDrillBacks(String payment, String bill, String meter) throws InterruptedException {
+		Thread.sleep(1000);
+		findElementByid("TRAN_Drillback_1").getAttribute(payment);
+		findElementByid("TRAN_Drillback_2").getAttribute(bill);
+		findElementByid("TRAN_Drillback_3").getAttribute(meter);
+
+	}
+
+	// This method will find the elements of Transaction Panel using the URL
+	public void VerifyServiceOrderDrillBacks(String ServOrder) throws InterruptedException {
+		Thread.sleep(1000);
+		findElementByid("SODV_Drillback").getAttribute(ServOrder);
 
 	}
 
@@ -616,11 +635,28 @@ public class DashBoard extends CommonMethods {
 	public void ClickBookMarkDisabled() {
 		try {
 			log("Click Bookmark");
-			BookMarkIconEnabled.click();
+			if (BookMarkIconEnabled.isDisplayed()) {
+				BookMarkIconEnabled.click();
+			} else if (BookMarkIconDisabled.isDisplayed()) {
+				try {
+					BookMarkIconDisabled.click();
+					WaitAngular(driver);
+					try {
+						if (BookMarkIconEnabled.isDisplayed()) {
+							BookMarkIconEnabled.click();
+						}
+					} catch (NoSuchElementException e) {
+						Assert.assertTrue(false, "Bookmark not found");
+					}
+
+				} catch (NoSuchElementException e) {
+					Assert.assertTrue(false, "Bookmark not found");
+				}
+			}
 			WaitAngular(driver);
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
-			Assert.assertTrue(false, "Bookmark not found");
+
 		}
 	}
 
@@ -723,6 +759,18 @@ public class DashBoard extends CommonMethods {
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
 			Assert.assertTrue(false, "Transaction Link not found");
+		}
+	}
+
+	public void ClickServiceOrderLink() {
+
+		try {
+			ServiceOrderLink.click();
+			WaitAngular(driver);
+			Reporter.log("Service Order Link Clicked");
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "Service Order Link not found");
 		}
 	}
 
@@ -921,7 +969,6 @@ public class DashBoard extends CommonMethods {
 			// Use Actions to specify an x,y coordinate for your click,
 			Actions a = new Actions(driver);
 			a.moveToElement(OverLay, 1, 1).click().perform();
-			
 
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());

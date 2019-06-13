@@ -24,7 +24,7 @@ public class TC0011_VerifyBookMark extends BaseClass {
 	CommonMethods ComMethd = new CommonMethods();
 
 //This Test will test the search by Customer ID
-	@Test(priority = 1)
+	@Test
 	public void TestBookMark() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
@@ -32,14 +32,14 @@ public class TC0011_VerifyBookMark extends BaseClass {
 		dbSrch.EnterSearchText(LocationID);
 		dbSrch.ClickRecentCustomerName();
 		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(dashBoard.GetLoggedCustomerLocationId(), LocationID);
+		ComMethd.VerifyString(LocationID,dashBoard.GetLoggedCustomerLocationId());
 		// Click BookMark
 		dashBoard.ClickBookMarkDisabled();
 		dashBoard.LogOut();
 		login();
 		dbSrch.ClickHistoryCustomer();
 		dbSrch.ClickRecentCustomerName();
-		ComMethd.VerifyString(dashBoard.GetLoggedCustomerLocationId(), LocationID);
+		ComMethd.VerifyString(LocationID,dashBoard.GetLoggedCustomerLocationId());
 		// Clear BookMark
 		dashBoard.ClickBookMarkEnabled();
 		// Verify if it is Marked

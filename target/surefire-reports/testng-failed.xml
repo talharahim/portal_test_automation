@@ -8,34 +8,13 @@
   </listeners>
   <test thread-count="10" verbose="0" name="NexusTest(failed)">
     <classes>
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName">
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral">
         <methods>
-          <include name="TestSearchAutobyLastName"/>
+          <include name="TestSecondayContact"/>
           <include name="TearDown"/>
           <include name="readProp"/>
         </methods>
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName -->
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad">
-        <methods>
-          <include name="TestSearchAlertOnLoad"/>
-          <include name="TearDown"/>
-          <include name="readProp"/>
-        </methods>
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad -->
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection">
-        <methods>
-          <include name="TestSummarySectionOnChange"/>
-          <include name="TearDown"/>
-          <include name="readProp"/>
-        </methods>
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection -->
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName">
-        <methods>
-          <include name="TestSearchAutobyFirstName"/>
-          <include name="TearDown"/>
-          <include name="readProp"/>
-        </methods>
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName -->
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral -->
     </classes>
   </test> <!-- NexusTest(failed) -->
 </suite> <!-- Failed suite [Test Suite for Nexus Portal] -->

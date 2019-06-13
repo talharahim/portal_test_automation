@@ -42,12 +42,12 @@ public class DataBackupRestore {
 
 	}
 
-	//@Test
+	@Test(priority = 1)
 	void CompanyDBBackup() throws SQLException, ClassNotFoundException {
 
-		String Backup = "USE MASTER; BACKUP DATABASE "+ DatabaseName+ "TO DISK =" + DatabaseLocation
-				+ "  WITH FORMAT, MEDIANAME = 'Z_SQLServerBackups',"
-				+ "      NAME = 'Full Backup of "+ DatabaseName+"';";
+		String Backup = "USE MASTER; BACKUP DATABASE " + DatabaseName + "TO DISK =" + DatabaseLocation
+				+ "  WITH FORMAT, MEDIANAME = 'Z_SQLServerBackups'," + "      NAME = 'Full Backup of " + DatabaseName
+				+ "';";
 
 		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 		// Creating connection to the database
@@ -55,32 +55,43 @@ public class DataBackupRestore {
 		Statement st = con.createStatement();
 		// Executing the SQL command
 		st.executeUpdate(Backup);
-		
+
 		con.close();
 	}
-	
-	@Test
+
+	@Test(priority = 2)
 	void ApiDBBackup() throws SQLException, ClassNotFoundException {
 
-		String Backup = "USE MASTER; BACKUP DATABASE "+ ApiDatabaseName+ "TO DISK =" + ApiDatabaseLocation
-				+ "  WITH FORMAT, MEDIANAME = 'Z_SQLServerBackups',"
-				+ "      NAME = 'Full Backup of "+ ApiDatabaseName+"';";
-
+		String Backup = "USE MASTER; BACKUP DATABASE " + ApiDatabaseName + "TO DISK =" + ApiDatabaseLocation
+				+ "  WITH FORMAT, MEDIANAME = 'Z_SQLServerBackups'," + "      NAME = 'Full Backup of " + ApiDatabaseName
+				+ "';";
 		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 		// Creating connection to the database
 		Connection con = DriverManager.getConnection(ConnectionString);
 		Statement st = con.createStatement();
 		// Executing the SQL command
 		st.executeUpdate(Backup);
-		
+
 		con.close();
 	}
 
+	@Test(priority = 3)
+	void CompanyDBRestore() throws SQLException, ClassNotFoundException {
 
-	
-	void RestoreDB() throws SQLException, ClassNotFoundException {
+		String Restore = "USE master; RESTORE DATABASE " + DatabaseName + " FROM DISK = " + DatabaseLocation
+				+ " WITH REPLACE;";
+		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+		Connection con = DriverManager.getConnection(ConnectionString);
+		Statement st = con.createStatement();
+		// Executing the SQL command a
+		st.executeUpdate(Restore);
+		con.close();
+	}
 
-		String Restore = "USE master;   " + "RESTORE DATABASE SQLTestDB FROM DISK = " + DatabaseLocation
+	@Test(priority = 4)
+	void ApiDBRestore() throws SQLException, ClassNotFoundException {
+
+		String Restore = "USE master; RESTORE DATABASE " + ApiDatabaseName + " FROM DISK = " + ApiDatabaseLocation
 				+ " WITH REPLACE;";
 		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 		Connection con = DriverManager.getConnection(ConnectionString);

@@ -41,7 +41,6 @@ public class DashBoardSearch extends CommonMethods {
 	WebElement BookMarked;
 
 	@FindBy(id = "SRCH_Option_1_Address_Line")
-	@CacheLookup
 	WebElement RecentCustomerName;
 
 	// @ByAngularBinding.FindBy(rootSelector = "i18n", binding = "cheese")

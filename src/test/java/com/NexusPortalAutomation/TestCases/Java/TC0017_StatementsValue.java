@@ -38,8 +38,8 @@ public class TC0017_StatementsValue extends BaseClass {
 		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
 		dashBoard.ClickBillStatementBtn();
-		ComMethd.VerifyString(dashBoard.getBillStatementDate(), StatmentDateValue);
-		ComMethd.VerifyString(dashBoard.getBillStatementAmount(), StatmentValue);
+		ComMethd.VerifyString(StatmentDateValue,dashBoard.getBillStatementDate());
+		ComMethd.VerifyString(StatmentValue,dashBoard.getBillStatementAmount());
 		dashBoard.LogOut();
 	}
 

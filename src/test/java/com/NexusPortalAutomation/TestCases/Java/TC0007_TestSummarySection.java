@@ -21,7 +21,7 @@ public class TC0007_TestSummarySection extends BaseClass {
 	 * 
 	 * @Since 2019-04-11
 	 */
-	public String UserName = "Mr. Automation Mate";
+	public String UserName = "Automation Mate";
 	public CommonMethods ComMethd = new CommonMethods();
 
 	@Test(priority = 2)

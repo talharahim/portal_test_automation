@@ -10,7 +10,7 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 
 public class TC0002_TestSearchAutobyFirstName extends BaseClass {
 
-	public String UserName = "Mr. Automation Mate";
+	public String UserName = "Automation Mate";
 	CommonMethods ComMethd = new CommonMethods();
 	/*
 	 * This test the search by Customer's First Name

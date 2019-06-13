@@ -17,7 +17,7 @@ public class TC0018_VerifyDrillBacksGeneral extends BaseClass {
 	 * 
 	 * @version 1.0
 	 * 
-	 * @Since 2019-04-11
+	 * @Since 2019-06-10
 	 */
 
 	public String LocationID = "LOC@0004";
@@ -28,7 +28,7 @@ public class TC0018_VerifyDrillBacksGeneral extends BaseClass {
 			+ "Prod=229&Act=OPEN&Func=CustomerMaintenance&CustomerID="+CustomerID+"&LocationID="+LocationID+"&CogsDrillback=1";
 	
 	public String secondCustURL = ServerURL
-			+ "Prod=229&Act=OPEN&Func=CustomerMaintenance&CustomerID="+CustomerID+"&LocationID="+LocationID+"&CogsDrillback=1";
+			+ "Bug reported";
 
 	public String servTabURL = ServerURL + "kk";
 

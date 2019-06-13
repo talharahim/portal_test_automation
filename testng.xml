@@ -32,6 +32,8 @@
 			<class
 				name="com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails" />
 			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0011_VerifyBookMark" />
+			<class
 				name="com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus" />
 			<class
 				name="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit" />
@@ -40,7 +42,15 @@
 			<class
 				name="com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs" />
 			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails" />
+			<class
 				name="com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue" />
+			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral" />
+			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0019_VerifyDrillBackTransactions" />
+			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0020_VerifyDrillBackServices" />
 
 		</classes>
 

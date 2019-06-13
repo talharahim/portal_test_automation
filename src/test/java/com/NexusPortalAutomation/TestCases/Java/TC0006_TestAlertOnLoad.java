@@ -20,7 +20,7 @@ public class TC0006_TestAlertOnLoad extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String UserName = "Mr. Alert Test";
+	public String UserName = "Alert Test";
 	public CommonMethods ComMethd = new CommonMethods();
 
 	@Test(priority = 2)

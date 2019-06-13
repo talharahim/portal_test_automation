@@ -58,7 +58,7 @@ public class CommonMethods {
 				
 			} else {
 				log("Strings Not Matched: " + str1 + " != " + str2);
-				Assert.assertEquals(str1, str2);
+				Assert.assertEquals(str2, str1);
 			}
 		}
 		return result;
@@ -74,7 +74,7 @@ public class CommonMethods {
 				
 			} else {
 				log("Strings Not Matched: " + str1 + " != " + str2);
-				Assert.assertEquals(str1, str2);
+				Assert.assertEquals(str2, str1);
 			}
 		}
 		return result;
