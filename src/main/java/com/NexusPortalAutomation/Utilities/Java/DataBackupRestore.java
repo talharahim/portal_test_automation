@@ -75,7 +75,7 @@ public class DataBackupRestore {
 		con.close();
 	}
 
-	@Test(priority = 3)
+	//@Test(priority = 3)
 	void CompanyDBRestore() throws SQLException, ClassNotFoundException {
 
 		String Restore = "USE master; RESTORE DATABASE " + DatabaseName + " FROM DISK = " + DatabaseLocation
@@ -88,7 +88,7 @@ public class DataBackupRestore {
 		con.close();
 	}
 
-	@Test(priority = 4)
+	//@Test(priority = 4)
 	void ApiDBRestore() throws SQLException, ClassNotFoundException {
 
 		String Restore = "USE master; RESTORE DATABASE " + ApiDatabaseName + " FROM DISK = " + ApiDatabaseLocation

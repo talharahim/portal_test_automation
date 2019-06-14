@@ -1,8 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 20, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 687.484 s <<< FAILURE! - in TestSuite
-TestSecondayContact(com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral)  Time elapsed: 16.279 s  <<< FAILURE!
+Tests run: 20, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 721.844 s <<< FAILURE! - in TestSuite
+TestSecondayContact(com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral)  Time elapsed: 18.521 s  <<< FAILURE!
 java.lang.AssertionError: expected [cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Bug reported] but found [null]
 	at com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral.TestSecondayContact(TC0018_VerifyDrillBacksGeneral.java:88)
+
+TestSearchAutobyRecent(com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction)  Time elapsed: 47.874 s  <<< FAILURE!
+java.lang.AssertionError: Object Not Found expected [true] but found [false]
+	at com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction.TestSearchAutobyRecent(TC0004_TestSearchbyRecentFunction.java:35)
 

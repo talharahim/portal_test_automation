@@ -1,6 +1,7 @@
 com\NexusPortalAutomation\TestCases\Java\TC0001_VerifySignInbyID.class
 com\NexusPortalAutomation\TestCases\Java\TC0003_TestSearchAutobyLastName.class
 com\NexusPortalAutomation\TestCases\Java\TC0007_TestSummarySection.class
+com\NexusPortalAutomation\TestCases\Java\TC0021_VerifyServicesOrderDetails.class
 com\NexusPortalAutomation\TestCases\Java\TC0014_VerifySecondaryContact.class
 com\NexusPortalAutomation\TestCases\Java\TC0009_VerifyAccountSearch.class
 com\NexusPortalAutomation\TestCases\Java\TC0016_VerifyBillingDetails.class

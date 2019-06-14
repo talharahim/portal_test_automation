@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>NexusTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>19/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>18/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 13 11:23:24 CDT 2019</td>
+<td>Started on:</td><td>Fri Jun 14 09:21:54 CDT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>686 seconds (686438 ms)</td>
+<tr><td>Total time:</td><td>720 seconds (720500 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,36 +75,101 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral.TestSecondayContact()'><b>TestSecondayContact</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral<br/>
-<a href="#Output-1807207655" onClick='toggleBox("Output-1807207655", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction.TestSearchAutobyRecent()'><b>TestSearchAutobyRecent</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction<br/>
+<a href="#Output-1605299030" onClick='toggleBox("Output-1605299030", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1807207655" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1807207655">
-Angular Request Completed in 75ms<br/>
+<a href="#Output-1605299030" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1605299030">
+Angular Request Completed in 138ms<br/>
 Sign in Page Title Verified<br/>
-Angular Request Completed in 16ms<br/>
+Angular Request Completed in 31ms<br/>
+User signed Admin<br/>
+Element '//input[@id='SRCH_Input']' is displayed in 78ms<br/>
+Click Recent<br/>
+Recent Customer =Aut Statement<br/>
+Click Customer<br/>
+Angular request time 2058ms<br/>
+<a href="F:\FailedTestsScreenshots\TestSearchAutobyRecentScreenshot-1560522675931.jpg"><align="left">Error screenshot at Fri Jun 14 09:31:16 CDT 2019<br/>
+<img width="1024" src="F:\FailedTestsScreenshots\TestSearchAutobyRecentScreenshot-1560522675931.jpg" alt="screenshot at Fri Jun 14 09:31:16 CDT 2019"/></a><br /><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Object Not Found expected [true] but found [false]
+	at com.NexusPortalAutomation.Utilities.Java.CommonMethods.waitForObject(CommonMethods.java:148)
+	at com.NexusPortalAutomation.PageObjects.Java.DashBoard.ClickElement(DashBoard.java:296)
+	at com.NexusPortalAutomation.PageObjects.Java.DashBoard.ClickDynamicOk(DashBoard.java:974)
+	at com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction.TestSearchAutobyRecent(TC0004_TestSearchbyRecentFunction.java:35)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1605299030", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1605299030'><pre>java.lang.AssertionError: Object Not Found expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.NexusPortalAutomation.Utilities.Java.CommonMethods.waitForObject(CommonMethods.java:148)
+	at com.NexusPortalAutomation.PageObjects.Java.DashBoard.ClickElement(DashBoard.java:296)
+	at com.NexusPortalAutomation.PageObjects.Java.DashBoard.ClickDynamicOk(DashBoard.java:974)
+	at com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction.TestSearchAutobyRecent(TC0004_TestSearchbyRecentFunction.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>47</td>
+<td>com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction@55d56113</td></tr>
+<tr>
+<td title='com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral.TestSecondayContact()'><b>TestSecondayContact</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral<br/>
+<a href="#Output-1097069005" onClick='toggleBox("Output-1097069005", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1097069005" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1097069005">
+Angular Request Completed in 56ms<br/>
+Sign in Page Title Verified<br/>
+Angular Request Completed in 15ms<br/>
 User signed Admin<br/>
 Enter Text for Search =LOC@0004<br/>
-Element [[ChromeDriver: chrome on XP (68fc7af01490feb3ed0c9df40f5de0a0)] -> id: SRCH_Input] displayed in 31ms<br/>
-Angular request time 1056ms<br/>
+Element [[ChromeDriver: chrome on XP (6fcd9c2825133bfc3cb896d4eb41d73e)] -> id: SRCH_Input] displayed in 32ms<br/>
+Angular request time 1093ms<br/>
 Click Customer<br/>
-Angular request time 1867ms<br/>
-Angular request time 10ms<br/>
+Angular request time 1655ms<br/>
+Angular request time 323ms<br/>
 Customer Location Id found LOC@0004<br/>
 Strings Matched: LOC@0004 = LOC@0004<br/>
-Element [[ChromeDriver: chrome on XP (68fc7af01490feb3ed0c9df40f5de0a0)] -> id: ACTION_DRILLBACK] displayed in 34ms<br/>
+Element [[ChromeDriver: chrome on XP (6fcd9c2825133bfc3cb896d4eb41d73e)] -> id: ACTION_DRILLBACK] displayed in 36ms<br/>
 Strings Matched: cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Prod=229&Act=OPEN&Func=CustomerMaintenance&CustomerID=0000011111&LocationID=LOC@0004&CogsDrillback=1 = cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Prod=229&Act=OPEN&Func=CustomerMaintenance&CustomerID=0000011111&LocationID=LOC@0004&CogsDrillback=1<br/>
-Element [[ChromeDriver: chrome on XP (68fc7af01490feb3ed0c9df40f5de0a0)] -> id: SCUST_Drillback] displayed in 33ms<br/>
+Element [[ChromeDriver: chrome on XP (6fcd9c2825133bfc3cb896d4eb41d73e)] -> id: SCUST_Drillback] displayed in 32ms<br/>
 Strings Not Matched: cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Bug reported != null<br/>
-<a href="F:\FailedTestsScreenshots\TestSecondayContactScreenshot-1560443189621.jpg"><align="left">Error screenshot at Thu Jun 13 11:26:30 CDT 2019<br/>
-<img width="1024" src="F:\FailedTestsScreenshots\TestSecondayContactScreenshot-1560443189621.jpg" alt="screenshot at Thu Jun 13 11:26:30 CDT 2019"/></a><br /><br/>
+<a href="F:\FailedTestsScreenshots\TestSecondayContactScreenshot-1560522321795.jpg"><align="left">Error screenshot at Fri Jun 14 09:25:22 CDT 2019<br/>
+<img width="1024" src="F:\FailedTestsScreenshots\TestSecondayContactScreenshot-1560522321795.jpg" alt="screenshot at Fri Jun 14 09:25:22 CDT 2019"/></a><br /><br/>
 </div>
 </td>
 <td><div><pre>java.lang.AssertionError: expected [cogsdrillback://DGPB/?Db=SQL_2017&amp;Srv=RND-BASE-A&amp;Cmp=TWO&amp;Bug reported] but found [null]
 	at com.NexusPortalAutomation.Utilities.Java.CommonMethods.VerifyString(CommonMethods.java:61)
 	at com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral.TestSecondayContact(TC0018_VerifyDrillBacksGeneral.java:88)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1807207655", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1807207655'><pre>java.lang.AssertionError: expected [cogsdrillback://DGPB/?Db=SQL_2017&amp;Srv=RND-BASE-A&amp;Cmp=TWO&amp;Bug reported] but found [null]
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1097069005", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1097069005'><pre>java.lang.AssertionError: expected [cogsdrillback://DGPB/?Db=SQL_2017&amp;Srv=RND-BASE-A&amp;Cmp=TWO&amp;Bug reported] but found [null]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:132)
@@ -143,7 +208,7 @@ Strings Not Matched: cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Bu
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>16</td>
+<td>18</td>
 <td>com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral@71318ec4</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -155,119 +220,127 @@ Strings Not Matched: cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Bu
 </tr>
 <tr>
 <td title='com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue.TestBillingStatements()'><b>TestBillingStatements</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue<br/>
-<a href="#Output-408909888" onClick='toggleBox("Output-408909888", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-164757726" onClick='toggleBox("Output-164757726", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-408909888" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-408909888">
-Angular Request Completed in 57ms<br/>
+<a href="#Output-164757726" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-164757726">
+Angular Request Completed in 51ms<br/>
 Sign in Page Title Verified<br/>
-Angular Request Completed in 15ms<br/>
+Angular Request Completed in 46ms<br/>
 User signed Admin<br/>
 Enter Text for Search =STATEMENTS001<br/>
-Element [[ChromeDriver: chrome on XP (850da0cfa4ac16dacab24a54559a738b)] -> id: SRCH_Input] displayed in 31ms<br/>
-Angular request time 993ms<br/>
+Element [[ChromeDriver: chrome on XP (64ed9b59497fd5530cec50374ca80f2e)] -> id: SRCH_Input] displayed in 47ms<br/>
+Angular request time 1454ms<br/>
 Click Customer<br/>
-Angular request time 1831ms<br/>
-Angular request time 1056ms<br/>
+Angular request time 2091ms<br/>
+Angular request time 1374ms<br/>
 Customer Location Id found STATEMENTS001<br/>
 Strings Matched: STATEMENTS001 = STATEMENTS001<br/>
 Angular request time 15ms<br/>
-Angular request time 13ms<br/>
-Verify Bill Statement Date<br/>
-Angular request time 16ms<br/>
-Element [[ChromeDriver: chrome on XP (850da0cfa4ac16dacab24a54559a738b)] -> id: BILL_Statement_1] displayed in 57ms<br/>
-Strings Matched: Jul 31, 2019 = Jul 31, 2019<br/>
-Angular request time 10ms<br/>
-Element [[ChromeDriver: chrome on XP (850da0cfa4ac16dacab24a54559a738b)] -> id: BILL_Statement_Value_1] displayed in 32ms<br/>
-Strings Matched: $56.71 = $56.71<br/>
-Angular request time 10ms<br/>
+Element [[ChromeDriver: chrome on XP (64ed9b59497fd5530cec50374ca80f2e)] -> id: BILL_Statement_Button] displayed in 31ms<br/>
+Click Bill Statement Button<br/>
 Angular request time 12ms<br/>
-Element [[ChromeDriver: chrome on XP (850da0cfa4ac16dacab24a54559a738b)] -> id: USR_Name] displayed in 33ms<br/>
-Element [[ChromeDriver: chrome on XP (850da0cfa4ac16dacab24a54559a738b)] -> id: ACTION_Logout] displayed in 608ms<br/>
-Angular request time 16ms<br/>
+Verify Bill Statement Date<br/>
+Angular request time 9ms<br/>
+Element [[ChromeDriver: chrome on XP (64ed9b59497fd5530cec50374ca80f2e)] -> id: BILL_Statement_1] displayed in 35ms<br/>
+Strings Matched: Jul 31, 2019 = Jul 31, 2019<br/>
+Angular request time 22ms<br/>
+Element [[ChromeDriver: chrome on XP (64ed9b59497fd5530cec50374ca80f2e)] -> id: BILL_Statement_Value_1] displayed in 50ms<br/>
+Strings Matched: $56.71 = $56.71<br/>
+Angular request time 8ms<br/>
+Angular request time 10ms<br/>
+Element [[ChromeDriver: chrome on XP (64ed9b59497fd5530cec50374ca80f2e)] -> id: USR_Name] displayed in 29ms<br/>
+Element [[ChromeDriver: chrome on XP (64ed9b59497fd5530cec50374ca80f2e)] -> id: ACTION_Logout] displayed in 530ms<br/>
+Angular request time 11ms<br/>
 </div>
 </td>
 <td></td>
-<td>26</td>
+<td>28</td>
 <td>com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue@31610302</td></tr>
 <tr>
 <td title='com.NexusPortalAutomation.TestCases.Java.TC0011_VerifyBookMark.TestBookMark()'><b>TestBookMark</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0011_VerifyBookMark<br/>
-<a href="#Output-98826337" onClick='toggleBox("Output-98826337", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-800088638" onClick='toggleBox("Output-800088638", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-98826337" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-98826337">
-Angular Request Completed in 114ms<br/>
+<a href="#Output-800088638" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-800088638">
+Angular Request Completed in 54ms<br/>
 Sign in Page Title Verified<br/>
-Angular Request Completed in 15ms<br/>
+Angular Request Completed in 487ms<br/>
 User signed Admin<br/>
 Enter Text for Search =STATEMENTS001<br/>
-Element [[ChromeDriver: chrome on XP (580ca5061753cd4b34652d01e5422790)] -> id: SRCH_Input] displayed in 250ms<br/>
-Angular request time 937ms<br/>
+Element [[ChromeDriver: chrome on XP (e87a53cd178623ce6520163cb2142765)] -> id: SRCH_Input] displayed in 78ms<br/>
+Angular request time 1386ms<br/>
 Recent Customer =Aut Statement<br/>
-Angular request time 3045ms<br/>
+Angular request time 2707ms<br/>
 Customer Location Id found STATEMENTS001<br/>
 Strings Matched: STATEMENTS001 = STATEMENTS001<br/>
 Click Bookmark<br/>
-Angular request time 327ms<br/>
-Angular request time 600ms<br/>
-Angular request time 11ms<br/>
-Element [[ChromeDriver: chrome on XP (580ca5061753cd4b34652d01e5422790)] -> id: USR_Name] displayed in 36ms<br/>
-Element [[ChromeDriver: chrome on XP (580ca5061753cd4b34652d01e5422790)] -> id: ACTION_Logout] displayed in 50ms<br/>
+Element [[ChromeDriver: chrome on XP (e87a53cd178623ce6520163cb2142765)] -> id: ACTION_BOOKMARK] displayed in 10ms<br/>
+Click Book Mark<br/>
+Angular request time 2043ms<br/>
 Angular request time 26ms<br/>
-Angular Request Completed in 22ms<br/>
+Angular request time 15ms<br/>
+Angular request time 10ms<br/>
+Element [[ChromeDriver: chrome on XP (e87a53cd178623ce6520163cb2142765)] -> id: USR_Name] displayed in 30ms<br/>
+Element [[ChromeDriver: chrome on XP (e87a53cd178623ce6520163cb2142765)] -> id: ACTION_Logout] displayed in 36ms<br/>
+Angular request time 577ms<br/>
+Angular Request Completed in 41ms<br/>
 Sign in Page Title Verified<br/>
-Angular Request Completed in 16ms<br/>
+Angular Request Completed in 32ms<br/>
 User signed Admin<br/>
 Click BookMarked Customer<br/>
 Recent Customer =Aut Statement<br/>
-Angular request time 2180ms<br/>
+Angular request time 3870ms<br/>
 Customer Location Id found STATEMENTS001<br/>
 Strings Matched: STATEMENTS001 = STATEMENTS001<br/>
-Click Bookmark<br/>
-Angular request time 829ms<br/>
-Angular request time 16ms<br/>
-Angular request time 196ms<br/>
-Element [[ChromeDriver: chrome on XP (580ca5061753cd4b34652d01e5422790)] -> id: USR_Name] displayed in 51ms<br/>
-Element [[ChromeDriver: chrome on XP (580ca5061753cd4b34652d01e5422790)] -> id: ACTION_Logout] displayed in 48ms<br/>
-Angular request time 33ms<br/>
+Element [[ChromeDriver: chrome on XP (e87a53cd178623ce6520163cb2142765)] -> id: ACTION_BOOKMARK_Selected] displayed in 78ms<br/>
+Click Book Mark<br/>
+Angular request time 938ms<br/>
+Angular request time 1624ms<br/>
+Angular request time 13ms<br/>
+Element [[ChromeDriver: chrome on XP (e87a53cd178623ce6520163cb2142765)] -> id: USR_Name] displayed in 31ms<br/>
+Element [[ChromeDriver: chrome on XP (e87a53cd178623ce6520163cb2142765)] -> id: ACTION_Logout] displayed in 48ms<br/>
+Angular request time 12ms<br/>
 </div>
 </td>
 <td></td>
-<td>59</td>
+<td>63</td>
 <td>com.NexusPortalAutomation.TestCases.Java.TC0011_VerifyBookMark@1e127982</td></tr>
 <tr>
 <td title='com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit.TestContactEdit()'><b>TestContactEdit</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit<br/>
-<a href="#Output-999663323" onClick='toggleBox("Output-999663323", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1164280115" onClick='toggleBox("Output-1164280115", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-999663323" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-999663323">
-Angular Request Completed in 98ms<br/>
+<a href="#Output-1164280115" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1164280115">
+Angular Request Completed in 43ms<br/>
 Sign in Page Title Verified<br/>
-Angular Request Completed in 15ms<br/>
+Angular Request Completed in 16ms<br/>
 User signed Admin<br/>
 Enter Text for Search =LOC@0004<br/>
-Element [[ChromeDriver: chrome on XP (015814637f8a220a5801ca76a2de6b09)] -> id: SRCH_Input] displayed in 47ms<br/>
-Angular request time 1064ms<br/>
+Element [[ChromeDriver: chrome on XP (cc9ad12c4f85bf17c07c6af7fd0296f1)] -> id: SRCH_Input] displayed in 31ms<br/>
+Angular request time 1050ms<br/>
 Click Customer<br/>
-Angular request time 1485ms<br/>
-Angular request time 9ms<br/>
+Angular request time 2049ms<br/>
+Angular request time 203ms<br/>
 Customer Location Id found LOC@0004<br/>
 Strings Matched: LOC@0004 = LOC@0004<br/>
-Angular request time 15ms<br/>
-Element '[[ChromeDriver: chrome on XP (015814637f8a220a5801ca76a2de6b09)] -> id: 'CUST_Drillback_Button']' is displayed in 578ms<br/>
-Angular request time 12ms<br/>
-Angular request time 12ms<br/>
-Element '[[ChromeDriver: chrome on XP (015814637f8a220a5801ca76a2de6b09)] -> id: ECI_Phone_Number_1]' is displayed in 78ms<br/>
-Angular request time 18ms<br/>
-Angular request time 22ms<br/>
+Angular request time 31ms<br/>
+Element [[ChromeDriver: chrome on XP (cc9ad12c4f85bf17c07c6af7fd0296f1)] -> id: 'CUST_Drillback_Button'] displayed in 32ms<br/>
+Click Edit Contact<br/>
+Angular request time 19ms<br/>
 Angular request time 10ms<br/>
-Element '[[ChromeDriver: chrome on XP (015814637f8a220a5801ca76a2de6b09)] -> id: ECI_Email]' is displayed in 86ms<br/>
+Element '[[ChromeDriver: chrome on XP (cc9ad12c4f85bf17c07c6af7fd0296f1)] -> id: ECI_Phone_Number_1]' is displayed in 94ms<br/>
+Angular request time 37ms<br/>
 Angular request time 17ms<br/>
-Angular request time 13ms<br/>
-Angular request time 9ms<br/>
-Element '[[ChromeDriver: chrome on XP (015814637f8a220a5801ca76a2de6b09)] -> id: ECI_Action_Button]' is displayed in 110ms<br/>
+Angular request time 12ms<br/>
+Element '[[ChromeDriver: chrome on XP (cc9ad12c4f85bf17c07c6af7fd0296f1)] -> id: ECI_Email]' is displayed in 243ms<br/>
+Angular request time 11ms<br/>
+Angular request time 8ms<br/>
+Angular request time 10ms<br/>
+Element [[ChromeDriver: chrome on XP (cc9ad12c4f85bf17c07c6af7fd0296f1)] -> id: ECI_Action_Button] displayed in 20ms<br/>
+Click Contact Update<br/>
 Angular request time 335ms<br/>
-Angular request time 348ms<br/>
+Angular request time 344ms<br/>
 Verifying Customer Details<br/>
 Strings Matched: 2312 = 2312<br/>
 Strings Matched: Driv12312OUL312 = Driv12312OUL312<br/>
@@ -276,144 +349,153 @@ Strings Matched: + Ext. 2112 = + Ext. 2112<br/>
 Strings Matched: automation@cogsdale.com = automation@cogsdale.com<br/>
 Strings Matched: 007 Test Apt = 007 Test Apt<br/>
 Strings Matched: New York NY 12345-67890 = New York NY 12345-67890<br/>
-Angular request time 31ms<br/>
+Angular request time 47ms<br/>
+Angular request time 9ms<br/>
+Element [[ChromeDriver: chrome on XP (cc9ad12c4f85bf17c07c6af7fd0296f1)] -> id: USR_Name] displayed in 30ms<br/>
+Element [[ChromeDriver: chrome on XP (cc9ad12c4f85bf17c07c6af7fd0296f1)] -> id: ACTION_Logout] displayed in 33ms<br/>
+Angular request time 28ms<br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit@2038ae61</td></tr>
+<tr>
+<td title='com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus.TestCreditStatus()'><b>TestCreditStatus</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus<br/>
+<a href="#Output-1017203956" onClick='toggleBox("Output-1017203956", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1017203956" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1017203956">
+Angular Request Completed in 148ms<br/>
+Sign in Page Title Verified<br/>
+Angular Request Completed in 32ms<br/>
+User signed Admin<br/>
+Enter Text for Search =LOC@0001<br/>
+Element [[ChromeDriver: chrome on XP (7b91fbb4466ee63b7efb74dcbb222c5c)] -> id: SRCH_Input] displayed in 78ms<br/>
+Angular request time 1106ms<br/>
+Click Customer<br/>
+Angular request time 2262ms<br/>
+Angular request time 15ms<br/>
+Customer Location Id found LOC@0001<br/>
+Strings Matched: LOC@0001 = LOC@0001<br/>
+Verify Credit Status<br/>
+Angular request time 16ms<br/>
+Angular request time 15ms<br/>
 Angular request time 10ms<br/>
-Element [[ChromeDriver: chrome on XP (015814637f8a220a5801ca76a2de6b09)] -> id: USR_Name] displayed in 28ms<br/>
-Element [[ChromeDriver: chrome on XP (015814637f8a220a5801ca76a2de6b09)] -> id: ACTION_Logout] displayed in 38ms<br/>
+Element [[ChromeDriver: chrome on XP (7b91fbb4466ee63b7efb74dcbb222c5c)] -> id: USR_Name] displayed in 28ms<br/>
+Element [[ChromeDriver: chrome on XP (7b91fbb4466ee63b7efb74dcbb222c5c)] -> id: ACTION_Logout] displayed in 32ms<br/>
+Angular request time 191ms<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus@60c6f5b</td></tr>
+<tr>
+<td title='com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails.TestCustomerDetails()'><b>TestCustomerDetails</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails<br/>
+<a href="#Output-1925785585" onClick='toggleBox("Output-1925785585", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1925785585" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1925785585">
+Angular Request Completed in 30ms<br/>
+Sign in Page Title Verified<br/>
+Angular Request Completed in 78ms<br/>
+User signed Admin<br/>
+Enter Text for Search =LOC@0001<br/>
+Element [[ChromeDriver: chrome on XP (ca97ae656586265fe4f49ebc325a7713)] -> id: SRCH_Input] displayed in 125ms<br/>
+Angular request time 2026ms<br/>
+Click Customer<br/>
+Angular request time 2124ms<br/>
+Angular request time 172ms<br/>
+Customer Location Id found LOC@0001<br/>
+Strings Matched: LOC@0001 = LOC@0001<br/>
+Angular request time 16ms<br/>
+Verifying Customer Details<br/>
+Strings Matched: 2312 = 2312<br/>
+Strings Matched: Driv12312OUL312 = Driv12312OUL312<br/>
+Strings Matched: (090) 078-6010 = (090) 078-6010<br/>
+Strings Matched: + Ext. 2112 = + Ext. 2112<br/>
+Strings Matched: automation@cogsdale.com = automation@cogsdale.com<br/>
+Strings Matched: 007 Test Apt = 007 Test Apt<br/>
+Strings Matched: New York NY 12345-67890 = New York NY 12345-67890<br/>
+Angular request time 15ms<br/>
+Angular request time 10ms<br/>
+Element [[ChromeDriver: chrome on XP (ca97ae656586265fe4f49ebc325a7713)] -> id: USR_Name] displayed in 32ms<br/>
+Element [[ChromeDriver: chrome on XP (ca97ae656586265fe4f49ebc325a7713)] -> id: ACTION_Logout] displayed in 501ms<br/>
 Angular request time 18ms<br/>
 </div>
 </td>
 <td></td>
 <td>32</td>
-<td>com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit@2038ae61</td></tr>
-<tr>
-<td title='com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus.TestCreditStatus()'><b>TestCreditStatus</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus<br/>
-<a href="#Output-1912769093" onClick='toggleBox("Output-1912769093", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1912769093" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1912769093">
-Angular Request Completed in 31ms<br/>
-Sign in Page Title Verified<br/>
-Angular Request Completed in 46ms<br/>
-User signed Admin<br/>
-Enter Text for Search =LOC@0001<br/>
-Element [[ChromeDriver: chrome on XP (6863c95b4eb14f72e12761bf0bb78d14)] -> id: SRCH_Input] displayed in 47ms<br/>
-Angular request time 996ms<br/>
-Click Customer<br/>
-Angular request time 2087ms<br/>
-Angular request time 20ms<br/>
-Customer Location Id found LOC@0001<br/>
-Strings Matched: LOC@0001 = LOC@0001<br/>
-Verify Credit Status<br/>
-Angular request time 12ms<br/>
-Angular request time 17ms<br/>
-Angular request time 13ms<br/>
-Element [[ChromeDriver: chrome on XP (6863c95b4eb14f72e12761bf0bb78d14)] -> id: USR_Name] displayed in 31ms<br/>
-Element [[ChromeDriver: chrome on XP (6863c95b4eb14f72e12761bf0bb78d14)] -> id: ACTION_Logout] displayed in 65ms<br/>
-Angular request time 16ms<br/>
-</div>
-</td>
-<td></td>
-<td>29</td>
-<td>com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus@60c6f5b</td></tr>
-<tr>
-<td title='com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails.TestCustomerDetails()'><b>TestCustomerDetails</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails<br/>
-<a href="#Output-1777745301" onClick='toggleBox("Output-1777745301", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1777745301" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1777745301">
-Angular Request Completed in 245ms<br/>
-Sign in Page Title Verified<br/>
-Angular Request Completed in 15ms<br/>
-User signed Admin<br/>
-Enter Text for Search =LOC@0001<br/>
-Element [[ChromeDriver: chrome on XP (4bd8b103bdc359efd95d2979e8b80687)] -> id: SRCH_Input] displayed in 31ms<br/>
-Angular request time 955ms<br/>
-Click Customer<br/>
-Angular request time 2106ms<br/>
-Angular request time 11ms<br/>
-Customer Location Id found LOC@0001<br/>
-Strings Matched: LOC@0001 = LOC@0001<br/>
-Angular request time 24ms<br/>
-Verifying Customer Details<br/>
-Strings Matched: 2312 = 2312<br/>
-Strings Matched: Driv12312OUL312 = Driv12312OUL312<br/>
-Strings Matched: (090) 078-6010 = (090) 078-6010<br/>
-Strings Matched: + Ext. 2112 = + Ext. 2112<br/>
-Strings Matched: automation@cogsdale.com = automation@cogsdale.com<br/>
-Strings Matched: 007 Test Apt = 007 Test Apt<br/>
-Strings Matched: New York NY 12345-67890 = New York NY 12345-67890<br/>
-Angular request time 16ms<br/>
-Angular request time 10ms<br/>
-Element [[ChromeDriver: chrome on XP (4bd8b103bdc359efd95d2979e8b80687)] -> id: USR_Name] displayed in 170ms<br/>
-Element [[ChromeDriver: chrome on XP (4bd8b103bdc359efd95d2979e8b80687)] -> id: ACTION_Logout] displayed in 32ms<br/>
-Angular request time 14ms<br/>
-</div>
-</td>
-<td></td>
-<td>26</td>
 <td>com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails@617faa95</td></tr>
 <tr>
 <td title='com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs.TestNotesSection()'><b>TestNotesSection</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs<br/>
-<a href="#Output-1579823168" onClick='toggleBox("Output-1579823168", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-829053325" onClick='toggleBox("Output-829053325", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1579823168" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1579823168">
-Angular Request Completed in 68ms<br/>
+<a href="#Output-829053325" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-829053325">
+Angular Request Completed in 71ms<br/>
 Sign in Page Title Verified<br/>
-Angular Request Completed in 27ms<br/>
+Angular Request Completed in 47ms<br/>
 User signed Admin<br/>
 Enter Text for Search =LOC@0004<br/>
-Element [[ChromeDriver: chrome on XP (eb74ecf0ec5dbcc9c23c2e3bbc41b338)] -> id: SRCH_Input] displayed in 63ms<br/>
-Angular request time 1528ms<br/>
+Element [[ChromeDriver: chrome on XP (a78f88178187dedc500dd2bfd6226da7)] -> id: SRCH_Input] displayed in 32ms<br/>
+Angular request time 994ms<br/>
 Click Customer<br/>
-Angular request time 1653ms<br/>
-Angular request time 297ms<br/>
+Angular request time 1951ms<br/>
+Angular request time 31ms<br/>
 Customer Location Id found LOC@0004<br/>
 Strings Matched: LOC@0004 = LOC@0004<br/>
-Angular request time 6ms<br/>
+Angular request time 11ms<br/>
 Angular request time 10ms<br/>
-Angular request time 441ms<br/>
-Angular request time 322ms<br/>
-Strings Matched: Notes added2019/06/13 11:23:24 = Notes added2019/06/13 11:23:24<br/>
-Angular request time 8ms<br/>
-Angular request time 8ms<br/>
-Element [[ChromeDriver: chrome on XP (eb74ecf0ec5dbcc9c23c2e3bbc41b338)] -> id: USR_Name] displayed in 31ms<br/>
-Element [[ChromeDriver: chrome on XP (eb74ecf0ec5dbcc9c23c2e3bbc41b338)] -> id: ACTION_Logout] displayed in 33ms<br/>
+Element [[ChromeDriver: chrome on XP (a78f88178187dedc500dd2bfd6226da7)] -> id: CL_Action_Button] displayed in 32ms<br/>
+Click Submit Notes<br/>
+Angular request time 531ms<br/>
+Angular request time 337ms<br/>
+Angular request time 10ms<br/>
+Strings Matched: Notes added2019/06/14 09:21:54 = Notes added2019/06/14 09:21:54<br/>
 Angular request time 16ms<br/>
+Angular request time 11ms<br/>
+Element [[ChromeDriver: chrome on XP (a78f88178187dedc500dd2bfd6226da7)] -> id: USR_Name] displayed in 30ms<br/>
+Element [[ChromeDriver: chrome on XP (a78f88178187dedc500dd2bfd6226da7)] -> id: ACTION_Logout] displayed in 40ms<br/>
+Angular request time 25ms<br/>
 </div>
 </td>
 <td></td>
-<td>27</td>
+<td>28</td>
 <td>com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs@31dc339b</td></tr>
 <tr>
 <td title='com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch.TestSearchAccount()'><b>TestSearchAccount</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch<br/>
-<a href="#Output-1031586763" onClick='toggleBox("Output-1031586763", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1096411163" onClick='toggleBox("Output-1096411163", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1031586763" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1031586763">
-Angular Request Completed in 22ms<br/>
-Sign in Page Title Verified<br/>
+<a href="#Output-1096411163" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1096411163">
 Angular Request Completed in 16ms<br/>
+Sign in Page Title Verified<br/>
+Angular Request Completed in 124ms<br/>
 User signed Admin<br/>
 Enter Text for Search =LOC@0004<br/>
-Element [[ChromeDriver: chrome on XP (9b9562988cb1637a75b401e2f8539d72)] -> id: SRCH_Input] displayed in 48ms<br/>
-Angular request time 1095ms<br/>
+Element [[ChromeDriver: chrome on XP (419d4a90f645dcd458faa589cb24eef8)] -> id: SRCH_Input] displayed in 47ms<br/>
+Angular request time 1057ms<br/>
 Click Customer<br/>
-Angular request time 1555ms<br/>
-Angular request time 626ms<br/>
+Angular request time 1936ms<br/>
+Angular request time 12ms<br/>
 Customer Location Id found LOC@0004<br/>
 Strings Matched: LOC@0004 = LOC@0004<br/>
-Angular request time 109ms<br/>
+Angular request time 9ms<br/>
 Click on Account Drop down<br/>
-Element [[ChromeDriver: chrome on XP (9b9562988cb1637a75b401e2f8539d72)] -> id: SRCH_Accounts_Label] displayed in 45ms<br/>
+Element [[ChromeDriver: chrome on XP (419d4a90f645dcd458faa589cb24eef8)] -> id: SRCH_Accounts_Label] displayed in 33ms<br/>
+Element [[ChromeDriver: chrome on XP (419d4a90f645dcd458faa589cb24eef8)] -> id: SRCH_Accounts_Label] displayed in 384ms<br/>
+Click Account Drop down<br/>
+Angular request time 517ms<br/>
 Enter Account Name<br/>
-Angular request time 17ms<br/>
-Element [[ChromeDriver: chrome on XP (9b9562988cb1637a75b401e2f8539d72)] -> id: SRCH_Accounts] displayed in 40ms<br/>
-Angular request time 112ms<br/>
-Angular request time 11ms<br/>
+Angular request time 9ms<br/>
+Element [[ChromeDriver: chrome on XP (419d4a90f645dcd458faa589cb24eef8)] -> id: SRCH_Accounts] displayed in 31ms<br/>
+Element [[ChromeDriver: chrome on XP (419d4a90f645dcd458faa589cb24eef8)] -> id: SRCH_Accounts] displayed in 9ms<br/>
+Click Search Account<br/>
+Angular request time 18ms<br/>
+Angular request time 123ms<br/>
+Angular request time 219ms<br/>
 Verify Account Name =1 Water 1 Bldg<br/>
-Element [[ChromeDriver: chrome on XP (9b9562988cb1637a75b401e2f8539d72)] -> id: SRCH_Accounts_Result1] displayed in 28ms<br/>
+Element [[ChromeDriver: chrome on XP (419d4a90f645dcd458faa589cb24eef8)] -> id: SRCH_Accounts_Result1] displayed in 31ms<br/>
 Strings Matched: 1 Water 1 Bldg
 New Smyrna Beach FL 12312-3
 LOC@0004
@@ -421,113 +503,113 @@ $0.00
 Apr 2019 - Current
 Current = 1 Water 1 Bldg<br/>
 Angular request time 16ms<br/>
-Angular request time 15ms<br/>
-Angular request time 11ms<br/>
-Element [[ChromeDriver: chrome on XP (9b9562988cb1637a75b401e2f8539d72)] -> id: USR_Name] displayed in 32ms<br/>
-Element [[ChromeDriver: chrome on XP (9b9562988cb1637a75b401e2f8539d72)] -> id: ACTION_Logout] displayed in 50ms<br/>
-Angular request time 35ms<br/>
+Angular request time 31ms<br/>
+Angular request time 8ms<br/>
+Element [[ChromeDriver: chrome on XP (419d4a90f645dcd458faa589cb24eef8)] -> id: USR_Name] displayed in 62ms<br/>
+Element [[ChromeDriver: chrome on XP (419d4a90f645dcd458faa589cb24eef8)] -> id: ACTION_Logout] displayed in 33ms<br/>
+Angular request time 16ms<br/>
 </div>
 </td>
 <td></td>
-<td>27</td>
+<td>28</td>
 <td>com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch@7e0b0338</td></tr>
 <tr>
 <td title='com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad.TestSearchAlertOnLoad()'><b>TestSearchAlertOnLoad</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad<br/>
-<a href="#Output-1994834032" onClick='toggleBox("Output-1994834032", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-203498806" onClick='toggleBox("Output-203498806", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1994834032" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1994834032">
-Angular Request Completed in 51ms<br/>
+<a href="#Output-203498806" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-203498806">
+Angular Request Completed in 11ms<br/>
 Sign in Page Title Verified<br/>
-Angular Request Completed in 6ms<br/>
+Angular Request Completed in 46ms<br/>
 User signed Admin<br/>
-Element '//input[@id='SRCH_Input']' is displayed in 61ms<br/>
+Element '//input[@id='SRCH_Input']' is displayed in 93ms<br/>
 Element 'toolbar-saved' is displayed in 63ms<br/>
 Enter Text for Search =Alert<br/>
-Element [[ChromeDriver: chrome on XP (c1ceac769f3379d56e270b2e607ce065)] -> id: SRCH_Input] displayed in 36ms<br/>
-Angular request time 1065ms<br/>
+Element [[ChromeDriver: chrome on XP (b92089abc789616ef0fb076e69f6dae2)] -> id: SRCH_Input] displayed in 31ms<br/>
+Angular request time 1302ms<br/>
 Click Customer<br/>
-Angular request time 2256ms<br/>
-Element '//div[@class='address-details']' is displayed in 55ms<br/>
-Angular request time 13ms<br/>
+Angular request time 1983ms<br/>
+Element '//div[@class='address-details']' is displayed in 104ms<br/>
+Angular request time 19ms<br/>
 Customer Name found Alert Test<br/>
 Strings Matched: Alert Test = Alert Test<br/>
-Angular request time 15ms<br/>
-Element 'ALERTO_Action_Button' is displayed in 266ms<br/>
-Angular request time 13ms<br/>
-Click Ok<br/>
+Element 'ALERTO_Action_Button' is displayed in 62ms<br/>
+Element [[ChromeDriver: chrome on XP (b92089abc789616ef0fb076e69f6dae2)] -> id: ALERTO_Action_Button] displayed in 31ms<br/>
+Click Alert OK<br/>
+Angular request time 35ms<br/>
 Alert on Load Clicked<br/>
-Angular request time 31ms<br/>
-Element [[ChromeDriver: chrome on XP (c1ceac769f3379d56e270b2e607ce065)] -> id: ALERT_1_Description] displayed in 49ms<br/>
-Angular request time 13ms<br/>
+Element [[ChromeDriver: chrome on XP (b92089abc789616ef0fb076e69f6dae2)] -> id: ALERT_1_Description] displayed in 27ms<br/>
+Click Alert Description<br/>
+Angular request time 9ms<br/>
 Click Description<br/>
-Angular request time 24ms<br/>
-Element 'ALERTO_Action_Button' is displayed in 112ms<br/>
-Angular request time 15ms<br/>
-Click Ok<br/>
+Element 'ALERTO_Action_Button' is displayed in 67ms<br/>
+Element [[ChromeDriver: chrome on XP (b92089abc789616ef0fb076e69f6dae2)] -> id: ALERTO_Action_Button] displayed in 30ms<br/>
+Click Alert OK<br/>
+Angular request time 16ms<br/>
 Alert on description Clicked<br/>
 Angular request time 11ms<br/>
-Angular request time 11ms<br/>
-Element [[ChromeDriver: chrome on XP (c1ceac769f3379d56e270b2e607ce065)] -> id: USR_Name] displayed in 46ms<br/>
-Element [[ChromeDriver: chrome on XP (c1ceac769f3379d56e270b2e607ce065)] -> id: ACTION_Logout] displayed in 69ms<br/>
-Angular request time 20ms<br/>
+Angular request time 22ms<br/>
+Element [[ChromeDriver: chrome on XP (b92089abc789616ef0fb076e69f6dae2)] -> id: USR_Name] displayed in 37ms<br/>
+Element [[ChromeDriver: chrome on XP (b92089abc789616ef0fb076e69f6dae2)] -> id: ACTION_Logout] displayed in 36ms<br/>
+Angular request time 12ms<br/>
 </div>
 </td>
 <td></td>
-<td>27</td>
+<td>28</td>
 <td>com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad@dc24521</td></tr>
 <tr>
 <td title='com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks.TestSearchAutobyBookMark()'><b>TestSearchAutobyBookMark</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks<br/>
-<a href="#Output-1638429542" onClick='toggleBox("Output-1638429542", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1915040171" onClick='toggleBox("Output-1915040171", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1638429542" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1638429542">
-Angular Request Completed in 23ms<br/>
+<a href="#Output-1915040171" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1915040171">
+Angular Request Completed in 116ms<br/>
 Sign in Page Title Verified<br/>
-Angular Request Completed in 31ms<br/>
+Angular Request Completed in 47ms<br/>
 User signed Admin<br/>
-Element '//input[@id='SRCH_Input']' is displayed in 94ms<br/>
-Element 'SRCH_Button_Favorites' is displayed in 47ms<br/>
+Element '//input[@id='SRCH_Input']' is displayed in 62ms<br/>
+Element 'SRCH_Button_Favorites' is displayed in 63ms<br/>
 Click BookMarked Customer<br/>
 Click Customer<br/>
-Angular request time 2177ms<br/>
-Element '//div[@class='address-details']' is displayed in 55ms<br/>
-Angular request time 15ms<br/>
+Angular request time 3017ms<br/>
+Element '//div[@class='address-details']' is displayed in 80ms<br/>
+Angular request time 10ms<br/>
 Customer Name found Noel Ford<br/>
 Strings Matched: Noel Ford = Noel Ford<br/>
-Angular request time 16ms<br/>
-Angular request time 22ms<br/>
-Element [[ChromeDriver: chrome on XP (555799119e9b2beb3d660182ee25c705)] -> id: USR_Name] displayed in 26ms<br/>
-Element [[ChromeDriver: chrome on XP (555799119e9b2beb3d660182ee25c705)] -> id: ACTION_Logout] displayed in 52ms<br/>
-Angular request time 20ms<br/>
+Angular request time 9ms<br/>
+Angular request time 11ms<br/>
+Element [[ChromeDriver: chrome on XP (c750d37a1c2bf1e440faaf8c62292991)] -> id: USR_Name] displayed in 42ms<br/>
+Element [[ChromeDriver: chrome on XP (c750d37a1c2bf1e440faaf8c62292991)] -> id: ACTION_Logout] displayed in 85ms<br/>
+Angular request time 19ms<br/>
 </div>
 </td>
 <td></td>
-<td>23</td>
+<td>24</td>
 <td>com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks@148080bb</td></tr>
 <tr>
 <td title='com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName.TestSearchAutobyFirstName()'><b>TestSearchAutobyFirstName</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName<br/>
-<a href="#Output-294632176" onClick='toggleBox("Output-294632176", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1257704323" onClick='toggleBox("Output-1257704323", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-294632176" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-294632176">
-Angular Request Completed in 23ms<br/>
+<a href="#Output-1257704323" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1257704323">
+Angular Request Completed in 19ms<br/>
 Sign in Page Title Verified<br/>
-Angular Request Completed in 2ms<br/>
+Angular Request Completed in 31ms<br/>
 User signed Admin<br/>
 Enter Text for Search =Automation<br/>
-Element [[ChromeDriver: chrome on XP (6f8f8c26ac127aa09908ece111f72401)] -> id: SRCH_Input] displayed in 46ms<br/>
-Angular request time 1113ms<br/>
+Element [[ChromeDriver: chrome on XP (08cb0a2c9d218445ef07b922d5251076)] -> id: SRCH_Input] displayed in 63ms<br/>
+Angular request time 1582ms<br/>
 Click Customer<br/>
-Angular request time 2188ms<br/>
-Angular request time 13ms<br/>
+Angular request time 2063ms<br/>
+Angular request time 11ms<br/>
 Customer Name found Automation Mate<br/>
 Strings Matched: Automation Mate = Automation Mate<br/>
-Angular request time 12ms<br/>
-Angular request time 12ms<br/>
-Element [[ChromeDriver: chrome on XP (6f8f8c26ac127aa09908ece111f72401)] -> id: USR_Name] displayed in 34ms<br/>
-Element [[ChromeDriver: chrome on XP (6f8f8c26ac127aa09908ece111f72401)] -> id: ACTION_Logout] displayed in 43ms<br/>
-Angular request time 26ms<br/>
+Angular request time 10ms<br/>
+Angular request time 8ms<br/>
+Element [[ChromeDriver: chrome on XP (08cb0a2c9d218445ef07b922d5251076)] -> id: USR_Name] displayed in 29ms<br/>
+Element [[ChromeDriver: chrome on XP (08cb0a2c9d218445ef07b922d5251076)] -> id: ACTION_Logout] displayed in 28ms<br/>
+Angular request time 48ms<br/>
 </div>
 </td>
 <td></td>
@@ -535,105 +617,76 @@ Angular request time 26ms<br/>
 <td>com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName@64bfbc86</td></tr>
 <tr>
 <td title='com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName.TestSearchAutobyLastName()'><b>TestSearchAutobyLastName</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName<br/>
-<a href="#Output-18976274" onClick='toggleBox("Output-18976274", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-2107079200" onClick='toggleBox("Output-2107079200", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-18976274" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-18976274">
-Angular Request Completed in 215ms<br/>
+<a href="#Output-2107079200" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2107079200">
+Angular Request Completed in 83ms<br/>
 Sign in Page Title Verified<br/>
 Angular Request Completed in 31ms<br/>
 User signed Admin<br/>
 Enter Text for Search =Mate<br/>
-Element [[ChromeDriver: chrome on XP (2a536d596066a68f3ab50fb5b493bb05)] -> id: SRCH_Input] displayed in 30ms<br/>
-Angular request time 1049ms<br/>
+Element [[ChromeDriver: chrome on XP (d9a4d759d10fac3d9d189b94109cbac6)] -> id: SRCH_Input] displayed in 47ms<br/>
+Angular request time 1033ms<br/>
 Click Customer<br/>
-Angular request time 1948ms<br/>
-Angular request time 9ms<br/>
+Angular request time 1831ms<br/>
+Angular request time 14ms<br/>
 Customer Name found Automation Mate<br/>
 Strings Matched: Automation Mate = Automation Mate<br/>
-Angular request time 9ms<br/>
-Angular request time 9ms<br/>
-Element [[ChromeDriver: chrome on XP (2a536d596066a68f3ab50fb5b493bb05)] -> id: USR_Name] displayed in 38ms<br/>
-Element [[ChromeDriver: chrome on XP (2a536d596066a68f3ab50fb5b493bb05)] -> id: ACTION_Logout] displayed in 42ms<br/>
-Angular request time 22ms<br/>
+Angular request time 10ms<br/>
+Angular request time 43ms<br/>
+Element [[ChromeDriver: chrome on XP (d9a4d759d10fac3d9d189b94109cbac6)] -> id: USR_Name] displayed in 93ms<br/>
+Element [[ChromeDriver: chrome on XP (d9a4d759d10fac3d9d189b94109cbac6)] -> id: ACTION_Logout] displayed in 36ms<br/>
+Angular request time 10ms<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName@64bf3bbf</td></tr>
+<tr>
+<td title='com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID.TestSearchID()'><b>TestSearchID</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID<br/>
+<a href="#Output-882658588" onClick='toggleBox("Output-882658588", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-882658588" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-882658588">
+Angular Request Completed in 160ms<br/>
+Sign in Page Title Verified<br/>
+Angular Request Completed in 16ms<br/>
+User signed Admin<br/>
+Enter Text for Search =0000011111<br/>
+Element [[ChromeDriver: chrome on XP (5f265af4b6c95717968c8a43f57c8937)] -> id: SRCH_Input] displayed in 31ms<br/>
+Angular request time 1049ms<br/>
+Click Customer<br/>
+Angular request time 2023ms<br/>
+Angular request time 15ms<br/>
+CustomerId found 0000011111<br/>
+Strings Matched: 0000011111 = 0000011111<br/>
+Angular request time 31ms<br/>
+Angular request time 12ms<br/>
+Element [[ChromeDriver: chrome on XP (5f265af4b6c95717968c8a43f57c8937)] -> id: USR_Name] displayed in 24ms<br/>
+Element [[ChromeDriver: chrome on XP (5f265af4b6c95717968c8a43f57c8937)] -> id: ACTION_Logout] displayed in 31ms<br/>
+Angular request time 16ms<br/>
 </div>
 </td>
 <td></td>
 <td>25</td>
-<td>com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName@64bf3bbf</td></tr>
-<tr>
-<td title='com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction.TestSearchAutobyRecent()'><b>TestSearchAutobyRecent</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction<br/>
-<a href="#Output-1531506932" onClick='toggleBox("Output-1531506932", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1531506932" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1531506932">
-Angular Request Completed in 187ms<br/>
-Sign in Page Title Verified<br/>
-Angular Request Completed in 187ms<br/>
-User signed Admin<br/>
-Element '//input[@id='SRCH_Input']' is displayed in 62ms<br/>
-Click Recent<br/>
-Recent Customer =Aut Statement<br/>
-Click Customer<br/>
-Angular request time 2748ms<br/>
-Alert not configured<br/>
-Element '//div[@class='address-details']' is displayed in 78ms<br/>
-Angular request time 16ms<br/>
-Strings Matched: Aut Statement = Aut Statement<br/>
-Angular request time 16ms<br/>
-Angular request time 10ms<br/>
-Element [[ChromeDriver: chrome on XP (9fc17d2f6d1d6e0d632884b3305a5f44)] -> id: USR_Name] displayed in 20ms<br/>
-Element [[ChromeDriver: chrome on XP (9fc17d2f6d1d6e0d632884b3305a5f44)] -> id: ACTION_Logout] displayed in 36ms<br/>
-Angular request time 15ms<br/>
-</div>
-</td>
-<td></td>
-<td>34</td>
-<td>com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction@55d56113</td></tr>
-<tr>
-<td title='com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID.TestSearchID()'><b>TestSearchID</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID<br/>
-<a href="#Output-971324399" onClick='toggleBox("Output-971324399", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-971324399" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-971324399">
-Angular Request Completed in 31ms<br/>
-Sign in Page Title Verified<br/>
-Angular Request Completed in 31ms<br/>
-User signed Admin<br/>
-Enter Text for Search =0000011111<br/>
-Element [[ChromeDriver: chrome on XP (5ea2b213e6ff9ed9f0749124ebf73dff)] -> id: SRCH_Input] displayed in 79ms<br/>
-Angular request time 1477ms<br/>
-Click Customer<br/>
-Angular request time 2379ms<br/>
-Angular request time 12ms<br/>
-CustomerId found 0000011111<br/>
-Strings Matched: 0000011111 = 0000011111<br/>
-Angular request time 9ms<br/>
-Angular request time 9ms<br/>
-Element [[ChromeDriver: chrome on XP (5ea2b213e6ff9ed9f0749124ebf73dff)] -> id: USR_Name] displayed in 31ms<br/>
-Element [[ChromeDriver: chrome on XP (5ea2b213e6ff9ed9f0749124ebf73dff)] -> id: ACTION_Logout] displayed in 47ms<br/>
-Angular request time 15ms<br/>
-</div>
-</td>
-<td></td>
-<td>26</td>
 <td>com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID@192b07fd</td></tr>
 <tr>
 <td title='com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID.TestSearchbyLocationID()'><b>TestSearchbyLocationID</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID<br/>
-<a href="#Output-109175108" onClick='toggleBox("Output-109175108", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-911895107" onClick='toggleBox("Output-911895107", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-109175108" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-109175108">
-Angular Request Completed in 33ms<br/>
+<a href="#Output-911895107" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-911895107">
+Angular Request Completed in 273ms<br/>
 Sign in Page Title Verified<br/>
-Angular Request Completed in 25ms<br/>
+Angular Request Completed in 16ms<br/>
 User signed Admin<br/>
 Enter Text for Search =LOC@0001<br/>
-Element [[ChromeDriver: chrome on XP (58088613cf632b7d2e36f8bfeb1548d1)] -> id: SRCH_Input] displayed in 78ms<br/>
-Angular request time 940ms<br/>
+Element [[ChromeDriver: chrome on XP (3b4f0523e2301bce29fd532e294a60df)] -> id: SRCH_Input] displayed in 47ms<br/>
+Angular request time 1435ms<br/>
 Click Customer<br/>
-Angular request time 1524ms<br/>
-Angular request time 25ms<br/>
+Angular request time 2243ms<br/>
+Angular request time 356ms<br/>
 Customer Location Id found LOC@0001<br/>
 Strings Matched: LOC@0001 = LOC@0001<br/>
 Angular request time 10ms<br/>
@@ -642,105 +695,107 @@ Strings Matched: 007 Aut Automation Street Rt 20001 Apt = 007 Aut Automation Str
 Strings Matched: Cloudy = Cloudy<br/>
 Strings Matched: D = D<br/>
 Strings Matched: 00720-019 = 00720-019<br/>
-Angular request time 13ms<br/>
-Angular request time 7ms<br/>
-Element [[ChromeDriver: chrome on XP (58088613cf632b7d2e36f8bfeb1548d1)] -> id: USR_Name] displayed in 30ms<br/>
-Element [[ChromeDriver: chrome on XP (58088613cf632b7d2e36f8bfeb1548d1)] -> id: ACTION_Logout] displayed in 33ms<br/>
-Angular request time 15ms<br/>
+Angular request time 20ms<br/>
+Angular request time 11ms<br/>
+Element [[ChromeDriver: chrome on XP (3b4f0523e2301bce29fd532e294a60df)] -> id: USR_Name] displayed in 31ms<br/>
+Element [[ChromeDriver: chrome on XP (3b4f0523e2301bce29fd532e294a60df)] -> id: ACTION_Logout] displayed in 32ms<br/>
+Angular request time 31ms<br/>
 </div>
 </td>
 <td></td>
-<td>24</td>
+<td>27</td>
 <td>com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID@6e1ec318</td></tr>
 <tr>
 <td title='com.NexusPortalAutomation.TestCases.Java.TC0019_VerifyDrillBackTransactions.TestSecondayContact()'><b>TestSecondayContact</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0019_VerifyDrillBackTransactions<br/>
-<a href="#Output-1449772539" onClick='toggleBox("Output-1449772539", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1651262695" onClick='toggleBox("Output-1651262695", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1449772539" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1449772539">
-Angular Request Completed in 201ms<br/>
+<a href="#Output-1651262695" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1651262695">
+Angular Request Completed in 35ms<br/>
 Sign in Page Title Verified<br/>
-Angular Request Completed in 93ms<br/>
+Angular Request Completed in 15ms<br/>
 User signed Admin<br/>
 Enter Text for Search =LOC@0001<br/>
-Element [[ChromeDriver: chrome on XP (26d1b48019d477037055bc0c66503710)] -> id: SRCH_Input] displayed in 47ms<br/>
-Angular request time 944ms<br/>
+Element [[ChromeDriver: chrome on XP (f2d2aa3dfdf236169da65489a3136728)] -> id: SRCH_Input] displayed in 31ms<br/>
+Angular request time 1371ms<br/>
 Click Customer<br/>
-Angular request time 1814ms<br/>
-Angular request time 14ms<br/>
+Angular request time 2679ms<br/>
+Angular request time 154ms<br/>
 Customer Location Id found LOC@0001<br/>
 Strings Matched: LOC@0001 = LOC@0001<br/>
-Angular request time 793ms<br/>
-Transaction Link Clicked<br/>
-Element [[ChromeDriver: chrome on XP (26d1b48019d477037055bc0c66503710)] -> id: TRAN_Drillback_1] displayed in 10ms<br/>
-Element [[ChromeDriver: chrome on XP (26d1b48019d477037055bc0c66503710)] -> id: TRAN_Drillback_2] displayed in 16ms<br/>
-Element [[ChromeDriver: chrome on XP (26d1b48019d477037055bc0c66503710)] -> id: TRAN_Drillback_3] displayed in 15ms<br/>
+Element [[ChromeDriver: chrome on XP (f2d2aa3dfdf236169da65489a3136728)] -> css selector: #mat-tab-label-0-1 > div:nth-child(1)] displayed in 47ms<br/>
+Click Transaction Link<br/>
+Angular request time 902ms<br/>
+Element [[ChromeDriver: chrome on XP (f2d2aa3dfdf236169da65489a3136728)] -> id: TRAN_Drillback_1] displayed in 16ms<br/>
+Element [[ChromeDriver: chrome on XP (f2d2aa3dfdf236169da65489a3136728)] -> id: TRAN_Drillback_2] displayed in 141ms<br/>
+Element [[ChromeDriver: chrome on XP (f2d2aa3dfdf236169da65489a3136728)] -> id: TRAN_Drillback_3] displayed in 15ms<br/>
 Angular request time 16ms<br/>
-Angular request time 27ms<br/>
-Element [[ChromeDriver: chrome on XP (26d1b48019d477037055bc0c66503710)] -> id: USR_Name] displayed in 22ms<br/>
-Element [[ChromeDriver: chrome on XP (26d1b48019d477037055bc0c66503710)] -> id: ACTION_Logout] displayed in 42ms<br/>
-Angular request time 16ms<br/>
+Angular request time 10ms<br/>
+Element [[ChromeDriver: chrome on XP (f2d2aa3dfdf236169da65489a3136728)] -> id: USR_Name] displayed in 343ms<br/>
+Element [[ChromeDriver: chrome on XP (f2d2aa3dfdf236169da65489a3136728)] -> id: ACTION_Logout] displayed in 58ms<br/>
+Angular request time 22ms<br/>
 </div>
 </td>
 <td></td>
-<td>32</td>
+<td>33</td>
 <td>com.NexusPortalAutomation.TestCases.Java.TC0019_VerifyDrillBackTransactions@21213b92</td></tr>
 <tr>
 <td title='com.NexusPortalAutomation.TestCases.Java.TC0020_VerifyDrillBackServices.TestSecondayContact()'><b>TestSecondayContact</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0020_VerifyDrillBackServices<br/>
-<a href="#Output-609483101" onClick='toggleBox("Output-609483101", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1648582256" onClick='toggleBox("Output-1648582256", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-609483101" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-609483101">
-Angular Request Completed in 176ms<br/>
+<a href="#Output-1648582256" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1648582256">
+Angular Request Completed in 42ms<br/>
 Sign in Page Title Verified<br/>
-Angular Request Completed in 47ms<br/>
+Angular Request Completed in 15ms<br/>
 User signed Admin<br/>
 Enter Text for Search =LOC@0001<br/>
-Element [[ChromeDriver: chrome on XP (53baa726929e226b5a4488b0ba870145)] -> id: SRCH_Input] displayed in 46ms<br/>
-Angular request time 948ms<br/>
+Element [[ChromeDriver: chrome on XP (bbcf47de6a91f1daa31dd900400a22d2)] -> id: SRCH_Input] displayed in 63ms<br/>
+Angular request time 1150ms<br/>
 Click Customer<br/>
-Angular request time 1724ms<br/>
-Angular request time 11ms<br/>
+Angular request time 2511ms<br/>
+Angular request time 12ms<br/>
 Customer Location Id found LOC@0001<br/>
 Strings Matched: LOC@0001 = LOC@0001<br/>
-Angular request time 836ms<br/>
-Service Order Link Clicked<br/>
-Element [[ChromeDriver: chrome on XP (53baa726929e226b5a4488b0ba870145)] -> id: SODV_Drillback] displayed in 16ms<br/>
-Angular request time 15ms<br/>
-Angular request time 11ms<br/>
-Element [[ChromeDriver: chrome on XP (53baa726929e226b5a4488b0ba870145)] -> id: USR_Name] displayed in 32ms<br/>
-Element [[ChromeDriver: chrome on XP (53baa726929e226b5a4488b0ba870145)] -> id: ACTION_Logout] displayed in 42ms<br/>
-Angular request time 24ms<br/>
+Element [[ChromeDriver: chrome on XP (bbcf47de6a91f1daa31dd900400a22d2)] -> css selector: #mat-tab-label-0-2 > div] displayed in 30ms<br/>
+Click Service Order Link<br/>
+Angular request time 915ms<br/>
+Element [[ChromeDriver: chrome on XP (bbcf47de6a91f1daa31dd900400a22d2)] -> id: SODV_Drillback] displayed in 16ms<br/>
+Angular request time 16ms<br/>
+Angular request time 14ms<br/>
+Element [[ChromeDriver: chrome on XP (bbcf47de6a91f1daa31dd900400a22d2)] -> id: USR_Name] displayed in 34ms<br/>
+Element [[ChromeDriver: chrome on XP (bbcf47de6a91f1daa31dd900400a22d2)] -> id: ACTION_Logout] displayed in 37ms<br/>
+Angular request time 29ms<br/>
 </div>
 </td>
 <td></td>
-<td>28</td>
+<td>31</td>
 <td>com.NexusPortalAutomation.TestCases.Java.TC0020_VerifyDrillBackServices@a67c67e</td></tr>
 <tr>
 <td title='com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails.TestSecondayContact()'><b>TestSecondayContact</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails<br/>
-<a href="#Output-1127434428" onClick='toggleBox("Output-1127434428", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-2145040140" onClick='toggleBox("Output-2145040140", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1127434428" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1127434428">
-Angular Request Completed in 139ms<br/>
+<a href="#Output-2145040140" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2145040140">
+Angular Request Completed in 40ms<br/>
 Sign in Page Title Verified<br/>
-Angular Request Completed in 47ms<br/>
+Angular Request Completed in 344ms<br/>
 User signed Admin<br/>
 Enter Text for Search =LOC@0001<br/>
-Element [[ChromeDriver: chrome on XP (6d0c76dc0f0d26369636faad3601be67)] -> id: SRCH_Input] displayed in 62ms<br/>
-Angular request time 989ms<br/>
+Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -> id: SRCH_Input] displayed in 531ms<br/>
+Angular request time 1038ms<br/>
 Click Customer<br/>
-Angular request time 2032ms<br/>
-Angular request time 14ms<br/>
+Angular request time 2178ms<br/>
+Angular request time 11ms<br/>
 Customer Location Id found LOC@0001<br/>
 Strings Matched: LOC@0001 = LOC@0001<br/>
 Angular request time 16ms<br/>
-Element 'BILL_Current_Balance' is displayed in 94ms<br/>
-Element 'BILL_Unposted_Balance' is displayed in 93ms<br/>
-Element 'BILL_Account_Balance' is displayed in 79ms<br/>
-Element 'BILL_Past_Due' is displayed in 78ms<br/>
-Element 'BILL_Installment_Budget' is displayed in 94ms<br/>
-Element 'BILL_Over_Short' is displayed in 93ms<br/>
+Element 'BILL_Current_Balance' is displayed in 63ms<br/>
+Element 'BILL_Unposted_Balance' is displayed in 562ms<br/>
+Element 'BILL_Account_Balance' is displayed in 63ms<br/>
+Element 'BILL_Past_Due' is displayed in 312ms<br/>
+Element 'BILL_Installment_Budget' is displayed in 563ms<br/>
+Element 'BILL_Over_Short' is displayed in 953ms<br/>
 Strings Matched: $35.26 = $35.26<br/>
 Strings Matched: $0.00 = $0.00<br/>
 Strings Matched: $0.00 = $0.00<br/>
@@ -748,13 +803,13 @@ Strings Matched: $92.50 = $92.50<br/>
 Strings Matched: $50.00 = $50.00<br/>
 Strings Matched: $57.24 = $57.24<br/>
 Strings Matched: $35.26 = $35.26<br/>
-Element [[ChromeDriver: chrome on XP (6d0c76dc0f0d26369636faad3601be67)] -> id: BILL_E_Bill] displayed in 47ms<br/>
+Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -> id: BILL_E_Bill] displayed in 31ms<br/>
 Strings Matched: ON = ON<br/>
-Element [[ChromeDriver: chrome on XP (6d0c76dc0f0d26369636faad3601be67)] -> id: BILL_Auto_Pay] displayed in 46ms<br/>
+Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -> id: BILL_Auto_Pay] displayed in 31ms<br/>
 Strings Matched: OFF = OFF<br/>
-Element [[ChromeDriver: chrome on XP (6d0c76dc0f0d26369636faad3601be67)] -> id: BILL_Deposit_Amount] displayed in 32ms<br/>
+Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -> id: BILL_Deposit_Amount] displayed in 31ms<br/>
 Strings Matched: $0.00 = $0.00<br/>
-Angular request time 17ms<br/>
+Angular request time 16ms<br/>
 Verifying Service Type 1<br/>
 Strings Matched: ELECTRIC = ELECTRIC<br/>
 Strings Matched: 163598645 = 163598645<br/>
@@ -775,68 +830,79 @@ Strings Matched: EQUIP-PHONE-02 = EQUIP-PHONE-02<br/>
 Strings Matched: INTERNET-60 = INTERNET-60<br/>
 Strings Matched: 1.00000 = 1.00000<br/>
 Strings Matched: Active = Active<br/>
-Element [[ChromeDriver: chrome on XP (6d0c76dc0f0d26369636faad3601be67)] -> id: SERV_Tab_Type_1_Icon] displayed in 47ms<br/>
-Angular request time 488ms<br/>
+Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -> id: SERV_Tab_Type_1_Icon] displayed in 46ms<br/>
+Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -> id: SERV_Tab_Type_1_Icon] displayed in 16ms<br/>
+Click Electric Icon<br/>
+Angular request time 346ms<br/>
+Angular request time 17ms<br/>
 Verifying Service TAB, Row 1<br/>
 Strings Matched: ELECTRIC = ELECTRIC<br/>
 Strings Matched: 163598645 = 163598645<br/>
 Strings Matched: GS-PK ENERGY = GS-PK ENERGY<br/>
 Strings Matched: 1.00000 = 1.00000<br/>
 Strings Matched: Active = Active<br/>
-Element [[ChromeDriver: chrome on XP (6d0c76dc0f0d26369636faad3601be67)] -> id: SERV_Tab_Type_2_Icon] displayed in 48ms<br/>
-Angular request time 445ms<br/>
+Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -> id: SERV_Tab_Type_2_Icon] displayed in 110ms<br/>
+Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -> id: SERV_Tab_Type_2_Icon] displayed in 15ms<br/>
+Click Gas Icon<br/>
+Angular request time 431ms<br/>
+Angular request time 11ms<br/>
 Verifying Service GAS Row 1<br/>
 Strings Matched: GAS = GAS<br/>
 Strings Matched: EQUIP-GAS-3 = EQUIP-GAS-3<br/>
 Strings Matched: GRESMTR40 = GRESMTR40<br/>
 Strings Matched: 1.00000 = 1.00000<br/>
 Strings Matched: Active = Active<br/>
-Element [[ChromeDriver: chrome on XP (6d0c76dc0f0d26369636faad3601be67)] -> id: SERV_Tab_Type_3_Icon] displayed in 78ms<br/>
-Angular request time 385ms<br/>
+Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -> id: SERV_Tab_Type_3_Icon] displayed in 46ms<br/>
+Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -> id: SERV_Tab_Type_3_Icon] displayed in 0ms<br/>
+Click Internet Icon<br/>
+Angular request time 951ms<br/>
+Angular request time 16ms<br/>
 Verifying Service Type Internet Tab Row 1<br/>
 Strings Matched: INTERNET = INTERNET<br/>
 Strings Matched: EQUIP-PHONE-02 = EQUIP-PHONE-02<br/>
 Strings Matched: INTERNET-60 = INTERNET-60<br/>
 Strings Matched: 1.00000 = 1.00000<br/>
 Strings Matched: Active = Active<br/>
-Angular request time 9ms<br/>
-Angular request time 6ms<br/>
-Element [[ChromeDriver: chrome on XP (6d0c76dc0f0d26369636faad3601be67)] -> id: USR_Name] displayed in 62ms<br/>
-Element [[ChromeDriver: chrome on XP (6d0c76dc0f0d26369636faad3601be67)] -> id: ACTION_Logout] displayed in 43ms<br/>
-Angular request time 22ms<br/>
+Angular request time 16ms<br/>
+Angular request time 11ms<br/>
+Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -> id: USR_Name] displayed in 40ms<br/>
+Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -> id: ACTION_Logout] displayed in 49ms<br/>
+Angular request time 32ms<br/>
 </div>
 </td>
 <td></td>
-<td>32</td>
+<td>36</td>
 <td>com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails@544fe44c</td></tr>
 <tr>
 <td title='com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact.TestSecondayContact()'><b>TestSecondayContact</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact<br/>
-<a href="#Output-1002872041" onClick='toggleBox("Output-1002872041", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1312762120" onClick='toggleBox("Output-1312762120", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1002872041" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1002872041">
-Angular Request Completed in 36ms<br/>
+<a href="#Output-1312762120" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1312762120">
+Angular Request Completed in 38ms<br/>
 Sign in Page Title Verified<br/>
-Angular Request Completed in 172ms<br/>
+Angular Request Completed in 16ms<br/>
 User signed Admin<br/>
 Enter Text for Search =LOC@0004<br/>
-Element [[ChromeDriver: chrome on XP (625c231b7f91a53cee2a0822b4c80c6f)] -> id: SRCH_Input] displayed in 47ms<br/>
-Angular request time 1056ms<br/>
+Element [[ChromeDriver: chrome on XP (6735244b079092b99e9ab4dc9c9a8bb9)] -> id: SRCH_Input] displayed in 47ms<br/>
+Angular request time 1551ms<br/>
 Click Customer<br/>
-Angular request time 1960ms<br/>
-Angular request time 322ms<br/>
+Angular request time 1660ms<br/>
+Angular request time 210ms<br/>
 Customer Location Id found LOC@0004<br/>
 Strings Matched: LOC@0004 = LOC@0004<br/>
-Angular request time 10ms<br/>
+Angular request time 15ms<br/>
+Element [[ChromeDriver: chrome on XP (6735244b079092b99e9ab4dc9c9a8bb9)] -> id: SCUST_Label] displayed in 31ms<br/>
+Click Secondary Customer<br/>
+Angular request time 13ms<br/>
 Angular request time 14ms<br/>
-Angular request time 17ms<br/>
-Angular request time 22ms<br/>
+Angular request time 9ms<br/>
 Strings Matched: Secondary Customer (SECONDARY) = Secondary Customer (SECONDARY)<br/>
-Angular request time 11ms<br/>
-Angular request time 11ms<br/>
-Element [[ChromeDriver: chrome on XP (625c231b7f91a53cee2a0822b4c80c6f)] -> id: USR_Name] displayed in 35ms<br/>
-Element [[ChromeDriver: chrome on XP (625c231b7f91a53cee2a0822b4c80c6f)] -> id: ACTION_Logout] displayed in 37ms<br/>
-Angular request time 27ms<br/>
+Angular request time 9ms<br/>
+Angular request time 10ms<br/>
+Element [[ChromeDriver: chrome on XP (6735244b079092b99e9ab4dc9c9a8bb9)] -> id: USR_Name] displayed in 524ms<br/>
+Element [[ChromeDriver: chrome on XP (6735244b079092b99e9ab4dc9c9a8bb9)] -> id: ACTION_Logout] displayed in 40ms<br/>
+Angular request time 16ms<br/>
 </div>
 </td>
 <td></td>
@@ -844,67 +910,69 @@ Angular request time 27ms<br/>
 <td>com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact@3c0f93f1</td></tr>
 <tr>
 <td title='com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection.TestSummarySectionOnChange()'><b>TestSummarySectionOnChange</b><br>Test class: com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection<br/>
-<a href="#Output-1090123277" onClick='toggleBox("Output-1090123277", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-540537131" onClick='toggleBox("Output-540537131", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1090123277" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1090123277">
-Angular Request Completed in 137ms<br/>
+<a href="#Output-540537131" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-540537131">
+Angular Request Completed in 112ms<br/>
 Sign in Page Title Verified<br/>
-Angular Request Completed in 30ms<br/>
+Angular Request Completed in 46ms<br/>
 User signed Admin<br/>
-Element '//input[@id='SRCH_Input']' is displayed in 94ms<br/>
-Element 'toolbar-saved' is displayed in 78ms<br/>
+Element '//input[@id='SRCH_Input']' is displayed in 93ms<br/>
+Element 'toolbar-saved' is displayed in 266ms<br/>
 Angular Request Completed in 16ms<br/>
 Enter Text for Search =Automation<br/>
-Element [[ChromeDriver: chrome on XP (b67e6f7bb45a68c69e174e56d7a80d40)] -> id: SRCH_Input] displayed in 47ms<br/>
-Angular request time 1027ms<br/>
+Element [[ChromeDriver: chrome on XP (edcaa0fc28ff280c7fe6426106efe826)] -> id: SRCH_Input] displayed in 31ms<br/>
+Angular request time 1636ms<br/>
 Click Customer<br/>
-Angular request time 1810ms<br/>
-Element '//div[@class='address-details']' is displayed in 70ms<br/>
-Angular request time 9ms<br/>
+Angular request time 1806ms<br/>
+Element '//div[@class='address-details']' is displayed in 57ms<br/>
+Angular request time 12ms<br/>
 Customer Name found Automation Mate<br/>
 Strings Matched: Automation Mate = Automation Mate<br/>
-Angular request time 12ms<br/>
-Element 'BILL_Current_Balance' is displayed in 87ms<br/>
-Element 'BILL_Unposted_Balance' is displayed in 60ms<br/>
+Angular request time 11ms<br/>
+Element 'BILL_Current_Balance' is displayed in 247ms<br/>
+Element 'BILL_Unposted_Balance' is displayed in 360ms<br/>
+Element 'BILL_Account_Balance' is displayed in 61ms<br/>
+Element 'BILL_Past_Due' is displayed in 63ms<br/>
+Element 'BILL_Installment_Budget' is displayed in 78ms<br/>
+Element 'BILL_Over_Short' is displayed in 78ms<br/>
+Element [[ChromeDriver: chrome on XP (edcaa0fc28ff280c7fe6426106efe826)] -> css selector: #mat-tab-label-0-1 > div:nth-child(1)] displayed in 31ms<br/>
+Click Transaction Link<br/>
+Angular request time 912ms<br/>
+Element [[ChromeDriver: chrome on XP (edcaa0fc28ff280c7fe6426106efe826)] -> css selector: #mat-tab-label-0-0 > div:nth-child(1)] displayed in 37ms<br/>
+Click Summary Link<br/>
+Angular request time 854ms<br/>
+Angular request time 14ms<br/>
+Element 'BILL_Current_Balance' is displayed in 44ms<br/>
+Element 'BILL_Unposted_Balance' is displayed in 34ms<br/>
 Element 'BILL_Account_Balance' is displayed in 63ms<br/>
 Element 'BILL_Past_Due' is displayed in 62ms<br/>
-Element 'BILL_Installment_Budget' is displayed in 76ms<br/>
-Element 'BILL_Over_Short' is displayed in 65ms<br/>
-Angular request time 801ms<br/>
-Transaction Link Clicked<br/>
-Angular request time 1255ms<br/>
-Summary Link Clicked<br/>
+Element 'BILL_Installment_Budget' is displayed in 79ms<br/>
+Element 'BILL_Over_Short' is displayed in 77ms<br/>
+$35.26 equals$35.26<br/>
+$35.26 equals$35.26<br/>
+$0.00 equals$0.00<br/>
+$57.24 equals$57.24<br/>
+$50.00 equals$50.00<br/>
+$0.00 equals$0.00<br/>
+$92.50 equals$92.50<br/>
+$35.26 equals$35.26<br/>
+$35.26 equals$35.26<br/>
+$0.00 equals$0.00<br/>
+$57.24 equals$57.24<br/>
+$50.00 equals$50.00<br/>
+$0.00 equals$0.00<br/>
+$92.50 equals$92.50<br/>
 Angular request time 9ms<br/>
-Element 'BILL_Current_Balance' is displayed in 50ms<br/>
-Element 'BILL_Unposted_Balance' is displayed in 93ms<br/>
-Element 'BILL_Account_Balance' is displayed in 80ms<br/>
-Element 'BILL_Past_Due' is displayed in 62ms<br/>
-Element 'BILL_Installment_Budget' is displayed in 62ms<br/>
-Element 'BILL_Over_Short' is displayed in 51ms<br/>
-$35.26 equals$35.26<br/>
-$35.26 equals$35.26<br/>
-$0.00 equals$0.00<br/>
-$57.24 equals$57.24<br/>
-$50.00 equals$50.00<br/>
-$0.00 equals$0.00<br/>
-$92.50 equals$92.50<br/>
-$35.26 equals$35.26<br/>
-$35.26 equals$35.26<br/>
-$0.00 equals$0.00<br/>
-$57.24 equals$57.24<br/>
-$50.00 equals$50.00<br/>
-$0.00 equals$0.00<br/>
-$92.50 equals$92.50<br/>
-Angular request time 16ms<br/>
-Angular request time 13ms<br/>
-Element [[ChromeDriver: chrome on XP (b67e6f7bb45a68c69e174e56d7a80d40)] -> id: USR_Name] displayed in 31ms<br/>
-Element [[ChromeDriver: chrome on XP (b67e6f7bb45a68c69e174e56d7a80d40)] -> id: ACTION_Logout] displayed in 70ms<br/>
-Angular request time 36ms<br/>
+Angular request time 10ms<br/>
+Element [[ChromeDriver: chrome on XP (edcaa0fc28ff280c7fe6426106efe826)] -> id: USR_Name] displayed in 31ms<br/>
+Element [[ChromeDriver: chrome on XP (edcaa0fc28ff280c7fe6426106efe826)] -> id: ACTION_Logout] displayed in 42ms<br/>
+Angular request time 186ms<br/>
 </div>
 </td>
 <td></td>
-<td>28</td>
+<td>31</td>
 <td>com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection@10bdf5e5</td></tr>
 </table><p>
 </body>

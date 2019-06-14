@@ -12,13 +12,83 @@
 <body>
 <h1>NexusTest</h1>
 <p>
-  Test duration: 685.934s
+  Test duration: 719.584s
 </p>
 
 
 
   <table class="resultsTable">
     <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TestSearchAutobyRecent
+      </td>
+  <td class="duration">
+    47.874s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Angular Request Completed in 138ms<br />
+                                Sign in Page Title Verified<br />
+                                Angular Request Completed in 31ms<br />
+                                User signed Admin<br />
+                                Element &apos;//input[@id=&apos;SRCH_Input&apos;]&apos; is displayed in 78ms<br />
+                                Click Recent<br />
+                                Recent Customer =Aut Statement<br />
+                                Click Customer<br />
+                                Angular request time 2058ms<br />
+                                &lt;a href=&quot;F:\FailedTestsScreenshots\TestSearchAutobyRecentScreenshot-1560522675931.jpg&quot;&gt;&lt;align=&quot;left&quot;&gt;Error screenshot at Fri Jun 14 09:31:16 CDT 2019<br />
+                                &lt;img width=&quot;1024&quot; src=&quot;F:\FailedTestsScreenshots\TestSearchAutobyRecentScreenshot-1560522675931.jpg&quot; alt=&quot;screenshot at Fri Jun 14 09:31:16 CDT 2019&quot;/&gt;&lt;/a&gt;&lt;br /&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Object Not Found expected [true] but found [false]</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.testng.Assert.fail(Assert.java:96)<br />
+              org.testng.Assert.failNotEquals(Assert.java:776)<br />
+              org.testng.Assert.assertTrue(Assert.java:44)<br />
+              com.NexusPortalAutomation.Utilities.Java.CommonMethods.waitForObject(CommonMethods.java:148)<br />
+              com.NexusPortalAutomation.PageObjects.Java.DashBoard.ClickElement(DashBoard.java:296)<br />
+              com.NexusPortalAutomation.PageObjects.Java.DashBoard.ClickDynamicOk(DashBoard.java:974)<br />
+              com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction.TestSearchAutobyRecent(TC0004_TestSearchbyRecentFunction.java:35)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+              org.testng.TestNG.run(TestNG.java:1017)<br />
+              org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)<br />
+              org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)<br />
+              org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)<br />
+              org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)<br />
+                </div>
+      </td>
+</tr>
           <tr>
         <td colspan="3" class="group">com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral</td>
       </tr>
@@ -28,35 +98,35 @@
                   TestSecondayContact
       </td>
   <td class="duration">
-    16.274s
+    18.515s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Angular Request Completed in 75ms<br />
+                        Angular Request Completed in 56ms<br />
                                 Sign in Page Title Verified<br />
-                                Angular Request Completed in 16ms<br />
+                                Angular Request Completed in 15ms<br />
                                 User signed Admin<br />
                                 Enter Text for Search =LOC@0004<br />
-                                Element [[ChromeDriver: chrome on XP (68fc7af01490feb3ed0c9df40f5de0a0)] -&gt; id: SRCH_Input] displayed in 31ms<br />
-                                Angular request time 1056ms<br />
+                                Element [[ChromeDriver: chrome on XP (6fcd9c2825133bfc3cb896d4eb41d73e)] -&gt; id: SRCH_Input] displayed in 32ms<br />
+                                Angular request time 1093ms<br />
                                 Click Customer<br />
-                                Angular request time 1867ms<br />
-                                Angular request time 10ms<br />
+                                Angular request time 1655ms<br />
+                                Angular request time 323ms<br />
                                 Customer Location Id found LOC@0004<br />
                                 Strings Matched: LOC@0004 = LOC@0004<br />
-                                Element [[ChromeDriver: chrome on XP (68fc7af01490feb3ed0c9df40f5de0a0)] -&gt; id: ACTION_DRILLBACK] displayed in 34ms<br />
+                                Element [[ChromeDriver: chrome on XP (6fcd9c2825133bfc3cb896d4eb41d73e)] -&gt; id: ACTION_DRILLBACK] displayed in 36ms<br />
                                 Strings Matched: cogsdrillback://DGPB/?Db=SQL_2017&amp;Srv=RND-BASE-A&amp;Cmp=TWO&amp;Prod=229&amp;Act=OPEN&amp;Func=CustomerMaintenance&amp;CustomerID=0000011111&amp;LocationID=LOC@0004&amp;CogsDrillback=1 = cogsdrillback://DGPB/?Db=SQL_2017&amp;Srv=RND-BASE-A&amp;Cmp=TWO&amp;Prod=229&amp;Act=OPEN&amp;Func=CustomerMaintenance&amp;CustomerID=0000011111&amp;LocationID=LOC@0004&amp;CogsDrillback=1<br />
-                                Element [[ChromeDriver: chrome on XP (68fc7af01490feb3ed0c9df40f5de0a0)] -&gt; id: SCUST_Drillback] displayed in 33ms<br />
+                                Element [[ChromeDriver: chrome on XP (6fcd9c2825133bfc3cb896d4eb41d73e)] -&gt; id: SCUST_Drillback] displayed in 32ms<br />
                                 Strings Not Matched: cogsdrillback://DGPB/?Db=SQL_2017&amp;Srv=RND-BASE-A&amp;Cmp=TWO&amp;Bug reported != null<br />
-                                &lt;a href=&quot;F:\FailedTestsScreenshots\TestSecondayContactScreenshot-1560443189621.jpg&quot;&gt;&lt;align=&quot;left&quot;&gt;Error screenshot at Thu Jun 13 11:26:30 CDT 2019<br />
-                                &lt;img width=&quot;1024&quot; src=&quot;F:\FailedTestsScreenshots\TestSecondayContactScreenshot-1560443189621.jpg&quot; alt=&quot;screenshot at Thu Jun 13 11:26:30 CDT 2019&quot;/&gt;&lt;/a&gt;&lt;br /&gt;<br />
+                                &lt;a href=&quot;F:\FailedTestsScreenshots\TestSecondayContactScreenshot-1560522321795.jpg&quot;&gt;&lt;align=&quot;left&quot;&gt;Error screenshot at Fri Jun 14 09:25:22 CDT 2019<br />
+                                &lt;img width=&quot;1024&quot; src=&quot;F:\FailedTestsScreenshots\TestSecondayContactScreenshot-1560522321795.jpg&quot; alt=&quot;screenshot at Fri Jun 14 09:25:22 CDT 2019&quot;/&gt;&lt;/a&gt;&lt;br /&gt;<br />
                   </div>
     
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [cogsdrillback://DGPB/?Db=SQL_2017&amp;Srv=RND-BASE-A&amp;Cmp=TWO&amp;Bug reported] but found [null]</b></a><br />
-    <div class="stackTrace" id="exception-0">
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [cogsdrillback://DGPB/?Db=SQL_2017&amp;Srv=RND-BASE-A&amp;Cmp=TWO&amp;Bug reported] but found [null]</b></a><br />
+    <div class="stackTrace" id="exception-1">
               org.testng.Assert.fail(Assert.java:96)<br />
               org.testng.Assert.failNotEquals(Assert.java:776)<br />
               org.testng.Assert.assertEqualsImpl(Assert.java:132)<br />
@@ -111,29 +181,29 @@
                   TestSearchID
       </td>
   <td class="duration">
-    26.919s
+    25.680s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Angular Request Completed in 31ms<br />
+                        Angular Request Completed in 160ms<br />
                                 Sign in Page Title Verified<br />
-                                Angular Request Completed in 31ms<br />
+                                Angular Request Completed in 16ms<br />
                                 User signed Admin<br />
                                 Enter Text for Search =0000011111<br />
-                                Element [[ChromeDriver: chrome on XP (5ea2b213e6ff9ed9f0749124ebf73dff)] -&gt; id: SRCH_Input] displayed in 79ms<br />
-                                Angular request time 1477ms<br />
+                                Element [[ChromeDriver: chrome on XP (5f265af4b6c95717968c8a43f57c8937)] -&gt; id: SRCH_Input] displayed in 31ms<br />
+                                Angular request time 1049ms<br />
                                 Click Customer<br />
-                                Angular request time 2379ms<br />
-                                Angular request time 12ms<br />
+                                Angular request time 2023ms<br />
+                                Angular request time 15ms<br />
                                 CustomerId found 0000011111<br />
                                 Strings Matched: 0000011111 = 0000011111<br />
-                                Angular request time 9ms<br />
-                                Angular request time 9ms<br />
-                                Element [[ChromeDriver: chrome on XP (5ea2b213e6ff9ed9f0749124ebf73dff)] -&gt; id: USR_Name] displayed in 31ms<br />
-                                Element [[ChromeDriver: chrome on XP (5ea2b213e6ff9ed9f0749124ebf73dff)] -&gt; id: ACTION_Logout] displayed in 47ms<br />
-                                Angular request time 15ms<br />
+                                Angular request time 31ms<br />
+                                Angular request time 12ms<br />
+                                Element [[ChromeDriver: chrome on XP (5f265af4b6c95717968c8a43f57c8937)] -&gt; id: USR_Name] displayed in 24ms<br />
+                                Element [[ChromeDriver: chrome on XP (5f265af4b6c95717968c8a43f57c8937)] -&gt; id: ACTION_Logout] displayed in 31ms<br />
+                                Angular request time 16ms<br />
                   </div>
     
 
@@ -148,29 +218,29 @@
                   TestSearchAutobyFirstName
       </td>
   <td class="duration">
-    26.341s
+    26.485s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Angular Request Completed in 23ms<br />
+                        Angular Request Completed in 19ms<br />
                                 Sign in Page Title Verified<br />
-                                Angular Request Completed in 2ms<br />
+                                Angular Request Completed in 31ms<br />
                                 User signed Admin<br />
                                 Enter Text for Search =Automation<br />
-                                Element [[ChromeDriver: chrome on XP (6f8f8c26ac127aa09908ece111f72401)] -&gt; id: SRCH_Input] displayed in 46ms<br />
-                                Angular request time 1113ms<br />
+                                Element [[ChromeDriver: chrome on XP (08cb0a2c9d218445ef07b922d5251076)] -&gt; id: SRCH_Input] displayed in 63ms<br />
+                                Angular request time 1582ms<br />
                                 Click Customer<br />
-                                Angular request time 2188ms<br />
-                                Angular request time 13ms<br />
+                                Angular request time 2063ms<br />
+                                Angular request time 11ms<br />
                                 Customer Name found Automation Mate<br />
                                 Strings Matched: Automation Mate = Automation Mate<br />
-                                Angular request time 12ms<br />
-                                Angular request time 12ms<br />
-                                Element [[ChromeDriver: chrome on XP (6f8f8c26ac127aa09908ece111f72401)] -&gt; id: USR_Name] displayed in 34ms<br />
-                                Element [[ChromeDriver: chrome on XP (6f8f8c26ac127aa09908ece111f72401)] -&gt; id: ACTION_Logout] displayed in 43ms<br />
-                                Angular request time 26ms<br />
+                                Angular request time 10ms<br />
+                                Angular request time 8ms<br />
+                                Element [[ChromeDriver: chrome on XP (08cb0a2c9d218445ef07b922d5251076)] -&gt; id: USR_Name] displayed in 29ms<br />
+                                Element [[ChromeDriver: chrome on XP (08cb0a2c9d218445ef07b922d5251076)] -&gt; id: ACTION_Logout] displayed in 28ms<br />
+                                Angular request time 48ms<br />
                   </div>
     
 
@@ -185,67 +255,29 @@
                   TestSearchAutobyLastName
       </td>
   <td class="duration">
-    25.553s
+    24.330s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Angular Request Completed in 215ms<br />
+                        Angular Request Completed in 83ms<br />
                                 Sign in Page Title Verified<br />
                                 Angular Request Completed in 31ms<br />
                                 User signed Admin<br />
                                 Enter Text for Search =Mate<br />
-                                Element [[ChromeDriver: chrome on XP (2a536d596066a68f3ab50fb5b493bb05)] -&gt; id: SRCH_Input] displayed in 30ms<br />
-                                Angular request time 1049ms<br />
+                                Element [[ChromeDriver: chrome on XP (d9a4d759d10fac3d9d189b94109cbac6)] -&gt; id: SRCH_Input] displayed in 47ms<br />
+                                Angular request time 1033ms<br />
                                 Click Customer<br />
-                                Angular request time 1948ms<br />
-                                Angular request time 9ms<br />
+                                Angular request time 1831ms<br />
+                                Angular request time 14ms<br />
                                 Customer Name found Automation Mate<br />
                                 Strings Matched: Automation Mate = Automation Mate<br />
-                                Angular request time 9ms<br />
-                                Angular request time 9ms<br />
-                                Element [[ChromeDriver: chrome on XP (2a536d596066a68f3ab50fb5b493bb05)] -&gt; id: USR_Name] displayed in 38ms<br />
-                                Element [[ChromeDriver: chrome on XP (2a536d596066a68f3ab50fb5b493bb05)] -&gt; id: ACTION_Logout] displayed in 42ms<br />
-                                Angular request time 22ms<br />
-                  </div>
-    
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  TestSearchAutobyRecent
-      </td>
-  <td class="duration">
-    34.333s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Angular Request Completed in 187ms<br />
-                                Sign in Page Title Verified<br />
-                                Angular Request Completed in 187ms<br />
-                                User signed Admin<br />
-                                Element &apos;//input[@id=&apos;SRCH_Input&apos;]&apos; is displayed in 62ms<br />
-                                Click Recent<br />
-                                Recent Customer =Aut Statement<br />
-                                Click Customer<br />
-                                Angular request time 2748ms<br />
-                                Alert not configured<br />
-                                Element &apos;//div[@class=&apos;address-details&apos;]&apos; is displayed in 78ms<br />
-                                Angular request time 16ms<br />
-                                Strings Matched: Aut Statement = Aut Statement<br />
-                                Angular request time 16ms<br />
                                 Angular request time 10ms<br />
-                                Element [[ChromeDriver: chrome on XP (9fc17d2f6d1d6e0d632884b3305a5f44)] -&gt; id: USR_Name] displayed in 20ms<br />
-                                Element [[ChromeDriver: chrome on XP (9fc17d2f6d1d6e0d632884b3305a5f44)] -&gt; id: ACTION_Logout] displayed in 36ms<br />
-                                Angular request time 15ms<br />
+                                Angular request time 43ms<br />
+                                Element [[ChromeDriver: chrome on XP (d9a4d759d10fac3d9d189b94109cbac6)] -&gt; id: USR_Name] displayed in 93ms<br />
+                                Element [[ChromeDriver: chrome on XP (d9a4d759d10fac3d9d189b94109cbac6)] -&gt; id: ACTION_Logout] displayed in 36ms<br />
+                                Angular request time 10ms<br />
                   </div>
     
 
@@ -260,30 +292,30 @@
                   TestSearchAutobyBookMark
       </td>
   <td class="duration">
-    23.964s
+    24.268s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Angular Request Completed in 23ms<br />
+                        Angular Request Completed in 116ms<br />
                                 Sign in Page Title Verified<br />
-                                Angular Request Completed in 31ms<br />
+                                Angular Request Completed in 47ms<br />
                                 User signed Admin<br />
-                                Element &apos;//input[@id=&apos;SRCH_Input&apos;]&apos; is displayed in 94ms<br />
-                                Element &apos;SRCH_Button_Favorites&apos; is displayed in 47ms<br />
+                                Element &apos;//input[@id=&apos;SRCH_Input&apos;]&apos; is displayed in 62ms<br />
+                                Element &apos;SRCH_Button_Favorites&apos; is displayed in 63ms<br />
                                 Click BookMarked Customer<br />
                                 Click Customer<br />
-                                Angular request time 2177ms<br />
-                                Element &apos;//div[@class=&apos;address-details&apos;]&apos; is displayed in 55ms<br />
-                                Angular request time 15ms<br />
+                                Angular request time 3017ms<br />
+                                Element &apos;//div[@class=&apos;address-details&apos;]&apos; is displayed in 80ms<br />
+                                Angular request time 10ms<br />
                                 Customer Name found Noel Ford<br />
                                 Strings Matched: Noel Ford = Noel Ford<br />
-                                Angular request time 16ms<br />
-                                Angular request time 22ms<br />
-                                Element [[ChromeDriver: chrome on XP (555799119e9b2beb3d660182ee25c705)] -&gt; id: USR_Name] displayed in 26ms<br />
-                                Element [[ChromeDriver: chrome on XP (555799119e9b2beb3d660182ee25c705)] -&gt; id: ACTION_Logout] displayed in 52ms<br />
-                                Angular request time 20ms<br />
+                                Angular request time 9ms<br />
+                                Angular request time 11ms<br />
+                                Element [[ChromeDriver: chrome on XP (c750d37a1c2bf1e440faaf8c62292991)] -&gt; id: USR_Name] displayed in 42ms<br />
+                                Element [[ChromeDriver: chrome on XP (c750d37a1c2bf1e440faaf8c62292991)] -&gt; id: ACTION_Logout] displayed in 85ms<br />
+                                Angular request time 19ms<br />
                   </div>
     
 
@@ -298,46 +330,46 @@
                   TestSearchAlertOnLoad
       </td>
   <td class="duration">
-    27.962s
+    28.580s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Angular Request Completed in 51ms<br />
+                        Angular Request Completed in 11ms<br />
                                 Sign in Page Title Verified<br />
-                                Angular Request Completed in 6ms<br />
+                                Angular Request Completed in 46ms<br />
                                 User signed Admin<br />
-                                Element &apos;//input[@id=&apos;SRCH_Input&apos;]&apos; is displayed in 61ms<br />
+                                Element &apos;//input[@id=&apos;SRCH_Input&apos;]&apos; is displayed in 93ms<br />
                                 Element &apos;toolbar-saved&apos; is displayed in 63ms<br />
                                 Enter Text for Search =Alert<br />
-                                Element [[ChromeDriver: chrome on XP (c1ceac769f3379d56e270b2e607ce065)] -&gt; id: SRCH_Input] displayed in 36ms<br />
-                                Angular request time 1065ms<br />
+                                Element [[ChromeDriver: chrome on XP (b92089abc789616ef0fb076e69f6dae2)] -&gt; id: SRCH_Input] displayed in 31ms<br />
+                                Angular request time 1302ms<br />
                                 Click Customer<br />
-                                Angular request time 2256ms<br />
-                                Element &apos;//div[@class=&apos;address-details&apos;]&apos; is displayed in 55ms<br />
-                                Angular request time 13ms<br />
+                                Angular request time 1983ms<br />
+                                Element &apos;//div[@class=&apos;address-details&apos;]&apos; is displayed in 104ms<br />
+                                Angular request time 19ms<br />
                                 Customer Name found Alert Test<br />
                                 Strings Matched: Alert Test = Alert Test<br />
-                                Angular request time 15ms<br />
-                                Element &apos;ALERTO_Action_Button&apos; is displayed in 266ms<br />
-                                Angular request time 13ms<br />
-                                Click Ok<br />
+                                Element &apos;ALERTO_Action_Button&apos; is displayed in 62ms<br />
+                                Element [[ChromeDriver: chrome on XP (b92089abc789616ef0fb076e69f6dae2)] -&gt; id: ALERTO_Action_Button] displayed in 31ms<br />
+                                Click Alert OK<br />
+                                Angular request time 35ms<br />
                                 Alert on Load Clicked<br />
-                                Angular request time 31ms<br />
-                                Element [[ChromeDriver: chrome on XP (c1ceac769f3379d56e270b2e607ce065)] -&gt; id: ALERT_1_Description] displayed in 49ms<br />
-                                Angular request time 13ms<br />
+                                Element [[ChromeDriver: chrome on XP (b92089abc789616ef0fb076e69f6dae2)] -&gt; id: ALERT_1_Description] displayed in 27ms<br />
+                                Click Alert Description<br />
+                                Angular request time 9ms<br />
                                 Click Description<br />
-                                Angular request time 24ms<br />
-                                Element &apos;ALERTO_Action_Button&apos; is displayed in 112ms<br />
-                                Angular request time 15ms<br />
-                                Click Ok<br />
+                                Element &apos;ALERTO_Action_Button&apos; is displayed in 67ms<br />
+                                Element [[ChromeDriver: chrome on XP (b92089abc789616ef0fb076e69f6dae2)] -&gt; id: ALERTO_Action_Button] displayed in 30ms<br />
+                                Click Alert OK<br />
+                                Angular request time 16ms<br />
                                 Alert on description Clicked<br />
                                 Angular request time 11ms<br />
-                                Angular request time 11ms<br />
-                                Element [[ChromeDriver: chrome on XP (c1ceac769f3379d56e270b2e607ce065)] -&gt; id: USR_Name] displayed in 46ms<br />
-                                Element [[ChromeDriver: chrome on XP (c1ceac769f3379d56e270b2e607ce065)] -&gt; id: ACTION_Logout] displayed in 69ms<br />
-                                Angular request time 20ms<br />
+                                Angular request time 22ms<br />
+                                Element [[ChromeDriver: chrome on XP (b92089abc789616ef0fb076e69f6dae2)] -&gt; id: USR_Name] displayed in 37ms<br />
+                                Element [[ChromeDriver: chrome on XP (b92089abc789616ef0fb076e69f6dae2)] -&gt; id: ACTION_Logout] displayed in 36ms<br />
+                                Angular request time 12ms<br />
                   </div>
     
 
@@ -352,65 +384,67 @@
                   TestSummarySectionOnChange
       </td>
   <td class="duration">
-    28.655s
+    31.494s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Angular Request Completed in 137ms<br />
+                        Angular Request Completed in 112ms<br />
                                 Sign in Page Title Verified<br />
-                                Angular Request Completed in 30ms<br />
+                                Angular Request Completed in 46ms<br />
                                 User signed Admin<br />
-                                Element &apos;//input[@id=&apos;SRCH_Input&apos;]&apos; is displayed in 94ms<br />
-                                Element &apos;toolbar-saved&apos; is displayed in 78ms<br />
+                                Element &apos;//input[@id=&apos;SRCH_Input&apos;]&apos; is displayed in 93ms<br />
+                                Element &apos;toolbar-saved&apos; is displayed in 266ms<br />
                                 Angular Request Completed in 16ms<br />
                                 Enter Text for Search =Automation<br />
-                                Element [[ChromeDriver: chrome on XP (b67e6f7bb45a68c69e174e56d7a80d40)] -&gt; id: SRCH_Input] displayed in 47ms<br />
-                                Angular request time 1027ms<br />
+                                Element [[ChromeDriver: chrome on XP (edcaa0fc28ff280c7fe6426106efe826)] -&gt; id: SRCH_Input] displayed in 31ms<br />
+                                Angular request time 1636ms<br />
                                 Click Customer<br />
-                                Angular request time 1810ms<br />
-                                Element &apos;//div[@class=&apos;address-details&apos;]&apos; is displayed in 70ms<br />
-                                Angular request time 9ms<br />
+                                Angular request time 1806ms<br />
+                                Element &apos;//div[@class=&apos;address-details&apos;]&apos; is displayed in 57ms<br />
+                                Angular request time 12ms<br />
                                 Customer Name found Automation Mate<br />
                                 Strings Matched: Automation Mate = Automation Mate<br />
-                                Angular request time 12ms<br />
-                                Element &apos;BILL_Current_Balance&apos; is displayed in 87ms<br />
-                                Element &apos;BILL_Unposted_Balance&apos; is displayed in 60ms<br />
+                                Angular request time 11ms<br />
+                                Element &apos;BILL_Current_Balance&apos; is displayed in 247ms<br />
+                                Element &apos;BILL_Unposted_Balance&apos; is displayed in 360ms<br />
+                                Element &apos;BILL_Account_Balance&apos; is displayed in 61ms<br />
+                                Element &apos;BILL_Past_Due&apos; is displayed in 63ms<br />
+                                Element &apos;BILL_Installment_Budget&apos; is displayed in 78ms<br />
+                                Element &apos;BILL_Over_Short&apos; is displayed in 78ms<br />
+                                Element [[ChromeDriver: chrome on XP (edcaa0fc28ff280c7fe6426106efe826)] -&gt; css selector: #mat-tab-label-0-1 &gt; div:nth-child(1)] displayed in 31ms<br />
+                                Click Transaction Link<br />
+                                Angular request time 912ms<br />
+                                Element [[ChromeDriver: chrome on XP (edcaa0fc28ff280c7fe6426106efe826)] -&gt; css selector: #mat-tab-label-0-0 &gt; div:nth-child(1)] displayed in 37ms<br />
+                                Click Summary Link<br />
+                                Angular request time 854ms<br />
+                                Angular request time 14ms<br />
+                                Element &apos;BILL_Current_Balance&apos; is displayed in 44ms<br />
+                                Element &apos;BILL_Unposted_Balance&apos; is displayed in 34ms<br />
                                 Element &apos;BILL_Account_Balance&apos; is displayed in 63ms<br />
                                 Element &apos;BILL_Past_Due&apos; is displayed in 62ms<br />
-                                Element &apos;BILL_Installment_Budget&apos; is displayed in 76ms<br />
-                                Element &apos;BILL_Over_Short&apos; is displayed in 65ms<br />
-                                Angular request time 801ms<br />
-                                Transaction Link Clicked<br />
-                                Angular request time 1255ms<br />
-                                Summary Link Clicked<br />
+                                Element &apos;BILL_Installment_Budget&apos; is displayed in 79ms<br />
+                                Element &apos;BILL_Over_Short&apos; is displayed in 77ms<br />
+                                $35.26 equals$35.26<br />
+                                $35.26 equals$35.26<br />
+                                $0.00 equals$0.00<br />
+                                $57.24 equals$57.24<br />
+                                $50.00 equals$50.00<br />
+                                $0.00 equals$0.00<br />
+                                $92.50 equals$92.50<br />
+                                $35.26 equals$35.26<br />
+                                $35.26 equals$35.26<br />
+                                $0.00 equals$0.00<br />
+                                $57.24 equals$57.24<br />
+                                $50.00 equals$50.00<br />
+                                $0.00 equals$0.00<br />
+                                $92.50 equals$92.50<br />
                                 Angular request time 9ms<br />
-                                Element &apos;BILL_Current_Balance&apos; is displayed in 50ms<br />
-                                Element &apos;BILL_Unposted_Balance&apos; is displayed in 93ms<br />
-                                Element &apos;BILL_Account_Balance&apos; is displayed in 80ms<br />
-                                Element &apos;BILL_Past_Due&apos; is displayed in 62ms<br />
-                                Element &apos;BILL_Installment_Budget&apos; is displayed in 62ms<br />
-                                Element &apos;BILL_Over_Short&apos; is displayed in 51ms<br />
-                                $35.26 equals$35.26<br />
-                                $35.26 equals$35.26<br />
-                                $0.00 equals$0.00<br />
-                                $57.24 equals$57.24<br />
-                                $50.00 equals$50.00<br />
-                                $0.00 equals$0.00<br />
-                                $92.50 equals$92.50<br />
-                                $35.26 equals$35.26<br />
-                                $35.26 equals$35.26<br />
-                                $0.00 equals$0.00<br />
-                                $57.24 equals$57.24<br />
-                                $50.00 equals$50.00<br />
-                                $0.00 equals$0.00<br />
-                                $92.50 equals$92.50<br />
-                                Angular request time 16ms<br />
-                                Angular request time 13ms<br />
-                                Element [[ChromeDriver: chrome on XP (b67e6f7bb45a68c69e174e56d7a80d40)] -&gt; id: USR_Name] displayed in 31ms<br />
-                                Element [[ChromeDriver: chrome on XP (b67e6f7bb45a68c69e174e56d7a80d40)] -&gt; id: ACTION_Logout] displayed in 70ms<br />
-                                Angular request time 36ms<br />
+                                Angular request time 10ms<br />
+                                Element [[ChromeDriver: chrome on XP (edcaa0fc28ff280c7fe6426106efe826)] -&gt; id: USR_Name] displayed in 31ms<br />
+                                Element [[ChromeDriver: chrome on XP (edcaa0fc28ff280c7fe6426106efe826)] -&gt; id: ACTION_Logout] displayed in 42ms<br />
+                                Angular request time 186ms<br />
                   </div>
     
 
@@ -425,22 +459,22 @@
                   TestSearchbyLocationID
       </td>
   <td class="duration">
-    24.049s
+    27.495s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Angular Request Completed in 33ms<br />
+                        Angular Request Completed in 273ms<br />
                                 Sign in Page Title Verified<br />
-                                Angular Request Completed in 25ms<br />
+                                Angular Request Completed in 16ms<br />
                                 User signed Admin<br />
                                 Enter Text for Search =LOC@0001<br />
-                                Element [[ChromeDriver: chrome on XP (58088613cf632b7d2e36f8bfeb1548d1)] -&gt; id: SRCH_Input] displayed in 78ms<br />
-                                Angular request time 940ms<br />
+                                Element [[ChromeDriver: chrome on XP (3b4f0523e2301bce29fd532e294a60df)] -&gt; id: SRCH_Input] displayed in 47ms<br />
+                                Angular request time 1435ms<br />
                                 Click Customer<br />
-                                Angular request time 1524ms<br />
-                                Angular request time 25ms<br />
+                                Angular request time 2243ms<br />
+                                Angular request time 356ms<br />
                                 Customer Location Id found LOC@0001<br />
                                 Strings Matched: LOC@0001 = LOC@0001<br />
                                 Angular request time 10ms<br />
@@ -449,11 +483,11 @@
                                 Strings Matched: Cloudy = Cloudy<br />
                                 Strings Matched: D = D<br />
                                 Strings Matched: 00720-019 = 00720-019<br />
-                                Angular request time 13ms<br />
-                                Angular request time 7ms<br />
-                                Element [[ChromeDriver: chrome on XP (58088613cf632b7d2e36f8bfeb1548d1)] -&gt; id: USR_Name] displayed in 30ms<br />
-                                Element [[ChromeDriver: chrome on XP (58088613cf632b7d2e36f8bfeb1548d1)] -&gt; id: ACTION_Logout] displayed in 33ms<br />
-                                Angular request time 15ms<br />
+                                Angular request time 20ms<br />
+                                Angular request time 11ms<br />
+                                Element [[ChromeDriver: chrome on XP (3b4f0523e2301bce29fd532e294a60df)] -&gt; id: USR_Name] displayed in 31ms<br />
+                                Element [[ChromeDriver: chrome on XP (3b4f0523e2301bce29fd532e294a60df)] -&gt; id: ACTION_Logout] displayed in 32ms<br />
+                                Angular request time 31ms<br />
                   </div>
     
 
@@ -468,34 +502,40 @@
                   TestSearchAccount
       </td>
   <td class="duration">
-    27.806s
+    28.696s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Angular Request Completed in 22ms<br />
+                        Angular Request Completed in 16ms<br />
                                 Sign in Page Title Verified<br />
-                                Angular Request Completed in 16ms<br />
+                                Angular Request Completed in 124ms<br />
                                 User signed Admin<br />
                                 Enter Text for Search =LOC@0004<br />
-                                Element [[ChromeDriver: chrome on XP (9b9562988cb1637a75b401e2f8539d72)] -&gt; id: SRCH_Input] displayed in 48ms<br />
-                                Angular request time 1095ms<br />
+                                Element [[ChromeDriver: chrome on XP (419d4a90f645dcd458faa589cb24eef8)] -&gt; id: SRCH_Input] displayed in 47ms<br />
+                                Angular request time 1057ms<br />
                                 Click Customer<br />
-                                Angular request time 1555ms<br />
-                                Angular request time 626ms<br />
+                                Angular request time 1936ms<br />
+                                Angular request time 12ms<br />
                                 Customer Location Id found LOC@0004<br />
                                 Strings Matched: LOC@0004 = LOC@0004<br />
-                                Angular request time 109ms<br />
+                                Angular request time 9ms<br />
                                 Click on Account Drop down<br />
-                                Element [[ChromeDriver: chrome on XP (9b9562988cb1637a75b401e2f8539d72)] -&gt; id: SRCH_Accounts_Label] displayed in 45ms<br />
+                                Element [[ChromeDriver: chrome on XP (419d4a90f645dcd458faa589cb24eef8)] -&gt; id: SRCH_Accounts_Label] displayed in 33ms<br />
+                                Element [[ChromeDriver: chrome on XP (419d4a90f645dcd458faa589cb24eef8)] -&gt; id: SRCH_Accounts_Label] displayed in 384ms<br />
+                                Click Account Drop down<br />
+                                Angular request time 517ms<br />
                                 Enter Account Name<br />
-                                Angular request time 17ms<br />
-                                Element [[ChromeDriver: chrome on XP (9b9562988cb1637a75b401e2f8539d72)] -&gt; id: SRCH_Accounts] displayed in 40ms<br />
-                                Angular request time 112ms<br />
-                                Angular request time 11ms<br />
+                                Angular request time 9ms<br />
+                                Element [[ChromeDriver: chrome on XP (419d4a90f645dcd458faa589cb24eef8)] -&gt; id: SRCH_Accounts] displayed in 31ms<br />
+                                Element [[ChromeDriver: chrome on XP (419d4a90f645dcd458faa589cb24eef8)] -&gt; id: SRCH_Accounts] displayed in 9ms<br />
+                                Click Search Account<br />
+                                Angular request time 18ms<br />
+                                Angular request time 123ms<br />
+                                Angular request time 219ms<br />
                                 Verify Account Name =1 Water 1 Bldg<br />
-                                Element [[ChromeDriver: chrome on XP (9b9562988cb1637a75b401e2f8539d72)] -&gt; id: SRCH_Accounts_Result1] displayed in 28ms<br />
+                                Element [[ChromeDriver: chrome on XP (419d4a90f645dcd458faa589cb24eef8)] -&gt; id: SRCH_Accounts_Result1] displayed in 31ms<br />
                                 Strings Matched: 1 Water 1 Bldg<br/>
 New Smyrna Beach FL 12312-3<br/>
 LOC@0004<br/>
@@ -503,11 +543,11 @@ $0.00<br/>
 Apr 2019 - Current<br/>
 Current = 1 Water 1 Bldg<br />
                                 Angular request time 16ms<br />
-                                Angular request time 15ms<br />
-                                Angular request time 11ms<br />
-                                Element [[ChromeDriver: chrome on XP (9b9562988cb1637a75b401e2f8539d72)] -&gt; id: USR_Name] displayed in 32ms<br />
-                                Element [[ChromeDriver: chrome on XP (9b9562988cb1637a75b401e2f8539d72)] -&gt; id: ACTION_Logout] displayed in 50ms<br />
-                                Angular request time 35ms<br />
+                                Angular request time 31ms<br />
+                                Angular request time 8ms<br />
+                                Element [[ChromeDriver: chrome on XP (419d4a90f645dcd458faa589cb24eef8)] -&gt; id: USR_Name] displayed in 62ms<br />
+                                Element [[ChromeDriver: chrome on XP (419d4a90f645dcd458faa589cb24eef8)] -&gt; id: ACTION_Logout] displayed in 33ms<br />
+                                Angular request time 16ms<br />
                   </div>
     
 
@@ -522,25 +562,25 @@ Current = 1 Water 1 Bldg<br />
                   TestCustomerDetails
       </td>
   <td class="duration">
-    26.802s
+    32.789s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Angular Request Completed in 245ms<br />
+                        Angular Request Completed in 30ms<br />
                                 Sign in Page Title Verified<br />
-                                Angular Request Completed in 15ms<br />
+                                Angular Request Completed in 78ms<br />
                                 User signed Admin<br />
                                 Enter Text for Search =LOC@0001<br />
-                                Element [[ChromeDriver: chrome on XP (4bd8b103bdc359efd95d2979e8b80687)] -&gt; id: SRCH_Input] displayed in 31ms<br />
-                                Angular request time 955ms<br />
+                                Element [[ChromeDriver: chrome on XP (ca97ae656586265fe4f49ebc325a7713)] -&gt; id: SRCH_Input] displayed in 125ms<br />
+                                Angular request time 2026ms<br />
                                 Click Customer<br />
-                                Angular request time 2106ms<br />
-                                Angular request time 11ms<br />
+                                Angular request time 2124ms<br />
+                                Angular request time 172ms<br />
                                 Customer Location Id found LOC@0001<br />
                                 Strings Matched: LOC@0001 = LOC@0001<br />
-                                Angular request time 24ms<br />
+                                Angular request time 16ms<br />
                                 Verifying Customer Details<br />
                                 Strings Matched: 2312 = 2312<br />
                                 Strings Matched: Driv12312OUL312 = Driv12312OUL312<br />
@@ -549,11 +589,11 @@ Current = 1 Water 1 Bldg<br />
                                 Strings Matched: automation@cogsdale.com = automation@cogsdale.com<br />
                                 Strings Matched: 007 Test Apt = 007 Test Apt<br />
                                 Strings Matched: New York NY 12345-67890 = New York NY 12345-67890<br />
-                                Angular request time 16ms<br />
+                                Angular request time 15ms<br />
                                 Angular request time 10ms<br />
-                                Element [[ChromeDriver: chrome on XP (4bd8b103bdc359efd95d2979e8b80687)] -&gt; id: USR_Name] displayed in 170ms<br />
-                                Element [[ChromeDriver: chrome on XP (4bd8b103bdc359efd95d2979e8b80687)] -&gt; id: ACTION_Logout] displayed in 32ms<br />
-                                Angular request time 14ms<br />
+                                Element [[ChromeDriver: chrome on XP (ca97ae656586265fe4f49ebc325a7713)] -&gt; id: USR_Name] displayed in 32ms<br />
+                                Element [[ChromeDriver: chrome on XP (ca97ae656586265fe4f49ebc325a7713)] -&gt; id: ACTION_Logout] displayed in 501ms<br />
+                                Angular request time 18ms<br />
                   </div>
     
 
@@ -568,46 +608,50 @@ Current = 1 Water 1 Bldg<br />
                   TestBookMark
       </td>
   <td class="duration">
-    59.523s
+    63.894s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Angular Request Completed in 114ms<br />
+                        Angular Request Completed in 54ms<br />
                                 Sign in Page Title Verified<br />
-                                Angular Request Completed in 15ms<br />
+                                Angular Request Completed in 487ms<br />
                                 User signed Admin<br />
                                 Enter Text for Search =STATEMENTS001<br />
-                                Element [[ChromeDriver: chrome on XP (580ca5061753cd4b34652d01e5422790)] -&gt; id: SRCH_Input] displayed in 250ms<br />
-                                Angular request time 937ms<br />
+                                Element [[ChromeDriver: chrome on XP (e87a53cd178623ce6520163cb2142765)] -&gt; id: SRCH_Input] displayed in 78ms<br />
+                                Angular request time 1386ms<br />
                                 Recent Customer =Aut Statement<br />
-                                Angular request time 3045ms<br />
+                                Angular request time 2707ms<br />
                                 Customer Location Id found STATEMENTS001<br />
                                 Strings Matched: STATEMENTS001 = STATEMENTS001<br />
                                 Click Bookmark<br />
-                                Angular request time 327ms<br />
-                                Angular request time 600ms<br />
-                                Angular request time 11ms<br />
-                                Element [[ChromeDriver: chrome on XP (580ca5061753cd4b34652d01e5422790)] -&gt; id: USR_Name] displayed in 36ms<br />
-                                Element [[ChromeDriver: chrome on XP (580ca5061753cd4b34652d01e5422790)] -&gt; id: ACTION_Logout] displayed in 50ms<br />
+                                Element [[ChromeDriver: chrome on XP (e87a53cd178623ce6520163cb2142765)] -&gt; id: ACTION_BOOKMARK] displayed in 10ms<br />
+                                Click Book Mark<br />
+                                Angular request time 2043ms<br />
                                 Angular request time 26ms<br />
-                                Angular Request Completed in 22ms<br />
+                                Angular request time 15ms<br />
+                                Angular request time 10ms<br />
+                                Element [[ChromeDriver: chrome on XP (e87a53cd178623ce6520163cb2142765)] -&gt; id: USR_Name] displayed in 30ms<br />
+                                Element [[ChromeDriver: chrome on XP (e87a53cd178623ce6520163cb2142765)] -&gt; id: ACTION_Logout] displayed in 36ms<br />
+                                Angular request time 577ms<br />
+                                Angular Request Completed in 41ms<br />
                                 Sign in Page Title Verified<br />
-                                Angular Request Completed in 16ms<br />
+                                Angular Request Completed in 32ms<br />
                                 User signed Admin<br />
                                 Click BookMarked Customer<br />
                                 Recent Customer =Aut Statement<br />
-                                Angular request time 2180ms<br />
+                                Angular request time 3870ms<br />
                                 Customer Location Id found STATEMENTS001<br />
                                 Strings Matched: STATEMENTS001 = STATEMENTS001<br />
-                                Click Bookmark<br />
-                                Angular request time 829ms<br />
-                                Angular request time 16ms<br />
-                                Angular request time 196ms<br />
-                                Element [[ChromeDriver: chrome on XP (580ca5061753cd4b34652d01e5422790)] -&gt; id: USR_Name] displayed in 51ms<br />
-                                Element [[ChromeDriver: chrome on XP (580ca5061753cd4b34652d01e5422790)] -&gt; id: ACTION_Logout] displayed in 48ms<br />
-                                Angular request time 33ms<br />
+                                Element [[ChromeDriver: chrome on XP (e87a53cd178623ce6520163cb2142765)] -&gt; id: ACTION_BOOKMARK_Selected] displayed in 78ms<br />
+                                Click Book Mark<br />
+                                Angular request time 938ms<br />
+                                Angular request time 1624ms<br />
+                                Angular request time 13ms<br />
+                                Element [[ChromeDriver: chrome on XP (e87a53cd178623ce6520163cb2142765)] -&gt; id: USR_Name] displayed in 31ms<br />
+                                Element [[ChromeDriver: chrome on XP (e87a53cd178623ce6520163cb2142765)] -&gt; id: ACTION_Logout] displayed in 48ms<br />
+                                Angular request time 12ms<br />
                   </div>
     
 
@@ -622,31 +666,31 @@ Current = 1 Water 1 Bldg<br />
                   TestCreditStatus
       </td>
   <td class="duration">
-    29.132s
+    25.055s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Angular Request Completed in 31ms<br />
+                        Angular Request Completed in 148ms<br />
                                 Sign in Page Title Verified<br />
-                                Angular Request Completed in 46ms<br />
+                                Angular Request Completed in 32ms<br />
                                 User signed Admin<br />
                                 Enter Text for Search =LOC@0001<br />
-                                Element [[ChromeDriver: chrome on XP (6863c95b4eb14f72e12761bf0bb78d14)] -&gt; id: SRCH_Input] displayed in 47ms<br />
-                                Angular request time 996ms<br />
+                                Element [[ChromeDriver: chrome on XP (7b91fbb4466ee63b7efb74dcbb222c5c)] -&gt; id: SRCH_Input] displayed in 78ms<br />
+                                Angular request time 1106ms<br />
                                 Click Customer<br />
-                                Angular request time 2087ms<br />
-                                Angular request time 20ms<br />
+                                Angular request time 2262ms<br />
+                                Angular request time 15ms<br />
                                 Customer Location Id found LOC@0001<br />
                                 Strings Matched: LOC@0001 = LOC@0001<br />
                                 Verify Credit Status<br />
-                                Angular request time 12ms<br />
-                                Angular request time 17ms<br />
-                                Angular request time 13ms<br />
-                                Element [[ChromeDriver: chrome on XP (6863c95b4eb14f72e12761bf0bb78d14)] -&gt; id: USR_Name] displayed in 31ms<br />
-                                Element [[ChromeDriver: chrome on XP (6863c95b4eb14f72e12761bf0bb78d14)] -&gt; id: ACTION_Logout] displayed in 65ms<br />
                                 Angular request time 16ms<br />
+                                Angular request time 15ms<br />
+                                Angular request time 10ms<br />
+                                Element [[ChromeDriver: chrome on XP (7b91fbb4466ee63b7efb74dcbb222c5c)] -&gt; id: USR_Name] displayed in 28ms<br />
+                                Element [[ChromeDriver: chrome on XP (7b91fbb4466ee63b7efb74dcbb222c5c)] -&gt; id: ACTION_Logout] displayed in 32ms<br />
+                                Angular request time 191ms<br />
                   </div>
     
 
@@ -661,39 +705,41 @@ Current = 1 Water 1 Bldg<br />
                   TestContactEdit
       </td>
   <td class="duration">
-    32.937s
+    29.793s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Angular Request Completed in 98ms<br />
+                        Angular Request Completed in 43ms<br />
                                 Sign in Page Title Verified<br />
-                                Angular Request Completed in 15ms<br />
+                                Angular Request Completed in 16ms<br />
                                 User signed Admin<br />
                                 Enter Text for Search =LOC@0004<br />
-                                Element [[ChromeDriver: chrome on XP (015814637f8a220a5801ca76a2de6b09)] -&gt; id: SRCH_Input] displayed in 47ms<br />
-                                Angular request time 1064ms<br />
+                                Element [[ChromeDriver: chrome on XP (cc9ad12c4f85bf17c07c6af7fd0296f1)] -&gt; id: SRCH_Input] displayed in 31ms<br />
+                                Angular request time 1050ms<br />
                                 Click Customer<br />
-                                Angular request time 1485ms<br />
-                                Angular request time 9ms<br />
+                                Angular request time 2049ms<br />
+                                Angular request time 203ms<br />
                                 Customer Location Id found LOC@0004<br />
                                 Strings Matched: LOC@0004 = LOC@0004<br />
-                                Angular request time 15ms<br />
-                                Element &apos;[[ChromeDriver: chrome on XP (015814637f8a220a5801ca76a2de6b09)] -&gt; id: &apos;CUST_Drillback_Button&apos;]&apos; is displayed in 578ms<br />
-                                Angular request time 12ms<br />
-                                Angular request time 12ms<br />
-                                Element &apos;[[ChromeDriver: chrome on XP (015814637f8a220a5801ca76a2de6b09)] -&gt; id: ECI_Phone_Number_1]&apos; is displayed in 78ms<br />
-                                Angular request time 18ms<br />
-                                Angular request time 22ms<br />
+                                Angular request time 31ms<br />
+                                Element [[ChromeDriver: chrome on XP (cc9ad12c4f85bf17c07c6af7fd0296f1)] -&gt; id: &apos;CUST_Drillback_Button&apos;] displayed in 32ms<br />
+                                Click Edit Contact<br />
+                                Angular request time 19ms<br />
                                 Angular request time 10ms<br />
-                                Element &apos;[[ChromeDriver: chrome on XP (015814637f8a220a5801ca76a2de6b09)] -&gt; id: ECI_Email]&apos; is displayed in 86ms<br />
+                                Element &apos;[[ChromeDriver: chrome on XP (cc9ad12c4f85bf17c07c6af7fd0296f1)] -&gt; id: ECI_Phone_Number_1]&apos; is displayed in 94ms<br />
+                                Angular request time 37ms<br />
                                 Angular request time 17ms<br />
-                                Angular request time 13ms<br />
-                                Angular request time 9ms<br />
-                                Element &apos;[[ChromeDriver: chrome on XP (015814637f8a220a5801ca76a2de6b09)] -&gt; id: ECI_Action_Button]&apos; is displayed in 110ms<br />
+                                Angular request time 12ms<br />
+                                Element &apos;[[ChromeDriver: chrome on XP (cc9ad12c4f85bf17c07c6af7fd0296f1)] -&gt; id: ECI_Email]&apos; is displayed in 243ms<br />
+                                Angular request time 11ms<br />
+                                Angular request time 8ms<br />
+                                Angular request time 10ms<br />
+                                Element [[ChromeDriver: chrome on XP (cc9ad12c4f85bf17c07c6af7fd0296f1)] -&gt; id: ECI_Action_Button] displayed in 20ms<br />
+                                Click Contact Update<br />
                                 Angular request time 335ms<br />
-                                Angular request time 348ms<br />
+                                Angular request time 344ms<br />
                                 Verifying Customer Details<br />
                                 Strings Matched: 2312 = 2312<br />
                                 Strings Matched: Driv12312OUL312 = Driv12312OUL312<br />
@@ -702,11 +748,11 @@ Current = 1 Water 1 Bldg<br />
                                 Strings Matched: automation@cogsdale.com = automation@cogsdale.com<br />
                                 Strings Matched: 007 Test Apt = 007 Test Apt<br />
                                 Strings Matched: New York NY 12345-67890 = New York NY 12345-67890<br />
-                                Angular request time 31ms<br />
-                                Angular request time 10ms<br />
-                                Element [[ChromeDriver: chrome on XP (015814637f8a220a5801ca76a2de6b09)] -&gt; id: USR_Name] displayed in 28ms<br />
-                                Element [[ChromeDriver: chrome on XP (015814637f8a220a5801ca76a2de6b09)] -&gt; id: ACTION_Logout] displayed in 38ms<br />
-                                Angular request time 18ms<br />
+                                Angular request time 47ms<br />
+                                Angular request time 9ms<br />
+                                Element [[ChromeDriver: chrome on XP (cc9ad12c4f85bf17c07c6af7fd0296f1)] -&gt; id: USR_Name] displayed in 30ms<br />
+                                Element [[ChromeDriver: chrome on XP (cc9ad12c4f85bf17c07c6af7fd0296f1)] -&gt; id: ACTION_Logout] displayed in 33ms<br />
+                                Angular request time 28ms<br />
                   </div>
     
 
@@ -721,34 +767,36 @@ Current = 1 Water 1 Bldg<br />
                   TestSecondayContact
       </td>
   <td class="duration">
-    28.270s
+    28.416s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Angular Request Completed in 36ms<br />
+                        Angular Request Completed in 38ms<br />
                                 Sign in Page Title Verified<br />
-                                Angular Request Completed in 172ms<br />
+                                Angular Request Completed in 16ms<br />
                                 User signed Admin<br />
                                 Enter Text for Search =LOC@0004<br />
-                                Element [[ChromeDriver: chrome on XP (625c231b7f91a53cee2a0822b4c80c6f)] -&gt; id: SRCH_Input] displayed in 47ms<br />
-                                Angular request time 1056ms<br />
+                                Element [[ChromeDriver: chrome on XP (6735244b079092b99e9ab4dc9c9a8bb9)] -&gt; id: SRCH_Input] displayed in 47ms<br />
+                                Angular request time 1551ms<br />
                                 Click Customer<br />
-                                Angular request time 1960ms<br />
-                                Angular request time 322ms<br />
+                                Angular request time 1660ms<br />
+                                Angular request time 210ms<br />
                                 Customer Location Id found LOC@0004<br />
                                 Strings Matched: LOC@0004 = LOC@0004<br />
-                                Angular request time 10ms<br />
+                                Angular request time 15ms<br />
+                                Element [[ChromeDriver: chrome on XP (6735244b079092b99e9ab4dc9c9a8bb9)] -&gt; id: SCUST_Label] displayed in 31ms<br />
+                                Click Secondary Customer<br />
+                                Angular request time 13ms<br />
                                 Angular request time 14ms<br />
-                                Angular request time 17ms<br />
-                                Angular request time 22ms<br />
+                                Angular request time 9ms<br />
                                 Strings Matched: Secondary Customer (SECONDARY) = Secondary Customer (SECONDARY)<br />
-                                Angular request time 11ms<br />
-                                Angular request time 11ms<br />
-                                Element [[ChromeDriver: chrome on XP (625c231b7f91a53cee2a0822b4c80c6f)] -&gt; id: USR_Name] displayed in 35ms<br />
-                                Element [[ChromeDriver: chrome on XP (625c231b7f91a53cee2a0822b4c80c6f)] -&gt; id: ACTION_Logout] displayed in 37ms<br />
-                                Angular request time 27ms<br />
+                                Angular request time 9ms<br />
+                                Angular request time 10ms<br />
+                                Element [[ChromeDriver: chrome on XP (6735244b079092b99e9ab4dc9c9a8bb9)] -&gt; id: USR_Name] displayed in 524ms<br />
+                                Element [[ChromeDriver: chrome on XP (6735244b079092b99e9ab4dc9c9a8bb9)] -&gt; id: ACTION_Logout] displayed in 40ms<br />
+                                Angular request time 16ms<br />
                   </div>
     
 
@@ -763,34 +811,37 @@ Current = 1 Water 1 Bldg<br />
                   TestNotesSection
       </td>
   <td class="duration">
-    27.627s
+    28.081s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Angular Request Completed in 68ms<br />
+                        Angular Request Completed in 71ms<br />
                                 Sign in Page Title Verified<br />
-                                Angular Request Completed in 27ms<br />
+                                Angular Request Completed in 47ms<br />
                                 User signed Admin<br />
                                 Enter Text for Search =LOC@0004<br />
-                                Element [[ChromeDriver: chrome on XP (eb74ecf0ec5dbcc9c23c2e3bbc41b338)] -&gt; id: SRCH_Input] displayed in 63ms<br />
-                                Angular request time 1528ms<br />
+                                Element [[ChromeDriver: chrome on XP (a78f88178187dedc500dd2bfd6226da7)] -&gt; id: SRCH_Input] displayed in 32ms<br />
+                                Angular request time 994ms<br />
                                 Click Customer<br />
-                                Angular request time 1653ms<br />
-                                Angular request time 297ms<br />
+                                Angular request time 1951ms<br />
+                                Angular request time 31ms<br />
                                 Customer Location Id found LOC@0004<br />
                                 Strings Matched: LOC@0004 = LOC@0004<br />
-                                Angular request time 6ms<br />
+                                Angular request time 11ms<br />
                                 Angular request time 10ms<br />
-                                Angular request time 441ms<br />
-                                Angular request time 322ms<br />
-                                Strings Matched: Notes added2019/06/13 11:23:24 = Notes added2019/06/13 11:23:24<br />
-                                Angular request time 8ms<br />
-                                Angular request time 8ms<br />
-                                Element [[ChromeDriver: chrome on XP (eb74ecf0ec5dbcc9c23c2e3bbc41b338)] -&gt; id: USR_Name] displayed in 31ms<br />
-                                Element [[ChromeDriver: chrome on XP (eb74ecf0ec5dbcc9c23c2e3bbc41b338)] -&gt; id: ACTION_Logout] displayed in 33ms<br />
+                                Element [[ChromeDriver: chrome on XP (a78f88178187dedc500dd2bfd6226da7)] -&gt; id: CL_Action_Button] displayed in 32ms<br />
+                                Click Submit Notes<br />
+                                Angular request time 531ms<br />
+                                Angular request time 337ms<br />
+                                Angular request time 10ms<br />
+                                Strings Matched: Notes added2019/06/14 09:21:54 = Notes added2019/06/14 09:21:54<br />
                                 Angular request time 16ms<br />
+                                Angular request time 11ms<br />
+                                Element [[ChromeDriver: chrome on XP (a78f88178187dedc500dd2bfd6226da7)] -&gt; id: USR_Name] displayed in 30ms<br />
+                                Element [[ChromeDriver: chrome on XP (a78f88178187dedc500dd2bfd6226da7)] -&gt; id: ACTION_Logout] displayed in 40ms<br />
+                                Angular request time 25ms<br />
                   </div>
     
 
@@ -805,31 +856,31 @@ Current = 1 Water 1 Bldg<br />
                   TestSecondayContact
       </td>
   <td class="duration">
-    32.651s
+    36.484s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Angular Request Completed in 139ms<br />
+                        Angular Request Completed in 40ms<br />
                                 Sign in Page Title Verified<br />
-                                Angular Request Completed in 47ms<br />
+                                Angular Request Completed in 344ms<br />
                                 User signed Admin<br />
                                 Enter Text for Search =LOC@0001<br />
-                                Element [[ChromeDriver: chrome on XP (6d0c76dc0f0d26369636faad3601be67)] -&gt; id: SRCH_Input] displayed in 62ms<br />
-                                Angular request time 989ms<br />
+                                Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -&gt; id: SRCH_Input] displayed in 531ms<br />
+                                Angular request time 1038ms<br />
                                 Click Customer<br />
-                                Angular request time 2032ms<br />
-                                Angular request time 14ms<br />
+                                Angular request time 2178ms<br />
+                                Angular request time 11ms<br />
                                 Customer Location Id found LOC@0001<br />
                                 Strings Matched: LOC@0001 = LOC@0001<br />
                                 Angular request time 16ms<br />
-                                Element &apos;BILL_Current_Balance&apos; is displayed in 94ms<br />
-                                Element &apos;BILL_Unposted_Balance&apos; is displayed in 93ms<br />
-                                Element &apos;BILL_Account_Balance&apos; is displayed in 79ms<br />
-                                Element &apos;BILL_Past_Due&apos; is displayed in 78ms<br />
-                                Element &apos;BILL_Installment_Budget&apos; is displayed in 94ms<br />
-                                Element &apos;BILL_Over_Short&apos; is displayed in 93ms<br />
+                                Element &apos;BILL_Current_Balance&apos; is displayed in 63ms<br />
+                                Element &apos;BILL_Unposted_Balance&apos; is displayed in 562ms<br />
+                                Element &apos;BILL_Account_Balance&apos; is displayed in 63ms<br />
+                                Element &apos;BILL_Past_Due&apos; is displayed in 312ms<br />
+                                Element &apos;BILL_Installment_Budget&apos; is displayed in 563ms<br />
+                                Element &apos;BILL_Over_Short&apos; is displayed in 953ms<br />
                                 Strings Matched: $35.26 = $35.26<br />
                                 Strings Matched: $0.00 = $0.00<br />
                                 Strings Matched: $0.00 = $0.00<br />
@@ -837,13 +888,13 @@ Current = 1 Water 1 Bldg<br />
                                 Strings Matched: $50.00 = $50.00<br />
                                 Strings Matched: $57.24 = $57.24<br />
                                 Strings Matched: $35.26 = $35.26<br />
-                                Element [[ChromeDriver: chrome on XP (6d0c76dc0f0d26369636faad3601be67)] -&gt; id: BILL_E_Bill] displayed in 47ms<br />
+                                Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -&gt; id: BILL_E_Bill] displayed in 31ms<br />
                                 Strings Matched: ON = ON<br />
-                                Element [[ChromeDriver: chrome on XP (6d0c76dc0f0d26369636faad3601be67)] -&gt; id: BILL_Auto_Pay] displayed in 46ms<br />
+                                Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -&gt; id: BILL_Auto_Pay] displayed in 31ms<br />
                                 Strings Matched: OFF = OFF<br />
-                                Element [[ChromeDriver: chrome on XP (6d0c76dc0f0d26369636faad3601be67)] -&gt; id: BILL_Deposit_Amount] displayed in 32ms<br />
+                                Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -&gt; id: BILL_Deposit_Amount] displayed in 31ms<br />
                                 Strings Matched: $0.00 = $0.00<br />
-                                Angular request time 17ms<br />
+                                Angular request time 16ms<br />
                                 Verifying Service Type 1<br />
                                 Strings Matched: ELECTRIC = ELECTRIC<br />
                                 Strings Matched: 163598645 = 163598645<br />
@@ -864,35 +915,44 @@ Current = 1 Water 1 Bldg<br />
                                 Strings Matched: INTERNET-60 = INTERNET-60<br />
                                 Strings Matched: 1.00000 = 1.00000<br />
                                 Strings Matched: Active = Active<br />
-                                Element [[ChromeDriver: chrome on XP (6d0c76dc0f0d26369636faad3601be67)] -&gt; id: SERV_Tab_Type_1_Icon] displayed in 47ms<br />
-                                Angular request time 488ms<br />
+                                Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -&gt; id: SERV_Tab_Type_1_Icon] displayed in 46ms<br />
+                                Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -&gt; id: SERV_Tab_Type_1_Icon] displayed in 16ms<br />
+                                Click Electric Icon<br />
+                                Angular request time 346ms<br />
+                                Angular request time 17ms<br />
                                 Verifying Service TAB, Row 1<br />
                                 Strings Matched: ELECTRIC = ELECTRIC<br />
                                 Strings Matched: 163598645 = 163598645<br />
                                 Strings Matched: GS-PK ENERGY = GS-PK ENERGY<br />
                                 Strings Matched: 1.00000 = 1.00000<br />
                                 Strings Matched: Active = Active<br />
-                                Element [[ChromeDriver: chrome on XP (6d0c76dc0f0d26369636faad3601be67)] -&gt; id: SERV_Tab_Type_2_Icon] displayed in 48ms<br />
-                                Angular request time 445ms<br />
+                                Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -&gt; id: SERV_Tab_Type_2_Icon] displayed in 110ms<br />
+                                Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -&gt; id: SERV_Tab_Type_2_Icon] displayed in 15ms<br />
+                                Click Gas Icon<br />
+                                Angular request time 431ms<br />
+                                Angular request time 11ms<br />
                                 Verifying Service GAS Row 1<br />
                                 Strings Matched: GAS = GAS<br />
                                 Strings Matched: EQUIP-GAS-3 = EQUIP-GAS-3<br />
                                 Strings Matched: GRESMTR40 = GRESMTR40<br />
                                 Strings Matched: 1.00000 = 1.00000<br />
                                 Strings Matched: Active = Active<br />
-                                Element [[ChromeDriver: chrome on XP (6d0c76dc0f0d26369636faad3601be67)] -&gt; id: SERV_Tab_Type_3_Icon] displayed in 78ms<br />
-                                Angular request time 385ms<br />
+                                Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -&gt; id: SERV_Tab_Type_3_Icon] displayed in 46ms<br />
+                                Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -&gt; id: SERV_Tab_Type_3_Icon] displayed in 0ms<br />
+                                Click Internet Icon<br />
+                                Angular request time 951ms<br />
+                                Angular request time 16ms<br />
                                 Verifying Service Type Internet Tab Row 1<br />
                                 Strings Matched: INTERNET = INTERNET<br />
                                 Strings Matched: EQUIP-PHONE-02 = EQUIP-PHONE-02<br />
                                 Strings Matched: INTERNET-60 = INTERNET-60<br />
                                 Strings Matched: 1.00000 = 1.00000<br />
                                 Strings Matched: Active = Active<br />
-                                Angular request time 9ms<br />
-                                Angular request time 6ms<br />
-                                Element [[ChromeDriver: chrome on XP (6d0c76dc0f0d26369636faad3601be67)] -&gt; id: USR_Name] displayed in 62ms<br />
-                                Element [[ChromeDriver: chrome on XP (6d0c76dc0f0d26369636faad3601be67)] -&gt; id: ACTION_Logout] displayed in 43ms<br />
-                                Angular request time 22ms<br />
+                                Angular request time 16ms<br />
+                                Angular request time 11ms<br />
+                                Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -&gt; id: USR_Name] displayed in 40ms<br />
+                                Element [[ChromeDriver: chrome on XP (462d613dbaec4a42a17671075eeb0073)] -&gt; id: ACTION_Logout] displayed in 49ms<br />
+                                Angular request time 32ms<br />
                   </div>
     
 
@@ -907,38 +967,40 @@ Current = 1 Water 1 Bldg<br />
                   TestBillingStatements
       </td>
   <td class="duration">
-    26.847s
+    28.901s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Angular Request Completed in 57ms<br />
+                        Angular Request Completed in 51ms<br />
                                 Sign in Page Title Verified<br />
-                                Angular Request Completed in 15ms<br />
+                                Angular Request Completed in 46ms<br />
                                 User signed Admin<br />
                                 Enter Text for Search =STATEMENTS001<br />
-                                Element [[ChromeDriver: chrome on XP (850da0cfa4ac16dacab24a54559a738b)] -&gt; id: SRCH_Input] displayed in 31ms<br />
-                                Angular request time 993ms<br />
+                                Element [[ChromeDriver: chrome on XP (64ed9b59497fd5530cec50374ca80f2e)] -&gt; id: SRCH_Input] displayed in 47ms<br />
+                                Angular request time 1454ms<br />
                                 Click Customer<br />
-                                Angular request time 1831ms<br />
-                                Angular request time 1056ms<br />
+                                Angular request time 2091ms<br />
+                                Angular request time 1374ms<br />
                                 Customer Location Id found STATEMENTS001<br />
                                 Strings Matched: STATEMENTS001 = STATEMENTS001<br />
                                 Angular request time 15ms<br />
-                                Angular request time 13ms<br />
-                                Verify Bill Statement Date<br />
-                                Angular request time 16ms<br />
-                                Element [[ChromeDriver: chrome on XP (850da0cfa4ac16dacab24a54559a738b)] -&gt; id: BILL_Statement_1] displayed in 57ms<br />
-                                Strings Matched: Jul 31, 2019 = Jul 31, 2019<br />
-                                Angular request time 10ms<br />
-                                Element [[ChromeDriver: chrome on XP (850da0cfa4ac16dacab24a54559a738b)] -&gt; id: BILL_Statement_Value_1] displayed in 32ms<br />
-                                Strings Matched: $56.71 = $56.71<br />
-                                Angular request time 10ms<br />
+                                Element [[ChromeDriver: chrome on XP (64ed9b59497fd5530cec50374ca80f2e)] -&gt; id: BILL_Statement_Button] displayed in 31ms<br />
+                                Click Bill Statement Button<br />
                                 Angular request time 12ms<br />
-                                Element [[ChromeDriver: chrome on XP (850da0cfa4ac16dacab24a54559a738b)] -&gt; id: USR_Name] displayed in 33ms<br />
-                                Element [[ChromeDriver: chrome on XP (850da0cfa4ac16dacab24a54559a738b)] -&gt; id: ACTION_Logout] displayed in 608ms<br />
-                                Angular request time 16ms<br />
+                                Verify Bill Statement Date<br />
+                                Angular request time 9ms<br />
+                                Element [[ChromeDriver: chrome on XP (64ed9b59497fd5530cec50374ca80f2e)] -&gt; id: BILL_Statement_1] displayed in 35ms<br />
+                                Strings Matched: Jul 31, 2019 = Jul 31, 2019<br />
+                                Angular request time 22ms<br />
+                                Element [[ChromeDriver: chrome on XP (64ed9b59497fd5530cec50374ca80f2e)] -&gt; id: BILL_Statement_Value_1] displayed in 50ms<br />
+                                Strings Matched: $56.71 = $56.71<br />
+                                Angular request time 8ms<br />
+                                Angular request time 10ms<br />
+                                Element [[ChromeDriver: chrome on XP (64ed9b59497fd5530cec50374ca80f2e)] -&gt; id: USR_Name] displayed in 29ms<br />
+                                Element [[ChromeDriver: chrome on XP (64ed9b59497fd5530cec50374ca80f2e)] -&gt; id: ACTION_Logout] displayed in 530ms<br />
+                                Angular request time 11ms<br />
                   </div>
     
 
@@ -953,34 +1015,35 @@ Current = 1 Water 1 Bldg<br />
                   TestSecondayContact
       </td>
   <td class="duration">
-    32.188s
+    33.008s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Angular Request Completed in 201ms<br />
+                        Angular Request Completed in 35ms<br />
                                 Sign in Page Title Verified<br />
-                                Angular Request Completed in 93ms<br />
+                                Angular Request Completed in 15ms<br />
                                 User signed Admin<br />
                                 Enter Text for Search =LOC@0001<br />
-                                Element [[ChromeDriver: chrome on XP (26d1b48019d477037055bc0c66503710)] -&gt; id: SRCH_Input] displayed in 47ms<br />
-                                Angular request time 944ms<br />
+                                Element [[ChromeDriver: chrome on XP (f2d2aa3dfdf236169da65489a3136728)] -&gt; id: SRCH_Input] displayed in 31ms<br />
+                                Angular request time 1371ms<br />
                                 Click Customer<br />
-                                Angular request time 1814ms<br />
-                                Angular request time 14ms<br />
+                                Angular request time 2679ms<br />
+                                Angular request time 154ms<br />
                                 Customer Location Id found LOC@0001<br />
                                 Strings Matched: LOC@0001 = LOC@0001<br />
-                                Angular request time 793ms<br />
-                                Transaction Link Clicked<br />
-                                Element [[ChromeDriver: chrome on XP (26d1b48019d477037055bc0c66503710)] -&gt; id: TRAN_Drillback_1] displayed in 10ms<br />
-                                Element [[ChromeDriver: chrome on XP (26d1b48019d477037055bc0c66503710)] -&gt; id: TRAN_Drillback_2] displayed in 16ms<br />
-                                Element [[ChromeDriver: chrome on XP (26d1b48019d477037055bc0c66503710)] -&gt; id: TRAN_Drillback_3] displayed in 15ms<br />
+                                Element [[ChromeDriver: chrome on XP (f2d2aa3dfdf236169da65489a3136728)] -&gt; css selector: #mat-tab-label-0-1 &gt; div:nth-child(1)] displayed in 47ms<br />
+                                Click Transaction Link<br />
+                                Angular request time 902ms<br />
+                                Element [[ChromeDriver: chrome on XP (f2d2aa3dfdf236169da65489a3136728)] -&gt; id: TRAN_Drillback_1] displayed in 16ms<br />
+                                Element [[ChromeDriver: chrome on XP (f2d2aa3dfdf236169da65489a3136728)] -&gt; id: TRAN_Drillback_2] displayed in 141ms<br />
+                                Element [[ChromeDriver: chrome on XP (f2d2aa3dfdf236169da65489a3136728)] -&gt; id: TRAN_Drillback_3] displayed in 15ms<br />
                                 Angular request time 16ms<br />
-                                Angular request time 27ms<br />
-                                Element [[ChromeDriver: chrome on XP (26d1b48019d477037055bc0c66503710)] -&gt; id: USR_Name] displayed in 22ms<br />
-                                Element [[ChromeDriver: chrome on XP (26d1b48019d477037055bc0c66503710)] -&gt; id: ACTION_Logout] displayed in 42ms<br />
-                                Angular request time 16ms<br />
+                                Angular request time 10ms<br />
+                                Element [[ChromeDriver: chrome on XP (f2d2aa3dfdf236169da65489a3136728)] -&gt; id: USR_Name] displayed in 343ms<br />
+                                Element [[ChromeDriver: chrome on XP (f2d2aa3dfdf236169da65489a3136728)] -&gt; id: ACTION_Logout] displayed in 58ms<br />
+                                Angular request time 22ms<br />
                   </div>
     
 
@@ -995,32 +1058,33 @@ Current = 1 Water 1 Bldg<br />
                   TestSecondayContact
       </td>
   <td class="duration">
-    28.070s
+    31.883s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Angular Request Completed in 176ms<br />
+                        Angular Request Completed in 42ms<br />
                                 Sign in Page Title Verified<br />
-                                Angular Request Completed in 47ms<br />
+                                Angular Request Completed in 15ms<br />
                                 User signed Admin<br />
                                 Enter Text for Search =LOC@0001<br />
-                                Element [[ChromeDriver: chrome on XP (53baa726929e226b5a4488b0ba870145)] -&gt; id: SRCH_Input] displayed in 46ms<br />
-                                Angular request time 948ms<br />
+                                Element [[ChromeDriver: chrome on XP (bbcf47de6a91f1daa31dd900400a22d2)] -&gt; id: SRCH_Input] displayed in 63ms<br />
+                                Angular request time 1150ms<br />
                                 Click Customer<br />
-                                Angular request time 1724ms<br />
-                                Angular request time 11ms<br />
+                                Angular request time 2511ms<br />
+                                Angular request time 12ms<br />
                                 Customer Location Id found LOC@0001<br />
                                 Strings Matched: LOC@0001 = LOC@0001<br />
-                                Angular request time 836ms<br />
-                                Service Order Link Clicked<br />
-                                Element [[ChromeDriver: chrome on XP (53baa726929e226b5a4488b0ba870145)] -&gt; id: SODV_Drillback] displayed in 16ms<br />
-                                Angular request time 15ms<br />
-                                Angular request time 11ms<br />
-                                Element [[ChromeDriver: chrome on XP (53baa726929e226b5a4488b0ba870145)] -&gt; id: USR_Name] displayed in 32ms<br />
-                                Element [[ChromeDriver: chrome on XP (53baa726929e226b5a4488b0ba870145)] -&gt; id: ACTION_Logout] displayed in 42ms<br />
-                                Angular request time 24ms<br />
+                                Element [[ChromeDriver: chrome on XP (bbcf47de6a91f1daa31dd900400a22d2)] -&gt; css selector: #mat-tab-label-0-2 &gt; div] displayed in 30ms<br />
+                                Click Service Order Link<br />
+                                Angular request time 915ms<br />
+                                Element [[ChromeDriver: chrome on XP (bbcf47de6a91f1daa31dd900400a22d2)] -&gt; id: SODV_Drillback] displayed in 16ms<br />
+                                Angular request time 16ms<br />
+                                Angular request time 14ms<br />
+                                Element [[ChromeDriver: chrome on XP (bbcf47de6a91f1daa31dd900400a22d2)] -&gt; id: USR_Name] displayed in 34ms<br />
+                                Element [[ChromeDriver: chrome on XP (bbcf47de6a91f1daa31dd900400a22d2)] -&gt; id: ACTION_Logout] displayed in 37ms<br />
+                                Angular request time 29ms<br />
                   </div>
     
 

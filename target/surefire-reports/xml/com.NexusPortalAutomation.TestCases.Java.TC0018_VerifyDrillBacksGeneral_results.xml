@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="16.274">
+           time="18.515">
   <properties />
-            <testcase name="TestSecondayContact" time="16.274" classname="com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral">
+            <testcase name="TestSecondayContact" time="18.515" classname="com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral">
                 <failure type="java.lang.AssertionError"
                   message="expected [cogsdrillback://DGPB/?Db=SQL_2017&amp;Srv=RND-BASE-A&amp;Cmp=TWO&amp;Bug reported] but found [null]"
               >

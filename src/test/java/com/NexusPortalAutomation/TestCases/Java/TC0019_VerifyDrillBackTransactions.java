@@ -49,7 +49,7 @@ public class TC0019_VerifyDrillBackTransactions extends BaseClass {
 		// Verify Contact is updated accordingly
 		dashBoard.ClickTransactionLink();
 		// Verify Transaction details
-		dashBoard.VerifyTransDrillBacks(PaymentURL, MeterURL, MeterURL);
+		dashBoard.VerifyTransDrillBacks(PaymentURL, BillURL, MeterURL);
 		dashBoard.LogOut();
 	}
 

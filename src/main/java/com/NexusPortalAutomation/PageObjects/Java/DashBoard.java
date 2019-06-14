@@ -275,16 +275,119 @@ public class DashBoard extends CommonMethods {
 	@CacheLookup
 	WebElement actionDropDown;
 
-	public void clickActionDropDown() {
+	@FindBy(id = "SOLV_Select_Date_Range")
+	@CacheLookup
+	WebElement ServOrder_dateDropDown;
+
+	@FindBy(id = "SOLV_Select_Date_Range_Option_4")
+	@CacheLookup
+	WebElement ServOrder_Anytime;
+
+	@FindBy(id = "SOLV_Service_Order_1_Request_Id")
+	@CacheLookup
+	WebElement ServOrder_Order_RequestID;
+
+	@FindBy(id = "SOLV_Service_Order_1_Description")
+	@CacheLookup
+	WebElement SOLV_Service_Order_Description;
+
+	@FindBy(id = "SOLV_Service_Order_1_Scheduled_Date")
+	@CacheLookup
+	WebElement SOLV_Service_Order_Scheduled_Date;
+
+	@FindBy(id = "SODV_Service_Order_Id")
+	@CacheLookup
+	WebElement SOLV_Service_Order_Id;
+
+	@FindBy(id = "SODV_Status")
+	@CacheLookup
+	WebElement SODV_Status;
+
+	@FindBy(id = "SODV_Description_Request")
+	@CacheLookup
+	WebElement SODV_Description_Request;
+
+	@FindBy(id = "SODV_Request_Id")
+	@CacheLookup
+	WebElement SODV_Request_Id;
+	// done
+	@FindBy(id = "SODV_Requested_Date")
+	@CacheLookup
+	WebElement SODV_Requested_Date;
+
+	@FindBy(id = "SODV_Requested_Time")
+	@CacheLookup
+	WebElement SODV_Requested_Time;
+
+	@FindBy(id = "SODV_Scheduled_Date")
+	@CacheLookup
+	WebElement SODV_Scheduled_Date;
+
+	@FindBy(id = "SODV_Scheduled_Time")
+	@CacheLookup
+	WebElement SODV_Scheduled_Time;
+
+	@FindBy(id = "SODV_Task_1_Description")
+	@CacheLookup
+	WebElement SODV_Task_Description;
+
+	@FindBy(id = "SODV_Task_1_Employee_Id")
+	@CacheLookup
+	WebElement SODV_Task_Employee_Id;
+
+	@FindBy(id = "SODV_Task_1_Completed_Date")
+	@CacheLookup
+	WebElement SODV_Task_Completed_Date;
+
+	public HashMap<String, String> GetServiceOrderDetails() {
+		//This method will feth the service order details and returns it in a map
+		WaitAngular(driver);
+		log("Verifying Service Order Details");
+		HashMap<String, String> SrvcOrderInfo = new HashMap<String, String>();
+		SrvcOrderInfo.put("ServiceOrderReqId", ServOrder_Order_RequestID.getText());
+		SrvcOrderInfo.put("ServiceOrderDescription", SOLV_Service_Order_Description.getText());
+		SrvcOrderInfo.put("ServiceOrderScheduledDate", SOLV_Service_Order_Scheduled_Date.getText());
+		SrvcOrderInfo.put("SOLVServiceOrderId", SOLV_Service_Order_Id.getText());
+		SrvcOrderInfo.put("SODVStatus", SODV_Status.getText());
+		SrvcOrderInfo.put("SODVDescriptionRequest", SODV_Description_Request.getText());
+		SrvcOrderInfo.put("SODVRequestId", SODV_Request_Id.getText());
+		SrvcOrderInfo.put("SODVRequestedDate ", SODV_Requested_Date.getText());
+		SrvcOrderInfo.put("SODVRequestedTime", SODV_Requested_Time.getText());
+		SrvcOrderInfo.put("SODVScheduledDate", SODV_Scheduled_Date.getText());
+		SrvcOrderInfo.put("SODVScheduledTime", SODV_Scheduled_Time.getText());
+		SrvcOrderInfo.put("SODVTaskDescription", SODV_Task_Description.getText());
+		SrvcOrderInfo.put("SODVTaskEmployeeId", SODV_Task_Employee_Id.getText());
+		SrvcOrderInfo.put("SODVTaskCompletedDate", SODV_Task_Completed_Date.getText());
+		return SrvcOrderInfo;
+
+	}
+
+	public void ServOrd_SelectDateAnyTime() {
+		ClickElement(ServOrder_dateDropDown, "Date Drop Down");
+		log("Date Drop Down Clicked");
+		ClickElement(ServOrder_Anytime, "Any Time");
+		log("All time date selected");
+		WaitAngular(driver);
+	}
+
+	public void ClickElement(WebElement element, String ElementName) {
 		try {
-			waitForObject(driver, actionDropDown);
-			actionDropDown.click();
+			waitForObject(driver, element);
+			element.click();
+			log("Click " + ElementName);
+			WaitAngular(driver);
 
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
-			Assert.assertTrue(false, "Action Drop Down not found");
+			Assert.assertTrue(false, ElementName + " not found");
 
 		}
+	}
+
+	public void clickActionDropDown() {
+
+		waitForObject(driver, actionDropDown);
+		ClickElement(actionDropDown, "Action Drop down");
 
 	}
 
@@ -385,35 +488,21 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void ClickServElecIcon() {
-		try {
-			waitForObject(driver, ServElectricIcon);
-			ServElectricIcon.click();
-		} catch (NoSuchElementException e) {
-			log(e.getMessage());
-			Assert.assertTrue(false, "Electric Icon not found");
-		}
-
+		waitForObject(driver, ServElectricIcon);
+		ClickElement(ServElectricIcon, "Electric Icon");
 	}
 
 	public void ClickServGasIcon() {
-		try {
-			waitForObject(driver, ServGasIcon);
-			ServGasIcon.click();
-		} catch (NoSuchElementException e) {
-			log(e.getMessage());
-			Assert.assertTrue(false, "Gas Icon not found");
-		}
+
+		waitForObject(driver, ServGasIcon);
+		ClickElement(ServGasIcon, "Gas Icon");
 
 	}
 
 	public void ClickServInternetIcon() {
-		try {
-			waitForObject(driver, ServInternetIcon);
-			ServInternetIcon.click();
-		} catch (NoSuchElementException e) {
-			log(e.getMessage());
-			Assert.assertTrue(false, "Internet Icon not found");
-		}
+
+		waitForObject(driver, ServInternetIcon);
+		ClickElement(ServInternetIcon, "Internet Icon");
 
 	}
 
@@ -463,27 +552,16 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void ClickBillStatementBtn() {
-		try {
-			WaitAngular(driver);
-			BILLStatementBtn.click();
-			WaitAngular(driver);
-		} catch (NoSuchElementException e) {
-			log(e.getMessage());
-			Assert.assertTrue(false, "BILL Statement Button not found");
-		}
+
+		WaitAngular(driver);
+		ClickElement(BILLStatementBtn, "Bill Statement Button");
 
 	}
 
 	public void ClickBillStatement() {
-		try {
-			WaitAngular(driver);
-			waitForObject(driver, BILLStatement1);
-			BILLStatement1.click();
-			WaitAngular(driver);
-		} catch (NoSuchElementException e) {
-			log(e.getMessage());
-			Assert.assertTrue(false, "BILL Statement Button not found");
-		}
+
+		waitForObject(driver, BILLStatement1);
+		ClickElement(BILLStatement1, "Statement");
 
 	}
 
@@ -514,14 +592,9 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void ClickSecondCust() {
-		try {
-			WaitAngular(driver);
-			SecondCust.click();
-			WaitAngular(driver);
-		} catch (NoSuchElementException e) {
-			log(e.getMessage());
-			Assert.assertTrue(false, "Secondary Customer not found");
-		}
+
+		WaitAngular(driver);
+		ClickElement(SecondCust, "Secondary Customer");
 
 	}
 
@@ -530,7 +603,7 @@ public class DashBoard extends CommonMethods {
 			WaitAngular(driver);
 			Notes.sendKeys(notes);
 			WaitAngular(driver);
-			SubmitNotes.click();
+			ClickElement(SubmitNotes, "Submit Notes");
 			WaitAngular(driver);
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
@@ -579,15 +652,9 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void ClickContactEdit() {
-		try {
-			WaitAngular(driver);
-			WaitForObjectbyElement(driver, ContactEdit);
-			ContactEdit.click();
-			WaitAngular(driver);
-		} catch (NoSuchElementException e) {
-			log(e.getMessage());
-			Assert.assertTrue(false, "Edit button not found");
-		}
+
+		WaitAngular(driver);
+		ClickElement(ContactEdit, "Edit Contact");
 
 	}
 
@@ -621,29 +688,23 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void clickContactUpdate() {
-		try {
-			WaitAngular(driver);
-			WaitForObjectbyElement(driver, ContactUpdateBtn);
-			ContactUpdateBtn.click();
-			WaitAngular(driver);
-		} catch (NoSuchElementException e) {
-			log(e.getMessage());
-			Assert.assertTrue(false, "Contact Update button not found");
-		}
+		WaitAngular(driver);
+		ClickElement(ContactUpdateBtn, "Contact Update");
+
 	}
 
 	public void ClickBookMarkDisabled() {
 		try {
 			log("Click Bookmark");
 			if (BookMarkIconEnabled.isDisplayed()) {
-				BookMarkIconEnabled.click();
+				ClickElement(BookMarkIconEnabled, "Book Mark");
 			} else if (BookMarkIconDisabled.isDisplayed()) {
 				try {
-					BookMarkIconDisabled.click();
+					ClickElement(BookMarkIconDisabled, "Book Mark");
 					WaitAngular(driver);
 					try {
 						if (BookMarkIconEnabled.isDisplayed()) {
-							BookMarkIconEnabled.click();
+							ClickElement(BookMarkIconEnabled, "Book Mark");
 						}
 					} catch (NoSuchElementException e) {
 						Assert.assertTrue(false, "Bookmark not found");
@@ -671,14 +732,8 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void ClickBookMarkEnabled() {
-		try {
-			log("Click Bookmark");
-			BookMarkIconDisabled.click();
-			WaitAngular(driver);
-		} catch (NoSuchElementException e) {
-			log(e.getMessage());
-			Assert.assertTrue(false);
-		}
+
+		ClickElement(BookMarkIconDisabled, "Book Mark");
 
 	}
 
@@ -686,11 +741,11 @@ public class DashBoard extends CommonMethods {
 		WaitAngular(driver);
 		log("Click on Account Drop down");
 		waitForObject(driver, AccountDropdown);
-		AccountDropdown.click();
+		ClickElement(AccountDropdown, "Account Drop down");
 		log("Enter Account Name");
 		WaitAngular(driver);
 		waitForObject(driver, AccountSearchText);
-		AccountSearchText.click();
+		ClickElement(AccountSearchText, "Search Account");
 		AccountSearchText.sendKeys(AccountId);
 		WaitAngular(driver);
 
@@ -740,38 +795,19 @@ public class DashBoard extends CommonMethods {
 
 	public void ClickSummaryLink() {
 
-		try {
-			SummaryLink.click();
-			WaitAngular(driver);
-			Reporter.log("Summary Link Clicked");
-		} catch (NoSuchElementException e) {
-			log(e.getMessage());
-			Assert.assertTrue(false, "Summary Link not found");
-		}
+		ClickElement(SummaryLink, "Summary Link");
+
 	}
 
 	public void ClickTransactionLink() {
 
-		try {
-			TransactionLink.click();
-			WaitAngular(driver);
-			Reporter.log("Transaction Link Clicked");
-		} catch (NoSuchElementException e) {
-			log(e.getMessage());
-			Assert.assertTrue(false, "Transaction Link not found");
-		}
+		ClickElement(TransactionLink, "Transaction Link");
+
 	}
 
 	public void ClickServiceOrderLink() {
+		ClickElement(ServiceOrderLink, "Service Order Link");
 
-		try {
-			ServiceOrderLink.click();
-			WaitAngular(driver);
-			Reporter.log("Service Order Link Clicked");
-		} catch (NoSuchElementException e) {
-			log(e.getMessage());
-			Assert.assertTrue(false, "Service Order Link not found");
-		}
 	}
 
 	public HashMap<String, String> GetBillingInfo() {
@@ -997,61 +1033,30 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void ClickUserName() throws InterruptedException {
-		try {
-			WaitAngular(driver);
-			waitForObject(this.driver, LoggedUserLink);
-			LoggedUserLink.click();
 
-		} catch (NoSuchElementException | ElementClickInterceptedException e) {
-			log(e.getMessage());
-			Assert.assertTrue(false, "Unable to Click User");
-		}
+		ClickElement(LoggedUserLink, "User Name Link");
 
 	}
 
 	public void ClickOk() throws InterruptedException {
 
-		try {
-			WaitAngular(driver);
-			WaitForObjectbyId(this.driver, "ALERTO_Action_Button");
-			if (AlertOk.isDisplayed()) {
-				AlertOk.click();
-				WaitAngular(driver);
-				log("Click Ok");
-			}
-		} catch (NoSuchElementException e) {
-			log(e.getMessage());
-			Assert.assertTrue(false, "Ok not found");
-		}
+		WaitForObjectbyId(this.driver, "ALERTO_Action_Button");
+		ClickElement(AlertOk, "Alert OK");
+
 	}
 
 	public void ClickDynamicOk() {
 
-		try {
-			if (AlertOk.isDisplayed()) {
-				WaitAngular(driver);
-				AlertOk.click();
-				log("Click Ok");
-				WaitAngular(driver);
-			}
-		} catch (NoSuchElementException e) {
-			// Not throwing error due to dynamic data
-			log("Alert not configured");
+		WaitForObjectbyId(this.driver, "ALERTO_Action_Button");
+		ClickElement(AlertOk, "Ok Button");
 
-		}
 	}
 
 	public void ClickAlertDescription() throws InterruptedException {
-		try {
-			WaitAngular(driver);
-			waitForObject(this.driver, AlertDesc);
-			AlertDesc.click();
-			WaitAngular(driver);
-			log("Click Description");
-		} catch (NoSuchElementException e) {
-			log(e.getMessage());
-			Assert.assertTrue(false, "Alert description not found");
-		}
+
+		ClickElement(AlertDesc, "Alert Description");
+		log("Click Description");
+
 	}
 
 }
