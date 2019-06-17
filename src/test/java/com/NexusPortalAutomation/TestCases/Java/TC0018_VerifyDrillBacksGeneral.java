@@ -73,7 +73,7 @@ public class TC0018_VerifyDrillBacksGeneral extends BaseClass {
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
-	public void TestSecondayContact() throws IOException, InterruptedException {
+	public void VerifyDrillBacksGeneral() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();

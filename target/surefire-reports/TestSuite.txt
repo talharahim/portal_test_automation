@@ -1,12 +1,67 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 20, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 721.844 s <<< FAILURE! - in TestSuite
-TestSecondayContact(com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral)  Time elapsed: 18.521 s  <<< FAILURE!
-java.lang.AssertionError: expected [cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Bug reported] but found [null]
-	at com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral.TestSecondayContact(TC0018_VerifyDrillBacksGeneral.java:88)
+Tests run: 63, Failures: 21, Errors: 0, Skipped: 42, Time elapsed: 1.375 s <<< FAILURE! - in TestSuite
+readProp(com.NexusPortalAutomation.TestCases.Java.TC0011_VerifyBookMark)  Time elapsed: 0.594 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Invalid key code
 
-TestSearchAutobyRecent(com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction)  Time elapsed: 47.874 s  <<< FAILURE!
-java.lang.AssertionError: Object Not Found expected [true] but found [false]
-	at com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction.TestSearchAutobyRecent(TC0004_TestSearchbyRecentFunction.java:35)
+readProp(com.NexusPortalAutomation.TestCases.Java.TC0019_VerifyDrillBackTransactions)  Time elapsed: 0.594 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Invalid key code
+
+readProp(com.NexusPortalAutomation.TestCases.Java.TC0020_VerifyDrillBackServices)  Time elapsed: 0.594 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Invalid key code
+
+readProp(com.NexusPortalAutomation.TestCases.Java.TC0021_VerifyServicesOrderDetails)  Time elapsed: 0.594 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Invalid key code
+
+readProp(com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails)  Time elapsed: 0.61 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Invalid key code
+
+readProp(com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral)  Time elapsed: 0.61 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Invalid key code
+
+readProp(com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch)  Time elapsed: 0.61 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Invalid key code
+
+readProp(com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue)  Time elapsed: 0.61 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Invalid key code
+
+readProp(com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID)  Time elapsed: 0.61 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Invalid key code
+
+readProp(com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs)  Time elapsed: 0.61 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Invalid key code
+
+readProp(com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails)  Time elapsed: 0.61 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Invalid key code
+
+readProp(com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit)  Time elapsed: 0.625 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Invalid key code
+
+readProp(com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact)  Time elapsed: 0.625 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Invalid key code
+
+readProp(com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus)  Time elapsed: 0.625 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Invalid key code
+
+readProp(com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID)  Time elapsed: 0.625 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Invalid key code
+
+readProp(com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction)  Time elapsed: 0.625 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Invalid key code
+
+readProp(com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks)  Time elapsed: 0.625 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Invalid key code
+
+readProp(com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad)  Time elapsed: 0.625 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Invalid key code
+
+readProp(com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection)  Time elapsed: 0.641 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Invalid key code
+
+readProp(com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName)  Time elapsed: 0.641 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Invalid key code
+
+readProp(com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName)  Time elapsed: 0.641 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Invalid key code
 

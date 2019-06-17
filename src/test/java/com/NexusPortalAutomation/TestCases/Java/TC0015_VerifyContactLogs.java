@@ -31,7 +31,7 @@ public class TC0015_VerifyContactLogs extends BaseClass {
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
-	public void TestNotesSection() throws IOException, InterruptedException {
+	public void TestContactLogs() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();

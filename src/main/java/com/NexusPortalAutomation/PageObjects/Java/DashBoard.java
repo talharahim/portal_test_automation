@@ -143,11 +143,11 @@ public class DashBoard extends CommonMethods {
 	WebElement AccountSearchResult4;
 
 	// SSN 'CUST_SSN'
-	@FindBy(id = "'CUST_SSN'")
+	@FindBy(id = "CUST_SSN")
 	@CacheLookup
 	WebElement CustomerSSN;
 
-	@FindBy(id = "'CUST_Drivers_License'")
+	@FindBy(id = "CUST_Drivers_License")
 	@CacheLookup
 	WebElement DriverLic;
 
@@ -340,9 +340,9 @@ public class DashBoard extends CommonMethods {
 	WebElement SODV_Task_Completed_Date;
 
 	public HashMap<String, String> GetServiceOrderDetails() {
-		//This method will feth the service order details and returns it in a map
+		// This method will fetch the service order details and returns it in a map
 		WaitAngular(driver);
-		log("Verifying Service Order Details");
+		log("Verifying Service Order Details using HashMap");
 		HashMap<String, String> SrvcOrderInfo = new HashMap<String, String>();
 		SrvcOrderInfo.put("ServiceOrderReqId", ServOrder_Order_RequestID.getText());
 		SrvcOrderInfo.put("ServiceOrderDescription", SOLV_Service_Order_Description.getText());
@@ -351,7 +351,7 @@ public class DashBoard extends CommonMethods {
 		SrvcOrderInfo.put("SODVStatus", SODV_Status.getText());
 		SrvcOrderInfo.put("SODVDescriptionRequest", SODV_Description_Request.getText());
 		SrvcOrderInfo.put("SODVRequestId", SODV_Request_Id.getText());
-		SrvcOrderInfo.put("SODVRequestedDate ", SODV_Requested_Date.getText());
+		SrvcOrderInfo.put("SODVRequestedDate", SODV_Requested_Date.getText());
 		SrvcOrderInfo.put("SODVRequestedTime", SODV_Requested_Time.getText());
 		SrvcOrderInfo.put("SODVScheduledDate", SODV_Scheduled_Date.getText());
 		SrvcOrderInfo.put("SODVScheduledTime", SODV_Scheduled_Time.getText());
@@ -1047,8 +1047,12 @@ public class DashBoard extends CommonMethods {
 
 	public void ClickDynamicOk() {
 
-		WaitForObjectbyId(this.driver, "ALERTO_Action_Button");
-		ClickElement(AlertOk, "Ok Button");
+		try {
+			AlertOk.clear();
+
+		} catch (NoSuchElementException e) {
+			log("Alet not configured");
+		}
 
 	}
 

@@ -43,7 +43,7 @@ public class TC0016_VerifyBillingDetails extends BaseClass {
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
-	public void TestSecondayContact() throws IOException, InterruptedException {
+	public void VerifyBillingDetails() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();

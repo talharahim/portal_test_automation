@@ -51,6 +51,8 @@
 				name="com.NexusPortalAutomation.TestCases.Java.TC0019_VerifyDrillBackTransactions" />
 			<class
 				name="com.NexusPortalAutomation.TestCases.Java.TC0020_VerifyDrillBackServices" />
+				<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0021_VerifyServicesOrderDetails" />
 
 		</classes>
 

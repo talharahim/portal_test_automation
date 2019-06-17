@@ -38,7 +38,7 @@ public class TC0019_VerifyDrillBackTransactions extends BaseClass {
 	CommonMethods ComMethd = new CommonMethods();
     //This Test will test the search by Customer ID
 	@Test
-	public void TestSecondayContact() throws IOException, InterruptedException {
+	public void VerifyDrillBackTransactions() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();

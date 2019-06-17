@@ -39,14 +39,12 @@ public class BaseClass extends ReadProjectProperties {
 	public static ReadProjectProperties Read = new ReadProjectProperties();
 	public static int delay = 2000;
 	public static String DrillBackServURL;
-	
-	public  String GetDrillBackServerURL() {
+
+	public String GetDrillBackServerURL() {
 		DrillBackServURL = Read.ReadFile("DrillBackServ");
 		return DrillBackServURL;
 
 	}
-
-	
 
 	// This method writes in report
 	public void log(String message) {
@@ -121,8 +119,6 @@ public class BaseClass extends ReadProjectProperties {
 		log("Browser Maximised");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		context.setAttribute("webDriver", driver);
-		
-	
 
 	}
 

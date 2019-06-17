@@ -6,7 +6,7 @@
            skipped="2"
            time="0.000">
   <properties />
-            <testcase name="readProp" time="0.000" classname="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit">
+            <testcase name="readProp" time="0.000" classname="com.NexusPortalAutomation.TestCases.Java.TC0021_VerifyServicesOrderDetails">
                 <failure type="java.lang.IllegalArgumentException"
                   message="Invalid key code"
               >
@@ -49,10 +49,10 @@
 
           </testcase>
   
-            <testcase name="TearDown" time="0.0" classname="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit">
+            <testcase name="TearDown" time="0.0" classname="com.NexusPortalAutomation.TestCases.Java.TC0021_VerifyServicesOrderDetails">
           <skipped />
     </testcase>
-            <testcase name="TestContactEdit" time="0.0" classname="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit">
+            <testcase name="TestServiceOrderDetails" time="0.0" classname="com.NexusPortalAutomation.TestCases.Java.TC0021_VerifyServicesOrderDetails">
           <skipped />
     </testcase>
   

@@ -20,7 +20,7 @@ public class TC0005_TestSearchbyBookMarks extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String UserName = "Noel Ford";
+	public String UserName = "STATEMENTS001";
 	public CommonMethods ComMethd = new CommonMethods();
 
 	@Test(priority = 1)
