@@ -3,946 +3,130 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
 <head>
-  <title>Test Results Report - NexusTest</title>
+  <title>Test Results Report - Test</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="description" content="TestNG unit test results." />
   <link href="reportng.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>NexusTest</h1>
+<h1>Test</h1>
 <p>
-  Test duration: 489.451s
+  Test duration: 32.070s
 </p>
 
 
 
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  TestSearchAutobyFirstName
-      </td>
-  <td class="duration">
-    14.849s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Angular Request Completed in 21ms<br />
-                                Sign in Page Title Verified<br />
-                                Angular Request Completed in 17ms<br />
-                                User signed Admin<br />
-                                Enter Text for Search =Automation<br />
-                                Element [[ChromeDriver: chrome on XP (58350e0ee5b6f495ddafb6fa938a7343)] -&gt; id: SRCH_Input] displayed in 30ms<br />
-                                Angular request time 1064ms<br />
-                                Click Customer<br />
-                                Angular request time 1947ms<br />
-                                Angular request time 10ms<br />
-                                Customer Name found Automation Mate<br />
-                                Strings Not Matched: Mr. Automation Mate != Automation Mate<br />
-                                &lt;a href=&quot;F:\FailedTestsScreenshots\TestSearchAutobyFirstNameScreenshot-1560282707946.jpg&quot;&gt;&lt;align=&quot;left&quot;&gt;Error screenshot at Tue Jun 11 14:51:48 CDT 2019<br />
-                                &lt;img width=&quot;1024&quot; src=&quot;F:\FailedTestsScreenshots\TestSearchAutobyFirstNameScreenshot-1560282707946.jpg&quot; alt=&quot;screenshot at Tue Jun 11 14:51:48 CDT 2019&quot;/&gt;&lt;/a&gt;&lt;br /&gt;<br />
-                  </div>
-    
-
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [Automation Mate] but found [Mr. Automation Mate]</b></a><br />
-    <div class="stackTrace" id="exception-0">
-              org.testng.Assert.fail(Assert.java:96)<br />
-              org.testng.Assert.failNotEquals(Assert.java:776)<br />
-              org.testng.Assert.assertEqualsImpl(Assert.java:137)<br />
-              org.testng.Assert.assertEquals(Assert.java:118)<br />
-              org.testng.Assert.assertEquals(Assert.java:453)<br />
-              org.testng.Assert.assertEquals(Assert.java:463)<br />
-              com.NexusPortalAutomation.Utilities.Java.CommonMethods.VerifyString(CommonMethods.java:61)<br />
-              com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName.TestSearchAutobyFirstName(TC0002_TestSearchAutobyFirstName.java:34)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:498)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-              org.testng.TestRunner.run(TestRunner.java:505)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-              org.testng.TestNG.run(TestNG.java:1017)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                </div>
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  TestSearchAutobyLastName
-      </td>
-  <td class="duration">
-    14.741s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Angular Request Completed in 14ms<br />
-                                Sign in Page Title Verified<br />
-                                Angular Request Completed in 35ms<br />
-                                User signed Admin<br />
-                                Enter Text for Search =Mate<br />
-                                Element [[ChromeDriver: chrome on XP (e280e568c29ce62ed20e8db2f29f42f8)] -&gt; id: SRCH_Input] displayed in 78ms<br />
-                                Angular request time 983ms<br />
-                                Click Customer<br />
-                                Angular request time 1867ms<br />
-                                Angular request time 8ms<br />
-                                Customer Name found Automation Mate<br />
-                                Strings Not Matched: Mr. Automation Mate != Automation Mate<br />
-                                &lt;a href=&quot;F:\FailedTestsScreenshots\TestSearchAutobyLastNameScreenshot-1560282729047.jpg&quot;&gt;&lt;align=&quot;left&quot;&gt;Error screenshot at Tue Jun 11 14:52:09 CDT 2019<br />
-                                &lt;img width=&quot;1024&quot; src=&quot;F:\FailedTestsScreenshots\TestSearchAutobyLastNameScreenshot-1560282729047.jpg&quot; alt=&quot;screenshot at Tue Jun 11 14:52:09 CDT 2019&quot;/&gt;&lt;/a&gt;&lt;br /&gt;<br />
-                  </div>
-    
-
-        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [Automation Mate] but found [Mr. Automation Mate]</b></a><br />
-    <div class="stackTrace" id="exception-1">
-              org.testng.Assert.fail(Assert.java:96)<br />
-              org.testng.Assert.failNotEquals(Assert.java:776)<br />
-              org.testng.Assert.assertEqualsImpl(Assert.java:137)<br />
-              org.testng.Assert.assertEquals(Assert.java:118)<br />
-              org.testng.Assert.assertEquals(Assert.java:453)<br />
-              org.testng.Assert.assertEquals(Assert.java:463)<br />
-              com.NexusPortalAutomation.Utilities.Java.CommonMethods.VerifyString(CommonMethods.java:61)<br />
-              com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName.TestSearchAutobyLastName(TC0003_TestSearchAutobyLastName.java:34)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:498)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-              org.testng.TestRunner.run(TestRunner.java:505)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-              org.testng.TestNG.run(TestNG.java:1017)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                </div>
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  TestSearchAlertOnLoad
-      </td>
-  <td class="duration">
-    14.718s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Angular Request Completed in 117ms<br />
-                                Sign in Page Title Verified<br />
-                                Angular Request Completed in 32ms<br />
-                                User signed Admin<br />
-                                Element &apos;//input[@id=&apos;SRCH_Input&apos;]&apos; is displayed in 94ms<br />
-                                Element &apos;toolbar-saved&apos; is displayed in 62ms<br />
-                                Enter Text for Search =Alert<br />
-                                Element [[ChromeDriver: chrome on XP (342f0e232cea90cf817871bf428718f6)] -&gt; id: SRCH_Input] displayed in 48ms<br />
-                                Angular request time 946ms<br />
-                                Click Customer<br />
-                                Angular request time 1818ms<br />
-                                Element &apos;//div[@class=&apos;address-details&apos;]&apos; is displayed in 92ms<br />
-                                Angular request time 8ms<br />
-                                Customer Name found Alert Test<br />
-                                Strings Not Matched: Mr. Alert Test != Alert Test<br />
-                                &lt;a href=&quot;F:\FailedTestsScreenshots\TestSearchAlertOnLoadScreenshot-1560282665864.jpg&quot;&gt;&lt;align=&quot;left&quot;&gt;Error screenshot at Tue Jun 11 14:51:06 CDT 2019<br />
-                                &lt;img width=&quot;1024&quot; src=&quot;F:\FailedTestsScreenshots\TestSearchAlertOnLoadScreenshot-1560282665864.jpg&quot; alt=&quot;screenshot at Tue Jun 11 14:51:06 CDT 2019&quot;/&gt;&lt;/a&gt;&lt;br /&gt;<br />
-                  </div>
-    
-
-        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [Alert Test] but found [Mr. Alert Test]</b></a><br />
-    <div class="stackTrace" id="exception-2">
-              org.testng.Assert.fail(Assert.java:96)<br />
-              org.testng.Assert.failNotEquals(Assert.java:776)<br />
-              org.testng.Assert.assertEqualsImpl(Assert.java:137)<br />
-              org.testng.Assert.assertEquals(Assert.java:118)<br />
-              org.testng.Assert.assertEquals(Assert.java:453)<br />
-              org.testng.Assert.assertEquals(Assert.java:463)<br />
-              com.NexusPortalAutomation.Utilities.Java.CommonMethods.VerifyString(CommonMethods.java:61)<br />
-              com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad.TestSearchAlertOnLoad(TC0006_TestAlertOnLoad.java:37)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:498)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-              org.testng.TestRunner.run(TestRunner.java:505)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-              org.testng.TestNG.run(TestNG.java:1017)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                </div>
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  TestSummarySectionOnChange
-      </td>
-  <td class="duration">
-    15.125s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Angular Request Completed in 18ms<br />
-                                Sign in Page Title Verified<br />
-                                Angular Request Completed in 46ms<br />
-                                User signed Admin<br />
-                                Element &apos;//input[@id=&apos;SRCH_Input&apos;]&apos; is displayed in 94ms<br />
-                                Element &apos;toolbar-saved&apos; is displayed in 63ms<br />
-                                Angular Request Completed in 16ms<br />
-                                Enter Text for Search =Automation<br />
-                                Element [[ChromeDriver: chrome on XP (d7ed80192ae1c3f8f0f62d89a54ce309)] -&gt; id: SRCH_Input] displayed in 30ms<br />
-                                Angular request time 1066ms<br />
-                                Click Customer<br />
-                                Angular request time 2080ms<br />
-                                Element &apos;//div[@class=&apos;address-details&apos;]&apos; is displayed in 51ms<br />
-                                Angular request time 28ms<br />
-                                Customer Name found Automation Mate<br />
-                                Strings Not Matched: Mr. Automation Mate != Automation Mate<br />
-                                &lt;a href=&quot;F:\FailedTestsScreenshots\TestSummarySectionOnChangeScreenshot-1560282687055.jpg&quot;&gt;&lt;align=&quot;left&quot;&gt;Error screenshot at Tue Jun 11 14:51:27 CDT 2019<br />
-                                &lt;img width=&quot;1024&quot; src=&quot;F:\FailedTestsScreenshots\TestSummarySectionOnChangeScreenshot-1560282687055.jpg&quot; alt=&quot;screenshot at Tue Jun 11 14:51:27 CDT 2019&quot;/&gt;&lt;/a&gt;&lt;br /&gt;<br />
-                  </div>
-    
-
-        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [Automation Mate] but found [Mr. Automation Mate]</b></a><br />
-    <div class="stackTrace" id="exception-3">
-              org.testng.Assert.fail(Assert.java:96)<br />
-              org.testng.Assert.failNotEquals(Assert.java:776)<br />
-              org.testng.Assert.assertEqualsImpl(Assert.java:137)<br />
-              org.testng.Assert.assertEquals(Assert.java:118)<br />
-              org.testng.Assert.assertEquals(Assert.java:453)<br />
-              org.testng.Assert.assertEquals(Assert.java:463)<br />
-              com.NexusPortalAutomation.Utilities.Java.CommonMethods.VerifyString(CommonMethods.java:61)<br />
-              com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection.TestSummarySectionOnChange(TC0007_TestSummarySection.java:39)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:498)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-              org.testng.TestRunner.run(TestRunner.java:505)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-              org.testng.TestNG.run(TestNG.java:1017)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                </div>
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  TestBillingStatements
-      </td>
-  <td class="duration">
-    16.587s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Angular Request Completed in 125ms<br />
-                                Sign in Page Title Verified<br />
-                                Angular Request Completed in 116ms<br />
-                                User signed Admin<br />
-                                Enter Text for Search =STATEMENTS001<br />
-                                Element [[ChromeDriver: chrome on XP (57fa55c8921389fd0b806cb21d7eb839)] -&gt; id: SRCH_Input] displayed in 40ms<br />
-                                Angular request time 946ms<br />
-                                Click Customer<br />
-                                Angular request time 1936ms<br />
-                                Angular request time 984ms<br />
-                                Customer Location Id found STATEMENTS001<br />
-                                Strings Matched: STATEMENTS001 = STATEMENTS001<br />
-                                Angular request time 16ms<br />
-                                Angular request time 11ms<br />
-                                Verify Bill Statement Date<br />
-                                Angular request time 12ms<br />
-                                Element [[ChromeDriver: chrome on XP (57fa55c8921389fd0b806cb21d7eb839)] -&gt; id: BILL_Statement_1] displayed in 30ms<br />
-                                Strings Matched: Jul 31, 2019 = Jul 31, 2019<br />
-                                Angular request time 9ms<br />
-                                Element [[ChromeDriver: chrome on XP (57fa55c8921389fd0b806cb21d7eb839)] -&gt; xpath: //*[@id=&quot;cdk-overlay-1&quot;]/div/div/button/span[2]] displayed in 29ms<br />
-                                Strings Matched: $56.71 = $56.71<br />
-                                Angular request time 7ms<br />
-                                Angular request time 7ms<br />
-                                Element [[ChromeDriver: chrome on XP (57fa55c8921389fd0b806cb21d7eb839)] -&gt; css selector: body &gt; wo-root &gt; wo-dashboard &gt; header &gt; div.user.layout-col-3.flex &gt; a.user__account] displayed in 28ms<br />
-                                element click intercepted: Element &lt;a _ngcontent-c9=&quot;&quot; aria-haspopup=&quot;true&quot; class=&quot;user__account&quot; id=&quot;USR_Name&quot; ng-reflect-menu=&quot;[object Object]&quot;&gt;...&lt;/a&gt; is not clickable at point (1806, 47). Other element would receive the click: &lt;div class=&quot;cdk-overlay-backdrop cdk-overlay-transparent-backdrop cdk-overlay-backdrop-showing&quot;&gt;&lt;/div&gt;<br/>
-&nbsp; (Session info: chrome=75.0.3770.80)<br/>
-&nbsp; (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 0 milliseconds<br/>
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;<br/>
-System info: host: &apos;RND-BASE-A&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60736}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}<br/>
-Session ID: 57fa55c8921389fd0b806cb21d7eb839<br />
-                                &lt;a href=&quot;F:\FailedTestsScreenshots\TestBillingStatementsScreenshot-1560282562138.jpg&quot;&gt;&lt;align=&quot;left&quot;&gt;Error screenshot at Tue Jun 11 14:49:22 CDT 2019<br />
-                                &lt;img width=&quot;1024&quot; src=&quot;F:\FailedTestsScreenshots\TestBillingStatementsScreenshot-1560282562138.jpg&quot; alt=&quot;screenshot at Tue Jun 11 14:49:22 CDT 2019&quot;/&gt;&lt;/a&gt;&lt;br /&gt;<br />
-                  </div>
-    
-
-        <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Unable to logout or Element not found expected [true] but found [false]</b></a><br />
-    <div class="stackTrace" id="exception-4">
-              org.testng.Assert.fail(Assert.java:96)<br />
-              org.testng.Assert.failNotEquals(Assert.java:776)<br />
-              org.testng.Assert.assertTrue(Assert.java:44)<br />
-              com.NexusPortalAutomation.PageObjects.Java.DashBoard.LogOut(DashBoard.java:931)<br />
-              com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue.TestBillingStatements(TC0017_StatementsValue.java:45)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
-              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.lang.reflect.Method.invoke(Method.java:498)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-              org.testng.TestRunner.run(TestRunner.java:505)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
-              org.testng.TestNG.run(TestNG.java:1017)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
-                </div>
-      </td>
-</tr>
-      </table>
 
 
   <table class="resultsTable">
     <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID</td>
+        <td colspan="3" class="group">com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails</td>
       </tr>
             
 <tr>
   <td class="method">
-                  TestSearchID
+                  VerifyBillingDetails
       </td>
   <td class="duration">
-    34.075s
+    27.413s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Angular Request Completed in 172ms<br />
-                                Sign in Page Title Verified<br />
-                                Angular Request Completed in 15ms<br />
-                                User signed Admin<br />
-                                Enter Text for Search =0000011111<br />
-                                Element [[ChromeDriver: chrome on XP (b09663af9ba19f31c2785215a8202dca)] -&gt; id: SRCH_Input] displayed in 62ms<br />
-                                Angular request time 843ms<br />
-                                Click Customer<br />
-                                Angular request time 1883ms<br />
-                                Angular request time 625ms<br />
-                                CustomerId found 0000011111<br />
-                                Strings Matched: 0000011111 = 0000011111<br />
-                                Angular request time 31ms<br />
-                                no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;cdk-overlay-1&quot;}<br/>
-&nbsp; (Session info: chrome=75.0.3770.80)<br/>
-&nbsp; (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 0 milliseconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;<br/>
-System info: host: &apos;RND-BASE-A&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59202}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}<br/>
-Session ID: b09663af9ba19f31c2785215a8202dca<br/>
-*** Element info: {Using=id, value=cdk-overlay-1}<br />
-                                Angular request time 16ms<br />
-                                Element [[ChromeDriver: chrome on XP (b09663af9ba19f31c2785215a8202dca)] -&gt; css selector: body &gt; wo-root &gt; wo-dashboard &gt; header &gt; div.user.layout-col-3.flex &gt; a.user__account] displayed in 31ms<br />
-                                Element [[ChromeDriver: chrome on XP (b09663af9ba19f31c2785215a8202dca)] -&gt; css selector: .logout-label] displayed in 41ms<br />
-                                Angular request time 25ms<br />
-                  </div>
-    
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  TestSearchAutobyRecent
-      </td>
-  <td class="duration">
-    43.779s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Angular Request Completed in 116ms<br />
-                                Sign in Page Title Verified<br />
-                                Angular Request Completed in 46ms<br />
-                                User signed Admin<br />
-                                Element &apos;//input[@id=&apos;SRCH_Input&apos;]&apos; is displayed in 63ms<br />
-                                Click Recent<br />
-                                Recent Customer =Aut Statement<br />
-                                Click Customer<br />
-                                Angular request time 1969ms<br />
-                                Alert not configured<br />
-                                Element &apos;//div[@class=&apos;address-details&apos;]&apos; is displayed in 94ms<br />
-                                Angular request time 16ms<br />
-                                Strings Matched: Aut Statement = Aut Statement<br />
-                                Angular request time 17ms<br />
-                                no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;cdk-overlay-1&quot;}<br/>
-&nbsp; (Session info: chrome=75.0.3770.80)<br/>
-&nbsp; (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 0 milliseconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;<br/>
-System info: host: &apos;RND-BASE-A&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60926}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}<br/>
-Session ID: 7edd6daeb1ac41732ba839f251fbadce<br/>
-*** Element info: {Using=id, value=cdk-overlay-1}<br />
-                                Angular request time 15ms<br />
-                                Element [[ChromeDriver: chrome on XP (7edd6daeb1ac41732ba839f251fbadce)] -&gt; css selector: body &gt; wo-root &gt; wo-dashboard &gt; header &gt; div.user.layout-col-3.flex &gt; a.user__account] displayed in 48ms<br />
-                                Element [[ChromeDriver: chrome on XP (7edd6daeb1ac41732ba839f251fbadce)] -&gt; css selector: .logout-label] displayed in 34ms<br />
-                                Angular request time 18ms<br />
-                  </div>
-    
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  TestSearchAutobyBookMark
-      </td>
-  <td class="duration">
-    30.134s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Angular Request Completed in 125ms<br />
-                                Sign in Page Title Verified<br />
-                                Angular Request Completed in 22ms<br />
-                                User signed Admin<br />
-                                Element &apos;//input[@id=&apos;SRCH_Input&apos;]&apos; is displayed in 77ms<br />
-                                Element &apos;SRCH_Button_Favorites&apos; is displayed in 78ms<br />
-                                Click BookMarked Customer<br />
-                                Click Customer<br />
-                                Angular request time 2213ms<br />
-                                Element &apos;//div[@class=&apos;address-details&apos;]&apos; is displayed in 70ms<br />
-                                Angular request time 31ms<br />
-                                Customer Name found Noel Ford<br />
-                                Strings Matched: Noel Ford = Noel Ford<br />
-                                Angular request time 15ms<br />
-                                no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;cdk-overlay-1&quot;}<br/>
-&nbsp; (Session info: chrome=75.0.3770.80)<br/>
-&nbsp; (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 0 milliseconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;<br/>
-System info: host: &apos;RND-BASE-A&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61137}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}<br/>
-Session ID: 9109e7bd4495f849f69229cea5a4aa17<br/>
-*** Element info: {Using=id, value=cdk-overlay-1}<br />
-                                Angular request time 15ms<br />
-                                Element [[ChromeDriver: chrome on XP (9109e7bd4495f849f69229cea5a4aa17)] -&gt; css selector: body &gt; wo-root &gt; wo-dashboard &gt; header &gt; div.user.layout-col-3.flex &gt; a.user__account] displayed in 47ms<br />
-                                Element [[ChromeDriver: chrome on XP (9109e7bd4495f849f69229cea5a4aa17)] -&gt; css selector: .logout-label] displayed in 36ms<br />
-                                Angular request time 18ms<br />
-                  </div>
-    
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  TestSearchbyLocationID
-      </td>
-  <td class="duration">
-    34.431s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Angular Request Completed in 174ms<br />
-                                Sign in Page Title Verified<br />
-                                Angular Request Completed in 12ms<br />
-                                User signed Admin<br />
-                                Enter Text for Search =LOC@0001<br />
-                                Element [[ChromeDriver: chrome on XP (70c69be2838fdb1f39de8d3e78b709de)] -&gt; id: SRCH_Input] displayed in 43ms<br />
-                                Angular request time 939ms<br />
-                                Click Customer<br />
-                                Angular request time 2298ms<br />
-                                Angular request time 13ms<br />
-                                Customer Location Id found LOC@0001<br />
-                                Strings Matched: LOC@0001 = LOC@0001<br />
-                                Angular request time 16ms<br />
-                                Verifying Address Details<br />
-                                Strings Matched: 007 Aut Automation Street Rt 20001 Apt = 007 Aut Automation Street Rt 20001 Apt<br />
-                                Strings Matched: Cloudy = Cloudy<br />
-                                Strings Matched: D = D<br />
-                                Strings Matched: 00720-019 = 00720-019<br />
-                                Angular request time 26ms<br />
-                                no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;cdk-overlay-1&quot;}<br/>
-&nbsp; (Session info: chrome=75.0.3770.80)<br/>
-&nbsp; (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 0 milliseconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;<br/>
-System info: host: &apos;RND-BASE-A&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59404}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}<br/>
-Session ID: 70c69be2838fdb1f39de8d3e78b709de<br/>
-*** Element info: {Using=id, value=cdk-overlay-1}<br />
-                                Angular request time 15ms<br />
-                                Element [[ChromeDriver: chrome on XP (70c69be2838fdb1f39de8d3e78b709de)] -&gt; css selector: body &gt; wo-root &gt; wo-dashboard &gt; header &gt; div.user.layout-col-3.flex &gt; a.user__account] displayed in 47ms<br />
-                                Element [[ChromeDriver: chrome on XP (70c69be2838fdb1f39de8d3e78b709de)] -&gt; css selector: .logout-label] displayed in 38ms<br />
-                                Angular request time 19ms<br />
-                  </div>
-    
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  TestSearchAccount
-      </td>
-  <td class="duration">
-    32.233s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Angular Request Completed in 136ms<br />
-                                Sign in Page Title Verified<br />
-                                Angular Request Completed in 44ms<br />
-                                User signed Admin<br />
-                                Enter Text for Search =LOC@0004<br />
-                                Element [[ChromeDriver: chrome on XP (c6890f1e1e096618084e7a5bd3114951)] -&gt; id: SRCH_Input] displayed in 79ms<br />
-                                Angular request time 1046ms<br />
-                                Click Customer<br />
-                                Angular request time 1749ms<br />
-                                Angular request time 12ms<br />
-                                Customer Location Id found LOC@0004<br />
-                                Strings Matched: LOC@0004 = LOC@0004<br />
-                                Angular request time 8ms<br />
-                                Click on Account Drop down<br />
-                                Element [[ChromeDriver: chrome on XP (c6890f1e1e096618084e7a5bd3114951)] -&gt; id: SRCH_Accounts_Label] displayed in 30ms<br />
-                                Enter Account Name<br />
-                                Angular request time 14ms<br />
-                                Element [[ChromeDriver: chrome on XP (c6890f1e1e096618084e7a5bd3114951)] -&gt; id: SRCH_Accounts] displayed in 38ms<br />
-                                Angular request time 111ms<br />
-                                Angular request time 30ms<br />
-                                Verify Account Name =1 Water 1 Bldg<br />
-                                Element [[ChromeDriver: chrome on XP (c6890f1e1e096618084e7a5bd3114951)] -&gt; id: SRCH_Accounts_Result1] displayed in 79ms<br />
-                                Strings Matched: 1 Water 1 Bldg<br/>
-New Smyrna Beach FL 12312-3<br/>
-LOC@0004<br/>
-$0.00<br/>
-Apr 2019 - Current<br/>
-Current = 1 Water 1 Bldg<br />
-                                Angular request time 15ms<br />
-                                Angular request time 15ms<br />
-                                no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;cdk-overlay-1&quot;}<br/>
-&nbsp; (Session info: chrome=75.0.3770.80)<br/>
-&nbsp; (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 0 milliseconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;<br/>
-System info: host: &apos;RND-BASE-A&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59609}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}<br/>
-Session ID: c6890f1e1e096618084e7a5bd3114951<br/>
-*** Element info: {Using=id, value=cdk-overlay-1}<br />
-                                Angular request time 47ms<br />
-                                Element [[ChromeDriver: chrome on XP (c6890f1e1e096618084e7a5bd3114951)] -&gt; css selector: body &gt; wo-root &gt; wo-dashboard &gt; header &gt; div.user.layout-col-3.flex &gt; a.user__account] displayed in 78ms<br />
-                                Element [[ChromeDriver: chrome on XP (c6890f1e1e096618084e7a5bd3114951)] -&gt; css selector: .logout-label] displayed in 33ms<br />
-                                Angular request time 27ms<br />
-                  </div>
-    
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  TestCustomerDetails
-      </td>
-  <td class="duration">
-    31.729s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Angular Request Completed in 17ms<br />
-                                Sign in Page Title Verified<br />
-                                Angular Request Completed in 15ms<br />
-                                User signed Admin<br />
-                                Enter Text for Search =LOC@0001<br />
-                                Element [[ChromeDriver: chrome on XP (be9c5a8da732dc1865cd0476c7d0e668)] -&gt; id: SRCH_Input] displayed in 21ms<br />
-                                Angular request time 950ms<br />
-                                Click Customer<br />
-                                Angular request time 1904ms<br />
-                                Angular request time 10ms<br />
-                                Customer Location Id found LOC@0001<br />
-                                Strings Matched: LOC@0001 = LOC@0001<br />
-                                Angular request time 11ms<br />
-                                Verifying Customer Details<br />
-                                Strings Matched: 2312 = 2312<br />
-                                Strings Matched: Driv12312OUL312 = Driv12312OUL312<br />
-                                Strings Matched: (090) 078-6010 = (090) 078-6010<br />
-                                Strings Matched: + Ext. 2112 = + Ext. 2112<br />
-                                Strings Matched: automation@cogsdale.com = automation@cogsdale.com<br />
-                                Strings Matched: 007 Test Apt = 007 Test Apt<br />
-                                Strings Matched: New York NY 12345-67890 = New York NY 12345-67890<br />
-                                Angular request time 16ms<br />
-                                no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;cdk-overlay-1&quot;}<br/>
-&nbsp; (Session info: chrome=75.0.3770.80)<br/>
-&nbsp; (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 0 milliseconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;<br/>
-System info: host: &apos;RND-BASE-A&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59799}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}<br/>
-Session ID: be9c5a8da732dc1865cd0476c7d0e668<br/>
-*** Element info: {Using=id, value=cdk-overlay-1}<br />
-                                Angular request time 31ms<br />
-                                Element [[ChromeDriver: chrome on XP (be9c5a8da732dc1865cd0476c7d0e668)] -&gt; css selector: body &gt; wo-root &gt; wo-dashboard &gt; header &gt; div.user.layout-col-3.flex &gt; a.user__account] displayed in 63ms<br />
-                                Element [[ChromeDriver: chrome on XP (be9c5a8da732dc1865cd0476c7d0e668)] -&gt; css selector: .logout-label] displayed in 32ms<br />
-                                Angular request time 16ms<br />
-                  </div>
-    
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  TestCreditStatus
-      </td>
-  <td class="duration">
-    30.952s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Angular Request Completed in 33ms<br />
-                                Sign in Page Title Verified<br />
-                                Angular Request Completed in 2ms<br />
-                                User signed Admin<br />
-                                Enter Text for Search =LOC@0001<br />
-                                Element [[ChromeDriver: chrome on XP (4a1db0327cbe44102828c28e7297a594)] -&gt; id: SRCH_Input] displayed in 32ms<br />
-                                Angular request time 951ms<br />
-                                Click Customer<br />
-                                Angular request time 1737ms<br />
-                                Angular request time 16ms<br />
-                                Customer Location Id found LOC@0001<br />
-                                Strings Matched: LOC@0001 = LOC@0001<br />
-                                Verify Credit Status<br />
-                                Angular request time 8ms<br />
-                                Angular request time 9ms<br />
-                                no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;cdk-overlay-1&quot;}<br/>
-&nbsp; (Session info: chrome=75.0.3770.80)<br/>
-&nbsp; (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 0 milliseconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;<br/>
-System info: host: &apos;RND-BASE-A&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59988}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}<br/>
-Session ID: 4a1db0327cbe44102828c28e7297a594<br/>
-*** Element info: {Using=id, value=cdk-overlay-1}<br />
-                                Angular request time 47ms<br />
-                                Element [[ChromeDriver: chrome on XP (4a1db0327cbe44102828c28e7297a594)] -&gt; css selector: body &gt; wo-root &gt; wo-dashboard &gt; header &gt; div.user.layout-col-3.flex &gt; a.user__account] displayed in 78ms<br />
-                                Element [[ChromeDriver: chrome on XP (4a1db0327cbe44102828c28e7297a594)] -&gt; css selector: .logout-label] displayed in 33ms<br />
-                                Angular request time 14ms<br />
-                  </div>
-    
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  TestContactEdit
-      </td>
-  <td class="duration">
-    36.431s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Angular Request Completed in 139ms<br />
+                        Angular Request Completed in 89ms<br />
                                 Sign in Page Title Verified<br />
                                 Angular Request Completed in 6ms<br />
                                 User signed Admin<br />
-                                Enter Text for Search =LOC@0004<br />
-                                Element [[ChromeDriver: chrome on XP (6faf2b88fcbf863674b83934110fb537)] -&gt; id: SRCH_Input] displayed in 38ms<br />
-                                Angular request time 1051ms<br />
+                                Enter Text for Search =LOC@0001<br />
+                                Element [[ChromeDriver: chrome on XP (0daa1a26ea84838f58f077db8b5bfa4f)] -&gt; id: SRCH_Input] displayed in 62ms<br />
+                                Angular request time 954ms<br />
                                 Click Customer<br />
-                                Angular request time 1810ms<br />
-                                Angular request time 19ms<br />
-                                Customer Location Id found LOC@0004<br />
-                                Strings Matched: LOC@0004 = LOC@0004<br />
-                                Angular request time 18ms<br />
-                                Element &apos;[[ChromeDriver: chrome on XP (6faf2b88fcbf863674b83934110fb537)] -&gt; id: &apos;CUST_Drillback_Button&apos;]&apos; is displayed in 139ms<br />
-                                Angular request time 18ms<br />
-                                Angular request time 9ms<br />
-                                Element &apos;[[ChromeDriver: chrome on XP (6faf2b88fcbf863674b83934110fb537)] -&gt; id: ECI_Phone_Number_1]&apos; is displayed in 91ms<br />
-                                Angular request time 18ms<br />
-                                Angular request time 9ms<br />
-                                Angular request time 8ms<br />
-                                Element &apos;[[ChromeDriver: chrome on XP (6faf2b88fcbf863674b83934110fb537)] -&gt; id: ECI_Email]&apos; is displayed in 131ms<br />
-                                Angular request time 17ms<br />
-                                Angular request time 10ms<br />
-                                Angular request time 9ms<br />
-                                Element &apos;[[ChromeDriver: chrome on XP (6faf2b88fcbf863674b83934110fb537)] -&gt; id: ECI_Action_Button]&apos; is displayed in 86ms<br />
-                                Angular request time 506ms<br />
-                                Angular request time 227ms<br />
-                                Verifying Customer Details<br />
-                                Strings Matched: 2312 = 2312<br />
-                                Strings Matched: Driv12312OUL312 = Driv12312OUL312<br />
-                                Strings Matched: (090) 078-6010 = (090) 078-6010<br />
-                                Strings Matched: + Ext. 2112 = + Ext. 2112<br />
-                                Strings Matched: automation@cogsdale.com = automation@cogsdale.com<br />
-                                Strings Matched: 007 Test Apt = 007 Test Apt<br />
-                                Strings Matched: New York NY 12345-67890 = New York NY 12345-67890<br />
-                                Angular request time 10ms<br />
-                                no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;cdk-overlay-1&quot;}<br/>
-&nbsp; (Session info: chrome=75.0.3770.80)<br/>
-&nbsp; (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 0 milliseconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;<br/>
-System info: host: &apos;RND-BASE-A&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60175}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}<br/>
-Session ID: 6faf2b88fcbf863674b83934110fb537<br/>
-*** Element info: {Using=id, value=cdk-overlay-1}<br />
+                                Angular request time 1794ms<br />
+                                Angular request time 465ms<br />
+                                Customer Location Id found LOC@0001<br />
+                                Strings Matched: LOC@0001 = LOC@0001<br />
                                 Angular request time 15ms<br />
-                                Element [[ChromeDriver: chrome on XP (6faf2b88fcbf863674b83934110fb537)] -&gt; css selector: body &gt; wo-root &gt; wo-dashboard &gt; header &gt; div.user.layout-col-3.flex &gt; a.user__account] displayed in 47ms<br />
-                                Element [[ChromeDriver: chrome on XP (6faf2b88fcbf863674b83934110fb537)] -&gt; css selector: .logout-label] displayed in 44ms<br />
-                                Angular request time 13ms<br />
-                  </div>
-    
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  TestSecondayContact
-      </td>
-  <td class="duration">
-    33.959s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Angular Request Completed in 112ms<br />
-                                Sign in Page Title Verified<br />
-                                Angular Request Completed in 47ms<br />
-                                User signed Admin<br />
-                                Enter Text for Search =LOC@0004<br />
-                                Element [[ChromeDriver: chrome on XP (7a87b27dcced7edd77cec32a5c9d71d5)] -&gt; id: SRCH_Input] displayed in 43ms<br />
-                                Angular request time 1047ms<br />
-                                Click Customer<br />
-                                Angular request time 1755ms<br />
-                                Angular request time 9ms<br />
-                                Customer Location Id found LOC@0004<br />
-                                Strings Matched: LOC@0004 = LOC@0004<br />
+                                Element &apos;BILL_Current_Balance&apos; is displayed in 63ms<br />
+                                Element &apos;BILL_Unposted_Balance&apos; is displayed in 80ms<br />
+                                Element &apos;BILL_Account_Balance&apos; is displayed in 67ms<br />
+                                Element &apos;BILL_Past_Due&apos; is displayed in 52ms<br />
+                                Element &apos;BILL_Installment_Budget&apos; is displayed in 62ms<br />
+                                Element &apos;BILL_Over_Short&apos; is displayed in 58ms<br />
+                                Strings Matched: $35.26 = $35.26<br />
+                                Strings Matched: $0.00 = $0.00<br />
+                                Strings Matched: $0.00 = $0.00<br />
+                                Strings Matched: $92.50 = $92.50<br />
+                                Strings Matched: $50.00 = $50.00<br />
+                                Strings Matched: $57.24 = $57.24<br />
+                                Strings Matched: $35.26 = $35.26<br />
+                                Element [[ChromeDriver: chrome on XP (0daa1a26ea84838f58f077db8b5bfa4f)] -&gt; id: BILL_E_Bill] displayed in 36ms<br />
+                                Strings Matched: ON = ON<br />
+                                Element [[ChromeDriver: chrome on XP (0daa1a26ea84838f58f077db8b5bfa4f)] -&gt; id: BILL_Auto_Pay] displayed in 34ms<br />
+                                Strings Matched: OFF = OFF<br />
+                                Element [[ChromeDriver: chrome on XP (0daa1a26ea84838f58f077db8b5bfa4f)] -&gt; id: BILL_Deposit_Amount] displayed in 36ms<br />
+                                Strings Matched: $0.00 = $0.00<br />
                                 Angular request time 10ms<br />
-                                Angular request time 13ms<br />
-                                Angular request time 22ms<br />
-                                Angular request time 9ms<br />
-                                Strings Matched: Secondary Customer (SECONDARY) = Secondary Customer (SECONDARY)<br />
-                                Angular request time 9ms<br />
-                                no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;cdk-overlay-1&quot;}<br/>
-&nbsp; (Session info: chrome=75.0.3770.80)<br/>
-&nbsp; (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 0 milliseconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;<br/>
-System info: host: &apos;RND-BASE-A&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60377}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}<br/>
-Session ID: 7a87b27dcced7edd77cec32a5c9d71d5<br/>
-*** Element info: {Using=id, value=cdk-overlay-1}<br />
-                                Angular request time 47ms<br />
-                                Element [[ChromeDriver: chrome on XP (7a87b27dcced7edd77cec32a5c9d71d5)] -&gt; css selector: body &gt; wo-root &gt; wo-dashboard &gt; header &gt; div.user.layout-col-3.flex &gt; a.user__account] displayed in 47ms<br />
-                                Element [[ChromeDriver: chrome on XP (7a87b27dcced7edd77cec32a5c9d71d5)] -&gt; css selector: .logout-label] displayed in 40ms<br />
-                                Angular request time 83ms<br />
-                  </div>
-    
-
-      </td>
-</tr>
-          <tr>
-        <td colspan="3" class="group">com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  TestNotesSection
-      </td>
-  <td class="duration">
-    32.774s
-  </td>
-  <td class="result">
-        
-    
-            <div class="testOutput">
-                        Angular Request Completed in 114ms<br />
-                                Sign in Page Title Verified<br />
-                                Angular Request Completed in 8ms<br />
-                                User signed Admin<br />
-                                Enter Text for Search =LOC@0004<br />
-                                Element [[ChromeDriver: chrome on XP (ce9f7f88fe2fb0889af3ce11965becfb)] -&gt; id: SRCH_Input] displayed in 43ms<br />
-                                Angular request time 1053ms<br />
-                                Click Customer<br />
-                                Angular request time 1922ms<br />
-                                Angular request time 9ms<br />
-                                Customer Location Id found LOC@0004<br />
-                                Strings Matched: LOC@0004 = LOC@0004<br />
-                                Angular request time 9ms<br />
+                                Verifying Service Type 1<br />
+                                Strings Matched: ELECTRIC = ELECTRIC<br />
+                                Strings Matched: 163598645 = 163598645<br />
+                                Strings Matched: GS-PK ENERGY = GS-PK ENERGY<br />
+                                Strings Matched: 1.00000 = 1.00000<br />
+                                Strings Matched: Active = Active<br />
                                 Angular request time 10ms<br />
-                                Angular request time 645ms<br />
-                                Angular request time 323ms<br />
-                                Strings Matched: Notes added2019/06/11 14:44:00 = Notes added2019/06/11 14:44:00<br />
-                                Angular request time 10ms<br />
-                                no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;cdk-overlay-1&quot;}<br/>
-&nbsp; (Session info: chrome=75.0.3770.80)<br/>
-&nbsp; (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
-Command duration or timeout: 0 milliseconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;<br/>
-System info: host: &apos;RND-BASE-A&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60552}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}<br/>
-Session ID: ce9f7f88fe2fb0889af3ce11965becfb<br/>
-*** Element info: {Using=id, value=cdk-overlay-1}<br />
-                                Angular request time 31ms<br />
-                                Element [[ChromeDriver: chrome on XP (ce9f7f88fe2fb0889af3ce11965becfb)] -&gt; css selector: body &gt; wo-root &gt; wo-dashboard &gt; header &gt; div.user.layout-col-3.flex &gt; a.user__account] displayed in 63ms<br />
-                                Element [[ChromeDriver: chrome on XP (ce9f7f88fe2fb0889af3ce11965becfb)] -&gt; css selector: .logout-label] displayed in 31ms<br />
-                                Angular request time 16ms<br />
+                                Verifying Service GAS <br />
+                                Strings Matched: GAS = GAS<br />
+                                Strings Matched: EQUIP-GAS-3 = EQUIP-GAS-3<br />
+                                Strings Matched: GRESMTR40 = GRESMTR40<br />
+                                Strings Matched: 1.00000 = 1.00000<br />
+                                Strings Matched: Active = Active<br />
+                                Angular request time 19ms<br />
+                                Verifying Service Type Internet<br />
+                                Strings Matched: INTERNET = INTERNET<br />
+                                Strings Matched: EQUIP-PHONE-02 = EQUIP-PHONE-02<br />
+                                Strings Matched: INTERNET-60 = INTERNET-60<br />
+                                Strings Matched: 1.00000 = 1.00000<br />
+                                Strings Matched: Active = Active<br />
+                                Element [[ChromeDriver: chrome on XP (0daa1a26ea84838f58f077db8b5bfa4f)] -&gt; id: SERV_Tab_Type_1_Icon] displayed in 37ms<br />
+                                Element [[ChromeDriver: chrome on XP (0daa1a26ea84838f58f077db8b5bfa4f)] -&gt; id: SERV_Tab_Type_1_Icon] displayed in 11ms<br />
+                                Click Electric Icon<br />
+                                Angular request time 429ms<br />
+                                Angular request time 25ms<br />
+                                Verifying Service TAB, Row 1<br />
+                                Strings Matched: ELECTRIC = ELECTRIC<br />
+                                Strings Matched: 163598645 = 163598645<br />
+                                Strings Matched: GS-PK ENERGY = GS-PK ENERGY<br />
+                                Strings Matched: 1.00000 = 1.00000<br />
+                                Strings Matched: Active = Active<br />
+                                Element [[ChromeDriver: chrome on XP (0daa1a26ea84838f58f077db8b5bfa4f)] -&gt; id: SERV_Tab_Type_2_Icon] displayed in 30ms<br />
+                                Element [[ChromeDriver: chrome on XP (0daa1a26ea84838f58f077db8b5bfa4f)] -&gt; id: SERV_Tab_Type_2_Icon] displayed in 12ms<br />
+                                Click Gas Icon<br />
+                                Angular request time 347ms<br />
+                                Angular request time 14ms<br />
+                                Verifying Service GAS Row 1<br />
+                                Strings Matched: GAS = GAS<br />
+                                Strings Matched: EQUIP-GAS-3 = EQUIP-GAS-3<br />
+                                Strings Matched: GRESMTR40 = GRESMTR40<br />
+                                Strings Matched: 1.00000 = 1.00000<br />
+                                Strings Matched: Active = Active<br />
+                                Element [[ChromeDriver: chrome on XP (0daa1a26ea84838f58f077db8b5bfa4f)] -&gt; id: SERV_Tab_Type_3_Icon] displayed in 35ms<br />
+                                Element [[ChromeDriver: chrome on XP (0daa1a26ea84838f58f077db8b5bfa4f)] -&gt; id: SERV_Tab_Type_3_Icon] displayed in 12ms<br />
+                                Click Internet Icon<br />
+                                Angular request time 373ms<br />
+                                Angular request time 12ms<br />
+                                Verifying Service Type Internet Tab Row 1<br />
+                                Strings Matched: INTERNET = INTERNET<br />
+                                Strings Matched: EQUIP-PHONE-02 = EQUIP-PHONE-02<br />
+                                Strings Matched: INTERNET-60 = INTERNET-60<br />
+                                Strings Matched: 1.00000 = 1.00000<br />
+                                Strings Matched: Active = Active<br />
+                                Angular request time 9ms<br />
+                                Angular request time 27ms<br />
+                                Element [[ChromeDriver: chrome on XP (0daa1a26ea84838f58f077db8b5bfa4f)] -&gt; id: USR_Name] displayed in 32ms<br />
+                                Element [[ChromeDriver: chrome on XP (0daa1a26ea84838f58f077db8b5bfa4f)] -&gt; id: ACTION_Logout] displayed in 37ms<br />
+                                Angular request time 23ms<br />
                   </div>
     
 

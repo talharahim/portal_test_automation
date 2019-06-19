@@ -6,6 +6,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -44,6 +45,7 @@ public class CustTestNGListener implements ITestListener {
 	public void takeScreenShot(String methodName, WebDriver driver) {
 
 		String fileName = String.format(methodName + "Screenshot-%s.jpg", Calendar.getInstance().getTimeInMillis());
+		
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		// The below method will save the screen shot in d drive with test method name
 		try {

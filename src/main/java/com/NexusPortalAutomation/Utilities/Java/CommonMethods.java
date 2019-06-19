@@ -32,6 +32,7 @@ public class CommonMethods {
 //This method will compare string values
 	public static ReadProjectProperties Read = new ReadProjectProperties();
 	public static NgWebDriver ngWebDriver;
+	public boolean HighLight = true;
 
 	public CommonMethods() {
 		// this is the default const
@@ -46,8 +47,6 @@ public class CommonMethods {
 		long dt = end - begin;
 		log("Angular request time " + dt + "ms");
 	}
-	
-	
 
 	public boolean VerifyString(String str1, String str2) {
 		boolean result = false;
@@ -55,7 +54,7 @@ public class CommonMethods {
 			if (str1.equals(str2)) {
 				result = true;
 				log("Strings Matched: " + str1 + " = " + str2);
-				
+
 			} else {
 				log("Strings Not Matched: " + str1 + " != " + str2);
 				Assert.assertEquals(str2, str1);
@@ -64,14 +63,14 @@ public class CommonMethods {
 		return result;
 
 	}
-	
+
 	public boolean VerifyStringContains(String str1, String str2) {
 		boolean result = false;
 		if (str1 != "" && str2 != "") {
 			if (str1.contains(str2)) {
 				result = true;
 				log("Strings Matched: " + str1 + " = " + str2);
-				
+
 			} else {
 				log("Strings Not Matched: " + str1 + " != " + str2);
 				Assert.assertEquals(str2, str1);
@@ -90,36 +89,38 @@ public class CommonMethods {
 		long begin = System.currentTimeMillis();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id(id)));
-		
+
 		if (element.isDisplayed()) {
 			long end = System.currentTimeMillis();
 			long dt = end - begin;
-			log("Element '"+id+"' is displayed in " + dt + "ms");
+			HighlightElement(element, driver);
+			log("Element '" + id + "' is displayed in " + dt + "ms");
 		}
 	}
-	
+
 	public void WaitForObjectbyElement(WebDriver driver, WebElement webElement) {
 		long begin = System.currentTimeMillis();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(webElement));
-		
+
 		if (element.isDisplayed()) {
 			long end = System.currentTimeMillis();
 			long dt = end - begin;
-			log("Element '"+webElement.toString()+"' is displayed in " + dt + "ms");
+			HighlightElement(webElement, driver);
+			log("Element '" + webElement.toString() + "' is displayed in " + dt + "ms");
 		}
 	}
 
-
 	public void WaitForObjectbyXpath(WebDriver driver, String path) {
 		long begin = System.currentTimeMillis();
-		
+
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(path)));
 		if (element.isDisplayed()) {
 			long end = System.currentTimeMillis();
 			long dt = end - begin;
-			log("Element '"+path+"' is displayed in " + dt + "ms");
+			HighlightElement(element, driver);
+			log("Element '" + path + "' is displayed in " + dt + "ms");
 		}
 	}
 
@@ -137,11 +138,29 @@ public class CommonMethods {
 		}
 	}
 
+	public void HighlightElement(WebElement element, WebDriver driver) {
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+
+		if (HighLight == true) {
+			jse.executeScript("arguments[0].style.border='2px solid red'", element);
+		}
+	}
+	
+	public void ClearHighlightElement(WebElement element, WebDriver driver) {
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+
+		if (HighLight == true) {
+			jse.executeScript("arguments[0].style.border='0px solid red'", element);
+		}
+	}
+
+
 	public void waitForObject(WebDriver driver, WebElement element) {
 		long begin = System.currentTimeMillis();
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		try {
 			wait.until(ExpectedConditions.visibilityOf(element));
+			HighlightElement(element, driver);
 
 		} catch (TimeoutException e) {
 
@@ -150,7 +169,8 @@ public class CommonMethods {
 		}
 		long end = System.currentTimeMillis();
 		long dt = end - begin;
-		log("Element "+ element.toString()+ " displayed in " + dt + "ms");
+		log("Element " + element.toString() + " displayed in " + dt + "ms");
+		//ClearHighlightElement(element, driver);
 	}
 
 	public boolean CheckStringmapsAreEqual(Map<String, String> mapA, Map<String, String> mapB) {
@@ -171,7 +191,5 @@ public class CommonMethods {
 		}
 		return true;
 	}
-	
-	
 
 }

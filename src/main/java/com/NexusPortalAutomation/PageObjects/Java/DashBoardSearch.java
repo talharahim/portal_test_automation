@@ -1,5 +1,7 @@
 package com.NexusPortalAutomation.PageObjects.Java;
 
+import java.util.NoSuchElementException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -80,9 +82,15 @@ public class DashBoardSearch extends CommonMethods {
 		return RecentCustomerName.getText();
 	}
 
-	public void ClickRecentCustomerName() {
+	public boolean ClickRecentCustomerName() {
 		log("Recent Customer =" + RecentCustomerName.getText());
-		RecentCustomerName.click();
+		try {
+			RecentCustomerName.click();
+			return true;
+		} catch (NoSuchElementException e) {
+			log("Bookmark not found");
+		}
+		return false;
 	}
 
 	public void ClickHistoryCustomer() {

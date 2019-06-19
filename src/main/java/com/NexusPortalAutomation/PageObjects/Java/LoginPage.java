@@ -41,13 +41,17 @@ public class LoginPage extends CommonMethods {
 	}
 
 	public void VerifyTitle(String title) {
+		waitForObject(driver, titleText);
 		Assert.assertEquals(titleText.getText(), title, "Verifying Title");
 		log("Sign in Page Title Verified");
 	}
 
 	public void Login(String Username, String Password) throws InterruptedException {
+		waitForObject(driver, userName);
 		userName.sendKeys(Username);
+		waitForObject(driver, passWord);
 		passWord.sendKeys(Password);
+		waitForObject(driver, loginBtn);
 		loginBtn.click();
 		Thread.sleep(5000);
 	}

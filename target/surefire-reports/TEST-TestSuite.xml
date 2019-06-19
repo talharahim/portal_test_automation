@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="1.375" tests="63" errors="0" skipped="42" failures="21">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="701.093" tests="21" errors="0" skipped="0" failures="3">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\Administrator\AppData\Local\Temp\1\surefire3936224858456409093\surefirebooter3342380344493947815.jar C:\Users\Administrator\AppData\Local\Temp\1\surefire3936224858456409093 2019-06-17T13-00-17_822-jvmRun1 surefire2285636844407766489tmp surefire_07636434014191754151tmp"/>
+    <property name="sun.java.command" value="C:\Users\Administrator\AppData\Local\Temp\1\surefire7380809440773033789\surefirebooter3719770384521986747.jar C:\Users\Administrator\AppData\Local\Temp\1\surefire7380809440773033789 2019-06-19T07-54-37_904-jvmRun1 surefire2466092978796176997tmp surefire_0667198313780779730tmp"/>
     <property name="surefire.test.class.path" value="F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\target\test-classes;F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\target\classes;C:\Users\Administrator\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\Administrator\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\Administrator\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-java\3.14.0\selenium-java-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-api\3.14.0\selenium-api-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.14.0\selenium-edge-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.14.0\selenium-ie-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.14.0\selenium-opera-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.14.0\selenium-remote-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.14.0\selenium-safari-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-support\3.14.0\selenium-support-3.14.0.jar;C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Administrator\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\Administrator\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Administrator\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Administrator\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Administrator\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;C:\Users\Administrator\.m2\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar;C:\Users\Administrator\.m2\repository\com\squareup\okio\okio\1.14.1\okio-1.14.1.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\apache\maven\reporting\maven-reporting-api\2.0.6\maven-reporting-api-2.0.6.jar;C:\Users\Administrator\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.0-alpha-7\doxia-sink-api-1.0-alpha-7.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\mysql\mysql-connector-java\8.0.15\mysql-connector-java-8.0.15.jar;C:\Users\Administrator\.m2\repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;C:\Users\Administrator\.m2\repository\org\apache\logging\log4j\log4j-core\2.11.2\log4j-core-2.11.2.jar;C:\Users\Administrator\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.2\log4j-api-2.11.2.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi\4.1.0\poi-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-collections4\4.3\commons-collections4-4.3.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml\4.1.0\poi-ooxml-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.0\poi-ooxml-schemas-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\Administrator\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\Administrator\.m2\repository\com\microsoft\sqlserver\mssql-jdbc\7.0.0.jre8\mssql-jdbc-7.0.0.jre8.jar;C:\Users\Administrator\.m2\repository\com\paulhammant\ngwebdriver\1.1.4\ngwebdriver-1.1.4.jar;C:\Users\Administrator\.m2\repository\com\aventstack\extentreports\4.0.5\extentreports-4.0.5.jar;C:\Users\Administrator\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\Administrator\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\Administrator\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;C:\Users\Administrator\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\Administrator\.m2\repository\org\uncommons\reportng\1.1.4\reportng-1.1.4.jar;C:\Users\Administrator\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\Administrator\.m2\repository\com\google\inject\guice\3.0\guice-3.0.jar;C:\Users\Administrator\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Administrator\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Administrator\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\Administrator\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Administrator"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Administrator\AppData\Local\Temp\1\surefire3936224858456409093\surefirebooter3342380344493947815.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Administrator\AppData\Local\Temp\1\surefire7380809440773033789\surefirebooter3719770384521986747.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -52,7 +52,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;F:\apache-maven-3.6.0/bin;C:\Program Files\Java\jdk1.8.0_201/bin;C:\Program Files\Java\jdk1.8.0_201/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Python35\Scripts\;C:\Program Files\Python35\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\nodejs\;C:\CSM_API\API\CSR_Portal\;C:\Server\npm\;F:\apache-maven-3.6.0\bin;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Local\GitHubDesktop\bin;F:\apache-maven-3.6.0\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;F:\apache-maven-3.6.0/bin;C:\Program Files\Java\jdk1.8.0_201/bin;C:\Program Files\Java\jdk1.8.0_201/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Python35\Scripts\;C:\Program Files\Python35\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\nodejs\;C:\CSM_API\API\CSR_Portal\;C:\Server\npm\;F:\apache-maven-3.6.0\bin;C:\Program Files\Git\cmd;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Local\GitHubDesktop\bin;F:\apache-maven-3.6.0\bin;."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="25.201-b09"/>
@@ -60,286 +60,170 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="readProp" classname="com.NexusPortalAutomation.TestCases.Java.TC0011_VerifyBookMark" time="0.594">
-    <failure message="Invalid key code" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Invalid key code
+  <testcase name="TestBookMark" classname="com.NexusPortalAutomation.TestCases.Java.TC0011_VerifyBookMark" time="48.355"/>
+  <testcase name="VerifyDrillBackTransactions" classname="com.NexusPortalAutomation.TestCases.Java.TC0019_VerifyDrillBackTransactions" time="27.056"/>
+  <testcase name="TestDrillBackServices" classname="com.NexusPortalAutomation.TestCases.Java.TC0020_VerifyDrillBackServices" time="28.578">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;SODV_Drillback&quot;}&#10;  (Session info: chrome=75.0.3770.90)&#10;  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;RND-BASE-A&apos;, ip: &apos;10.14.13.250&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50034}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.90, webStorageEnabled: true}&#10;Session ID: db4627c0fedb5431ebc1c881744e76cc&#10;*** Element info: {Using=id, value=SODV_Drillback}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"id","selector":"SODV_Drillback"}
+  (Session info: chrome=75.0.3770.90)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'RND-BASE-A', ip: '10.14.13.250', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50034}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.90, webStorageEnabled: true}
+Session ID: db4627c0fedb5431ebc1c881744e76cc
+*** Element info: {Using=id, value=SODV_Drillback}
+	at com.NexusPortalAutomation.TestCases.Java.TC0020_VerifyDrillBackServices.TestDrillBackServices(TC0020_VerifyDrillBackServices.java:41)
 </failure>
-    <system-out><![CDATA[Reading Project Properties
-...
-... TestNG 6.14.3 by Cédric Beust (cedric@beust.com)
-...
-
-Reading Project Properties
-Reading Project Properties
-Reading Project Properties
-Reading Project Properties
-Reading Project Properties
-Reading Project Properties
-Reading Project Properties
-Reading Project Properties
-Reading Project Properties
-Reading Project Properties
-Reading Project Properties
-Reading Project Properties
-Reading Project Properties
-Reading Project Properties
-Reading Project Properties
-Reading Project Properties
-Reading Project Properties
-Reading Project Properties
-Reading Project Properties
-Reading Project Properties
-Reading Project Properties
-Reading Project Properties
-Reading Project Properties
-Started- NexusTest
+    <system-out><![CDATA[Test completed successfully- VerifyDrillBackTransactions
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- TestDrillBackServices
+Angular Request Completed in 26ms
+Element [[ChromeDriver: chrome on XP (db4627c0fedb5431ebc1c881744e76cc)] -> xpath: //div[@class='login-title']] displayed in 82ms
+Sign in Page Title Verified
+Element [[ChromeDriver: chrome on XP (db4627c0fedb5431ebc1c881744e76cc)] -> xpath: //input[@id='mat-input-0']] displayed in 48ms
+Element [[ChromeDriver: chrome on XP (db4627c0fedb5431ebc1c881744e76cc)] -> xpath: //input[@id='mat-input-1']] displayed in 54ms
+Element [[ChromeDriver: chrome on XP (db4627c0fedb5431ebc1c881744e76cc)] -> xpath: //span[@class='label ng-star-inserted']] displayed in 49ms
+Angular Request Completed in 30ms
+User signed Admin
+Enter Text for Search =LOC@0001
+Element [[ChromeDriver: chrome on XP (db4627c0fedb5431ebc1c881744e76cc)] -> id: SRCH_Input] displayed in 56ms
+Angular request time 938ms
+Click Customer
+Angular request time 2118ms
+Angular request time 348ms
+Customer Location Id found LOC@0001
+Strings Matched: LOC@0001 = LOC@0001
+Element [[ChromeDriver: chrome on XP (db4627c0fedb5431ebc1c881744e76cc)] -> css selector: #mat-tab-label-0-2 > div] displayed in 36ms
+Click Service Order Link
+Angular request time 849ms
 ]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 21577
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1560948964.174][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jun 19, 2019 7:56:05 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
   </testcase>
-  <testcase name="TestBookMark" classname="com.NexusPortalAutomation.TestCases.Java.TC0011_VerifyBookMark" time="0">
-    <skipped message="Invalid key code"/>
-    <system-out><![CDATA[Test Skipped- TestBookMark
-]]></system-out>
-  </testcase>
-  <testcase name="TearDown" classname="com.NexusPortalAutomation.TestCases.Java.TC0011_VerifyBookMark" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="readProp" classname="com.NexusPortalAutomation.TestCases.Java.TC0019_VerifyDrillBackTransactions" time="0.594">
-    <failure message="Invalid key code" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Invalid key code
+  <testcase name="TestServiceOrderDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0021_VerifyServicesOrderDetails" time="27.344">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;SOLV_Service_Order_1_Request_Id&quot;}&#10;  (Session info: chrome=75.0.3770.90)&#10;  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;RND-BASE-A&apos;, ip: &apos;10.14.13.250&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50218}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.90, webStorageEnabled: true}&#10;Session ID: b3f974701ed2411349b5a1c9fa5213ac&#10;*** Element info: {Using=id, value=SOLV_Service_Order_1_Request_Id}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"id","selector":"SOLV_Service_Order_1_Request_Id"}
+  (Session info: chrome=75.0.3770.90)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'RND-BASE-A', ip: '10.14.13.250', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50218}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.90, webStorageEnabled: true}
+Session ID: b3f974701ed2411349b5a1c9fa5213ac
+*** Element info: {Using=id, value=SOLV_Service_Order_1_Request_Id}
+	at com.NexusPortalAutomation.TestCases.Java.TC0021_VerifyServicesOrderDetails.TestServiceOrderDetails(TC0021_VerifyServicesOrderDetails.java:57)
 </failure>
-  </testcase>
-  <testcase name="VerifyDrillBackTransactions" classname="com.NexusPortalAutomation.TestCases.Java.TC0019_VerifyDrillBackTransactions" time="0">
-    <skipped message="Invalid key code"/>
-    <system-out><![CDATA[Test Skipped- VerifyDrillBackTransactions
+    <system-out><![CDATA[***** Error TestDrillBackServices test has failed *****
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- TestServiceOrderDetails
+Angular Request Completed in 153ms
+Element [[ChromeDriver: chrome on XP (b3f974701ed2411349b5a1c9fa5213ac)] -> xpath: //div[@class='login-title']] displayed in 74ms
+Sign in Page Title Verified
+Element [[ChromeDriver: chrome on XP (b3f974701ed2411349b5a1c9fa5213ac)] -> xpath: //input[@id='mat-input-0']] displayed in 59ms
+Element [[ChromeDriver: chrome on XP (b3f974701ed2411349b5a1c9fa5213ac)] -> xpath: //input[@id='mat-input-1']] displayed in 38ms
+Element [[ChromeDriver: chrome on XP (b3f974701ed2411349b5a1c9fa5213ac)] -> xpath: //span[@class='label ng-star-inserted']] displayed in 39ms
+Angular Request Completed in 47ms
+User signed Admin
+Enter Text for Search =LOC@0001
+Element [[ChromeDriver: chrome on XP (b3f974701ed2411349b5a1c9fa5213ac)] -> id: SRCH_Input] displayed in 128ms
+Angular request time 962ms
+Click Customer
+Angular request time 2304ms
+Angular request time 351ms
+Customer Location Id found LOC@0001
+Strings Matched: LOC@0001 = LOC@0001
+Element [[ChromeDriver: chrome on XP (b3f974701ed2411349b5a1c9fa5213ac)] -> css selector: #mat-tab-label-0-2 > div] displayed in 40ms
+Click Service Order Link
+Angular request time 839ms
+Element [[ChromeDriver: chrome on XP (b3f974701ed2411349b5a1c9fa5213ac)] -> id: SOLV_Select_Date_Range] displayed in 43ms
+Click Date Drop Down
+Angular request time 11ms
+Date Drop Down Clicked
+Element [[ChromeDriver: chrome on XP (b3f974701ed2411349b5a1c9fa5213ac)] -> id: SOLV_Select_Date_Range_Option_4] displayed in 55ms
+Click Any Time
+Angular request time 14ms
+All time date selected
+Angular request time 8ms
+Angular request time 11ms
+Verifying Service Order Details using HashMap
 ]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 45103
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1560948999.301][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jun 19, 2019 7:56:40 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
   </testcase>
-  <testcase name="TearDown" classname="com.NexusPortalAutomation.TestCases.Java.TC0019_VerifyDrillBackTransactions" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="readProp" classname="com.NexusPortalAutomation.TestCases.Java.TC0020_VerifyDrillBackServices" time="0.594">
-    <failure message="Invalid key code" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Invalid key code
-</failure>
-  </testcase>
-  <testcase name="TestDrillBackServices" classname="com.NexusPortalAutomation.TestCases.Java.TC0020_VerifyDrillBackServices" time="0">
-    <skipped message="Invalid key code"/>
-    <system-out><![CDATA[Test Skipped- TestDrillBackServices
+  <testcase name="TestCustomerDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails" time="22.889"/>
+  <testcase name="VerifyDrillBacksGeneral" classname="com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral" time="15.634">
+    <failure message="expected [cogsdrillback://DGPB/?Db=SQL_2017&amp;Srv=RND-BASE-A&amp;Cmp=TWO&amp;Bug reported] but found [null]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Bug reported] but found [null]
+	at com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral.VerifyDrillBacksGeneral(TC0018_VerifyDrillBacksGeneral.java:88)
+]]></failure>
+    <system-out><![CDATA[Test completed successfully- TestCustomerDetails
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- VerifyDrillBacksGeneral
+Angular Request Completed in 22ms
+Element [[ChromeDriver: chrome on XP (a8f92c1f6c1f75177b9e6c034040bc7e)] -> xpath: //div[@class='login-title']] displayed in 53ms
+Sign in Page Title Verified
+Element [[ChromeDriver: chrome on XP (a8f92c1f6c1f75177b9e6c034040bc7e)] -> xpath: //input[@id='mat-input-0']] displayed in 126ms
+Element [[ChromeDriver: chrome on XP (a8f92c1f6c1f75177b9e6c034040bc7e)] -> xpath: //input[@id='mat-input-1']] displayed in 43ms
+Element [[ChromeDriver: chrome on XP (a8f92c1f6c1f75177b9e6c034040bc7e)] -> xpath: //span[@class='label ng-star-inserted']] displayed in 44ms
+Angular Request Completed in 15ms
+User signed Admin
+Enter Text for Search =LOC@0004
+Element [[ChromeDriver: chrome on XP (a8f92c1f6c1f75177b9e6c034040bc7e)] -> id: SRCH_Input] displayed in 72ms
+Angular request time 1076ms
+Click Customer
+Angular request time 2154ms
+Angular request time 10ms
+Customer Location Id found LOC@0004
+Strings Matched: LOC@0004 = LOC@0004
+Element [[ChromeDriver: chrome on XP (a8f92c1f6c1f75177b9e6c034040bc7e)] -> id: ACTION_DRILLBACK] displayed in 42ms
+Strings Matched: cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Prod=229&Act=OPEN&Func=CustomerMaintenance&CustomerID=0000011111&LocationID=LOC@0004&CogsDrillback=1 = cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Prod=229&Act=OPEN&Func=CustomerMaintenance&CustomerID=0000011111&LocationID=LOC@0004&CogsDrillback=1
+Element [[ChromeDriver: chrome on XP (a8f92c1f6c1f75177b9e6c034040bc7e)] -> id: SCUST_Drillback] displayed in 67ms
+Strings Not Matched: cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Bug reported != null
 ]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 1982
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1560949061.248][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jun 19, 2019 7:57:42 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
   </testcase>
-  <testcase name="TearDown" classname="com.NexusPortalAutomation.TestCases.Java.TC0020_VerifyDrillBackServices" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="readProp" classname="com.NexusPortalAutomation.TestCases.Java.TC0021_VerifyServicesOrderDetails" time="0.594">
-    <failure message="Invalid key code" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Invalid key code
-</failure>
-  </testcase>
-  <testcase name="TestServiceOrderDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0021_VerifyServicesOrderDetails" time="0">
-    <skipped message="Invalid key code"/>
-    <system-out><![CDATA[Test Skipped- TestServiceOrderDetails
-]]></system-out>
-  </testcase>
-  <testcase name="TearDown" classname="com.NexusPortalAutomation.TestCases.Java.TC0021_VerifyServicesOrderDetails" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="readProp" classname="com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails" time="0.61">
-    <failure message="Invalid key code" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Invalid key code
-</failure>
-  </testcase>
-  <testcase name="TestCustomerDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails" time="0">
-    <skipped message="Invalid key code"/>
-    <system-out><![CDATA[Test Skipped- TestCustomerDetails
-]]></system-out>
-  </testcase>
-  <testcase name="TearDown" classname="com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="readProp" classname="com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral" time="0.61">
-    <failure message="Invalid key code" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Invalid key code
-</failure>
-  </testcase>
-  <testcase name="VerifyDrillBacksGeneral" classname="com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral" time="0">
-    <skipped message="Invalid key code"/>
-    <system-out><![CDATA[Test Skipped- VerifyDrillBacksGeneral
-]]></system-out>
-  </testcase>
-  <testcase name="TearDown" classname="com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="readProp" classname="com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch" time="0.61">
-    <failure message="Invalid key code" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Invalid key code
-</failure>
-  </testcase>
-  <testcase name="TestSearchAccount" classname="com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch" time="0">
-    <skipped message="Invalid key code"/>
-    <system-out><![CDATA[Test Skipped- TestSearchAccount
-]]></system-out>
-  </testcase>
-  <testcase name="TearDown" classname="com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="readProp" classname="com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue" time="0.61">
-    <failure message="Invalid key code" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Invalid key code
-</failure>
-  </testcase>
-  <testcase name="TestBillingStatements" classname="com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue" time="0">
-    <skipped message="Invalid key code"/>
-    <system-out><![CDATA[Test Skipped- TestBillingStatements
-]]></system-out>
-  </testcase>
-  <testcase name="TearDown" classname="com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="readProp" classname="com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID" time="0.61">
-    <failure message="Invalid key code" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Invalid key code
-</failure>
-  </testcase>
-  <testcase name="TestSearchbyLocationID" classname="com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID" time="0">
-    <skipped message="Invalid key code"/>
-    <system-out><![CDATA[Test Skipped- TestSearchbyLocationID
-]]></system-out>
-  </testcase>
-  <testcase name="TearDown" classname="com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="readProp" classname="com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs" time="0.61">
-    <failure message="Invalid key code" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Invalid key code
-</failure>
-  </testcase>
-  <testcase name="TestContactLogs" classname="com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs" time="0">
-    <skipped message="Invalid key code"/>
-    <system-out><![CDATA[Test Skipped- TestContactLogs
-]]></system-out>
-  </testcase>
-  <testcase name="TearDown" classname="com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="readProp" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails" time="0.61">
-    <failure message="Invalid key code" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Invalid key code
-</failure>
-  </testcase>
-  <testcase name="VerifyBillingDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails" time="0">
-    <skipped message="Invalid key code"/>
-    <system-out><![CDATA[Test Skipped- VerifyBillingDetails
-]]></system-out>
-  </testcase>
-  <testcase name="TearDown" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="readProp" classname="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit" time="0.625">
-    <failure message="Invalid key code" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Invalid key code
-</failure>
-  </testcase>
-  <testcase name="TestContactEdit" classname="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit" time="0">
-    <skipped message="Invalid key code"/>
-    <system-out><![CDATA[Test Skipped- TestContactEdit
-]]></system-out>
-  </testcase>
-  <testcase name="TearDown" classname="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="readProp" classname="com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact" time="0.625">
-    <failure message="Invalid key code" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Invalid key code
-</failure>
-  </testcase>
-  <testcase name="TestSecondayContact" classname="com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact" time="0">
-    <skipped message="Invalid key code"/>
-    <system-out><![CDATA[Test Skipped- TestSecondayContact
-]]></system-out>
-  </testcase>
-  <testcase name="TearDown" classname="com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="readProp" classname="com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus" time="0.625">
-    <failure message="Invalid key code" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Invalid key code
-</failure>
-  </testcase>
-  <testcase name="TestCreditStatus" classname="com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus" time="0">
-    <skipped message="Invalid key code"/>
-    <system-out><![CDATA[Test Skipped- TestCreditStatus
-]]></system-out>
-  </testcase>
-  <testcase name="TearDown" classname="com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="readProp" classname="com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID" time="0.625">
-    <failure message="Invalid key code" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Invalid key code
-</failure>
-  </testcase>
-  <testcase name="TestSearchID" classname="com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID" time="0">
-    <skipped message="Invalid key code"/>
-    <system-out><![CDATA[Test Skipped- TestSearchID
-]]></system-out>
-  </testcase>
-  <testcase name="TearDown" classname="com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="readProp" classname="com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction" time="0.625">
-    <failure message="Invalid key code" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Invalid key code
-</failure>
-  </testcase>
-  <testcase name="TestSearchAutobyRecent" classname="com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction" time="0">
-    <skipped message="Invalid key code"/>
-    <system-out><![CDATA[Test Skipped- TestSearchAutobyRecent
-]]></system-out>
-  </testcase>
-  <testcase name="TearDown" classname="com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="readProp" classname="com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks" time="0.625">
-    <failure message="Invalid key code" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Invalid key code
-</failure>
-  </testcase>
-  <testcase name="TestSearchAutobyBookMark" classname="com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks" time="0">
-    <skipped message="Invalid key code"/>
-    <system-out><![CDATA[Test Skipped- TestSearchAutobyBookMark
-]]></system-out>
-  </testcase>
-  <testcase name="TearDown" classname="com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="readProp" classname="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad" time="0.625">
-    <failure message="Invalid key code" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Invalid key code
-</failure>
-  </testcase>
-  <testcase name="TestSearchAlertOnLoad" classname="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad" time="0">
-    <skipped message="Invalid key code"/>
-    <system-out><![CDATA[Test Skipped- TestSearchAlertOnLoad
-]]></system-out>
-  </testcase>
-  <testcase name="TearDown" classname="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="readProp" classname="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection" time="0.641">
-    <failure message="Invalid key code" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Invalid key code
-</failure>
-  </testcase>
-  <testcase name="TestSummarySectionOnChange" classname="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection" time="0">
-    <skipped message="Invalid key code"/>
-    <system-out><![CDATA[Test Skipped- TestSummarySectionOnChange
-]]></system-out>
-  </testcase>
-  <testcase name="TearDown" classname="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="readProp" classname="com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName" time="0.641">
-    <failure message="Invalid key code" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Invalid key code
-</failure>
-  </testcase>
-  <testcase name="TestSearchAutobyFirstName" classname="com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName" time="0">
-    <skipped message="Invalid key code"/>
-    <system-out><![CDATA[Test Skipped- TestSearchAutobyFirstName
-]]></system-out>
-  </testcase>
-  <testcase name="TearDown" classname="com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="readProp" classname="com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName" time="0.641">
-    <failure message="Invalid key code" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Invalid key code
-</failure>
-  </testcase>
-  <testcase name="TestSearchAutobyLastName" classname="com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName" time="0">
-    <skipped message="Invalid key code"/>
-    <system-out><![CDATA[Test Skipped- TestSearchAutobyLastName
-]]></system-out>
-  </testcase>
-  <testcase name="TearDown" classname="com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName" time="0">
-    <skipped/>
-  </testcase>
+  <testcase name="TestSearchAccount" classname="com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch" time="25.633"/>
+  <testcase name="TestBillingStatements" classname="com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue" time="28.162"/>
+  <testcase name="TestSearchbyLocationID" classname="com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID" time="26.911"/>
+  <testcase name="TestContactLogs" classname="com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs" time="25.465"/>
+  <testcase name="VerifyBillingDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails" time="34.778"/>
+  <testcase name="TestContactEdit" classname="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit" time="28.174"/>
+  <testcase name="TestSecondayContact" classname="com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact" time="26.502"/>
+  <testcase name="TestCreditStatus" classname="com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus" time="23.578"/>
+  <testcase name="TestSearchID" classname="com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID" time="25.538"/>
+  <testcase name="TestSearchAutobyRecent" classname="com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction" time="35.109"/>
+  <testcase name="TestSearchAutobyBookMark" classname="com.NexusPortalAutomation.TestCases.Java.TC0005_TestBookMarks" time="29.109"/>
+  <testcase name="TestSearchAlertOnLoad" classname="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad" time="27.191"/>
+  <testcase name="TestSummarySectionOnChange" classname="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection" time="32.625"/>
+  <testcase name="TestSearchAutobyFirstName" classname="com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName" time="29.321"/>
+  <testcase name="TestSearchAutobyLastName" classname="com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName" time="27.941"/>
 </testsuite>

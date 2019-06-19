@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,6 +26,8 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
  */
 
 public class DashBoard extends CommonMethods {
+
+	public boolean HighLight = false;
 
 	WebDriver driver;
 	@FindBy(id = "USR_Name")
@@ -339,6 +342,32 @@ public class DashBoard extends CommonMethods {
 	@CacheLookup
 	WebElement SODV_Task_Completed_Date;
 
+	@FindBy(id = "SRCH_Button_Favorites")
+	@CacheLookup
+	WebElement Dashboard_BookMark;
+
+	@FindBy(id = "SRCH_Option_1_Location_Id")
+	@CacheLookup
+	WebElement Dashboard_BookMarkedLocation;
+
+	@FindBy(id = "SODV_Drillback")
+	@CacheLookup
+	WebElement ServiceOerder_Drillback;
+
+	public void clickDashBoardBookMark() {
+
+		waitForObject(driver, Dashboard_BookMark);
+		ClickElement(Dashboard_BookMark, "Dashboard BookMark Clicked");
+
+	}
+
+	public String getDashBoardBookMarkValue() {
+
+		waitForObject(driver, Dashboard_BookMarkedLocation);
+		return Dashboard_BookMarkedLocation.getText();
+
+	}
+
 	public HashMap<String, String> GetServiceOrderDetails() {
 		// This method will fetch the service order details and returns it in a map
 		WaitAngular(driver);
@@ -371,7 +400,9 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void ClickElement(WebElement element, String ElementName) {
+
 		try {
+
 			waitForObject(driver, element);
 			element.click();
 			log("Click " + ElementName);
@@ -382,6 +413,39 @@ public class DashBoard extends CommonMethods {
 			Assert.assertTrue(false, ElementName + " not found");
 
 		}
+	}
+
+	public String getElementText(WebElement element, String ElementName) {
+
+		try {
+			waitForObject(driver, element);
+			log("get Text Text " + ElementName);
+			WaitAngular(driver);
+			return element.getText();
+
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, ElementName + " not found");
+
+		}
+		return null;
+	}
+
+	public void setElementText(WebElement element, String Text, String ElementName) {
+
+		try {
+
+			waitForObject(driver, element);
+			log("Set Text " + ElementName);
+			WaitAngular(driver);
+			element.sendKeys(Text);
+
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, ElementName + " not found");
+
+		}
+
 	}
 
 	public void clickActionDropDown() {
@@ -434,7 +498,8 @@ public class DashBoard extends CommonMethods {
 	// This method will find the elements of Transaction Panel using the URL
 	public void VerifyServiceOrderDrillBacks(String ServOrder) throws InterruptedException {
 		Thread.sleep(1000);
-		findElementByid("SODV_Drillback").getAttribute(ServOrder);
+		waitForObject(driver, ServiceOerder_Drillback);
+		ServiceOerder_Drillback.getAttribute(ServOrder);
 
 	}
 
@@ -510,7 +575,7 @@ public class DashBoard extends CommonMethods {
 		String result = "OFF";
 		try {
 			waitForObject(driver, AutoPay);
-			if (!AutoPay.getText().equals("OFF")) {
+			if (!(getElementText(AutoPay, "AutoPay Switch")).equals("OFF")) {
 				result = "ON";
 			}
 		} catch (NoSuchElementException e) {
@@ -525,7 +590,7 @@ public class DashBoard extends CommonMethods {
 		String result = "";
 		try {
 			waitForObject(driver, DepositAmount);
-			if (!DepositAmount.getText().equals("")) {
+			if (!getElementText(DepositAmount, "Get Deposit Amount").equals("")) {
 				result = DepositAmount.getText();
 			}
 		} catch (NoSuchElementException e) {
@@ -540,7 +605,7 @@ public class DashBoard extends CommonMethods {
 		String result = "OFF";
 		try {
 			waitForObject(driver, EBill);
-			if (!EBill.getText().equals("OFF")) {
+			if (!getElementText(EBill, "EBill Swtich ").equals("OFF")) {
 				result = "ON";
 			}
 		} catch (NoSuchElementException e) {
@@ -601,7 +666,8 @@ public class DashBoard extends CommonMethods {
 	public void AddNotes(String notes) {
 		try {
 			WaitAngular(driver);
-			Notes.sendKeys(notes);
+			waitForObject(driver, Notes);
+			setElementText(Notes, notes, "notes text");
 			WaitAngular(driver);
 			ClickElement(SubmitNotes, "Submit Notes");
 			WaitAngular(driver);
@@ -614,7 +680,8 @@ public class DashBoard extends CommonMethods {
 	public String GetNotes() {
 		try {
 			WaitAngular(driver);
-			return AddedNotes.getText();
+			waitForObject(driver, AddedNotes);
+			return getElementText(AddedNotes, "Added Notes");
 
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
@@ -627,7 +694,8 @@ public class DashBoard extends CommonMethods {
 		String name = "";
 		try {
 			WaitAngular(driver);
-			name = SecondCustName.getText();
+			waitForObject(driver, SecondCustName);
+			name = getElementText(SecondCustName, "Secondary Customer Name");
 			WaitAngular(driver);
 
 		} catch (NoSuchElementException e) {
@@ -642,18 +710,32 @@ public class DashBoard extends CommonMethods {
 			String acsz) {
 		WaitAngular(driver);
 		log("Verifying Customer Details");
-		VerifyString(ssn, CustomerSSN.getText());
-		VerifyString(lic, DriverLic.getText());
-		VerifyString(phone, Phone1.getText());
-		VerifyString(ext, PhoneExt1.getText());
-		VerifyString(email, Email.getText());
-		VerifyString(add, AddressLine1.getText());
-		VerifyString(acsz, AddressCityStateZip.getText());
+		waitForObject(driver, CustomerSSN);
+		VerifyString(ssn, getElementText(CustomerSSN, "Customer SSN"));
+
+		waitForObject(driver, DriverLic);
+		VerifyString(lic, getElementText(DriverLic, "Driver License"));
+
+		waitForObject(driver, Phone1);
+		VerifyString(phone, getElementText(Phone1, "Phone Number"));
+
+		waitForObject(driver, PhoneExt1);
+		VerifyString(ext, getElementText(PhoneExt1, "Phone Ext"));
+
+		waitForObject(driver, Email);
+		VerifyString(email, getElementText(Email, "Email"));
+
+		waitForObject(driver, AddressLine1);
+		VerifyString(add, getElementText(AddressLine1, "AddressLine1"));
+
+		waitForObject(driver, AddressCityStateZip);
+		VerifyString(acsz, getElementText(AddressCityStateZip, "AddressCityStateZip"));
 	}
 
 	public void ClickContactEdit() {
 
 		WaitAngular(driver);
+		waitForObject(driver, ContactEdit);
 		ClickElement(ContactEdit, "Edit Contact");
 
 	}
@@ -661,10 +743,11 @@ public class DashBoard extends CommonMethods {
 	public void updatePhone1(String phoneNum) {
 		try {
 			WaitAngular(driver);
-			WaitForObjectbyElement(driver, ContactPhone1);
+			waitForObject(driver, ContactPhone1);
 			ContactPhone1.clear();
 			WaitAngular(driver);
-			ContactPhone1.sendKeys(phoneNum);
+			waitForObject(driver, ContactPhone1);
+			setElementText(ContactPhone1, phoneNum, "Phone Number");
 			WaitAngular(driver);
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
@@ -676,10 +759,11 @@ public class DashBoard extends CommonMethods {
 	public void updateEmail(String email) {
 		try {
 			WaitAngular(driver);
-			WaitForObjectbyElement(driver, ContactEmail1);
+			waitForObject(driver, ContactEmail1);
 			ContactEmail1.clear();
 			WaitAngular(driver);
-			ContactEmail1.sendKeys(email);
+			waitForObject(driver, ContactEmail1);
+			setElementText(ContactEmail1, email, "Email id");
 			WaitAngular(driver);
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
@@ -721,8 +805,28 @@ public class DashBoard extends CommonMethods {
 		}
 	}
 
+	public void VerifyBookMarkEnabled() {
+		try {
+			log("Click Bookmark");
+			if (BookMarkIconEnabled.isDisplayed()) {
+				waitForObject(driver, BookMarkIconEnabled);
+				log("Book Mark Verified");
+				Assert.assertTrue(true);
+			} else {
+				Assert.assertTrue(false);
+				log("Book Mark Not Verified");
+			}
+		}
+
+		catch (NoSuchElementException e) {
+			log(e.getMessage());
+
+		}
+	}
+
 	public void VerifyGoodCredit() {
 		log("Verify Credit Status");
+		waitForObject(driver, creditGreat);
 		if (creditGreat.isDisplayed()) {
 			Assert.assertTrue(true);
 		} else {
@@ -746,6 +850,7 @@ public class DashBoard extends CommonMethods {
 		WaitAngular(driver);
 		waitForObject(driver, AccountSearchText);
 		ClickElement(AccountSearchText, "Search Account");
+		setElementText(AccountSearchText, AccountId, "Account Search Text");
 		AccountSearchText.sendKeys(AccountId);
 		WaitAngular(driver);
 
@@ -755,7 +860,7 @@ public class DashBoard extends CommonMethods {
 		WaitAngular(driver);
 		log("Verify Account Name =" + AccountName);
 		waitForObject(driver, AccountSearchResult1);
-		VerifyStringContains(AccountSearchResult1.getText(), AccountName);
+		VerifyStringContains(getElementText(AccountSearchResult1, "Account Search Result"), AccountName);
 		WaitAngular(driver);
 	}
 
@@ -763,7 +868,7 @@ public class DashBoard extends CommonMethods {
 		WaitAngular(driver);
 		log("Verify Account Name =" + AccountName);
 		waitForObject(driver, AccountSearchResult2);
-		VerifyStringContains(AccountName, AccountSearchResult2.getText());
+		VerifyStringContains(AccountName, getElementText(AccountSearchResult2, "Account Search Result"));
 		WaitAngular(driver);
 	}
 
@@ -771,7 +876,7 @@ public class DashBoard extends CommonMethods {
 		WaitAngular(driver);
 		log("Verify Account Name =" + AccountName);
 		waitForObject(driver, AccountSearchResult3);
-		VerifyStringContains(AccountName, AccountSearchResult3.getText());
+		VerifyStringContains(AccountName, getElementText(AccountSearchResult3, "Account Result"));
 		WaitAngular(driver);
 	}
 
@@ -779,17 +884,21 @@ public class DashBoard extends CommonMethods {
 		WaitAngular(driver);
 		log("Verify Account Name =" + AccountName);
 		waitForObject(driver, AccountSearchResult4);
-		VerifyStringContains(AccountName, AccountSearchResult4.getText());
+		VerifyStringContains(AccountName, getElementText(AccountSearchResult4, "Account Result"));
 		WaitAngular(driver);
 	}
 
 	public void verifyAddressDetails(String addline, String addCity, String addState, String addZip) {
 		WaitAngular(driver);
 		log("Verifying Address Details");
-		VerifyString(addline, AddressLine.getText());
-		VerifyString(addCity, AddressCity.getText());
-		VerifyString(addState, AddressState.getText());
-		VerifyString(addZip, AddressZipCode.getText());
+		waitForObject(driver, AddressLine);
+		VerifyString(addline, getElementText(AddressLine, "Address Line Result"));
+		waitForObject(driver, AddressCity);
+		VerifyString(addCity, getElementText(AddressCity, "Address City Result"));
+		waitForObject(driver, AddressState);
+		VerifyString(addState, getElementText(AddressState, "Address State Result"));
+		waitForObject(driver, AddressZipCode);
+		VerifyString(addZip, getElementText(AddressZipCode, "Address State Result"));
 
 	}
 
@@ -800,7 +909,6 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void ClickTransactionLink() {
-
 		ClickElement(TransactionLink, "Transaction Link");
 
 	}
@@ -925,7 +1033,8 @@ public class DashBoard extends CommonMethods {
 		try {
 			WaitAngular(driver);
 			if (LoggedUserLink.isDisplayed())
-				result = LoggedUserLink.getText();
+
+				result = getElementText(LoggedUserLink, "LoggedUserLink");
 			log("UserName found " + result);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -940,7 +1049,7 @@ public class DashBoard extends CommonMethods {
 		try {
 			WaitAngular(driver);
 			if (CustomerId.isDisplayed())
-				result = CustomerId.getText();
+				result = getElementText(CustomerId, "Customer Id");
 			log("CustomerId found " + result);
 
 		} catch (Exception e) {
@@ -957,7 +1066,7 @@ public class DashBoard extends CommonMethods {
 		try {
 			WaitAngular(driver);
 			if (CustomerLocId.isDisplayed())
-				result = CustomerLocId.getText();
+				result = getElementText(CustomerLocId, "CustomerLocId");
 			log("Customer Location Id found " + result);
 
 		} catch (Exception e) {
@@ -974,7 +1083,7 @@ public class DashBoard extends CommonMethods {
 		try {
 			WaitAngular(driver);
 			if (CustomerName.isDisplayed())
-				result = CustomerName.getText();
+				result = getElementText(CustomerName, "Customer Name");
 			log("Customer Name found " + result);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -989,7 +1098,7 @@ public class DashBoard extends CommonMethods {
 		try {
 			WaitAngular(driver);
 			if (CustomerAddress.isDisplayed())
-				result = CustomerAddress.getText();
+				result = getElementText(CustomerAddress, "Customer Name");
 		} catch (Exception e) {
 			e.printStackTrace();
 			Assert.assertTrue(false, "Customer Address not found");
@@ -1003,6 +1112,7 @@ public class DashBoard extends CommonMethods {
 		try {
 			WaitAngular(driver);
 			// Use Actions to specify an x,y coordinate for your click,
+			waitForObject(driver, OverLay);
 			Actions a = new Actions(driver);
 			a.moveToElement(OverLay, 1, 1).click().perform();
 
@@ -1013,7 +1123,7 @@ public class DashBoard extends CommonMethods {
 		try {
 			WaitAngular(driver);
 			waitForObject(this.driver, LoggedUserLink);
-			LoggedUserLink.click();
+			ClickElement(LoggedUserLink, "Logged User Link");
 
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
@@ -1023,7 +1133,7 @@ public class DashBoard extends CommonMethods {
 		try {
 			waitForObject(this.driver, LogOutLink);
 			Thread.sleep(300);
-			LogOutLink.click();
+			ClickElement(LogOutLink, "LogOut Link");
 			WaitAngular(driver);
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
@@ -1047,7 +1157,9 @@ public class DashBoard extends CommonMethods {
 
 	public void ClickDynamicOk() {
 
+		// Not waiting for element
 		try {
+
 			AlertOk.clear();
 
 		} catch (NoSuchElementException e) {

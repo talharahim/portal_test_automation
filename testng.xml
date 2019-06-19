@@ -20,7 +20,7 @@
 			<class
 				name="com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction" />
 			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks" />
+				name="com.NexusPortalAutomation.TestCases.Java.TC0005_TestBookMarks" />
 			<class
 				name="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad" />
 			<class
