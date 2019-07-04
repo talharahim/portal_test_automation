@@ -84,8 +84,10 @@ public class TC0018_VerifyDrillBacksGeneral extends BaseClass {
 		// Verify Contact is updated accordingly
 
 		ComMethd.VerifyString(custURL, dashBoard.GetCustDrillBackUrl());
-		// ComMethd.VerifyString(servTabURL, dashBoard.GetServiceTabDrillBackUrl());
+		/*
+		 * Secondary Customer URL NOT Present	
 		ComMethd.VerifyString(secondCustURL,dashBoard.GetSecondCustDrillBackUrl());
+		*/
 		ComMethd.VerifyString(contLogURL, dashBoard.getContLogDrillBackUrl());
 		dashBoard.clickActionDropDown();
 		dashBoard.VerifyActionDrillBacks(cashieringURL, creditMemoURL, depositURL, miscChargesURL, paymentArrURL, paymentExtURL, voidURL, contactLogURL, meterReadingURL);

@@ -8,27 +8,13 @@
   </listeners>
   <test thread-count="10" verbose="0" name="NexusTest(failed)">
     <classes>
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0020_VerifyDrillBackServices">
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs">
         <methods>
-          <include name="TestDrillBackServices"/>
+          <include name="TestContactLogs"/>
           <include name="TearDown"/>
           <include name="readProp"/>
         </methods>
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0020_VerifyDrillBackServices -->
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0021_VerifyServicesOrderDetails">
-        <methods>
-          <include name="TestServiceOrderDetails"/>
-          <include name="TearDown"/>
-          <include name="readProp"/>
-        </methods>
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0021_VerifyServicesOrderDetails -->
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral">
-        <methods>
-          <include name="VerifyDrillBacksGeneral"/>
-          <include name="TearDown"/>
-          <include name="readProp"/>
-        </methods>
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral -->
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs -->
     </classes>
   </test> <!-- NexusTest(failed) -->
 </suite> <!-- Failed suite [Test Suite for Nexus Portal] -->

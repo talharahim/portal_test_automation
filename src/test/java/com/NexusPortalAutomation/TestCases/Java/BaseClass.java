@@ -126,12 +126,12 @@ public class BaseClass extends ReadProjectProperties {
 		driver.get(Read.ReadFile("PortalUrl"));
 		LoginPage lpage = new LoginPage(driver);
 		WaitAngular();
-		lpage.VerifyTitle("Sign in");
+		lpage.VerifyTitle("NEXUS VIEW");
 		lpage.Login(Read.ReadFile("UserName"), Read.ReadFile("PassWord"));
 		WaitAngular();
 		String actualTitle = driver.getTitle();
 		String expectedTitle = "Portal";
-		assertEquals(expectedTitle, actualTitle);
+		assertEquals(actualTitle, expectedTitle);
 		log("User signed " + Read.ReadFile("UserName"));
 
 	}

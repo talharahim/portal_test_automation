@@ -2,6 +2,11 @@ package com.NexusPortalAutomation.Utilities.Java;
 
 import java.io.File;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Calendar;
 import java.util.Map;
 
@@ -62,6 +67,46 @@ public class CommonMethods {
 		}
 		return result;
 
+	}
+
+	public String selectFromDb(String Command, String ConnectionString, String columnName)
+			throws ClassNotFoundException, SQLException {
+		// Following will created database
+		String Result = "";
+		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+		// Creating connection to the database
+		Connection con = DriverManager.getConnection(ConnectionString);
+		// Executing the SQL Query and store the results in ResultSet
+		Statement stmt = con.createStatement();
+		ResultSet rs = stmt.executeQuery(Command);
+		while (rs.next()) {
+			Result = rs.getString(columnName);
+			System.out.println(Result);
+		}
+		// While loop to iterate through all data and print results
+		con.close();
+		return Result;
+
+	}
+
+	public boolean deleteFromDb(String Command, String ConnectionString, String columnName)
+			throws ClassNotFoundException, SQLException {
+		// Following will created database
+		boolean Result = false;
+		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+		// Creating connection to the database
+		Connection con = DriverManager.getConnection(ConnectionString);
+		// Executing the SQL Query and store the results in ResultSet
+		Statement stmt = con.createStatement();
+		try {
+			stmt.executeUpdate(Command);
+			Result = true;
+		} catch (SQLException e) {
+			Result = false;
+		}
+		// While loop to iterate through all data and print results
+		con.close();
+		return Result;
 	}
 
 	public boolean VerifyStringContains(String str1, String str2) {
@@ -145,7 +190,7 @@ public class CommonMethods {
 			jse.executeScript("arguments[0].style.border='2px solid red'", element);
 		}
 	}
-	
+
 	public void ClearHighlightElement(WebElement element, WebDriver driver) {
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 
@@ -153,7 +198,6 @@ public class CommonMethods {
 			jse.executeScript("arguments[0].style.border='0px solid red'", element);
 		}
 	}
-
 
 	public void waitForObject(WebDriver driver, WebElement element) {
 		long begin = System.currentTimeMillis();
@@ -170,7 +214,7 @@ public class CommonMethods {
 		long end = System.currentTimeMillis();
 		long dt = end - begin;
 		log("Element " + element.toString() + " displayed in " + dt + "ms");
-		//ClearHighlightElement(element, driver);
+		// ClearHighlightElement(element, driver);
 	}
 
 	public boolean CheckStringmapsAreEqual(Map<String, String> mapA, Map<String, String> mapB) {

@@ -3,17 +3,16 @@ package com.NexusPortalAutomation.PageObjects.Java;
 import java.util.HashMap;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.ElementClickInterceptedException;
-import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.SendKeysAction;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-import org.testng.Reporter;
 
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 
@@ -43,13 +42,20 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "'LOC_Location_Id'")
 	WebElement CustomerLocId;
 
-	@FindBy(css = ".text-heading > span:nth-child(1)")
-	@CacheLookup
+	@FindBy(id = "CUST_First_Last_Name")
 	WebElement CustomerName;
 
-	@FindBy(css = "#\\'LOC_Address_Line\\'")
+	@FindBy(id = "'LOC_Address_City'")
 	@CacheLookup
-	WebElement CustomerAddress;
+	WebElement CustomerAddressCity;
+
+	@FindBy(id = "'LOC_Address_State'")
+	@CacheLookup
+	WebElement CustomerAddressState;
+
+	@FindBy(id = "'LOC_Address_ZipCode'")
+	@CacheLookup
+	WebElement CustomerAddressZip;
 
 	@FindBy(id = "ALERTO_Action_Button")
 	WebElement AlertOk;
@@ -244,7 +250,7 @@ public class DashBoard extends CommonMethods {
 	// public WebElement OverLay;
 
 	@FindBy(className = "cdk-overlay-container")
-	public WebElement OverLay;
+	WebElement OverLay;
 
 	@FindBy(id = "SERV_Tab_Type_1_Icon")
 	@CacheLookup
@@ -354,6 +360,107 @@ public class DashBoard extends CommonMethods {
 	@CacheLookup
 	WebElement ServiceOerder_Drillback;
 
+	@FindBy(id = "CUST_Title")
+	@CacheLookup
+	WebElement Customer_Title;
+
+	@FindBy(id = "ACTION_Payment")
+	@CacheLookup
+	WebElement Action_Payment;
+
+	@FindBy(id = "ACTION_Service_Order")
+	@CacheLookup
+	WebElement Action_ServiceOrder;
+
+	@FindBy(id = "REC_1_Document_Type")
+	@CacheLookup
+	WebElement Recent_Record1_Type;
+
+	@FindBy(id = "REC_1_Document_Date")
+	@CacheLookup
+	WebElement Recent_Record1_Date;
+
+	@FindBy(id = "REC_1_Amount")
+	@CacheLookup
+	WebElement Recent_Record1_Amount;
+
+	@FindBy(id = "REC_Footer_Button_Label")
+	@CacheLookup
+	WebElement Recent_ViewAll;
+
+	@FindBy(css = "body > wo-root > wo-dashboard > div > mat-drawer-container > mat-drawer-content > div > div > div.layout-col-2.full.ng-star-inserted > csm-transactions > div > div.widget-header.title-section > div:nth-child(1)")
+	@CacheLookup
+	WebElement TransactionPage_Title;
+
+	@FindBy(id = "SOACT_Search_Input")
+	@CacheLookup
+	WebElement SOACTSearchInput;
+
+	@FindBy(id = "SOACT_Date_Picker_Requested")
+	@CacheLookup
+	WebElement SOACTDateRequested;
+
+	@FindBy(id = "SOACT_Date_Picker_Scheduled")
+	@CacheLookup
+	WebElement SOACTDateScheduled;
+
+	@FindBy(id = "SOACT_Description")
+	@CacheLookup
+	WebElement SOACTDescription;
+
+	@FindBy(id = "SOACT_Button_Action")
+	@CacheLookup
+	WebElement SOACTButtonAction;
+
+	@FindBy(id = "SOACT_Search_Option_1_Request_Id")
+	@CacheLookup
+	WebElement SOACTSearchOption1;
+
+	@FindBy(css = "body > wo-root > wo-dashboard > div > mat-drawer-container > mat-drawer > csm-actions-panel > div.panel-body.ng-star-inserted > div > div.transfer-success-message > div")
+	@CacheLookup
+	WebElement transferSuccessMessage;
+
+	public void submitServiceRequest(String SearchInput, String DateRequested, String DateScheduled,
+			String DateDescription) {
+		// todo
+		log("Entering Service Name");
+		setElementText(SOACTSearchInput, SearchInput, "Service Name");
+		if (SOACTSearchOption1.isDisplayed()) {
+			SOACTSearchOption1.click();
+		}
+		log("Entering Date Requested");
+		setElementText(SOACTDateRequested, DateRequested, "Date Description");
+		log("Entering Date Scheduled");
+		setElementText(SOACTDateScheduled, DateScheduled, "Date Scheduled");
+		log("Entering Date Description");
+		setElementText(SOACTDescription, DateDescription, "Date Description");
+		log("Click Action Button");
+		ClickElement(SOACTButtonAction, "Action Button");
+
+		if (transferSuccessMessage.isDisplayed()) {
+			VerifyString(transferSuccessMessage.getText(), "Service Order successfully created");
+		} else {
+			Assert.fail("Order not submitted");
+		}
+
+	}
+
+	public void verifyRecent(String Type, String Date, String Amount) {
+		log("Verifying Recent Records");
+		VerifyString(Type, getElementText(Recent_Record1_Type, "Recent Record Type"));
+		VerifyString(Date, getElementText(Recent_Record1_Date, "Recent Record Date"));
+		VerifyString(Amount, getElementText(Recent_Record1_Amount, "Recent Record Amount"));
+
+	}
+
+	public void ClickRecent_ViewAll() {
+		ClickElement(Recent_ViewAll, "Recent View All");
+	}
+
+	public String GetTransactionPageTile() {
+		return getElementText(TransactionPage_Title, "Transaction Page Title");
+	}
+
 	public void clickDashBoardBookMark() {
 
 		waitForObject(driver, Dashboard_BookMark);
@@ -365,6 +472,12 @@ public class DashBoard extends CommonMethods {
 
 		waitForObject(driver, Dashboard_BookMarkedLocation);
 		return Dashboard_BookMarkedLocation.getText();
+
+	}
+
+	public String getCustomerTitle() {
+		waitForObject(driver, Customer_Title);
+		return getElementText(Customer_Title, "CustomerTitle");
 
 	}
 
@@ -455,6 +568,26 @@ public class DashBoard extends CommonMethods {
 
 	}
 
+	public void clickActionDropDown_Payment() {
+
+		waitForObject(driver, Action_Payment);
+		ClickElement(Action_Payment, "Action Payment Drop down");
+
+	}
+
+	public void clickActionDropDown_ServiceOrder() {
+
+		waitForObject(driver, Action_ServiceOrder);
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		ClickElement(Action_ServiceOrder, "Action Service Order Drop down");
+
+	}
+
 	public WebElement findElementByid(String id) {
 
 		WebElement element = driver.findElement(By.id(id));
@@ -494,6 +627,16 @@ public class DashBoard extends CommonMethods {
 		findElementByid("TRAN_Drillback_3").getAttribute(meter);
 
 	}
+	
+	// This method will find the elements of Transaction Panel using the URL
+		public void VerifyNotesDrillBacks() throws InterruptedException {
+			Thread.sleep(1000);
+			findElementByid("ENH_Drillback_Location");
+			findElementByid("customer-person");
+			findElementByid("ENH_Title");
+
+		}
+
 
 	// This method will find the elements of Transaction Panel using the URL
 	public void VerifyServiceOrderDrillBacks(String ServOrder) throws InterruptedException {
@@ -851,7 +994,6 @@ public class DashBoard extends CommonMethods {
 		waitForObject(driver, AccountSearchText);
 		ClickElement(AccountSearchText, "Search Account");
 		setElementText(AccountSearchText, AccountId, "Account Search Text");
-		AccountSearchText.sendKeys(AccountId);
 		WaitAngular(driver);
 
 	}
@@ -1087,7 +1229,7 @@ public class DashBoard extends CommonMethods {
 			log("Customer Name found " + result);
 		} catch (Exception e) {
 			e.printStackTrace();
-			Assert.assertTrue(false, "Customer Nuame not found");
+			Assert.assertTrue(false, "Customer Name not found =" + result);
 		}
 		return result;
 	}
@@ -1097,11 +1239,13 @@ public class DashBoard extends CommonMethods {
 		String result = "";
 		try {
 			WaitAngular(driver);
-			if (CustomerAddress.isDisplayed())
-				result = getElementText(CustomerAddress, "Customer Name");
+			if (CustomerAddressCity.isDisplayed())
+				result = getElementText(CustomerAddressCity, "Customer City") + " "
+						+ getElementText(CustomerAddressState, "Customer State") + " "
+						+ getElementText(CustomerAddressZip, "Customer Zip");
 		} catch (Exception e) {
 			e.printStackTrace();
-			Assert.assertTrue(false, "Customer Address not found");
+			Assert.assertTrue(false, "Customer Address not found ="+ result);
 		}
 
 		return result;
@@ -1110,11 +1254,12 @@ public class DashBoard extends CommonMethods {
 
 	public void LogOut() throws InterruptedException {
 		try {
+
 			WaitAngular(driver);
 			// Use Actions to specify an x,y coordinate for your click,
 			waitForObject(driver, OverLay);
 			Actions a = new Actions(driver);
-			a.moveToElement(OverLay, 1, 1).click().perform();
+			a.moveToElement(OverLay, 10, 10).click().perform();
 
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
@@ -1157,10 +1302,10 @@ public class DashBoard extends CommonMethods {
 
 	public void ClickDynamicOk() {
 
-		// Not waiting for element
+		// Not waiting for element as it will throw exception
 		try {
 
-			AlertOk.clear();
+			AlertOk.click();
 
 		} catch (NoSuchElementException e) {
 			log("Alet not configured");

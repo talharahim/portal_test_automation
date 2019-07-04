@@ -1,38 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 21, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 701.093 s <<< FAILURE! - in TestSuite
-TestDrillBackServices(com.NexusPortalAutomation.TestCases.Java.TC0020_VerifyDrillBackServices)  Time elapsed: 28.578 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"id","selector":"SODV_Drillback"}
-  (Session info: chrome=75.0.3770.90)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'RND-BASE-A', ip: '10.14.13.250', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50034}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.90, webStorageEnabled: true}
-Session ID: db4627c0fedb5431ebc1c881744e76cc
-*** Element info: {Using=id, value=SODV_Drillback}
-	at com.NexusPortalAutomation.TestCases.Java.TC0020_VerifyDrillBackServices.TestDrillBackServices(TC0020_VerifyDrillBackServices.java:41)
-
-TestServiceOrderDetails(com.NexusPortalAutomation.TestCases.Java.TC0021_VerifyServicesOrderDetails)  Time elapsed: 27.344 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"id","selector":"SOLV_Service_Order_1_Request_Id"}
-  (Session info: chrome=75.0.3770.90)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'RND-BASE-A', ip: '10.14.13.250', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50218}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.90, webStorageEnabled: true}
-Session ID: b3f974701ed2411349b5a1c9fa5213ac
-*** Element info: {Using=id, value=SOLV_Service_Order_1_Request_Id}
-	at com.NexusPortalAutomation.TestCases.Java.TC0021_VerifyServicesOrderDetails.TestServiceOrderDetails(TC0021_VerifyServicesOrderDetails.java:57)
-
-VerifyDrillBacksGeneral(com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral)  Time elapsed: 15.634 s  <<< FAILURE!
-java.lang.AssertionError: expected [cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Bug reported] but found [null]
-	at com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral.VerifyDrillBacksGeneral(TC0018_VerifyDrillBacksGeneral.java:88)
+Tests run: 23, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 683.244 s <<< FAILURE! - in TestSuite
+TestContactLogs(com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs)  Time elapsed: 49.423 s  <<< FAILURE!
+java.lang.AssertionError: Object Not Found expected [true] but found [false]
+	at com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs.TestContactLogs(TC0015_VerifyContactLogs.java:43)
 

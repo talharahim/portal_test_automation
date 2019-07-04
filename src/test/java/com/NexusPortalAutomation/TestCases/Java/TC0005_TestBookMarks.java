@@ -43,7 +43,6 @@ public class TC0005_TestBookMarks extends BaseClass {
 		}
 
 		// Verify Correct User is appearing by Bookmark
-
 		dashBoard.LogOut();
 	}
 

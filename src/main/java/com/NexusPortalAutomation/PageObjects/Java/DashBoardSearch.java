@@ -35,18 +35,14 @@ public class DashBoardSearch extends CommonMethods {
 	WebElement toolBarSaved;
 
 	@FindBy(id = "SRCH_Option_1_Address_Line")
-	@CacheLookup
 	WebElement SrchCustomer;
 
 	@FindBy(id = "SRCH_Button_Favorites")
 	@CacheLookup
 	WebElement BookMarked;
 
-	@FindBy(id = "SRCH_Option_1_Address_Line")
-	WebElement RecentCustomerName;
-
-	// @ByAngularBinding.FindBy(rootSelector = "i18n", binding = "cheese")
-	// public WebElement findBy_binding;
+	@FindBy(id = "SRCH_Option_1_City_State_Zip")
+	WebElement RecentCustomerCityState;
 
 	public DashBoardSearch(WebDriver driver) {
 		this.driver = driver;
@@ -54,10 +50,14 @@ public class DashBoardSearch extends CommonMethods {
 	}
 
 	public void EnterSearchText(String txt) {
-		log("Enter Text for Search =" + txt);
-		waitForObject(this.driver, searchBar);
-		searchBar.sendKeys(txt);
-		WaitAngular(driver);
+		try {
+			log("Enter Text for Search =" + txt);
+			waitForObject(this.driver, searchBar);
+			searchBar.sendKeys(txt);
+			WaitAngular(driver);
+		} catch (NoSuchElementException e) {
+			e.getStackTrace();
+		}
 	}
 
 	public void ClickRecent() {
@@ -77,15 +77,15 @@ public class DashBoardSearch extends CommonMethods {
 		WaitAngular(driver);
 	}
 
-	public String GetRecentCustomerName() {
-		log("Recent Customer =" + RecentCustomerName.getText());
-		return RecentCustomerName.getText();
+	public String GetRecentCustomerStateCity() {
+		log("Recent Customer =" + RecentCustomerCityState.getText());
+		return RecentCustomerCityState.getText();
 	}
 
 	public boolean ClickRecentCustomerName() {
-		log("Recent Customer =" + RecentCustomerName.getText());
+		log("Recent Customer =" + RecentCustomerCityState.getText());
 		try {
-			RecentCustomerName.click();
+			RecentCustomerCityState.click();
 			return true;
 		} catch (NoSuchElementException e) {
 			log("Bookmark not found");

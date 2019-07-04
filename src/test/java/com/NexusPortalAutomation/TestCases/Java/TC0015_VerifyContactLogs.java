@@ -40,9 +40,10 @@ public class TC0015_VerifyContactLogs extends BaseClass {
 		// Verify Customer Location Id Updated for Test
 		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
-		dashBoard.AddNotes(Comments);
+		///dashBoard.AddNotes(Comments);  -- Functionality Removed
 		// Verify Updated details
-		ComMethd.VerifyString(dashBoard.GetNotes(), Comments);
+		//ComMethd.VerifyString(dashBoard.GetNotes(), Comments);  -- Functionality Removed
+		dashBoard.VerifyNotesDrillBacks();
 		dashBoard.LogOut();
 	}
 

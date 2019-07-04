@@ -20,16 +20,19 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 public class LoginPage extends CommonMethods {
 
 	WebDriver driver;
-	@FindBy(xpath = "//input[@id='mat-input-0']")
+	@FindBy(id = "username")
 	@CacheLookup
 	WebElement userName;
-	@FindBy(xpath = "//input[@id='mat-input-1']")
+	
+	@FindBy(id = "password")
 	@CacheLookup
 	WebElement passWord;
-	@FindBy(xpath = "//div[@class='login-title']")
+	
+	@FindBy(id = "kc-header-wrapper")
 	@CacheLookup
 	WebElement titleText;
-	@FindBy(xpath = "//span[@class='label ng-star-inserted']")
+	
+	@FindBy(id = "kc-login")
 	@CacheLookup
 	WebElement loginBtn;
 
@@ -43,7 +46,7 @@ public class LoginPage extends CommonMethods {
 	public void VerifyTitle(String title) {
 		waitForObject(driver, titleText);
 		Assert.assertEquals(titleText.getText(), title, "Verifying Title");
-		log("Sign in Page Title Verified");
+		log("Login Page Title Verified");
 	}
 
 	public void Login(String Username, String Password) throws InterruptedException {

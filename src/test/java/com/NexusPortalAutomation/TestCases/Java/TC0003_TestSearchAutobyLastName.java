@@ -21,6 +21,7 @@ public class TC0003_TestSearchAutobyLastName extends BaseClass {
 	 */
 
 	public String UserName = "Automation Mate";
+	public String Title = "Mr.";
 	public CommonMethods ComMethd = new CommonMethods();
 
 	@Test(priority = 3)
@@ -31,6 +32,7 @@ public class TC0003_TestSearchAutobyLastName extends BaseClass {
 		dbSrch.EnterSearchText("Mate");
 		dbSrch.ClickCustomer();
 		// Verify Login by Last Name
+		ComMethd.VerifyString(Title, dashBoard.getCustomerTitle());
 		ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
 		dashBoard.LogOut();
 
