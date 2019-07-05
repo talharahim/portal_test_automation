@@ -388,7 +388,7 @@ public class DashBoard extends CommonMethods {
 	@CacheLookup
 	WebElement Recent_ViewAll;
 
-	@FindBy(css = "body > wo-root > wo-dashboard > div > mat-drawer-container > mat-drawer-content > div > div > div.layout-col-2.full.ng-star-inserted > csm-transactions > div > div.widget-header.title-section > div:nth-child(1)")
+	@FindBy(id = "TRAN_Title")
 	@CacheLookup
 	WebElement TransactionPage_Title;
 

@@ -50,10 +50,13 @@ public class TC0022_VerifyAction_ServiceOrder extends BaseClass {
 		// ComMethd.VerifyString(servTabURL, dashBoard.GetServiceTabDrillBackUrl());
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_ServiceOrder();
-		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm");
+		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
 		Date date = new Date();
 		String DateRequested = dateFormat.format(date);
+		
 		dashBoard.submitServiceRequest(SearchInput, DateRequested, DateRequested, DateDescription);
+		Thread.sleep(1000);
+		Sql.VerifyServiceOrders(LocationID, DateRequested);
 		// Verify Updated details
 		dashBoard.LogOut();
 	}

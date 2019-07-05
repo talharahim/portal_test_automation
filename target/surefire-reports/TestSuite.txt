@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 23, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 683.244 s <<< FAILURE! - in TestSuite
-TestContactLogs(com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs)  Time elapsed: 49.423 s  <<< FAILURE!
-java.lang.AssertionError: Object Not Found expected [true] but found [false]
-	at com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs.TestContactLogs(TC0015_VerifyContactLogs.java:43)
-
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 943.505 s - in TestSuite
