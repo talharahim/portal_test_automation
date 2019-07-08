@@ -53,11 +53,14 @@ public class TC0022_VerifyAction_ServiceOrder extends BaseClass {
 		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
 		Date date = new Date();
 		String DateRequested = dateFormat.format(date);
-		
 		dashBoard.submitServiceRequest(SearchInput, DateRequested, DateRequested, DateDescription);
 		Thread.sleep(1000);
-		Sql.VerifyServiceOrders(LocationID, DateRequested);
-		// Verify Updated details
+		
+		//Sql.VerifyServiceOrders(LocationID, DateRequested);
+		// Verify Updated details IN SERVICE TAB order number from database
+		dashBoard.ClickServiceOrderLink();
+		String ServiceOrder = dashBoard.getServiceOrderNumber();
+		Sql.VerifyServiceOrders(LocationID, ServiceOrder);
 		dashBoard.LogOut();
 	}
 

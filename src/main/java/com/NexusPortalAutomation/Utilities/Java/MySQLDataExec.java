@@ -30,17 +30,18 @@ public class MySQLDataExec extends CommonMethods {
 		deleteFromDb(Command3, ConnectionString, columnName);
 	}
 
-	public void VerifyServiceOrders(String Location, String DateRequested)
+	public void VerifyServiceOrders(String Location, String soServiceOrderNumber)
 			throws ClassNotFoundException, SQLException, SQLServerException {
 
-		String columnName = "soRequestedDate";
-		String Command1 = "select * from [SO10100] where umLocationID ='" + Location + "' And soRequestedDate ='"
-				+ DateRequested + "'";
+		String columnName = "soServiceOrderNumber";
+		String Command1 = "select * from [SO10100] where umLocationID ='" + Location + "' And soServiceOrderNumber ='"
+				+ soServiceOrderNumber + "'";
 		String Result = selectFromDb(Command1, ConnectionString, columnName);
 		if (Result != "") {
 			log("Service Order verified = " + Result);
 		} else {
-			Assert.fail();
+			
+			Assert.fail("Service Order '"+soServiceOrderNumber+"' Not Found");;
 		}
 
 	}

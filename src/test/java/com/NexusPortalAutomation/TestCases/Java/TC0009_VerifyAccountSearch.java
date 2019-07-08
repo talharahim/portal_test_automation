@@ -20,12 +20,12 @@ public class TC0009_VerifyAccountSearch extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	String LocationID = "LOC@0004";
+	String LocationID = "AUTO1001";
 	String AccntSrchResult = "1 Water 1 Bldg";
-	String addLine = "007AAutomation Street Rt 20001 Apt";
-	String addCity = "Cloudy";
-	String addState = "D";
-	String addZip = "00720-017";
+	String addLine = "4 Water 145 Unit";
+	String addCity = "New York";
+	String addState = "NY";
+	String addZip = "65342";
 	CommonMethods ComMethd = new CommonMethods();
 
 //This Test will test the search by Customer ID
@@ -37,10 +37,18 @@ public class TC0009_VerifyAccountSearch extends BaseClass {
 		dbSrch.EnterSearchText(LocationID);
 		dbSrch.ClickCustomer();
 		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerId());
 		// Verify Customer Details for location Provided
-		dashBoard.SearchAccountWidget(LocationID);
-		dashBoard.VerifySearchAccountResult1(AccntSrchResult);
+		dashBoard.clickSarchAccountWidget();
+		//This will verify the type/status of the account 
+		dashBoard.verifySearchAccountResult("Current","SRCH_Accounts_Result1_Customer_Status");
+		dashBoard.verifySearchAccountResult("Current","SRCH_Accounts_Result2_Customer_Status");
+		dashBoard.verifySearchAccountResult("Former","SRCH_Accounts_Result3_Customer_Status");
+		dashBoard.verifySearchAccountResult("Move In","SRCH_Accounts_Result4_Customer_Status");
+		//Select account and verify the change
+		dashBoard.clickSearchAccountResult("SRCH_Accounts_Result2_Address_Line");
+		dashBoard.verifyAddressDetails(addLine,addCity,addState,addZip);
+				
 		dashBoard.LogOut();
 	}
 }

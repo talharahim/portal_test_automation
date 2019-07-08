@@ -35,12 +35,15 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "ACTION_Logout")
 	WebElement LogOutLink;
 
-	@FindBy(css = ".customer-info-id")
-	@CacheLookup
-	WebElement CustomerId;
+//	@FindBy(css = ".customer-info-id")
+//	@CacheLookup
+//	WebElement CustomerId;
 
 	@FindBy(id = "'LOC_Location_Id'")
 	WebElement CustomerLocId;
+	
+	@FindBy(id = "CUST_Customer_Id")
+	WebElement CustomerId;
 
 	@FindBy(id = "CUST_First_Last_Name")
 	WebElement CustomerName;
@@ -110,6 +113,10 @@ public class DashBoard extends CommonMethods {
 	@FindBy(css = "#mat-tab-label-0-2 > div")
 	@CacheLookup
 	WebElement ServiceOrderLink;
+
+	@FindBy(id = "SODV_Service_Order_Id")
+	@CacheLookup
+	WebElement ServiceOrderNumber;
 
 	@FindBy(css = "#mat-tab-label-0-0 > div:nth-child(1)")
 	@CacheLookup
@@ -412,6 +419,10 @@ public class DashBoard extends CommonMethods {
 	@CacheLookup
 	WebElement SOACTButtonAction;
 
+	@FindBy(id = "SOACT_Button_Done")
+	@CacheLookup
+	WebElement SOACTButtonDone;
+
 	@FindBy(id = "SOACT_Search_Option_1_Request_Id")
 	@CacheLookup
 	WebElement SOACTSearchOption1;
@@ -439,6 +450,7 @@ public class DashBoard extends CommonMethods {
 
 		if (transferSuccessMessage.isDisplayed()) {
 			VerifyString(transferSuccessMessage.getText(), "Service Order successfully created");
+			ClickElement(SOACTButtonDone, "Done Button");
 		} else {
 			Assert.fail("Order not submitted");
 		}
@@ -627,16 +639,15 @@ public class DashBoard extends CommonMethods {
 		findElementByid("TRAN_Drillback_3").getAttribute(meter);
 
 	}
-	
+
 	// This method will find the elements of Transaction Panel using the URL
-		public void VerifyNotesDrillBacks() throws InterruptedException {
-			Thread.sleep(1000);
-			findElementByid("ENH_Drillback_Location");
-			findElementByid("customer-person");
-			findElementByid("ENH_Title");
+	public void VerifyNotesDrillBacks() throws InterruptedException {
+		Thread.sleep(1000);
+		findElementByid("ENH_Drillback_Location");
+		findElementByid("customer-person");
+		findElementByid("ENH_Title");
 
-		}
-
+	}
 
 	// This method will find the elements of Transaction Panel using the URL
 	public void VerifyServiceOrderDrillBacks(String ServOrder) throws InterruptedException {
@@ -995,7 +1006,34 @@ public class DashBoard extends CommonMethods {
 		ClickElement(AccountSearchText, "Search Account");
 		setElementText(AccountSearchText, AccountId, "Account Search Text");
 		WaitAngular(driver);
+	}
 
+	public void verifySearchAccountResult(String AccountStatus, String id) {
+		try {
+			VerifyString(AccountStatus, (findElementByid(id).getText()));
+		} catch (NoSuchElementException e) {
+			Assert.assertFalse(true, "Element Not found");
+		}
+	}
+
+	public void clickSearchAccountResult(String id) {
+		try {
+			findElementByid(id).click();
+		} catch (NoSuchElementException e) {
+			Assert.assertFalse(true, "Element Not found");
+		}
+
+	}
+
+	public void clickSarchAccountWidget() throws InterruptedException {
+		WaitAngular(driver);
+		log("Click on Account Drop down");
+		waitForObject(driver, AccountDropdown);
+		ClickElement(AccountDropdown, "Account Drop down");
+		log("Enter Account Name");
+		WaitAngular(driver);
+		waitForObject(driver, AccountSearchText);
+		ClickElement(AccountSearchText, "Search Account");
 	}
 
 	public void VerifySearchAccountResult1(String AccountName) throws InterruptedException {
@@ -1045,18 +1083,26 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void ClickSummaryLink() {
-
+		log("Clicking Summary Link");
 		ClickElement(SummaryLink, "Summary Link");
 
 	}
 
 	public void ClickTransactionLink() {
+		log("Clicking Transaction Link");
 		ClickElement(TransactionLink, "Transaction Link");
 
 	}
 
 	public void ClickServiceOrderLink() {
+		log("Clicking Servic Order Link");
 		ClickElement(ServiceOrderLink, "Service Order Link");
+
+	}
+
+	public String getServiceOrderNumber() {
+		log("Capturing Servic Order Number");
+		return getElementText(ServiceOrderNumber, "Service Order Number");
 
 	}
 
@@ -1218,6 +1264,8 @@ public class DashBoard extends CommonMethods {
 		return result;
 
 	}
+	
+	
 
 	public String GetLoggedCustomerName() throws InterruptedException {
 
@@ -1245,7 +1293,7 @@ public class DashBoard extends CommonMethods {
 						+ getElementText(CustomerAddressZip, "Customer Zip");
 		} catch (Exception e) {
 			e.printStackTrace();
-			Assert.assertTrue(false, "Customer Address not found ="+ result);
+			Assert.assertTrue(false, "Customer Address not found =" + result);
 		}
 
 		return result;
