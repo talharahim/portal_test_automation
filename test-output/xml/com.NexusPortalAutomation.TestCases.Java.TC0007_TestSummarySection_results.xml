@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="29.594">
+           time="31.481">
   <properties />
   
   
-            <testcase name="TestSummarySectionOnChange" time="29.594" classname="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection" />
+            <testcase name="TestSummarySectionOnChange" time="31.481" classname="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection" />
       
 </testsuite>

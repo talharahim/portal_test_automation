@@ -41,7 +41,7 @@ public class DashBoard extends CommonMethods {
 
 	@FindBy(id = "'LOC_Location_Id'")
 	WebElement CustomerLocId;
-	
+
 	@FindBy(id = "CUST_Customer_Id")
 	WebElement CustomerId;
 
@@ -431,6 +431,60 @@ public class DashBoard extends CommonMethods {
 	@CacheLookup
 	WebElement transferSuccessMessage;
 
+	@FindBy(id = "SRCH_Input")
+	@CacheLookup
+	WebElement DashboardSearch;
+
+	@FindBy(id = "SRCH_Option_1_Customer_Name")
+	WebElement DashboardSearchResult1Name;
+
+	@FindBy(id = "SRCH_Option_1_Customer_Id")
+	WebElement DashboardSearchResult1CustomerId;
+
+	@FindBy(id = "SRCH_Option_1_Location_Id")
+	WebElement DashboardSearchResult1Location;
+
+	@FindBy(id = "ACTION_Refresh_Page")
+	WebElement RefreshButton;
+
+	public void clickrefreshPage() throws InterruptedException {
+
+		waitForObject(driver, RefreshButton);
+		ClickElement(RefreshButton, "Refresh Button");
+		Thread.sleep(1000);
+	}
+
+	public void enterDashBoardSearch(String SearchText) {
+
+		waitForObject(driver, DashboardSearch);
+		setElementText(DashboardSearch, SearchText, "Search Text");
+	}
+
+	public String getDashBoardSearchResult1Name() {
+
+		waitForObject(driver, DashboardSearchResult1Name);
+		return DashboardSearchResult1Name.getText();
+	}
+	
+	public void clickDashBoardSearchResult1() {
+
+		waitForObject(driver, DashboardSearchResult1Name);
+		DashboardSearchResult1Name.click();
+		WaitAngular(driver);
+	}
+
+	public String getDashBoardSearchResult1CustomerId() {
+
+		waitForObject(driver, DashboardSearchResult1CustomerId);
+		return DashboardSearchResult1CustomerId.getText();
+	}
+
+	public String getDashBoardSearchResult1Location() {
+
+		waitForObject(driver, DashboardSearchResult1Location);
+		return DashboardSearchResult1Location.getText();
+	}
+
 	public void submitServiceRequest(String SearchInput, String DateRequested, String DateScheduled,
 			String DateDescription) {
 		// todo
@@ -629,6 +683,12 @@ public class DashBoard extends CommonMethods {
 		findElementByid("ACTION_Contact_Log").getAttribute(Mreader);
 		findElementByid("ACTION_Meter_Reading").getAttribute(ContLog);
 
+	}
+
+	public void VerifyDrillBack(String ElementID, String drillBackURL) throws InterruptedException {
+		Thread.sleep(1000);
+		log("Verifying Drill back for "+drillBackURL);
+		findElementByid(ElementID).getAttribute(drillBackURL);
 	}
 
 	// This method will find the elements of Transaction Panel using the URL
@@ -1008,6 +1068,17 @@ public class DashBoard extends CommonMethods {
 		WaitAngular(driver);
 	}
 
+	public void SearchAccountWidgetExpanded(String AccountId) throws InterruptedException {
+		WaitAngular(driver);
+		log("Click on Account Drop down");
+		log("Enter Account Name");
+		WaitAngular(driver);
+		waitForObject(driver, AccountSearchText);
+		ClickElement(AccountSearchText, "Search Account");
+		setElementText(AccountSearchText, AccountId, "Account Search Text");
+		WaitAngular(driver);
+	}
+
 	public void verifySearchAccountResult(String AccountStatus, String id) {
 		try {
 			VerifyString(AccountStatus, (findElementByid(id).getText()));
@@ -1264,8 +1335,6 @@ public class DashBoard extends CommonMethods {
 		return result;
 
 	}
-	
-	
 
 	public String GetLoggedCustomerName() throws InterruptedException {
 

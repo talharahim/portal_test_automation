@@ -26,6 +26,7 @@ public class TC0009_VerifyAccountSearch extends BaseClass {
 	String addCity = "New York";
 	String addState = "NY";
 	String addZip = "65342";
+	String AccountId = "LOC@0002";
 	CommonMethods ComMethd = new CommonMethods();
 
 //This Test will test the search by Customer ID
@@ -48,7 +49,9 @@ public class TC0009_VerifyAccountSearch extends BaseClass {
 		//Select account and verify the change
 		dashBoard.clickSearchAccountResult("SRCH_Accounts_Result2_Address_Line");
 		dashBoard.verifyAddressDetails(addLine,addCity,addState,addZip);
-				
+		dashBoard.SearchAccountWidgetExpanded(AccountId);
+		dashBoard.VerifySearchAccountResult1(AccountId);
+			
 		dashBoard.LogOut();
 	}
 }

@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="27.272">
+           time="38.695">
   <properties />
   
   
-            <testcase name="VerifyRecentWidget" time="27.272" classname="com.NexusPortalAutomation.TestCases.Java.TC0023_VerifyRecentWidget" />
+            <testcase name="TestSearchAutobyFirstName" time="38.695" classname="com.NexusPortalAutomation.TestCases.Java.TC0024_TestCustDetailSearchFirstName" />
       
 </testsuite>

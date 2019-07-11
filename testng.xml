@@ -57,6 +57,8 @@
 				name="com.NexusPortalAutomation.TestCases.Java.TC0022_VerifyAction_ServiceOrder" />
 			<class
 				name="com.NexusPortalAutomation.TestCases.Java.TC0023_VerifyRecentWidget" />
+			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0024_TestCustDetailSearchFirstName" />
 
 		</classes>
 

@@ -21,6 +21,7 @@ public class TC0018_VerifyDrillBacksGeneral extends BaseClass {
 	 */
 
 	public String LocationID = "LOC@0004";
+	public String LocationID2 = "LOC@0007";
 	public String CustomerID ="0000011111";
     public String ServerURL = GetDrillBackServerURL();
 
@@ -69,6 +70,19 @@ public class TC0018_VerifyDrillBacksGeneral extends BaseClass {
 	public String meterReadingURL = ServerURL
 			+ "Prod=229&Act=OPEN&Func=Meterreading&CustomerID="+CustomerID+"&LocationID="+LocationID+"&CogsDrillback=1";
 	
+	public String scondaryCustomerURL = ServerURL
+	+ "Prod=229&Act=OPEN&Func=SecondaryCustomer&LocationID="+LocationID+"&CustomerID="+CustomerID+"&Address=1  Water ALY  BLDG 1 NEW SMYRNA  BEACH FL 123123&CustName=Mr. Auto Contact&CogsDrillback=1";
+	
+	public String serviceURL = ServerURL
+	+"Prod=229&Act=OPEN&Func=LocationAccountServices&CustomerID=DRILBACK&LocationID="+LocationID2+"&CogsDrillback=1";
+	
+	public String enhancedNotesCustURL = ServerURL
+	+"Prod=0&Act=OPEN&Func=EnhansedNote&NoteId=DRILBACK&NoteIndex=513.00000&CogsDrillback=1";
+	
+	public String enhancedNotesLocURL = ServerURL
+	+"Prod=0&Act=OPEN&Func=EnhansedNote&NoteId=LOC@0007&NoteIndex=515.00000&CogsDrillback=1";
+	
+	
 	CommonMethods ComMethd = new CommonMethods();
 
 //This Test will test the search by Customer ID
@@ -90,8 +104,17 @@ public class TC0018_VerifyDrillBacksGeneral extends BaseClass {
 		*/
 		ComMethd.VerifyString(contLogURL, dashBoard.getContLogDrillBackUrl());
 		dashBoard.clickActionDropDown();
+		//Action DrillBacks
 		dashBoard.VerifyActionDrillBacks(cashieringURL, creditMemoURL, depositURL, miscChargesURL, paymentArrURL, paymentExtURL, voidURL, contactLogURL, meterReadingURL);
-
+		//Secondary Customer URL
+		dashBoard.VerifyDrillBack("SCUST_Drillback",scondaryCustomerURL);
+		//Change User
+		dashBoard.enterDashBoardSearch(LocationID2);
+		dashBoard.clickDashBoardSearchResult1();
+		//Service Drillback
+		dashBoard.VerifyDrillBack("SERV_Tab_Drillback",serviceURL);
+		dashBoard.VerifyDrillBack("ENH_Drillback_Customer",enhancedNotesCustURL);
+		dashBoard.VerifyDrillBack("ENH_Drillback_Location",enhancedNotesLocURL);
 		// Verify Updated details
 		dashBoard.LogOut();
 	}
