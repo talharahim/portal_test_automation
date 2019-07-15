@@ -74,7 +74,14 @@ public class TC0025_VerifyAction_Transfers extends BaseClass {
 		// Verify Updated details IN SERVICE TAB order number from database
 		dashBoard.ClickServiceOrderLink();
 		String ServiceOrder = dashBoard.getServiceOrderNumber();
+		log(ServiceOrder);
 		Sql.VerifyServiceOrders(LocationID, ServiceOrder);
+		//Entering location ID 2 and verifying
+		dashBoard.enterDashBoardSearch(LocationID2);
+		dashBoard.clickDashBoardSearchResult1();		
+		dashBoard.ClickServiceOrderLink();
+		ServiceOrder = dashBoard.getServiceOrderNumber();
+		log(ServiceOrder);
 		Sql.VerifyServiceOrders(LocationID2, ServiceOrder);
 		dashBoard.LogOut();
 	}

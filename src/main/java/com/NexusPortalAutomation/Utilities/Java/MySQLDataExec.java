@@ -51,7 +51,6 @@ public class MySQLDataExec extends CommonMethods {
 		if (Result != "") {
 			log("Service Order verified = " + Result);
 		} else {
-
 			Assert.fail("Service Order '" + soServiceOrderNumber + "' Not Found");
 			;
 		}

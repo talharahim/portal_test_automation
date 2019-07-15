@@ -115,7 +115,6 @@ public class DashBoard extends CommonMethods {
 	WebElement ServiceOrderLink;
 
 	@FindBy(id = "SODV_Service_Order_Id")
-	@CacheLookup
 	WebElement ServiceOrderNumber;
 
 	@FindBy(css = "#mat-tab-label-0-0 > div:nth-child(1)")
