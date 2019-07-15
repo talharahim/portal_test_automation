@@ -9,6 +9,7 @@ com\NexusPortalAutomation\TestCases\Java\TC0015_VerifyContactLogs.class
 com\NexusPortalAutomation\TestCases\Java\TC0013_VerifyContactEdit.class
 com\NexusPortalAutomation\TestCases\Java\TC0023_VerifyRecentWidget.class
 com\NexusPortalAutomation\TestCases\Java\TC0008_VerifySignInbyLocationID.class
+com\NexusPortalAutomation\TestCases\Java\TC0025_VerifyAction_Transfers.class
 com\NexusPortalAutomation\TestCases\Java\TC0005_TestBookMarks.class
 com\NexusPortalAutomation\TestCases\Java\TC0001_VerifySignInbyID.class
 com\NexusPortalAutomation\TestCases\Java\TC0007_TestSummarySection.class

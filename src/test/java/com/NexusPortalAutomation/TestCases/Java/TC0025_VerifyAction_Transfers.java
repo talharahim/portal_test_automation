@@ -28,10 +28,8 @@ public class TC0025_VerifyAction_Transfers extends BaseClass {
 	 */
 
 	public String LocationID = "LOC@0004";
-	public String CustomerID = "0000011111";
+	public String LocationID2 = "LOC@0005";
 	public String ServerURL = GetDrillBackServerURL();
-	public String SearchInput = "REQ-DEP-WATER";
-	public String DateDescription = "AutomationRequest";
 	CommonMethods ComMethd = new CommonMethods();
 
 //This Test will test the search by Customer ID
@@ -42,6 +40,9 @@ public class TC0025_VerifyAction_Transfers extends BaseClass {
 		Dashboard_Transfers dashBoard = new Dashboard_Transfers(driver);
 		MySQLDataExec Sql = new MySQLDataExec();
 		Sql.DeleteServiceOrders(LocationID);
+		Sql.DeleteServiceOrders(LocationID2);
+		Sql.DeleteServiceOrdersHistory(LocationID);
+		Sql.DeleteServiceOrdersHistory(LocationID2);
 		login();
 		dbSrch.EnterSearchText(LocationID);
 		dbSrch.ClickCustomer();
@@ -56,9 +57,16 @@ public class TC0025_VerifyAction_Transfers extends BaseClass {
 		String DateRequested = dateFormat.format(date);
 		dashBoard.SelectTransferType_Transfer();
 		dashBoard.enterRequest("Transfer");
+		//Entering data for Move Out
 		dashBoard.enterDefaultCustomer("vacant vacant");
 		dashBoard.enterDescription("AUTOMATION TEST");
+		//Entering data for Move In
 		dashBoard.ClickMoveIn();
+		dashBoard.Movin_EnterRequestDate("07/15/2019 07:52");
+		dashBoard.Movin_EnterRequest("TRANSFER");
+		dashBoard.Movin_EnterLocation(LocationID2);
+		dashBoard.Movin_EnterDescription("Move in from location");
+		dashBoard.Click_MoveInSubmit();
 
 		Thread.sleep(1000);
 
@@ -67,6 +75,7 @@ public class TC0025_VerifyAction_Transfers extends BaseClass {
 		dashBoard.ClickServiceOrderLink();
 		String ServiceOrder = dashBoard.getServiceOrderNumber();
 		Sql.VerifyServiceOrders(LocationID, ServiceOrder);
+		Sql.VerifyServiceOrders(LocationID2, ServiceOrder);
 		dashBoard.LogOut();
 	}
 

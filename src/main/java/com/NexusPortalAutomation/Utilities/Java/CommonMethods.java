@@ -88,8 +88,10 @@ public class CommonMethods {
 		return Result;
 
 	}
+	
 
-	public boolean deleteFromDb(String Command, String ConnectionString, String columnName)
+
+	public boolean deleteFromDb(String Command, String ConnectionString)
 			throws ClassNotFoundException, SQLException {
 		// Following will created database
 		boolean Result = false;

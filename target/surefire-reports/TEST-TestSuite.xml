@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="734.207" tests="24" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="741.961" tests="24" errors="0" skipped="0" failures="18">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\Administrator\AppData\Local\Temp\surefire3693688769716195946\surefirebooter2639844252545349500.jar C:\Users\Administrator\AppData\Local\Temp\surefire3693688769716195946 2019-07-11T11-59-44_057-jvmRun1 surefire7813452718061313402tmp surefire_03376297516640638310tmp"/>
+    <property name="sun.java.command" value="C:\Users\Administrator\AppData\Local\Temp\surefire347894793591324410\surefirebooter4023119646933663334.jar C:\Users\Administrator\AppData\Local\Temp\surefire347894793591324410 2019-07-15T10-03-08_405-jvmRun1 surefire3162694769621362660tmp surefire_08629496889929360794tmp"/>
     <property name="surefire.test.class.path" value="F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\target\test-classes;F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\target\classes;C:\Users\Administrator\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\Administrator\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\Administrator\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-java\3.14.0\selenium-java-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-api\3.14.0\selenium-api-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.14.0\selenium-edge-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.14.0\selenium-ie-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.14.0\selenium-opera-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.14.0\selenium-remote-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.14.0\selenium-safari-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-support\3.14.0\selenium-support-3.14.0.jar;C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Administrator\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\Administrator\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Administrator\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Administrator\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Administrator\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;C:\Users\Administrator\.m2\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar;C:\Users\Administrator\.m2\repository\com\squareup\okio\okio\1.14.1\okio-1.14.1.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\apache\maven\reporting\maven-reporting-api\2.0.6\maven-reporting-api-2.0.6.jar;C:\Users\Administrator\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.0-alpha-7\doxia-sink-api-1.0-alpha-7.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\mysql\mysql-connector-java\8.0.15\mysql-connector-java-8.0.15.jar;C:\Users\Administrator\.m2\repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;C:\Users\Administrator\.m2\repository\org\apache\logging\log4j\log4j-core\2.11.2\log4j-core-2.11.2.jar;C:\Users\Administrator\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.2\log4j-api-2.11.2.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi\4.1.0\poi-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-collections4\4.3\commons-collections4-4.3.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml\4.1.0\poi-ooxml-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.0\poi-ooxml-schemas-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\Administrator\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\Administrator\.m2\repository\com\microsoft\sqlserver\mssql-jdbc\7.0.0.jre8\mssql-jdbc-7.0.0.jre8.jar;C:\Users\Administrator\.m2\repository\com\paulhammant\ngwebdriver\1.1.4\ngwebdriver-1.1.4.jar;C:\Users\Administrator\.m2\repository\com\aventstack\extentreports\4.0.5\extentreports-4.0.5.jar;C:\Users\Administrator\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\Administrator\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\Administrator\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;C:\Users\Administrator\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\Administrator\.m2\repository\org\uncommons\reportng\1.1.4\reportng-1.1.4.jar;C:\Users\Administrator\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\Administrator\.m2\repository\com\google\inject\guice\3.0\guice-3.0.jar;C:\Users\Administrator\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Administrator\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Administrator\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\Administrator\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Administrator"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Administrator\AppData\Local\Temp\surefire3693688769716195946\surefirebooter2639844252545349500.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Administrator\AppData\Local\Temp\surefire347894793591324410\surefirebooter4023119646933663334.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,28 +60,864 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="TestBookMark" classname="com.NexusPortalAutomation.TestCases.Java.TC0011_VerifyBookMark" time="42.413"/>
-  <testcase name="VerifyDrillBackTransactions" classname="com.NexusPortalAutomation.TestCases.Java.TC0019_VerifyDrillBackTransactions" time="32.806"/>
-  <testcase name="TestDrillBackServices" classname="com.NexusPortalAutomation.TestCases.Java.TC0020_VerifyDrillBackServices" time="29.805"/>
-  <testcase name="TestServiceOrderDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0021_VerifyServicesOrderDetails" time="20.482"/>
-  <testcase name="TestCustomerDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails" time="15.308"/>
-  <testcase name="VerifyDrillBacksGeneral" classname="com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral" time="29.666"/>
-  <testcase name="TestSearchAccount" classname="com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch" time="32.798"/>
-  <testcase name="TestBillingStatements" classname="com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue" time="24.889"/>
-  <testcase name="TestSearchbyLocationID" classname="com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID" time="20.274"/>
-  <testcase name="TestContactLogs" classname="com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs" time="24.362"/>
-  <testcase name="VerifyBillingDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails" time="26.541"/>
-  <testcase name="TestContactEdit" classname="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit" time="21.038"/>
-  <testcase name="TestSecondayContact" classname="com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact" time="23.39"/>
-  <testcase name="TestCreditStatus" classname="com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus" time="26.157"/>
-  <testcase name="TestSearchID" classname="com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID" time="20.828"/>
-  <testcase name="VerifyActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0022_VerifyAction_ServiceOrder" time="26.351"/>
-  <testcase name="VerifyRecentWidget" classname="com.NexusPortalAutomation.TestCases.Java.TC0023_VerifyRecentWidget" time="27.625"/>
-  <testcase name="TestSearchAutobyRecent" classname="com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction" time="48.793"/>
-  <testcase name="TestSearchAutobyBookMark" classname="com.NexusPortalAutomation.TestCases.Java.TC0005_TestBookMarks" time="24.392"/>
-  <testcase name="TestSearchAlertOnLoad" classname="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad" time="23.786"/>
-  <testcase name="TestSummarySectionOnChange" classname="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection" time="25.828"/>
-  <testcase name="TestSearchAutobyFirstName" classname="com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName" time="22.075"/>
-  <testcase name="TestSearchAutobyFirstName" classname="com.NexusPortalAutomation.TestCases.Java.TC0024_TestCustDetailSearch" time="36.501"/>
-  <testcase name="TestSearchAutobyLastName" classname="com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName" time="19.639"/>
+  <testcase name="TestBookMark" classname="com.NexusPortalAutomation.TestCases.Java.TC0011_VerifyBookMark" time="42.931"/>
+  <testcase name="VerifyDrillBackTransactions" classname="com.NexusPortalAutomation.TestCases.Java.TC0019_VerifyDrillBackTransactions" time="19.407">
+    <failure message="expected [LOC@0001] but found [LOC00012]" type="java.lang.AssertionError">java.lang.AssertionError: expected [LOC@0001] but found [LOC00012]
+	at com.NexusPortalAutomation.TestCases.Java.TC0019_VerifyDrillBackTransactions.VerifyDrillBackTransactions(TC0019_VerifyDrillBackTransactions.java:48)
+</failure>
+    <system-out><![CDATA[Test completed successfully- TestBookMark
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- VerifyDrillBackTransactions
+Angular Request Completed in 65ms
+Element [[ChromeDriver: chrome on XP (aae70d0bcfa5b7ed5b617b94c0448c57)] -> id: kc-header-wrapper] displayed in 55ms
+Login Page Title Verified
+Element [[ChromeDriver: chrome on XP (aae70d0bcfa5b7ed5b617b94c0448c57)] -> id: username] displayed in 58ms
+Element [[ChromeDriver: chrome on XP (aae70d0bcfa5b7ed5b617b94c0448c57)] -> id: password] displayed in 49ms
+Element [[ChromeDriver: chrome on XP (aae70d0bcfa5b7ed5b617b94c0448c57)] -> id: kc-login] displayed in 66ms
+Angular Request Completed in 16ms
+User signed Admin
+Enter Text for Search =LOC@0001
+Element [[ChromeDriver: chrome on XP (aae70d0bcfa5b7ed5b617b94c0448c57)] -> id: SRCH_Input] displayed in 68ms
+Angular request time 947ms
+Click Customer
+Angular request time 2481ms
+Angular request time 16ms
+Element [[ChromeDriver: chrome on XP (aae70d0bcfa5b7ed5b617b94c0448c57)] -> id: 'LOC_Location_Id'] displayed in 52ms
+get Text Text CustomerLocId
+Angular request time 10ms
+Customer Location Id found LOC00012
+Strings Not Matched: LOC@0001 != LOC00012
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 8263
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563203039.053][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jul 15, 2019 10:04:00 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="TestDrillBackServices" classname="com.NexusPortalAutomation.TestCases.Java.TC0020_VerifyDrillBackServices" time="17.314">
+    <failure message="expected [LOC@0001] but found [LOC00012]" type="java.lang.AssertionError">java.lang.AssertionError: expected [LOC@0001] but found [LOC00012]
+	at com.NexusPortalAutomation.TestCases.Java.TC0020_VerifyDrillBackServices.TestDrillBackServices(TC0020_VerifyDrillBackServices.java:37)
+</failure>
+    <system-out><![CDATA[***** Error VerifyDrillBackTransactions test has failed *****
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- TestDrillBackServices
+Angular Request Completed in 62ms
+Element [[ChromeDriver: chrome on XP (31ce6a677940952736893d01bde67102)] -> id: kc-header-wrapper] displayed in 39ms
+Login Page Title Verified
+Element [[ChromeDriver: chrome on XP (31ce6a677940952736893d01bde67102)] -> id: username] displayed in 37ms
+Element [[ChromeDriver: chrome on XP (31ce6a677940952736893d01bde67102)] -> id: password] displayed in 36ms
+Element [[ChromeDriver: chrome on XP (31ce6a677940952736893d01bde67102)] -> id: kc-login] displayed in 45ms
+Angular Request Completed in 15ms
+User signed Admin
+Enter Text for Search =LOC@0001
+Element [[ChromeDriver: chrome on XP (31ce6a677940952736893d01bde67102)] -> id: SRCH_Input] displayed in 53ms
+Angular request time 937ms
+Click Customer
+Angular request time 2153ms
+Angular request time 10ms
+Element [[ChromeDriver: chrome on XP (31ce6a677940952736893d01bde67102)] -> id: 'LOC_Location_Id'] displayed in 36ms
+get Text Text CustomerLocId
+Angular request time 9ms
+Customer Location Id found LOC00012
+Strings Not Matched: LOC@0001 != LOC00012
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 9064
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563203064.827][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jul 15, 2019 10:04:25 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="TestServiceOrderDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0021_VerifyServicesOrderDetails" time="18.847">
+    <failure message="expected [LOC@0001] but found [LOC00012]" type="java.lang.AssertionError">java.lang.AssertionError: expected [LOC@0001] but found [LOC00012]
+	at com.NexusPortalAutomation.TestCases.Java.TC0021_VerifyServicesOrderDetails.TestServiceOrderDetails(TC0021_VerifyServicesOrderDetails.java:52)
+</failure>
+    <system-out><![CDATA[***** Error TestDrillBackServices test has failed *****
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- TestServiceOrderDetails
+Angular Request Completed in 104ms
+Element [[ChromeDriver: chrome on XP (fcc0c1a183a1039698bbfcc79d87c09a)] -> id: kc-header-wrapper] displayed in 63ms
+Login Page Title Verified
+Element [[ChromeDriver: chrome on XP (fcc0c1a183a1039698bbfcc79d87c09a)] -> id: username] displayed in 56ms
+Element [[ChromeDriver: chrome on XP (fcc0c1a183a1039698bbfcc79d87c09a)] -> id: password] displayed in 51ms
+Element [[ChromeDriver: chrome on XP (fcc0c1a183a1039698bbfcc79d87c09a)] -> id: kc-login] displayed in 56ms
+Angular Request Completed in 39ms
+User signed Admin
+Enter Text for Search =LOC@0001
+Element [[ChromeDriver: chrome on XP (fcc0c1a183a1039698bbfcc79d87c09a)] -> id: SRCH_Input] displayed in 67ms
+Angular request time 931ms
+Click Customer
+Angular request time 2159ms
+Angular request time 15ms
+Element [[ChromeDriver: chrome on XP (fcc0c1a183a1039698bbfcc79d87c09a)] -> id: 'LOC_Location_Id'] displayed in 43ms
+get Text Text CustomerLocId
+Angular request time 9ms
+Customer Location Id found LOC00012
+Strings Not Matched: LOC@0001 != LOC00012
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 25963
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563203088.187][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jul 15, 2019 10:04:49 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="TestCustomerDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails" time="18.409">
+    <failure message="expected [LOC@0001] but found [LOC00012]" type="java.lang.AssertionError">java.lang.AssertionError: expected [LOC@0001] but found [LOC00012]
+	at com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails.TestCustomerDetails(TC0010_VerifyCustomerDetails.java:42)
+</failure>
+    <system-out><![CDATA[***** Error TestServiceOrderDetails test has failed *****
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- TestCustomerDetails
+Angular Request Completed in 26ms
+Element [[ChromeDriver: chrome on XP (dea8eaeff6ffbf6ad42c98927de62c65)] -> id: kc-header-wrapper] displayed in 248ms
+Login Page Title Verified
+Element [[ChromeDriver: chrome on XP (dea8eaeff6ffbf6ad42c98927de62c65)] -> id: username] displayed in 103ms
+Element [[ChromeDriver: chrome on XP (dea8eaeff6ffbf6ad42c98927de62c65)] -> id: password] displayed in 114ms
+Element [[ChromeDriver: chrome on XP (dea8eaeff6ffbf6ad42c98927de62c65)] -> id: kc-login] displayed in 137ms
+Angular Request Completed in 31ms
+User signed Admin
+Enter Text for Search =LOC@0001
+Element [[ChromeDriver: chrome on XP (dea8eaeff6ffbf6ad42c98927de62c65)] -> id: SRCH_Input] displayed in 68ms
+Angular request time 1026ms
+Click Customer
+Angular request time 2307ms
+Angular request time 12ms
+Element [[ChromeDriver: chrome on XP (dea8eaeff6ffbf6ad42c98927de62c65)] -> id: 'LOC_Location_Id'] displayed in 51ms
+get Text Text CustomerLocId
+Angular request time 12ms
+Customer Location Id found LOC00012
+Strings Not Matched: LOC@0001 != LOC00012
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 35121
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563203113.035][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jul 15, 2019 10:05:13 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="VerifyDrillBacksGeneral" classname="com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral" time="16.405">
+    <failure message="expected [LOC@0004] but found [LOC00012]" type="java.lang.AssertionError">java.lang.AssertionError: expected [LOC@0004] but found [LOC00012]
+	at com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral.VerifyDrillBacksGeneral(TC0018_VerifyDrillBacksGeneral.java:97)
+</failure>
+    <system-out><![CDATA[***** Error TestCustomerDetails test has failed *****
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- VerifyDrillBacksGeneral
+Angular Request Completed in 57ms
+Element [[ChromeDriver: chrome on XP (03137d7d702b78e589d7b054055c8ea6)] -> id: kc-header-wrapper] displayed in 54ms
+Login Page Title Verified
+Element [[ChromeDriver: chrome on XP (03137d7d702b78e589d7b054055c8ea6)] -> id: username] displayed in 40ms
+Element [[ChromeDriver: chrome on XP (03137d7d702b78e589d7b054055c8ea6)] -> id: password] displayed in 43ms
+Element [[ChromeDriver: chrome on XP (03137d7d702b78e589d7b054055c8ea6)] -> id: kc-login] displayed in 42ms
+Angular Request Completed in 14ms
+User signed Admin
+Enter Text for Search =LOC@0004
+Element [[ChromeDriver: chrome on XP (03137d7d702b78e589d7b054055c8ea6)] -> id: SRCH_Input] displayed in 75ms
+Angular request time 956ms
+Click Customer
+Angular request time 1923ms
+Angular request time 18ms
+Element [[ChromeDriver: chrome on XP (03137d7d702b78e589d7b054055c8ea6)] -> id: 'LOC_Location_Id'] displayed in 34ms
+get Text Text CustomerLocId
+Angular request time 8ms
+Customer Location Id found LOC00012
+Strings Not Matched: LOC@0004 != LOC00012
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 36755
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563203137.363][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jul 15, 2019 10:05:38 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="TestSearchAccount" classname="com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch" time="27.108"/>
+  <testcase name="TestBillingStatements" classname="com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue" time="23.462"/>
+  <testcase name="TestSearchbyLocationID" classname="com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID" time="19.569">
+    <failure message="expected [LOC@0001] but found [LOC00012]" type="java.lang.AssertionError">java.lang.AssertionError: expected [LOC@0001] but found [LOC00012]
+	at com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID.TestSearchbyLocationID(TC0008_VerifySignInbyLocationID.java:39)
+</failure>
+    <system-out><![CDATA[Test completed successfully- TestBillingStatements
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- TestSearchbyLocationID
+Angular Request Completed in 116ms
+Element [[ChromeDriver: chrome on XP (20518f539676e901d084f0db8f405ba0)] -> id: kc-header-wrapper] displayed in 92ms
+Login Page Title Verified
+Element [[ChromeDriver: chrome on XP (20518f539676e901d084f0db8f405ba0)] -> id: username] displayed in 49ms
+Element [[ChromeDriver: chrome on XP (20518f539676e901d084f0db8f405ba0)] -> id: password] displayed in 65ms
+Element [[ChromeDriver: chrome on XP (20518f539676e901d084f0db8f405ba0)] -> id: kc-login] displayed in 59ms
+Angular Request Completed in 17ms
+User signed Admin
+Enter Text for Search =LOC@0001
+Element [[ChromeDriver: chrome on XP (20518f539676e901d084f0db8f405ba0)] -> id: SRCH_Input] displayed in 88ms
+Angular request time 1099ms
+Click Customer
+Angular request time 2735ms
+Angular request time 24ms
+Element [[ChromeDriver: chrome on XP (20518f539676e901d084f0db8f405ba0)] -> id: 'LOC_Location_Id'] displayed in 60ms
+get Text Text CustomerLocId
+Angular request time 16ms
+Customer Location Id found LOC00012
+Strings Not Matched: LOC@0001 != LOC00012
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 13192
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563203216.495][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jul 15, 2019 10:06:57 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="TestContactLogs" classname="com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs" time="19.851">
+    <failure message="expected [LOC@0004] but found [LOC00012]" type="java.lang.AssertionError">java.lang.AssertionError: expected [LOC@0004] but found [LOC00012]
+	at com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs.TestContactLogs(TC0015_VerifyContactLogs.java:41)
+</failure>
+    <system-out><![CDATA[***** Error TestSearchbyLocationID test has failed *****
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- TestContactLogs
+Angular Request Completed in 22ms
+Element [[ChromeDriver: chrome on XP (03f96ffe0e5faba8821880e4e279ad3a)] -> id: kc-header-wrapper] displayed in 48ms
+Login Page Title Verified
+Element [[ChromeDriver: chrome on XP (03f96ffe0e5faba8821880e4e279ad3a)] -> id: username] displayed in 54ms
+Element [[ChromeDriver: chrome on XP (03f96ffe0e5faba8821880e4e279ad3a)] -> id: password] displayed in 45ms
+Element [[ChromeDriver: chrome on XP (03f96ffe0e5faba8821880e4e279ad3a)] -> id: kc-login] displayed in 45ms
+Angular Request Completed in 11ms
+User signed Admin
+Enter Text for Search =LOC@0004
+Element [[ChromeDriver: chrome on XP (03f96ffe0e5faba8821880e4e279ad3a)] -> id: SRCH_Input] displayed in 44ms
+Angular request time 1046ms
+Click Customer
+Angular request time 2131ms
+Angular request time 13ms
+Element [[ChromeDriver: chrome on XP (03f96ffe0e5faba8821880e4e279ad3a)] -> id: 'LOC_Location_Id'] displayed in 52ms
+get Text Text CustomerLocId
+Angular request time 15ms
+Customer Location Id found LOC00012
+Strings Not Matched: LOC@0004 != LOC00012
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 21509
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563203241.959][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jul 15, 2019 10:07:23 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="VerifyBillingDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails" time="17.642">
+    <failure message="expected [LOC@0001] but found [LOC00012]" type="java.lang.AssertionError">java.lang.AssertionError: expected [LOC@0001] but found [LOC00012]
+	at com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails.VerifyBillingDetails(TC0016_VerifyBillingDetails.java:53)
+</failure>
+    <system-out><![CDATA[***** Error TestContactLogs test has failed *****
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- VerifyBillingDetails
+Angular Request Completed in 75ms
+Element [[ChromeDriver: chrome on XP (7285ad903d22834eeaebae50db7243b3)] -> id: kc-header-wrapper] displayed in 57ms
+Login Page Title Verified
+Element [[ChromeDriver: chrome on XP (7285ad903d22834eeaebae50db7243b3)] -> id: username] displayed in 51ms
+Element [[ChromeDriver: chrome on XP (7285ad903d22834eeaebae50db7243b3)] -> id: password] displayed in 49ms
+Element [[ChromeDriver: chrome on XP (7285ad903d22834eeaebae50db7243b3)] -> id: kc-login] displayed in 41ms
+Angular Request Completed in 15ms
+User signed Admin
+Enter Text for Search =LOC@0001
+Element [[ChromeDriver: chrome on XP (7285ad903d22834eeaebae50db7243b3)] -> id: SRCH_Input] displayed in 69ms
+Angular request time 1060ms
+Click Customer
+Angular request time 2211ms
+Angular request time 20ms
+Element [[ChromeDriver: chrome on XP (7285ad903d22834eeaebae50db7243b3)] -> id: 'LOC_Location_Id'] displayed in 46ms
+get Text Text CustomerLocId
+Angular request time 12ms
+Customer Location Id found LOC00012
+Strings Not Matched: LOC@0001 != LOC00012
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 29962
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563203265.657][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jul 15, 2019 10:07:46 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="TestContactEdit" classname="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit" time="18.54">
+    <failure message="expected [LOC@0004] but found [LOC00012]" type="java.lang.AssertionError">java.lang.AssertionError: expected [LOC@0004] but found [LOC00012]
+	at com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit.TestContactEdit(TC0013_VerifyContactEdit.java:41)
+</failure>
+    <system-out><![CDATA[***** Error VerifyBillingDetails test has failed *****
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- TestContactEdit
+Angular Request Completed in 50ms
+Element [[ChromeDriver: chrome on XP (60db08c98ca6bf67ce43dbcfc0d4d1cc)] -> id: kc-header-wrapper] displayed in 57ms
+Login Page Title Verified
+Element [[ChromeDriver: chrome on XP (60db08c98ca6bf67ce43dbcfc0d4d1cc)] -> id: username] displayed in 49ms
+Element [[ChromeDriver: chrome on XP (60db08c98ca6bf67ce43dbcfc0d4d1cc)] -> id: password] displayed in 50ms
+Element [[ChromeDriver: chrome on XP (60db08c98ca6bf67ce43dbcfc0d4d1cc)] -> id: kc-login] displayed in 62ms
+Angular Request Completed in 47ms
+User signed Admin
+Enter Text for Search =LOC@0004
+Element [[ChromeDriver: chrome on XP (60db08c98ca6bf67ce43dbcfc0d4d1cc)] -> id: SRCH_Input] displayed in 87ms
+Angular request time 1054ms
+Click Customer
+Angular request time 2175ms
+Angular request time 12ms
+Element [[ChromeDriver: chrome on XP (60db08c98ca6bf67ce43dbcfc0d4d1cc)] -> id: 'LOC_Location_Id'] displayed in 47ms
+get Text Text CustomerLocId
+Angular request time 9ms
+Customer Location Id found LOC00012
+Strings Not Matched: LOC@0004 != LOC00012
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 17697
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563203289.173][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jul 15, 2019 10:08:10 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="TestSecondayContact" classname="com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact" time="18.483">
+    <failure message="expected [LOC@0004] but found [LOC00012]" type="java.lang.AssertionError">java.lang.AssertionError: expected [LOC@0004] but found [LOC00012]
+	at com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact.TestSecondayContact(TC0014_VerifySecondaryContact.java:36)
+</failure>
+    <system-out><![CDATA[***** Error TestContactEdit test has failed *****
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- TestSecondayContact
+Angular Request Completed in 50ms
+Element [[ChromeDriver: chrome on XP (489c361a9d7576502f14adbcfe7db735)] -> id: kc-header-wrapper] displayed in 45ms
+Login Page Title Verified
+Element [[ChromeDriver: chrome on XP (489c361a9d7576502f14adbcfe7db735)] -> id: username] displayed in 44ms
+Element [[ChromeDriver: chrome on XP (489c361a9d7576502f14adbcfe7db735)] -> id: password] displayed in 43ms
+Element [[ChromeDriver: chrome on XP (489c361a9d7576502f14adbcfe7db735)] -> id: kc-login] displayed in 47ms
+Angular Request Completed in 15ms
+User signed Admin
+Enter Text for Search =LOC@0004
+Element [[ChromeDriver: chrome on XP (489c361a9d7576502f14adbcfe7db735)] -> id: SRCH_Input] displayed in 81ms
+Angular request time 1076ms
+Click Customer
+Angular request time 2133ms
+Angular request time 11ms
+Element [[ChromeDriver: chrome on XP (489c361a9d7576502f14adbcfe7db735)] -> id: 'LOC_Location_Id'] displayed in 73ms
+get Text Text CustomerLocId
+Angular request time 23ms
+Customer Location Id found LOC00012
+Strings Not Matched: LOC@0004 != LOC00012
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 30250
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563203313.743][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jul 15, 2019 10:08:34 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="TestCreditStatus" classname="com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus" time="22.637">
+    <failure message="expected [LOC@0001] but found [LOC00012]" type="java.lang.AssertionError">java.lang.AssertionError: expected [LOC@0001] but found [LOC00012]
+	at com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus.TestCreditStatus(TC0012_VerifyCreditStatus.java:35)
+</failure>
+    <system-out><![CDATA[***** Error TestSecondayContact test has failed *****
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- TestCreditStatus
+Angular Request Completed in 309ms
+Element [[ChromeDriver: chrome on XP (00041fd650919e9ca9f47c6a6dbaac4e)] -> id: kc-header-wrapper] displayed in 222ms
+Login Page Title Verified
+Element [[ChromeDriver: chrome on XP (00041fd650919e9ca9f47c6a6dbaac4e)] -> id: username] displayed in 340ms
+Element [[ChromeDriver: chrome on XP (00041fd650919e9ca9f47c6a6dbaac4e)] -> id: password] displayed in 209ms
+Element [[ChromeDriver: chrome on XP (00041fd650919e9ca9f47c6a6dbaac4e)] -> id: kc-login] displayed in 51ms
+Angular Request Completed in 24ms
+User signed Admin
+Enter Text for Search =LOC@0001
+Element [[ChromeDriver: chrome on XP (00041fd650919e9ca9f47c6a6dbaac4e)] -> id: SRCH_Input] displayed in 81ms
+Angular request time 936ms
+Click Customer
+Angular request time 1750ms
+Angular request time 11ms
+Element [[ChromeDriver: chrome on XP (00041fd650919e9ca9f47c6a6dbaac4e)] -> id: 'LOC_Location_Id'] displayed in 62ms
+get Text Text CustomerLocId
+Angular request time 22ms
+Customer Location Id found LOC00012
+Strings Not Matched: LOC@0001 != LOC00012
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 25733
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563203338.285][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jul 15, 2019 10:08:59 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="TestSearchID" classname="com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID" time="30.64">
+    <failure message="Customer Id not found expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Customer Id not found expected [true] but found [false]
+	at com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID.TestSearchID(TC0001_VerifySignInbyID.java:35)
+</failure>
+    <system-out><![CDATA[***** Error TestCreditStatus test has failed *****
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- TestSearchID
+Angular Request Completed in 597ms
+Element [[ChromeDriver: chrome on XP (7d4b55a481d13adefe01c29d04b5effd)] -> id: kc-header-wrapper] displayed in 113ms
+Login Page Title Verified
+Element [[ChromeDriver: chrome on XP (7d4b55a481d13adefe01c29d04b5effd)] -> id: username] displayed in 80ms
+Element [[ChromeDriver: chrome on XP (7d4b55a481d13adefe01c29d04b5effd)] -> id: password] displayed in 74ms
+Element [[ChromeDriver: chrome on XP (7d4b55a481d13adefe01c29d04b5effd)] -> id: kc-login] displayed in 53ms
+Angular Request Completed in 21ms
+User signed Admin
+Enter Text for Search =0000011111
+Element [[ChromeDriver: chrome on XP (7d4b55a481d13adefe01c29d04b5effd)] -> id: SRCH_Input] displayed in 68ms
+Angular request time 1130ms
+Click Customer
+Angular request time 2341ms
+Angular request time 12ms
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 20181
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563203364.711][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jul 15, 2019 10:09:25 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"CUST_Customer_Id"}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'RND-BASE-A', ip: '10.14.8.229', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57671}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: 7d4b55a481d13adefe01c29d04b5effd
+*** Element info: {Using=id, value=CUST_Customer_Id}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
+	at com.NexusPortalAutomation.PageObjects.Java.DashBoard.GetLoggedCustomerId(DashBoard.java:1311)
+	at com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID.TestSearchID(TC0001_VerifySignInbyID.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]></system-err>
+  </testcase>
+  <testcase name="VerifyActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0022_VerifyAction_ServiceOrder" time="16.446">
+    <failure message="expected [LOC@0004] but found [LOC00012]" type="java.lang.AssertionError">java.lang.AssertionError: expected [LOC@0004] but found [LOC00012]
+	at com.NexusPortalAutomation.TestCases.Java.TC0022_VerifyAction_ServiceOrder.VerifyActionServiceOrder(TC0022_VerifyAction_ServiceOrder.java:48)
+</failure>
+    <system-out><![CDATA[***** Error TestSearchID test has failed *****
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- VerifyActionServiceOrder
+Reading Project Properties
+Deleting Records for 
+Angular Request Completed in 113ms
+Element [[ChromeDriver: chrome on XP (0f58328d6e429d6260bcef3a0192ee69)] -> id: kc-header-wrapper] displayed in 54ms
+Login Page Title Verified
+Element [[ChromeDriver: chrome on XP (0f58328d6e429d6260bcef3a0192ee69)] -> id: username] displayed in 47ms
+Element [[ChromeDriver: chrome on XP (0f58328d6e429d6260bcef3a0192ee69)] -> id: password] displayed in 44ms
+Element [[ChromeDriver: chrome on XP (0f58328d6e429d6260bcef3a0192ee69)] -> id: kc-login] displayed in 42ms
+Angular Request Completed in 15ms
+User signed Admin
+Enter Text for Search =LOC@0004
+Element [[ChromeDriver: chrome on XP (0f58328d6e429d6260bcef3a0192ee69)] -> id: SRCH_Input] displayed in 52ms
+Angular request time 999ms
+Click Customer
+Angular request time 2028ms
+Angular request time 9ms
+Element [[ChromeDriver: chrome on XP (0f58328d6e429d6260bcef3a0192ee69)] -> id: 'LOC_Location_Id'] displayed in 44ms
+get Text Text CustomerLocId
+Angular request time 11ms
+Customer Location Id found LOC00012
+Strings Not Matched: LOC@0004 != LOC00012
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 24697
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563203398.711][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jul 15, 2019 10:09:59 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="VerifyRecentWidget" classname="com.NexusPortalAutomation.TestCases.Java.TC0023_VerifyRecentWidget" time="19.093">
+    <failure message="expected [LOC@0001] but found [LOC00012]" type="java.lang.AssertionError">java.lang.AssertionError: expected [LOC@0001] but found [LOC00012]
+	at com.NexusPortalAutomation.TestCases.Java.TC0023_VerifyRecentWidget.VerifyRecentWidget(TC0023_VerifyRecentWidget.java:40)
+</failure>
+    <system-out><![CDATA[***** Error VerifyActionServiceOrder test has failed *****
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- VerifyRecentWidget
+Angular Request Completed in 77ms
+Element [[ChromeDriver: chrome on XP (6ca621018808c10a90d00354bec0e18f)] -> id: kc-header-wrapper] displayed in 54ms
+Login Page Title Verified
+Element [[ChromeDriver: chrome on XP (6ca621018808c10a90d00354bec0e18f)] -> id: username] displayed in 51ms
+Element [[ChromeDriver: chrome on XP (6ca621018808c10a90d00354bec0e18f)] -> id: password] displayed in 36ms
+Element [[ChromeDriver: chrome on XP (6ca621018808c10a90d00354bec0e18f)] -> id: kc-login] displayed in 37ms
+Angular Request Completed in 34ms
+User signed Admin
+Enter Text for Search =LOC@0001
+Element [[ChromeDriver: chrome on XP (6ca621018808c10a90d00354bec0e18f)] -> id: SRCH_Input] displayed in 81ms
+Angular request time 1102ms
+Click Customer
+Angular request time 2454ms
+Angular request time 11ms
+Element [[ChromeDriver: chrome on XP (6ca621018808c10a90d00354bec0e18f)] -> id: 'LOC_Location_Id'] displayed in 46ms
+get Text Text CustomerLocId
+Angular request time 10ms
+Customer Location Id found LOC00012
+Strings Not Matched: LOC@0001 != LOC00012
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 23839
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563203420.880][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jul 15, 2019 10:10:21 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="TestSearchAutobyRecent" classname="com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction" time="49.924"/>
+  <testcase name="TestSearchAutobyBookMark" classname="com.NexusPortalAutomation.TestCases.Java.TC0005_TestBookMarks" time="25.939"/>
+  <testcase name="TestSearchAlertOnLoad" classname="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad" time="19.854"/>
+  <testcase name="TestSummarySectionOnChange" classname="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection" time="23.034">
+    <failure message="Customer Name not found = expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Customer Name not found = expected [true] but found [false]
+	at com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection.TestSummarySectionOnChange(TC0007_TestSummarySection.java:39)
+</failure>
+    <system-out><![CDATA[Test completed successfully- TestSearchAlertOnLoad
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- TestSummarySectionOnChange
+Angular Request Completed in 54ms
+Element [[ChromeDriver: chrome on XP (f1afecac7443cd38ed4e96bc4c6e3e76)] -> id: kc-header-wrapper] displayed in 32ms
+Login Page Title Verified
+Element [[ChromeDriver: chrome on XP (f1afecac7443cd38ed4e96bc4c6e3e76)] -> id: username] displayed in 31ms
+Element [[ChromeDriver: chrome on XP (f1afecac7443cd38ed4e96bc4c6e3e76)] -> id: password] displayed in 35ms
+Element [[ChromeDriver: chrome on XP (f1afecac7443cd38ed4e96bc4c6e3e76)] -> id: kc-login] displayed in 40ms
+Angular Request Completed in 13ms
+User signed Admin
+Element '//input[@id='SRCH_Input']' is displayed in 51ms
+Element 'toolbar-saved' is displayed in 45ms
+Angular Request Completed in 8ms
+Enter Text for Search =Automation
+Element [[ChromeDriver: chrome on XP (f1afecac7443cd38ed4e96bc4c6e3e76)] -> id: SRCH_Input] displayed in 22ms
+Angular request time 861ms
+Click Customer
+Angular request time 1738ms
+Element '//div[@class='address-details']' is displayed in 42ms
+Angular request time 9ms
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 42595
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563203552.337][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jul 15, 2019 10:12:32 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"CUST_First_Last_Name"}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'RND-BASE-A', ip: '10.14.8.229', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58996}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: f1afecac7443cd38ed4e96bc4c6e3e76
+*** Element info: {Using=id, value=CUST_First_Last_Name}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
+	at com.NexusPortalAutomation.PageObjects.Java.DashBoard.GetLoggedCustomerName(DashBoard.java:1345)
+	at com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection.TestSummarySectionOnChange(TC0007_TestSummarySection.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]></system-err>
+  </testcase>
+  <testcase name="TestSearchAutobyFirstName" classname="com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName" time="56.226">
+    <failure message="Object Not Found expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Object Not Found expected [true] but found [false]
+	at com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName.TestSearchAutobyFirstName(TC0002_TestSearchAutobyFirstName.java:36)
+</failure>
+    <system-out><![CDATA[***** Error TestSummarySectionOnChange test has failed *****
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- TestSearchAutobyFirstName
+Angular Request Completed in 42ms
+Element [[ChromeDriver: chrome on XP (6a756f79065484c9fd0c6034e12bcd50)] -> id: kc-header-wrapper] displayed in 57ms
+Login Page Title Verified
+Element [[ChromeDriver: chrome on XP (6a756f79065484c9fd0c6034e12bcd50)] -> id: username] displayed in 36ms
+Element [[ChromeDriver: chrome on XP (6a756f79065484c9fd0c6034e12bcd50)] -> id: password] displayed in 34ms
+Element [[ChromeDriver: chrome on XP (6a756f79065484c9fd0c6034e12bcd50)] -> id: kc-login] displayed in 34ms
+Angular Request Completed in 33ms
+User signed Admin
+Enter Text for Search =Automation Mate
+Element [[ChromeDriver: chrome on XP (6a756f79065484c9fd0c6034e12bcd50)] -> id: SRCH_Input] displayed in 74ms
+Angular request time 1135ms
+Click Customer
+Angular request time 2555ms
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 37259
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563203578.337][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jul 15, 2019 10:12:59 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="TestSearchAutobyFirstName" classname="com.NexusPortalAutomation.TestCases.Java.TC0024_TestCustDetailSearch" time="27.844">
+    <failure message="Customer Name not found = expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Customer Name not found = expected [true] but found [false]
+	at com.NexusPortalAutomation.TestCases.Java.TC0024_TestCustDetailSearch.TestSearchAutobyFirstName(TC0024_TestCustDetailSearch.java:43)
+</failure>
+    <system-out><![CDATA[***** Error TestSearchAutobyFirstName test has failed *****
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- TestSearchAutobyFirstName
+Angular Request Completed in 66ms
+Element [[ChromeDriver: chrome on XP (5942aab34a1bdf1413125574f2aa9a37)] -> id: kc-header-wrapper] displayed in 41ms
+Login Page Title Verified
+Element [[ChromeDriver: chrome on XP (5942aab34a1bdf1413125574f2aa9a37)] -> id: username] displayed in 37ms
+Element [[ChromeDriver: chrome on XP (5942aab34a1bdf1413125574f2aa9a37)] -> id: password] displayed in 52ms
+Element [[ChromeDriver: chrome on XP (5942aab34a1bdf1413125574f2aa9a37)] -> id: kc-login] displayed in 33ms
+Angular Request Completed in 27ms
+User signed Admin
+Enter Text for Search =Automation Mate
+Element [[ChromeDriver: chrome on XP (5942aab34a1bdf1413125574f2aa9a37)] -> id: SRCH_Input] displayed in 89ms
+Angular request time 1364ms
+Click Customer
+Angular request time 1870ms
+Element [[ChromeDriver: chrome on XP (5942aab34a1bdf1413125574f2aa9a37)] -> id: SRCH_Input] displayed in 28ms
+Element [[ChromeDriver: chrome on XP (5942aab34a1bdf1413125574f2aa9a37)] -> id: SRCH_Input] displayed in 16ms
+Set Text Search Text
+Angular request time 6ms
+Element [[ChromeDriver: chrome on XP (5942aab34a1bdf1413125574f2aa9a37)] -> id: SRCH_Option_1_Customer_Name] displayed in 1043ms
+Strings Matched: Mate, Automation = Mate, Automation
+Element [[ChromeDriver: chrome on XP (5942aab34a1bdf1413125574f2aa9a37)] -> id: SRCH_Option_1_Customer_Name] displayed in 28ms
+Angular request time 348ms
+Angular request time 346ms
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 19277
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563203640.602][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jul 15, 2019 10:14:01 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"CUST_First_Last_Name"}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'RND-BASE-A', ip: '10.14.8.229', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59376}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: 5942aab34a1bdf1413125574f2aa9a37
+*** Element info: {Using=id, value=CUST_First_Last_Name}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.isDisplayed(Unknown Source)
+	at com.NexusPortalAutomation.PageObjects.Java.DashBoard.GetLoggedCustomerName(DashBoard.java:1345)
+	at com.NexusPortalAutomation.TestCases.Java.TC0024_TestCustDetailSearch.TestSearchAutobyFirstName(TC0024_TestCustDetailSearch.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]></system-err>
+  </testcase>
+  <testcase name="TestSearchAutobyLastName" classname="com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName" time="51.521">
+    <failure message="Object Not Found expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Object Not Found expected [true] but found [false]
+	at com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName.TestSearchAutobyLastName(TC0003_TestSearchAutobyLastName.java:35)
+</failure>
+    <system-out><![CDATA[***** Error TestSearchAutobyFirstName test has failed *****
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- TestSearchAutobyLastName
+Angular Request Completed in 44ms
+Element [[ChromeDriver: chrome on XP (58e837ebfb706c4e8179bf636ea4f246)] -> id: kc-header-wrapper] displayed in 43ms
+Login Page Title Verified
+Element [[ChromeDriver: chrome on XP (58e837ebfb706c4e8179bf636ea4f246)] -> id: username] displayed in 33ms
+Element [[ChromeDriver: chrome on XP (58e837ebfb706c4e8179bf636ea4f246)] -> id: password] displayed in 37ms
+Element [[ChromeDriver: chrome on XP (58e837ebfb706c4e8179bf636ea4f246)] -> id: kc-login] displayed in 32ms
+Angular Request Completed in 244ms
+User signed Admin
+Enter Text for Search =Mate
+Element [[ChromeDriver: chrome on XP (58e837ebfb706c4e8179bf636ea4f246)] -> id: SRCH_Input] displayed in 71ms
+Angular request time 984ms
+Click Customer
+Angular request time 3200ms
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 42969
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563203674.086][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Jul 15, 2019 10:14:34 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
 </testsuite>

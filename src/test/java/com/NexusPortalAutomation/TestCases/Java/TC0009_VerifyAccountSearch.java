@@ -22,10 +22,10 @@ public class TC0009_VerifyAccountSearch extends BaseClass {
 
 	String LocationID = "AUTO1001";
 	String AccntSrchResult = "1 Water 1 Bldg";
-	String addLine = "4 Water 145 Unit";
-	String addCity = "New York";
-	String addState = "NY";
-	String addZip = "65342";
+	String addLine = "8129371 128 Test 12 712893 Bsmt";
+	String addCity = "Karachi";
+	String addState = "OTTAWA";
+	String addZip = "81392-37";
 	String AccountId = "LOC@0002";
 	CommonMethods ComMethd = new CommonMethods();
 
@@ -43,9 +43,9 @@ public class TC0009_VerifyAccountSearch extends BaseClass {
 		dashBoard.clickSarchAccountWidget();
 		//This will verify the type/status of the account 
 		dashBoard.verifySearchAccountResult("Current","SRCH_Accounts_Result1_Customer_Status");
-		dashBoard.verifySearchAccountResult("Current","SRCH_Accounts_Result2_Customer_Status");
-		dashBoard.verifySearchAccountResult("Former","SRCH_Accounts_Result3_Customer_Status");
-		dashBoard.verifySearchAccountResult("Move In","SRCH_Accounts_Result4_Customer_Status");
+		dashBoard.verifySearchAccountResult("Former","SRCH_Accounts_Result2_Customer_Status");
+		dashBoard.verifySearchAccountResult("Move In","SRCH_Accounts_Result3_Customer_Status");
+		
 		//Select account and verify the change
 		dashBoard.clickSearchAccountResult("SRCH_Accounts_Result2_Address_Line");
 		dashBoard.verifyAddressDetails(addLine,addCity,addState,addZip);

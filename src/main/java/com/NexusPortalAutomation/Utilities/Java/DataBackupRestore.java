@@ -75,7 +75,7 @@ public class DataBackupRestore {
 		con.close();
 	}
 
-	//@Test(priority = 3)
+	@Test(priority = 3)
 	void CompanyDBRestore() throws SQLException, ClassNotFoundException {
 
 		String Restore = "USE master; RESTORE DATABASE " + DatabaseName + " FROM DISK = " + DatabaseLocation
