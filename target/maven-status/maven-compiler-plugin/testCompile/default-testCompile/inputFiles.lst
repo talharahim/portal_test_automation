@@ -8,7 +8,6 @@ F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPorta
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\ngWebDriver.java
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0015_VerifyContactLogs.java
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0003_TestSearchAutobyLastName.java
-F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0024_TestCustDetailSearchFirstName.java
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0012_VerifyCreditStatus.java
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0005_TestBookMarks.java
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0008_VerifySignInbyLocationID.java
@@ -16,6 +15,7 @@ F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPorta
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0022_VerifyAction_ServiceOrder.java
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0018_VerifyDrillBacksGeneral.java
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0013_VerifyContactEdit.java
+F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0024_TestCustDetailSearch.java
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0007_TestSummarySection.java
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0020_VerifyDrillBackServices.java
 F:\CogsdaleWorkSpace\com.NexusPortalAutomation.Java\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0016_VerifyBillingDetails.java

@@ -10,13 +10,13 @@ com\NexusPortalAutomation\TestCases\Java\TC0013_VerifyContactEdit.class
 com\NexusPortalAutomation\TestCases\Java\TC0023_VerifyRecentWidget.class
 com\NexusPortalAutomation\TestCases\Java\TC0008_VerifySignInbyLocationID.class
 com\NexusPortalAutomation\TestCases\Java\TC0005_TestBookMarks.class
-com\NexusPortalAutomation\TestCases\Java\TC0024_TestCustDetailSearchFirstName.class
 com\NexusPortalAutomation\TestCases\Java\TC0001_VerifySignInbyID.class
 com\NexusPortalAutomation\TestCases\Java\TC0007_TestSummarySection.class
 com\NexusPortalAutomation\TestCases\Java\TC0021_VerifyServicesOrderDetails.class
 com\NexusPortalAutomation\TestCases\Java\TC0016_VerifyBillingDetails.class
 com\NexusPortalAutomation\TestCases\Java\TC0019_VerifyDrillBackTransactions.class
 com\NexusPortalAutomation\TestCases\Java\TC0010_VerifyCustomerDetails.class
+com\NexusPortalAutomation\TestCases\Java\TC0024_TestCustDetailSearch.class
 com\NexusPortalAutomation\TestCases\Java\ngWebDriver.class
 com\NexusPortalAutomation\TestCases\Java\TC0017_StatementsValue.class
 com\NexusPortalAutomation\TestCases\Java\BaseClass.class

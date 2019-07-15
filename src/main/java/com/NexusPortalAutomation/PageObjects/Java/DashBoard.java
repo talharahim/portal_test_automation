@@ -617,6 +617,7 @@ public class DashBoard extends CommonMethods {
 			waitForObject(driver, element);
 			log("Set Text " + ElementName);
 			WaitAngular(driver);
+			element.clear();
 			element.sendKeys(Text);
 
 		} catch (NoSuchElementException e) {
