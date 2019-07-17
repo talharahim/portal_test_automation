@@ -16,6 +16,8 @@ com\NexusPortalAutomation\TestCases\Java\TC0007_TestSummarySection.class
 com\NexusPortalAutomation\TestCases\Java\TC0021_VerifyServicesOrderDetails.class
 com\NexusPortalAutomation\TestCases\Java\TC0016_VerifyBillingDetails.class
 com\NexusPortalAutomation\TestCases\Java\TC0019_VerifyDrillBackTransactions.class
+com\NexusPortalAutomation\TestCases\Java\TC0026_VerifyAction_Transfers_StartService.class
+com\NexusPortalAutomation\TestCases\Java\TC0027_VerifyAction_Transfers_StopService.class
 com\NexusPortalAutomation\TestCases\Java\TC0010_VerifyCustomerDetails.class
 com\NexusPortalAutomation\TestCases\Java\TC0024_TestCustDetailSearch.class
 com\NexusPortalAutomation\TestCases\Java\ngWebDriver.class

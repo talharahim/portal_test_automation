@@ -26,7 +26,7 @@ public class TC0022_VerifyAction_ServiceOrder extends BaseClass {
 	 * @Since 2019-06-10
 	 */
 
-	public String LocationID = "LOC@0004";
+	public String LocationID = "LOC@0007";
 	public String CustomerID = "0000011111";
 	public String ServerURL = GetDrillBackServerURL();
 	public String SearchInput = "REQ-DEP-WATER";

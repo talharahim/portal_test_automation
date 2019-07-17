@@ -60,7 +60,18 @@
 			<class
 				name="com.NexusPortalAutomation.TestCases.Java.TC0024_TestCustDetailSearch" />
 
+			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0025_VerifyAction_Transfers" />
+			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0026_VerifyAction_Transfers_StartService" />
+			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0027_VerifyAction_Transfers_StopService" />
+
 		</classes>
+
+
+
+
 
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
