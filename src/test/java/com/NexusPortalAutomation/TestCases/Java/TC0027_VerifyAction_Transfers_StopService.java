@@ -2,14 +2,10 @@ package com.NexusPortalAutomation.TestCases.Java;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 
-import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.PageObjects.Java.Dashboard_Transfers;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;

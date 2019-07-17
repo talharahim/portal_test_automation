@@ -57,19 +57,5 @@ public class MySQLDataExec extends CommonMethods {
 
 	}
 
-	/*
-	 * public String getServOrderNumber(String Location) throws
-	 * ClassNotFoundException, SQLException { // Following will created database
-	 * String Command1 = "select * from [SO10100] where umLocationID ='" + Location
-	 * + "'"; Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver"); //
-	 * Creating connection to the database Connection con =
-	 * DriverManager.getConnection(ConnectionString); // Executing the SQL Query and
-	 * store the results in ResultSet Statement stmt = con.createStatement();
-	 * ResultSet rs = stmt.executeQuery(Command1); while (rs.next()) { Result =
-	 * rs.getString("soServiceOrderNumber"); System.out.println(Result); } // While
-	 * loop to iterate through all data and print results con.close(); return
-	 * Result;
-	 * 
-	 * }
-	 */
+	
 }
