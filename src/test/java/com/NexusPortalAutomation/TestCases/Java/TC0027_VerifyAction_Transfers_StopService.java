@@ -43,7 +43,6 @@ public class TC0027_VerifyAction_Transfers_StopService extends BaseClass {
 		MySQLDataExec Sql = new MySQLDataExec();
 		Sql.DeleteServiceOrders(LocationID);
 		Sql.DeleteServiceOrdersHistory(LocationID);
-		
 		login();
 		dbSrch.EnterSearchText(LocationID);
 		dbSrch.ClickCustomer();
