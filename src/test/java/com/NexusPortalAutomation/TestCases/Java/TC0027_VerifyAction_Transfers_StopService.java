@@ -6,6 +6,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
@@ -15,7 +16,7 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 import com.NexusPortalAutomation.Utilities.Java.MySQLDataExec;
 import com.microsoft.sqlserver.jdbc.SQLServerException;
 
-public class TC0025_VerifyAction_Transfers extends BaseClass {
+public class TC0027_VerifyAction_Transfers_StopService extends BaseClass {
 
 	/*
 	 * This test the search by Recent Customer Name
@@ -29,8 +30,8 @@ public class TC0025_VerifyAction_Transfers extends BaseClass {
 
 	public String LocationID = "LOC@0004";
 	public String LocationID2 = "LOC@0005";
-	public String DefaultCustomer = "Mr. VACANT VACANT";
 	public String ServerURL = GetDrillBackServerURL();
+	public String DefaultCustomer = "Mr. VACANT VACANT";
 	CommonMethods ComMethd = new CommonMethods();
 
 //This Test will test the search by Customer ID
@@ -41,9 +42,8 @@ public class TC0025_VerifyAction_Transfers extends BaseClass {
 		Dashboard_Transfers dashBoard = new Dashboard_Transfers(driver);
 		MySQLDataExec Sql = new MySQLDataExec();
 		Sql.DeleteServiceOrders(LocationID);
-		Sql.DeleteServiceOrders(LocationID2);
 		Sql.DeleteServiceOrdersHistory(LocationID);
-		Sql.DeleteServiceOrdersHistory(LocationID2);
+		
 		login();
 		dbSrch.EnterSearchText(LocationID);
 		dbSrch.ClickCustomer();
@@ -53,21 +53,25 @@ public class TC0025_VerifyAction_Transfers extends BaseClass {
 		// ComMethd.VerifyString(servTabURL, dashBoard.GetServiceTabDrillBackUrl());
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
-//		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
-//		Date date = new Date();
-//		String DateRequested = dateFormat.format(date);
-		dashBoard.SelectTransferType_Transfer();
-		dashBoard.enterRequest("Transfer");
+		//DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
+		//Date date = new Date();
+		//String DateRequested = dateFormat.format(date);
+		dashBoard.SelectTransferType_Transfer_Stop();
+		dashBoard.enterRequest("TRANSFER");
 		// Entering data for Move Out
-		dashBoard.verifyDefaultCustomer(DefaultCustomer);
-		dashBoard.enterDefaultCustomer(DefaultCustomer);
+		//Scroll down
+		JavascriptExecutor jsx = (JavascriptExecutor)driver;
+		jsx.executeScript("window.scrollBy(0,450)", "");
+		//
+		dashBoard.verifyDefaultCustomerStartService(DefaultCustomer);
+		dashBoard.enterDefaultCustomerStartService(DefaultCustomer);
 		dashBoard.enterDescription("AUTOMATION TEST");
 		// Entering data for Move In
-		dashBoard.ClickMoveIn();
-		dashBoard.Movin_EnterRequestDate("07/15/2019 07:52");
-		dashBoard.Movin_EnterRequest("TRANSFER");
-		dashBoard.Movin_EnterLocation(LocationID2);
-		dashBoard.Movin_EnterDescription("Move in from location");
+//		dashBoard.ClickMoveIn();
+//		dashBoard.Movin_EnterRequestDate("07/15/2019 07:52");
+//		dashBoard.Movin_EnterRequest("TRANSFER");
+//		dashBoard.Movin_EnterLocation(LocationID2);
+//		dashBoard.Movin_EnterDescription("Move in from location");
 		dashBoard.Click_MoveInSubmit();
 		Thread.sleep(1000);
 		dashBoard.ClickDone();
@@ -78,12 +82,12 @@ public class TC0025_VerifyAction_Transfers extends BaseClass {
 		log(ServiceOrder);
 		Sql.VerifyServiceOrders(LocationID, ServiceOrder);
 		// Entering location ID 2 and verifying
-		dashBoard.enterDashBoardSearch(LocationID2);
-		dashBoard.clickDashBoardSearchResult1();
-		dashBoard.ClickServiceOrderLink();
-		ServiceOrder = dashBoard.getServiceOrderNumber();
-		log(ServiceOrder);
-		Sql.VerifyServiceOrders(LocationID2, ServiceOrder);
+//		dashBoard.enterDashBoardSearch(LocationID2);
+//		dashBoard.clickDashBoardSearchResult1();		
+//		dashBoard.ClickServiceOrderLink();
+//		ServiceOrder = dashBoard.getServiceOrderNumber();
+//		log(ServiceOrder);
+//		Sql.VerifyServiceOrders(LocationID2, ServiceOrder);
 		dashBoard.LogOut();
 	}
 

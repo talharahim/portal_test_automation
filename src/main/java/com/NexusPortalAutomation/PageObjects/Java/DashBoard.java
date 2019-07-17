@@ -464,7 +464,7 @@ public class DashBoard extends CommonMethods {
 		waitForObject(driver, DashboardSearchResult1Name);
 		return DashboardSearchResult1Name.getText();
 	}
-	
+
 	public void clickDashBoardSearchResult1() {
 
 		waitForObject(driver, DashboardSearchResult1Name);
@@ -582,7 +582,9 @@ public class DashBoard extends CommonMethods {
 		try {
 
 			waitForObject(driver, element);
-			element.click();
+			if (element.isDisplayed()) {
+				element.click();
+			}
 			log("Click " + ElementName);
 			WaitAngular(driver);
 
@@ -687,7 +689,7 @@ public class DashBoard extends CommonMethods {
 
 	public void VerifyDrillBack(String ElementID, String drillBackURL) throws InterruptedException {
 		Thread.sleep(1000);
-		log("Verifying Drill back for "+drillBackURL);
+		log("Verifying Drill back for " + drillBackURL);
 		findElementByid(ElementID).getAttribute(drillBackURL);
 	}
 

@@ -6,6 +6,8 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
+import junit.framework.Assert;
+
 /**
  * 
  * All WebElements are identified by @FindBy annotation
@@ -32,13 +34,11 @@ public class Dashboard_Transfers extends DashBoard {
 	WebElement SearchRequest;
 
 	@FindBy(id = "XFER_Search_Input")
-	@CacheLookup
 	WebElement DefaultCsutomer;
 
 	@FindBy(id = "XFER_Description")
-	@CacheLookup
 	WebElement Description;
-	
+
 	@FindBy(xpath = "//*[@id=\"mat-tab-label-2-1\"]/div")
 	@CacheLookup
 	WebElement MoveInTab;
@@ -47,9 +47,20 @@ public class Dashboard_Transfers extends DashBoard {
 	@CacheLookup
 	WebElement XFER_Select_Option_1;
 
+	@FindBy(id = "XFER_Select_Option_2")
+	@CacheLookup
+	WebElement XFER_Select_Option_2;
+
+	@FindBy(id = "XFER_Select_Option_3")
+	@CacheLookup
+	WebElement XFER_Select_Option_3;
+
 	@FindBy(id = "XFER_Search_Option_1_Customer_Name")
 	WebElement XFERSearchOption1CustomerName;
-	
+
+	@FindBy(id = "XFER_Search_Option_1")
+	WebElement XFERSearchOption1;
+
 	@FindBy(id = "XFER_MoveTo_Date_Picker_Requested")
 	@CacheLookup
 	WebElement XFERMoveToDatePickerRequested;
@@ -66,9 +77,16 @@ public class Dashboard_Transfers extends DashBoard {
 	@FindBy(id = "XFER_Button_Action")
 	WebElement MoveInSubmit;
 
+	@FindBy(id = "XFER_Button_Done")
+	WebElement XFERButtonDone;
+
 	public Dashboard_Transfers(WebDriver driver) {
 		super(driver);
 		// TODO Auto-generated constructor stub
+	}
+
+	public void ClickDone() {
+		ClickElement(XFERButtonDone, "Done Button for Transfer");
 	}
 
 	public void SelectTransferType_Transfer() {
@@ -78,15 +96,58 @@ public class Dashboard_Transfers extends DashBoard {
 
 	}
 
+	public void SelectTransferType_Transfer_Start() {
+		// Select combo box
+		ClickElement(TransferType, "Transfer Combo");
+		ClickElement(XFER_Select_Option_2, "Transfer Option 2");
+
+	}
+
+	public void SelectTransferType_Transfer_Stop() {
+		// Select combo box
+		ClickElement(TransferType, "Transfer Combo");
+		ClickElement(XFER_Select_Option_3, "Transfer Option 3");
+
+	}
+
 	public void enterRequest(String Request) {
+		System.out.println("TEST DEFAULT VALUE FOR REQUEST===" + SearchRequest.getAttribute("value"));
 		setElementText(SearchRequest, Request, "Search Request");
 	}
 
 	public void enterDefaultCustomer(String Customer) {
+		System.out.println("TEST DEFAULT VALUE FOR CUSTOMER ===" + DefaultCsutomer.getAttribute("value"));
 		setElementText(DefaultCsutomer, Customer, "Customer Name Request");
 		ClickElement(XFERSearchOption1CustomerName, "XFER_Search_Option_1_Customer_Name");
-		
-		
+
+	}
+
+	public void enterDefaultCustomerStartService(String Customer) {
+		setElementText(DefaultCsutomer, Customer, "Customer Name Request");
+		ClickElement(XFERSearchOption1, "XFER_Search_Option_1_Customer_Name");
+
+	}
+	
+	public void verifyDefaultCustomerStartService(String Customer) {
+		String Found = DefaultCsutomer.getAttribute("value");
+		if (Found != "") {
+			VerifyString(Customer, Found);
+		} else {
+			Assert.assertTrue(Found, false);
+		}
+
+	}
+
+
+	public void verifyDefaultCustomer(String Customer) {
+
+		String Found = DefaultCsutomer.getAttribute("value");
+		if (Found != "") {
+			VerifyString(Customer, Found);
+		} else {
+			Assert.assertTrue(Found, false);
+		}
+
 	}
 
 	public void enterDescription(String Desc) {
@@ -139,7 +200,6 @@ public class Dashboard_Transfers extends DashBoard {
 	public void Click_MoveInSubmit() {
 		waitForObject(driver, MoveInSubmit);
 		ClickElement(MoveInSubmit, "MoveInSubmit Button");
-		
 
 	}
 
