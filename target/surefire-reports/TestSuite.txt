@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 870.047 s - in TestSuite
+Tests run: 28, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 873.657 s <<< FAILURE! - in TestSuite
+TestSearchAutobyFirstName(com.NexusPortalAutomation.TestCases.Java.TC0028_TestEnhancedNotes)  Time elapsed: 18.047 s  <<< FAILURE!
+java.lang.AssertionError: expected [Location Test Notes for Automation] but found [Location Test notes for AuTOMation]
+	at com.NexusPortalAutomation.TestCases.Java.TC0028_TestEnhancedNotes.TestSearchAutobyFirstName(TC0028_TestEnhancedNotes.java:40)
+

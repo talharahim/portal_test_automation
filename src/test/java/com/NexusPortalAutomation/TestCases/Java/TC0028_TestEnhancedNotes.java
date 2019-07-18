@@ -21,8 +21,8 @@ public class TC0028_TestEnhancedNotes extends BaseClass {
 
 	public String UserName = "Automation Mate";
 	CommonMethods ComMethd = new CommonMethods();
-	public String CusNotes = "Customer Test Notes for Automation";
-	public String LocNotes = "Location Test notes for AuTOMation";
+	public String Notes1 = "Customer Test notes for AuTOMation";
+	public String Notes2 = "Location Test Notes for Automation";
 	public String Title = "Mr.";
 
 //This Test will test the search by Customer's First Name
@@ -37,7 +37,7 @@ public class TC0028_TestEnhancedNotes extends BaseClass {
 
 		ComMethd.VerifyString(Title, dashBoard.getCustomerTitle());
 		ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
-		dashBoard.verifyEnhancedNotes(CusNotes, LocNotes);
+		dashBoard.verifyEnhancedNotes(Notes2, Notes1);
 		dashBoard.LogOut();
 
 	}

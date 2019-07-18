@@ -437,7 +437,7 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "ENH_Result_1_Message")
 	WebElement CustomerNotes;
 	
-	@FindBy(id = "ACTION_Refresh_Page")
+	@FindBy(id = "ENH_Result_2_Message")
 	WebElement LocationNotes;
 
 	public void verifyEnhancedNotes(String CusNotes, String LocNotes)
