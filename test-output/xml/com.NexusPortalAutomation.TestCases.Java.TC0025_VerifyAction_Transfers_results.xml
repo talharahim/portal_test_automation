@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="24.728">
+           time="44.620">
   <properties />
   
   
-            <testcase name="TestSearchAlertOnLoad" time="24.728" classname="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad" />
+            <testcase name="VerifyActionServiceOrder" time="44.620" classname="com.NexusPortalAutomation.TestCases.Java.TC0025_VerifyAction_Transfers" />
       
 </testsuite>

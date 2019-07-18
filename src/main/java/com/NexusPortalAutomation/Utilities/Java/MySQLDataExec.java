@@ -1,13 +1,8 @@
 package com.NexusPortalAutomation.Utilities.Java;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 import com.microsoft.sqlserver.jdbc.SQLServerException;
 
@@ -24,7 +19,7 @@ public class MySQLDataExec extends CommonMethods {
 		String Command1 = "select * from [SO10100] where umLocationID ='" + Location + "'";
 		String Result = selectFromDb(Command1, ConnectionString, columnName);
 		log("Deleting Records for " + Result);
-		String Command2 = "delete from [SO10101] WHERE soServiceOrderNumber ='" + Result + "'";
+		String Command2 = "delete from [SO10101] WHERE "+columnName+" ='" + Result + "'";
 		deleteFromDb(Command2, ConnectionString);
 		String Command3 = "delete from SO10100 where umLocationID  ='" + Location + "'";
 		deleteFromDb(Command3, ConnectionString);

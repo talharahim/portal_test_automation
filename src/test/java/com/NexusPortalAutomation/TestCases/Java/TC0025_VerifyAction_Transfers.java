@@ -2,13 +2,9 @@ package com.NexusPortalAutomation.TestCases.Java;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 import org.testng.annotations.Test;
 
-import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.PageObjects.Java.Dashboard_Transfers;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
@@ -50,19 +46,15 @@ public class TC0025_VerifyAction_Transfers extends BaseClass {
 		// Verify Customer Location Id Updated for Test
 		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
-		// ComMethd.VerifyString(servTabURL, dashBoard.GetServiceTabDrillBackUrl());
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
-//		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
-//		Date date = new Date();
-//		String DateRequested = dateFormat.format(date);
 		dashBoard.SelectTransferType_Transfer();
 		dashBoard.enterRequest("Transfer");
-		// Entering data for Move Out
+		//Move Out
 		dashBoard.verifyDefaultCustomer(DefaultCustomer);
 		dashBoard.enterDefaultCustomer(DefaultCustomer);
 		dashBoard.enterDescription("AUTOMATION TEST");
-		// Entering data for Move In
+		//Move In
 		dashBoard.ClickMoveIn();
 		dashBoard.Movin_EnterRequestDate("07/15/2019 07:52");
 		dashBoard.Movin_EnterRequest("TRANSFER");
@@ -71,7 +63,6 @@ public class TC0025_VerifyAction_Transfers extends BaseClass {
 		dashBoard.Click_MoveInSubmit();
 		Thread.sleep(1000);
 		dashBoard.ClickDone();
-		// Sql.VerifyServiceOrders(LocationID, DateRequested);
 		// Verify Updated details IN SERVICE TAB order number from database
 		dashBoard.ClickServiceOrderLink();
 		String ServiceOrder = dashBoard.getServiceOrderNumber();

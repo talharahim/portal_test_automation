@@ -3,12 +3,10 @@ package com.NexusPortalAutomation.PageObjects.Java;
 import java.util.HashMap;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.interactions.SendKeysAction;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -34,10 +32,6 @@ public class DashBoard extends CommonMethods {
 
 	@FindBy(id = "ACTION_Logout")
 	WebElement LogOutLink;
-
-//	@FindBy(css = ".customer-info-id")
-//	@CacheLookup
-//	WebElement CustomerId;
 
 	@FindBy(id = "'LOC_Location_Id'")
 	WebElement CustomerLocId;
@@ -157,7 +151,6 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "SRCH_Accounts_Result4")
 	WebElement AccountSearchResult4;
 
-	// SSN 'CUST_SSN'
 	@FindBy(id = "CUST_SSN")
 	@CacheLookup
 	WebElement CustomerSSN;
@@ -172,8 +165,6 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "CUST_Phone_Number_Ext_1")
 	@CacheLookup
 	WebElement PhoneExt1;
-
-	// 'CUST_Email'
 
 	@FindBy(id = "'CUST_Email'")
 	@CacheLookup
@@ -251,9 +242,6 @@ public class DashBoard extends CommonMethods {
 
 	@FindBy(id = "BILL_Statement_Value_1")
 	WebElement BillStatementValue;
-
-	// @FindBy(id = "cdk-overlay-1")
-	// public WebElement OverLay;
 
 	@FindBy(className = "cdk-overlay-container")
 	WebElement OverLay;
@@ -445,7 +433,20 @@ public class DashBoard extends CommonMethods {
 
 	@FindBy(id = "ACTION_Refresh_Page")
 	WebElement RefreshButton;
+	
+	@FindBy(id = "ENH_Result_1_Message")
+	WebElement CustomerNotes;
+	
+	@FindBy(id = "ACTION_Refresh_Page")
+	WebElement LocationNotes;
 
+	public void verifyEnhancedNotes(String CusNotes, String LocNotes)
+	{
+		VerifyString(getElementText(CustomerNotes, "Customer Notes"),CusNotes);
+		VerifyString(getElementText(LocationNotes, "Location Notes"),LocNotes);
+		
+	}
+	
 	public void clickrefreshPage() throws InterruptedException {
 
 		waitForObject(driver, RefreshButton);

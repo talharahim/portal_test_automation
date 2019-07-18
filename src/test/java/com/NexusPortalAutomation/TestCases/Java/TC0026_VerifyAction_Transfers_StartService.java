@@ -2,14 +2,10 @@ package com.NexusPortalAutomation.TestCases.Java;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 
-import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.PageObjects.Java.Dashboard_Transfers;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
@@ -27,7 +23,6 @@ public class TC0026_VerifyAction_Transfers_StartService extends BaseClass {
 	 * 
 	 * @Since 2019-06-10
 	 */
-
 	public String LocationID = "LOC@0004";
 	public String LocationID2 = "LOC@0005";
 	public String ServerURL = GetDrillBackServerURL();
@@ -48,13 +43,8 @@ public class TC0026_VerifyAction_Transfers_StartService extends BaseClass {
 		dbSrch.ClickCustomer();
 		// Verify Customer Location Id Updated for Test
 		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
-		// Verify Contact is updated accordingly
-		// ComMethd.VerifyString(servTabURL, dashBoard.GetServiceTabDrillBackUrl());
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
-		//DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
-		//Date date = new Date();
-		//String DateRequested = dateFormat.format(date);
 		dashBoard.SelectTransferType_Transfer_Start();
 		dashBoard.enterRequest("TRANSFER");
 		// Entering data for Move Out
@@ -65,28 +55,16 @@ public class TC0026_VerifyAction_Transfers_StartService extends BaseClass {
 		dashBoard.verifyDefaultCustomerStartService(DefaultCustomer);
 		dashBoard.enterDefaultCustomerStartService(DefaultCustomer);
 		dashBoard.enterDescription("AUTOMATION TEST");
-		// Entering data for Move In
-//		dashBoard.ClickMoveIn();
-//		dashBoard.Movin_EnterRequestDate("07/15/2019 07:52");
-//		dashBoard.Movin_EnterRequest("TRANSFER");
-//		dashBoard.Movin_EnterLocation(LocationID2);
-//		dashBoard.Movin_EnterDescription("Move in from location");
 		dashBoard.Click_MoveInSubmit();
 		Thread.sleep(1000);
 		dashBoard.ClickDone();
-		// Sql.VerifyServiceOrders(LocationID, DateRequested);
 		// Verify Updated details IN SERVICE TAB order number from database
 		dashBoard.ClickServiceOrderLink();
 		String ServiceOrder = dashBoard.getServiceOrderNumber();
 		log(ServiceOrder);
 		Sql.VerifyServiceOrders(LocationID, ServiceOrder);
-		// Entering location ID 2 and verifying
-//		dashBoard.enterDashBoardSearch(LocationID2);
-//		dashBoard.clickDashBoardSearchResult1();		
-//		dashBoard.ClickServiceOrderLink();
-//		ServiceOrder = dashBoard.getServiceOrderNumber();
-//		log(ServiceOrder);
-//		Sql.VerifyServiceOrders(LocationID2, ServiceOrder);
+
+
 		dashBoard.LogOut();
 	}
 
