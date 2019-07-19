@@ -1179,6 +1179,11 @@ public class DashBoard extends CommonMethods {
 		return getElementText(ServiceOrderNumber, "Service Order Number");
 
 	}
+	
+   public String getServiceOrderDrillbackURL()
+   {
+	   return findElementByid("SODV_Drillback").getAttribute("href");
+   }
 
 	public HashMap<String, String> GetBillingInfo() {
 		WaitAngular(driver);

@@ -61,7 +61,6 @@ public class Dashboard_Transfers extends DashBoard {
 	WebElement XFERSearchOption1;
 
 	@FindBy(id = "XFER_MoveTo_Date_Picker_Requested")
-	@CacheLookup
 	WebElement XFERMoveToDatePickerRequested;
 
 	@FindBy(id = "CLO_Service_Order_Input")
@@ -78,6 +77,90 @@ public class Dashboard_Transfers extends DashBoard {
 
 	@FindBy(id = "XFER_Button_Done")
 	WebElement XFERButtonDone;
+
+	@FindBy(id = "SODV_Requested_By_Customer_Name")
+	WebElement SO_RequestedCusName;
+
+	@FindBy(id = "SODV_Move_Out_Customer_Name")
+	WebElement SO_MoveoutCusName;
+
+	@FindBy(id = "SODV_Move_In_Customer_Name")
+	WebElement SO_MoveInCusName;
+
+	@FindBy(id = "SODV_Move_In_Customer_Drillback")
+	WebElement SO_MoveInCusNameDrillback;
+
+	@FindBy(id = "SODV_Requested_Date")
+	WebElement SO_Requested_Date;
+
+	@FindBy(id = "SODV_Scheduled_Date")
+	WebElement SO_ScheduledDate;
+
+	@FindBy(id = "SODV_Task_1_Description")
+	WebElement SO_Task_1_Description;
+
+	@FindBy(id = "SODV_Task_2_Description")
+	WebElement SO_Task_2_Description;
+
+	@FindBy(id = "SODV_Task_3_Description")
+	WebElement SO_Task_3_Description;
+
+	@FindBy(id = "SODV_Task_4_Description")
+	WebElement SO_Task_4_Description;
+
+	@FindBy(id = "SODV_Task_5_Description")
+	WebElement SO_Task_5_Description;
+
+	@FindBy(id = "SODV_Task_6_Description")
+	WebElement SO_Task_6_Description;
+
+	public String getRequestedSOcustomerName() {
+		return SO_RequestedCusName.getText();
+	}
+
+	public String getMoveOutSOcustomerName() {
+		return SO_MoveoutCusName.getText();
+	}
+
+	public String getMoveInSOcustomerName() {
+		return SO_MoveInCusName.getText();
+	}
+
+	public String getMoveInSOcustomerNameDrillBackURL() {
+		return SO_MoveInCusNameDrillback.getText();
+	}
+
+	public String getSOrequestedDate() {
+		return SO_Requested_Date.getText();
+	}
+
+	public String getSOscheduledDate() {
+		return SO_ScheduledDate.getText();
+	}
+
+	public String getSOTask22Description() {
+		return SO_Task_2_Description.getText();
+	}
+
+	public String getSOTask3Description() {
+		return SO_Task_3_Description.getText();
+	}
+
+	public String getSOTask4Description() {
+		return SO_Task_4_Description.getText();
+	}
+
+	public String getSOTask5Description() {
+		return SO_Task_5_Description.getText();
+	}
+
+	public String getSOTask6Description() {
+		return SO_Task_6_Description.getText();
+	}
+
+	public String getSOTask1Description() {
+		return SO_Task_1_Description.getText();
+	}
 
 	public Dashboard_Transfers(WebDriver driver) {
 		super(driver);
@@ -126,7 +209,7 @@ public class Dashboard_Transfers extends DashBoard {
 		ClickElement(XFERSearchOption1, "XFER_Search_Option_1_Customer_Name");
 
 	}
-	
+
 	public void verifyDefaultCustomerStartService(String Customer) {
 		String Found = DefaultCsutomer.getAttribute("value");
 		if (Found != "") {
@@ -136,7 +219,6 @@ public class Dashboard_Transfers extends DashBoard {
 		}
 
 	}
-
 
 	public void verifyDefaultCustomer(String Customer) {
 
@@ -174,6 +256,14 @@ public class Dashboard_Transfers extends DashBoard {
 
 		waitForObject(driver, XFERMoveToDatePickerRequested);
 		setElementText(XFERMoveToDatePickerRequested, Date, "DatePicket");
+
+	}
+	
+	public String Movin_getRequestDate() {
+
+		waitForObject(driver, XFERMoveToDatePickerRequested);
+		System.out.println(XFERMoveToDatePickerRequested.getAttribute("value"));
+		return XFERMoveToDatePickerRequested.getAttribute("value");
 
 	}
 
