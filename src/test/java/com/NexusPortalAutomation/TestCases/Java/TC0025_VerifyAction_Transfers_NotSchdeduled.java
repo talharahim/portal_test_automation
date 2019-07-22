@@ -14,7 +14,7 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 import com.NexusPortalAutomation.Utilities.Java.MySQLDataExec;
 import com.microsoft.sqlserver.jdbc.SQLServerException;
 
-public class TC0025_VerifyAction_Transfers extends BaseClass {
+public class TC0025_VerifyAction_Transfers_NotSchdeduled extends BaseClass {
 
 	/*
 	 * This test the search by Recent Customer Name

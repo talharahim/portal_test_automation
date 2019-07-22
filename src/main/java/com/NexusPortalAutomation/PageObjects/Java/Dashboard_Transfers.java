@@ -116,6 +116,11 @@ public class Dashboard_Transfers extends DashBoard {
 
 	@FindBy(id = "SODV_Task_6_Description")
 	WebElement SO_Task_6_Description;
+	
+	
+	@FindBy(id = "XFER_Date_Picker_Requested")
+	WebElement XFERDatePickerRequested;
+	
 
 	public String getRequestedSOcustomerName() {
 		return SO_RequestedCusName.getText();
@@ -275,6 +280,14 @@ public class Dashboard_Transfers extends DashBoard {
 		waitForObject(driver, XFERMoveToDatePickerRequested);
 		System.out.println(XFERMoveToDatePickerRequested.getAttribute("value"));
 		return XFERMoveToDatePickerRequested.getAttribute("value");
+	}
+	
+	public String startService_getRequestedDate() {
+
+		
+		waitForObject(driver, XFERDatePickerRequested);
+		System.out.println(XFERDatePickerRequested.getAttribute("value"));
+		return XFERDatePickerRequested.getAttribute("value");
 
 	}
 
