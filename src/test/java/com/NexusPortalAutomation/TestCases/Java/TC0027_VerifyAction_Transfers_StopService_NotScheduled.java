@@ -47,7 +47,7 @@ public class TC0027_VerifyAction_Transfers_StopService_NotScheduled extends Base
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
-	public void VerifyActionServiceOrder()
+	public void VerifyTransferActionServiceOrder()
 			throws IOException, InterruptedException, ClassNotFoundException, SQLServerException, SQLException, ParseException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		Dashboard_Transfers dashBoard = new Dashboard_Transfers(driver);

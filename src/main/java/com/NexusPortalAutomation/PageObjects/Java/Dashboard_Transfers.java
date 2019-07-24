@@ -63,8 +63,15 @@ public class Dashboard_Transfers extends DashBoard {
 	@FindBy(id = "XFER_MoveTo_Date_Picker_Requested")
 	WebElement XFERMoveToDatePickerRequested;
 	
+	@FindBy(id = "XFER_MoveFrom_Date_Picker_Scheduled")
+	WebElement XFERMoveFromDatePickerScheduled;
+	
 	@FindBy(id = "XFER_MoveFrom_Date_Picker_Requested")
 	WebElement XFERMoveFromDatePickerRequested;
+	
+	@FindBy(id = "XFER_MoveTo_Date_Picker_Scheduled")
+	WebElement XFERMoveToDatePickerScheduled;
+	
 
 	@FindBy(id = "CLO_Service_Order_Input")
 	WebElement CLOServiceOrderInput;
@@ -95,6 +102,10 @@ public class Dashboard_Transfers extends DashBoard {
 
 	@FindBy(id = "SODV_Requested_Date")
 	WebElement SO_Requested_Date;
+	
+	@FindBy(id = "SODV_Scheduled_Date")
+	WebElement SO_Scheduled_Date;
+	
 
 	@FindBy(id = "SODV_Scheduled_Date")
 	WebElement SO_ScheduledDate;
@@ -141,7 +152,11 @@ public class Dashboard_Transfers extends DashBoard {
 	public String getSOrequestedDate() {
 		return SO_Requested_Date.getText();
 	}
-
+	
+	public String getSOScheduledDate() {
+		return SO_Scheduled_Date.getText();
+	}
+	
 	public String getSOscheduledDate() {
 		return SO_ScheduledDate.getText();
 	}
@@ -155,18 +170,22 @@ public class Dashboard_Transfers extends DashBoard {
 	}
 
 	public String getSOTask4Description() {
+		
 		return SO_Task_4_Description.getText();
 	}
 
 	public String getSOTask5Description() {
+		log(SO_Task_5_Description.getText());
 		return SO_Task_5_Description.getText();
 	}
 
 	public String getSOTask6Description() {
+		log(SO_Task_6_Description.getText());
 		return SO_Task_6_Description.getText();
 	}
 
 	public String getSOTask1Description() {
+		log(SO_Task_1_Description.getText());
 		return SO_Task_1_Description.getText();
 	}
 
@@ -266,6 +285,24 @@ public class Dashboard_Transfers extends DashBoard {
 		setElementText(XFERMoveToDatePickerRequested, Date, "DatePicket");
 
 	}
+	
+	public void Movin_EnterMoveToScheduleDate(String Date) {
+
+		waitForObject(driver, XFERMoveToDatePickerScheduled);
+		setElementText(XFERMoveToDatePickerScheduled, Date, "DatePicket");
+
+	}
+	
+	
+	
+	
+	public void Movin_ScheduleDate(String Date) {
+
+		waitForObject(driver, XFERMoveFromDatePickerScheduled);
+		setElementText(XFERMoveFromDatePickerScheduled, Date, "DatePicket");
+
+	}
+	
 	
 	public String Movin_getMoveOutRequestedDate() {
 

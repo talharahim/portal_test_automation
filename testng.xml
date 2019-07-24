@@ -61,13 +61,13 @@
 				name="com.NexusPortalAutomation.TestCases.Java.TC0024_TestCustDetailSearch" />
 
 			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0025_VerifyAction_Transfers" />
+				name="com.NexusPortalAutomation.TestCases.Java.TC0025_VerifyAction_Transfers_NotScheduled" />
 			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0026_VerifyAction_Transfers_StartService" />
+				name="com.NexusPortalAutomation.TestCases.Java.TC0026_VerifyAction_Transfers_StartService_NotScheduled" />
 			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0027_VerifyAction_Transfers_StopService" />
-				
-					<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0027_VerifyAction_Transfers_StopService_NotScheduled" />
+
+			<class
 				name="com.NexusPortalAutomation.TestCases.Java.TC0028_TestEnhancedNotes" />
 
 		</classes>

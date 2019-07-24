@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="27.862">
+           time="24.314">
   <properties />
   
   
-            <testcase name="TestDrillBackServices" time="27.862" classname="com.NexusPortalAutomation.TestCases.Java.TC0020_VerifyDrillBackServices" />
+            <testcase name="TestDrillBackServices" time="24.314" classname="com.NexusPortalAutomation.TestCases.Java.TC0020_VerifyDrillBackServices" />
       
 </testsuite>

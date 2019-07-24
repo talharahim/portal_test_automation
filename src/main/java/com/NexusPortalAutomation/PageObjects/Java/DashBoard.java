@@ -208,6 +208,9 @@ public class DashBoard extends CommonMethods {
 
 	@FindBy(id = "SCUST_1_Customer_Name")
 	WebElement SecondCustName;
+	
+	@FindBy(id = "SCUST_Label")
+	WebElement SecondCustCnt;
 
 	@FindBy(id = "'CL_Note'")
 	WebElement Notes;
@@ -631,14 +634,14 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void clickActionDropDown() {
-
+		log("Click Action Dropdown");
 		waitForObject(driver, actionDropDown);
 		ClickElement(actionDropDown, "Action Drop down");
 
 	}
 
 	public void clickActionDropDown_Payment() {
-
+		log("Click Action Dropdown Payments");
 		waitForObject(driver, Action_Payment);
 		ClickElement(Action_Payment, "Action Payment Drop down");
 
@@ -653,6 +656,7 @@ public class DashBoard extends CommonMethods {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		log("Click Action Dropdown Service Order");
 		ClickElement(Action_ServiceOrder, "Action Service Order Drop down");
 
 	}
@@ -690,6 +694,7 @@ public class DashBoard extends CommonMethods {
 
 	public void VerifyDrillBack(String ElementID, String drillBackURL) throws InterruptedException {
 		Thread.sleep(1000);
+		
 		log("Verifying Drill back for " + drillBackURL);
 		findElementByid(ElementID).getAttribute(drillBackURL);
 	}
@@ -770,19 +775,21 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void ClickServElecIcon() {
+		log("Click Service Electric Dropdown");
 		waitForObject(driver, ServElectricIcon);
 		ClickElement(ServElectricIcon, "Electric Icon");
 	}
 
 	public void ClickServGasIcon() {
 
+		log("Click Service Gas Dropdown");
 		waitForObject(driver, ServGasIcon);
 		ClickElement(ServGasIcon, "Gas Icon");
 
 	}
 
 	public void ClickServInternetIcon() {
-
+		log("Click Service Internet Dropdown");
 		waitForObject(driver, ServInternetIcon);
 		ClickElement(ServInternetIcon, "Internet Icon");
 
@@ -799,7 +806,7 @@ public class DashBoard extends CommonMethods {
 			log(e.getMessage());
 			Assert.assertTrue(false, "BILL Statement Button not found");
 		}
-
+		log("get Service AutpPay");
 		return result;
 	}
 
@@ -814,7 +821,7 @@ public class DashBoard extends CommonMethods {
 			log(e.getMessage());
 			Assert.assertTrue(false, "BILL Statement Button not found");
 		}
-
+		log("Get Deposit Amount");
 		return result;
 	}
 
@@ -829,19 +836,19 @@ public class DashBoard extends CommonMethods {
 			log(e.getMessage());
 			Assert.assertTrue(false, "BILL Statement Button not found");
 		}
-
+		log("Get Electronic Bill Status");
 		return result;
 	}
 
 	public void ClickBillStatementBtn() {
-
+		log("Click Bill Statement Button");
 		WaitAngular(driver);
 		ClickElement(BILLStatementBtn, "Bill Statement Button");
 
 	}
 
 	public void ClickBillStatement() {
-
+		log("Click Bill Statement");
 		waitForObject(driver, BILLStatement1);
 		ClickElement(BILLStatement1, "Statement");
 
@@ -913,6 +920,22 @@ public class DashBoard extends CommonMethods {
 			WaitAngular(driver);
 			waitForObject(driver, SecondCustName);
 			name = getElementText(SecondCustName, "Secondary Customer Name");
+			WaitAngular(driver);
+
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.assertTrue(false, "Secondary Customer not found");
+		}
+		return name;
+
+	}
+	
+	public String getSecondCustomerCount() {
+		String name = "";
+		try {
+			WaitAngular(driver);
+			waitForObject(driver, SecondCustCnt);
+			name = getElementText(SecondCustCnt, "Secondary Customer Count");
 			WaitAngular(driver);
 
 		} catch (NoSuchElementException e) {
@@ -1420,6 +1443,7 @@ public class DashBoard extends CommonMethods {
 
 	public void ClickOk() throws InterruptedException {
 
+		
 		WaitForObjectbyId(this.driver, "ALERTO_Action_Button");
 		ClickElement(AlertOk, "Alert OK");
 
@@ -1427,6 +1451,7 @@ public class DashBoard extends CommonMethods {
 
 	public void ClickDynamicOk() {
 
+		log("Click Dynamic Ok");
 		// Not waiting for element as it will throw exception
 		try {
 
@@ -1440,6 +1465,7 @@ public class DashBoard extends CommonMethods {
 
 	public void ClickAlertDescription() throws InterruptedException {
 
+		log("Click Alert Description");
 		ClickElement(AlertDesc, "Alert Description");
 		log("Click Description");
 

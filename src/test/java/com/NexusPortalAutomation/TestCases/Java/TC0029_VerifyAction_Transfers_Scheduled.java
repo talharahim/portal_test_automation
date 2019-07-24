@@ -14,7 +14,7 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 import com.NexusPortalAutomation.Utilities.Java.MySQLDataExec;
 import com.microsoft.sqlserver.jdbc.SQLServerException;
 
-public class TC0025_VerifyAction_Transfers_NotSchdeduled extends BaseClass {
+public class TC0029_VerifyAction_Transfers_Scheduled extends BaseClass {
 
 	/*
 	 * This test the search by Recent Customer Name
@@ -43,7 +43,6 @@ public class TC0025_VerifyAction_Transfers_NotSchdeduled extends BaseClass {
 	public String Task6 = "Prepayment Required-New Custom";
 	CommonMethods ComMethd = new CommonMethods();
 
-
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
 	public void VerifyActionServiceOrder() throws IOException, InterruptedException, ClassNotFoundException,
@@ -62,7 +61,7 @@ public class TC0025_VerifyAction_Transfers_NotSchdeduled extends BaseClass {
 		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
 		dashBoard.clickActionDropDown();
-		
+
 		dashBoard.clickActionDropDown_TransferService();
 		dashBoard.SelectTransferType_Transfer();
 		dashBoard.enterRequest("Transfer");
@@ -71,10 +70,13 @@ public class TC0025_VerifyAction_Transfers_NotSchdeduled extends BaseClass {
 		dashBoard.verifyDefaultCustomer(DefaultCustomer);
 		dashBoard.enterDefaultCustomer(DefaultCustomer);
 		dashBoard.enterDescription("AUTOMATION TEST");
+		dashBoard.Movin_ScheduleDate(moveOutrequestedDate);
 		// Move In
 		dashBoard.ClickMoveIn();
 		String moveInrequestedDate = dashBoard.Movin_getMoveFromRequestedDate();
 		dashBoard.Movin_EnterRequestDate(moveInrequestedDate);
+		dashBoard.Movin_EnterMoveToScheduleDate(moveInrequestedDate);
+
 		dashBoard.Movin_EnterRequest("TRANSFER");
 		dashBoard.Movin_EnterLocation(LocationID2);
 		dashBoard.Movin_EnterDescription("Move in from location");
@@ -89,7 +91,7 @@ public class TC0025_VerifyAction_Transfers_NotSchdeduled extends BaseClass {
 		ComMethd.VerifyStringContains(ServiceOrderURL, ServiceOrder);
 		//
 		ComMethd.VerifyString(dashBoard.getRequestedSOcustomerName(), requestedbY);
-		//Get request Date and Compare 
+		// Get request Date and Compare
 		String[] arrOfStr = moveInrequestedDate.split(" ", 2);
 		String[] arrOfStr2 = moveOutrequestedDate.split(" ", 2);
 		String moveOutstart_dt = arrOfStr[0];
@@ -97,17 +99,17 @@ public class TC0025_VerifyAction_Transfers_NotSchdeduled extends BaseClass {
 		Date date = (Date) formatter.parse(moveOutstart_dt);
 		SimpleDateFormat newFormat = new SimpleDateFormat("MMM dd, yyyy");
 		String moveOutstart_dtfinalString = newFormat.format(date);
+		
 		ComMethd.VerifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
-		//
+		ComMethd.VerifyString(dashBoard.getSOScheduledDate(), moveOutstart_dtfinalString);
 		ComMethd.VerifyString(dashBoard.getMoveOutSOcustomerName(), moveOutCustomer);
 		ComMethd.VerifyString(dashBoard.getMoveInSOcustomerName(), moveInCustomer);
-		ComMethd.VerifyString(dashBoard.getSOTask1Description() ,Task1);
-		ComMethd.VerifyString(dashBoard.getSOTask2Description() ,Task2);
-		ComMethd.VerifyString(dashBoard.getSOTask3Description() ,Task3);
-		ComMethd.VerifyString(dashBoard.getSOTask4Description() ,Task4);
-		ComMethd.VerifyString(dashBoard.getSOTask5Description() ,Task5);
-		ComMethd.VerifyString(dashBoard.getSOTask6Description() ,Task6);
-				
+		ComMethd.VerifyString(dashBoard.getSOTask1Description(), Task1);
+		ComMethd.VerifyString(dashBoard.getSOTask2Description(), Task2);
+		ComMethd.VerifyString(dashBoard.getSOTask3Description(), Task3);
+		ComMethd.VerifyString(dashBoard.getSOTask4Description(), Task4);
+		ComMethd.VerifyString(dashBoard.getSOTask5Description(), Task5);
+		ComMethd.VerifyString(dashBoard.getSOTask6Description(), Task6);
 		log(ServiceOrder);
 		Sql.VerifyServiceOrders(LocationID, ServiceOrder);
 		// Entering location ID 2 and verifying
@@ -117,21 +119,20 @@ public class TC0025_VerifyAction_Transfers_NotSchdeduled extends BaseClass {
 		ServiceOrder = dashBoard.getServiceOrderNumber();
 		ServiceOrderURL = dashBoard.getServiceOrderDrillbackURL();
 		ComMethd.VerifyStringContains(ServiceOrderURL, ServiceOrder);
-		
+
 		String moveInstart_dt = arrOfStr2[0];
 		date = (Date) formatter.parse(moveInstart_dt);
 		String moveInstart_dtfinalString = newFormat.format(date);
 		ComMethd.VerifyString(dashBoard.getSOrequestedDate(), moveInstart_dtfinalString);
-		//
-		
+		ComMethd.VerifyString(dashBoard.getSOScheduledDate(), moveOutstart_dtfinalString);
 		ComMethd.VerifyString(dashBoard.getMoveOutSOcustomerName(), loc2moveOutCustomer);
 		ComMethd.VerifyString(dashBoard.getMoveInSOcustomerName(), loc2moveInCustomer);
-		ComMethd.VerifyString(dashBoard.getSOTask1Description() ,Task1);
-		ComMethd.VerifyString(dashBoard.getSOTask2Description() ,Task2);
-		ComMethd.VerifyString(dashBoard.getSOTask3Description() ,Task3);
-		ComMethd.VerifyString(dashBoard.getSOTask4Description() ,Task4);
-		ComMethd.VerifyString(dashBoard.getSOTask5Description() ,Task5);
-		ComMethd.VerifyString(dashBoard.getSOTask6Description() ,Task6);
+		ComMethd.VerifyString(dashBoard.getSOTask1Description(), Task1);
+		ComMethd.VerifyString(dashBoard.getSOTask2Description(), Task2);
+		ComMethd.VerifyString(dashBoard.getSOTask3Description(), Task3);
+		ComMethd.VerifyString(dashBoard.getSOTask4Description(), Task4);
+		ComMethd.VerifyString(dashBoard.getSOTask5Description(), Task5);
+		ComMethd.VerifyString(dashBoard.getSOTask6Description(), Task6);
 
 		log(ServiceOrder);
 		Sql.VerifyServiceOrders(LocationID2, ServiceOrder);
