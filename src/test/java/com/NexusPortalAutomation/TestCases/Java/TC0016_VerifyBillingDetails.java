@@ -28,7 +28,7 @@ public class TC0016_VerifyBillingDetails extends BaseClass {
 	String Due = "$35.26";
 	String Current = "$0.00";
 	String Unposted = "$0.00";
-	String Account = "$92.50";
+	String Account = "$212.50";
 	String Installment = "$50.00";
 	String OverDue = "$57.24";
 	String AmountDue = "$35.26";

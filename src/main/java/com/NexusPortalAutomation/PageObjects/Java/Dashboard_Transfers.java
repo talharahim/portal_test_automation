@@ -62,16 +62,15 @@ public class Dashboard_Transfers extends DashBoard {
 
 	@FindBy(id = "XFER_MoveTo_Date_Picker_Requested")
 	WebElement XFERMoveToDatePickerRequested;
-	
+
 	@FindBy(id = "XFER_MoveFrom_Date_Picker_Scheduled")
 	WebElement XFERMoveFromDatePickerScheduled;
-	
+
 	@FindBy(id = "XFER_MoveFrom_Date_Picker_Requested")
 	WebElement XFERMoveFromDatePickerRequested;
-	
+
 	@FindBy(id = "XFER_MoveTo_Date_Picker_Scheduled")
 	WebElement XFERMoveToDatePickerScheduled;
-	
 
 	@FindBy(id = "CLO_Service_Order_Input")
 	WebElement CLOServiceOrderInput;
@@ -102,10 +101,9 @@ public class Dashboard_Transfers extends DashBoard {
 
 	@FindBy(id = "SODV_Requested_Date")
 	WebElement SO_Requested_Date;
-	
+
 	@FindBy(id = "SODV_Scheduled_Date")
 	WebElement SO_Scheduled_Date;
-	
 
 	@FindBy(id = "SODV_Scheduled_Date")
 	WebElement SO_ScheduledDate;
@@ -127,50 +125,61 @@ public class Dashboard_Transfers extends DashBoard {
 
 	@FindBy(id = "SODV_Task_6_Description")
 	WebElement SO_Task_6_Description;
-	
-	
+
 	@FindBy(id = "XFER_Date_Picker_Requested")
 	WebElement XFERDatePickerRequested;
-	
+
+	@FindBy(id = "XFER_Date_Picker_Scheduled")
+	WebElement XFERDatePickerScheduled;
+
+	public void enterScheduleDate_StartService(String Date) {
+		waitForObject(driver, XFERDatePickerScheduled);
+		log("Enter Schedule Date Date");
+		setElementText(XFERDatePickerScheduled, Date, "DatePicket");
+	}
 
 	public String getRequestedSOcustomerName() {
+		log("get Requested Customer Name");
 		return SO_RequestedCusName.getText();
 	}
 
 	public String getMoveOutSOcustomerName() {
+		log("get Move Out Customer Date");
 		return SO_MoveoutCusName.getText();
 	}
 
 	public String getMoveInSOcustomerName() {
+		log("get Movein Customer Name Date");
 		return SO_MoveInCusName.getText();
 	}
 
 	public String getMoveInSOcustomerNameDrillBackURL() {
+		log("get Move In Suctomer DrillBackURL Date");
 		return SO_MoveInCusNameDrillback.getText();
 	}
 
 	public String getSOrequestedDate() {
+		log("get Requested Date");
 		return SO_Requested_Date.getText();
 	}
-	
-	public String getSOScheduledDate() {
-		return SO_Scheduled_Date.getText();
-	}
-	
+
 	public String getSOscheduledDate() {
+		log("get Scheduled Date");
 		return SO_ScheduledDate.getText();
 	}
 
 	public String getSOTask2Description() {
+		log("get Task Description");
 		return SO_Task_2_Description.getText();
 	}
 
 	public String getSOTask3Description() {
+		log("get Task Description");
 		return SO_Task_3_Description.getText();
 	}
 
 	public String getSOTask4Description() {
-		
+		log("get Task Description");
 		return SO_Task_4_Description.getText();
 	}
 
@@ -220,12 +229,12 @@ public class Dashboard_Transfers extends DashBoard {
 	}
 
 	public void enterRequest(String Request) {
-		System.out.println("TEST DEFAULT VALUE FOR REQUEST===" + SearchRequest.getAttribute("value"));
+		log(SearchRequest.getAttribute("value"));
 		setElementText(SearchRequest, Request, "Search Request");
 	}
 
 	public void enterDefaultCustomer(String Customer) {
-		System.out.println("TEST DEFAULT VALUE FOR CUSTOMER ===" + DefaultCsutomer.getAttribute("value"));
+		log("TEST DEFAULT VALUE FOR CUSTOMER ===" + DefaultCsutomer.getAttribute("value"));
 		setElementText(DefaultCsutomer, Customer, "Customer Name Request");
 		ClickElement(XFERSearchOption1CustomerName, "XFER_Search_Option_1_Customer_Name");
 
@@ -280,56 +289,55 @@ public class Dashboard_Transfers extends DashBoard {
 	}
 
 	public void Movin_EnterRequestDate(String Date) {
-
+		log("Enter Request Date");
 		waitForObject(driver, XFERMoveToDatePickerRequested);
 		setElementText(XFERMoveToDatePickerRequested, Date, "DatePicket");
 
 	}
-	
+
 	public void Movin_EnterMoveToScheduleDate(String Date) {
 
+		log("Enter Schedule Date");
 		waitForObject(driver, XFERMoveToDatePickerScheduled);
 		setElementText(XFERMoveToDatePickerScheduled, Date, "DatePicket");
 
 	}
-	
-	
-	
-	
+
 	public void Movin_ScheduleDate(String Date) {
 
+		log("Enter Schedule Date");
 		waitForObject(driver, XFERMoveFromDatePickerScheduled);
 		setElementText(XFERMoveFromDatePickerScheduled, Date, "DatePicket");
 
 	}
-	
-	
+
 	public String Movin_getMoveOutRequestedDate() {
 
+		
 		waitForObject(driver, XFERMoveFromDatePickerRequested);
-		System.out.println(XFERMoveFromDatePickerRequested.getAttribute("value"));
+		log(XFERMoveFromDatePickerRequested.getAttribute("value"));
 		return XFERMoveFromDatePickerRequested.getAttribute("value");
 
 	}
-	
+
 	public String Movin_getMoveFromRequestedDate() {
 
 		waitForObject(driver, XFERMoveToDatePickerRequested);
-		System.out.println(XFERMoveToDatePickerRequested.getAttribute("value"));
+		log(XFERMoveToDatePickerRequested.getAttribute("value"));
 		return XFERMoveToDatePickerRequested.getAttribute("value");
 	}
-	
+
 	public String startService_getRequestedDate() {
 
-		
 		waitForObject(driver, XFERDatePickerRequested);
-		System.out.println(XFERDatePickerRequested.getAttribute("value"));
+		log(XFERDatePickerRequested.getAttribute("value"));
 		return XFERDatePickerRequested.getAttribute("value");
 
 	}
 
 	public void Movin_EnterRequest(String Request) {
 		waitForObject(driver, CLOServiceOrderInput);
+		log("Enter Request Name");
 		setElementText(CLOServiceOrderInput, Request, "Service Order Input");
 
 	}
@@ -342,12 +350,14 @@ public class Dashboard_Transfers extends DashBoard {
 	}
 
 	public void Movin_EnterDescription(String Desc) {
+		log("Enter Request Description");
 		waitForObject(driver, XFERDescription);
 		setElementText(XFERDescription, Desc, "XFER Description");
 
 	}
 
 	public void Click_MoveInSubmit() {
+		log("Click Submit");
 		waitForObject(driver, MoveInSubmit);
 		ClickElement(MoveInSubmit, "MoveInSubmit Button");
 
