@@ -17,19 +17,15 @@ import junit.framework.Assert;
 public class Dashboard_Transfers extends DashBoard {
 
 	@FindBy(id = "ACTION_Transfer_Service")
-	@CacheLookup
 	WebElement ACTIONTransferService;
 
 	@FindBy(id = "XFER_Select")
-	@CacheLookup
 	WebElement TransferType;
 
 	@FindBy(id = "XFER_MoveFrom_Date_Picker_Requested")
-	@CacheLookup
 	WebElement TranferDateRequested;
 
 	@FindBy(id = "CLO_Service_Order_Input")
-	@CacheLookup
 	WebElement SearchRequest;
 
 	@FindBy(id = "XFER_Search_Input")
@@ -39,19 +35,15 @@ public class Dashboard_Transfers extends DashBoard {
 	WebElement Description;
 
 	@FindBy(xpath = "//*[@id=\"mat-tab-label-2-1\"]/div")
-	@CacheLookup
 	WebElement MoveInTab;
 
 	@FindBy(id = "XFER_Select_Option_1")
-	@CacheLookup
 	WebElement XFER_Select_Option_1;
 
 	@FindBy(id = "XFER_Select_Option_2")
-	@CacheLookup
 	WebElement XFER_Select_Option_2;
 
 	@FindBy(id = "XFER_Select_Option_3")
-	@CacheLookup
 	WebElement XFER_Select_Option_3;
 
 	@FindBy(id = "XFER_Search_Option_1_Customer_Name")
@@ -103,9 +95,6 @@ public class Dashboard_Transfers extends DashBoard {
 	WebElement SO_Requested_Date;
 
 	@FindBy(id = "SODV_Scheduled_Date")
-	WebElement SO_Scheduled_Date;
-
-	@FindBy(id = "SODV_Scheduled_Date")
 	WebElement SO_ScheduledDate;
 
 	@FindBy(id = "SODV_Task_1_Description")
@@ -131,6 +120,42 @@ public class Dashboard_Transfers extends DashBoard {
 
 	@FindBy(id = "XFER_Date_Picker_Scheduled")
 	WebElement XFERDatePickerScheduled;
+
+	@FindBy(id = "SOLV_Service_Order_1")
+	WebElement ServiceOrder1;
+
+	@FindBy(id = "SOLV_Service_Order_2")
+	WebElement ServiceOrder2;
+
+	@FindBy(id = "SOLV_Service_Order_3")
+	WebElement ServiceOrder3;
+
+	@FindBy(id = "SOLV_Service_Order_4")
+	WebElement ServiceOrder4;
+
+	public void ClickServOrder1() {
+		waitForObject(driver, ServiceOrder1);
+		ClickElement(ServiceOrder1, "Clicking Service Order 1");
+
+	}
+
+	public void ClickServOrder2() {
+		waitForObject(driver, ServiceOrder2);
+		ClickElement(ServiceOrder2, "Clicking Service Order 2");
+
+	}
+
+	public void ClickServOrder3() {
+		waitForObject(driver, ServiceOrder3);
+		ClickElement(ServiceOrder3, "Clicking Service Order 3");
+
+	}
+
+	public void ClickServOrder4() {
+		waitForObject(driver, ServiceOrder4);
+		ClickElement(ServiceOrder4, "Clicking Service Order 4");
+
+	}
 
 	public void enterScheduleDate_StartService(String Date) {
 		waitForObject(driver, XFERDatePickerScheduled);
@@ -313,7 +338,6 @@ public class Dashboard_Transfers extends DashBoard {
 
 	public String Movin_getMoveOutRequestedDate() {
 
-		
 		waitForObject(driver, XFERMoveFromDatePickerRequested);
 		log(XFERMoveFromDatePickerRequested.getAttribute("value"));
 		return XFERMoveFromDatePickerRequested.getAttribute("value");
