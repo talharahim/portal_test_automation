@@ -412,6 +412,12 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "SOACT_Button_Done")
 	@CacheLookup
 	WebElement SOACTButtonDone;
+	
+	
+	@FindBy(id = "XFER_Button_Done")
+	@CacheLookup
+	WebElement XFERButtonDone;
+	
 
 	@FindBy(id = "SOACT_Search_Option_1_Request_Id")
 	@CacheLookup
@@ -508,13 +514,16 @@ public class DashBoard extends CommonMethods {
 	}
 	
 
+	public void ClickSerOrderDne()
+	{
+		ClickElement(SOACTButtonDone, "Done Button");
+	}
 	
 	public void verifySubmitMessage(String Message)
 	{
 		if (transferSuccessMessage.isDisplayed()) {
 			VerifyStringContains(transferSuccessMessage.getText(), Message);
-			ClickElement(SOACTButtonDone, "Done Button");
-		} else {
+				} else {
 			Assert.fail("Order not submitted");
 		}
 	}

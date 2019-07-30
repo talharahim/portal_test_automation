@@ -57,6 +57,7 @@ public class TC0022_VerifyAction_ServiceOrder extends BaseClass {
 		dashBoard.submitServiceRequest(SearchInput, DateRequested, DateRequested, DateDescription);
 		Thread.sleep(1000);
 		dashBoard.verifySubmitMessage(Message);
+		dashBoard.ClickSerOrderDne();
 		
 		//Sql.VerifyServiceOrders(LocationID, DateRequested);
 		// Verify Updated details IN SERVICE TAB order number from database

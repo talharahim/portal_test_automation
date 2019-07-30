@@ -136,18 +136,21 @@ public class Dashboard_Transfers extends DashBoard {
 	public void ClickServOrder1() {
 		waitForObject(driver, ServiceOrder1);
 		ClickElement(ServiceOrder1, "Clicking Service Order 1");
+		WaitAngular(driver);
 
 	}
 
 	public void ClickServOrder2() {
 		waitForObject(driver, ServiceOrder2);
 		ClickElement(ServiceOrder2, "Clicking Service Order 2");
+		WaitAngular(driver);
 
 	}
 
 	public void ClickServOrder3() {
 		waitForObject(driver, ServiceOrder3);
 		ClickElement(ServiceOrder3, "Clicking Service Order 3");
+		WaitAngular(driver);
 
 	}
 

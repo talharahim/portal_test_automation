@@ -81,8 +81,8 @@ public class TC0025_VerifyAction_Transfers_NotScheduled extends BaseClass {
 		dashBoard.Movin_EnterDescription("Move in from location");
 		dashBoard.Click_MoveInSubmit();
 		Thread.sleep(1000);
-		dashBoard.ClickDone();
 		dashBoard.verifySubmitMessage(Message);
+		dashBoard.ClickDone();
 		// Verify Updated details IN SERVICE TAB order number from database
 		dashBoard.ClickServiceOrderLink();
 		// Verifying Service Order details
