@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="NexusTest"
+<testsuite name="Test"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="34.116">
+           time="33.216">
   <properties />
   
   
-            <testcase name="VerifyTransferActionServiceOrder" time="34.116" classname="com.NexusPortalAutomation.TestCases.Java.TC0026_VerifyAction_Transfers_StartService_NotScheduled" />
+            <testcase name="VerifyTransferActionServiceOrder" time="33.216" classname="com.NexusPortalAutomation.TestCases.Java.TC0026_VerifyAction_Transfers_StartService_NotScheduled" />
       
 </testsuite>

@@ -35,7 +35,7 @@ public class TC0021_VerifyServicesOrderDetails extends BaseClass {
 	String SODVRequestedTime = "5:53 AM";
 	String SODVScheduledDate = "May 17, 2019";
 	String SODVScheduledTime = "5:53 AM";
-	String SODVTaskDescription = "Meter Reading-Electric";
+	String SODVTaskDescription = "Meter Reading-electric";
 	String SODVTaskEmployeeId = "CARN0001";
 	String SODVTaskCompletedDate = "Apr 12, 2027";
 	// This Test will test the search by Customer ID

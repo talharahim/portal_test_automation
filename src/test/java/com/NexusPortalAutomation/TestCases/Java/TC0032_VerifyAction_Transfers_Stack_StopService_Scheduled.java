@@ -38,12 +38,12 @@ public class TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled extends B
 	public String loc2moveOutCustomer = "Mr. Movein Cus";
 	public String moveInCustomer = "Mr. Vacant Vacant (Vacant)";
 	public String loc2moveInCustomer = "Mr. Automation Mate (0000011111)";
-	public String Task1 = "Meter Reading-Electric";
+	public String Task1 = "Meter Reading-electric";
 	public String Task2 = "Charge New Customer";
 	public String Task3 = "Property Transfer";
-	public String Task4 = "Deposit Request-New Customer";
-	public String Task5 = "Deposit Payment-New Customer E";
-	public String Task6 = "Prepayment Required-New Custom";
+	public String Task4 = "Deposit Request-new Customer";
+	public String Task5 = "Deposit Payment-new Customer E";
+	public String Task6 = "Prepayment Required-new Custom";
 	CommonMethods ComMethd = new CommonMethods();
 
 //This Test will test the search by Customer ID
@@ -95,7 +95,7 @@ public class TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled extends B
 		String moveOutstart_dt = arrOfStr[0];
 		DateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
 		Date date = (Date) formatter.parse(moveOutstart_dt);
-		SimpleDateFormat newFormat = new SimpleDateFormat("MMM dd, yyyy");
+		SimpleDateFormat newFormat = new SimpleDateFormat("MMM d, yyyy");
 		String moveOutstart_dtfinalString = newFormat.format(date);
 		ComMethd.VerifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
 		ComMethd.VerifyString(dashBoard.getSOscheduledDate(), moveOutstart_dtfinalString);
@@ -125,6 +125,8 @@ public class TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled extends B
 		c.add(Calendar.DAY_OF_MONTH, 2);
 		// Date after adding the days to the given date
 		String newDate = newFormat.format(c.getTime());
+		newDate.replaceFirst("^0+(?!$)", "");
+		
 		// Displaying the new Date after addition of Days
 		System.out.println("Date after Addition of two days " + newDate);
 		// Entering date

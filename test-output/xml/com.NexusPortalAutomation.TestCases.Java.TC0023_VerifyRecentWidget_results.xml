@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="NexusTest"
+<testsuite name="Test"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="22.689">
+           time="20.825">
   <properties />
   
   
-            <testcase name="VerifyRecentWidget" time="22.689" classname="com.NexusPortalAutomation.TestCases.Java.TC0023_VerifyRecentWidget" />
+            <testcase name="VerifyRecentWidget" time="20.825" classname="com.NexusPortalAutomation.TestCases.Java.TC0023_VerifyRecentWidget" />
       
 </testsuite>

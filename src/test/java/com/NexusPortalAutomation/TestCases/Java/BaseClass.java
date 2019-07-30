@@ -130,7 +130,7 @@ public class BaseClass extends ReadProjectProperties {
 		lpage.Login(Read.ReadFile("UserName"), Read.ReadFile("PassWord"));
 		WaitAngular();
 		String actualTitle = driver.getTitle();
-		String expectedTitle = "Portal";
+		String expectedTitle = "Nexus View";
 		assertEquals(actualTitle, expectedTitle);
 		log("User signed " + Read.ReadFile("UserName"));
 

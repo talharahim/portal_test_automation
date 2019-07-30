@@ -35,12 +35,13 @@ public class TC0025_VerifyAction_Transfers_NotScheduled extends BaseClass {
 	public String moveInCustomer = "Mr. Vacant Vacant (Vacant)";
 	public String loc2moveInCustomer = "Mr. Automation Mate (0000011111)";
 	public String ServerURL = GetDrillBackServerURL();
-	public String Task1 = "Meter Reading-Electric";
+	public String Task1 = "Meter Reading-electric";
 	public String Task2 = "Charge New Customer";
 	public String Task3 = "Property Transfer";
-	public String Task4 = "Deposit Request-New Customer";
-	public String Task5 = "Deposit Payment-New Customer E";
-	public String Task6 = "Prepayment Required-New Custom";
+	public String Task4 = "Deposit Request-new Customer";
+	public String Task5 = "Deposit Payment-new Customer E";
+	public String Task6 = "Prepayment Required-new Custom";
+	public String Message = "Transfer initiated";
 	CommonMethods ComMethd = new CommonMethods();
 
 
@@ -81,6 +82,7 @@ public class TC0025_VerifyAction_Transfers_NotScheduled extends BaseClass {
 		dashBoard.Click_MoveInSubmit();
 		Thread.sleep(1000);
 		dashBoard.ClickDone();
+		dashBoard.verifySubmitMessage(Message);
 		// Verify Updated details IN SERVICE TAB order number from database
 		dashBoard.ClickServiceOrderLink();
 		// Verifying Service Order details

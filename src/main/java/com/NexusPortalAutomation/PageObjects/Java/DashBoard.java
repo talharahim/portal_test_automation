@@ -417,7 +417,7 @@ public class DashBoard extends CommonMethods {
 	@CacheLookup
 	WebElement SOACTSearchOption1;
 
-	@FindBy(css = "body > wo-root > wo-dashboard > div > mat-drawer-container > mat-drawer > csm-actions-panel > div.panel-body.ng-star-inserted > div > div.transfer-success-message > div")
+	@FindBy(className = "transfer-success-message")
 	@CacheLookup
 	WebElement transferSuccessMessage;
 
@@ -504,9 +504,40 @@ public class DashBoard extends CommonMethods {
 		setElementText(SOACTDescription, DateDescription, "Date Description");
 		log("Click Action Button");
 		ClickElement(SOACTButtonAction, "Action Button");
+		
+	}
+	
+
+	
+	public void verifySubmitMessage(String Message)
+	{
+		if (transferSuccessMessage.isDisplayed()) {
+			VerifyStringContains(transferSuccessMessage.getText(), Message);
+			ClickElement(SOACTButtonDone, "Done Button");
+		} else {
+			Assert.fail("Order not submitted");
+		}
+	}
+	
+	public void submitTransferServiceRequest(String SearchInput, String DateRequested, String DateScheduled,
+			String DateDescription) {
+		// todo
+		log("Entering Service Name");
+		setElementText(SOACTSearchInput, SearchInput, "Service Name");
+		if (SOACTSearchOption1.isDisplayed()) {
+			SOACTSearchOption1.click();
+		}
+		log("Entering Date Requested");
+		setElementText(SOACTDateRequested, DateRequested, "Date Description");
+		log("Entering Date Scheduled");
+		setElementText(SOACTDateScheduled, DateScheduled, "Date Scheduled");
+		log("Entering Date Description");
+		setElementText(SOACTDescription, DateDescription, "Date Description");
+		log("Click Action Button");
+		ClickElement(SOACTButtonAction, "Action Button");
 
 		if (transferSuccessMessage.isDisplayed()) {
-			VerifyString(transferSuccessMessage.getText(), "Service Order successfully created");
+			VerifyString(transferSuccessMessage.getText(), "Service successfully Started");
 			ClickElement(SOACTButtonDone, "Done Button");
 		} else {
 			Assert.fail("Order not submitted");
@@ -1405,9 +1436,10 @@ public class DashBoard extends CommonMethods {
 
 			WaitAngular(driver);
 			// Use Actions to specify an x,y coordinate for your click,
-			waitForObject(driver, OverLay);
+			if(OverLay.isDisplayed()){
 			Actions a = new Actions(driver);
 			a.moveToElement(OverLay, 10, 10).click().perform();
+			}
 
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());

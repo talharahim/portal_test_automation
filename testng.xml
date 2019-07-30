@@ -75,14 +75,14 @@
 
 			<class
 				name="com.NexusPortalAutomation.TestCases.Java.TC0030_VerifyAction_Transfers_StartService_Scheduled" />
-				
-							<class
+
+			<class
 				name="com.NexusPortalAutomation.TestCases.Java.TC0030_VerifyAction_Transfers_StartService_Scheduled" />
-				
-							<class
+
+			<class
 				name="com.NexusPortalAutomation.TestCases.Java.TC0031_VerifyAction_Transfers_StopService_Scheduled" />
-				
-							<class
+
+			<class
 				name="com.NexusPortalAutomation.TestCases.Java.TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled" />
 
 		</classes>

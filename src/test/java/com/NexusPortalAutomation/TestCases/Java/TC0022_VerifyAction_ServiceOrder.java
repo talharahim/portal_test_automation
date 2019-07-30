@@ -31,6 +31,7 @@ public class TC0022_VerifyAction_ServiceOrder extends BaseClass {
 	public String ServerURL = GetDrillBackServerURL();
 	public String SearchInput = "REQ-DEP-WATER";
 	public String DateDescription = "AutomationRequest";
+	public String Message = "Service Order successfully created";
 	CommonMethods ComMethd = new CommonMethods();
 
 //This Test will test the search by Customer ID
@@ -55,6 +56,7 @@ public class TC0022_VerifyAction_ServiceOrder extends BaseClass {
 		String DateRequested = dateFormat.format(date);
 		dashBoard.submitServiceRequest(SearchInput, DateRequested, DateRequested, DateDescription);
 		Thread.sleep(1000);
+		dashBoard.verifySubmitMessage(Message);
 		
 		//Sql.VerifyServiceOrders(LocationID, DateRequested);
 		// Verify Updated details IN SERVICE TAB order number from database
