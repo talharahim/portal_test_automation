@@ -41,17 +41,37 @@ public class TC0009_VerifyAccountSearch extends BaseClass {
 		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerId());
 		// Verify Customer Details for location Provided
 		dashBoard.clickSarchAccountWidget();
-		//This will verify the type/status of the account 
-		dashBoard.verifySearchAccountResult("Current","SRCH_Accounts_Result1_Customer_Status");
-		dashBoard.verifySearchAccountResult("Former","SRCH_Accounts_Result2_Customer_Status");
-		dashBoard.verifySearchAccountResult("Move In","SRCH_Accounts_Result3_Customer_Status");
-		
-		//Select account and verify the change
+		// Verify the type/status of the account
+		dashBoard.verifySearchAccountResult("Current", "SRCH_Accounts_Result1_Customer_Status");
+		dashBoard.verifySearchAccountResult("Former", "SRCH_Accounts_Result2_Customer_Status");
+		dashBoard.verifySearchAccountResult("Move In", "SRCH_Accounts_Result3_Customer_Status");
+
+		// Verify addresses of Searched Accounts
+		dashBoard.verifySearchAccountResult("123213 Qweqwe Apt", "SRCH_Accounts_Result1_Address_Line");
+		dashBoard.verifySearchAccountResult("8129371 128 Test 12 712893 Bsmt", "SRCH_Accounts_Result2_Address_Line");
+		dashBoard.verifySearchAccountResult("4 Water 145 Unit", "SRCH_Accounts_Result3_Address_Line");
+
+		// verify State/ZipCode
+		dashBoard.verifySearchAccountResult("Cartersville GA 12345-6789",
+				"SRCH_Accounts_Result1_Address_City_State_ZipCode");
+		dashBoard.verifySearchAccountResult("Karachi OTTAWA 81392-37",
+				"SRCH_Accounts_Result2_Address_City_State_ZipCode");
+		dashBoard.verifySearchAccountResult("New York NY 12311", "SRCH_Accounts_Result3_Address_City_State_ZipCode");
+
+		// Verify Move-in Date
+		dashBoard.verifySearchAccountResult("Jul 15, 2019", "SRCH_Accounts_Result1_Move_In_Date");
+		dashBoard.verifySearchAccountResult("Jul 16, 2019", "SRCH_Accounts_Result2_Move_In_Date");
+
+		// Verify Current Date
+		dashBoard.verifySearchAccountResult("- Current", "SRCH_Accounts_Result1_Current_Date");
+		dashBoard.verifySearchAccountResult("- Current", "SRCH_Accounts_Result2_Current_Date");
+
+		// Select account and verify the change
 		dashBoard.clickSearchAccountResult("SRCH_Accounts_Result2_Address_Line");
-		dashBoard.verifyAddressDetails(addLine,addCity,addState,addZip);
+		dashBoard.verifyAddressDetails(addLine, addCity, addState, addZip);
 		dashBoard.SearchAccountWidgetExpanded(AccountId);
 		dashBoard.VerifySearchAccountResult1(AccountId);
-			
+	
 		dashBoard.LogOut();
 	}
 }

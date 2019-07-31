@@ -17,7 +17,7 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 import com.NexusPortalAutomation.Utilities.Java.MySQLDataExec;
 import com.microsoft.sqlserver.jdbc.SQLServerException;
 
-public class TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled extends BaseClass {
+public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends BaseClass {
 
 	/*
 	 * This test the search by Recent Customer Name
@@ -67,7 +67,7 @@ public class TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled extends B
 		// DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
 		// Date date = new Date();
 		// String DateRequested = dateFormat.format(date);
-		dashBoard.SelectTransferType_Transfer_Stop();
+		dashBoard.SelectTransferType_Transfer_Start();
 		dashBoard.enterRequest("TRANSFER");
 		dashBoard.enterScheduleDate_StartService(dashBoard.startService_getRequestedDate());
 		String moveOutrequestedDate = dashBoard.startService_getRequestedDate();
@@ -118,7 +118,7 @@ public class TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled extends B
 		// DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
 		// Date date = new Date();
 		// String DateRequested = dateFormat.format(date);
-		dashBoard.SelectTransferType_Transfer_Stop();
+		dashBoard.SelectTransferType_Transfer_Start();
 		dashBoard.enterRequest("TRANSFER");
 		Calendar c = Calendar.getInstance();
 		c.setTime(newFormat.parse(moveOutstart_dtfinalString));
@@ -172,7 +172,7 @@ public class TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled extends B
 		// DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
 		// Date date = new Date();
 		// String DateRequested = dateFormat.format(date);
-		dashBoard.SelectTransferType_Transfer_Stop();
+		dashBoard.SelectTransferType_Transfer_Start();
 		dashBoard.enterRequest("TRANSFER");
 		c = Calendar.getInstance();
 		c.setTime(newFormat.parse(moveOutstart_dtfinalString));

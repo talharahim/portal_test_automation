@@ -41,10 +41,18 @@ public class TC0013_VerifyContactEdit extends BaseClass {
 	    ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
 		dashBoard.ClickContactEdit();
+		dashBoard.updatePhone1("09007861112112");
+		dashBoard.updateEmail("automation@cogsdale.com");
+		dashBoard.clickContactUpdate();
+		phone = "(090) 078-6111";
+		dashBoard.VerifyCustomerDetails(ssn, lic, phone, ext, email, add, acsz);
+		
+		// Verify Updated details
+		phone = "(090) 078-6010";
+		dashBoard.ClickContactEdit();
 		dashBoard.updatePhone1("09007860102112");
 		dashBoard.updateEmail("automation@cogsdale.com");
 		dashBoard.clickContactUpdate();
-		// Verify Updated details
 		dashBoard.VerifyCustomerDetails(ssn, lic, phone, ext, email, add, acsz);
 		dashBoard.LogOut();
 	}

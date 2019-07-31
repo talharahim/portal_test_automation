@@ -208,7 +208,7 @@ public class DashBoard extends CommonMethods {
 
 	@FindBy(id = "SCUST_1_Customer_Name")
 	WebElement SecondCustName;
-	
+
 	@FindBy(id = "SCUST_Label")
 	WebElement SecondCustCnt;
 
@@ -412,12 +412,10 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "SOACT_Button_Done")
 	@CacheLookup
 	WebElement SOACTButtonDone;
-	
-	
+
 	@FindBy(id = "XFER_Button_Done")
 	@CacheLookup
 	WebElement XFERButtonDone;
-	
 
 	@FindBy(id = "SOACT_Search_Option_1_Request_Id")
 	@CacheLookup
@@ -442,20 +440,19 @@ public class DashBoard extends CommonMethods {
 
 	@FindBy(id = "ACTION_Refresh_Page")
 	WebElement RefreshButton;
-	
+
 	@FindBy(id = "ENH_Result_1_Message")
 	WebElement CustomerNotes;
-	
+
 	@FindBy(id = "ENH_Result_2_Message")
 	WebElement LocationNotes;
 
-	public void verifyEnhancedNotes(String CusNotes, String LocNotes)
-	{
-		VerifyString(getElementText(CustomerNotes, "Customer Notes"),CusNotes);
-		VerifyString(getElementText(LocationNotes, "Location Notes"),LocNotes);
-		
+	public void verifyEnhancedNotes(String CusNotes, String LocNotes) {
+		VerifyString(getElementText(CustomerNotes, "Customer Notes"), CusNotes);
+		VerifyString(getElementText(LocationNotes, "Location Notes"), LocNotes);
+
 	}
-	
+
 	public void clickrefreshPage() throws InterruptedException {
 
 		waitForObject(driver, RefreshButton);
@@ -510,24 +507,21 @@ public class DashBoard extends CommonMethods {
 		setElementText(SOACTDescription, DateDescription, "Date Description");
 		log("Click Action Button");
 		ClickElement(SOACTButtonAction, "Action Button");
-		
-	}
-	
 
-	public void ClickSerOrderDne()
-	{
+	}
+
+	public void ClickSerOrderDne() {
 		ClickElement(SOACTButtonDone, "Done Button");
 	}
-	
-	public void verifySubmitMessage(String Message)
-	{
+
+	public void verifySubmitMessage(String Message) {
 		if (transferSuccessMessage.isDisplayed()) {
 			VerifyStringContains(transferSuccessMessage.getText(), Message);
-				} else {
+		} else {
 			Assert.fail("Order not submitted");
 		}
 	}
-	
+
 	public void submitTransferServiceRequest(String SearchInput, String DateRequested, String DateScheduled,
 			String DateDescription) {
 		// todo
@@ -734,7 +728,7 @@ public class DashBoard extends CommonMethods {
 
 	public void VerifyDrillBack(String ElementID, String drillBackURL) throws InterruptedException {
 		Thread.sleep(1000);
-		
+
 		log("Verifying Drill back for " + drillBackURL);
 		findElementByid(ElementID).getAttribute(drillBackURL);
 	}
@@ -969,7 +963,7 @@ public class DashBoard extends CommonMethods {
 		return name;
 
 	}
-	
+
 	public String getSecondCustomerCount() {
 		String name = "";
 		try {
@@ -1145,9 +1139,9 @@ public class DashBoard extends CommonMethods {
 		WaitAngular(driver);
 	}
 
-	public void verifySearchAccountResult(String AccountStatus, String id) {
+	public void verifySearchAccountResult(String elementString, String elementid) {
 		try {
-			VerifyString(AccountStatus, (findElementByid(id).getText()));
+			VerifyString(elementString, (findElementByid(elementid).getText()));
 		} catch (NoSuchElementException e) {
 			Assert.assertFalse(true, "Element Not found");
 		}
@@ -1242,11 +1236,10 @@ public class DashBoard extends CommonMethods {
 		return getElementText(ServiceOrderNumber, "Service Order Number");
 
 	}
-	
-   public String getServiceOrderDrillbackURL()
-   {
-	   return findElementByid("SODV_Drillback").getAttribute("href");
-   }
+
+	public String getServiceOrderDrillbackURL() {
+		return findElementByid("SODV_Drillback").getAttribute("href");
+	}
 
 	public HashMap<String, String> GetBillingInfo() {
 		WaitAngular(driver);
@@ -1445,9 +1438,9 @@ public class DashBoard extends CommonMethods {
 
 			WaitAngular(driver);
 			// Use Actions to specify an x,y coordinate for your click,
-			if(OverLay.isDisplayed()){
-			Actions a = new Actions(driver);
-			a.moveToElement(OverLay, 10, 10).click().perform();
+			if (OverLay.isDisplayed()) {
+				Actions a = new Actions(driver);
+				a.moveToElement(OverLay, 10, 10).click().perform();
 			}
 
 		} catch (NoSuchElementException e) {
@@ -1484,7 +1477,6 @@ public class DashBoard extends CommonMethods {
 
 	public void ClickOk() throws InterruptedException {
 
-		
 		WaitForObjectbyId(this.driver, "ALERTO_Action_Button");
 		ClickElement(AlertOk, "Alert OK");
 
