@@ -12,10 +12,11 @@
 	<test thread-count="5" name="NexusTest">
 		<classes>
 			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit" />
+			<class
 				name="com.NexusPortalAutomation.TestCases.Java.TC0025_VerifyAction_Transfers_NotScheduled" />
 
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled" />
+
 
 		</classes>
 	</test> <!-- Test -->

@@ -448,8 +448,10 @@ public class DashBoard extends CommonMethods {
 	WebElement LocationNotes;
 
 	public void verifyEnhancedNotes(String CusNotes, String LocNotes) {
+
 		VerifyString(getElementText(CustomerNotes, "Customer Notes"), CusNotes);
 		VerifyString(getElementText(LocationNotes, "Location Notes"), LocNotes);
+		log("VerifyEnhancedNotes", driver);
 
 	}
 
@@ -457,6 +459,7 @@ public class DashBoard extends CommonMethods {
 
 		waitForObject(driver, RefreshButton);
 		ClickElement(RefreshButton, "Refresh Button");
+		log("Refresh Page", driver);
 		Thread.sleep(1000);
 	}
 
@@ -464,11 +467,13 @@ public class DashBoard extends CommonMethods {
 
 		waitForObject(driver, DashboardSearch);
 		setElementText(DashboardSearch, SearchText, "Search Text");
+		log("Search Text", driver);
 	}
 
 	public String getDashBoardSearchResult1Name() {
 
 		waitForObject(driver, DashboardSearchResult1Name);
+		log("Get DashBoard Search Result", driver);
 		return DashboardSearchResult1Name.getText();
 	}
 
@@ -476,18 +481,21 @@ public class DashBoard extends CommonMethods {
 
 		waitForObject(driver, DashboardSearchResult1Name);
 		DashboardSearchResult1Name.click();
+		log("Click DashBoard Search Result ", driver);
 		WaitAngular(driver);
 	}
 
 	public String getDashBoardSearchResult1CustomerId() {
 
 		waitForObject(driver, DashboardSearchResult1CustomerId);
+		log("Click DashBoard Search Result Customer Id", driver);
 		return DashboardSearchResult1CustomerId.getText();
 	}
 
 	public String getDashBoardSearchResult1Location() {
 
 		waitForObject(driver, DashboardSearchResult1Location);
+		log("Click DashBoard Search Result Location", driver);
 		return DashboardSearchResult1Location.getText();
 	}
 
@@ -507,6 +515,7 @@ public class DashBoard extends CommonMethods {
 		setElementText(SOACTDescription, DateDescription, "Date Description");
 		log("Click Action Button");
 		ClickElement(SOACTButtonAction, "Action Button");
+		log("Submit Service Request", driver);
 
 	}
 
@@ -623,7 +632,7 @@ public class DashBoard extends CommonMethods {
 			if (element.isDisplayed()) {
 				element.click();
 			}
-			log("Click " + ElementName);
+			log("Click " + ElementName, driver);
 			WaitAngular(driver);
 
 		} catch (NoSuchElementException e) {
@@ -637,12 +646,12 @@ public class DashBoard extends CommonMethods {
 
 		try {
 			waitForObject(driver, element);
-			log("get Text Text " + ElementName);
+			log("get Text Text " + ElementName, driver);
 			WaitAngular(driver);
 			return element.getText();
 
 		} catch (NoSuchElementException e) {
-			log(e.getMessage());
+			log(e.getMessage(), driver);
 			Assert.assertTrue(false, ElementName + " not found");
 
 		}
@@ -654,13 +663,13 @@ public class DashBoard extends CommonMethods {
 		try {
 
 			waitForObject(driver, element);
-			log("Set Text " + ElementName);
+			log("Set Text " + ElementName, driver);
 			WaitAngular(driver);
 			element.clear();
 			element.sendKeys(Text);
 
 		} catch (NoSuchElementException e) {
-			log(e.getMessage());
+			log(e.getMessage(), driver);
 			Assert.assertTrue(false, ElementName + " not found");
 
 		}
@@ -668,14 +677,14 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void clickActionDropDown() {
-		log("Click Action Dropdown");
+		log("Click Action Dropdown", driver);
 		waitForObject(driver, actionDropDown);
 		ClickElement(actionDropDown, "Action Drop down");
 
 	}
 
 	public void clickActionDropDown_Payment() {
-		log("Click Action Dropdown Payments");
+		log("Click Action Dropdown Payments", driver);
 		waitForObject(driver, Action_Payment);
 		ClickElement(Action_Payment, "Action Payment Drop down");
 
@@ -690,7 +699,7 @@ public class DashBoard extends CommonMethods {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		log("Click Action Dropdown Service Order");
+		log("Click Action Dropdown Service Order", driver);
 		ClickElement(Action_ServiceOrder, "Action Service Order Drop down");
 
 	}
@@ -723,13 +732,14 @@ public class DashBoard extends CommonMethods {
 		findElementByid("ACTION_Void").getAttribute(Void);
 		findElementByid("ACTION_Contact_Log").getAttribute(Mreader);
 		findElementByid("ACTION_Meter_Reading").getAttribute(ContLog);
+		log("Verify Action Drillbacks", driver);
 
 	}
 
 	public void VerifyDrillBack(String ElementID, String drillBackURL) throws InterruptedException {
 		Thread.sleep(1000);
 
-		log("Verifying Drill back for " + drillBackURL);
+		log("Verifying Drill back for " + drillBackURL, driver);
 		findElementByid(ElementID).getAttribute(drillBackURL);
 	}
 
@@ -739,6 +749,7 @@ public class DashBoard extends CommonMethods {
 		findElementByid("TRAN_Drillback_1").getAttribute(payment);
 		findElementByid("TRAN_Drillback_2").getAttribute(bill);
 		findElementByid("TRAN_Drillback_3").getAttribute(meter);
+		log("Verify Transfer Drillback", driver);
 
 	}
 
@@ -748,6 +759,7 @@ public class DashBoard extends CommonMethods {
 		findElementByid("ENH_Drillback_Location");
 		findElementByid("customer-person");
 		findElementByid("ENH_Title");
+		log("Verify Notes Drillback ", driver);
 
 	}
 
@@ -756,6 +768,7 @@ public class DashBoard extends CommonMethods {
 		Thread.sleep(1000);
 		waitForObject(driver, ServiceOerder_Drillback);
 		ServiceOerder_Drillback.getAttribute(ServOrder);
+		log("Verify Service Order Drillback", driver);
 
 	}
 
@@ -781,13 +794,26 @@ public class DashBoard extends CommonMethods {
 		return CustDrillBack.getAttribute("href");
 	}
 
+	public void verifyServiceWarningSingleSO(String serviceOrder) {
+		VerifyString(findElementByid("idPrefix + '_Warning_Message'").getText(), "Service Order Exist. TRANSFER");
+		VerifyStringContains(findElementByid("idPrefix + '_Warning_Drillback'").getAttribute("href"), serviceOrder);
+
+	}
+
+	public void verifyServiceWarningMultiSO(String serviceOrder) {
+		VerifyString(findElementByid("idPrefix + '_Warning_Message'").getText(),
+				"Multiple Service Orders Exist. TRANSFER");
+		VerifyStringContains(findElementByid("idPrefix + '_Warning_Drillback'").getAttribute("href"), serviceOrder);
+
+	}
+
 	public String GetSecondCustDrillBackUrl() {
 		try {
 			waitForObject(driver, SecondayCustDrillBack);
 
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
-			Assert.assertTrue(false, "Seconday Customer Drillback not found");
+			Assert.fail("Seconday Customer Drillback not found");
 		}
 		return SecondayCustDrillBack.getAttribute("href");
 	}
@@ -798,7 +824,7 @@ public class DashBoard extends CommonMethods {
 
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
-			Assert.assertTrue(false, "Service Drillback not found");
+			Assert.fail("Service Drillback not found");
 		}
 		return ServiceTabDrillBack.getAttribute("href");
 	}
@@ -809,21 +835,21 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void ClickServElecIcon() {
-		log("Click Service Electric Dropdown");
+		log("Click Service Electric Dropdown", driver);
 		waitForObject(driver, ServElectricIcon);
 		ClickElement(ServElectricIcon, "Electric Icon");
 	}
 
 	public void ClickServGasIcon() {
 
-		log("Click Service Gas Dropdown");
+		log("Click Service Gas Dropdown", driver);
 		waitForObject(driver, ServGasIcon);
 		ClickElement(ServGasIcon, "Gas Icon");
 
 	}
 
 	public void ClickServInternetIcon() {
-		log("Click Service Internet Dropdown");
+		log("Click Service Internet Dropdown", driver);
 		waitForObject(driver, ServInternetIcon);
 		ClickElement(ServInternetIcon, "Internet Icon");
 

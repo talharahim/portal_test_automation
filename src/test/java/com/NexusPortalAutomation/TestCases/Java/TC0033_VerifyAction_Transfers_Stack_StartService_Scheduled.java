@@ -31,6 +31,8 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 
 	public String LocationID = "LOC@0004";
 	public String LocationID2 = "LOC@0005";
+	public String LocationID3 = "AUTOLOC001";
+	public String LocationID4 = "STATEMENTS001";
 	public String ServerURL = GetDrillBackServerURL();
 	public String DefaultCustomer = "Mr. VACANT VACANT";
 	public String requestedbY = "Mr. Automation Mate";
@@ -55,30 +57,30 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		MySQLDataExec Sql = new MySQLDataExec();
 		Sql.DeleteServiceOrders(LocationID);
 		Sql.DeleteServiceOrdersHistory(LocationID);
+		Sql.DeleteServiceOrders(LocationID2);
+		Sql.DeleteServiceOrdersHistory(LocationID2);
+		Sql.DeleteServiceOrders(LocationID3);
+		Sql.DeleteServiceOrdersHistory(LocationID3);
+		Sql.DeleteServiceOrders(LocationID4);
+		Sql.DeleteServiceOrdersHistory(LocationID4);
 		login();
 		dbSrch.EnterSearchText(LocationID);
 		dbSrch.ClickCustomer();
 		// Verify Customer Location Id Updated for Test
 		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
-		// Verify Contact is updated accordingly
-		// ComMethd.VerifyString(servTabURL, dashBoard.GetServiceTabDrillBackUrl());
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
-		// DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
-		// Date date = new Date();
-		// String DateRequested = dateFormat.format(date);
 		dashBoard.SelectTransferType_Transfer_Start();
 		dashBoard.enterRequest("TRANSFER");
 		dashBoard.enterScheduleDate_StartService(dashBoard.startService_getRequestedDate());
 		String moveOutrequestedDate = dashBoard.startService_getRequestedDate();
-
 		// Entering data for Move Out
 		// Scroll down
 		JavascriptExecutor jsx = (JavascriptExecutor) driver;
 		jsx.executeScript("window.scrollBy(0,450)", "");
-		//
+		String moveinCustomer = "Mr. Movein Cus";
 		dashBoard.verifyDefaultCustomerStartService(DefaultCustomer);
-		dashBoard.enterDefaultCustomerStartService(DefaultCustomer);
+		dashBoard.enterDefaultCustomerStartService(moveinCustomer);
 		dashBoard.enterDescription("AUTOMATION TEST");
 		// Entering data for Move In
 		dashBoard.Click_MoveInSubmit();
@@ -90,7 +92,6 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		String ServiceOrder = dashBoard.getServiceOrderNumber();
 		String ServiceOrderURL = dashBoard.getServiceOrderDrillbackURL();
 		ComMethd.VerifyStringContains(ServiceOrderURL, ServiceOrder);
-
 		String[] arrOfStr = moveOutrequestedDate.split(" ", 2);
 		String moveOutstart_dt = arrOfStr[0];
 		DateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
@@ -99,105 +100,79 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		String moveOutstart_dtfinalString = newFormat.format(date);
 		ComMethd.VerifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
 		ComMethd.VerifyString(dashBoard.getSOscheduledDate(), moveOutstart_dtfinalString);
-
 		log(ServiceOrder);
-		ComMethd.VerifyString(dashBoard.getMoveOutSOcustomerName(), moveOutCustomer);
-		ComMethd.VerifyString(dashBoard.getMoveInSOcustomerName(), moveInCustomer);
-		ComMethd.VerifyString(dashBoard.getSOscheduledDate(), moveOutstart_dtfinalString);
-		ComMethd.VerifyString(dashBoard.getSOTask1Description(), Task1);
-		ComMethd.VerifyString(dashBoard.getSOTask2Description(), Task2);
-		ComMethd.VerifyString(dashBoard.getSOTask3Description(), Task3);
-		ComMethd.VerifyString(dashBoard.getSOTask4Description(), Task4);
-		ComMethd.VerifyString(dashBoard.getSOTask5Description(), Task5);
-		ComMethd.VerifyString(dashBoard.getSOTask6Description(), Task6);
 		Sql.VerifyServiceOrders(LocationID, ServiceOrder);
+		dashBoard.clickrefreshPage();
 
-		// Adding Second Service
+		/*
+		 * // Adding Second Service with two dates ahead of current date
+		 */
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
-		// DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
-		// Date date = new Date();
-		// String DateRequested = dateFormat.format(date);
 		dashBoard.SelectTransferType_Transfer_Start();
+		dashBoard.verifyServiceWarningSingleSO(ServiceOrder);
 		dashBoard.enterRequest("TRANSFER");
 		Calendar c = Calendar.getInstance();
 		c.setTime(newFormat.parse(moveOutstart_dtfinalString));
 		c.add(Calendar.DAY_OF_MONTH, 2);
 		// Date after adding the days to the given date
 		String newDate = newFormat.format(c.getTime());
-		newDate.replaceFirst("^0+(?!$)", "");
-
 		// Displaying the new Date after addition of Days
 		System.out.println("Date after Addition of two days " + newDate);
 		// Entering date
 		dashBoard.enterScheduleDate_StartService(newDate);
-
 		// Entering data for Move Out
 		// Scroll down
 		jsx.executeScript("window.scrollBy(0,450)", "");
-		//
+		moveInCustomer = "STATEMENT";
 		dashBoard.verifyDefaultCustomerStartService(DefaultCustomer);
-		dashBoard.enterDefaultCustomerStartService(DefaultCustomer);
+		dashBoard.enterDefaultCustomerStartService(moveInCustomer);
 		dashBoard.enterDescription("AUTOMATION TEST");
 		// Entering data for Move In
 		dashBoard.Click_MoveInSubmit();
 		Thread.sleep(1000);
 		dashBoard.ClickDone();
 		dashBoard.clickrefreshPage();
-		// Verify Updated details IN SERVICE TAB order number from database
 		dashBoard.ClickServiceOrderLink();
 		dashBoard.ClickServOrder1();
 		String ServiceOrder2 = dashBoard.getServiceOrderNumber();
 		String ServiceOrderURL2 = dashBoard.getServiceOrderDrillbackURL();
 		ComMethd.VerifyStringContains(ServiceOrderURL2, ServiceOrder2);
 		ComMethd.VerifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
-
-		log(ServiceOrder);
-		// Move out Customer is same as MOVEIN Customer
-		moveOutCustomer = "Mr. Vacant Vacant";
-		ComMethd.VerifyString(dashBoard.getMoveOutSOcustomerName(), moveOutCustomer);
-		ComMethd.VerifyString(dashBoard.getMoveInSOcustomerName(), moveInCustomer);
-		ComMethd.VerifyString(dashBoard.getSOscheduledDate(), newDate);
-		ComMethd.VerifyString(dashBoard.getSOTask1Description(), Task1);
-		ComMethd.VerifyString(dashBoard.getSOTask2Description(), Task2);
-		ComMethd.VerifyString(dashBoard.getSOTask3Description(), Task3);
-		ComMethd.VerifyString(dashBoard.getSOTask4Description(), Task4);
-		ComMethd.VerifyString(dashBoard.getSOTask5Description(), Task5);
-		ComMethd.VerifyString(dashBoard.getSOTask6Description(), Task6);
+		log(ServiceOrder2);
 		Sql.VerifyServiceOrders(LocationID, ServiceOrder2);
+		dashBoard.clickrefreshPage();
 
-		// Adding Third Service
+		/*
+		 * // Adding Third Service Order having date between first two
+		 */
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
-		// DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
-		// Date date = new Date();
-		// String DateRequested = dateFormat.format(date);
 		dashBoard.SelectTransferType_Transfer_Start();
+		dashBoard.verifyServiceWarningMultiSO(ServiceOrder2);
 		dashBoard.enterRequest("TRANSFER");
 		c = Calendar.getInstance();
 		c.setTime(newFormat.parse(moveOutstart_dtfinalString));
 		c.add(Calendar.DAY_OF_MONTH, 1);
 		// Date after adding the days to the given date
 		String newDate2 = newFormat.format(c.getTime());
-
 		// Displaying the new Date after addition of Days
 		System.out.println("Date after Addition of two days " + newDate2);
 		// Entering date
 		dashBoard.enterScheduleDate_StartService(newDate2);
-
 		// Entering data for Move Out
 		// Scroll down
 		jsx.executeScript("window.scrollBy(0,450)", "");
 		//
+		moveInCustomer = "Alert";
 		dashBoard.verifyDefaultCustomerStartService(DefaultCustomer);
-		dashBoard.enterDefaultCustomerStartService(DefaultCustomer);
+		dashBoard.enterDefaultCustomerStartService(moveInCustomer);
 		dashBoard.enterDescription("AUTOMATION TEST");
 		// Entering data for Move In
 		dashBoard.Click_MoveInSubmit();
 		Thread.sleep(1000);
 		dashBoard.ClickDone();
 		dashBoard.clickrefreshPage();
-
 		// Verify Updated details IN SERVICE TAB order number from database
 		dashBoard.ClickServiceOrderLink();
 		dashBoard.ClickServOrder1();
@@ -205,10 +180,12 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		String ServiceOrderURL3 = dashBoard.getServiceOrderDrillbackURL();
 		ComMethd.VerifyStringContains(ServiceOrderURL3, ServiceOrder3);
 		ComMethd.VerifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
+		log(ServiceOrder);
 
-		log(ServiceOrder3);
-		// Move out Customer is same as MOVEIN Customer
-		moveOutCustomer = "Mr. Vacant Vacant";
+		// Verify First Service Order in the Stack
+		moveOutCustomer = "Mr. Movein Cus";
+		moveInCustomer = "Mr. Alert Test (Customeralert01)";
+		ComMethd.VerifyString(dashBoard.getRequestedSOcustomerName(),moveOutCustomer);
 		ComMethd.VerifyString(dashBoard.getMoveOutSOcustomerName(), moveOutCustomer);
 		ComMethd.VerifyString(dashBoard.getMoveInSOcustomerName(), moveInCustomer);
 		ComMethd.VerifyString(dashBoard.getSOscheduledDate(), newDate2);
@@ -224,10 +201,9 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		dashBoard.ClickServOrder2();
 		ComMethd.VerifyStringContains(ServiceOrderURL2, ServiceOrder2);
 		ComMethd.VerifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
-
-		log(ServiceOrder3);
-		// Move out Customer is same as MOVEIN Customer
-		moveOutCustomer = "Mr. Vacant Vacant";
+		moveOutCustomer = "Mr. Alert Test";
+		moveInCustomer = "Mr. Statement Pdf (Autostatement)";
+		ComMethd.VerifyString(dashBoard.getRequestedSOcustomerName(),moveOutCustomer);
 		ComMethd.VerifyString(dashBoard.getMoveOutSOcustomerName(), moveOutCustomer);
 		ComMethd.VerifyString(dashBoard.getMoveInSOcustomerName(), moveInCustomer);
 		ComMethd.VerifyString(dashBoard.getSOscheduledDate(), newDate);
@@ -239,14 +215,13 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		ComMethd.VerifyString(dashBoard.getSOTask6Description(), Task6);
 		Sql.VerifyServiceOrders(LocationID, ServiceOrder2);
 
-		// Verifying Second order in the stack
+		// Verifying Third Transfer order in the stack
 		dashBoard.ClickServOrder3();
 		ComMethd.VerifyStringContains(ServiceOrderURL, ServiceOrder);
 		ComMethd.VerifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
-
-		log(ServiceOrder);
-		// Move out Customer is same as MOVEIN Customer
 		moveOutCustomer = "Mr. Automation Mate";
+		moveInCustomer = "Mr. Movein Cus (Moveincus2)";
+		ComMethd.VerifyString(dashBoard.getRequestedSOcustomerName(),moveOutCustomer);
 		ComMethd.VerifyString(dashBoard.getMoveOutSOcustomerName(), moveOutCustomer);
 		ComMethd.VerifyString(dashBoard.getMoveInSOcustomerName(), moveInCustomer);
 		ComMethd.VerifyString(dashBoard.getSOscheduledDate(), moveOutstart_dtfinalString);
@@ -257,7 +232,6 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		ComMethd.VerifyString(dashBoard.getSOTask5Description(), Task5);
 		ComMethd.VerifyString(dashBoard.getSOTask6Description(), Task6);
 		Sql.VerifyServiceOrders(LocationID, ServiceOrder);
-
 		dashBoard.LogOut();
 	}
 

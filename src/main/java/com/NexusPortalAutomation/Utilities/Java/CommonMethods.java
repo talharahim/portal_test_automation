@@ -37,7 +37,9 @@ public class CommonMethods {
 //This method will compare string values
 	public static ReadProjectProperties Read = new ReadProjectProperties();
 	public static NgWebDriver ngWebDriver;
+
 	public boolean HighLight = true;
+	public static boolean takescreentshots=false;
 
 	public CommonMethods() {
 		// this is the default const
@@ -61,8 +63,7 @@ public class CommonMethods {
 				log("Strings Matched: " + str1 + " = " + str2);
 
 			} else {
-				log("Strings Not Matched: " + str1 + " != " + str2);
-				Assert.assertEquals(str2, str1);
+				Assert.fail("String Value '" + str2 + "' not Matched '" + str1 + "'");
 			}
 		}
 		return result;
@@ -88,11 +89,8 @@ public class CommonMethods {
 		return Result;
 
 	}
-	
 
-
-	public boolean deleteFromDb(String Command, String ConnectionString)
-			throws ClassNotFoundException, SQLException {
+	public boolean deleteFromDb(String Command, String ConnectionString) throws ClassNotFoundException, SQLException {
 		// Following will created database
 		boolean Result = false;
 		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
@@ -119,8 +117,8 @@ public class CommonMethods {
 				log("Strings Matched: " + str1 + " = " + str2);
 
 			} else {
-				log("Strings Not Matched: " + str1 + " != " + str2);
-				Assert.assertEquals(str2, str1);
+				Assert.fail(("Strings Not Matched: " + str1 + " != " + str2));
+
 			}
 		}
 		return result;
@@ -130,6 +128,13 @@ public class CommonMethods {
 	public static void log(String message) {
 		Reporter.log(message);
 		System.out.println(message);
+	}
+
+	public static void log(String message, WebDriver driver) {
+		Reporter.log(message);
+		System.out.println(message);
+		takeScreenShot(message, driver);
+
 	}
 
 	public void WaitForObjectbyId(WebDriver driver, String id) {
@@ -171,8 +176,10 @@ public class CommonMethods {
 		}
 	}
 
-	public void takeScreenShot(String TestName, WebDriver driver) {
-		String fileName = String.format(TestName + "Screenshot-%s.jpg", Calendar.getInstance().getTimeInMillis());
+	public static void takeScreenShot(String TestName, WebDriver driver) {
+		if(takescreentshots==true) {
+		String fileName = String.format("" + TestName + "Screenshot-%s.jpg",
+				Calendar.getInstance().getTimeInMillis());
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		// The below method will save the screen shot
 		try {
@@ -181,7 +188,8 @@ public class CommonMethods {
 			log("***Placed screen shot in " + filePath + " ***");
 		} catch (IOException e) {
 			e.printStackTrace();
-			Assert.assertTrue(false, "Unable to take Screenshot");
+			Assert.fail("Unable to take Screenshot");
+		}
 		}
 	}
 

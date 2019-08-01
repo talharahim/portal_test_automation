@@ -55,6 +55,7 @@ public class DashBoardSearch extends CommonMethods {
 			waitForObject(this.driver, searchBar);
 			searchBar.sendKeys(txt);
 			WaitAngular(driver);
+			takeScreenShot(txt, driver);
 		} catch (NoSuchElementException e) {
 			e.getStackTrace();
 		}
@@ -66,36 +67,40 @@ public class DashBoardSearch extends CommonMethods {
 	}
 
 	public void ClickSaved() throws InterruptedException {
-
-		log("Tool Bar Clicked");
+		log("Tool Bar Clicked", driver);
 		toolBarSaved.click();
 	}
 
 	public void ClickCustomer() {
-		log("Click Customer");
+
 		SrchCustomer.click();
+		log("Click Customer", driver);
 		WaitAngular(driver);
+
 	}
 
 	public String GetRecentCustomerStateCity() {
-		log("Recent Customer =" + RecentCustomerCityState.getText());
+		log("Recent Customer =" + RecentCustomerCityState.getText(), driver);
 		return RecentCustomerCityState.getText();
 	}
 
 	public boolean ClickRecentCustomerName() {
-		log("Recent Customer =" + RecentCustomerCityState.getText());
+		log("Recent Customer =" + RecentCustomerCityState.getText(), driver);
 		try {
 			RecentCustomerCityState.click();
+			WaitAngular(driver);
 			return true;
 		} catch (NoSuchElementException e) {
-			log("Bookmark not found");
+			log("Bookmark not found", driver);
 		}
 		return false;
 	}
 
 	public void ClickHistoryCustomer() {
-		log("Click BookMarked Customer");
+
 		BookMarked.click();
+		WaitAngular(driver);
+		log("Click BookMarked Customer", driver);
 	}
 
 }

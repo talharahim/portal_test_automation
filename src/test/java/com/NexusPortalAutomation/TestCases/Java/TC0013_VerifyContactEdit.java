@@ -42,9 +42,10 @@ public class TC0013_VerifyContactEdit extends BaseClass {
 		// Verify Contact is updated accordingly
 		dashBoard.ClickContactEdit();
 		dashBoard.updatePhone1("09007861112112");
-		dashBoard.updateEmail("automation@cogsdale.com");
+		dashBoard.updateEmail("automation1@cogsdale.com");
 		dashBoard.clickContactUpdate();
 		phone = "(090) 078-6111";
+		email = "automation1@cogsdale.com";
 		dashBoard.VerifyCustomerDetails(ssn, lic, phone, ext, email, add, acsz);
 		
 		// Verify Updated details
