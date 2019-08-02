@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="1,006.798" tests="32" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="1,132.769" tests="33" errors="0" skipped="0" failures="2">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\Administrator\AppData\Local\Temp\2\surefire552382236988586778\surefirebooter614812537670242001.jar C:\Users\Administrator\AppData\Local\Temp\2\surefire552382236988586778 2019-07-30T11-24-15_761-jvmRun1 surefire2697620851422713981tmp surefire_02108933647840335742tmp"/>
+    <property name="sun.java.command" value="C:\Users\Administrator\AppData\Local\Temp\2\surefire5285173596043065277\surefirebooter1824866798976220460.jar C:\Users\Administrator\AppData\Local\Temp\2\surefire5285173596043065277 2019-08-01T11-53-54_273-jvmRun1 surefire1272099394848161257tmp surefire_06637953030549640753tmp"/>
     <property name="surefire.test.class.path" value="F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\target\test-classes;F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\target\classes;C:\Users\Administrator\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\Administrator\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\Administrator\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-java\3.14.0\selenium-java-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-api\3.14.0\selenium-api-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.14.0\selenium-edge-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.14.0\selenium-ie-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.14.0\selenium-opera-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.14.0\selenium-remote-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.14.0\selenium-safari-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-support\3.14.0\selenium-support-3.14.0.jar;C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Administrator\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\Administrator\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Administrator\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Administrator\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Administrator\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;C:\Users\Administrator\.m2\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar;C:\Users\Administrator\.m2\repository\com\squareup\okio\okio\1.14.1\okio-1.14.1.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\apache\maven\reporting\maven-reporting-api\2.0.6\maven-reporting-api-2.0.6.jar;C:\Users\Administrator\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.0-alpha-7\doxia-sink-api-1.0-alpha-7.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\mysql\mysql-connector-java\8.0.15\mysql-connector-java-8.0.15.jar;C:\Users\Administrator\.m2\repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;C:\Users\Administrator\.m2\repository\org\apache\logging\log4j\log4j-core\2.11.2\log4j-core-2.11.2.jar;C:\Users\Administrator\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.2\log4j-api-2.11.2.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi\4.1.0\poi-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-collections4\4.3\commons-collections4-4.3.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml\4.1.0\poi-ooxml-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.0\poi-ooxml-schemas-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\Administrator\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\Administrator\.m2\repository\com\microsoft\sqlserver\mssql-jdbc\7.0.0.jre8\mssql-jdbc-7.0.0.jre8.jar;C:\Users\Administrator\.m2\repository\com\paulhammant\ngwebdriver\1.1.4\ngwebdriver-1.1.4.jar;C:\Users\Administrator\.m2\repository\com\aventstack\extentreports\4.0.5\extentreports-4.0.5.jar;C:\Users\Administrator\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\Administrator\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\Administrator\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;C:\Users\Administrator\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\Administrator\.m2\repository\org\uncommons\reportng\1.1.4\reportng-1.1.4.jar;C:\Users\Administrator\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\Administrator\.m2\repository\com\google\inject\guice\3.0\guice-3.0.jar;C:\Users\Administrator\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Administrator\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Administrator\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\Administrator\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Administrator"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Administrator\AppData\Local\Temp\2\surefire552382236988586778\surefirebooter614812537670242001.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Administrator\AppData\Local\Temp\2\surefire5285173596043065277\surefirebooter1824866798976220460.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,36 +60,230 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="TestBookMark" classname="com.NexusPortalAutomation.TestCases.Java.TC0011_VerifyBookMark" time="39.092"/>
-  <testcase name="VerifyDrillBackTransactions" classname="com.NexusPortalAutomation.TestCases.Java.TC0019_VerifyDrillBackTransactions" time="22.728"/>
-  <testcase name="TestDrillBackServices" classname="com.NexusPortalAutomation.TestCases.Java.TC0020_VerifyDrillBackServices" time="22.151"/>
-  <testcase name="TestServiceOrderDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0021_VerifyServicesOrderDetails" time="22.298"/>
-  <testcase name="TestCustomerDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails" time="21.616"/>
-  <testcase name="VerifyDrillBacksGeneral" classname="com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral" time="30.185"/>
-  <testcase name="TestSearchAccount" classname="com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch" time="22.503"/>
-  <testcase name="TestBillingStatements" classname="com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue" time="21.575"/>
-  <testcase name="TestSearchbyLocationID" classname="com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID" time="20.939"/>
-  <testcase name="TestContactLogs" classname="com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs" time="20.897"/>
-  <testcase name="VerifyBillingDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails" time="25.697"/>
-  <testcase name="TestContactEdit" classname="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit" time="25.123"/>
-  <testcase name="TestSecondayContact" classname="com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact" time="19.766"/>
-  <testcase name="TestCreditStatus" classname="com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus" time="20.237"/>
-  <testcase name="TestSearchID" classname="com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID" time="20.325"/>
-  <testcase name="VerifyActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0022_VerifyAction_ServiceOrder" time="30.486"/>
-  <testcase name="VerifyActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0025_VerifyAction_Transfers_NotScheduled" time="42.246"/>
-  <testcase name="VerifyActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0029_VerifyAction_Transfers_Scheduled" time="45.097"/>
-  <testcase name="VerifyRecentWidget" classname="com.NexusPortalAutomation.TestCases.Java.TC0023_VerifyRecentWidget" time="21.097"/>
-  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0026_VerifyAction_Transfers_StartService_NotScheduled" time="34.507"/>
-  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0030_VerifyAction_Transfers_StartService_Scheduled" time="33.096"/>
-  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0027_VerifyAction_Transfers_StopService_NotScheduled" time="32.724"/>
-  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0031_VerifyAction_Transfers_StopService_Scheduled" time="33.962"/>
-  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled" time="49.86"/>
-  <testcase name="TestSearchAutobyRecent" classname="com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction" time="48.898"/>
-  <testcase name="TestSearchAutobyBookMark" classname="com.NexusPortalAutomation.TestCases.Java.TC0005_TestBookMarks" time="21.658"/>
-  <testcase name="TestSummarySectionOnChange" classname="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection" time="24.859"/>
-  <testcase name="TestSearchAutobyFirstName" classname="com.NexusPortalAutomation.TestCases.Java.TC0024_TestCustDetailSearch" time="38.248"/>
-  <testcase name="TestSearchAutobyFirstName" classname="com.NexusPortalAutomation.TestCases.Java.TC0028_TestEnhancedNotes" time="20.324"/>
-  <testcase name="TestSearchAlertOnLoad" classname="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad" time="21.387"/>
-  <testcase name="TestSearchAutobyFirstName" classname="com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName" time="21.809"/>
-  <testcase name="TestSearchAutobyLastName" classname="com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName" time="20.49"/>
+  <testcase name="TestBookMark" classname="com.NexusPortalAutomation.TestCases.Java.TC0011_VerifyBookMark" time="43.462"/>
+  <testcase name="VerifyDrillBackTransactions" classname="com.NexusPortalAutomation.TestCases.Java.TC0019_VerifyDrillBackTransactions" time="24.265"/>
+  <testcase name="TestDrillBackServices" classname="com.NexusPortalAutomation.TestCases.Java.TC0020_VerifyDrillBackServices" time="26.308"/>
+  <testcase name="TestServiceOrderDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0021_VerifyServicesOrderDetails" time="19.578"/>
+  <testcase name="TestCustomerDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails" time="16.806">
+    <failure message="String Value &apos;(090) 078-6111&apos; not Matched &apos;(090) 078-6010&apos;" type="java.lang.AssertionError">java.lang.AssertionError: String Value '(090) 078-6111' not Matched '(090) 078-6010'
+	at com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails.TestCustomerDetails(TC0010_VerifyCustomerDetails.java:43)
+</failure>
+    <system-out><![CDATA[Test completed successfully- TestServiceOrderDetails
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- TestCustomerDetails
+Angular Request Completed in 47ms
+Element [[ChromeDriver: chrome on XP (0a5e8e6381d7ee13d1ee7a7cd3fc9a62)] -> id: kc-header-wrapper] displayed in 46ms
+Login Page Title Verified
+Element [[ChromeDriver: chrome on XP (0a5e8e6381d7ee13d1ee7a7cd3fc9a62)] -> id: username] displayed in 40ms
+Element [[ChromeDriver: chrome on XP (0a5e8e6381d7ee13d1ee7a7cd3fc9a62)] -> id: password] displayed in 42ms
+Element [[ChromeDriver: chrome on XP (0a5e8e6381d7ee13d1ee7a7cd3fc9a62)] -> id: kc-login] displayed in 43ms
+Angular Request Completed in 15ms
+User signed Admin
+Enter Text for Search =LOC@0001
+Element [[ChromeDriver: chrome on XP (0a5e8e6381d7ee13d1ee7a7cd3fc9a62)] -> id: SRCH_Input] displayed in 63ms
+Angular request time 888ms
+Click Customer
+Angular request time 3483ms
+Angular request time 13ms
+Element [[ChromeDriver: chrome on XP (0a5e8e6381d7ee13d1ee7a7cd3fc9a62)] -> id: 'LOC_Location_Id'] displayed in 88ms
+get Text Text CustomerLocId
+Angular request time 9ms
+Customer Location Id found LOC@0001
+Strings Matched: LOC@0001 = LOC@0001
+Angular request time 17ms
+Verifying Customer Details
+Element [[ChromeDriver: chrome on XP (0a5e8e6381d7ee13d1ee7a7cd3fc9a62)] -> id: CUST_SSN] displayed in 59ms
+Element [[ChromeDriver: chrome on XP (0a5e8e6381d7ee13d1ee7a7cd3fc9a62)] -> id: CUST_SSN] displayed in 15ms
+get Text Text Customer SSN
+Angular request time 9ms
+Strings Matched: 2312 = 2312
+Element [[ChromeDriver: chrome on XP (0a5e8e6381d7ee13d1ee7a7cd3fc9a62)] -> id: CUST_Drivers_License] displayed in 52ms
+Element [[ChromeDriver: chrome on XP (0a5e8e6381d7ee13d1ee7a7cd3fc9a62)] -> id: CUST_Drivers_License] displayed in 16ms
+get Text Text Driver License
+Angular request time 10ms
+Strings Matched: Driv12312OUL312 = Driv12312OUL312
+Element [[ChromeDriver: chrome on XP (0a5e8e6381d7ee13d1ee7a7cd3fc9a62)] -> id: CUST_Phone_Number_1] displayed in 76ms
+Element [[ChromeDriver: chrome on XP (0a5e8e6381d7ee13d1ee7a7cd3fc9a62)] -> id: CUST_Phone_Number_1] displayed in 36ms
+get Text Text Phone Number
+Angular request time 12ms
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 36799
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1564678564.457][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Aug 01, 2019 11:56:05 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="VerifyDrillBacksGeneral" classname="com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral" time="36.012"/>
+  <testcase name="TestSearchAccount" classname="com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch" time="21.308"/>
+  <testcase name="TestBillingStatements" classname="com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue" time="20.956"/>
+  <testcase name="TestSearchbyLocationID" classname="com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID" time="24.164"/>
+  <testcase name="TestContactLogs" classname="com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs" time="18.828"/>
+  <testcase name="VerifyBillingDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails" time="26.729"/>
+  <testcase name="TestContactEdit" classname="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit" time="31.778">
+    <failure message="String Value &apos;(090) 078-6111&apos; not Matched &apos;(090) 078-6010&apos;" type="java.lang.AssertionError">java.lang.AssertionError: String Value '(090) 078-6111' not Matched '(090) 078-6010'
+	at com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit.TestContactEdit(TC0013_VerifyContactEdit.java:58)
+</failure>
+    <system-out><![CDATA[Test completed successfully- VerifyBillingDetails
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- TestContactEdit
+Angular Request Completed in 42ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: kc-header-wrapper] displayed in 50ms
+Login Page Title Verified
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: username] displayed in 46ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: password] displayed in 60ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: kc-login] displayed in 47ms
+Angular Request Completed in 20ms
+User signed Admin
+Enter Text for Search =LOC@0004
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: SRCH_Input] displayed in 67ms
+Angular request time 1315ms
+Click Customer
+Angular request time 2631ms
+Angular request time 9ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: 'LOC_Location_Id'] displayed in 61ms
+get Text Text CustomerLocId
+Angular request time 11ms
+Customer Location Id found LOC@0004
+Strings Matched: LOC@0004 = LOC@0004
+Angular request time 7ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: 'CUST_Drillback_Button'] displayed in 67ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: 'CUST_Drillback_Button'] displayed in 24ms
+Click Edit Contact
+Angular request time 22ms
+Angular request time 13ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: ECI_Phone_Number_1] displayed in 77ms
+Angular request time 16ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: ECI_Phone_Number_1] displayed in 63ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: ECI_Phone_Number_1] displayed in 60ms
+Set Text Phone Number
+Angular request time 15ms
+Angular request time 13ms
+Angular request time 9ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: ECI_Email] displayed in 74ms
+Angular request time 11ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: ECI_Email] displayed in 46ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: ECI_Email] displayed in 44ms
+Set Text Email id
+Angular request time 11ms
+Angular request time 11ms
+Angular request time 16ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: ECI_Action_Button] displayed in 76ms
+Click Contact Update
+Angular request time 2783ms
+Angular request time 22ms
+Verifying Customer Details
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: CUST_SSN] displayed in 67ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: CUST_SSN] displayed in 20ms
+get Text Text Customer SSN
+Angular request time 12ms
+Strings Matched: 2312 = 2312
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: CUST_Drivers_License] displayed in 67ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: CUST_Drivers_License] displayed in 19ms
+get Text Text Driver License
+Angular request time 10ms
+Strings Matched: Driv12312OUL312 = Driv12312OUL312
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: CUST_Phone_Number_1] displayed in 74ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: CUST_Phone_Number_1] displayed in 49ms
+get Text Text Phone Number
+Angular request time 13ms
+Strings Matched: (090) 078-6111 = (090) 078-6111
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: CUST_Phone_Number_Ext_1] displayed in 69ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: CUST_Phone_Number_Ext_1] displayed in 23ms
+get Text Text Phone Ext
+Angular request time 11ms
+Strings Matched: + Ext. 2112 = + Ext. 2112
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: 'CUST_Email'] displayed in 55ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: 'CUST_Email'] displayed in 18ms
+get Text Text Email
+Angular request time 9ms
+Strings Matched: automation1@cogsdale.com = automation1@cogsdale.com
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: 'CUST_Address_Line'] displayed in 65ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: 'CUST_Address_Line'] displayed in 18ms
+get Text Text AddressLine1
+Angular request time 10ms
+Strings Matched: 007 Test Apt = 007 Test Apt
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: 'CUST_Address_City_State_Zip'] displayed in 59ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: 'CUST_Address_City_State_Zip'] displayed in 26ms
+get Text Text AddressCityStateZip
+Angular request time 10ms
+Strings Matched: New York NY 12345-67890 = New York NY 12345-67890
+Angular request time 8ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: 'CUST_Drillback_Button'] displayed in 19ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: 'CUST_Drillback_Button'] displayed in 17ms
+Click Edit Contact
+Angular request time 27ms
+Angular request time 15ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: ECI_Phone_Number_1] displayed in 63ms
+Angular request time 22ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: ECI_Phone_Number_1] displayed in 59ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: ECI_Phone_Number_1] displayed in 52ms
+Set Text Phone Number
+Angular request time 14ms
+Angular request time 8ms
+Angular request time 9ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: ECI_Email] displayed in 66ms
+Angular request time 31ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: ECI_Email] displayed in 57ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: ECI_Email] displayed in 50ms
+Set Text Email id
+Angular request time 9ms
+Angular request time 11ms
+Angular request time 12ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: ECI_Action_Button] displayed in 61ms
+Click Contact Update
+Angular request time 2558ms
+Angular request time 17ms
+Verifying Customer Details
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: CUST_SSN] displayed in 46ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: CUST_SSN] displayed in 36ms
+get Text Text Customer SSN
+Angular request time 18ms
+Strings Matched: 2312 = 2312
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: CUST_Drivers_License] displayed in 36ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: CUST_Drivers_License] displayed in 17ms
+get Text Text Driver License
+Angular request time 18ms
+Strings Matched: Driv12312OUL312 = Driv12312OUL312
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: CUST_Phone_Number_1] displayed in 70ms
+Element [[ChromeDriver: chrome on XP (1c331250c8257fc90ebfbbe98a1d9c56)] -> id: CUST_Phone_Number_1] displayed in 70ms
+get Text Text Phone Number
+Angular request time 12ms
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}) on port 1405
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1564678754.052][WARNING]: This version of ChromeDriver has not been tested with Chrome version 75.
+Aug 01, 2019 11:59:15 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+  <testcase name="TestSecondayContact" classname="com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact" time="21.204"/>
+  <testcase name="TestCreditStatus" classname="com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus" time="19.461"/>
+  <testcase name="TestSearchID" classname="com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID" time="25.011"/>
+  <testcase name="VerifyActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0022_VerifyAction_ServiceOrder" time="27.367"/>
+  <testcase name="VerifyActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0025_VerifyAction_Transfers_NotScheduled" time="44.093"/>
+  <testcase name="VerifyActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0029_VerifyAction_Transfers_Scheduled" time="43.972"/>
+  <testcase name="VerifyRecentWidget" classname="com.NexusPortalAutomation.TestCases.Java.TC0023_VerifyRecentWidget" time="18.702"/>
+  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0026_VerifyAction_Transfers_StartService_NotScheduled" time="35.88"/>
+  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0030_VerifyAction_Transfers_StartService_Scheduled" time="37.733"/>
+  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0027_VerifyAction_Transfers_StopService_NotScheduled" time="28.269"/>
+  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0031_VerifyAction_Transfers_StopService_Scheduled" time="34.656"/>
+  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled" time="76.038"/>
+  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled" time="57.7"/>
+  <testcase name="TestSearchAutobyRecent" classname="com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction" time="62.99"/>
+  <testcase name="TestSearchAutobyBookMark" classname="com.NexusPortalAutomation.TestCases.Java.TC0005_TestBookMarks" time="20.548"/>
+  <testcase name="TestSummarySectionOnChange" classname="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection" time="20.043"/>
+  <testcase name="TestSearchAutobyFirstName" classname="com.NexusPortalAutomation.TestCases.Java.TC0024_TestCustDetailSearch" time="37.629"/>
+  <testcase name="TestSearchAutobyFirstName" classname="com.NexusPortalAutomation.TestCases.Java.TC0028_TestEnhancedNotes" time="32.589"/>
+  <testcase name="TestSearchAlertOnLoad" classname="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad" time="26.723"/>
+  <testcase name="TestSearchAutobyFirstName" classname="com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName" time="19.458"/>
+  <testcase name="TestSearchAutobyLastName" classname="com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName" time="15.103"/>
 </testsuite>

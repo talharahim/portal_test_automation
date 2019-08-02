@@ -43,6 +43,7 @@ public class TC0031_VerifyAction_Transfers_StopService_Scheduled extends BaseCla
 	public String Task4 = "Deposit Request-new Customer";
 	public String Task5 = "Deposit Payment-new Customer E";
 	public String Task6 = "Prepayment Required-new Custom";
+	public String[] Task = {"Meter Reading-electric", "Charge New Customer","Property Transfer", "Deposit Request-new Customer", "Deposit Payment-new Customer E","Prepayment Required-new Custom"};
 	CommonMethods ComMethd = new CommonMethods();
 
 //This Test will test the search by Customer ID
@@ -73,41 +74,18 @@ public class TC0031_VerifyAction_Transfers_StopService_Scheduled extends BaseCla
 	
 		// Entering data for Move Out
 		//Scroll down
-		JavascriptExecutor jsx = (JavascriptExecutor)driver;
-		jsx.executeScript("window.scrollBy(0,450)", "");
-		//
-		dashBoard.verifyDefaultCustomerStartService(DefaultCustomer);
-		dashBoard.enterDefaultCustomerStartService(DefaultCustomer);
-		dashBoard.enterDescription("AUTOMATION TEST");
-		// Entering data for Move In
-		dashBoard.Click_MoveInSubmit();
-		Thread.sleep(1000);
-		dashBoard.ClickDone();
+		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, moveOutrequestedDate, "TRANSFER", DefaultCustomer, DefaultCustomer);
 		// Verify Updated details IN SERVICE TAB order number from database
 		dashBoard.ClickServiceOrderLink();
 		String ServiceOrder = dashBoard.getServiceOrderNumber();
-		String ServiceOrderURL = dashBoard.getServiceOrderDrillbackURL();
-		ComMethd.VerifyStringContains(ServiceOrderURL, ServiceOrder);
-		
 		String[] arrOfStr = moveOutrequestedDate.split(" ", 2);
 		String moveOutstart_dt = arrOfStr[0];
 		DateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
 		Date date = (Date) formatter.parse(moveOutstart_dt);
-		SimpleDateFormat newFormat = new SimpleDateFormat("MMM dd, yyyy");
+		SimpleDateFormat newFormat = new SimpleDateFormat("MMM d, yyyy");
 		String moveOutstart_dtfinalString = newFormat.format(date);
-		ComMethd.VerifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
-		
+		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,moveOutstart_dtfinalString,moveOutstart_dtfinalString,Task,LocationID);
 		log(ServiceOrder);
-		ComMethd.VerifyString(dashBoard.getMoveOutSOcustomerName(), moveOutCustomer);
-		ComMethd.VerifyString(dashBoard.getMoveInSOcustomerName(), moveInCustomer);
-		ComMethd.VerifyString(dashBoard.getSOscheduledDate(), moveOutstart_dtfinalString);
-		ComMethd.VerifyString(dashBoard.getSOTask1Description() ,Task1);
-		ComMethd.VerifyString(dashBoard.getSOTask2Description() ,Task2);
-		ComMethd.VerifyString(dashBoard.getSOTask3Description() ,Task3);
-		ComMethd.VerifyString(dashBoard.getSOTask4Description() ,Task4);
-		ComMethd.VerifyString(dashBoard.getSOTask5Description() ,Task5);
-		ComMethd.VerifyString(dashBoard.getSOTask6Description() ,Task6);
-		Sql.VerifyServiceOrders(LocationID, ServiceOrder);
 		dashBoard.LogOut();
 	}
 

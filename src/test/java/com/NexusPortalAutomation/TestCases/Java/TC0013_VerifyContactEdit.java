@@ -50,6 +50,7 @@ public class TC0013_VerifyContactEdit extends BaseClass {
 		
 		// Verify Updated details
 		phone = "(090) 078-6010";
+		email = "automation@cogsdale.com";
 		dashBoard.ClickContactEdit();
 		dashBoard.updatePhone1("09007860102112");
 		dashBoard.updateEmail("automation@cogsdale.com");

@@ -79,7 +79,7 @@ public class TC0026_VerifyAction_Transfers_StartService_NotScheduled extends Bas
 		String moveOutstart_dt = arrOfStr[0];
 		DateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
 		Date date = (Date) formatter.parse(moveOutstart_dt);
-		SimpleDateFormat newFormat = new SimpleDateFormat("MMM dd, yyyy");
+		SimpleDateFormat newFormat = new SimpleDateFormat("MMM d, yyyy");
 		String moveOutstart_dtfinalString = newFormat.format(date);
 		// Verify Updated details IN SERVICE TAB order number from database
 		

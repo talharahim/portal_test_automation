@@ -1,8 +1,14 @@
 package com.NexusPortalAutomation.PageObjects.Java;
 
+import java.sql.SQLException;
+
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import com.NexusPortalAutomation.Utilities.Java.MySQLDataExec;
+import com.microsoft.sqlserver.jdbc.SQLServerException;
 
 import junit.framework.Assert;
 
@@ -14,6 +20,9 @@ import junit.framework.Assert;
  * @since 2019-07-10
  */
 public class Dashboard_Transfers extends DashBoard {
+
+	public static String moveOutrequestedDate;
+	MySQLDataExec Sql = new MySQLDataExec();
 
 	@FindBy(id = "ACTION_Transfer_Service")
 	WebElement ACTIONTransferService;
@@ -389,4 +398,38 @@ public class Dashboard_Transfers extends DashBoard {
 
 	}
 
+	public void submitStartStopServiceTransferOrder(String startDate, String scheduleDate, String serviceName,
+			String defaultCustomer, String requestCustomer) throws InterruptedException {
+		log("Submit Transfer Request");
+		enterRequest("TRANSFER");
+		enterScheduleDate_StartService(scheduleDate);
+		JavascriptExecutor jsx = (JavascriptExecutor) driver;
+		jsx = (JavascriptExecutor) driver;
+		jsx.executeScript("window.scrollBy(0,450)", "");
+		verifyDefaultCustomerStartService(defaultCustomer);
+		enterDefaultCustomerStartService(requestCustomer);
+		enterDescription("AUTOMATION TEST");
+		// Entering data for Move In
+		Click_MoveInSubmit();
+		Thread.sleep(1000);
+		ClickDone();
+
+	}
+
+	public void verifyServiceOrderdetails(String requester, String moveOutCustomer, String moveInCustomer,
+			String scheduledate, String requestedDate, String[] Task,String LocationID) throws ClassNotFoundException, SQLServerException, SQLException {
+		VerifyString(getRequestedSOcustomerName(), requester);
+		VerifyString(getMoveOutSOcustomerName(), moveOutCustomer);
+		VerifyString(getMoveInSOcustomerName(), moveInCustomer);
+		VerifyString(getSOscheduledDate(), scheduledate);
+		VerifyString(getSOrequestedDate(), requestedDate);
+		VerifyString(getSOTask1Description(), Task[0]);
+		VerifyString(getSOTask2Description(), Task[1]);
+		VerifyString(getSOTask3Description(), Task[2]);
+		VerifyString(getSOTask4Description(), Task[3]);
+		VerifyString(getSOTask5Description(), Task[4]);
+		VerifyString(getSOTask6Description(), Task[5]);
+		VerifyStringContains(getServiceOrderDrillbackURL(), getServiceOrderNumber());
+		Sql.VerifyServiceOrders(LocationID, getServiceOrderNumber());
+	}
 }

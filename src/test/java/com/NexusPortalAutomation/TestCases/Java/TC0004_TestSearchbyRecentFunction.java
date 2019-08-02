@@ -32,7 +32,7 @@ public class TC0004_TestSearchbyRecentFunction extends BaseClass {
 		dbSrch.EnterSearchText(UserName);
 		dbSrch.ClickCustomer();
 		ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
-		dashBoard.LogOut();
+		dashBoard.LogOut(); 
 		// Search Using Recent Icon
 		login();
 		ComMethd.WaitForObjectbyXpath(driver, "//input[@id='SRCH_Input']");

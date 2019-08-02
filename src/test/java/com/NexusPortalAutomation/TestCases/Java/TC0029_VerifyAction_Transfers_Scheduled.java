@@ -96,7 +96,7 @@ public class TC0029_VerifyAction_Transfers_Scheduled extends BaseClass {
 		String moveOutstart_dt = arrOfStr[0];
 		DateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
 		Date date = (Date) formatter.parse(moveOutstart_dt);
-		SimpleDateFormat newFormat = new SimpleDateFormat("MMM dd, yyyy");
+		SimpleDateFormat newFormat = new SimpleDateFormat("MMM d, yyyy");
 		String moveOutstart_dtfinalString = newFormat.format(date);
 		
 		ComMethd.VerifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
