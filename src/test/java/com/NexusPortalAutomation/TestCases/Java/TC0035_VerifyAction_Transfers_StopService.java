@@ -17,7 +17,7 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 import com.NexusPortalAutomation.Utilities.Java.MySQLDataExec;
 import com.microsoft.sqlserver.jdbc.SQLServerException;
 
-public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends BaseClass {
+public class TC0035_VerifyAction_Transfers_StopService extends BaseClass {
 
 	/*
 	 * This test the search by Recent Customer Name
@@ -28,25 +28,14 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 	 * 
 	 * @Since 2019-07-29
 	 */
-	public String[] Task = { "Meter Reading-electric", "Charge New Customer", "Property Transfer",
-			"Deposit Request-new Customer", "Deposit Payment-new Customer E", "Prepayment Required-new Custom" };
+
 	public String LocationID = "LOC@0004";
 	public String LocationID2 = "LOC@0005";
-	public String LocationID3 = "AUTOLOC001";
-	public String LocationID4 = "STATEMENTS001";
+	public String LocationID3 = "TESTLOCATION02";
 	public String ServerURL = GetDrillBackServerURL();
 	public String DefaultCustomer = "Mr. VACANT VACANT";
-	public String requestedbY = "Mr. Automation Mate";
-	public String moveOutCustomer = "Mr. Automation Mate";
-	public String loc2moveOutCustomer = "Mr. Movein Cus";
-	public String moveInCustomer = "Mr. Vacant Vacant (Vacant)";
-	public String loc2moveInCustomer = "Mr. Automation Mate (0000011111)";
-	public String Task1 = "Meter Reading-electric";
-	public String Task2 = "Charge New Customer";
-	public String Task3 = "Property Transfer";
-	public String Task4 = "Deposit Request-new Customer";
-	public String Task5 = "Deposit Payment-new Customer E";
-	public String Task6 = "Prepayment Required-new Custom";
+	
+	public String[] Task = {"Meter Reading-electric", "Charge New Customer","Property Transfer", "Deposit Request-new Customer", "Deposit Payment-new Customer E","Prepayment Required-new Custom"};
 	CommonMethods ComMethd = new CommonMethods();
 
 //This Test will test the search by Customer ID
@@ -62,8 +51,6 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		Sql.DeleteServiceOrdersHistory(LocationID2);
 		Sql.DeleteServiceOrders(LocationID3);
 		Sql.DeleteServiceOrdersHistory(LocationID3);
-		Sql.DeleteServiceOrders(LocationID4);
-		Sql.DeleteServiceOrdersHistory(LocationID4);
 		login();
 		dbSrch.EnterSearchText(LocationID);
 		dbSrch.ClickCustomer();
@@ -71,94 +58,85 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
-		dashBoard.SelectTransferType_Transfer_Start();
+		dashBoard.SelectTransferType_Transfer_Stop();
 		String moveOutrequestedDate = dashBoard.startService_getRequestedDate();
 		// Entering data for Move Out
 		// Scroll down
-		String moveInCustomer = "Mr. Movein Cus";
-		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, moveOutrequestedDate, "TRANSFER",
-				DefaultCustomer, moveInCustomer);
+		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, "", "TRANSFER", DefaultCustomer, DefaultCustomer);
 		// Verify Updated details IN SERVICE TAB order number from database
 		dashBoard.ClickServiceOrderLink();
 		dashBoard.ClickServOrder1();
 		String ServiceOrder = dashBoard.getServiceOrderNumber();
-		dashBoard.clickrefreshPage();
 		String[] arrOfStr = moveOutrequestedDate.split(" ", 2);
 		String moveOutstart_dt = arrOfStr[0];
 		DateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
 		Date date = (Date) formatter.parse(moveOutstart_dt);
 		SimpleDateFormat newFormat = new SimpleDateFormat("MMM d, yyyy");
 		String moveOutstart_dtfinalString = newFormat.format(date);
+		dashBoard.clickrefreshPage();
 
 		/*
-		 * // Adding Second Service with two dates ahead of current date
-		 */
+		// Adding Second Service with two dates ahead of current date
+		*/
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
-		dashBoard.SelectTransferType_Transfer_Start();
+		dashBoard.SelectTransferType_Transfer_Stop();
 		dashBoard.verifyServiceWarningSingleSO(ServiceOrder);
-
 		Calendar c = Calendar.getInstance();
 		c.setTime(newFormat.parse(moveOutstart_dtfinalString));
 		c.add(Calendar.DAY_OF_MONTH, 2);
 		// Date after adding the days to the given date
 		String newDate = newFormat.format(c.getTime());
-		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, newDate, "TRANSFER", DefaultCustomer,
-				moveInCustomer);
-
+		// Displaying the new Date after addition of Days
+		System.out.println("Date after Addition of two days " + newDate);
+		// Entering data for Move Out
+		// Scroll down
+   		String moveInCustomer = "Test Cust";
+   		dashBoard.submitStartStopServiceTransferOrder(newDate, "", "TRANSFER", DefaultCustomer, moveInCustomer);
 		dashBoard.clickrefreshPage();
 		dashBoard.ClickServiceOrderLink();
 		dashBoard.ClickServOrder1();
 		String ServiceOrder2 = dashBoard.getServiceOrderNumber();
-		String ServiceOrderURL2 = dashBoard.getServiceOrderDrillbackURL();
-		ComMethd.VerifyStringContains(ServiceOrderURL2, ServiceOrder2);
-		ComMethd.VerifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
-		log(ServiceOrder2);
-		Sql.VerifyServiceOrders(LocationID, ServiceOrder2);
 		dashBoard.clickrefreshPage();
-
+		
 		/*
-		 * // Adding Third Service Order having date between first two
-		 */
+		// Adding Third Service Order having date between first two
+		*/
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
-		dashBoard.SelectTransferType_Transfer_Start();
+		dashBoard.SelectTransferType_Transfer_Stop();
 		dashBoard.verifyServiceWarningMultiSO(ServiceOrder2);
-		dashBoard.enterRequest("TRANSFER");
 		c = Calendar.getInstance();
 		c.setTime(newFormat.parse(moveOutstart_dtfinalString));
 		c.add(Calendar.DAY_OF_MONTH, 1);
-		// Date after adding the days to the given date
+		// Date after adding 1 day to the given date
 		String newDate2 = newFormat.format(c.getTime());
-		// Entering data for Move Out
-		// Scroll down
-		moveInCustomer = "Alert";
-		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, newDate2, "TRANSFER", DefaultCustomer,
-				moveInCustomer);
+		// Displaying the new Date after addition of Days
+		moveInCustomer =  "MOVEIN";
+		dashBoard.submitStartStopServiceTransferOrder(newDate2, "", "TRANSFER", DefaultCustomer, moveInCustomer);
 		dashBoard.clickrefreshPage();
 
+	
 		// Verify First Service Order in the Stack
-		moveOutCustomer = "Mr. Movein Cus";
-		moveInCustomer = "Mr. Alert Test (Customeralert01)";
-		dashBoard.verifyServiceOrderdetails(moveOutCustomer, moveOutCustomer, moveInCustomer, newDate2,
-				moveOutstart_dtfinalString, Task, LocationID);
+		dashBoard.ClickServiceOrderLink();
+		dashBoard.ClickServOrder1();
+		String moveOutCustomer = "Mr. Automation Mate";
+		moveInCustomer = "Mr. Movein Cus (Moveincus2)";
+		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,LocationID);
 
 		// Verifying Second order in the stack
 		dashBoard.ClickServOrder2();
-		ComMethd.VerifyStringContains(ServiceOrderURL2, ServiceOrder2);
-		ComMethd.VerifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
-		moveOutCustomer = "Mr. Alert Test";
-		moveInCustomer = "Mr. Movein Cus (Moveincus2)";
-		dashBoard.verifyServiceOrderdetails(moveOutCustomer, moveOutCustomer, moveInCustomer, newDate,
-				moveOutstart_dtfinalString, Task, LocationID);
+		moveOutCustomer ="Mr. Automation Mate";
+		moveInCustomer =  "Mr. Alert Test (Customeralert01)";
+		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,LocationID);
 
 		// Verifying Third Transfer order in the stack
 		dashBoard.ClickServOrder3();
-		moveOutCustomer = "Mr. Automation Mate";
-		moveInCustomer = "Mr. Movein Cus (Moveincus2)";
-		dashBoard.verifyServiceOrderdetails(moveOutCustomer, moveOutCustomer, moveInCustomer,
-				moveOutstart_dtfinalString, moveOutstart_dtfinalString, Task, LocationID);
+	   	moveOutCustomer = "Mr. Automation Mate";
+		moveInCustomer = "Mr. Vacant Vacant (Vacant)";
+		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,LocationID);
 		dashBoard.LogOut();
 	}
 
 }
+

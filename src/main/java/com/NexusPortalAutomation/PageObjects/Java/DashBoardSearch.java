@@ -23,7 +23,6 @@ public class DashBoardSearch extends CommonMethods {
 
 	WebDriver driver;
 	@FindBy(id = "SRCH_Input")
-	@CacheLookup
 	WebElement searchBar;
 
 	@FindBy(id = "SRCH_Button_Recent")

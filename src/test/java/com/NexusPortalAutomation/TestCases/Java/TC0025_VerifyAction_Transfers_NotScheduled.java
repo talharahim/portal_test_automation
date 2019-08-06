@@ -71,6 +71,7 @@ public class TC0025_VerifyAction_Transfers_NotScheduled extends BaseClass {
 		dashBoard.verifyDefaultCustomer(DefaultCustomer);
 		dashBoard.enterDefaultCustomer(DefaultCustomer);
 		dashBoard.enterDescription("AUTOMATION TEST");
+		
 		// Move In
 		dashBoard.ClickMoveIn();
 		String moveInrequestedDate = dashBoard.Movin_getMoveFromRequestedDate();

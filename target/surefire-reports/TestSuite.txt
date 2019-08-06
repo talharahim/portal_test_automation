@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 33, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1,132.769 s <<< FAILURE! - in TestSuite
-TestCustomerDetails(com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails)  Time elapsed: 16.806 s  <<< FAILURE!
-java.lang.AssertionError: String Value '(090) 078-6111' not Matched '(090) 078-6010'
-	at com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails.TestCustomerDetails(TC0010_VerifyCustomerDetails.java:43)
-
-TestContactEdit(com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit)  Time elapsed: 31.778 s  <<< FAILURE!
-java.lang.AssertionError: String Value '(090) 078-6111' not Matched '(090) 078-6010'
-	at com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit.TestContactEdit(TC0013_VerifyContactEdit.java:58)
-
+Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1,317.669 s - in TestSuite

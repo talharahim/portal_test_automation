@@ -42,8 +42,8 @@ public class Dashboard_Transfers extends DashBoard {
 	@FindBy(id = "XFER_Description")
 	WebElement Description;
 
-	@FindBy(xpath = "//*[@id=\"mat-tab-label-4-1\"]")
-	WebElement MoveInTab;
+	@FindBy(xpath = "//*[@id=\"mat-tab-label-2-1\"]")
+	WebElement MoveTo;
 
 	@FindBy(id = "XFER_Select_Option_1")
 	WebElement XFER_Select_Option_1;
@@ -308,7 +308,7 @@ public class Dashboard_Transfers extends DashBoard {
 	}
 
 	public void ClickMoveIn() {
-		ClickElement(MoveInTab, "Move In");
+		ClickElement(MoveTo, "Move To Tab (Transfers)");
 	}
 
 	public void clickActionDropDown_TransferService() {

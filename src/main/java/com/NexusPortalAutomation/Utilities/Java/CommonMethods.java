@@ -114,7 +114,7 @@ public class CommonMethods {
 		if (str1 != "" && str2 != "") {
 			if (str1.contains(str2)) {
 				result = true;
-				log("Strings Matched: " + str1 + " = " + str2);
+				log("String =" + str1 + " Contains = " + str2);
 
 			} else {
 				Assert.fail(("Strings Not Matched: " + str1 + " != " + str2));
@@ -218,7 +218,7 @@ public class CommonMethods {
 
 		} catch (TimeoutException e) {
 
-			Assert.assertTrue(false, "Object Not Found");
+			Assert.fail("Object Not Found "+ e.getMessage());
 			throw new TimeoutException("Object Not Found", e);
 		}
 		long end = System.currentTimeMillis();

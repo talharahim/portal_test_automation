@@ -163,35 +163,27 @@ public class DashBoard extends CommonMethods {
 	WebElement Phone1;
 
 	@FindBy(id = "CUST_Phone_Number_Ext_1")
-	@CacheLookup
 	WebElement PhoneExt1;
 
 	@FindBy(id = "'CUST_Email'")
-	@CacheLookup
 	WebElement Email;
 
 	@FindBy(id = "'CUST_Address_Line'")
-	@CacheLookup
 	WebElement AddressLine1;
 
 	@FindBy(id = "'CUST_Address_City_State_Zip'")
-	@CacheLookup
 	WebElement AddressCityStateZip;
 
 	@FindBy(id = "ACTION_BOOKMARK")
-	@CacheLookup
 	WebElement BookMarkIconEnabled;
 
 	@FindBy(id = "ACTION_BOOKMARK_Selected")
-	@CacheLookup
 	WebElement BookMarkIconDisabled;
 
 	@FindBy(id = "credit-great")
-	@CacheLookup
 	WebElement creditGreat;
 
 	@FindBy(id = "'CUST_Drillback_Button'")
-	@CacheLookup
 	WebElement ContactEdit;
 
 	@FindBy(id = "ECI_Phone_Number_1")
@@ -446,6 +438,9 @@ public class DashBoard extends CommonMethods {
 
 	@FindBy(id = "ENH_Result_2_Message")
 	WebElement LocationNotes;
+	
+	@FindBy(id = "CUST_Credit_Rating")
+	WebElement CreditRating;
 
 	public void verifyEnhancedNotes(String CusNotes, String LocNotes) {
 
@@ -806,6 +801,14 @@ public class DashBoard extends CommonMethods {
 		VerifyStringContains(findElementByid("idPrefix + '_Warning_Drillback'").getAttribute("href"), serviceOrder);
 
 	}
+	
+	public void verifyServiceWarningSOExists(String serviceOrder) {
+		VerifyString(findElementByid("idPrefix + '_Warning_Message'").getText(),
+				"Service Order Exist. TRANSFER");
+		VerifyStringContains(findElementByid("idPrefix + '_Warning_Drillback'").getAttribute("href"), serviceOrder);
+
+	}
+
 
 	public String GetSecondCustDrillBackUrl() {
 		try {
@@ -1124,14 +1127,9 @@ public class DashBoard extends CommonMethods {
 		}
 	}
 
-	public void VerifyGoodCredit() {
+	public void VerifyCredit(String creditStatus) {
 		log("Verify Credit Status");
-		waitForObject(driver, creditGreat);
-		if (creditGreat.isDisplayed()) {
-			Assert.assertTrue(true);
-		} else {
-			Assert.assertTrue(false);
-		}
+		VerifyString(CreditRating.getText(), creditStatus);
 		WaitAngular(driver);
 	}
 

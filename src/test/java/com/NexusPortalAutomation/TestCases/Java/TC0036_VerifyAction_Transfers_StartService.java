@@ -17,7 +17,7 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 import com.NexusPortalAutomation.Utilities.Java.MySQLDataExec;
 import com.microsoft.sqlserver.jdbc.SQLServerException;
 
-public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends BaseClass {
+public class TC0036_VerifyAction_Transfers_StartService extends BaseClass {
 
 	/*
 	 * This test the search by Recent Customer Name
@@ -76,7 +76,7 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		// Entering data for Move Out
 		// Scroll down
 		String moveInCustomer = "Mr. Movein Cus";
-		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, moveOutrequestedDate, "TRANSFER",
+		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, "", "TRANSFER",
 				DefaultCustomer, moveInCustomer);
 		// Verify Updated details IN SERVICE TAB order number from database
 		dashBoard.ClickServiceOrderLink();
@@ -103,7 +103,7 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		c.add(Calendar.DAY_OF_MONTH, 2);
 		// Date after adding the days to the given date
 		String newDate = newFormat.format(c.getTime());
-		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, newDate, "TRANSFER", DefaultCustomer,
+		dashBoard.submitStartStopServiceTransferOrder(newDate, "", "TRANSFER", DefaultCustomer,
 				moveInCustomer);
 
 		dashBoard.clickrefreshPage();
@@ -133,23 +133,23 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		// Entering data for Move Out
 		// Scroll down
 		moveInCustomer = "Alert";
-		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, newDate2, "TRANSFER", DefaultCustomer,
+		dashBoard.submitStartStopServiceTransferOrder(newDate2, "", "TRANSFER", DefaultCustomer,
 				moveInCustomer);
 		dashBoard.clickrefreshPage();
 
 		// Verify First Service Order in the Stack
-		moveOutCustomer = "Mr. Movein Cus";
+		moveOutCustomer = "Mr. Automation Mate";
 		moveInCustomer = "Mr. Alert Test (Customeralert01)";
-		dashBoard.verifyServiceOrderdetails(moveOutCustomer, moveOutCustomer, moveInCustomer, newDate2,
+		dashBoard.verifyServiceOrderdetails(moveOutCustomer, moveOutCustomer, moveInCustomer, "Not Scheduled",
 				moveOutstart_dtfinalString, Task, LocationID);
 
 		// Verifying Second order in the stack
 		dashBoard.ClickServOrder2();
 		ComMethd.VerifyStringContains(ServiceOrderURL2, ServiceOrder2);
 		ComMethd.VerifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
-		moveOutCustomer = "Mr. Alert Test";
+		moveOutCustomer = "Mr. Automation Mate";
 		moveInCustomer = "Mr. Movein Cus (Moveincus2)";
-		dashBoard.verifyServiceOrderdetails(moveOutCustomer, moveOutCustomer, moveInCustomer, newDate,
+		dashBoard.verifyServiceOrderdetails(moveOutCustomer, moveOutCustomer, moveInCustomer,  "Not Scheduled",
 				moveOutstart_dtfinalString, Task, LocationID);
 
 		// Verifying Third Transfer order in the stack
@@ -157,7 +157,7 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		moveOutCustomer = "Mr. Automation Mate";
 		moveInCustomer = "Mr. Movein Cus (Moveincus2)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer, moveOutCustomer, moveInCustomer,
-				moveOutstart_dtfinalString, moveOutstart_dtfinalString, Task, LocationID);
+				 "Not Scheduled", moveOutstart_dtfinalString, Task, LocationID);
 		dashBoard.LogOut();
 	}
 
