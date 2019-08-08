@@ -20,13 +20,20 @@ public class TC0009_VerifyAccountSearch extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	String LocationID = "AUTO1001";
+	String LocationID = "500001";
 	String AccntSrchResult = "1 Water 1 Bldg";
 	String addLine = "Water";
 	String addCity = "New York";
 	String addState = "NY";
 	String addZip = "MYPD0-201";
 	String AccountId = "TESTLOCATION01";
+	
+	String address1 = "8 Orchard";
+	String address2 = "8 Orchard";
+	String address3 = "8000 Bsmt";
+	String cityzip1 = "Troy NY 12180";
+	String cityzip2 = "Troy NY 12180";
+	String cityzip3 = "Cartersville GA 09007-8623";
 	CommonMethods ComMethd = new CommonMethods();
 
 //This Test will test the search by Customer ID
@@ -45,33 +52,35 @@ public class TC0009_VerifyAccountSearch extends BaseClass {
 		dashBoard.verifySearchAccountResult("Current", "SRCH_Accounts_Result1_Customer_Status");
 		dashBoard.verifySearchAccountResult("Former", "SRCH_Accounts_Result2_Customer_Status");
 		dashBoard.verifySearchAccountResult("Move In", "SRCH_Accounts_Result3_Customer_Status");
+		
+		
 
 		// Verify addresses of Searched Accounts
-		dashBoard.verifySearchAccountResult("123213 Qweqwe Apt", "SRCH_Accounts_Result1_Address_Line");
-		dashBoard.verifySearchAccountResult("Water", "SRCH_Accounts_Result2_Address_Line");
-		dashBoard.verifySearchAccountResult("4 Water 145 Unit", "SRCH_Accounts_Result3_Address_Line");
+		dashBoard.verifySearchAccountResult(address1, "SRCH_Accounts_Result1_Address_Line");
+		dashBoard.verifySearchAccountResult(address2, "SRCH_Accounts_Result2_Address_Line");
+		dashBoard.verifySearchAccountResult(address3, "SRCH_Accounts_Result3_Address_Line");
 
 		// verify State/ZipCode
-		dashBoard.verifySearchAccountResult("Cartersville GA 12345-6789",
-				"SRCH_Accounts_Result1_Address_City_State_ZipCode");
-		dashBoard.verifySearchAccountResult("New York NY MYPD0-201",
-				"SRCH_Accounts_Result2_Address_City_State_ZipCode");
-		dashBoard.verifySearchAccountResult("New York NY 12311", "SRCH_Accounts_Result3_Address_City_State_ZipCode");
+		dashBoard.verifySearchAccountResult(cityzip1, "SRCH_Accounts_Result1_Address_City_State_ZipCode");
+		dashBoard.verifySearchAccountResult(cityzip2, "SRCH_Accounts_Result2_Address_City_State_ZipCode");
+		dashBoard.verifySearchAccountResult(cityzip3, "SRCH_Accounts_Result3_Address_City_State_ZipCode");
 
 		// Verify Move-in Date
-		dashBoard.verifySearchAccountResult("Jul 15, 2019", "SRCH_Accounts_Result1_Move_In_Date");
-		dashBoard.verifySearchAccountResult("Aug 07, 2019", "SRCH_Accounts_Result2_Move_In_Date");
+		dashBoard.verifySearchAccountResult("", "SRCH_Accounts_Result1_Move_In_Date");
+		dashBoard.verifySearchAccountResult("Aug 08, 2019", "SRCH_Accounts_Result2_Move_In_Date");
+		dashBoard.verifySearchAccountResult("Aug 08, 2019", "SRCH_Accounts_Result2_Move_In_Date");
 
 		// Verify Current Date
 		dashBoard.verifySearchAccountResult("- Current", "SRCH_Accounts_Result1_Current_Date");
-		dashBoard.verifySearchAccountResult("- Current", "SRCH_Accounts_Result2_Current_Date");
+		dashBoard.verifySearchAccountResult("- Aug 08, 2019", "SRCH_Accounts_Result2_Current_Date");
+		dashBoard.verifySearchAccountResult("", "SRCH_Accounts_Result3_Current_Date");
 
 		// Select account and verify the change
 		dashBoard.clickSearchAccountResult("SRCH_Accounts_Result2_Address_Line");
 		dashBoard.verifyAddressDetails(addLine, addCity, addState, addZip);
 		dashBoard.SearchAccountWidgetExpanded(AccountId);
 		dashBoard.VerifySearchAccountResult1(AccountId);
-	
+
 		dashBoard.LogOut();
 	}
 }

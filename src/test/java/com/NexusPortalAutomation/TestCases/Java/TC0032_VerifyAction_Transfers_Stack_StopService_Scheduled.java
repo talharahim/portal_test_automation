@@ -59,7 +59,7 @@ public class TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled extends B
 		String moveOutrequestedDate = dashBoard.startService_getRequestedDate();
 		// Entering data for Move Out
 		// Scroll down
-		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, moveOutrequestedDate, "TRANSFER", DefaultCustomer, DefaultCustomer);
+		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, moveOutrequestedDate, "TRANSFER", DefaultCustomer, DefaultCustomer,"Description for Stop Service");
 		// Verify Updated details IN SERVICE TAB order number from database
 		dashBoard.ClickServiceOrderLink();
 		dashBoard.ClickServOrder1();
@@ -89,7 +89,7 @@ public class TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled extends B
 		// Entering data for Move Out
 		// Scroll down
    		String moveInCustomer = "Mr. Automation Mate";
-   		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, newDate, "TRANSFER", DefaultCustomer, moveInCustomer);
+   		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, newDate, "TRANSFER", DefaultCustomer, moveInCustomer, "Description for Move from Service");
 		dashBoard.clickrefreshPage();
 		dashBoard.ClickServiceOrderLink();
 		dashBoard.ClickServOrder1();
@@ -110,7 +110,7 @@ public class TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled extends B
 		String newDate2 = newFormat.format(c.getTime());
 		// Displaying the new Date after addition of Days
 		moveInCustomer =  "MOVEIN";
-		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, newDate2, "TRANSFER", DefaultCustomer, moveInCustomer);
+		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, newDate2, "TRANSFER", DefaultCustomer, moveInCustomer, "Description for Stop Service");
 		dashBoard.clickrefreshPage();
 
 	

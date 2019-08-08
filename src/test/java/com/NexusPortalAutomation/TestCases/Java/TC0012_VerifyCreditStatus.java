@@ -22,7 +22,7 @@ public class TC0012_VerifyCreditStatus extends BaseClass {
 
 	public String LocationID = "LOC@0001";
 	public String LocationID2 = "TESTLOCATION01";
-	public String LocationID3 = "TESTLOCATION02";
+	public String LocationID3 = "TESTLOCATION03";
 	CommonMethods ComMethd = new CommonMethods();
 
 //This Test will test the search by Customer ID
@@ -30,6 +30,14 @@ public class TC0012_VerifyCreditStatus extends BaseClass {
 	public void TestCreditStatus() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
+		login();
+		dbSrch.EnterSearchText(LocationID3);
+		dbSrch.ClickCustomer();
+		// Verify Customer Location Id Updated for Test
+		ComMethd.VerifyString(LocationID3, dashBoard.GetLoggedCustomerLocationId());
+		// Verify Good Credit
+		dashBoard.VerifyCredit("EXCELLEN");
+		dashBoard.LogOut();
 		login();
 		dbSrch.EnterSearchText(LocationID);
 		dbSrch.ClickCustomer();
@@ -46,14 +54,7 @@ public class TC0012_VerifyCreditStatus extends BaseClass {
 		// Verify Good Credit
 		dashBoard.VerifyCredit("WORST");
 		dashBoard.LogOut();
-		login();
-		dbSrch.EnterSearchText(LocationID3);
-		dbSrch.ClickCustomer();
-		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID3, dashBoard.GetLoggedCustomerLocationId());
-		// Verify Good Credit
-		dashBoard.VerifyCredit("EXCELLEN");
-		dashBoard.LogOut();
+
 	}
 
 }

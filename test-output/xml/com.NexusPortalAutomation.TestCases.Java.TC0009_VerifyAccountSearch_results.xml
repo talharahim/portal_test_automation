@@ -4,28 +4,17 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="24.861">
+           time="18.825">
   <properties />
-            <testcase name="TestSearchAccount" time="24.861" classname="com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch">
+            <testcase name="TestSearchAccount" time="18.825" classname="com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch">
                 <failure type="java.lang.AssertionError"
-                  message="Object Not Found Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (9c90173cdf2e3e35a828ec5c02a1a535)] -&gt; id: kc-header-wrapper] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;RND-BASE-A&apos;, ip: &apos;192.168.1.107&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60769}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.142, webStorageEnabled: true}
-Session ID: 9c90173cdf2e3e35a828ec5c02a1a535"
+                  message="Actual Value &apos;Move In&apos; not Matched the expected value &apos;Former&apos; "
               >
-<![CDATA[java.lang.AssertionError: Object Not Found Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (9c90173cdf2e3e35a828ec5c02a1a535)] -> id: kc-header-wrapper] (tried for 20 second(s) with 500 milliseconds interval)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'RND-BASE-A', ip: '192.168.1.107', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60769}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.142, webStorageEnabled: true}
-Session ID: 9c90173cdf2e3e35a828ec5c02a1a535
+<![CDATA[java.lang.AssertionError: Actual Value 'Move In' not Matched the expected value 'Former' 
   org.testng.Assert.fail(Assert.java:96)
-  com.NexusPortalAutomation.Utilities.Java.CommonMethods.waitForObject(CommonMethods.java:221)
-  com.NexusPortalAutomation.PageObjects.Java.LoginPage.VerifyTitle(LoginPage.java:47)
-  com.NexusPortalAutomation.TestCases.Java.BaseClass.login(BaseClass.java:129)
-  com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch.TestSearchAccount(TC0009_VerifyAccountSearch.java:37)
+  com.NexusPortalAutomation.Utilities.Java.CommonMethods.VerifyString(CommonMethods.java:66)
+  com.NexusPortalAutomation.PageObjects.Java.DashBoard.verifySearchAccountResult(DashBoard.java:1175)
+  com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch.TestSearchAccount(TC0009_VerifyAccountSearch.java:53)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

@@ -7,3 +7,4 @@ com\NexusPortalAutomation\PageObjects\Java\DashBoard.class
 com\NexusPortalAutomation\PageObjects\Java\LoginPage.class
 com\NexusPortalAutomation\Utilities\Java\ReadProjectProperties.class
 com\NexusPortalAutomation\Utilities\Java\DataBackupRestore.class
+com\NexusPortalAutomation\Utilities\Java\CodeDeployment.class

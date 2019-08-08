@@ -142,6 +142,18 @@ public class Dashboard_Transfers extends DashBoard {
 
 	@FindBy(id = "SOLV_Service_Order_4")
 	WebElement ServiceOrder4;
+	
+	
+	@FindBy(id = "SODV_Description")
+	WebElement SODVDescription;
+	
+	
+	public String getServiceOrderDescription() {
+		waitForObject(driver, SODVDescription);
+		WaitAngular(driver);
+		return getElementText(SODVDescription, "Service Order Description");
+
+	}
 
 	public void ClickServOrder1() {
 		waitForObject(driver, ServiceOrder1);
@@ -401,7 +413,7 @@ public class Dashboard_Transfers extends DashBoard {
 	}
 
 	public void submitStartStopServiceTransferOrder(String startDate, String scheduleDate, String serviceName,
-			String defaultCustomer, String requestCustomer) throws InterruptedException {
+			String defaultCustomer, String requestCustomer, String description) throws InterruptedException {
 		log("Submit Transfer Request");
 		enterRequest("TRANSFER");
 		enterScheduleDate_StartService(scheduleDate);
@@ -412,7 +424,7 @@ public class Dashboard_Transfers extends DashBoard {
 		if(!requestCustomer.isEmpty()) {
 		 enterDefaultCustomerStartService(requestCustomer);
 		}
-		enterDescription("AUTOMATION TEST");
+		enterDescription(description);
 		// Entering data for Move In
 		Click_MoveInSubmit();
 		Thread.sleep(1000);
@@ -421,7 +433,27 @@ public class Dashboard_Transfers extends DashBoard {
 	}
 
 	public void verifyServiceOrderdetails(String requester, String moveOutCustomer, String moveInCustomer,
+			String scheduledate, String requestedDate, String[] Task,String LocationID, String description) throws ClassNotFoundException, SQLServerException, SQLException {
+		
+		VerifyString(getRequestedSOcustomerName(), requester);
+		VerifyString(getMoveOutSOcustomerName(), moveOutCustomer);
+		VerifyString(getMoveInSOcustomerName(), moveInCustomer);
+		VerifyString(getSOscheduledDate(), scheduledate);
+		VerifyString(getSOrequestedDate(), requestedDate);
+		VerifyString(getSOTask1Description(), Task[0]);
+		VerifyString(getSOTask2Description(), Task[1]);
+		VerifyString(getSOTask3Description(), Task[2]);
+		VerifyString(getSOTask4Description(), Task[3]);
+		VerifyString(getSOTask5Description(), Task[4]);
+		VerifyString(getSOTask6Description(), Task[5]);
+		VerifyStringContains(getServiceOrderDrillbackURL(), getServiceOrderNumber());
+		VerifyString(getServiceOrderDescription(),description);
+		Sql.VerifyServiceOrders(LocationID, getServiceOrderNumber());
+	}
+	
+	public void verifyServiceOrderdetails(String requester, String moveOutCustomer, String moveInCustomer,
 			String scheduledate, String requestedDate, String[] Task,String LocationID) throws ClassNotFoundException, SQLServerException, SQLException {
+		
 		VerifyString(getRequestedSOcustomerName(), requester);
 		VerifyString(getMoveOutSOcustomerName(), moveOutCustomer);
 		VerifyString(getMoveInSOcustomerName(), moveInCustomer);
