@@ -626,13 +626,14 @@ public class DashBoard extends CommonMethods {
 			waitForObject(driver, element);
 			if (element.isDisplayed()) {
 				element.click();
+				WaitAngular(driver);
 			}
 			log("Click " + ElementName, driver);
 			WaitAngular(driver);
 
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
-			Assert.assertTrue(false, ElementName + " not found");
+			Assert.fail(ElementName + " not found");
 
 		}
 	}
@@ -661,11 +662,17 @@ public class DashBoard extends CommonMethods {
 			log("Set Text " + ElementName, driver);
 			WaitAngular(driver);
 			element.clear();
-			element.sendKeys(Text);
+			if(element.isDisplayed() && element.isEnabled())
+			{
+				element.sendKeys(Text);
+			}
+			else {
+				Assert.fail(ElementName + " not enabled or visible");
+			}
 
 		} catch (NoSuchElementException e) {
 			log(e.getMessage(), driver);
-			Assert.assertTrue(false, ElementName + " not found");
+			Assert.fail(ElementName + " not found");
 
 		}
 

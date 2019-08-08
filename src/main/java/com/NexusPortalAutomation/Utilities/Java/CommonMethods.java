@@ -63,7 +63,7 @@ public class CommonMethods {
 				log("Strings Matched: " + str1 + " = " + str2);
 
 			} else {
-				Assert.fail("String Value '" + str2 + "' not Matched '" + str1 + "'");
+				Assert.fail("Actual Value '" + str2 + "' not Matched the expected value '" + str1 + "' ");
 			}
 		}
 		return result;

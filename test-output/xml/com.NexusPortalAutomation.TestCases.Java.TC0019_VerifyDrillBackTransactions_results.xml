@@ -4,17 +4,25 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="311.585">
+           time="26.041">
   <properties />
-            <testcase name="VerifyDrillBackTransactions" time="311.585" classname="com.NexusPortalAutomation.TestCases.Java.TC0019_VerifyDrillBackTransactions">
+            <testcase name="VerifyDrillBackTransactions" time="26.041" classname="com.NexusPortalAutomation.TestCases.Java.TC0019_VerifyDrillBackTransactions">
                 <failure type="java.lang.AssertionError"
-                  message="Object Not Found expected [true] but found [false]"
+                  message="Object Not Found Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (8e964544b4b9b499a0d8da9ae533c08f)] -&gt; id: kc-header-wrapper] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;RND-BASE-A&apos;, ip: &apos;192.168.1.107&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60526}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.142, webStorageEnabled: true}
+Session ID: 8e964544b4b9b499a0d8da9ae533c08f"
               >
-<![CDATA[java.lang.AssertionError: Object Not Found expected [true] but found [false]
+<![CDATA[java.lang.AssertionError: Object Not Found Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (8e964544b4b9b499a0d8da9ae533c08f)] -> id: kc-header-wrapper] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'RND-BASE-A', ip: '192.168.1.107', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60526}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.142, webStorageEnabled: true}
+Session ID: 8e964544b4b9b499a0d8da9ae533c08f
   org.testng.Assert.fail(Assert.java:96)
-  org.testng.Assert.failNotEquals(Assert.java:776)
-  org.testng.Assert.assertTrue(Assert.java:44)
-  com.NexusPortalAutomation.Utilities.Java.CommonMethods.waitForObject(CommonMethods.java:213)
+  com.NexusPortalAutomation.Utilities.Java.CommonMethods.waitForObject(CommonMethods.java:221)
   com.NexusPortalAutomation.PageObjects.Java.LoginPage.VerifyTitle(LoginPage.java:47)
   com.NexusPortalAutomation.TestCases.Java.BaseClass.login(BaseClass.java:129)
   com.NexusPortalAutomation.TestCases.Java.TC0019_VerifyDrillBackTransactions.VerifyDrillBackTransactions(TC0019_VerifyDrillBackTransactions.java:44)

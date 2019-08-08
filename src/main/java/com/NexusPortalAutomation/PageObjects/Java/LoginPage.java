@@ -44,8 +44,8 @@ public class LoginPage extends CommonMethods {
 	}
 
 	public void VerifyTitle(String title) {
-		waitForObject(driver, titleText);
-		Assert.assertEquals(titleText.getText(), title, "Verifying Title");
+		waitForObject(driver, userName);
+		Assert.assertEquals(driver.getTitle(), title, "Verifying Title");
 		log("Login Page Title Verified");
 	}
 

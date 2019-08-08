@@ -4,21 +4,28 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="45.619">
+           time="24.665">
   <properties />
-            <testcase name="VerifyTransferActionServiceOrder" time="45.619" classname="com.NexusPortalAutomation.TestCases.Java.TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled">
+            <testcase name="VerifyTransferActionServiceOrder" time="24.665" classname="com.NexusPortalAutomation.TestCases.Java.TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled">
                 <failure type="java.lang.AssertionError"
-                  message="expected [Aug 1, 2019] but found [Aug 01, 2019]"
+                  message="Object Not Found Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (3541e295bdd58dc52f1af1d598a0d4e2)] -&gt; id: kc-header-wrapper] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;RND-BASE-A&apos;, ip: &apos;192.168.1.107&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61625}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.142, webStorageEnabled: true}
+Session ID: 3541e295bdd58dc52f1af1d598a0d4e2"
               >
-<![CDATA[java.lang.AssertionError: expected [Aug 1, 2019] but found [Aug 01, 2019]
+<![CDATA[java.lang.AssertionError: Object Not Found Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (3541e295bdd58dc52f1af1d598a0d4e2)] -> id: kc-header-wrapper] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'RND-BASE-A', ip: '192.168.1.107', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61625}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.142, webStorageEnabled: true}
+Session ID: 3541e295bdd58dc52f1af1d598a0d4e2
   org.testng.Assert.fail(Assert.java:96)
-  org.testng.Assert.failNotEquals(Assert.java:776)
-  org.testng.Assert.assertEqualsImpl(Assert.java:137)
-  org.testng.Assert.assertEquals(Assert.java:118)
-  org.testng.Assert.assertEquals(Assert.java:453)
-  org.testng.Assert.assertEquals(Assert.java:463)
-  com.NexusPortalAutomation.Utilities.Java.CommonMethods.VerifyString(CommonMethods.java:65)
-  com.NexusPortalAutomation.TestCases.Java.TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled.VerifyTransferActionServiceOrder(TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled.java:158)
+  com.NexusPortalAutomation.Utilities.Java.CommonMethods.waitForObject(CommonMethods.java:221)
+  com.NexusPortalAutomation.PageObjects.Java.LoginPage.VerifyTitle(LoginPage.java:47)
+  com.NexusPortalAutomation.TestCases.Java.BaseClass.login(BaseClass.java:129)
+  com.NexusPortalAutomation.TestCases.Java.TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled.VerifyTransferActionServiceOrder(TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled.java:51)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

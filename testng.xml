@@ -86,12 +86,15 @@
 				name="com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled" />
 
 			<class
-				name="com.NexusPortalAutomation.TestCases.TC0034_VerifyAction_Transfers_Stack_TwoLocations" />
+				name="com.NexusPortalAutomation.TestCases.Java.TC0034_VerifyAction_Transfers_Stack_TwoLocations" />
 
 			<class
-				name="com.NexusPortalAutomation.TestCases.TC0035_VerifyAction_Transfers_StopService" />
+				name="com.NexusPortalAutomation.TestCases.Java.TC0035_VerifyAction_Transfers_StopService" />
 			<class
-				name="com.NexusPortalAutomation.TestCases.TC0036_VerifyAction_Transfers_StartService" />
+				name="com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService" />
+				
+				<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0037_VerifyAction_Transfers_Stack_TwoLocations_NotScheduled" />
 
 
 

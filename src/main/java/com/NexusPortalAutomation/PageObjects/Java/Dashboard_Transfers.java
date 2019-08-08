@@ -41,8 +41,10 @@ public class Dashboard_Transfers extends DashBoard {
 
 	@FindBy(id = "XFER_Description")
 	WebElement Description;
-
-	@FindBy(xpath = "//*[@id=\"mat-tab-label-2-1\"]")
+	
+	//*[@id="mat-tab-label-2-1"]/div
+	
+	@FindBy(xpath = "//div[contains(text(),'Move To')]")
 	WebElement MoveTo;
 
 	@FindBy(id = "XFER_Select_Option_1")
@@ -307,11 +309,11 @@ public class Dashboard_Transfers extends DashBoard {
 		setElementText(Description, Desc, "Description Request");
 	}
 
-	public void ClickMoveIn() {
+	public void ClickMoveIn() throws InterruptedException {
 		ClickElement(MoveTo, "Move To Tab (Transfers)");
 	}
 
-	public void clickActionDropDown_TransferService() {
+	public void clickActionDropDown_TransferService() throws InterruptedException {
 
 		waitForObject(driver, ACTIONTransferService);
 		try {
@@ -407,7 +409,9 @@ public class Dashboard_Transfers extends DashBoard {
 		jsx = (JavascriptExecutor) driver;
 		jsx.executeScript("window.scrollBy(0,450)", "");
 		verifyDefaultCustomerStartService(defaultCustomer);
-		enterDefaultCustomerStartService(requestCustomer);
+		if(!requestCustomer.isEmpty()) {
+		 enterDefaultCustomerStartService(requestCustomer);
+		}
 		enterDescription("AUTOMATION TEST");
 		// Entering data for Move In
 		Click_MoveInSubmit();
