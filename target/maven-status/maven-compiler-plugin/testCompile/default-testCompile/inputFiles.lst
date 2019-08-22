@@ -3,6 +3,7 @@ F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPor
 F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0019_VerifyDrillBackTransactions.java
 F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0020_VerifyDrillBackServices.java
 F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0005_TestBookMarks.java
+F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0040_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled.java
 F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0010_VerifyCustomerDetails.java
 F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0021_VerifyServicesOrderDetails.java
 F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0030_VerifyAction_Transfers_StartService_Scheduled.java
@@ -14,6 +15,7 @@ F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPor
 F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0018_VerifyDrillBacksGeneral.java
 F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled.java
 F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0001_VerifySignInbyID.java
+F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0016_1_VerifyBillingDetails_Budget.java
 F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0016_VerifyBillingDetails.java
 F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0037_VerifyAction_Transfers_Stack_TwoLocations_NotScheduled.java
 F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\BaseClass.java
@@ -33,9 +35,11 @@ F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPor
 F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0011_VerifyBookMark.java
 F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0031_VerifyAction_Transfers_StopService_Scheduled.java
 F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0012_VerifyCreditStatus.java
+F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0041_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled.java
 F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0014_VerifySecondaryContact.java
 F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0025_VerifyAction_Transfers_NotScheduled.java
 F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0007_TestSummarySection.java
 F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0009_VerifyAccountSearch.java
+F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0039_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled.java
 F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0003_TestSearchAutobyLastName.java
 F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0005_TestSearchbyBookMarks.java

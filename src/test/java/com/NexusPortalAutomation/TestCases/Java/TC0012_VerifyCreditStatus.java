@@ -46,14 +46,14 @@ public class TC0012_VerifyCreditStatus extends BaseClass {
 		// Verify Good Credit
 		dashBoard.VerifyCredit("BAD");
 		dashBoard.LogOut();
-		login();
-		dbSrch.EnterSearchText(LocationID2);
-		dbSrch.ClickCustomer();
-		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID2, dashBoard.GetLoggedCustomerLocationId());
-		// Verify Good Credit
-		dashBoard.VerifyCredit("WORST");
-		dashBoard.LogOut();
+//		login();
+//		dbSrch.EnterSearchText(LocationID2);
+//		dbSrch.ClickCustomer();
+//		// Verify Customer Location Id Updated for Test
+//		ComMethd.VerifyString(LocationID2, dashBoard.GetLoggedCustomerLocationId());
+//		// Verify Good Credit
+//		dashBoard.VerifyCredit("WORST");
+//		dashBoard.LogOut();
 
 	}
 

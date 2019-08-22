@@ -1,11 +1,14 @@
 package com.NexusPortalAutomation.TestCases.Java;
 
 import java.io.IOException;
+import java.util.Calendar;
 import java.util.Date;
 import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+
+import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.PageObjects.Java.Dashboard_Transfers;
@@ -63,19 +66,44 @@ public class TC0029_VerifyAction_Transfers_Scheduled extends BaseClass {
 
 		dashBoard.clickActionDropDown_TransferService();
 		dashBoard.SelectTransferType_Transfer();
+		String moveOutrequestedDate = dashBoard.Movin_getMoveOutRequestedDate();
+		String[] arrOfStr1 = moveOutrequestedDate.split(" ", 2);
+		String moveOutstart_dt1 = arrOfStr1[0];
+		DateFormat formatter1 = new SimpleDateFormat("MM/dd/yyyy");
+		Date date1 = (Date) formatter1.parse(moveOutstart_dt1);
+		SimpleDateFormat newFormat1 = new SimpleDateFormat("MMM d, yyyy");
+		String moveOutstart_dtfinalString1 = newFormat1.format(date1);
+		Calendar c1 = Calendar.getInstance();
+		c1.setTime(newFormat1.parse(moveOutstart_dtfinalString1));
+		c1.add(Calendar.DAY_OF_MONTH, -5);
+		// Date after adding the days to the given date
+		String beforeDate = newFormat1.format(c1.getTime());
+		dashBoard.Movin_ScheduleDate(beforeDate);
+		Thread.sleep(2000);
+
+		// dashBoard.Movin_EnterRequestDate(beforeDate);
+		dashBoard.VerifyString(dashBoard.getInvalidDate(), "Invalid date");
+		Thread.sleep(2000);
+		for (int i = 0; i < 19; i++) {
+
+			dashBoard.XFERMoveFromDatePickerScheduled.sendKeys(Keys.BACK_SPACE);
+		}
+		Thread.sleep(2000);
+		dashBoard.Movin_ScheduleDate(moveOutrequestedDate);
+
 		dashBoard.enterRequest("Transfer");
 		// Move Out
-		String moveOutrequestedDate = dashBoard.Movin_getMoveOutRequestedDate();
+
 		dashBoard.verifyDefaultCustomer(DefaultCustomer);
 		dashBoard.enterDefaultCustomer(DefaultCustomer);
 		dashBoard.enterDescription("AUTOMATION TEST");
-		dashBoard.Movin_ScheduleDate(moveOutrequestedDate);
-		// Move In
-		dashBoard.ClickMoveIn();
-		String moveInrequestedDate = dashBoard.Movin_getMoveFromRequestedDate();
-		dashBoard.Movin_EnterRequestDate(moveInrequestedDate);
-		dashBoard.Movin_EnterMoveToScheduleDate(moveInrequestedDate);
 
+		// Move In
+
+		dashBoard.ClickMoveTo();
+
+		String moveInrequestedDate = dashBoard.Movin_getMoveFromRequestedDate();
+		dashBoard.Movin_EnterMoveToScheduleDate(moveInrequestedDate);
 		dashBoard.Movin_EnterRequest("TRANSFER");
 		dashBoard.Movin_EnterLocation(LocationID2);
 		dashBoard.Movin_EnterDescription("Move in from location");
@@ -98,7 +126,7 @@ public class TC0029_VerifyAction_Transfers_Scheduled extends BaseClass {
 		Date date = (Date) formatter.parse(moveOutstart_dt);
 		SimpleDateFormat newFormat = new SimpleDateFormat("MMM d, yyyy");
 		String moveOutstart_dtfinalString = newFormat.format(date);
-		
+
 		ComMethd.VerifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
 		ComMethd.VerifyString(dashBoard.getSOscheduledDate(), moveOutstart_dtfinalString);
 		ComMethd.VerifyString(dashBoard.getMoveOutSOcustomerName(), moveOutCustomer);

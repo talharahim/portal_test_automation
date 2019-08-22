@@ -109,7 +109,7 @@ public class TC0037_VerifyAction_Transfers_Stack_TwoLocations_NotScheduled exten
 		dashBoard.enterDefaultCustomer(DefaultCustomer);
 		dashBoard.enterDescription("AUTOMATION TEST");
 		// Move In
-		dashBoard.ClickMoveIn();
+		dashBoard.ClickMoveTo();
 		Calendar c1 = Calendar.getInstance();
 		c1.add(Calendar.DAY_OF_MONTH, 1);
 		// Date after adding the days to the given date
@@ -129,7 +129,7 @@ public class TC0037_VerifyAction_Transfers_Stack_TwoLocations_NotScheduled exten
 		//Navigate to Service Order
 		dashBoard.clickrefreshPage();
 		dashBoard.ClickServiceOrderLink();
-		dashBoard.ClickServOrder1();
+		dashBoard.ClickServOrder3();
 		String moveOutCustomer = "Mr. Automation Mate";
 		moveInCustomer = "Mrs. Gail M Dewar (Customer010)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,LocationID,"Move In From Location Loc@0004");
@@ -140,7 +140,7 @@ public class TC0037_VerifyAction_Transfers_Stack_TwoLocations_NotScheduled exten
 		moveInCustomer = "Mr. Vacant Vacant (Vacant)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,LocationID,"Description For Stop Service");
 		// Verifying Third Transfer order in the stack
- 		dashBoard.ClickServOrder3();
+ 		dashBoard.ClickServOrder1();
  	   	moveOutCustomer = "Mr. Automation Mate";
  		moveInCustomer = "Mr. Vacant Vacant (Vacant)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,LocationID,"Description For Stop Service");

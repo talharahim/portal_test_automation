@@ -1,4 +1,0 @@
-# Created at 2019-08-08T14:12:10.293
-Boot Manifest-JAR contains absolute paths in classpath 'F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-

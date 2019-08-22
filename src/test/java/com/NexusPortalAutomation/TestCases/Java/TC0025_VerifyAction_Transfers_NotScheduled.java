@@ -73,7 +73,7 @@ public class TC0025_VerifyAction_Transfers_NotScheduled extends BaseClass {
 		dashBoard.enterDescription("AUTOMATION TEST");
 		
 		// Move In
-		dashBoard.ClickMoveIn();
+		dashBoard.ClickMoveTo();
 		String moveInrequestedDate = dashBoard.Movin_getMoveFromRequestedDate();
 		dashBoard.Movin_EnterRequestDate(moveInrequestedDate);
 		dashBoard.Movin_EnterRequest("TRANSFER");

@@ -109,7 +109,7 @@ public class TC0034_VerifyAction_Transfers_Stack_TwoLocations extends BaseClass 
 		dashBoard.enterDefaultCustomer(DefaultCustomer);
 		dashBoard.enterDescription("AUTOMATION TEST");
 		// Move In
-		dashBoard.ClickMoveIn();
+		dashBoard.ClickMoveTo();
 		Calendar c1 = Calendar.getInstance();
 		c1.add(Calendar.DAY_OF_MONTH, 1);
 		// Date after adding the days to the given date
@@ -128,7 +128,7 @@ public class TC0034_VerifyAction_Transfers_Stack_TwoLocations extends BaseClass 
 		//Navigate to Service Order
 		dashBoard.clickrefreshPage();
 		dashBoard.ClickServiceOrderLink();
-		dashBoard.ClickServOrder1();
+		dashBoard.ClickServOrder3();
 		String moveOutCustomer = "Mr. Vacant Vacant";
 		moveInCustomer = "Mrs. Gail M Dewar (Customer010)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,newDate2,moveOutstart_dtfinalString,Task,LocationID);
@@ -139,7 +139,7 @@ public class TC0034_VerifyAction_Transfers_Stack_TwoLocations extends BaseClass 
 		moveInCustomer = "Mr. Automation Mate (0000011111)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,newDate,moveOutstart_dtfinalString,Task,LocationID);
 		// Verifying Third Transfer order in the stack
- 		dashBoard.ClickServOrder3();
+ 		dashBoard.ClickServOrder1();
  	   	moveOutCustomer = "Mr. Automation Mate";
  		moveInCustomer = "Mr. Vacant Vacant (Vacant)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,moveOutstart_dtfinalString,moveOutstart_dtfinalString,Task,LocationID);

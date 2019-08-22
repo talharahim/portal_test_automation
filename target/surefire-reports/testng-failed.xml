@@ -15,13 +15,6 @@
           <include name="readProp"/>
         </methods>
       </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus -->
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch">
-        <methods>
-          <include name="TestSearchAccount"/>
-          <include name="TearDown"/>
-          <include name="readProp"/>
-        </methods>
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch -->
     </classes>
   </test> <!-- NexusTest(failed) -->
 </suite> <!-- Failed suite [Test Suite for Nexus Portal] -->

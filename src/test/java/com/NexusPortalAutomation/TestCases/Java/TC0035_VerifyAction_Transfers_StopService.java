@@ -95,7 +95,7 @@ public class TC0035_VerifyAction_Transfers_StopService extends BaseClass {
    		dashBoard.submitStartStopServiceTransferOrder(newDate, "", "TRANSFER", DefaultCustomer, moveInCustomer,"Description for Stop Service");
 		dashBoard.clickrefreshPage();
 		dashBoard.ClickServiceOrderLink();
-		dashBoard.ClickServOrder1();
+		dashBoard.ClickServOrder2();
 		String ServiceOrder2 = dashBoard.getServiceOrderNumber();
 		dashBoard.clickrefreshPage();
 		
@@ -119,7 +119,7 @@ public class TC0035_VerifyAction_Transfers_StopService extends BaseClass {
 	
 		// Verify First Service Order in the Stack
 		dashBoard.ClickServiceOrderLink();
-		dashBoard.ClickServOrder1();
+		dashBoard.ClickServOrder3();
 		String moveOutCustomer = "Mr. Automation Mate";
 		moveInCustomer = "Mr. Movein Cus (Moveincus2)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,LocationID);
@@ -131,7 +131,7 @@ public class TC0035_VerifyAction_Transfers_StopService extends BaseClass {
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,LocationID);
 
 		// Verifying Third Transfer order in the stack
-		dashBoard.ClickServOrder3();
+		dashBoard.ClickServOrder1();
 	   	moveOutCustomer = "Mr. Automation Mate";
 		moveInCustomer = "Mr. Vacant Vacant (Vacant)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,LocationID);

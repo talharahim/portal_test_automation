@@ -438,9 +438,18 @@ public class DashBoard extends CommonMethods {
 
 	@FindBy(id = "ENH_Result_2_Message")
 	WebElement LocationNotes;
-	
+
 	@FindBy(id = "CUST_Credit_Rating")
 	WebElement CreditRating;
+
+	@FindBy(xpath = "/html/body/wo-root/wo-dashboard/div/mat-drawer-container/mat-drawer-content/div/div/div[2]/csm-customer-balances/csm-generic-widget/div/div/div[2]/div[1]/div[2]/div[1]/div[1]")
+	WebElement BudgetIcon;
+
+	public String GetBudgetIcon() {
+		log("This will verify budget icon");
+		return BudgetIcon.getText();
+
+	}
 
 	public void verifyEnhancedNotes(String CusNotes, String LocNotes) {
 
@@ -662,11 +671,9 @@ public class DashBoard extends CommonMethods {
 			log("Set Text " + ElementName, driver);
 			WaitAngular(driver);
 			element.clear();
-			if(element.isDisplayed() && element.isEnabled())
-			{
+			if (element.isDisplayed() && element.isEnabled()) {
 				element.sendKeys(Text);
-			}
-			else {
+			} else {
 				Assert.fail(ElementName + " not enabled or visible");
 			}
 
@@ -716,6 +723,23 @@ public class DashBoard extends CommonMethods {
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
 			Assert.assertTrue(false, "Element not found using id " + id);
+
+		}
+		return element;
+	}
+
+	public WebElement findElementByxpath(String id) {
+
+		WebElement element = driver.findElement(By.xpath(id));
+
+		try {
+			waitForObject(driver, element);
+
+		} catch (NoSuchElementException e) {
+			if (!element.isDisplayed()) {
+				log(e.getMessage());
+				Assert.fail("Element not found using xpath " + id);
+			}
 
 		}
 		return element;
@@ -797,25 +821,23 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void verifyServiceWarningSingleSO(String serviceOrder) {
-		VerifyString(findElementByid("idPrefix + '_Warning_Message'").getText(), "Service Order Exist. TRANSFER");
+		VerifyString(findElementByid("XFER_Warning_Message").getText(), "Service Order Exist. TRANSFER");
 		VerifyStringContains(findElementByid("idPrefix + '_Warning_Drillback'").getAttribute("href"), serviceOrder);
 
 	}
 
 	public void verifyServiceWarningMultiSO(String serviceOrder) {
-		VerifyString(findElementByid("idPrefix + '_Warning_Message'").getText(),
+		VerifyString(findElementByid("XFER_Warning_Message").getText(),
 				"Multiple Service Orders Exist. TRANSFER");
 		VerifyStringContains(findElementByid("idPrefix + '_Warning_Drillback'").getAttribute("href"), serviceOrder);
 
 	}
-	
+
 	public void verifyServiceWarningSOExists(String serviceOrder) {
-		VerifyString(findElementByid("idPrefix + '_Warning_Message'").getText(),
-				"Service Order Exist. TRANSFER");
+		VerifyString(findElementByid("XFER_Warning_Message").getText(), "Service Order Exist. TRANSFER");
 		VerifyStringContains(findElementByid("idPrefix + '_Warning_Drillback'").getAttribute("href"), serviceOrder);
 
 	}
-
 
 	public String GetSecondCustDrillBackUrl() {
 		try {
@@ -1174,7 +1196,7 @@ public class DashBoard extends CommonMethods {
 		try {
 			VerifyString(elementString, (findElementByid(elementid).getText()));
 		} catch (NoSuchElementException e) {
-			Assert.assertFalse(true, "Element Not found");
+			Assert.fail("Element Not found");
 		}
 	}
 
@@ -1182,7 +1204,7 @@ public class DashBoard extends CommonMethods {
 		try {
 			findElementByid(id).click();
 		} catch (NoSuchElementException e) {
-			Assert.assertFalse(true, "Element Not found");
+			Assert.fail("Element Not found");
 		}
 
 	}

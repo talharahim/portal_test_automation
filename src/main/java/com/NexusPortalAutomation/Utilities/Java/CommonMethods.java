@@ -57,15 +57,17 @@ public class CommonMethods {
 
 	public boolean VerifyString(String str1, String str2) {
 		boolean result = false;
-		if (str1 != "" && str2 != "") {
-			if (str1.equals(str2)) {
+		if (str1 == null || str2 == null) {
+			Assert.fail("Null values found");
+		}
+		if (str1.equals(str2)) {
 				result = true;
 				log("Strings Matched: " + str1 + " = " + str2);
 
 			} else {
 				Assert.fail("Actual Value '" + str2 + "' not Matched the expected value '" + str1 + "' ");
 			}
-		}
+		
 		return result;
 
 	}
@@ -117,7 +119,7 @@ public class CommonMethods {
 				log("String =" + str1 + " Contains = " + str2);
 
 			} else {
-				Assert.fail(("Strings Not Matched: " + str1 + " != " + str2));
+				Assert.fail(("Strings: " + str1 + " Dont contain  " + str2));
 
 			}
 		}

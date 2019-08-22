@@ -3,6 +3,7 @@ package com.NexusPortalAutomation.PageObjects.Java;
 import java.sql.SQLException;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -41,10 +42,10 @@ public class Dashboard_Transfers extends DashBoard {
 
 	@FindBy(id = "XFER_Description")
 	WebElement Description;
-	
-	//*[@id="mat-tab-label-2-1"]/div
-	
-	@FindBy(xpath = "//div[contains(text(),'Move To')]")
+
+	// *[@id="mat-tab-label-2-1"]/div
+
+	@FindBy(id = "XFER_MoveTo_Tab")
 	WebElement MoveTo;
 
 	@FindBy(id = "XFER_Select_Option_1")
@@ -66,6 +67,7 @@ public class Dashboard_Transfers extends DashBoard {
 	WebElement XFERMoveToDatePickerRequested;
 
 	@FindBy(id = "XFER_MoveFrom_Date_Picker_Scheduled")
+	public
 	WebElement XFERMoveFromDatePickerScheduled;
 
 	@FindBy(id = "XFER_MoveFrom_Date_Picker_Requested")
@@ -142,12 +144,20 @@ public class Dashboard_Transfers extends DashBoard {
 
 	@FindBy(id = "SOLV_Service_Order_4")
 	WebElement ServiceOrder4;
-	
-	
+
 	@FindBy(id = "SODV_Description")
 	WebElement SODVDescription;
-	
-	
+
+	@FindBy(xpath = "//div[@class='requiered-field text ng-star-inserted']")
+	WebElement invalidDate;
+
+	public String getInvalidDate() {
+		waitForObject(driver, invalidDate);
+		WaitAngular(driver);
+		return getElementText(invalidDate, "Service Order invalidDate");
+
+	}
+
 	public String getServiceOrderDescription() {
 		waitForObject(driver, SODVDescription);
 		WaitAngular(driver);
@@ -321,7 +331,7 @@ public class Dashboard_Transfers extends DashBoard {
 		setElementText(Description, Desc, "Description Request");
 	}
 
-	public void ClickMoveIn() throws InterruptedException {
+	public void ClickMoveTo() throws InterruptedException {
 		ClickElement(MoveTo, "Move To Tab (Transfers)");
 	}
 
@@ -421,8 +431,8 @@ public class Dashboard_Transfers extends DashBoard {
 		jsx = (JavascriptExecutor) driver;
 		jsx.executeScript("window.scrollBy(0,450)", "");
 		verifyDefaultCustomerStartService(defaultCustomer);
-		if(!requestCustomer.isEmpty()) {
-		 enterDefaultCustomerStartService(requestCustomer);
+		if (!requestCustomer.isEmpty()) {
+			enterDefaultCustomerStartService(requestCustomer);
 		}
 		enterDescription(description);
 		// Entering data for Move In
@@ -433,8 +443,9 @@ public class Dashboard_Transfers extends DashBoard {
 	}
 
 	public void verifyServiceOrderdetails(String requester, String moveOutCustomer, String moveInCustomer,
-			String scheduledate, String requestedDate, String[] Task,String LocationID, String description) throws ClassNotFoundException, SQLServerException, SQLException {
-		
+			String scheduledate, String requestedDate, String[] Task, String LocationID, String description)
+			throws ClassNotFoundException, SQLServerException, SQLException {
+
 		VerifyString(getRequestedSOcustomerName(), requester);
 		VerifyString(getMoveOutSOcustomerName(), moveOutCustomer);
 		VerifyString(getMoveInSOcustomerName(), moveInCustomer);
@@ -447,13 +458,14 @@ public class Dashboard_Transfers extends DashBoard {
 		VerifyString(getSOTask5Description(), Task[4]);
 		VerifyString(getSOTask6Description(), Task[5]);
 		VerifyStringContains(getServiceOrderDrillbackURL(), getServiceOrderNumber());
-		VerifyString(getServiceOrderDescription(),description);
+		VerifyString(getServiceOrderDescription(), description);
 		Sql.VerifyServiceOrders(LocationID, getServiceOrderNumber());
 	}
-	
+
 	public void verifyServiceOrderdetails(String requester, String moveOutCustomer, String moveInCustomer,
-			String scheduledate, String requestedDate, String[] Task,String LocationID) throws ClassNotFoundException, SQLServerException, SQLException {
-		
+			String scheduledate, String requestedDate, String[] Task, String LocationID)
+			throws ClassNotFoundException, SQLServerException, SQLException {
+
 		VerifyString(getRequestedSOcustomerName(), requester);
 		VerifyString(getMoveOutSOcustomerName(), moveOutCustomer);
 		VerifyString(getMoveInSOcustomerName(), moveInCustomer);
