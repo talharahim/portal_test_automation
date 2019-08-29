@@ -8,13 +8,34 @@
   </listeners>
   <test thread-count="10" verbose="0" name="NexusTest(failed)">
     <classes>
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus">
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0035_VerifyAction_Transfers_StopService">
         <methods>
-          <include name="TestCreditStatus"/>
+          <include name="VerifyTransferActionServiceOrder"/>
           <include name="TearDown"/>
           <include name="readProp"/>
         </methods>
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus -->
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0035_VerifyAction_Transfers_StopService -->
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService">
+        <methods>
+          <include name="VerifyTransferActionServiceOrder"/>
+          <include name="TearDown"/>
+          <include name="readProp"/>
+        </methods>
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService -->
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0034_VerifyAction_Transfers_Stack_TwoLocations">
+        <methods>
+          <include name="VerifyTransferActionServiceOrder"/>
+          <include name="TearDown"/>
+          <include name="readProp"/>
+        </methods>
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0034_VerifyAction_Transfers_Stack_TwoLocations -->
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled">
+        <methods>
+          <include name="TearDown"/>
+          <include name="VerifyTransferActionServiceOrder"/>
+          <include name="readProp"/>
+        </methods>
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled -->
     </classes>
   </test> <!-- NexusTest(failed) -->
 </suite> <!-- Failed suite [Test Suite for Nexus Portal] -->
