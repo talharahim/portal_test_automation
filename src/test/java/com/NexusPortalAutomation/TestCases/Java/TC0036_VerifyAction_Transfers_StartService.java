@@ -75,7 +75,7 @@ public class TC0036_VerifyAction_Transfers_StartService extends BaseClass {
 		String moveOutrequestedDate = dashBoard.startService_getRequestedDate();
 		// Entering data for Move Out
 		// Scroll down
-		String moveInCustomer = "Mr. Movein Cus";
+		String moveInCustomer = "MoveinCus";
 		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, "", "TRANSFER",
 				DefaultCustomer, moveInCustomer,"Description for Start Service");
 		// Verify Updated details IN SERVICE TAB order number from database

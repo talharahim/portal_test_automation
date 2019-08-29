@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="84.841">
+           time="86.211">
   <properties />
-            <testcase name="VerifyTransferActionServiceOrder" time="84.841" classname="com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService">
+            <testcase name="VerifyTransferActionServiceOrder" time="86.211" classname="com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService">
                 <failure type="java.lang.AssertionError"
                   message="Actual Value &apos;Mr. Movein Cus (Moveincus2)&apos; not Matched the expected value &apos;Mr. Auto Customer Mid Automation Aut (Auto Custom)&apos; "
               >

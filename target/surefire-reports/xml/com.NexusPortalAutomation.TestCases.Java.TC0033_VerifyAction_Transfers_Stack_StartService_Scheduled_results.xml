@@ -4,17 +4,17 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="89.889">
+           time="83.189">
   <properties />
-            <testcase name="VerifyTransferActionServiceOrder" time="89.889" classname="com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled">
+            <testcase name="VerifyTransferActionServiceOrder" time="83.189" classname="com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled">
                 <failure type="java.lang.AssertionError"
-                  message="Actual Value &apos;Mr. Movein Cus (Moveincus2)&apos; not Matched the expected value &apos;Mr. Auto Customer Mid Automation Aut (Auto Custom)&apos; "
+                  message="Actual Value &apos;Mr. Movein Cus&apos; not Matched the expected value &apos;Mr. Auto Customer Mid Automation Aut&apos; "
               >
-<![CDATA[java.lang.AssertionError: Actual Value 'Mr. Movein Cus (Moveincus2)' not Matched the expected value 'Mr. Auto Customer Mid Automation Aut (Auto Custom)' 
+<![CDATA[java.lang.AssertionError: Actual Value 'Mr. Movein Cus' not Matched the expected value 'Mr. Auto Customer Mid Automation Aut' 
   org.testng.Assert.fail(Assert.java:96)
   com.NexusPortalAutomation.Utilities.Java.CommonMethods.VerifyString(CommonMethods.java:68)
-  com.NexusPortalAutomation.PageObjects.Java.Dashboard_Transfers.verifyServiceOrderdetails(Dashboard_Transfers.java:471)
-  com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled.VerifyTransferActionServiceOrder(TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled.java:154)
+  com.NexusPortalAutomation.PageObjects.Java.Dashboard_Transfers.verifyServiceOrderdetails(Dashboard_Transfers.java:469)
+  com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled.VerifyTransferActionServiceOrder(TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled.java:145)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

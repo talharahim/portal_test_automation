@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="41.362">
+           time="37.282">
   <properties />
   
   
-            <testcase name="VerifyTransferActionServiceOrder" time="41.362" classname="com.NexusPortalAutomation.TestCases.Java.TC0027_VerifyAction_Transfers_StopService_NotScheduled" />
+            <testcase name="VerifyTransferActionServiceOrder" time="37.282" classname="com.NexusPortalAutomation.TestCases.Java.TC0027_VerifyAction_Transfers_StopService_NotScheduled" />
       
 </testsuite>

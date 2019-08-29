@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="86.884">
+           time="75.746">
   <properties />
-            <testcase name="VerifyTransferActionServiceOrder" time="86.884" classname="com.NexusPortalAutomation.TestCases.Java.TC0035_VerifyAction_Transfers_StopService">
+            <testcase name="VerifyTransferActionServiceOrder" time="75.746" classname="com.NexusPortalAutomation.TestCases.Java.TC0035_VerifyAction_Transfers_StopService">
                 <failure type="java.lang.AssertionError"
                   message="Actual Value &apos;Mr. Alert Test (Customeralert01)&apos; not Matched the expected value &apos;Mr. Auto Customer Mid Automation Aut (Auto Custom)&apos; "
               >
