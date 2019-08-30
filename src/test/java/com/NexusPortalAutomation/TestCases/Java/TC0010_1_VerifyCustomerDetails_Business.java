@@ -1,16 +1,14 @@
 package com.NexusPortalAutomation.TestCases.Java;
 
 import java.io.IOException;
-import java.sql.SQLException;
 
 import org.testng.annotations.Test;
 
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
-import com.NexusPortalAutomation.Utilities.Java.MySQLDataExec;
 
-public class TC0017_StatementsValue extends BaseClass {
+public class TC0010_1_VerifyCustomerDetails_Business extends BaseClass {
 
 	/*
 	 * This test the search by Recent Customer Name
@@ -22,30 +20,27 @@ public class TC0017_StatementsValue extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String LocationID = "STATEMENTS001";
-	public String StatementDateValue = "Jul 31, 2019";
-	public String StatementValue = "$56.71";
-	
-
+	String LocationID = "BUSINESSLOC01";
+	String ssn = "5232";
+	String lic = "none";
+	String phone = "(090) 123-1231";
+	String ext = "+ Ext. 2312";
+	String email = "automation@cogsdale.com";
+	String add = "Iqbal";
+	String acsz = "Miami Beach FL";
 	CommonMethods ComMethd = new CommonMethods();
 
-//This Test will test the 
+//This Test will test the search by Customer ID
 	@Test(priority = 1)
-	public void TestBillingStatements() throws IOException, InterruptedException, ClassNotFoundException, SQLException {
+	public void TestCustomerDetails() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
-		MySQLDataExec Sql = new MySQLDataExec();
 		login();
 		dbSrch.EnterSearchText(LocationID);
 		dbSrch.ClickCustomer();
 		// Verify Customer Location Id Updated for Test
 		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
-		// Verify Contact is updated accordingly
-		dashBoard.ClickBillStatementBtn();
-		ComMethd.VerifyString(StatementDateValue,dashBoard.getBillStatementDate());
-		ComMethd.VerifyString(StatementValue,dashBoard.getBillStatementAmount());
-		Sql.VerifyStatementsData(LocationID,StatementValue.substring(1));
+		dashBoard.VerifyCustomerDetails(ssn, lic, phone, ext, email, add, acsz);
 		dashBoard.LogOut();
 	}
-
 }

@@ -51,6 +51,21 @@ public class MySQLDataExec extends CommonMethods {
 		}
 
 	}
+	
+	public void VerifyStatementsData(String Location, String Amount) throws ClassNotFoundException, SQLException
+	{
+		String columnName = "umStatementDate";
+		String Command1 = "select * from [um00701] where umLocationID ='" + Location + "' And umStatementAmount ='"
+			+ Amount + "'";
+		String Result = selectFromDb(Command1, ConnectionString, columnName);
+		if (Result != "") {
+			log("Service Order verified = " + Result);
+		} else {
+			Assert.fail("Statement Data for  '" + Amount + "' Not Found");
+			;
+		}
+		
+	}
 
 	
 }
