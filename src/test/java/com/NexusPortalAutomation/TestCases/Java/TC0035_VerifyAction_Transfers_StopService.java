@@ -74,7 +74,6 @@ public class TC0035_VerifyAction_Transfers_StopService extends BaseClass {
 		SimpleDateFormat newFormat = new SimpleDateFormat("MMM d, yyyy");
 		String moveOutstart_dtfinalString = newFormat.format(date);
 		dashBoard.clickrefreshPage();
-
 		/*
 		// Adding Second Service with two dates ahead of current date
 		*/
@@ -91,14 +90,13 @@ public class TC0035_VerifyAction_Transfers_StopService extends BaseClass {
 		System.out.println("Date after Addition of two days " + newDate);
 		// Entering data for Move Out
 		// Scroll down
-   		String moveInCustomer = "Test Cust";
+   		String moveInCustomer = "TestCust";
    		dashBoard.submitStartStopServiceTransferOrder(newDate, "", "TRANSFER", DefaultCustomer, moveInCustomer,"Description for Stop Service");
 		dashBoard.clickrefreshPage();
 		dashBoard.ClickServiceOrderLink();
 		dashBoard.ClickServOrder2();
 		String ServiceOrder2 = dashBoard.getServiceOrderNumber();
 		dashBoard.clickrefreshPage();
-		
 		/*
 		// Adding Third Service Order having date between first two
 		*/
@@ -127,7 +125,7 @@ public class TC0035_VerifyAction_Transfers_StopService extends BaseClass {
 		// Verifying Second order in the stack
 		dashBoard.ClickServOrder2();
 		moveOutCustomer ="Mr. Automation Mate";
-		moveInCustomer =  "Mr. Alert Test (Customeralert01)";
+		moveInCustomer =  "Mr. Test Mid Customer Suf (Testcustomer1)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,LocationID);
 
 		// Verifying Third Transfer order in the stack

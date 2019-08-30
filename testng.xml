@@ -92,19 +92,9 @@
 				name="com.NexusPortalAutomation.TestCases.Java.TC0035_VerifyAction_Transfers_StopService" />
 			<class
 				name="com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService" />
-				
-				<class
+
+			<class
 				name="com.NexusPortalAutomation.TestCases.Java.TC0037_VerifyAction_Transfers_Stack_TwoLocations_NotScheduled" />
-
-
-
-
-
-		</classes>
-
-
-
-
-
-	</test> <!-- Test -->
+	</classes>
+</test> <!-- Test -->
 </suite> <!-- Suite -->

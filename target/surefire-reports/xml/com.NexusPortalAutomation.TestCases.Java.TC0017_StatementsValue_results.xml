@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="24.749">
+           time="28.527">
   <properties />
   
   
-            <testcase name="TestBillingStatements" time="24.749" classname="com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue" />
+            <testcase name="TestBillingStatements" time="28.527" classname="com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue" />
       
 </testsuite>

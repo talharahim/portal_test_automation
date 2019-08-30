@@ -108,6 +108,7 @@ public class BaseClass extends ReadProjectProperties {
 			ChromeOptions ChromeOptions = new ChromeOptions();
 			ChromeOptions.setBinary(browserPath);
 			driver = new ChromeDriver(ChromeOptions);
+			driver.manage().deleteAllCookies();
 
 		}
 

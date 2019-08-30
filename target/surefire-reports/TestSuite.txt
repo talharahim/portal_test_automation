@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 37, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 1,731.568 s <<< FAILURE! - in TestSuite
-VerifyTransferActionServiceOrder(com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled)  Time elapsed: 83.193 s  <<< FAILURE!
-java.lang.AssertionError: Actual Value 'Mr. Movein Cus' not Matched the expected value 'Mr. Auto Customer Mid Automation Aut' 
-	at com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled.VerifyTransferActionServiceOrder(TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled.java:145)
+Tests run: 37, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 2,344.019 s <<< FAILURE! - in TestSuite
+VerifyActionServiceOrder(com.NexusPortalAutomation.TestCases.Java.TC0029_VerifyAction_Transfers_Scheduled)  Time elapsed: 61.868 s  <<< FAILURE!
+java.lang.AssertionError: Actual Value 'Mr. Vacant Vacant (Vacant)' not Matched the expected value 'Mr. David T Mackinnon (Customer006)' 
+	at com.NexusPortalAutomation.TestCases.Java.TC0029_VerifyAction_Transfers_Scheduled.VerifyActionServiceOrder(TC0029_VerifyAction_Transfers_Scheduled.java:133)
 
-VerifyTransferActionServiceOrder(com.NexusPortalAutomation.TestCases.Java.TC0035_VerifyAction_Transfers_StopService)  Time elapsed: 75.746 s  <<< FAILURE!
-java.lang.AssertionError: Actual Value 'Mr. Alert Test (Customeralert01)' not Matched the expected value 'Mr. Auto Customer Mid Automation Aut (Auto Custom)' 
+VerifyTransferActionServiceOrder(com.NexusPortalAutomation.TestCases.Java.TC0034_VerifyAction_Transfers_Stack_TwoLocations)  Time elapsed: 135.377 s  <<< FAILURE!
+java.lang.AssertionError: Actual Value 'Mrs. Gail M Dewar (Customer010)' not Matched the expected value 'Mr. Automation Mate (0000011111)' 
+	at com.NexusPortalAutomation.TestCases.Java.TC0034_VerifyAction_Transfers_Stack_TwoLocations.VerifyTransferActionServiceOrder(TC0034_VerifyAction_Transfers_Stack_TwoLocations.java:134)
+
+VerifyTransferActionServiceOrder(com.NexusPortalAutomation.TestCases.Java.TC0035_VerifyAction_Transfers_StopService)  Time elapsed: 136.315 s  <<< FAILURE!
+java.lang.AssertionError: Actual Value 'Mr. Alert Test (Customeralert01)' not Matched the expected value 'Mr. Test Mid Customer Suf (Testcustomer1)' 
 	at com.NexusPortalAutomation.TestCases.Java.TC0035_VerifyAction_Transfers_StopService.VerifyTransferActionServiceOrder(TC0035_VerifyAction_Transfers_StopService.java:131)
-
-VerifyTransferActionServiceOrder(com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService)  Time elapsed: 86.212 s  <<< FAILURE!
-java.lang.AssertionError: Actual Value 'Mr. Movein Cus (Moveincus2)' not Matched the expected value 'Mr. Auto Customer Mid Automation Aut (Auto Custom)' 
-	at com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService.VerifyTransferActionServiceOrder(TC0036_VerifyAction_Transfers_StartService.java:153)
 
