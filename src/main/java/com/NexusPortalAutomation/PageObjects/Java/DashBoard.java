@@ -453,6 +453,9 @@ public class DashBoard extends CommonMethods {
 	@FindBy(xpath="//div[contains(text(),'No Other Accounts')]")
 	WebElement NoOtherAccounts;
 	
+	@FindBy(xpath="/html/body/wo-root/wo-dashboard/div/mat-drawer-container/mat-drawer-content/div/div/div[2]/csm-customer-balances/csm-generic-widget/div/div/div[2]/div[2]/div/div[1]/a[2]")
+	WebElement AutoPayURL;
+	
 	public String getNoOtherAccount()
 	{
 		return NoOtherAccounts.getText();
@@ -910,6 +913,21 @@ public class DashBoard extends CommonMethods {
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
 			Assert.assertTrue(false, "BILL Statement Button not found");
+		}
+		log("get Service AutpPay");
+		return result;
+	}
+	
+	public String getAutoPayURL() {
+		String result = null;
+		try {
+			waitForObject(driver, AutoPayURL);
+			if (AutoPayURL.isDisplayed()) {
+				result = AutoPayURL.getAttribute("href");
+			}
+		} catch (NoSuchElementException e) {
+			log(e.getMessage());
+			Assert.fail("Auto Pay URL not found");
 		}
 		log("get Service AutpPay");
 		return result;

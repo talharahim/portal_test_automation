@@ -1,72 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="NexusTest"
+<testsuite name="all-tests"
            tests="1"
-           failures="1"
+           failures="0"
            errors="0"
            skipped="0"
-           time="49.459">
+           time="55.429">
   <properties />
-            <testcase name="TestSearchAutobyRecent" time="49.459" classname="com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction">
-                <failure type="org.openqa.selenium.ScriptTimeoutException"
-                  message="script timeout: result was not received in 30 seconds
-  (Session info: chrome=76.0.3809.132)
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;RND-BASE-A&apos;, ip: &apos;192.168.1.105&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50596}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 47f5af492ed089560d13be5f495edffb"
-              >
-<![CDATA[org.openqa.selenium.ScriptTimeoutException: script timeout: result was not received in 30 seconds
-  (Session info: chrome=76.0.3809.132)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'RND-BASE-A', ip: '192.168.1.105', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50596}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 47f5af492ed089560d13be5f495edffb
-  sun.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
-  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-  org.openqa.selenium.remote.RemoteWebDriver.executeAsyncScript(RemoteWebDriver.java:502)
-  com.paulhammant.ngwebdriver.NgWebDriver.waitForAngularRequestsToFinish(NgWebDriver.java:68)
-  com.NexusPortalAutomation.TestCases.Java.BaseClass.WaitAngular(BaseClass.java:57)
-  com.NexusPortalAutomation.TestCases.Java.BaseClass.login(BaseClass.java:133)
-  com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction.TestSearchAutobyRecent(TC0004_TestSearchbyRecentFunction.java:31)
-  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-  java.lang.reflect.Method.invoke(Method.java:498)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-  org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-  org.testng.TestRunner.privateRun(TestRunner.java:648)
-  org.testng.TestRunner.run(TestRunner.java:505)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-  org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-  org.testng.SuiteRunner.run(SuiteRunner.java:364)
-  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-  org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-  org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-  org.testng.TestNG.runSuites(TestNG.java:1049)
-  org.testng.TestNG.run(TestNG.java:1017)
-  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-      </failure>
-
-          </testcase>
   
   
-  
+            <testcase name="TestSearchAutobyRecent" time="55.429" classname="com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction" />
+      
 </testsuite>

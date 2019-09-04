@@ -39,7 +39,7 @@ public class CommonMethods {
 	public static NgWebDriver ngWebDriver;
 
 	public boolean HighLight = true;
-	public static boolean takescreentshots=false;
+	public static boolean takescreentshots = false;
 
 	public CommonMethods() {
 		// this is the default const
@@ -61,13 +61,13 @@ public class CommonMethods {
 			Assert.fail("Null values found");
 		}
 		if (str1.equals(str2)) {
-				result = true;
-				log("Strings Matched: " + str1 + " = " + str2);
+			result = true;
+			log("Strings Matched: " + str1 + " = " + str2);
 
-			} else {
-				Assert.fail("Actual Value '" + str2 + "' not Matched the expected value '" + str1 + "' ");
-			}
-		
+		} else {
+			Assert.fail("Actual Value '" + str2 + "' not Matched the expected value '" + str1 + "' ");
+		}
+
 		return result;
 
 	}
@@ -113,15 +113,16 @@ public class CommonMethods {
 
 	public boolean VerifyStringContains(String str1, String str2) {
 		boolean result = false;
-		if (str1 != "" && str2 != "") {
+		if (str1 != null && str2 != null) {
 			if (str1.contains(str2)) {
 				result = true;
-				log("String =" + str1 + " Contains = " + str2);
+				log("String Verified  =" + str1 + " Contains = " + str2);
 
 			} else {
-				Assert.fail(("Strings: " + str1 + " Dont contain  " + str2));
-
+				Assert.fail(("Strings: " + str1 + " does'nt contains  " + str2));
 			}
+		} else {
+			Assert.fail("Cannot compare null values");
 		}
 		return result;
 
@@ -179,19 +180,19 @@ public class CommonMethods {
 	}
 
 	public static void takeScreenShot(String TestName, WebDriver driver) {
-		if(takescreentshots==true) {
-		String fileName = String.format("" + TestName + "Screenshot-%s.jpg",
-				Calendar.getInstance().getTimeInMillis());
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		// The below method will save the screen shot
-		try {
-			String filePath = Read.ReadFile("PassScreenShot");
-			FileUtils.copyFile(scrFile, new File(filePath + fileName));
-			log("***Placed screen shot in " + filePath + " ***");
-		} catch (IOException e) {
-			e.printStackTrace();
-			Assert.fail("Unable to take Screenshot");
-		}
+		if (takescreentshots == true) {
+			String fileName = String.format("" + TestName + "Screenshot-%s.jpg",
+					Calendar.getInstance().getTimeInMillis());
+			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			// The below method will save the screen shot
+			try {
+				String filePath = Read.ReadFile("PassScreenShot");
+				FileUtils.copyFile(scrFile, new File(filePath + fileName));
+				log("***Placed screen shot in " + filePath + " ***");
+			} catch (IOException e) {
+				e.printStackTrace();
+				Assert.fail("Unable to take Screenshot");
+			}
 		}
 	}
 
@@ -220,7 +221,7 @@ public class CommonMethods {
 
 		} catch (TimeoutException e) {
 
-			Assert.fail("Object Not Found "+ e.getMessage());
+			Assert.fail("Object Not Found " + e.getMessage());
 			throw new TimeoutException("Object Not Found", e);
 		}
 		long end = System.currentTimeMillis();
