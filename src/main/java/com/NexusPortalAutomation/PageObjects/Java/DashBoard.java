@@ -167,6 +167,10 @@ public class DashBoard extends CommonMethods {
 
 	@FindBy(id = "'CUST_Email'")
 	WebElement Email;
+	
+
+	@FindBy(id = "'CUST_No_Email'")
+	WebElement NoEmail;
 
 	@FindBy(id = "'CUST_Address_Line'")
 	WebElement AddressLine1;
@@ -444,6 +448,15 @@ public class DashBoard extends CommonMethods {
 
 	@FindBy(xpath = "/html/body/wo-root/wo-dashboard/div/mat-drawer-container/mat-drawer-content/div/div/div[2]/csm-customer-balances/csm-generic-widget/div/div/div[2]/div[1]/div[2]/div[1]/div[1]")
 	WebElement BudgetIcon;
+	
+	
+	@FindBy(xpath="//div[contains(text(),'No Other Accounts')]")
+	WebElement NoOtherAccounts;
+	
+	public String getNoOtherAccount()
+	{
+		return NoOtherAccounts.getText();
+	}
 
 	public String GetBudgetIcon() {
 		log("This will verify budget icon");
@@ -1063,7 +1076,29 @@ public class DashBoard extends CommonMethods {
 		waitForObject(driver, AddressCityStateZip);
 		VerifyString(acsz, getElementText(AddressCityStateZip, "AddressCityStateZip"));
 	}
+	
+	public void VerifyCustomerDetailsNoEmailExt(String ssn, String lic, String phone,String add,
+			String acsz) {
+		WaitAngular(driver);
+		log("Verifying Customer Details");
+		waitForObject(driver, CustomerSSN);
+		VerifyString(ssn, getElementText(CustomerSSN, "Customer SSN"));
 
+		waitForObject(driver, DriverLic);
+		VerifyString(lic, getElementText(DriverLic, "Driver License"));
+
+		waitForObject(driver, Phone1);
+		VerifyString(phone, getElementText(Phone1, "Phone Number"));
+
+		waitForObject(driver, NoEmail);
+		VerifyString("none", getElementText(NoEmail, "Email"));
+
+		waitForObject(driver, AddressLine1);
+		VerifyString(add, getElementText(AddressLine1, "AddressLine1"));
+
+		waitForObject(driver, AddressCityStateZip);
+		VerifyString(acsz, getElementText(AddressCityStateZip, "AddressCityStateZip"));
+	}
 	public void ClickContactEdit() {
 
 		WaitAngular(driver);
@@ -1208,6 +1243,7 @@ public class DashBoard extends CommonMethods {
 		}
 
 	}
+	
 
 	public void clickSarchAccountWidget() throws InterruptedException {
 		WaitAngular(driver);
@@ -1493,7 +1529,7 @@ public class DashBoard extends CommonMethods {
 			// Use Actions to specify an x,y coordinate for your click,
 			if (OverLay.isDisplayed()) {
 				Actions a = new Actions(driver);
-				a.moveToElement(OverLay, 10, 10).click().perform();
+				a.moveToElement(OverLay, 100, 100).click().perform();
 			}
 
 		} catch (NoSuchElementException e) {

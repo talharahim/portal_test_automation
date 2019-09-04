@@ -147,7 +147,7 @@ public class TC0038_VerifyAction_Transfers_Stack_TwoLocations_DefaultCustomerLoc
 //// 	   	moveOutCustomer = "Mr. Automation Mate";
 //// 		moveInCustomer = "Mr. Talha Rahim (03332301204)";
 ////		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,LocationID);
-		dashBoard.LogOut();
+//		dashBoard.LogOut();
 	}
 
 }

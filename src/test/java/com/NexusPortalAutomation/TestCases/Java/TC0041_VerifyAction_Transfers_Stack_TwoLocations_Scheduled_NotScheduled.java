@@ -137,7 +137,7 @@ public class TC0041_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotSched
 		//Verifying Service Order 2
 		dashBoard.ClickServOrder2();
 		moveOutCustomer = "Mr. Vacant Vacant";
-		moveInCustomer = "Mrs. Gail M Dewar (Customer010)'";
+		moveInCustomer = "Mrs. Gail M Dewar (Customer010)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,newDate,moveOutstart_dtfinalString,Task,LocationID,"Description For Stop Service");
 		// Verifying Third Transfer order in the stack
  		dashBoard.ClickServOrder1();

@@ -10,7 +10,7 @@ import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 
 public class ngWebDriver extends BaseClass {
 
-	@Test
+	//@Test
 	public void find_by_angular_model() throws IOException, InterruptedException {
 
 		// driver.get("http://www.angularjshub.com/code/examples/basics/02_TwoWayDataBinding_HTML/index.demo.php");
