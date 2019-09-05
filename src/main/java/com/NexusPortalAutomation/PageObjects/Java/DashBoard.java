@@ -167,7 +167,6 @@ public class DashBoard extends CommonMethods {
 
 	@FindBy(id = "'CUST_Email'")
 	WebElement Email;
-	
 
 	@FindBy(id = "'CUST_No_Email'")
 	WebElement NoEmail;
@@ -448,16 +447,55 @@ public class DashBoard extends CommonMethods {
 
 	@FindBy(xpath = "/html/body/wo-root/wo-dashboard/div/mat-drawer-container/mat-drawer-content/div/div/div[2]/csm-customer-balances/csm-generic-widget/div/div/div[2]/div[1]/div[2]/div[1]/div[1]")
 	WebElement BudgetIcon;
-	
-	
-	@FindBy(xpath="//div[contains(text(),'No Other Accounts')]")
+
+	@FindBy(xpath = "//div[contains(text(),'No Other Accounts')]")
 	WebElement NoOtherAccounts;
-	
-	@FindBy(xpath="/html/body/wo-root/wo-dashboard/div/mat-drawer-container/mat-drawer-content/div/div/div[2]/csm-customer-balances/csm-generic-widget/div/div/div[2]/div[2]/div/div[1]/a[2]")
+
+	@FindBy(xpath = "/html/body/wo-root/wo-dashboard/div/mat-drawer-container/mat-drawer-content/div/div/div[2]/csm-customer-balances/csm-generic-widget/div/div/div[2]/div[2]/div/div[1]/a[2]")
 	WebElement AutoPayURL;
+
+	@FindBy(xpath = "//span[contains(text(),'Payment Arrangement Due')]")
+	WebElement PaymentArrangementDue;
+
+	@FindBy(xpath = "/html/body/wo-root/wo-dashboard/div/mat-drawer-container/mat-drawer-content/div/div/div[2]/csm-customer-balances/csm-generic-widget/div/div/div[2]/div[1]/div[3]/div[1]/a")
+	WebElement PaymentArrangementDueURL;
 	
-	public String getNoOtherAccount()
-	{
+	@FindBy(id = "BILL_Installment_SPA")
+	WebElement PaymentArrangementDueAmount;
+	
+	@FindBy(id = "BILL_Budget")
+	WebElement BILLBudget;
+	
+	public String getBillBudgetURL() {
+
+		waitForObject(driver, BILLBudget);
+		log("get Payments Arrangement Due", driver);
+		return BILLBudget.getAttribute("href");
+	}
+	
+	
+	public String getPaymentArrangementDueAmount() {
+
+		waitForObject(driver, PaymentArrangementDueAmount);
+		log("get Payments Arrangement Due", driver);
+		return PaymentArrangementDueAmount.getText();
+	}
+	
+
+	public String getPaymentArrangementDue() {
+
+		waitForObject(driver, PaymentArrangementDue);
+		log("get Payments Arrangement Due", driver);
+		return PaymentArrangementDue.getText();
+	}
+
+	public String getPaymentArrangementDueURL() {
+
+		log("get Payments Arrangement Due", driver);
+		return PaymentArrangementDueURL.getAttribute("href");
+	}
+
+	public String getNoOtherAccount() {
 		return NoOtherAccounts.getText();
 	}
 
@@ -843,8 +881,7 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void verifyServiceWarningMultiSO(String serviceOrder) {
-		VerifyString(findElementByid("XFER_Warning_Message").getText(),
-				"Multiple Service Orders Exist. TRANSFER");
+		VerifyString(findElementByid("XFER_Warning_Message").getText(), "Multiple Service Orders Exist. TRANSFER");
 		VerifyStringContains(findElementByid("idPrefix + '_Warning_Drillback'").getAttribute("href"), serviceOrder);
 
 	}
@@ -917,7 +954,7 @@ public class DashBoard extends CommonMethods {
 		log("get Service AutpPay");
 		return result;
 	}
-	
+
 	public String getAutoPayURL() {
 		String result = null;
 		try {
@@ -1094,9 +1131,8 @@ public class DashBoard extends CommonMethods {
 		waitForObject(driver, AddressCityStateZip);
 		VerifyString(acsz, getElementText(AddressCityStateZip, "AddressCityStateZip"));
 	}
-	
-	public void VerifyCustomerDetailsNoEmailExt(String ssn, String lic, String phone,String add,
-			String acsz) {
+
+	public void VerifyCustomerDetailsNoEmailExt(String ssn, String lic, String phone, String add, String acsz) {
 		WaitAngular(driver);
 		log("Verifying Customer Details");
 		waitForObject(driver, CustomerSSN);
@@ -1117,6 +1153,7 @@ public class DashBoard extends CommonMethods {
 		waitForObject(driver, AddressCityStateZip);
 		VerifyString(acsz, getElementText(AddressCityStateZip, "AddressCityStateZip"));
 	}
+
 	public void ClickContactEdit() {
 
 		WaitAngular(driver);
@@ -1261,7 +1298,6 @@ public class DashBoard extends CommonMethods {
 		}
 
 	}
-	
 
 	public void clickSarchAccountWidget() throws InterruptedException {
 		WaitAngular(driver);
