@@ -20,13 +20,13 @@ public class TC0023_VerifyRecentWidget extends BaseClass {
 	 * @Since 2019-06-10
 	 */
 
-	public String LocationID = "LOC@0001";
+	public String locationID = "LOC@0001";
 	public String RecordType = "Payment";
 	public String RecordAmount = "$14.74";
 	public String RecordDate = "Apr 12, 2027";
-	public String Title = "Transactions";
+	public String title = "Transactions";
 
-	CommonMethods ComMethd = new CommonMethods();
+	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -34,16 +34,16 @@ public class TC0023_VerifyRecentWidget extends BaseClass {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		dbSrch.EnterSearchText(LocationID);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(locationID);
+		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
 		// Verify Contact is updated accordingly
 		dashBoard.verifyRecent(RecordType, RecordDate, RecordAmount);
-		dashBoard.ClickRecent_ViewAll();
-		ComMethd.VerifyString(Title, dashBoard.GetTransactionPageTile());
+		dashBoard.clickRecentSearch_ViewAll();
+		cmnMethods.verifyString(title, dashBoard.GetTransactionPageTile());
 		// Verify Updated details
-		dashBoard.LogOut();
+		dashBoard.logout();
 	}
 
 }

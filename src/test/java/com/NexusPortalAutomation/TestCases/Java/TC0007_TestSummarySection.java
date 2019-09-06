@@ -21,24 +21,24 @@ public class TC0007_TestSummarySection extends BaseClass {
 	 * 
 	 * @Since 2019-04-11
 	 */
-	public String UserName = "Automation Mate";
-	public CommonMethods ComMethd = new CommonMethods();
+	public String username = "Automation Mate";
+	public CommonMethods cmnMethods = new CommonMethods();
 
 	@Test(priority = 2)
 	public void TestSummarySectionOnChange() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		ComMethd.WaitForObjectbyXpath(driver, "//input[@id='SRCH_Input']");
-		ComMethd.WaitForObjectbyId(driver, "toolbar-saved");
+		cmnMethods.waitObjectByXpath(driver, "//input[@id='SRCH_Input']");
+		cmnMethods.waitforObjectById(driver, "toolbar-saved");
 		WaitAngular();
-		dbSrch.EnterSearchText("Automation");
-		dbSrch.ClickCustomer();
-		ComMethd.WaitForObjectbyXpath(driver, "//div[@class='address-details']");
+		dbSrch.enterSearchText("Automation");
+		dbSrch.clickCustomerName();
+		cmnMethods.waitObjectByXpath(driver, "//div[@class='address-details']");
 		// Verify Login Name
-		ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
+		cmnMethods.verifyString(username, dashBoard.getLoggedCustomerName());
 		HashMap<String, String> BillingMap1 = dashBoard.GetBillingInfo();
-		dashBoard.ClickTransactionLink();
+		dashBoard.clickTransactionLink();
 		dashBoard.ClickSummaryLink();
 		HashMap<String, String> BillingMap2 = dashBoard.GetBillingInfo();
 
@@ -64,7 +64,7 @@ public class TC0007_TestSummarySection extends BaseClass {
 			Assert.assertTrue(false);
 		}
 
-		dashBoard.LogOut();
+		dashBoard.logout();
 
 	}
 

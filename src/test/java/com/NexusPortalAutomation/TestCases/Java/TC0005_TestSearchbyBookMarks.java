@@ -10,8 +10,8 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 
 public class TC0005_TestSearchbyBookMarks extends BaseClass {
 
-	public String UserName = "Noel Ford";
-	public CommonMethods ComMethd = new CommonMethods();
+	public String username = "Noel Ford";
+	public CommonMethods cmnMethods = new CommonMethods();
 
 	@Test(priority = 2)
 	public void TestSearchAutobyBookMark() throws IOException, InterruptedException {
@@ -19,20 +19,20 @@ public class TC0005_TestSearchbyBookMarks extends BaseClass {
 		DashBoard dashBoard = new DashBoard(driver);
 		WaitAngular();
 		login();
-		ComMethd.WaitForObjectbyXpath(driver, "//input[@id='SRCH_Input']");
-		ComMethd.WaitForObjectbyId(driver, "toolbar-saved");
+		cmnMethods.waitObjectByXpath(driver, "//input[@id='SRCH_Input']");
+		cmnMethods.waitforObjectById(driver, "toolbar-saved");
 		WaitAngular();
 		dbSrch.ClickHistoryCustomer();
-		dbSrch.ClickCustomer();
-		ComMethd.WaitForObjectbyXpath(driver, "//div[@class='address-details']");
+		dbSrch.clickCustomerName();
+		cmnMethods.waitObjectByXpath(driver, "//div[@class='address-details']");
 		// Verify Login Name
-		boolean Match = ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
+		boolean Match = cmnMethods.verifyString(username, dashBoard.getLoggedCustomerName());
 		if (!Match) {
 			log("User Name Not Verified for Bookmark Functionality");
 		} else {
 			log("User Name Verified for Bookmark Functionality");
 		}
-		dashBoard.LogOut();
+		dashBoard.logout();
 	
 	}
 

@@ -20,9 +20,9 @@ public class TC0016_1_VerifyBillingDetails_AutoPay extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String LocationID = "LOC@0001";
+	public String locationID = "LOC@0001";
 
-	CommonMethods ComMethd = new CommonMethods();
+	CommonMethods cmnMethods = new CommonMethods();
 	String AutoPay = "OFF";
 	String AutoPayURL = "https://www.invoicecloud.com/integrations/redirect/Csr?BillerGUID";
 
@@ -32,15 +32,15 @@ public class TC0016_1_VerifyBillingDetails_AutoPay extends BaseClass {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		dbSrch.EnterSearchText(LocationID);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(locationID);
+		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
 		// Verify Contact is updated accordingly
 		// Verify Billing Information
-		ComMethd.VerifyString(dashBoard.getAutoPay(), AutoPay);
-		ComMethd.VerifyStringContains(dashBoard.getAutoPayURL(), AutoPayURL);
-		dashBoard.LogOut();
+		cmnMethods.verifyString(dashBoard.getAutoPay(), AutoPay);
+		cmnMethods.VerifyStringContains(dashBoard.getAutoPayURL(), AutoPayURL);
+		dashBoard.logout();
 	}
 
 }

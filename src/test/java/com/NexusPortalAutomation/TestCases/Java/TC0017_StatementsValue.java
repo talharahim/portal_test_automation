@@ -22,12 +22,12 @@ public class TC0017_StatementsValue extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String LocationID = "STATEMENTS001";
+	public String locationID = "STATEMENTS001";
 	public String StatementDateValue = "Jul 31, 2019";
 	public String StatementValue = "$56.71";
 	
 
-	CommonMethods ComMethd = new CommonMethods();
+	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the 
 	@Test(priority = 1)
@@ -36,16 +36,16 @@ public class TC0017_StatementsValue extends BaseClass {
 		DashBoard dashBoard = new DashBoard(driver);
 		MySQLDataExec Sql = new MySQLDataExec();
 		login();
-		dbSrch.EnterSearchText(LocationID);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(locationID);
+		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
 		// Verify Contact is updated accordingly
 		dashBoard.ClickBillStatementBtn();
-		ComMethd.VerifyString(StatementDateValue,dashBoard.getBillStatementDate());
-		ComMethd.VerifyString(StatementValue,dashBoard.getBillStatementAmount());
-		Sql.VerifyStatementsData(LocationID,StatementValue.substring(1));
-		dashBoard.LogOut();
+		cmnMethods.verifyString(StatementDateValue,dashBoard.getBillStatementDate());
+		cmnMethods.verifyString(StatementValue,dashBoard.getBillStatementAmount());
+		Sql.VerifyStatementsData(locationID,StatementValue.substring(1));
+		dashBoard.logout();
 	}
 
 }

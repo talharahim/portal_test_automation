@@ -26,13 +26,13 @@ public class TC0022_VerifyAction_ServiceOrder extends BaseClass {
 	 * @Since 2019-06-10
 	 */
 
-	public String LocationID = "LOC@0007";
+	public String locationID = "LOC@0007";
 	public String CustomerID = "0000011111";
 	public String ServerURL = GetDrillBackServerURL();
 	public String SearchInput = "REQ-DEP-WATER";
 	public String DateDescription = "AutomationRequest";
 	public String Message = "Service Order successfully created";
-	CommonMethods ComMethd = new CommonMethods();
+	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -41,14 +41,14 @@ public class TC0022_VerifyAction_ServiceOrder extends BaseClass {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		MySQLDataExec Sql = new MySQLDataExec();
-		Sql.DeleteServiceOrders(LocationID);
+		Sql.DeleteServiceOrders(locationID);
 		login();
-		dbSrch.EnterSearchText(LocationID);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(locationID);
+		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
 		// Verify Contact is updated accordingly
-		// ComMethd.VerifyString(servTabURL, dashBoard.GetServiceTabDrillBackUrl());
+		// cmnMethods.VerifyString(servTabURL, dashBoard.GetServiceTabDrillBackUrl());
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_ServiceOrder();
 		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
@@ -59,12 +59,12 @@ public class TC0022_VerifyAction_ServiceOrder extends BaseClass {
 		dashBoard.verifySubmitMessage(Message);
 		dashBoard.ClickSerOrderDne();
 		
-		//Sql.VerifyServiceOrders(LocationID, DateRequested);
+		//Sql.VerifyServiceOrders(locationID, DateRequested);
 		// Verify Updated details IN SERVICE TAB order number from database
 		dashBoard.ClickServiceOrderLink();
 		String ServiceOrder = dashBoard.getServiceOrderNumber();
-		Sql.VerifyServiceOrders(LocationID, ServiceOrder);
-		dashBoard.LogOut();
+		Sql.VerifyServiceOrders(locationID, ServiceOrder);
+		dashBoard.logout();
 	}
 
 }

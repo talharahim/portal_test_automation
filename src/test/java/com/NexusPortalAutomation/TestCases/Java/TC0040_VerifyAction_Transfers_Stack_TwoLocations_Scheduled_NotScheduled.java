@@ -29,13 +29,13 @@ public class TC0040_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotSched
 	 * @Since 2019-07-29
 	 */
 
-	public String LocationID = "LOC@0004";
-	public String LocationID2 = "LOC@0002";
+	public String locationID = "LOC@0004";
+	public String locationID2 = "LOC@0002";
 	public String ServerURL = GetDrillBackServerURL();
 	public String DefaultCustomer = "Mr. VACANT VACANT";
 	public String Message = "Transfer initiated";
 	public String[] Task = {"Meter Reading-electric", "Charge New Customer","Property Transfer", "Deposit Request-new Customer", "Deposit Payment-new Customer E","Prepayment Required-new Custom"};
-	CommonMethods ComMethd = new CommonMethods();
+	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -44,15 +44,15 @@ public class TC0040_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotSched
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		Dashboard_Transfers dashBoard = new Dashboard_Transfers(driver);
 		MySQLDataExec Sql = new MySQLDataExec();
-		Sql.DeleteServiceOrders(LocationID);
-		Sql.DeleteServiceOrdersHistory(LocationID);
-		Sql.DeleteServiceOrders(LocationID2);
-		Sql.DeleteServiceOrdersHistory(LocationID2);
+		Sql.DeleteServiceOrders(locationID);
+		Sql.DeleteServiceOrdersHistory(locationID);
+		Sql.DeleteServiceOrders(locationID2);
+		Sql.DeleteServiceOrdersHistory(locationID2);
 		login();
-		dbSrch.EnterSearchText(LocationID);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(locationID);
+		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
 		dashBoard.SelectTransferType_Transfer_Stop();
@@ -96,7 +96,7 @@ public class TC0040_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotSched
 		//String ServiceOrder2 = dashBoard.getServiceOrderNumber();
 		dashBoard.clickrefreshPage();
 		
-		dashBoard.enterDashBoardSearch(LocationID2);
+		dashBoard.enterDashBoardSearch(locationID2);
 		dashBoard.clickDashBoardSearchResult1();
 		
 		dashBoard.clickActionDropDown();
@@ -117,14 +117,14 @@ public class TC0040_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotSched
 		dashBoard.Movin_EnterMoveToScheduleDate(newDate2);
 		Thread.sleep(1000);
 		dashBoard.Movin_EnterRequest("TRANSFER");
-		dashBoard.Movin_EnterLocation(LocationID);
-		dashBoard.Movin_EnterDescription("Move in from location "+LocationID);
+		dashBoard.Movin_EnterLocation(locationID);
+		dashBoard.Movin_EnterDescription("Move in from location "+locationID);
 		dashBoard.Click_MoveInSubmit();
 		Thread.sleep(1000);
 		dashBoard.verifySubmitMessage(Message);
 		dashBoard.ClickDone();
 		
-		dashBoard.enterDashBoardSearch(LocationID);
+		dashBoard.enterDashBoardSearch(locationID);
 		dashBoard.clickDashBoardSearchResult1();
 		//Navigate to Service Order
 		dashBoard.clickrefreshPage();
@@ -132,19 +132,19 @@ public class TC0040_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotSched
 		dashBoard.ClickServOrder3();
 		String moveOutCustomer = "Mr. Vacant Vacant";
 		moveInCustomer = "Mrs. Gail M Dewar (Customer010)";
-		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,newDate2,moveOutstart_dtfinalString,Task,LocationID,"Move In From Location Loc@0004");
+		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,newDate2,moveOutstart_dtfinalString,Task,locationID,"Move In From Location Loc@0004");
 		
 		//Verifying Service Order 2
 		dashBoard.ClickServOrder2();
 		moveOutCustomer = "Mr. Automation Mate";
 		moveInCustomer = "Mr. Vacant Vacant (Vacant)";
-		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,LocationID,"Description For Stop Service");
+		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,locationID,"Description For Stop Service");
 		// Verifying Third Transfer order in the stack
  		dashBoard.ClickServOrder1();
  	   	moveOutCustomer = "Mr. Automation Mate";
  		moveInCustomer = "Mr. Vacant Vacant (Vacant)";
-		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,LocationID,"Description For Stop Service");
-		dashBoard.LogOut();
+		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,locationID,"Description For Stop Service");
+		dashBoard.logout();
 	}
 
 }

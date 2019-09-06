@@ -29,14 +29,14 @@ public class TC0038_VerifyAction_Transfers_Stack_TwoLocations_DefaultCustomerLoc
 	 * @Since 2019-07-29
 	 */
 
-	public String LocationID = "TESTLOCATION01";
-	public String LocationID2 = "LOC@0004";
+	public String locationID = "TESTLOCATION01";
+	public String locationID2 = "LOC@0004";
 	public String ServerURL = GetDrillBackServerURL();
 	public String DefaultCustomer1= "Mr. Talha Rahim";
 	public String DefaultCustomer2 = "Mr. VACANT VACANT";
 	public String Message = "Transfer initiated";
 	public String[] Task = {"Meter Reading-electric", "Charge New Customer","Property Transfer", "Deposit Request-new Customer", "Deposit Payment-new Customer E","Prepayment Required-new Custom"};
-	CommonMethods ComMethd = new CommonMethods();
+	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -45,15 +45,15 @@ public class TC0038_VerifyAction_Transfers_Stack_TwoLocations_DefaultCustomerLoc
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		Dashboard_Transfers dashBoard = new Dashboard_Transfers(driver);
 		MySQLDataExec Sql = new MySQLDataExec();
-		Sql.DeleteServiceOrders(LocationID);
-		Sql.DeleteServiceOrdersHistory(LocationID);
-		Sql.DeleteServiceOrders(LocationID2);
-		Sql.DeleteServiceOrdersHistory(LocationID2);
+		Sql.DeleteServiceOrders(locationID);
+		Sql.DeleteServiceOrdersHistory(locationID);
+		Sql.DeleteServiceOrders(locationID2);
+		Sql.DeleteServiceOrdersHistory(locationID2);
 //		login();
-//		dbSrch.EnterSearchText(LocationID);
-//		dbSrch.ClickCustomer();
+//		dbSrch.enterSearchText(locationID);
+//		dbSrch.clickCustomerName();
 //		// Verify Customer Location Id Updated for Test
-//		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+//		cmnMethods.VerifyString(locationID, dashBoard.GetLoggedCustomerlocationID());
 //		dashBoard.clickActionDropDown();
 //		dashBoard.clickActionDropDown_TransferService();
 //		dashBoard.SelectTransferType_Transfer_Stop();
@@ -99,7 +99,7 @@ public class TC0038_VerifyAction_Transfers_Stack_TwoLocations_DefaultCustomerLoc
 //		//String ServiceOrder2 = dashBoard.getServiceOrderNumber();
 //		dashBoard.clickrefreshPage();
 //		
-//		dashBoard.enterDashBoardSearch(LocationID2);
+//		dashBoard.enterDashBoardSearch(locationID2);
 //		dashBoard.clickDashBoardSearchResult1();
 //		
 //		dashBoard.clickActionDropDown();
@@ -120,14 +120,14 @@ public class TC0038_VerifyAction_Transfers_Stack_TwoLocations_DefaultCustomerLoc
 //		//dashBoard.Movin_EnterMoveToScheduleDate(newDate2);
 //		Thread.sleep(1000);
 //		dashBoard.Movin_EnterRequest("TRANSFER");
-//		dashBoard.Movin_EnterLocation(LocationID);
-//		dashBoard.Movin_EnterDescription("Move in from location "+LocationID);
+//		dashBoard.Movin_EnterLocation(locationID);
+//		dashBoard.Movin_EnterDescription("Move in from location "+locationID);
 //		dashBoard.Click_MoveInSubmit();
 //		Thread.sleep(1000);
 //		dashBoard.verifySubmitMessage(Message);
 //		dashBoard.ClickDone();
 //		
-//		dashBoard.enterDashBoardSearch(LocationID);
+//		dashBoard.enterDashBoardSearch(locationID);
 //		dashBoard.clickDashBoardSearchResult1();
 //		//Navigate to Service Order
 //		dashBoard.clickrefreshPage();
@@ -135,19 +135,19 @@ public class TC0038_VerifyAction_Transfers_Stack_TwoLocations_DefaultCustomerLoc
 //		dashBoard.ClickServOrder1();
 //		String moveOutCustomer = "Mr. Test Mid Customer Suf";
 //		String moveInCustomer = "Mr. Automation Mate (0000011111)";
-//		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,LocationID);
+//		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,locationID);
 //		
 //		//Verifying Service Order 2
 //		dashBoard.ClickServOrder2();
 //		moveOutCustomer = "Mr. Talha Rahim";
 //		moveInCustomer = "Mr. Talha Rahim (03332301204)";
-//		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,LocationID);
+//		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,locationID);
 //		// Verifying Third Transfer order in the stack
 //// 		dashBoard.ClickServOrder3();
 //// 	   	moveOutCustomer = "Mr. Automation Mate";
 //// 		moveInCustomer = "Mr. Talha Rahim (03332301204)";
-////		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,LocationID);
-//		dashBoard.LogOut();
+////		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,locationID);
+//		dashBoard.logout();
 	}
 
 }

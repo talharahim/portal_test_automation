@@ -20,7 +20,7 @@ public class TC0010_2_VerifyCustomerDetails_Blank extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	String LocationID = "FRESHLOC01";
+	String locationID = "FRESHLOC01";
 	String ssn = "none";
 	String lic = "none";
 	String phone = "none";
@@ -28,7 +28,7 @@ public class TC0010_2_VerifyCustomerDetails_Blank extends BaseClass {
 	String email = "none";
 	String add = "02 02 Test Te 042";
 	String acsz = "Karachi SINDH";
-	CommonMethods ComMethd = new CommonMethods();
+	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -36,11 +36,11 @@ public class TC0010_2_VerifyCustomerDetails_Blank extends BaseClass {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		dbSrch.EnterSearchText(LocationID);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(locationID);
+		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
 		dashBoard.VerifyCustomerDetailsNoEmailExt(ssn, lic, phone, add, acsz);
-		dashBoard.LogOut();
+		dashBoard.logout();
 	}
 }

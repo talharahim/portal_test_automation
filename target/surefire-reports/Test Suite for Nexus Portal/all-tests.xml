@@ -44,7 +44,7 @@ at com.NexusPortalAutomation.TestCases.Java.BaseClass.TearDown(BaseClass.java:14
   <testcase name="VerifyBillingDetails" time="32.056" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget"/>
   <testcase name="TestSearchAccount" time="20.927" classname="com.NexusPortalAutomation.TestCases.Java.TC0009_1_VerifyAccountSearch_NoAccounts"/>
   <testcase name="TestContactLogs" time="24.587" classname="com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs"/>
-  <testcase name="TestSearchbyLocationID" time="30.031" classname="com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID"/>
+  <testcase name="TestSearchbylocationID" time="30.031" classname="com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbylocationID"/>
   <testcase name="TestContactEdit" time="38.478" classname="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit"/>
   <testcase name="TestSecondayContact" time="27.15" classname="com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact"/>
   <testcase name="TestCreditStatus" time="46.433" classname="com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus"/>
@@ -80,7 +80,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 at org.openqa.selenium.remote.RemoteWebDriver.executeAsyncScript(RemoteWebDriver.java:502)
 at com.paulhammant.ngwebdriver.NgWebDriver.waitForAngularRequestsToFinish(NgWebDriver.java:68)
 at com.NexusPortalAutomation.Utilities.Java.CommonMethods.WaitAngular(CommonMethods.java:52)
-at com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch.EnterSearchText(DashBoardSearch.java:56)
+at com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch.enterSearchText(DashBoardSearch.java:56)
 at com.NexusPortalAutomation.TestCases.Java.TC0030_VerifyAction_Transfers_StartService_Scheduled.VerifyTransferActionServiceOrder(TC0030_VerifyAction_Transfers_StartService_Scheduled.java:59)
 ... Removed 33 stack frames]]>
     </failure>

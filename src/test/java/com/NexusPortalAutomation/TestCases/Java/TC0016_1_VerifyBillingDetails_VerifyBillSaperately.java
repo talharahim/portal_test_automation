@@ -1,9 +1,6 @@
 package com.NexusPortalAutomation.TestCases.Java;
 
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 import org.testng.annotations.Test;
 
@@ -11,7 +8,7 @@ import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 
-public class TC0015_VerifyContactLogs extends BaseClass {
+public class TC0016_1_VerifyBillingDetails_VerifyBillSaperately extends BaseClass {
 
 	/*
 	 * This test the search by Recent Customer Name
@@ -20,18 +17,14 @@ public class TC0015_VerifyContactLogs extends BaseClass {
 	 * 
 	 * @version 1.0
 	 * 
-	 * @Since 2019-04-11
+	 * @Since 2019-06-11
 	 */
+	public String locationID = "BILLSAPERATE01";
 
-	public String locationID = "LOC@0004";
-	CommonMethods cmnMethods = new CommonMethods();
-	DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-	Date date = new Date();
-	String Comments = "Notes added" + dateFormat.format(date);
+	@Test
+	public void VerifyTransactionsSaperatebill() throws IOException, InterruptedException {
 
-//This Test will test the search by Customer ID
-	@Test(priority = 1)
-	public void TestContactLogs() throws IOException, InterruptedException {
+		CommonMethods cmnMethods = new CommonMethods();
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
@@ -40,10 +33,10 @@ public class TC0015_VerifyContactLogs extends BaseClass {
 		// Verify Customer Location Id Updated for Test
 		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
 		// Verify Contact is updated accordingly
-		///dashBoard.AddNotes(Comments);  -- Functionality Removed
-		// Verify Updated details
-		//cmnMethods.VerifyString(dashBoard.GetNotes(), Comments);  -- Functionality Removed
-		dashBoard.VerifyNotesDrillBacks();
+		dashBoard.clickTransactionLink();
+		dashBoard.transaction_filterbyBill();
+		// Verify Transaction details
+
 		dashBoard.logout();
 	}
 

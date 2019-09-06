@@ -20,21 +20,21 @@ public class TC0003_TestSearchAutobyLastName extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String UserName = "Automation Mate";
-	public String Title = "Mr.";
-	public CommonMethods ComMethd = new CommonMethods();
+	public String username = "Automation Mate";
+	public String title = "Mr.";
+	public CommonMethods cmnMethods = new CommonMethods();
 
 	@Test(priority = 3)
 	public void TestSearchAutobyLastName() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		dbSrch.EnterSearchText("Mate");
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText("Mate");
+		dbSrch.clickCustomerName();
 		// Verify Login by Last Name
-		ComMethd.VerifyString(Title, dashBoard.getCustomerTitle());
-		ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
-		dashBoard.LogOut();
+		cmnMethods.verifyString(title, dashBoard.getCustomertitle());
+		cmnMethods.verifyString(username, dashBoard.getLoggedCustomerName());
+		dashBoard.logout();
 
 	}
 

@@ -55,7 +55,7 @@ public class CommonMethods {
 		log("Angular request time " + dt + "ms");
 	}
 
-	public boolean VerifyString(String str1, String str2) {
+	public boolean verifyString(String str1, String str2) {
 		boolean result = false;
 		if (str1 == null || str2 == null) {
 			Assert.fail("Null values found");
@@ -140,7 +140,7 @@ public class CommonMethods {
 
 	}
 
-	public void WaitForObjectbyId(WebDriver driver, String id) {
+	public void waitforObjectById(WebDriver driver, String id) {
 		long begin = System.currentTimeMillis();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id(id)));
@@ -166,7 +166,7 @@ public class CommonMethods {
 		}
 	}
 
-	public void WaitForObjectbyXpath(WebDriver driver, String path) {
+	public void waitObjectByXpath(WebDriver driver, String path) {
 		long begin = System.currentTimeMillis();
 
 		WebDriverWait wait = new WebDriverWait(driver, 10);

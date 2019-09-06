@@ -19,11 +19,11 @@ public class TC0028_TestEnhancedNotes extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String UserName = "Automation Mate";
-	CommonMethods ComMethd = new CommonMethods();
+	public String username = "Automation Mate";
+	CommonMethods cmnMethods = new CommonMethods();
 	public String Notes1 = "Customer Test notes for AuTOMation";
 	public String Notes2 = "Location Test Notes for Automation";
-	public String Title = "Mr.";
+	public String title = "Mr.";
 
 //This Test will test the search by Customer's First Name
 	@Test(priority = 2)
@@ -31,14 +31,14 @@ public class TC0028_TestEnhancedNotes extends BaseClass {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		dbSrch.EnterSearchText(UserName);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(username);
+		dbSrch.clickCustomerName();
 		// Verify Login Name
 
-		ComMethd.VerifyString(Title, dashBoard.getCustomerTitle());
-		ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
+		cmnMethods.verifyString(title, dashBoard.getCustomertitle());
+		cmnMethods.verifyString(username, dashBoard.getLoggedCustomerName());
 		dashBoard.verifyEnhancedNotes(Notes2, Notes1);
-		dashBoard.LogOut();
+		dashBoard.logout();
 
 	}
 

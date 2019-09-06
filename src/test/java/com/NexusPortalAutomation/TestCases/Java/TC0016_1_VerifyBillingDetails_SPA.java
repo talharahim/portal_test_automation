@@ -20,10 +20,10 @@ public class TC0016_1_VerifyBillingDetails_SPA extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String LocationID = "LOC@0001";
+	public String locationID = "LOC@0001";
 
-	CommonMethods ComMethd = new CommonMethods();
-	String spaURL = "CustomerID=0000011111&LocationID=LOC@0001&CogsDrillback=1";
+	CommonMethods cmnMethods = new CommonMethods();
+	String spaURL = "CustomerID=0000011111&locationID=LOC@0001&CogsDrillback=1";
 	String paymentArrangementAmount = "$0.00";
 
 //This Test will test the search by Customer ID
@@ -32,18 +32,18 @@ public class TC0016_1_VerifyBillingDetails_SPA extends BaseClass {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		dbSrch.EnterSearchText(LocationID);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(locationID);
+		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
 		// Verify Contact is updated accordingly
 		// Verify SPA Information
 
-		ComMethd.VerifyString(dashBoard.getPaymentArrangementDue(), "Payment Arrangement Due");
-		ComMethd.VerifyString(dashBoard.getPaymentArrangementDueAmount(), paymentArrangementAmount);
-		ComMethd.VerifyStringContains(dashBoard.getPaymentArrangementDueURL(), spaURL);
+		cmnMethods.verifyString(dashBoard.getPaymentArrangementDue(), "Payment Arrangement Due");
+		cmnMethods.verifyString(dashBoard.getPaymentArrangementDueAmount(), paymentArrangementAmount);
+		cmnMethods.VerifyStringContains(dashBoard.getPaymentArrangementDueURL(), spaURL);
 
-		dashBoard.LogOut();
+		dashBoard.logout();
 	}
 
 }

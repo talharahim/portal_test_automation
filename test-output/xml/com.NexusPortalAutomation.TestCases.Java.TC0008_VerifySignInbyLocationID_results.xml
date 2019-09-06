@@ -8,6 +8,6 @@
   <properties />
   
   
-            <testcase name="TestSearchbyLocationID" time="20.540" classname="com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID" />
+            <testcase name="TestSearchbylocationID" time="20.540" classname="com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbylocationID" />
       
 </testsuite>

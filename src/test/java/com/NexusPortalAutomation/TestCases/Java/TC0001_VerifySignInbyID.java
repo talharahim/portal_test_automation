@@ -10,8 +10,8 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 
 public class TC0001_VerifySignInbyID extends BaseClass {
 
-	public String CustomerID = "0000011111";
-	CommonMethods ComMethd = new CommonMethods();
+	public String customerID = "0000011111";
+	CommonMethods commonMethod = new CommonMethods();
 	/*
 	 * This Class Will Test the search by Customer ID
 	 * 
@@ -26,14 +26,14 @@ public class TC0001_VerifySignInbyID extends BaseClass {
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
 	public void TestSearchID() throws IOException, InterruptedException {
-		DashBoardSearch dbSrch = new DashBoardSearch(driver);
+		DashBoardSearch dashBoardSearch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		dbSrch.EnterSearchText(CustomerID);
-		dbSrch.ClickCustomer();
+		dashBoardSearch.enterSearchText(customerID);
+		dashBoardSearch.clickCustomerName();
 		// Verify Login Name Updated for Test
-		ComMethd.VerifyString(CustomerID, dashBoard.GetLoggedCustomerId());
-		dashBoard.LogOut();
+		commonMethod.verifyString(customerID, dashBoard.GetLoggedCustomerId());
+		dashBoard.logout();
 	}
 
 }

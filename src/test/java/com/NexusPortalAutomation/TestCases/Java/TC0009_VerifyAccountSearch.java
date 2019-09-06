@@ -20,8 +20,8 @@ public class TC0009_VerifyAccountSearch extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	String LocationID = "500001";
-	String LocationID2 = "CUS@0004";
+	String locationID = "500001";
+	String locationID2 = "CUS@0004";
 	String AccntSrchResult = "1 Water 1 Bldg";
 	String addLine = "8 Orchard";
 	String addCity = "Troy";
@@ -35,7 +35,7 @@ public class TC0009_VerifyAccountSearch extends BaseClass {
 	String cityzip1 = "Troy NY 12180";
 	String cityzip2 = "Troy NY 12180";
 	String cityzip3 = "Troy NY 12180";
-	CommonMethods ComMethd = new CommonMethods();
+	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -43,10 +43,10 @@ public class TC0009_VerifyAccountSearch extends BaseClass {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		dbSrch.EnterSearchText(LocationID);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(locationID);
+		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerId());
+		cmnMethods.verifyString(locationID, dashBoard.GetLoggedCustomerId());
 		// Verify Customer Details for location Provided
 		dashBoard.clickSarchAccountWidget();
 		// Verify the type/status of the account
@@ -82,10 +82,10 @@ public class TC0009_VerifyAccountSearch extends BaseClass {
 		dashBoard.SearchAccountWidgetExpanded(AccountId);
 		dashBoard.VerifySearchAccountResult1(AccountId);
 		
-		dashBoard.enterDashBoardSearch(LocationID2);
+		dashBoard.enterDashBoardSearch(locationID2);
 		dashBoard.clickDashBoardSearchResult1();
 		dashBoard.findElementByxpath("//div[contains(text(),'No Other Accounts')]");
 
-		dashBoard.LogOut();
+		dashBoard.logout();
 	}
 }

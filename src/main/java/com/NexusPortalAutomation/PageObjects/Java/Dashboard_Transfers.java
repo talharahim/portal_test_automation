@@ -308,7 +308,7 @@ public class Dashboard_Transfers extends DashBoard {
 	public void verifyDefaultCustomerStartService(String Customer) {
 		String Found = DefaultCsutomer.getAttribute("value");
 		if (Found != "") {
-			VerifyString(Customer, Found);
+			verifyString(Customer, Found);
 		} else {
 			Assert.assertTrue(Found, false);
 		}
@@ -319,7 +319,7 @@ public class Dashboard_Transfers extends DashBoard {
 
 		String Found = DefaultCsutomer.getAttribute("value");
 		if (Found != "") {
-			VerifyString(Customer, Found);
+			verifyString(Customer, Found);
 		} else {
 			Assert.assertTrue(Found, false);
 		}
@@ -442,41 +442,41 @@ public class Dashboard_Transfers extends DashBoard {
 	}
 
 	public void verifyServiceOrderdetails(String requester, String moveOutCustomer, String moveInCustomer,
-			String scheduledate, String requestedDate, String[] Task, String LocationID, String description)
+			String scheduledate, String requestedDate, String[] Task, String locationID, String description)
 			throws ClassNotFoundException, SQLServerException, SQLException {
 
-		VerifyString(getRequestedSOcustomerName(), requester);
-		VerifyString(getMoveOutSOcustomerName(), moveOutCustomer);
-		VerifyString(getMoveInSOcustomerName(), moveInCustomer);
-		VerifyString(getSOscheduledDate(), scheduledate);
-		VerifyString(getSOrequestedDate(), requestedDate);
-		VerifyString(getSOTask1Description(), Task[0]);
-		VerifyString(getSOTask2Description(), Task[1]);
-		VerifyString(getSOTask3Description(), Task[2]);
-		VerifyString(getSOTask4Description(), Task[3]);
-		VerifyString(getSOTask5Description(), Task[4]);
-		VerifyString(getSOTask6Description(), Task[5]);
+		verifyString(getRequestedSOcustomerName(), requester);
+		verifyString(getMoveOutSOcustomerName(), moveOutCustomer);
+		verifyString(getMoveInSOcustomerName(), moveInCustomer);
+		verifyString(getSOscheduledDate(), scheduledate);
+		verifyString(getSOrequestedDate(), requestedDate);
+		verifyString(getSOTask1Description(), Task[0]);
+		verifyString(getSOTask2Description(), Task[1]);
+		verifyString(getSOTask3Description(), Task[2]);
+		verifyString(getSOTask4Description(), Task[3]);
+		verifyString(getSOTask5Description(), Task[4]);
+		verifyString(getSOTask6Description(), Task[5]);
 		VerifyStringContains(getServiceOrderDrillbackURL(), getServiceOrderNumber());
-		VerifyString(getServiceOrderDescription(), description);
-		Sql.VerifyServiceOrders(LocationID, getServiceOrderNumber());
+		verifyString(getServiceOrderDescription(), description);
+		Sql.VerifyServiceOrders(locationID, getServiceOrderNumber());
 	}
 
 	public void verifyServiceOrderdetails(String requester, String moveOutCustomer, String moveInCustomer,
-			String scheduledate, String requestedDate, String[] Task, String LocationID)
+			String scheduledate, String requestedDate, String[] Task, String locationID)
 			throws ClassNotFoundException, SQLServerException, SQLException {
 
-		VerifyString(getRequestedSOcustomerName(), requester);
-		VerifyString(getMoveOutSOcustomerName(), moveOutCustomer);
-		VerifyString(getMoveInSOcustomerName(), moveInCustomer);
-		VerifyString(getSOscheduledDate(), scheduledate);
-		VerifyString(getSOrequestedDate(), requestedDate);
-		VerifyString(getSOTask1Description(), Task[0]);
-		VerifyString(getSOTask2Description(), Task[1]);
-		VerifyString(getSOTask3Description(), Task[2]);
-		VerifyString(getSOTask4Description(), Task[3]);
-		VerifyString(getSOTask5Description(), Task[4]);
-		VerifyString(getSOTask6Description(), Task[5]);
+		verifyString(getRequestedSOcustomerName(), requester);
+		verifyString(getMoveOutSOcustomerName(), moveOutCustomer);
+		verifyString(getMoveInSOcustomerName(), moveInCustomer);
+		verifyString(getSOscheduledDate(), scheduledate);
+		verifyString(getSOrequestedDate(), requestedDate);
+		verifyString(getSOTask1Description(), Task[0]);
+		verifyString(getSOTask2Description(), Task[1]);
+		verifyString(getSOTask3Description(), Task[2]);
+		verifyString(getSOTask4Description(), Task[3]);
+		verifyString(getSOTask5Description(), Task[4]);
+		verifyString(getSOTask6Description(), Task[5]);
 		VerifyStringContains(getServiceOrderDrillbackURL(), getServiceOrderNumber());
-		Sql.VerifyServiceOrders(LocationID, getServiceOrderNumber());
+		Sql.VerifyServiceOrders(locationID, getServiceOrderNumber());
 	}
 }

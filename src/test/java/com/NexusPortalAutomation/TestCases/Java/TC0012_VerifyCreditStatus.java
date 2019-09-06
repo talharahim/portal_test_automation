@@ -20,10 +20,10 @@ public class TC0012_VerifyCreditStatus extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String LocationID = "LOC@0001";
-	public String LocationID2 = "TESTLOCATION01";
-	public String LocationID3 = "TESTLOCATION03";
-	CommonMethods ComMethd = new CommonMethods();
+	public String locationID = "LOC@0001";
+	public String locationID2 = "TESTLOCATION01";
+	public String locationID3 = "TESTLOCATION03";
+	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -31,29 +31,29 @@ public class TC0012_VerifyCreditStatus extends BaseClass {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		dbSrch.EnterSearchText(LocationID3);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(locationID3);
+		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID3, dashBoard.GetLoggedCustomerLocationId());
+		cmnMethods.verifyString(locationID3, dashBoard.getLoggedCustomerName());
 		// Verify Good Credit
 		dashBoard.VerifyCredit("EXCELLEN");
-		dashBoard.LogOut();
+		dashBoard.logout();
 		login();
-		dbSrch.EnterSearchText(LocationID);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(locationID);
+		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
 		// Verify Good Credit
 		dashBoard.VerifyCredit("BAD");
-		dashBoard.LogOut();
+		dashBoard.logout();
 //		login();
-//		dbSrch.EnterSearchText(LocationID2);
-//		dbSrch.ClickCustomer();
+//		dbSrch.enterSearchText(locationID2);
+//		dbSrch.clickCustomerName();
 //		// Verify Customer Location Id Updated for Test
-//		ComMethd.VerifyString(LocationID2, dashBoard.GetLoggedCustomerLocationId());
+//		cmnMethods.VerifyString(locationID2, dashBoard.GetLoggedCustomerlocationID());
 //		// Verify Good Credit
 //		dashBoard.VerifyCredit("WORST");
-//		dashBoard.LogOut();
+//		dashBoard.logout();
 
 	}
 

@@ -10,9 +10,9 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 
 public class TC0002_TestSearchAutobyFirstName extends BaseClass {
 
-	public String UserName = "Automation Mate";
-	CommonMethods ComMethd = new CommonMethods();
-	public String Title = "Mr.";
+	public String username = "Automation Mate";
+	CommonMethods commonMethod = new CommonMethods();
+	public String title = "Mr.";
 	/*
 	 * This test the search by Customer's First Name
 	 * 
@@ -29,13 +29,13 @@ public class TC0002_TestSearchAutobyFirstName extends BaseClass {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		dbSrch.EnterSearchText(UserName);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(username);
+		dbSrch.clickCustomerName();
 		// Verify Login Name
 		
-		ComMethd.VerifyString(Title, dashBoard.getCustomerTitle());
-		ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
-		dashBoard.LogOut();
+		commonMethod.verifyString(title, dashBoard.getCustomertitle());
+		commonMethod.verifyString(username, dashBoard.getLoggedCustomerName());
+		dashBoard.logout();
 
 	}
 

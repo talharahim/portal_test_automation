@@ -30,8 +30,8 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "USR_Name")
 	WebElement LoggedUserLink;
 
-	@FindBy(id = "ACTION_Logout")
-	WebElement LogOutLink;
+	@FindBy(id = "ACTION_logout")
+	WebElement logoutLink;
 
 	@FindBy(id = "'LOC_Location_Id'")
 	WebElement CustomerLocId;
@@ -44,15 +44,15 @@ public class DashBoard extends CommonMethods {
 
 	@FindBy(id = "'LOC_Address_City'")
 	@CacheLookup
-	WebElement CustomerAddressCity;
+	WebElement customerAddressCity;
 
 	@FindBy(id = "'LOC_Address_State'")
 	@CacheLookup
-	WebElement CustomerAddressState;
+	WebElement customerAddressState;
 
 	@FindBy(id = "'LOC_Address_ZipCode'")
 	@CacheLookup
-	WebElement CustomerAddressZip;
+	WebElement customerAddressZip;
 
 	@FindBy(id = "ALERTO_Action_Button")
 	WebElement AlertOk;
@@ -352,9 +352,9 @@ public class DashBoard extends CommonMethods {
 	@CacheLookup
 	WebElement ServiceOerder_Drillback;
 
-	@FindBy(id = "CUST_Title")
+	@FindBy(id = "CUST_title")
 	@CacheLookup
-	WebElement Customer_Title;
+	WebElement Customer_title;
 
 	@FindBy(id = "ACTION_Payment")
 	@CacheLookup
@@ -380,9 +380,9 @@ public class DashBoard extends CommonMethods {
 	@CacheLookup
 	WebElement Recent_ViewAll;
 
-	@FindBy(id = "TRAN_Title")
+	@FindBy(id = "TRAN_title")
 	@CacheLookup
-	WebElement TransactionPage_Title;
+	WebElement TransactionPage_title;
 
 	@FindBy(id = "SOACT_Search_Input")
 	@CacheLookup
@@ -466,6 +466,28 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "BILL_Budget")
 	WebElement BILLBudget;
 	
+	@FindBy(xpath = "//mat-select[@id='mat-select-2']//div[@class='mat-select-arrow']")
+	WebElement Trans_type;
+	
+	@FindBy(id = "TRAN_Select_Type_Option_0")
+	WebElement TransType_all;
+	
+	
+	@FindBy(id = "TRAN_Select_Type_Option_3")
+	WebElement TransType_bill;
+	
+	public void transaction_filterbyBill() throws InterruptedException
+	{
+		Trans_type.click();
+		TransType_all.click();
+		Thread.sleep(2000);
+		TransType_all.click();
+		Thread.sleep(2000);
+		TransType_bill.click();
+		
+		
+	}
+	
 	public String getBillBudgetURL() {
 
 		waitForObject(driver, BILLBudget);
@@ -507,8 +529,8 @@ public class DashBoard extends CommonMethods {
 
 	public void verifyEnhancedNotes(String CusNotes, String LocNotes) {
 
-		VerifyString(getElementText(CustomerNotes, "Customer Notes"), CusNotes);
-		VerifyString(getElementText(LocationNotes, "Location Notes"), LocNotes);
+		verifyString(getElementText(CustomerNotes, "Customer Notes"), CusNotes);
+		verifyString(getElementText(LocationNotes, "Location Notes"), LocNotes);
 		log("VerifyEnhancedNotes", driver);
 
 	}
@@ -607,7 +629,7 @@ public class DashBoard extends CommonMethods {
 		ClickElement(SOACTButtonAction, "Action Button");
 
 		if (transferSuccessMessage.isDisplayed()) {
-			VerifyString(transferSuccessMessage.getText(), "Service successfully Started");
+			verifyString(transferSuccessMessage.getText(), "Service successfully Started");
 			ClickElement(SOACTButtonDone, "Done Button");
 		} else {
 			Assert.fail("Order not submitted");
@@ -617,18 +639,18 @@ public class DashBoard extends CommonMethods {
 
 	public void verifyRecent(String Type, String Date, String Amount) {
 		log("Verifying Recent Records");
-		VerifyString(Type, getElementText(Recent_Record1_Type, "Recent Record Type"));
-		VerifyString(Date, getElementText(Recent_Record1_Date, "Recent Record Date"));
-		VerifyString(Amount, getElementText(Recent_Record1_Amount, "Recent Record Amount"));
+		verifyString(Type, getElementText(Recent_Record1_Type, "Recent Record Type"));
+		verifyString(Date, getElementText(Recent_Record1_Date, "Recent Record Date"));
+		verifyString(Amount, getElementText(Recent_Record1_Amount, "Recent Record Amount"));
 
 	}
 
-	public void ClickRecent_ViewAll() {
+	public void clickRecentSearch_ViewAll() {
 		ClickElement(Recent_ViewAll, "Recent View All");
 	}
 
 	public String GetTransactionPageTile() {
-		return getElementText(TransactionPage_Title, "Transaction Page Title");
+		return getElementText(TransactionPage_title, "Transaction Page title");
 	}
 
 	public void clickDashBoardBookMark() {
@@ -645,9 +667,9 @@ public class DashBoard extends CommonMethods {
 
 	}
 
-	public String getCustomerTitle() {
-		waitForObject(driver, Customer_Title);
-		return getElementText(Customer_Title, "CustomerTitle");
+	public String getCustomertitle() {
+		waitForObject(driver, Customer_title);
+		return getElementText(Customer_title, "Customertitle");
 
 	}
 
@@ -838,7 +860,7 @@ public class DashBoard extends CommonMethods {
 		Thread.sleep(1000);
 		findElementByid("ENH_Drillback_Location");
 		findElementByid("customer-person");
-		findElementByid("ENH_Title");
+		findElementByid("ENH_title");
 		log("Verify Notes Drillback ", driver);
 
 	}
@@ -875,19 +897,19 @@ public class DashBoard extends CommonMethods {
 	}
 
 	public void verifyServiceWarningSingleSO(String serviceOrder) {
-		VerifyString(findElementByid("XFER_Warning_Message").getText(), "Service Order Exist. TRANSFER");
+		verifyString(findElementByid("XFER_Warning_Message").getText(), "Service Order Exist. TRANSFER");
 		VerifyStringContains(findElementByid("idPrefix + '_Warning_Drillback'").getAttribute("href"), serviceOrder);
 
 	}
 
 	public void verifyServiceWarningMultiSO(String serviceOrder) {
-		VerifyString(findElementByid("XFER_Warning_Message").getText(), "Multiple Service Orders Exist. TRANSFER");
+		verifyString(findElementByid("XFER_Warning_Message").getText(), "Multiple Service Orders Exist. TRANSFER");
 		VerifyStringContains(findElementByid("idPrefix + '_Warning_Drillback'").getAttribute("href"), serviceOrder);
 
 	}
 
 	public void verifyServiceWarningSOExists(String serviceOrder) {
-		VerifyString(findElementByid("XFER_Warning_Message").getText(), "Service Order Exist. TRANSFER");
+		verifyString(findElementByid("XFER_Warning_Message").getText(), "Service Order Exist. TRANSFER");
 		VerifyStringContains(findElementByid("idPrefix + '_Warning_Drillback'").getAttribute("href"), serviceOrder);
 
 	}
@@ -1111,47 +1133,47 @@ public class DashBoard extends CommonMethods {
 		WaitAngular(driver);
 		log("Verifying Customer Details");
 		waitForObject(driver, CustomerSSN);
-		VerifyString(ssn, getElementText(CustomerSSN, "Customer SSN"));
+		verifyString(ssn, getElementText(CustomerSSN, "Customer SSN"));
 
 		waitForObject(driver, DriverLic);
-		VerifyString(lic, getElementText(DriverLic, "Driver License"));
+		verifyString(lic, getElementText(DriverLic, "Driver License"));
 
 		waitForObject(driver, Phone1);
-		VerifyString(phone, getElementText(Phone1, "Phone Number"));
+		verifyString(phone, getElementText(Phone1, "Phone Number"));
 
 		waitForObject(driver, PhoneExt1);
-		VerifyString(ext, getElementText(PhoneExt1, "Phone Ext"));
+		verifyString(ext, getElementText(PhoneExt1, "Phone Ext"));
 
 		waitForObject(driver, Email);
-		VerifyString(email, getElementText(Email, "Email"));
+		verifyString(email, getElementText(Email, "Email"));
 
 		waitForObject(driver, AddressLine1);
-		VerifyString(add, getElementText(AddressLine1, "AddressLine1"));
+		verifyString(add, getElementText(AddressLine1, "AddressLine1"));
 
 		waitForObject(driver, AddressCityStateZip);
-		VerifyString(acsz, getElementText(AddressCityStateZip, "AddressCityStateZip"));
+		verifyString(acsz, getElementText(AddressCityStateZip, "AddressCityStateZip"));
 	}
 
 	public void VerifyCustomerDetailsNoEmailExt(String ssn, String lic, String phone, String add, String acsz) {
 		WaitAngular(driver);
 		log("Verifying Customer Details");
 		waitForObject(driver, CustomerSSN);
-		VerifyString(ssn, getElementText(CustomerSSN, "Customer SSN"));
+		verifyString(ssn, getElementText(CustomerSSN, "Customer SSN"));
 
 		waitForObject(driver, DriverLic);
-		VerifyString(lic, getElementText(DriverLic, "Driver License"));
+		verifyString(lic, getElementText(DriverLic, "Driver License"));
 
 		waitForObject(driver, Phone1);
-		VerifyString(phone, getElementText(Phone1, "Phone Number"));
+		verifyString(phone, getElementText(Phone1, "Phone Number"));
 
 		waitForObject(driver, NoEmail);
-		VerifyString("none", getElementText(NoEmail, "Email"));
+		verifyString("none", getElementText(NoEmail, "Email"));
 
 		waitForObject(driver, AddressLine1);
-		VerifyString(add, getElementText(AddressLine1, "AddressLine1"));
+		verifyString(add, getElementText(AddressLine1, "AddressLine1"));
 
 		waitForObject(driver, AddressCityStateZip);
-		VerifyString(acsz, getElementText(AddressCityStateZip, "AddressCityStateZip"));
+		verifyString(acsz, getElementText(AddressCityStateZip, "AddressCityStateZip"));
 	}
 
 	public void ClickContactEdit() {
@@ -1199,7 +1221,7 @@ public class DashBoard extends CommonMethods {
 
 	}
 
-	public void ClickBookMarkDisabled() {
+	public void clickBookmarkDisabled() {
 		try {
 			log("Click Bookmark");
 			if (BookMarkIconEnabled.isDisplayed()) {
@@ -1248,11 +1270,11 @@ public class DashBoard extends CommonMethods {
 
 	public void VerifyCredit(String creditStatus) {
 		log("Verify Credit Status");
-		VerifyString(CreditRating.getText(), creditStatus);
+		verifyString(CreditRating.getText(), creditStatus);
 		WaitAngular(driver);
 	}
 
-	public void ClickBookMarkEnabled() {
+	public void clickBookmarkEnabled() {
 
 		ClickElement(BookMarkIconDisabled, "Book Mark");
 
@@ -1284,7 +1306,7 @@ public class DashBoard extends CommonMethods {
 
 	public void verifySearchAccountResult(String elementString, String elementid) {
 		try {
-			VerifyString(elementString, (findElementByid(elementid).getText()));
+			verifyString(elementString, (findElementByid(elementid).getText()));
 		} catch (NoSuchElementException e) {
 			Assert.fail("Element Not found");
 		}
@@ -1346,13 +1368,13 @@ public class DashBoard extends CommonMethods {
 		WaitAngular(driver);
 		log("Verifying Address Details");
 		waitForObject(driver, AddressLine);
-		VerifyString(addline, getElementText(AddressLine, "Address Line Result"));
+		verifyString(addline, getElementText(AddressLine, "Address Line Result"));
 		waitForObject(driver, AddressCity);
-		VerifyString(addCity, getElementText(AddressCity, "Address City Result"));
+		verifyString(addCity, getElementText(AddressCity, "Address City Result"));
 		waitForObject(driver, AddressState);
-		VerifyString(addState, getElementText(AddressState, "Address State Result"));
+		verifyString(addState, getElementText(AddressState, "Address State Result"));
 		waitForObject(driver, AddressZipCode);
-		VerifyString(addZip, getElementText(AddressZipCode, "Address State Result"));
+		verifyString(addZip, getElementText(AddressZipCode, "Address State Result"));
 
 	}
 
@@ -1362,7 +1384,7 @@ public class DashBoard extends CommonMethods {
 
 	}
 
-	public void ClickTransactionLink() {
+	public void clickTransactionLink() {
 		log("Clicking Transaction Link");
 		ClickElement(TransactionLink, "Transaction Link");
 
@@ -1386,12 +1408,12 @@ public class DashBoard extends CommonMethods {
 
 	public HashMap<String, String> GetBillingInfo() {
 		WaitAngular(driver);
-		WaitForObjectbyId(driver, "BILL_Current_Balance");
-		WaitForObjectbyId(driver, "BILL_Unposted_Balance");
-		WaitForObjectbyId(driver, "BILL_Account_Balance");
-		WaitForObjectbyId(driver, "BILL_Past_Due");
-		WaitForObjectbyId(driver, "BILL_Installment_Budget");
-		WaitForObjectbyId(driver, "BILL_Over_Short");
+		waitforObjectById(driver, "BILL_Current_Balance");
+		waitforObjectById(driver, "BILL_Unposted_Balance");
+		waitforObjectById(driver, "BILL_Account_Balance");
+		waitforObjectById(driver, "BILL_Past_Due");
+		waitforObjectById(driver, "BILL_Installment_Budget");
+		waitforObjectById(driver, "BILL_Over_Short");
 
 		HashMap<String, String> BillingInfo = new HashMap<String, String>();
 		BillingInfo.put("BillDue", BILL_PastDue.getText());
@@ -1493,7 +1515,7 @@ public class DashBoard extends CommonMethods {
 		return BillingSrvcInfo;
 	}
 
-	public String GetLogUserName() throws InterruptedException {
+	public String GetLogusername() throws InterruptedException {
 
 		String result = "";
 		try {
@@ -1501,7 +1523,7 @@ public class DashBoard extends CommonMethods {
 			if (LoggedUserLink.isDisplayed())
 
 				result = getElementText(LoggedUserLink, "LoggedUserLink");
-			log("UserName found " + result);
+			log("username found " + result);
 		} catch (Exception e) {
 			e.printStackTrace();
 			Assert.assertTrue(false, "User Name not found");
@@ -1526,7 +1548,7 @@ public class DashBoard extends CommonMethods {
 
 	}
 
-	public String GetLoggedCustomerLocationId() throws InterruptedException {
+	public String getLoggedCustomerName() throws InterruptedException {
 
 		String result = "";
 		try {
@@ -1543,7 +1565,7 @@ public class DashBoard extends CommonMethods {
 
 	}
 
-	public String GetLoggedCustomerName() throws InterruptedException {
+	public String getLoggedCustomerName() throws InterruptedException {
 
 		String result = "";
 		try {
@@ -1558,15 +1580,15 @@ public class DashBoard extends CommonMethods {
 		return result;
 	}
 
-	public String GetLoggedCustomerAddress() throws InterruptedException {
+	public String getLoggedCustomerAddress() throws InterruptedException {
 
 		String result = "";
 		try {
 			WaitAngular(driver);
-			if (CustomerAddressCity.isDisplayed())
-				result = getElementText(CustomerAddressCity, "Customer City") + " "
-						+ getElementText(CustomerAddressState, "Customer State") + " "
-						+ getElementText(CustomerAddressZip, "Customer Zip");
+			if (customerAddressCity.isDisplayed())
+				result = getElementText(customerAddressCity, "Customer City") + " "
+						+ getElementText(customerAddressState, "Customer State") + " "
+						+ getElementText(customerAddressZip, "Customer Zip");
 		} catch (Exception e) {
 			e.printStackTrace();
 			Assert.assertTrue(false, "Customer Address not found =" + result);
@@ -1576,7 +1598,7 @@ public class DashBoard extends CommonMethods {
 
 	}
 
-	public void LogOut() throws InterruptedException {
+	public void logout() throws InterruptedException {
 		try {
 
 			WaitAngular(driver);
@@ -1601,18 +1623,18 @@ public class DashBoard extends CommonMethods {
 		}
 
 		try {
-			waitForObject(this.driver, LogOutLink);
+			waitForObject(this.driver, logoutLink);
 			Thread.sleep(300);
-			ClickElement(LogOutLink, "LogOut Link");
+			ClickElement(logoutLink, "logout Link");
 			WaitAngular(driver);
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
-			Assert.assertTrue(false, "Logout Link not found");
+			Assert.assertTrue(false, "logout Link not found");
 		}
 
 	}
 
-	public void ClickUserName() throws InterruptedException {
+	public void Clickusername() throws InterruptedException {
 
 		ClickElement(LoggedUserLink, "User Name Link");
 
@@ -1620,12 +1642,12 @@ public class DashBoard extends CommonMethods {
 
 	public void ClickOk() throws InterruptedException {
 
-		WaitForObjectbyId(this.driver, "ALERTO_Action_Button");
+		waitforObjectById(this.driver, "ALERTO_Action_Button");
 		ClickElement(AlertOk, "Alert OK");
 
 	}
 
-	public void ClickDynamicOk() {
+	public void clickDynamicOk() {
 
 		log("Click Dynamic Ok");
 		// Not waiting for element as it will throw exception

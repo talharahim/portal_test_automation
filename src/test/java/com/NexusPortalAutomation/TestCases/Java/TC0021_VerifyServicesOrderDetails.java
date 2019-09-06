@@ -20,10 +20,10 @@ public class TC0021_VerifyServicesOrderDetails extends BaseClass {
 	 * 
 	 * @Since 2019-06-14
 	 */
-	public String LocationID = "LOC@0001";
+	public String locationID = "LOC@0001";
 	public String CustomerID = "0000011111";
 	public String ServerURL = GetDrillBackServerURL();
-	CommonMethods ComMethd = new CommonMethods();
+	CommonMethods cmnMethods = new CommonMethods();
 	String ServiceOrderReqId = "REQ-EST-ELE";
 	String ServiceOrderDescription = "Meter Reading For Estimate Electric";
 	String ServiceOrderScheduledDate = "May 17, 2019";
@@ -44,32 +44,32 @@ public class TC0021_VerifyServicesOrderDetails extends BaseClass {
 	public void TestServiceOrderDetails() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
-		CommonMethods ComMethd = new CommonMethods();
+		CommonMethods cmnMethods = new CommonMethods();
 		login();
-		dbSrch.EnterSearchText(LocationID);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(locationID);
+		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
 		// Verify Contact is updated accordingly
 		dashBoard.ClickServiceOrderLink();
 		dashBoard.ServOrd_SelectDateAnyTime();
 		// Verify Service Order details
 		HashMap<String, String> SrvcOrderInfo = dashBoard.GetServiceOrderDetails();
-		ComMethd.VerifyString(ServiceOrderReqId, SrvcOrderInfo.get("ServiceOrderReqId"));
-		ComMethd.VerifyString(ServiceOrderDescription, SrvcOrderInfo.get("ServiceOrderDescription"));
-		ComMethd.VerifyString(ServiceOrderScheduledDate, SrvcOrderInfo.get("ServiceOrderScheduledDate"));
-		ComMethd.VerifyString(SOLVServiceOrderId, SrvcOrderInfo.get("SOLVServiceOrderId"));
-		ComMethd.VerifyString(SODVStatus, SrvcOrderInfo.get("SODVStatus"));
-		ComMethd.VerifyString(SODVDescriptionRequest, SrvcOrderInfo.get("SODVDescriptionRequest"));
-		ComMethd.VerifyString(SODVRequestId, SrvcOrderInfo.get("SODVRequestId"));
-		ComMethd.VerifyString(SODVRequestedDate, SrvcOrderInfo.get("SODVRequestedDate"));
-		ComMethd.VerifyString(SODVRequestedTime, SrvcOrderInfo.get("SODVRequestedTime"));
-		ComMethd.VerifyString(SODVScheduledDate, SrvcOrderInfo.get("SODVScheduledDate"));
-		ComMethd.VerifyString(SODVScheduledTime, SrvcOrderInfo.get("SODVScheduledTime"));
-		ComMethd.VerifyString(SODVTaskDescription, SrvcOrderInfo.get("SODVTaskDescription"));
-		ComMethd.VerifyString(SODVTaskEmployeeId, SrvcOrderInfo.get("SODVTaskEmployeeId"));
-		ComMethd.VerifyString(SODVTaskCompletedDate, SrvcOrderInfo.get("SODVTaskCompletedDate"));
-		dashBoard.LogOut();
+		cmnMethods.verifyString(ServiceOrderReqId, SrvcOrderInfo.get("ServiceOrderReqId"));
+		cmnMethods.verifyString(ServiceOrderDescription, SrvcOrderInfo.get("ServiceOrderDescription"));
+		cmnMethods.verifyString(ServiceOrderScheduledDate, SrvcOrderInfo.get("ServiceOrderScheduledDate"));
+		cmnMethods.verifyString(SOLVServiceOrderId, SrvcOrderInfo.get("SOLVServiceOrderId"));
+		cmnMethods.verifyString(SODVStatus, SrvcOrderInfo.get("SODVStatus"));
+		cmnMethods.verifyString(SODVDescriptionRequest, SrvcOrderInfo.get("SODVDescriptionRequest"));
+		cmnMethods.verifyString(SODVRequestId, SrvcOrderInfo.get("SODVRequestId"));
+		cmnMethods.verifyString(SODVRequestedDate, SrvcOrderInfo.get("SODVRequestedDate"));
+		cmnMethods.verifyString(SODVRequestedTime, SrvcOrderInfo.get("SODVRequestedTime"));
+		cmnMethods.verifyString(SODVScheduledDate, SrvcOrderInfo.get("SODVScheduledDate"));
+		cmnMethods.verifyString(SODVScheduledTime, SrvcOrderInfo.get("SODVScheduledTime"));
+		cmnMethods.verifyString(SODVTaskDescription, SrvcOrderInfo.get("SODVTaskDescription"));
+		cmnMethods.verifyString(SODVTaskEmployeeId, SrvcOrderInfo.get("SODVTaskEmployeeId"));
+		cmnMethods.verifyString(SODVTaskCompletedDate, SrvcOrderInfo.get("SODVTaskCompletedDate"));
+		dashBoard.logout();
 	}
 
 }

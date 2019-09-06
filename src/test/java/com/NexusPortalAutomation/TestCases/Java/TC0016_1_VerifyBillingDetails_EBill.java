@@ -20,10 +20,10 @@ public class TC0016_1_VerifyBillingDetails_EBill extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String LocationID = "LOC@0001";
-	public String LocationID2 = "LOC@0002";
+	public String locationID = "LOC@0001";
+	public String locationID2 = "LOC@0002";
 
-	CommonMethods ComMethd = new CommonMethods();
+	CommonMethods cmnMethods = new CommonMethods();
 	String Ebill = "ON";
 	String Ebilloff = "OFF";
 	String AutoPayURL = "https://www.invoicecloud.com/integrations/redirect/Csr?BillerGUID";
@@ -34,22 +34,22 @@ public class TC0016_1_VerifyBillingDetails_EBill extends BaseClass {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		dbSrch.EnterSearchText(LocationID);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(locationID);
+		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
 		// Verify Billing Information
-		ComMethd.VerifyString(dashBoard.getEBill(), Ebill);
-		dashBoard.LogOut();
+		cmnMethods.verifyString(dashBoard.getEBill(), Ebill);
+		dashBoard.logout();
 		// Verifying Ebill Location off
 		login();
-		dbSrch.EnterSearchText(LocationID2);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(locationID2);
+		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID2, dashBoard.GetLoggedCustomerLocationId());
+		cmnMethods.verifyString(locationID2, dashBoard.getLoggedCustomerName());
 		// Verify Billing Information
-		ComMethd.VerifyString(dashBoard.getEBill(), Ebilloff);
-		dashBoard.LogOut();
+		cmnMethods.verifyString(dashBoard.getEBill(), Ebilloff);
+		dashBoard.logout();
 	}
 
 }

@@ -48,7 +48,7 @@ public class DashBoardSearch extends CommonMethods {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void EnterSearchText(String txt) {
+	public void enterSearchText(String txt) {
 		try {
 			log("Enter Text for Search =" + txt);
 			waitForObject(this.driver, searchBar);
@@ -60,7 +60,7 @@ public class DashBoardSearch extends CommonMethods {
 		}
 	}
 
-	public void ClickRecent() {
+	public void clickRecentSearch() {
 		log("Click Recent");
 		recentBar.click();
 	}
@@ -70,7 +70,7 @@ public class DashBoardSearch extends CommonMethods {
 		toolBarSaved.click();
 	}
 
-	public void ClickCustomer() {
+	public void clickCustomerName() {
 
 		SrchCustomer.click();
 		log("Click Customer", driver);
@@ -78,12 +78,12 @@ public class DashBoardSearch extends CommonMethods {
 
 	}
 
-	public String GetRecentCustomerStateCity() {
+	public String getRecentCustomerCity() {
 		log("Recent Customer =" + RecentCustomerCityState.getText(), driver);
 		return RecentCustomerCityState.getText();
 	}
 
-	public boolean ClickRecentCustomerName() {
+	public boolean clickRecentSearchCustomerName() {
 		log("Recent Customer =" + RecentCustomerCityState.getText(), driver);
 		try {
 			RecentCustomerCityState.click();

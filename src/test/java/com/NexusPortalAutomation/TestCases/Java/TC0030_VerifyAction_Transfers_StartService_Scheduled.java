@@ -28,8 +28,8 @@ public class TC0030_VerifyAction_Transfers_StartService_Scheduled extends BaseCl
 	 * @Since 2019-06-10
 	 */
 
-	public String LocationID = "LOC@0004";
-	public String LocationID2 = "LOC@0005";
+	public String locationID = "LOC@0004";
+	public String locationID2 = "LOC@0005";
 	public String ServerURL = GetDrillBackServerURL();
 	public String DefaultCustomer = "Mr. VACANT VACANT";
 	public String requestedbY = "Mr. Automation Mate";
@@ -44,7 +44,7 @@ public class TC0030_VerifyAction_Transfers_StartService_Scheduled extends BaseCl
 	public String Task5 = "Deposit Payment-new Customer E";
 	public String Task6 = "Prepayment Required-new Custom";
 	public String[] Task = {"Meter Reading-electric", "Charge New Customer","Property Transfer", "Deposit Request-new Customer", "Deposit Payment-new Customer E","Prepayment Required-new Custom"};
-	CommonMethods ComMethd = new CommonMethods();
+	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -53,15 +53,15 @@ public class TC0030_VerifyAction_Transfers_StartService_Scheduled extends BaseCl
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		Dashboard_Transfers dashBoard = new Dashboard_Transfers(driver);
 		MySQLDataExec Sql = new MySQLDataExec();
-		Sql.DeleteServiceOrders(LocationID);
-		Sql.DeleteServiceOrdersHistory(LocationID);
+		Sql.DeleteServiceOrders(locationID);
+		Sql.DeleteServiceOrdersHistory(locationID);
 		login();
-		dbSrch.EnterSearchText(LocationID);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(locationID);
+		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
 		// Verify Contact is updated accordingly
-		// ComMethd.VerifyString(servTabURL, dashBoard.GetServiceTabDrillBackUrl());
+		// cmnMethods.VerifyString(servTabURL, dashBoard.GetServiceTabDrillBackUrl());
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
 		//DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
@@ -84,9 +84,9 @@ public class TC0030_VerifyAction_Transfers_StartService_Scheduled extends BaseCl
 		Date date = (Date) formatter.parse(moveOutstart_dt);
 		SimpleDateFormat newFormat = new SimpleDateFormat("MMM d, yyyy");
 		String moveOutstart_dtfinalString = newFormat.format(date);
-		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,moveOutstart_dtfinalString,moveOutstart_dtfinalString,Task,LocationID);
+		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,moveOutstart_dtfinalString,moveOutstart_dtfinalString,Task,locationID);
 		log(ServiceOrder);
-		dashBoard.LogOut();
+		dashBoard.logout();
 	}
 
 }

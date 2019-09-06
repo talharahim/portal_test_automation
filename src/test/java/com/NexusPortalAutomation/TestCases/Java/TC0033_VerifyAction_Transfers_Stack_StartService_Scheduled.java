@@ -30,10 +30,10 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 	 */
 	public String[] Task = { "Meter Reading-electric", "Charge New Customer", "Property Transfer",
 			"Deposit Request-new Customer", "Deposit Payment-new Customer E", "Prepayment Required-new Custom" };
-	public String LocationID = "LOC@0004";
-	public String LocationID2 = "LOC@0005";
-	public String LocationID3 = "AUTOLOC001";
-	public String LocationID4 = "STATEMENTS001";
+	public String locationID = "LOC@0004";
+	public String locationID2 = "LOC@0005";
+	public String locationID3 = "AUTOLOC001";
+	public String locationID4 = "STATEMENTS001";
 	public String ServerURL = GetDrillBackServerURL();
 	public String DefaultCustomer = "Mr. VACANT VACANT";
 	public String requestedbY = "Mr. Automation Mate";
@@ -47,7 +47,7 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 	public String Task4 = "Deposit Request-new Customer";
 	public String Task5 = "Deposit Payment-new Customer E";
 	public String Task6 = "Prepayment Required-new Custom";
-	CommonMethods ComMethd = new CommonMethods();
+	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -56,19 +56,19 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		Dashboard_Transfers dashBoard = new Dashboard_Transfers(driver);
 		MySQLDataExec Sql = new MySQLDataExec();
-		Sql.DeleteServiceOrders(LocationID);
-		Sql.DeleteServiceOrdersHistory(LocationID);
-		Sql.DeleteServiceOrders(LocationID2);
-		Sql.DeleteServiceOrdersHistory(LocationID2);
-		Sql.DeleteServiceOrders(LocationID3);
-		Sql.DeleteServiceOrdersHistory(LocationID3);
-		Sql.DeleteServiceOrders(LocationID4);
-		Sql.DeleteServiceOrdersHistory(LocationID4);
+		Sql.DeleteServiceOrders(locationID);
+		Sql.DeleteServiceOrdersHistory(locationID);
+		Sql.DeleteServiceOrders(locationID2);
+		Sql.DeleteServiceOrdersHistory(locationID2);
+		Sql.DeleteServiceOrders(locationID3);
+		Sql.DeleteServiceOrdersHistory(locationID3);
+		Sql.DeleteServiceOrders(locationID4);
+		Sql.DeleteServiceOrdersHistory(locationID4);
 		login();
-		dbSrch.EnterSearchText(LocationID);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(locationID);
+		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
 		dashBoard.SelectTransferType_Transfer_Start();
@@ -112,10 +112,10 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		dashBoard.ClickServOrder2();
 		String ServiceOrder2 = dashBoard.getServiceOrderNumber();
 		String ServiceOrderURL2 = dashBoard.getServiceOrderDrillbackURL();
-		ComMethd.VerifyStringContains(ServiceOrderURL2, ServiceOrder2);
-		ComMethd.VerifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
+		cmnMethods.VerifyStringContains(ServiceOrderURL2, ServiceOrder2);
+		cmnMethods.verifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
 		log(ServiceOrder2);
-		Sql.VerifyServiceOrders(LocationID, ServiceOrder2);
+		Sql.VerifyServiceOrders(locationID, ServiceOrder2);
 		dashBoard.clickrefreshPage();
 
 		/*
@@ -143,24 +143,24 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		moveOutCustomer = "Mr. Movein Cus";
 		moveInCustomer = "Mr. Alert Test (Customeralert01)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer, moveOutCustomer, moveInCustomer, newDate2,
-				moveOutstart_dtfinalString, Task, LocationID);
+				moveOutstart_dtfinalString, Task, locationID);
 
 		// Verifying Second order in the stack
 		dashBoard.ClickServOrder2();
-		ComMethd.VerifyStringContains(ServiceOrderURL2, ServiceOrder2);
-		ComMethd.VerifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
+		cmnMethods.VerifyStringContains(ServiceOrderURL2, ServiceOrder2);
+		cmnMethods.verifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
 		moveOutCustomer = "Mr. Alert Test";
 		moveInCustomer = "Mr. Movein Cus (Moveincus2)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer, moveOutCustomer, moveInCustomer, newDate,
-				moveOutstart_dtfinalString, Task, LocationID);
+				moveOutstart_dtfinalString, Task, locationID);
 
 		// Verifying Third Transfer order in the stack
 		dashBoard.ClickServOrder1();
 		moveOutCustomer = "Mr. Automation Mate";
 		moveInCustomer = "Mr. Movein Cus (Moveincus2)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer, moveOutCustomer, moveInCustomer,
-				moveOutstart_dtfinalString, moveOutstart_dtfinalString, Task, LocationID);
-		dashBoard.LogOut();
+				moveOutstart_dtfinalString, moveOutstart_dtfinalString, Task, locationID);
+		dashBoard.logout();
 	}
 
 }

@@ -10,14 +10,14 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 
 public class TC0024_TestCustDetailSearch extends BaseClass {
 
-	public String UserName = "Automation Mate";
+	public String username = "Automation Mate";
 	public String Result1 = "Mate, Automation";
 	public String UserFname = "Automation";
 	public String UserLname = "Mate";
 	public String CustomerId = "AUTO1001";
 	public String Location = "LOC@0002";
-	CommonMethods ComMethd = new CommonMethods();
-	public String Title = "Mr.";
+	CommonMethods cmnMethods = new CommonMethods();
+	public String title = "Mr.";
 	/*
 	 * This test the search by Customer's First Name
 	 * 
@@ -34,32 +34,32 @@ public class TC0024_TestCustDetailSearch extends BaseClass {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		dbSrch.EnterSearchText(UserName);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(username);
+		dbSrch.clickCustomerName();
 
 		dashBoard.enterDashBoardSearch(UserFname);
-		ComMethd.VerifyString(Result1, dashBoard.getDashBoardSearchResult1Name());
+		cmnMethods.verifyString(Result1, dashBoard.getDashBoardSearchResult1Name());
 		dashBoard.clickDashBoardSearchResult1();
-		dashBoard.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
+		dashBoard.verifyString(username, dashBoard.getLoggedCustomerName());
 
 		dashBoard.enterDashBoardSearch(UserLname);
-		ComMethd.VerifyString(Result1, dashBoard.getDashBoardSearchResult1Name());
+		cmnMethods.verifyString(Result1, dashBoard.getDashBoardSearchResult1Name());
 		dashBoard.clickDashBoardSearchResult1();
-		dashBoard.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
+		dashBoard.verifyString(username, dashBoard.getLoggedCustomerName());
 
 		dashBoard.enterDashBoardSearch(CustomerId);
-		ComMethd.VerifyString(CustomerId, dashBoard.getDashBoardSearchResult1CustomerId());
+		cmnMethods.verifyString(CustomerId, dashBoard.getDashBoardSearchResult1CustomerId());
 		dashBoard.clickDashBoardSearchResult1();
-		dashBoard.VerifyString(CustomerId, dashBoard.GetLoggedCustomerId());
+		dashBoard.verifyString(CustomerId, dashBoard.GetLoggedCustomerId());
 
 		dashBoard.enterDashBoardSearch(Location);
-		ComMethd.VerifyString(Location, dashBoard.getDashBoardSearchResult1Location());
+		cmnMethods.verifyString(Location, dashBoard.getDashBoardSearchResult1Location());
 		dashBoard.clickDashBoardSearchResult1();
 		
-		dashBoard.VerifyString(Location, dashBoard.GetLoggedCustomerLocationId());
+		dashBoard.verifyString(Location, dashBoard.getLoggedCustomerName());
 		
 
-		dashBoard.LogOut();
+		dashBoard.logout();
 
 	}
 

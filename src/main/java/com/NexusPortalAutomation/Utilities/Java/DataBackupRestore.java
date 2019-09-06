@@ -68,7 +68,7 @@ public class DataBackupRestore {
 			// While loop to iterate through all data and print results
 
 			while (rs.next()) {
-				String locationID = rs.getString("umLocationID");
+				String locationID = rs.getString("umlocationID");
 				System.out.print(locationID);
 
 			}

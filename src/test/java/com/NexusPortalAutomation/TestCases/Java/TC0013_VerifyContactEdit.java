@@ -19,7 +19,7 @@ public class TC0013_VerifyContactEdit extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String LocationID = "LOC@0004";
+	public String locationID = "LOC@0004";
 	String ssn = "2312";
 	String lic = "Driv12312OUL312";
 	String phone = "(090) 078-6010";
@@ -27,7 +27,7 @@ public class TC0013_VerifyContactEdit extends BaseClass {
 	String email = "automation@cogsdale.com";
 	String add = "007 Test Apt";
 	String acsz = "New York NY 12345-67890";
-	CommonMethods ComMethd = new CommonMethods();
+	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -35,10 +35,10 @@ public class TC0013_VerifyContactEdit extends BaseClass {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		dbSrch.EnterSearchText(LocationID);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(locationID);
+		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-	    ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+	    cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
 		// Verify Contact is updated accordingly
 		dashBoard.ClickContactEdit();
 		dashBoard.updatePhone1("09007861112112");
@@ -56,7 +56,7 @@ public class TC0013_VerifyContactEdit extends BaseClass {
 		dashBoard.updateEmail("automation@cogsdale.com");
 		dashBoard.clickContactUpdate();
 		dashBoard.VerifyCustomerDetails(ssn, lic, phone, ext, email, add, acsz);
-		dashBoard.LogOut();
+		dashBoard.logout();
 	}
 
 }

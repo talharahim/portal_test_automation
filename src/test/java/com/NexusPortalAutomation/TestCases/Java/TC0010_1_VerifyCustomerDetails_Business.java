@@ -20,7 +20,7 @@ public class TC0010_1_VerifyCustomerDetails_Business extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	String LocationID = "BUSINESSLOC01";
+	String locationID = "BUSINESSLOC01";
 	String ssn = "5232";
 	String lic = "none";
 	String phone = "(090) 123-1231";
@@ -28,7 +28,7 @@ public class TC0010_1_VerifyCustomerDetails_Business extends BaseClass {
 	String email = "automation@cogsdale.com";
 	String add = "Iqbal";
 	String acsz = "Miami Beach FL";
-	CommonMethods ComMethd = new CommonMethods();
+	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -36,11 +36,11 @@ public class TC0010_1_VerifyCustomerDetails_Business extends BaseClass {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		dbSrch.EnterSearchText(LocationID);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(locationID);
+		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
 		dashBoard.VerifyCustomerDetails(ssn, lic, phone, ext, email, add, acsz);
-		dashBoard.LogOut();
+		dashBoard.logout();
 	}
 }

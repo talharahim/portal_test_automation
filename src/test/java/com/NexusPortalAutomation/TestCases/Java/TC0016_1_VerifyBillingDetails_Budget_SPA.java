@@ -23,9 +23,9 @@ public class TC0016_1_VerifyBillingDetails_Budget_SPA extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String LocationID = "LOC@0001";
-	CommonMethods ComMethd = new CommonMethods();
-	String spaURL = "CustomerID=0000011111&LocationID=LOC@0001&CogsDrillback=1";
+	public String locationID = "LOC@0001";
+	CommonMethods cmnMethods = new CommonMethods();
+	String spaURL = "CustomerID=0000011111&locationID=LOC@0001&CogsDrillback=1";
 	String paymentArrangementAmount = "$0.00";
 	String Due = "$35.26";
 	String Current = "$0.00";
@@ -37,7 +37,7 @@ public class TC0016_1_VerifyBillingDetails_Budget_SPA extends BaseClass {
 	String AutoPay = "OFF";
 	String EBill = "ON";
 	String Deposit = "$0.00";
-	String budgetUrl = "BudgetRegular&DocumentNumber=BUDG00000002700&LocationID=LOC@0001&CustomerID=0000011111&CogsDrillback=1";
+	String budgetUrl = "BudgetRegular&DocumentNumber=BUDG00000002700&locationID=LOC@0001&CustomerID=0000011111&CogsDrillback=1";
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -45,31 +45,31 @@ public class TC0016_1_VerifyBillingDetails_Budget_SPA extends BaseClass {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		dbSrch.EnterSearchText(LocationID);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(locationID);
+		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
 		
-		ComMethd.VerifyString(dashBoard.GetBudgetIcon(), "Budget");
+		cmnMethods.verifyString(dashBoard.GetBudgetIcon(), "Budget");
 		// Verify Contact is updated accordingly
 		 //Verify Billing Information
 		HashMap<String, String> BillingInfo = dashBoard.GetBillingInfo();
-		ComMethd.VerifyString(BillingInfo.get("BillDue"), Due);
-		ComMethd.VerifyString(BillingInfo.get("BillCurrent"), Current);
-		ComMethd.VerifyString(BillingInfo.get("BillUnposted"), Unposted);
-		ComMethd.VerifyString(BillingInfo.get("BillAccount"), Account);
-		ComMethd.VerifyString(BillingInfo.get("BillInstallment"), Installment);
-		ComMethd.VerifyString(BillingInfo.get("BillOverDue"), OverDue);
-		ComMethd.VerifyString(BillingInfo.get("AmountDue"), AmountDue);
-		ComMethd.VerifyStringContains(dashBoard.getBillBudgetURL(), budgetUrl);
-		ComMethd.VerifyString(dashBoard.getEBill(), EBill);
-		ComMethd.VerifyString(dashBoard.getAutoPay(), AutoPay);
-		ComMethd.VerifyString(dashBoard.getDepositAmount(), Deposit);
-		ComMethd.VerifyString(dashBoard.getPaymentArrangementDue(), "Payment Arrangement Due");
-		ComMethd.VerifyString(dashBoard.getPaymentArrangementDueAmount(), paymentArrangementAmount);
-		ComMethd.VerifyStringContains(dashBoard.getPaymentArrangementDueURL(), spaURL);
+		cmnMethods.verifyString(BillingInfo.get("BillDue"), Due);
+		cmnMethods.verifyString(BillingInfo.get("BillCurrent"), Current);
+		cmnMethods.verifyString(BillingInfo.get("BillUnposted"), Unposted);
+		cmnMethods.verifyString(BillingInfo.get("BillAccount"), Account);
+		cmnMethods.verifyString(BillingInfo.get("BillInstallment"), Installment);
+		cmnMethods.verifyString(BillingInfo.get("BillOverDue"), OverDue);
+		cmnMethods.verifyString(BillingInfo.get("AmountDue"), AmountDue);
+		cmnMethods.VerifyStringContains(dashBoard.getBillBudgetURL(), budgetUrl);
+		cmnMethods.verifyString(dashBoard.getEBill(), EBill);
+		cmnMethods.verifyString(dashBoard.getAutoPay(), AutoPay);
+		cmnMethods.verifyString(dashBoard.getDepositAmount(), Deposit);
+		cmnMethods.verifyString(dashBoard.getPaymentArrangementDue(), "Payment Arrangement Due");
+		cmnMethods.verifyString(dashBoard.getPaymentArrangementDueAmount(), paymentArrangementAmount);
+		cmnMethods.VerifyStringContains(dashBoard.getPaymentArrangementDueURL(), spaURL);
 
-		dashBoard.LogOut();
+		dashBoard.logout();
 	}
 
 }

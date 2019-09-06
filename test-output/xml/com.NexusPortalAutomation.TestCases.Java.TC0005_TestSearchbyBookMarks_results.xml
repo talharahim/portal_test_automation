@@ -44,7 +44,7 @@ Session ID: 2bbe59d44593abbf5f846506c65ea167
   org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
   org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
   com.sun.proxy.$Proxy9.click(Unknown Source)
-  com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch.ClickCustomer(DashBoardSearch.java:75)
+  com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch.clickCustomerName(DashBoardSearch.java:75)
   com.NexusPortalAutomation.TestCases.Java.TC0005_TestSearchbyBookMarks.TestSearchAutobyBookMark(TC0005_TestSearchbyBookMarks.java:26)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)

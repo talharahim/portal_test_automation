@@ -19,9 +19,9 @@ public class TC0004_TestSearchbyRecentFunction extends BaseClass {
 	 * 
 	 * @Since 2019-04-11
 	 */
-	public String UserName = "Sally Mackenzie";
-	public String CustomerAddress;
-	public CommonMethods ComMethd = new CommonMethods();
+	public String username = "Sally Mackenzie";
+	public String customerAddress;
+	public CommonMethods cmnMethods = new CommonMethods();
 
 	@Test(priority = 1)
 	public void TestSearchAutobyRecent() throws IOException, InterruptedException {
@@ -29,23 +29,23 @@ public class TC0004_TestSearchbyRecentFunction extends BaseClass {
 		DashBoard dashBoard = new DashBoard(driver);
 		// Search using an account
 		login();
-		dbSrch.EnterSearchText(UserName);
-		dbSrch.ClickCustomer();
-		ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
-		dashBoard.LogOut(); 
+		dbSrch.enterSearchText(username);
+		dbSrch.clickCustomerName();
+		cmnMethods.verifyString(username, dashBoard.getLoggedCustomerName());
+		dashBoard.logout(); 
 		// Search Using Recent Icon
 		login();
-		ComMethd.WaitForObjectbyXpath(driver, "//input[@id='SRCH_Input']");
-		dbSrch.ClickRecent();
-		CustomerAddress = dbSrch.GetRecentCustomerStateCity();
-		dbSrch.ClickCustomer();
-		dashBoard.ClickDynamicOk();
-		ComMethd.WaitForObjectbyXpath(driver, "//div[@class='address-details']");
+		cmnMethods.waitObjectByXpath(driver, "//input[@id='SRCH_Input']");
+		dbSrch.clickRecentSearch();
+		customerAddress = dbSrch.getRecentCustomerCity();
+		dbSrch.clickCustomerName();
+		dashBoard.clickDynamicOk();
+		cmnMethods.waitObjectByXpath(driver, "//div[@class='address-details']");
 		// Verify correct address is loaded
-		ComMethd.VerifyString(CustomerAddress, dashBoard.GetLoggedCustomerAddress());
+		cmnMethods.verifyString(customerAddress, dashBoard.getLoggedCustomerAddress());
 		// Verify correct Customer is loaded
-		ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
-		dashBoard.LogOut();
+		cmnMethods.verifyString(username, dashBoard.getLoggedCustomerName());
+		dashBoard.logout();
 
 	}
 
