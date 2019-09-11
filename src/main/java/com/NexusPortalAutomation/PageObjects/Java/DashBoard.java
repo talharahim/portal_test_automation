@@ -30,7 +30,7 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "USR_Name")
 	WebElement LoggedUserLink;
 
-	@FindBy(id = "ACTION_logout")
+	@FindBy(id = "ACTION_Logout")
 	WebElement logoutLink;
 
 	@FindBy(id = "'LOC_Location_Id'")
@@ -109,7 +109,7 @@ public class DashBoard extends CommonMethods {
 	WebElement ServiceOrderLink;
 
 	@FindBy(id = "SODV_Service_Order_Id")
-	WebElement ServiceOrderNumber;
+	WebElement serviceOrderNum;
 
 	@FindBy(css = "#mat-tab-label-0-0 > div:nth-child(1)")
 	@CacheLookup
@@ -352,7 +352,7 @@ public class DashBoard extends CommonMethods {
 	@CacheLookup
 	WebElement ServiceOerder_Drillback;
 
-	@FindBy(id = "CUST_title")
+	@FindBy(id = "CUST_Title")
 	@CacheLookup
 	WebElement Customer_title;
 
@@ -380,7 +380,7 @@ public class DashBoard extends CommonMethods {
 	@CacheLookup
 	WebElement Recent_ViewAll;
 
-	@FindBy(id = "TRAN_title")
+	@FindBy(id = "TRAN_Title")
 	@CacheLookup
 	WebElement TransactionPage_title;
 
@@ -605,7 +605,7 @@ public class DashBoard extends CommonMethods {
 
 	public void verifySubmitMessage(String Message) {
 		if (transferSuccessMessage.isDisplayed()) {
-			VerifyStringContains(transferSuccessMessage.getText(), Message);
+			verifyStringContains(transferSuccessMessage.getText(), Message);
 		} else {
 			Assert.fail("Order not submitted");
 		}
@@ -649,7 +649,7 @@ public class DashBoard extends CommonMethods {
 		ClickElement(Recent_ViewAll, "Recent View All");
 	}
 
-	public String GetTransactionPageTile() {
+	public String getTransactionPageTitle() {
 		return getElementText(TransactionPage_title, "Transaction Page title");
 	}
 
@@ -678,20 +678,20 @@ public class DashBoard extends CommonMethods {
 		WaitAngular(driver);
 		log("Verifying Service Order Details using HashMap");
 		HashMap<String, String> SrvcOrderInfo = new HashMap<String, String>();
-		SrvcOrderInfo.put("ServiceOrderReqId", ServOrder_Order_RequestID.getText());
-		SrvcOrderInfo.put("ServiceOrderDescription", SOLV_Service_Order_Description.getText());
-		SrvcOrderInfo.put("ServiceOrderScheduledDate", SOLV_Service_Order_Scheduled_Date.getText());
-		SrvcOrderInfo.put("SOLVServiceOrderId", SOLV_Service_Order_Id.getText());
-		SrvcOrderInfo.put("SODVStatus", SODV_Status.getText());
-		SrvcOrderInfo.put("SODVDescriptionRequest", SODV_Description_Request.getText());
-		SrvcOrderInfo.put("SODVRequestId", SODV_Request_Id.getText());
-		SrvcOrderInfo.put("SODVRequestedDate", SODV_Requested_Date.getText());
-		SrvcOrderInfo.put("SODVRequestedTime", SODV_Requested_Time.getText());
-		SrvcOrderInfo.put("SODVScheduledDate", SODV_Scheduled_Date.getText());
-		SrvcOrderInfo.put("SODVScheduledTime", SODV_Scheduled_Time.getText());
-		SrvcOrderInfo.put("SODVTaskDescription", SODV_Task_Description.getText());
-		SrvcOrderInfo.put("SODVTaskEmployeeId", SODV_Task_Employee_Id.getText());
-		SrvcOrderInfo.put("SODVTaskCompletedDate", SODV_Task_Completed_Date.getText());
+		SrvcOrderInfo.put("serviceOrderReqId", ServOrder_Order_RequestID.getText());
+		SrvcOrderInfo.put("serviceOrderDescription", SOLV_Service_Order_Description.getText());
+		SrvcOrderInfo.put("serviceOrderScheduledDate", SOLV_Service_Order_Scheduled_Date.getText());
+		SrvcOrderInfo.put("solvserviceOrderId", SOLV_Service_Order_Id.getText());
+		SrvcOrderInfo.put("sodvStatus", SODV_Status.getText());
+		SrvcOrderInfo.put("sodvDescriptionRequest", SODV_Description_Request.getText());
+		SrvcOrderInfo.put("sodvRequestId", SODV_Request_Id.getText());
+		SrvcOrderInfo.put("sodvRequestedDate", SODV_Requested_Date.getText());
+		SrvcOrderInfo.put("sodvRequestedTime", SODV_Requested_Time.getText());
+		SrvcOrderInfo.put("sodvScheduledDate", SODV_Scheduled_Date.getText());
+		SrvcOrderInfo.put("sodvScheduledTime", SODV_Scheduled_Time.getText());
+		SrvcOrderInfo.put("sodvTaskDescription", SODV_Task_Description.getText());
+		SrvcOrderInfo.put("sodvTaskEmployeeId", SODV_Task_Employee_Id.getText());
+		SrvcOrderInfo.put("sodvTaskCompletedDate", SODV_Task_Completed_Date.getText());
 		return SrvcOrderInfo;
 
 	}
@@ -838,7 +838,7 @@ public class DashBoard extends CommonMethods {
 
 	}
 
-	public void VerifyDrillBack(String ElementID, String drillBackURL) throws InterruptedException {
+	public void verifyDrillback(String ElementID, String drillBackURL) throws InterruptedException {
 		Thread.sleep(1000);
 
 		log("Verifying Drill back for " + drillBackURL, driver);
@@ -846,7 +846,7 @@ public class DashBoard extends CommonMethods {
 	}
 
 	// This method will find the elements of Transaction Panel using the URL
-	public void VerifyTransDrillBacks(String payment, String bill, String meter) throws InterruptedException {
+	public void verifyTransDrillbacks(String payment, String bill, String meter) throws InterruptedException {
 		Thread.sleep(1000);
 		findElementByid("TRAN_Drillback_1").getAttribute(payment);
 		findElementByid("TRAN_Drillback_2").getAttribute(bill);
@@ -856,17 +856,17 @@ public class DashBoard extends CommonMethods {
 	}
 
 	// This method will find the elements of Transaction Panel using the URL
-	public void VerifyNotesDrillBacks() throws InterruptedException {
+	public void verifyNotesDrillbacks() throws InterruptedException {
 		Thread.sleep(1000);
 		findElementByid("ENH_Drillback_Location");
 		findElementByid("customer-person");
-		findElementByid("ENH_title");
+		findElementByid("ENH_Title");
 		log("Verify Notes Drillback ", driver);
 
 	}
 
 	// This method will find the elements of Transaction Panel using the URL
-	public void VerifyServiceOrderDrillBacks(String ServOrder) throws InterruptedException {
+	public void verifyServiceorderDrillbacks(String ServOrder) throws InterruptedException {
 		Thread.sleep(1000);
 		waitForObject(driver, ServiceOerder_Drillback);
 		ServiceOerder_Drillback.getAttribute(ServOrder);
@@ -898,19 +898,19 @@ public class DashBoard extends CommonMethods {
 
 	public void verifyServiceWarningSingleSO(String serviceOrder) {
 		verifyString(findElementByid("XFER_Warning_Message").getText(), "Service Order Exist. TRANSFER");
-		VerifyStringContains(findElementByid("idPrefix + '_Warning_Drillback'").getAttribute("href"), serviceOrder);
+		verifyStringContains(findElementByid("idPrefix + '_Warning_Drillback'").getAttribute("href"), serviceOrder);
 
 	}
 
 	public void verifyServiceWarningMultiSO(String serviceOrder) {
 		verifyString(findElementByid("XFER_Warning_Message").getText(), "Multiple Service Orders Exist. TRANSFER");
-		VerifyStringContains(findElementByid("idPrefix + '_Warning_Drillback'").getAttribute("href"), serviceOrder);
+		verifyStringContains(findElementByid("idPrefix + '_Warning_Drillback'").getAttribute("href"), serviceOrder);
 
 	}
 
 	public void verifyServiceWarningSOExists(String serviceOrder) {
 		verifyString(findElementByid("XFER_Warning_Message").getText(), "Service Order Exist. TRANSFER");
-		VerifyStringContains(findElementByid("idPrefix + '_Warning_Drillback'").getAttribute("href"), serviceOrder);
+		verifyStringContains(findElementByid("idPrefix + '_Warning_Drillback'").getAttribute("href"), serviceOrder);
 
 	}
 
@@ -1062,7 +1062,7 @@ public class DashBoard extends CommonMethods {
 
 	}
 
-	public void ClickSecondCust() {
+	public void clickSecondaryCustomer() {
 
 		WaitAngular(driver);
 		ClickElement(SecondCust, "Secondary Customer");
@@ -1128,7 +1128,7 @@ public class DashBoard extends CommonMethods {
 
 	}
 
-	public void VerifyCustomerDetails(String ssn, String lic, String phone, String ext, String email, String add,
+	public void verifyCustDetails(String ssn, String lic, String phone, String ext, String email, String add,
 			String acsz) {
 		WaitAngular(driver);
 		log("Verifying Customer Details");
@@ -1154,7 +1154,7 @@ public class DashBoard extends CommonMethods {
 		verifyString(acsz, getElementText(AddressCityStateZip, "AddressCityStateZip"));
 	}
 
-	public void VerifyCustomerDetailsNoEmailExt(String ssn, String lic, String phone, String add, String acsz) {
+	public void verifyCustDetailsNoEmailExt(String ssn, String lic, String phone, String add, String acsz) {
 		WaitAngular(driver);
 		log("Verifying Customer Details");
 		waitForObject(driver, CustomerSSN);
@@ -1176,7 +1176,7 @@ public class DashBoard extends CommonMethods {
 		verifyString(acsz, getElementText(AddressCityStateZip, "AddressCityStateZip"));
 	}
 
-	public void ClickContactEdit() {
+	public void editContact() {
 
 		WaitAngular(driver);
 		waitForObject(driver, ContactEdit);
@@ -1268,7 +1268,7 @@ public class DashBoard extends CommonMethods {
 		}
 	}
 
-	public void VerifyCredit(String creditStatus) {
+	public void verifyCreditStatus(String creditStatus) {
 		log("Verify Credit Status");
 		verifyString(CreditRating.getText(), creditStatus);
 		WaitAngular(driver);
@@ -1336,7 +1336,7 @@ public class DashBoard extends CommonMethods {
 		WaitAngular(driver);
 		log("Verify Account Name =" + AccountName);
 		waitForObject(driver, AccountSearchResult1);
-		VerifyStringContains(getElementText(AccountSearchResult1, "Account Search Result"), AccountName);
+		verifyStringContains(getElementText(AccountSearchResult1, "Account Search Result"), AccountName);
 		WaitAngular(driver);
 	}
 
@@ -1344,7 +1344,7 @@ public class DashBoard extends CommonMethods {
 		WaitAngular(driver);
 		log("Verify Account Name =" + AccountName);
 		waitForObject(driver, AccountSearchResult2);
-		VerifyStringContains(AccountName, getElementText(AccountSearchResult2, "Account Search Result"));
+		verifyStringContains(AccountName, getElementText(AccountSearchResult2, "Account Search Result"));
 		WaitAngular(driver);
 	}
 
@@ -1352,7 +1352,7 @@ public class DashBoard extends CommonMethods {
 		WaitAngular(driver);
 		log("Verify Account Name =" + AccountName);
 		waitForObject(driver, AccountSearchResult3);
-		VerifyStringContains(AccountName, getElementText(AccountSearchResult3, "Account Result"));
+		verifyStringContains(AccountName, getElementText(AccountSearchResult3, "Account Result"));
 		WaitAngular(driver);
 	}
 
@@ -1360,7 +1360,7 @@ public class DashBoard extends CommonMethods {
 		WaitAngular(driver);
 		log("Verify Account Name =" + AccountName);
 		waitForObject(driver, AccountSearchResult4);
-		VerifyStringContains(AccountName, getElementText(AccountSearchResult4, "Account Result"));
+		verifyStringContains(AccountName, getElementText(AccountSearchResult4, "Account Result"));
 		WaitAngular(driver);
 	}
 
@@ -1390,15 +1390,15 @@ public class DashBoard extends CommonMethods {
 
 	}
 
-	public void ClickServiceOrderLink() {
+	public void clickServiceorderLink() {
 		log("Clicking Servic Order Link");
 		ClickElement(ServiceOrderLink, "Service Order Link");
 
 	}
 
-	public String getServiceOrderNumber() {
+	public String getserviceOrderNum() {
 		log("Capturing Servic Order Number");
-		return getElementText(ServiceOrderNumber, "Service Order Number");
+		return getElementText(serviceOrderNum, "Service Order Number");
 
 	}
 
@@ -1531,7 +1531,7 @@ public class DashBoard extends CommonMethods {
 		return result;
 	}
 
-	public String GetLoggedCustomerId() throws InterruptedException {
+	public String getLoggedCustId() throws InterruptedException {
 
 		String result = "";
 		try {
@@ -1548,7 +1548,7 @@ public class DashBoard extends CommonMethods {
 
 	}
 
-	public String getLoggedCustomerName() throws InterruptedException {
+	public String getLoggedCustomerLocationId() throws InterruptedException {
 
 		String result = "";
 		try {
@@ -1559,7 +1559,7 @@ public class DashBoard extends CommonMethods {
 
 		} catch (Exception e) {
 			e.printStackTrace();
-			Assert.assertTrue(false, "Customer Location not found");
+			Assert.fail("Customer Location not found");
 		}
 		return result;
 
@@ -1575,7 +1575,7 @@ public class DashBoard extends CommonMethods {
 			log("Customer Name found " + result);
 		} catch (Exception e) {
 			e.printStackTrace();
-			Assert.assertTrue(false, "Customer Name not found =" + result);
+			Assert.fail("Customer Name not found =" + result);
 		}
 		return result;
 	}
@@ -1605,7 +1605,7 @@ public class DashBoard extends CommonMethods {
 			// Use Actions to specify an x,y coordinate for your click,
 			if (OverLay.isDisplayed()) {
 				Actions a = new Actions(driver);
-				a.moveToElement(OverLay, 100, 100).click().perform();
+				a.moveToElement(OverLay, 10, 10).click().perform();
 			}
 
 		} catch (NoSuchElementException e) {
@@ -1629,7 +1629,7 @@ public class DashBoard extends CommonMethods {
 			WaitAngular(driver);
 		} catch (NoSuchElementException e) {
 			log(e.getMessage());
-			Assert.assertTrue(false, "logout Link not found");
+			Assert.fail("logout Link not found");
 		}
 
 	}
@@ -1640,7 +1640,7 @@ public class DashBoard extends CommonMethods {
 
 	}
 
-	public void ClickOk() throws InterruptedException {
+	public void clickOk() throws InterruptedException {
 
 		waitforObjectById(this.driver, "ALERTO_Action_Button");
 		ClickElement(AlertOk, "Alert OK");
@@ -1661,7 +1661,7 @@ public class DashBoard extends CommonMethods {
 
 	}
 
-	public void ClickAlertDescription() throws InterruptedException {
+	public void clickAlertdesc() throws InterruptedException {
 
 		log("Click Alert Description");
 		ClickElement(AlertDesc, "Alert Description");

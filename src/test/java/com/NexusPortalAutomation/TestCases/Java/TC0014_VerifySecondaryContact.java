@@ -35,12 +35,11 @@ public class TC0014_VerifySecondaryContact extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
-		dashBoard.ClickSecondCust();
+		dashBoard.clickSecondaryCustomer();
 		cmnMethods.verifyString(dashBoard.getSecondCustName(), SecondCust);
 		cmnMethods.verifyString(dashBoard.getSecondCustomerCount(), SecondCustCnt);
-		
 		// Verify Updated details
 		dashBoard.logout();
 	}

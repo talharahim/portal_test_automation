@@ -20,6 +20,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import com.NexusPortalAutomation.PageObjects.Java.LoginPage;
+import com.NexusPortalAutomation.Utilities.Java.ExcelData;
 import com.NexusPortalAutomation.Utilities.Java.ReadProjectProperties;
 import com.paulhammant.ngwebdriver.NgWebDriver;
 
@@ -39,8 +40,9 @@ public class BaseClass extends ReadProjectProperties {
 	public static ReadProjectProperties Read = new ReadProjectProperties();
 	public static int delay = 2000;
 	public static String DrillBackServURL;
+	public static ExcelData excel = new ExcelData();
 
-	public String GetDrillBackServerURL() {
+	public String getDrillbackServerUrl() {
 		DrillBackServURL = Read.ReadFile("DrillBackServ");
 		return DrillBackServURL;
 
@@ -127,11 +129,11 @@ public class BaseClass extends ReadProjectProperties {
 		driver.get(Read.ReadFile("PortalUrl"));
 		LoginPage lpage = new LoginPage(driver);
 		WaitAngular();
-	    System.out.println(driver.gettitle());
+	    System.out.println(driver.getTitle());
 		lpage.Verifytitle("Log in to Nexus View");
 		lpage.Login(Read.ReadFile("username"), Read.ReadFile("PassWord"));
 		WaitAngular();
-		String actualtitle = driver.gettitle();
+		String actualtitle = driver.getTitle();
 		String expectedtitle = "Nexus View";
 		assertEquals(actualtitle, expectedtitle);
 		log("User signed " + Read.ReadFile("username"));

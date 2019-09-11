@@ -23,23 +23,23 @@ public class TC0016_1_VerifyBillingDetails_AutoPay extends BaseClass {
 	public String locationID = "LOC@0001";
 
 	CommonMethods cmnMethods = new CommonMethods();
-	String AutoPay = "OFF";
-	String AutoPayURL = "https://www.invoicecloud.com/integrations/redirect/Csr?BillerGUID";
+	String autoPay = "OFF";
+	String autoPayURL = "https://www.invoicecloud.com/integrations/redirect/Csr?BillerGUID";
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
-	public void VerifyBillingDetails() throws IOException, InterruptedException {
+	public void VerifyBillingDetailsAutoPay() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
 		// Verify Billing Information
-		cmnMethods.verifyString(dashBoard.getAutoPay(), AutoPay);
-		cmnMethods.VerifyStringContains(dashBoard.getAutoPayURL(), AutoPayURL);
+		cmnMethods.verifyString(dashBoard.getAutoPay(), autoPay);
+		cmnMethods.verifyStringContains(dashBoard.getAutoPayURL(), autoPayURL);
 		dashBoard.logout();
 	}
 

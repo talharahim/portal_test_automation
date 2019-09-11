@@ -22,7 +22,7 @@ public class TC0016_1_VerifyBillingDetails_VerifyBillSaperately extends BaseClas
 	public String locationID = "BILLSAPERATE01";
 
 	@Test
-	public void VerifyTransactionsSaperatebill() throws IOException, InterruptedException {
+	public void VerifyTransactionsSaperatebill_saperate() throws IOException, InterruptedException {
 
 		CommonMethods cmnMethods = new CommonMethods();
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
@@ -31,12 +31,11 @@ public class TC0016_1_VerifyBillingDetails_VerifyBillSaperately extends BaseClas
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
 		dashBoard.clickTransactionLink();
 		dashBoard.transaction_filterbyBill();
 		// Verify Transaction details
-
 		dashBoard.logout();
 	}
 

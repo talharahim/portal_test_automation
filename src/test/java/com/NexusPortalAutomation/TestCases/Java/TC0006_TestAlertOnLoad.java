@@ -20,7 +20,7 @@ public class TC0006_TestAlertOnLoad extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String username = "Alert Test";
+	public String username = "AUTOLOC001";
 	public CommonMethods cmnMethods = new CommonMethods();
 
 	@Test(priority = 2)
@@ -34,12 +34,12 @@ public class TC0006_TestAlertOnLoad extends BaseClass {
 		dbSrch.clickCustomerName();
 		cmnMethods.waitObjectByXpath(driver, "//div[@class='address-details']");
 		// Verify Login Name
-		cmnMethods.verifyString(username, dashBoard.getLoggedCustomerName());
-		dashBoard.ClickOk();
+		cmnMethods.verifyString(username, dashBoard.getLoggedCustomerLocationId());
+		dashBoard.clickOk();
 		log("Alert on Load Clicked");
-		dashBoard.ClickAlertDescription();
+		dashBoard.clickAlertdesc();
 		Thread.sleep(300);
-		dashBoard.ClickOk();
+		dashBoard.clickOk();
 		log("Alert on description Clicked");
 		dashBoard.logout();
 

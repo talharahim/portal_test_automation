@@ -36,7 +36,7 @@ public class TC0008_VerifySignInbylocationID extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Address Details
 		dashBoard.verifyAddressDetails(addLine, addCity, addState, addZip);
 		dashBoard.logout();

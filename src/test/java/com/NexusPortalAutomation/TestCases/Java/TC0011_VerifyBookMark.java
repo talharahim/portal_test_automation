@@ -20,7 +20,7 @@ public class TC0011_VerifyBookMark extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String locationID = "STATEMENTS001";
+	public String customerName = "Statement Pdf";
 	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID
@@ -29,17 +29,17 @@ public class TC0011_VerifyBookMark extends BaseClass {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		dbSrch.enterSearchText(locationID);
+		dbSrch.enterSearchText(customerName);
 		dbSrch.clickRecentSearchCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
+		cmnMethods.verifyString(customerName, dashBoard.getLoggedCustomerName());
 		// Click BookMark
 		dashBoard.clickBookmarkDisabled();
 		dashBoard.logout();
 		login();
-		dbSrch.ClickHistoryCustomer();
+		dbSrch.clickHistoryCustomer();
 		dbSrch.clickRecentSearchCustomerName();
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
+		cmnMethods.verifyString(customerName, dashBoard.getLoggedCustomerName());
 		// Clear BookMark
 		dashBoard.clickBookmarkEnabled();
 		// Verify if it is Marked

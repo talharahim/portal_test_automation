@@ -8,6 +8,6 @@
   <properties />
   
   
-            <testcase name="TestCreditStatus" time="40.765" classname="com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus" />
+            <testcase name="TestCreditStatus" time="40.765" classname="com.NexusPortalAutomation.TestCases.Java.TC0012_verifyCreditStatusStatus" />
       
 </testsuite>

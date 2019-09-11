@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
+import com.NexusPortalAutomation.Utilities.Java.ExcelData;
 
 public class TC0003_TestSearchAutobyLastName extends BaseClass {
 
@@ -20,7 +21,7 @@ public class TC0003_TestSearchAutobyLastName extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String username = "Automation Mate";
+	public String username =  ExcelData.ReadVariant("Customers",2,1);
 	public String title = "Mr.";
 	public CommonMethods cmnMethods = new CommonMethods();
 

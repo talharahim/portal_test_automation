@@ -22,7 +22,7 @@ public class TC0009_VerifyAccountSearch extends BaseClass {
 
 	String locationID = "500001";
 	String locationID2 = "CUS@0004";
-	String AccntSrchResult = "1 Water 1 Bldg";
+	String accSrchResult = "1 Water 1 Bldg";
 	String addLine = "8 Orchard";
 	String addCity = "Troy";
 	String addState = "NY";
@@ -46,7 +46,7 @@ public class TC0009_VerifyAccountSearch extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.GetLoggedCustomerId());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustId());
 		// Verify Customer Details for location Provided
 		dashBoard.clickSarchAccountWidget();
 		// Verify the type/status of the account

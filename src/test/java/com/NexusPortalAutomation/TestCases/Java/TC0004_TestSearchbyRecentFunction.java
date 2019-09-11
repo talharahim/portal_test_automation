@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
+import com.NexusPortalAutomation.Utilities.Java.ExcelData;
 
 public class TC0004_TestSearchbyRecentFunction extends BaseClass {
 
@@ -19,7 +20,7 @@ public class TC0004_TestSearchbyRecentFunction extends BaseClass {
 	 * 
 	 * @Since 2019-04-11
 	 */
-	public String username = "Sally Mackenzie";
+	public String locationID =  ExcelData.ReadVariant("Locations",1,1);//"ELECWAT001";
 	public String customerAddress;
 	public CommonMethods cmnMethods = new CommonMethods();
 
@@ -29,9 +30,9 @@ public class TC0004_TestSearchbyRecentFunction extends BaseClass {
 		DashBoard dashBoard = new DashBoard(driver);
 		// Search using an account
 		login();
-		dbSrch.enterSearchText(username);
+		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
-		cmnMethods.verifyString(username, dashBoard.getLoggedCustomerName());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		dashBoard.logout(); 
 		// Search Using Recent Icon
 		login();
@@ -44,7 +45,7 @@ public class TC0004_TestSearchbyRecentFunction extends BaseClass {
 		// Verify correct address is loaded
 		cmnMethods.verifyString(customerAddress, dashBoard.getLoggedCustomerAddress());
 		// Verify correct Customer is loaded
-		cmnMethods.verifyString(username, dashBoard.getLoggedCustomerName());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		dashBoard.logout();
 
 	}

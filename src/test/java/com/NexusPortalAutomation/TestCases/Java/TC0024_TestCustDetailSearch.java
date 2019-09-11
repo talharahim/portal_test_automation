@@ -12,10 +12,10 @@ public class TC0024_TestCustDetailSearch extends BaseClass {
 
 	public String username = "Automation Mate";
 	public String Result1 = "Mate, Automation";
-	public String UserFname = "Automation";
-	public String UserLname = "Mate";
-	public String CustomerId = "AUTO1001";
-	public String Location = "LOC@0002";
+	public String userFname = "Automation";
+	public String userLname = "Mate";
+	public String customerId = "AUTO1001";
+	public String locationID = "LOC@0002";
 	CommonMethods cmnMethods = new CommonMethods();
 	public String title = "Mr.";
 	/*
@@ -36,29 +36,22 @@ public class TC0024_TestCustDetailSearch extends BaseClass {
 		login();
 		dbSrch.enterSearchText(username);
 		dbSrch.clickCustomerName();
-
-		dashBoard.enterDashBoardSearch(UserFname);
+		dashBoard.enterDashBoardSearch(userFname);
 		cmnMethods.verifyString(Result1, dashBoard.getDashBoardSearchResult1Name());
 		dashBoard.clickDashBoardSearchResult1();
 		dashBoard.verifyString(username, dashBoard.getLoggedCustomerName());
-
-		dashBoard.enterDashBoardSearch(UserLname);
+		dashBoard.enterDashBoardSearch(userLname);
 		cmnMethods.verifyString(Result1, dashBoard.getDashBoardSearchResult1Name());
 		dashBoard.clickDashBoardSearchResult1();
 		dashBoard.verifyString(username, dashBoard.getLoggedCustomerName());
-
-		dashBoard.enterDashBoardSearch(CustomerId);
-		cmnMethods.verifyString(CustomerId, dashBoard.getDashBoardSearchResult1CustomerId());
+		dashBoard.enterDashBoardSearch(customerId);
+		cmnMethods.verifyString(customerId, dashBoard.getDashBoardSearchResult1CustomerId());
 		dashBoard.clickDashBoardSearchResult1();
-		dashBoard.verifyString(CustomerId, dashBoard.GetLoggedCustomerId());
-
-		dashBoard.enterDashBoardSearch(Location);
-		cmnMethods.verifyString(Location, dashBoard.getDashBoardSearchResult1Location());
+		dashBoard.verifyString(customerId, dashBoard.getLoggedCustId());
+		dashBoard.enterDashBoardSearch(locationID);
+		cmnMethods.verifyString(locationID, dashBoard.getDashBoardSearchResult1Location());
 		dashBoard.clickDashBoardSearchResult1();
-		
-		dashBoard.verifyString(Location, dashBoard.getLoggedCustomerName());
-		
-
+		dashBoard.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		dashBoard.logout();
 
 	}

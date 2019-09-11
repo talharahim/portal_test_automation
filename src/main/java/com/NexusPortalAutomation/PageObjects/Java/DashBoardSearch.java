@@ -72,6 +72,7 @@ public class DashBoardSearch extends CommonMethods {
 
 	public void clickCustomerName() {
 
+		waitForObject(this.driver, SrchCustomer);
 		SrchCustomer.click();
 		log("Click Customer", driver);
 		WaitAngular(driver);
@@ -95,7 +96,7 @@ public class DashBoardSearch extends CommonMethods {
 		return false;
 	}
 
-	public void ClickHistoryCustomer() {
+	public void clickHistoryCustomer() {
 
 		BookMarked.click();
 		WaitAngular(driver);

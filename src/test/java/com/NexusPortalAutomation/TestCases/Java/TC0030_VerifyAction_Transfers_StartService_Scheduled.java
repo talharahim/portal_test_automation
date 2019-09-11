@@ -30,8 +30,8 @@ public class TC0030_VerifyAction_Transfers_StartService_Scheduled extends BaseCl
 
 	public String locationID = "LOC@0004";
 	public String locationID2 = "LOC@0005";
-	public String ServerURL = GetDrillBackServerURL();
-	public String DefaultCustomer = "Mr. VACANT VACANT";
+	public String serverUrl = getDrillbackServerUrl();
+	public String defaultCustomer = "Mr. VACANT VACANT";
 	public String requestedbY = "Mr. Automation Mate";
 	public String moveOutCustomer = "Mr. Automation Mate";
 	public String loc2moveOutCustomer = "Mr. Movein Cus";
@@ -52,14 +52,14 @@ public class TC0030_VerifyAction_Transfers_StartService_Scheduled extends BaseCl
 			throws IOException, InterruptedException, ClassNotFoundException, SQLServerException, SQLException, ParseException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		Dashboard_Transfers dashBoard = new Dashboard_Transfers(driver);
-		MySQLDataExec Sql = new MySQLDataExec();
-		Sql.DeleteServiceOrders(locationID);
-		Sql.DeleteServiceOrdersHistory(locationID);
+		MySQLDataExec sql = new MySQLDataExec();
+		sql.deleteServiceorder(locationID);
+		sql.deleteServiceorderHistory(locationID);
 		login();
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
 		// cmnMethods.VerifyString(servTabURL, dashBoard.GetServiceTabDrillBackUrl());
 		dashBoard.clickActionDropDown();
@@ -67,17 +67,17 @@ public class TC0030_VerifyAction_Transfers_StartService_Scheduled extends BaseCl
 		//DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
 		//Date date = new Date();
 		//String DateRequested = dateFormat.format(date);
-		dashBoard.SelectTransferType_Transfer_Start();
+		dashBoard.selectTransferStart();
 		dashBoard.enterRequest("TRANSFER");
 		dashBoard.enterScheduleDate_StartService(dashBoard.startService_getRequestedDate());
 		String moveOutrequestedDate = dashBoard.startService_getRequestedDate();
 	
 		// Entering data for Move Out
 		//Scroll down
-		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, moveOutrequestedDate, "TRANSFER", DefaultCustomer, DefaultCustomer,"Description for Start Service");
+		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, moveOutrequestedDate, "TRANSFER", defaultCustomer, defaultCustomer,"Description for Start Service");
 		// Verify Updated details IN SERVICE TAB order number from database
-		dashBoard.ClickServiceOrderLink();
-		String ServiceOrder = dashBoard.getServiceOrderNumber();
+		dashBoard.clickServiceorderLink();
+		String ServiceOrder = dashBoard.getserviceOrderNum();
 		String[] arrOfStr = moveOutrequestedDate.split(" ", 2);
 		String moveOutstart_dt = arrOfStr[0];
 		DateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");

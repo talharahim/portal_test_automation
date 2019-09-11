@@ -111,7 +111,7 @@ public class CommonMethods {
 		return Result;
 	}
 
-	public boolean VerifyStringContains(String str1, String str2) {
+	public boolean verifyStringContains(String str1, String str2) {
 		boolean result = false;
 		if (str1 != null && str2 != null) {
 			if (str1.contains(str2)) {
@@ -222,8 +222,7 @@ public class CommonMethods {
 		} catch (TimeoutException e) {
 
 			Assert.fail("Object Not Found " + e.getMessage());
-			throw new TimeoutException("Object Not Found", e);
-		}
+			}
 		long end = System.currentTimeMillis();
 		long dt = end - begin;
 		log("Element " + element.toString() + " displayed in " + dt + "ms");

@@ -21,8 +21,8 @@ public class TC0028_TestEnhancedNotes extends BaseClass {
 
 	public String username = "Automation Mate";
 	CommonMethods cmnMethods = new CommonMethods();
-	public String Notes1 = "Customer Test notes for AuTOMation";
-	public String Notes2 = "Location Test Notes for Automation";
+	public String notes1 = "Customer Test notes for AuTOMation";
+	public String notes2 = "Location Test Notes for Automation";
 	public String title = "Mr.";
 
 //This Test will test the search by Customer's First Name
@@ -37,7 +37,7 @@ public class TC0028_TestEnhancedNotes extends BaseClass {
 
 		cmnMethods.verifyString(title, dashBoard.getCustomertitle());
 		cmnMethods.verifyString(username, dashBoard.getLoggedCustomerName());
-		dashBoard.verifyEnhancedNotes(Notes2, Notes1);
+		dashBoard.verifyEnhancedNotes(notes2, notes1);
 		dashBoard.logout();
 
 	}

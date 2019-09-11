@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="NexusTest"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="25.166">
+  <properties />
+  
+  
+            <testcase name="VerifyBillingDetailsAutoPay" time="25.166" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_AutoPay" />
+      
+</testsuite>

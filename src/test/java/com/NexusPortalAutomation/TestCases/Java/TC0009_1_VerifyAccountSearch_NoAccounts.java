@@ -20,7 +20,7 @@ public class TC0009_1_VerifyAccountSearch_NoAccounts extends BaseClass {
 	 * @Since 2019-04-11
 	 */
  String locationID = "SINGLECUST01";
- String VerifyText ="No Other Accounts";
+ String text ="No Other Accounts";
  CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID
@@ -32,9 +32,9 @@ public class TC0009_1_VerifyAccountSearch_NoAccounts extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.GetLoggedCustomerId());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustId());
 		// Verify Customer Details for location Provided
-		cmnMethods.verifyString(VerifyText,dashBoard.getNoOtherAccount());
+		cmnMethods.verifyString(text,dashBoard.getNoOtherAccount());
 		// Verify the type/status of the account
 		dashBoard.logout();
 	}

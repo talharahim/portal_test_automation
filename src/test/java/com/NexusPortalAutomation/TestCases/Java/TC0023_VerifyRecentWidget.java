@@ -21,9 +21,9 @@ public class TC0023_VerifyRecentWidget extends BaseClass {
 	 */
 
 	public String locationID = "LOC@0001";
-	public String RecordType = "Payment";
-	public String RecordAmount = "$14.74";
-	public String RecordDate = "Apr 12, 2027";
+	public String recordType = "Payment";
+	public String recordAmount = "$14.74";
+	public String recordDate = "Apr 12, 2027";
 	public String title = "Transactions";
 
 	CommonMethods cmnMethods = new CommonMethods();
@@ -37,11 +37,11 @@ public class TC0023_VerifyRecentWidget extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
-		dashBoard.verifyRecent(RecordType, RecordDate, RecordAmount);
+		dashBoard.verifyRecent(recordType, recordDate, recordAmount);
 		dashBoard.clickRecentSearch_ViewAll();
-		cmnMethods.verifyString(title, dashBoard.GetTransactionPageTile());
+		cmnMethods.verifyString(title, dashBoard.getTransactionPageTitle());
 		// Verify Updated details
 		dashBoard.logout();
 	}

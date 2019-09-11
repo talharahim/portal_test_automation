@@ -61,7 +61,7 @@ public class TC0007_TestSummarySection extends BaseClass {
 				}
 			}
 		} catch (NullPointerException np) {
-			Assert.assertTrue(false);
+			Assert.fail("");
 		}
 
 		dashBoard.logout();

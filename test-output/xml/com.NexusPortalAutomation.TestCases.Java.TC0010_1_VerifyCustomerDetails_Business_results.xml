@@ -8,6 +8,6 @@
   <properties />
   
   
-            <testcase name="TestCustomerDetails" time="21.357" classname="com.NexusPortalAutomation.TestCases.Java.TC0010_1_VerifyCustomerDetails_Business" />
+            <testcase name="TestCustomerDetails" time="21.357" classname="com.NexusPortalAutomation.TestCases.Java.TC0010_1_verifyCustDetails_Business" />
       
 </testsuite>

@@ -17,7 +17,7 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 import com.NexusPortalAutomation.Utilities.Java.MySQLDataExec;
 import com.microsoft.sqlserver.jdbc.SQLServerException;
 
-public class TC0038_VerifyAction_Transfers_Stack_TwoLocations_DefaultCustomerLocationBased_NotScheduled extends BaseClass {
+public class TC0038_VerifyAction_Transfers_Stack_TwoLocations_defaultCustomerLocationBased_NotScheduled extends BaseClass {
 
 	/*
 	 * This test the search by Recent Customer Name
@@ -31,24 +31,24 @@ public class TC0038_VerifyAction_Transfers_Stack_TwoLocations_DefaultCustomerLoc
 
 	public String locationID = "TESTLOCATION01";
 	public String locationID2 = "LOC@0004";
-	public String ServerURL = GetDrillBackServerURL();
-	public String DefaultCustomer1= "Mr. Talha Rahim";
-	public String DefaultCustomer2 = "Mr. VACANT VACANT";
-	public String Message = "Transfer initiated";
-	public String[] Task = {"Meter Reading-electric", "Charge New Customer","Property Transfer", "Deposit Request-new Customer", "Deposit Payment-new Customer E","Prepayment Required-new Custom"};
+	public String serverUrl = getDrillbackServerUrl();
+	public String defaultCustomer1= "Mr. Talha Rahim";
+	public String defaultCustomer2 = "Mr. VACANT VACANT";
+	public String message = "Transfer initiated";
+	public String[] task = {"Meter Reading-electric", "Charge New Customer","Property Transfer", "Deposit Request-new Customer", "Deposit Payment-new Customer E","Prepayment Required-new Custom"};
 	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
-	public void VerifyTransferActionServiceOrder() throws IOException, InterruptedException, ClassNotFoundException,
+	public void VerifyAction_Transfers_Stack_TwoLocations_defaultCustomerLocationBased_NotScheduled() throws IOException, InterruptedException, ClassNotFoundException,
 			SQLServerException, SQLException, ParseException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		Dashboard_Transfers dashBoard = new Dashboard_Transfers(driver);
-		MySQLDataExec Sql = new MySQLDataExec();
-		Sql.DeleteServiceOrders(locationID);
-		Sql.DeleteServiceOrdersHistory(locationID);
-		Sql.DeleteServiceOrders(locationID2);
-		Sql.DeleteServiceOrdersHistory(locationID2);
+		MySQLDataExec sql = new MySQLDataExec();
+		sql.deleteServiceorder(locationID);
+		sql.deleteServiceorderHistory(locationID);
+		sql.deleteServiceorder(locationID2);
+		sql.deleteServiceorderHistory(locationID2);
 //		login();
 //		dbSrch.enterSearchText(locationID);
 //		dbSrch.clickCustomerName();
@@ -60,11 +60,11 @@ public class TC0038_VerifyAction_Transfers_Stack_TwoLocations_DefaultCustomerLoc
 //		String moveOutrequestedDate = dashBoard.startService_getRequestedDate();
 //		// Entering data for Move Out
 //		// Scroll down
-//		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, "", "TRANSFER", DefaultCustomer1, "");
+//		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, "", "TRANSFER", defaultCustomer1, "");
 //		// Verify Updated details IN SERVICE TAB order number from database
 //		dashBoard.ClickServiceOrderLink();
 //		dashBoard.ClickServOrder1();
-//		String ServiceOrder = dashBoard.getServiceOrderNumber();
+//		String ServiceOrder = dashBoard.getserviceOrderNum();
 //		String[] arrOfStr = moveOutrequestedDate.split(" ", 2);
 //		String moveOutstart_dt = arrOfStr[0];
 //		DateFormat formatter = new SimpleDateFormat("MM/dd/yyyy");
@@ -90,13 +90,13 @@ public class TC0038_VerifyAction_Transfers_Stack_TwoLocations_DefaultCustomerLoc
 ////		// Entering data for Move Out
 ////		// Scroll down
 ////   		//String moveInCustomer = "Mr. VACANT VACANT";
-////   		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, "", "TRANSFER", DefaultCustomer1, "");
+////   		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, "", "TRANSFER", defaultCustomer1, "");
 ////		dashBoard.clickrefreshPage();
 ////		dashBoard.ClickServiceOrderLink();
 ////		dashBoard.ClickServOrder1();
 //		
 //		//NAVIGATE TO SECOND LOCATION
-//		//String ServiceOrder2 = dashBoard.getServiceOrderNumber();
+//		//String ServiceOrder2 = dashBoard.getserviceOrderNum();
 //		dashBoard.clickrefreshPage();
 //		
 //		dashBoard.enterDashBoardSearch(locationID2);
@@ -108,8 +108,8 @@ public class TC0038_VerifyAction_Transfers_Stack_TwoLocations_DefaultCustomerLoc
 //		dashBoard.enterRequest("Transfer");
 //		// Move Out
 //		moveOutrequestedDate = dashBoard.Movin_getMoveOutRequestedDate();
-//		dashBoard.verifyDefaultCustomer(DefaultCustomer2);
-//		dashBoard.enterDefaultCustomer(DefaultCustomer2);
+//		dashBoard.verifydefaultCustomer(defaultCustomer2);
+//		dashBoard.enterdefaultCustomer(defaultCustomer2);
 //		dashBoard.enterDescription("AUTOMATION TEST");
 //		// Move In
 //		dashBoard.ClickMoveIn();

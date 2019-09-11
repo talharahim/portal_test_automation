@@ -8,7 +8,7 @@ import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 
-public class TC0020_VerifyDrillBackServices extends BaseClass {
+public class TC0020_verifyDrillbackServices extends BaseClass {
 
 	/*
 	 * This test the search Drill Back for Services TAB
@@ -17,12 +17,12 @@ public class TC0020_VerifyDrillBackServices extends BaseClass {
 	 * @Since 2019-06-11
 	 */
 	public String locationID = "LOC@0001";
-	public String CustomerID = "0000011111";
-	public String ServerURL = GetDrillBackServerURL();
-	public String ServiceOrderNumber = "SORD00000000057";
+	public String customerId = "0000011111";
+	public String serverUrl = getDrillbackServerUrl();
+	public String serviceOrderNum = "SORD00000000057";
 		
 	// ServiceOrder
-	public String ServiceOrderUrl = ServerURL + "&Prod=229&Act=OPEN&Func=ServiceOrderInquiry&ServiceOrderNumber="+ServiceOrderNumber+"&CogsDrillback=1";
+	public String serviceOrderUrl = serverUrl + "&Prod=229&Act=OPEN&Func=ServiceOrderInquiry&serviceOrderNum="+serviceOrderNum+"&CogsDrillback=1";
 	CommonMethods cmnMethods = new CommonMethods();
     //This Test will test the search by Customer ID
 	
@@ -34,11 +34,11 @@ public class TC0020_VerifyDrillBackServices extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
-		dashBoard.ClickServiceOrderLink();
+		dashBoard.clickServiceorderLink();
 		// Verify Transaction details
-		dashBoard.VerifyServiceOrderDrillBacks(ServiceOrderUrl);
+		dashBoard.verifyServiceorderDrillbacks(serviceOrderUrl);
 		dashBoard.logout();
 	}
 

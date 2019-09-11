@@ -30,13 +30,13 @@ public class TC0029_VerifyAction_Transfers_Scheduled extends BaseClass {
 
 	public String locationID = "LOC@0004";
 	public String locationID2 = "LOC@0005";
-	public String DefaultCustomer = "Mr. VACANT VACANT";
+	public String defaultCustomer = "Mr. VACANT VACANT";
 	public String requestedbY = "Mr. Automation Mate";
 	public String moveOutCustomer = "Mr. Automation Mate";
 	public String loc2moveOutCustomer = "Mr. Movein Cus";
 	public String moveInCustomer = "Mr. Vacant Vacant (Vacant)";
 	public String loc2moveInCustomer = "Mr. Automation Mate (0000011111)";
-	public String ServerURL = GetDrillBackServerURL();
+	public String serverUrl = getDrillbackServerUrl();
 	public String Task1 = "Meter Reading-electric";
 	public String Task2 = "Charge New Customer";
 	public String Task3 = "Property Transfer";
@@ -51,21 +51,21 @@ public class TC0029_VerifyAction_Transfers_Scheduled extends BaseClass {
 			SQLServerException, SQLException, ParseException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		Dashboard_Transfers dashBoard = new Dashboard_Transfers(driver);
-		MySQLDataExec Sql = new MySQLDataExec();
-		Sql.DeleteServiceOrders(locationID);
-		Sql.DeleteServiceOrders(locationID2);
-		Sql.DeleteServiceOrdersHistory(locationID);
-		Sql.DeleteServiceOrdersHistory(locationID2);
+		MySQLDataExec sql = new MySQLDataExec();
+		sql.deleteServiceorder(locationID);
+		sql.deleteServiceorder(locationID2);
+		sql.deleteServiceorderHistory(locationID);
+		sql.deleteServiceorderHistory(locationID2);
 		login();
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
 		dashBoard.clickActionDropDown();
 
 		dashBoard.clickActionDropDown_TransferService();
-		dashBoard.SelectTransferType_Transfer();
+		dashBoard.selectTransferTypeTransfer();
 		String moveOutrequestedDate = dashBoard.Movin_getMoveOutRequestedDate();
 		String[] arrOfStr1 = moveOutrequestedDate.split(" ", 2);
 		String moveOutstart_dt1 = arrOfStr1[0];
@@ -78,7 +78,7 @@ public class TC0029_VerifyAction_Transfers_Scheduled extends BaseClass {
 		c1.add(Calendar.DAY_OF_MONTH, -5);
 		// Date after adding the days to the given date
 		String beforeDate = newFormat1.format(c1.getTime());
-		dashBoard.Movin_ScheduleDate(beforeDate);
+		dashBoard.moveinScheduledate(beforeDate);
 		Thread.sleep(2000);
 
 		// dashBoard.Movin_EnterRequestDate(beforeDate);
@@ -89,13 +89,13 @@ public class TC0029_VerifyAction_Transfers_Scheduled extends BaseClass {
 			dashBoard.XFERMoveFromDatePickerScheduled.sendKeys(Keys.BACK_SPACE);
 		}
 		Thread.sleep(2000);
-		dashBoard.Movin_ScheduleDate(moveOutrequestedDate);
+		dashBoard.moveinScheduledate(moveOutrequestedDate);
 
 		dashBoard.enterRequest("Transfer");
 		// Move Out
 
-		dashBoard.verifyDefaultCustomer(DefaultCustomer);
-		dashBoard.enterDefaultCustomer(DefaultCustomer);
+		dashBoard.verifydefaultCustomer(defaultCustomer);
+		dashBoard.enterdefaultCustomer(defaultCustomer);
 		dashBoard.enterDescription("AUTOMATION TEST");
 
 		// Move In
@@ -103,19 +103,19 @@ public class TC0029_VerifyAction_Transfers_Scheduled extends BaseClass {
 		dashBoard.ClickMoveTo();
 
 		String moveInrequestedDate = dashBoard.Movin_getMoveFromRequestedDate();
-		dashBoard.Movin_EnterMoveToScheduleDate(moveInrequestedDate);
-		dashBoard.Movin_EnterRequest("TRANSFER");
-		dashBoard.Movin_EnterLocation(locationID2);
-		dashBoard.Movin_EnterDescription("Move in from location");
-		dashBoard.Click_MoveInSubmit();
+		dashBoard.movinEnterMoveToScheduleDate(moveInrequestedDate);
+		dashBoard.movinEnterRequest("TRANSFER");
+		dashBoard.movinEnterLocation(locationID2);
+		dashBoard.movinEnterDescription("Move in from location");
+		dashBoard.clickMoveInSubmit();
 		Thread.sleep(1000);
-		dashBoard.ClickDone();
+		dashBoard.clickDone();
 		// Verify Updated details IN SERVICE TAB order number from database
-		dashBoard.ClickServiceOrderLink();
+		dashBoard.clickServiceorderLink();
 		// Verifying Service Order details
-		String ServiceOrder = dashBoard.getServiceOrderNumber();
-		String ServiceOrderURL = dashBoard.getServiceOrderDrillbackURL();
-		cmnMethods.VerifyStringContains(ServiceOrderURL, ServiceOrder);
+		String serviceOrder = dashBoard.getserviceOrderNum();
+		String serviceOrderURL = dashBoard.getServiceOrderDrillbackURL();
+		cmnMethods.verifyStringContains(serviceOrderURL, serviceOrder);
 		//
 		cmnMethods.verifyString(dashBoard.getRequestedSOcustomerName(), requestedbY);
 		// Get request Date and Compare
@@ -137,15 +137,15 @@ public class TC0029_VerifyAction_Transfers_Scheduled extends BaseClass {
 		cmnMethods.verifyString(dashBoard.getSOTask4Description(), Task4);
 		cmnMethods.verifyString(dashBoard.getSOTask5Description(), Task5);
 		cmnMethods.verifyString(dashBoard.getSOTask6Description(), Task6);
-		log(ServiceOrder);
-		Sql.VerifyServiceOrders(locationID, ServiceOrder);
+		log(serviceOrder);
+		sql.verifyServiceOrders(locationID, serviceOrder);
 		// Entering location ID 2 and verifying
 		dashBoard.enterDashBoardSearch(locationID2);
 		dashBoard.clickDashBoardSearchResult1();
-		dashBoard.ClickServiceOrderLink();
-		ServiceOrder = dashBoard.getServiceOrderNumber();
-		ServiceOrderURL = dashBoard.getServiceOrderDrillbackURL();
-		cmnMethods.VerifyStringContains(ServiceOrderURL, ServiceOrder);
+		dashBoard.clickServiceorderLink();
+		serviceOrder = dashBoard.getserviceOrderNum();
+		serviceOrderURL = dashBoard.getServiceOrderDrillbackURL();
+		cmnMethods.verifyStringContains(serviceOrderURL, serviceOrder);
 
 		String moveInstart_dt = arrOfStr2[0];
 		date = (Date) formatter.parse(moveInstart_dt);
@@ -161,8 +161,8 @@ public class TC0029_VerifyAction_Transfers_Scheduled extends BaseClass {
 		cmnMethods.verifyString(dashBoard.getSOTask5Description(), Task5);
 		cmnMethods.verifyString(dashBoard.getSOTask6Description(), Task6);
 
-		log(ServiceOrder);
-		Sql.VerifyServiceOrders(locationID2, ServiceOrder);
+		log(serviceOrder);
+		sql.verifyServiceOrders(locationID2, serviceOrder);
 		dashBoard.logout();
 	}
 

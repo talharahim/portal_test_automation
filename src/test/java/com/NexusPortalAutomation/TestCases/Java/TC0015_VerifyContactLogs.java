@@ -27,7 +27,7 @@ public class TC0015_VerifyContactLogs extends BaseClass {
 	CommonMethods cmnMethods = new CommonMethods();
 	DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 	Date date = new Date();
-	String Comments = "Notes added" + dateFormat.format(date);
+	//String comments = "Notes added" + dateFormat.format(date);
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -38,12 +38,12 @@ public class TC0015_VerifyContactLogs extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
 		///dashBoard.AddNotes(Comments);  -- Functionality Removed
 		// Verify Updated details
 		//cmnMethods.VerifyString(dashBoard.GetNotes(), Comments);  -- Functionality Removed
-		dashBoard.VerifyNotesDrillBacks();
+		dashBoard.verifyNotesDrillbacks();
 		dashBoard.logout();
 	}
 

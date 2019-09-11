@@ -22,7 +22,7 @@ import junit.framework.Assert;
 public class Dashboard_Transfers extends DashBoard {
 
 	public static String moveOutrequestedDate;
-	MySQLDataExec Sql = new MySQLDataExec();
+	MySQLDataExec sql = new MySQLDataExec();
 
 	@FindBy(id = "ACTION_Transfer_Service")
 	WebElement ACTIONTransferService;
@@ -164,21 +164,21 @@ public class Dashboard_Transfers extends DashBoard {
 
 	}
 
-	public void ClickServOrder1() {
+	public void clickServiceorder1() {
 		waitForObject(driver, ServiceOrder1);
 		ClickElement(ServiceOrder1, "Clicking Service Order 1");
 		WaitAngular(driver);
 
 	}
 
-	public void ClickServOrder2() {
+	public void clickServiceorder2() {
 		waitForObject(driver, ServiceOrder2);
 		ClickElement(ServiceOrder2, "Clicking Service Order 2");
 		WaitAngular(driver);
 
 	}
 
-	public void ClickServOrder3() {
+	public void clickServiceOrder3() {
 		waitForObject(driver, ServiceOrder3);
 		ClickElement(ServiceOrder3, "Clicking Service Order 3");
 		WaitAngular(driver);
@@ -262,25 +262,25 @@ public class Dashboard_Transfers extends DashBoard {
 		// TODO Auto-generated constructor stub
 	}
 
-	public void ClickDone() {
+	public void clickDone() {
 		ClickElement(XFERButtonDone, "Done Button for Transfer");
 	}
 
-	public void SelectTransferType_Transfer() {
+	public void selectTransferTypeTransfer() {
 		// Select combo box
 		ClickElement(TransferType, "Transfer Combo");
 		ClickElement(XFER_Select_Option_1, "Transfer Option 1");
 
 	}
 
-	public void SelectTransferType_Transfer_Start() {
+	public void selectTransferStart() {
 		// Select combo box
 		ClickElement(TransferType, "Transfer Combo");
 		ClickElement(XFER_Select_Option_2, "Transfer Option 2");
 
 	}
 
-	public void SelectTransferType_Transfer_Stop() {
+	public void selectTransferStop() {
 		// Select combo box
 		ClickElement(TransferType, "Transfer Combo");
 		ClickElement(XFER_Select_Option_3, "Transfer Option 3");
@@ -292,20 +292,20 @@ public class Dashboard_Transfers extends DashBoard {
 		setElementText(SearchRequest, Request, "Search Request");
 	}
 
-	public void enterDefaultCustomer(String Customer) {
+	public void enterdefaultCustomer(String Customer) {
 		log("TEST DEFAULT VALUE FOR CUSTOMER ===" + DefaultCsutomer.getAttribute("value"));
 		setElementText(DefaultCsutomer, Customer, "Customer Name Request");
 		ClickElement(XFERSearchOption1CustomerName, "XFER_Search_Option_1_Customer_Name");
 
 	}
 
-	public void enterDefaultCustomerStartService(String Customer) {
+	public void enterdefaultCustomerStartService(String Customer) {
 		setElementText(DefaultCsutomer, Customer, "Customer Name Request");
 		ClickElement(XFERSearchOption1, "XFER_Search_Option_1_Customer_Name");
 
 	}
 
-	public void verifyDefaultCustomerStartService(String Customer) {
+	public void verifydefaultCustomerStartService(String Customer) {
 		String Found = DefaultCsutomer.getAttribute("value");
 		if (Found != "") {
 			verifyString(Customer, Found);
@@ -315,7 +315,7 @@ public class Dashboard_Transfers extends DashBoard {
 
 	}
 
-	public void verifyDefaultCustomer(String Customer) {
+	public void verifydefaultCustomer(String Customer) {
 
 		String Found = DefaultCsutomer.getAttribute("value");
 		if (Found != "") {
@@ -354,7 +354,7 @@ public class Dashboard_Transfers extends DashBoard {
 
 	}
 
-	public void Movin_EnterMoveToScheduleDate(String Date) {
+	public void movinEnterMoveToScheduleDate(String Date) {
 
 		log("Enter Schedule Date");
 		waitForObject(driver, XFERMoveToDatePickerScheduled);
@@ -362,7 +362,7 @@ public class Dashboard_Transfers extends DashBoard {
 
 	}
 
-	public void Movin_ScheduleDate(String Date) {
+	public void moveinScheduledate(String Date) {
 
 		log("Enter Schedule Date");
 		waitForObject(driver, XFERMoveFromDatePickerScheduled);
@@ -393,28 +393,28 @@ public class Dashboard_Transfers extends DashBoard {
 
 	}
 
-	public void Movin_EnterRequest(String Request) {
+	public void movinEnterRequest(String Request) {
 		waitForObject(driver, CLOServiceOrderInput);
 		log("Enter Request Name");
 		setElementText(CLOServiceOrderInput, Request, "Service Order Input");
 
 	}
 
-	public void Movin_EnterLocation(String Location) {
+	public void movinEnterLocation(String Location) {
 		waitForObject(driver, XFERSearchInput);
 		setElementText(XFERSearchInput, Location, "XFERSearchInput");
 		ClickElement(XFERSearchOption1CustomerName, "XFER_Search_Option_1_Customer_Name");
 
 	}
 
-	public void Movin_EnterDescription(String Desc) {
+	public void movinEnterDescription(String Desc) {
 		log("Enter Request Description");
 		waitForObject(driver, XFERDescription);
 		setElementText(XFERDescription, Desc, "XFER Description");
 
 	}
 
-	public void Click_MoveInSubmit() {
+	public void clickMoveInSubmit() {
 		log("Click Submit");
 		waitForObject(driver, MoveInSubmit);
 		ClickElement(MoveInSubmit, "MoveInSubmit Button");
@@ -429,15 +429,15 @@ public class Dashboard_Transfers extends DashBoard {
 		JavascriptExecutor jsx = (JavascriptExecutor) driver;
 		jsx = (JavascriptExecutor) driver;
 		jsx.executeScript("window.scrollBy(0,450)", "");
-		verifyDefaultCustomerStartService(defaultCustomer);
+		verifydefaultCustomerStartService(defaultCustomer);
 		if (!requestCustomer.isEmpty()) {
-			enterDefaultCustomerStartService(requestCustomer);
+			enterdefaultCustomerStartService(requestCustomer);
 		}
 		enterDescription(description);
 		// Entering data for Move In
-		Click_MoveInSubmit();
+		clickMoveInSubmit();
 		Thread.sleep(1000);
-		ClickDone();
+		clickDone();
 
 	}
 
@@ -456,9 +456,9 @@ public class Dashboard_Transfers extends DashBoard {
 		verifyString(getSOTask4Description(), Task[3]);
 		verifyString(getSOTask5Description(), Task[4]);
 		verifyString(getSOTask6Description(), Task[5]);
-		VerifyStringContains(getServiceOrderDrillbackURL(), getServiceOrderNumber());
+		verifyStringContains(getServiceOrderDrillbackURL(), getserviceOrderNum());
 		verifyString(getServiceOrderDescription(), description);
-		Sql.VerifyServiceOrders(locationID, getServiceOrderNumber());
+		sql.verifyServiceOrders(locationID, getserviceOrderNum());
 	}
 
 	public void verifyServiceOrderdetails(String requester, String moveOutCustomer, String moveInCustomer,
@@ -476,7 +476,7 @@ public class Dashboard_Transfers extends DashBoard {
 		verifyString(getSOTask4Description(), Task[3]);
 		verifyString(getSOTask5Description(), Task[4]);
 		verifyString(getSOTask6Description(), Task[5]);
-		VerifyStringContains(getServiceOrderDrillbackURL(), getServiceOrderNumber());
-		Sql.VerifyServiceOrders(locationID, getServiceOrderNumber());
+		verifyStringContains(getServiceOrderDrillbackURL(), getserviceOrderNum());
+		sql.verifyServiceOrders(locationID, getserviceOrderNum());
 	}
 }

@@ -34,8 +34,8 @@ public class TC0036_VerifyAction_Transfers_StartService extends BaseClass {
 	public String locationID2 = "LOC@0005";
 	public String locationID3 = "AUTOLOC001";
 	public String locationID4 = "STATEMENTS001";
-	public String ServerURL = GetDrillBackServerURL();
-	public String DefaultCustomer = "Mr. VACANT VACANT";
+	public String serverUrl = getDrillbackServerUrl();
+	public String defaultCustomer = "Mr. VACANT VACANT";
 	public String requestedbY = "Mr. Automation Mate";
 	public String moveOutCustomer = "Mr. Automation Mate";
 	public String loc2moveOutCustomer = "Mr. Movein Cus";
@@ -55,33 +55,33 @@ public class TC0036_VerifyAction_Transfers_StartService extends BaseClass {
 			SQLServerException, SQLException, ParseException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		Dashboard_Transfers dashBoard = new Dashboard_Transfers(driver);
-		MySQLDataExec Sql = new MySQLDataExec();
-		Sql.DeleteServiceOrders(locationID);
-		Sql.DeleteServiceOrdersHistory(locationID);
-		Sql.DeleteServiceOrders(locationID2);
-		Sql.DeleteServiceOrdersHistory(locationID2);
-		Sql.DeleteServiceOrders(locationID3);
-		Sql.DeleteServiceOrdersHistory(locationID3);
-		Sql.DeleteServiceOrders(locationID4);
-		Sql.DeleteServiceOrdersHistory(locationID4);
+		MySQLDataExec sql = new MySQLDataExec();
+		sql.deleteServiceorder(locationID);
+		sql.deleteServiceorderHistory(locationID);
+		sql.deleteServiceorder(locationID2);
+		sql.deleteServiceorderHistory(locationID2);
+		sql.deleteServiceorder(locationID3);
+		sql.deleteServiceorderHistory(locationID3);
+		sql.deleteServiceorder(locationID4);
+		sql.deleteServiceorderHistory(locationID4);
 		login();
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
-		dashBoard.SelectTransferType_Transfer_Start();
+		dashBoard.selectTransferStart();
 		String moveOutrequestedDate = dashBoard.startService_getRequestedDate();
 		// Entering data for Move Out
 		// Scroll down
 		String moveInCustomer = "MoveinCus";
 		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, "", "TRANSFER",
-				DefaultCustomer, moveInCustomer,"Description for Start Service");
+				defaultCustomer, moveInCustomer,"Description for Start Service");
 		// Verify Updated details IN SERVICE TAB order number from database
-		dashBoard.ClickServiceOrderLink();
-		dashBoard.ClickServOrder1();
-		String ServiceOrder = dashBoard.getServiceOrderNumber();
+		dashBoard.clickServiceorderLink();
+		dashBoard.clickServiceorder1();
+		String ServiceOrder = dashBoard.getserviceOrderNum();
 		dashBoard.clickrefreshPage();
 		String[] arrOfStr = moveOutrequestedDate.split(" ", 2);
 		String moveOutstart_dt = arrOfStr[0];
@@ -95,7 +95,7 @@ public class TC0036_VerifyAction_Transfers_StartService extends BaseClass {
 		 */
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
-		dashBoard.SelectTransferType_Transfer_Start();
+		dashBoard.selectTransferStart();
 		dashBoard.verifyServiceWarningSingleSO(ServiceOrder);
 
 		Calendar c = Calendar.getInstance();
@@ -103,18 +103,18 @@ public class TC0036_VerifyAction_Transfers_StartService extends BaseClass {
 		c.add(Calendar.DAY_OF_MONTH, 2);
 		// Date after adding the days to the given date
 		String newDate = newFormat.format(c.getTime());
-		dashBoard.submitStartStopServiceTransferOrder(newDate, "", "TRANSFER", DefaultCustomer,
+		dashBoard.submitStartStopServiceTransferOrder(newDate, "", "TRANSFER", defaultCustomer,
 				moveInCustomer,"Description for Start Service");
 
 		dashBoard.clickrefreshPage();
-		dashBoard.ClickServiceOrderLink();
-		dashBoard.ClickServOrder2();
-		String ServiceOrder2 = dashBoard.getServiceOrderNumber();
+		dashBoard.clickServiceorderLink();
+		dashBoard.clickServiceorder2();
+		String ServiceOrder2 = dashBoard.getserviceOrderNum();
 		String ServiceOrderURL2 = dashBoard.getServiceOrderDrillbackURL();
-		cmnMethods.VerifyStringContains(ServiceOrderURL2, ServiceOrder2);
+		cmnMethods.verifyStringContains(ServiceOrderURL2, ServiceOrder2);
 		cmnMethods.verifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
 		log(ServiceOrder2);
-		Sql.VerifyServiceOrders(locationID, ServiceOrder2);
+		sql.verifyServiceOrders(locationID, ServiceOrder2);
 		dashBoard.clickrefreshPage();
 
 		/*
@@ -122,7 +122,7 @@ public class TC0036_VerifyAction_Transfers_StartService extends BaseClass {
 		 */
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
-		dashBoard.SelectTransferType_Transfer_Start();
+		dashBoard.selectTransferStart();
 		dashBoard.verifyServiceWarningMultiSO(ServiceOrder2);
 		dashBoard.enterRequest("TRANSFER");
 		c = Calendar.getInstance();
@@ -133,20 +133,20 @@ public class TC0036_VerifyAction_Transfers_StartService extends BaseClass {
 		// Entering data for Move Out
 		// Scroll down
 		moveInCustomer = "Alert";
-		dashBoard.submitStartStopServiceTransferOrder(newDate2, "", "TRANSFER", DefaultCustomer,
+		dashBoard.submitStartStopServiceTransferOrder(newDate2, "", "TRANSFER", defaultCustomer,
 				moveInCustomer,"Description for Start Service");
 		dashBoard.clickrefreshPage();
 
 		// Verify First Service Order in the Stack
-		dashBoard.ClickServOrder3();
+		dashBoard.clickServiceOrder3();
 		moveOutCustomer = "Mr. Automation Mate";
 		moveInCustomer = "Mr. Alert Test (Customeralert01)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer, moveOutCustomer, moveInCustomer, "Not Scheduled",
 				moveOutstart_dtfinalString, Task, locationID);
 
 		// Verifying Second order in the stack
-		dashBoard.ClickServOrder2();
-		cmnMethods.VerifyStringContains(ServiceOrderURL2, ServiceOrder2);
+		dashBoard.clickServiceorder2();
+		cmnMethods.verifyStringContains(ServiceOrderURL2, ServiceOrder2);
 		cmnMethods.verifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
 		moveOutCustomer = "Mr. Automation Mate";
 		moveInCustomer = "Mr. Movein Cus (Moveincus2)";
@@ -154,7 +154,7 @@ public class TC0036_VerifyAction_Transfers_StartService extends BaseClass {
 				moveOutstart_dtfinalString, Task, locationID);
 
 		// Verifying Third Transfer order in the stack
-		dashBoard.ClickServOrder1();
+		dashBoard.clickServiceorder1();
 		moveOutCustomer = "Mr. Automation Mate";
 		moveInCustomer = "Mr. Movein Cus (Moveincus2)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer, moveOutCustomer, moveInCustomer,

@@ -22,11 +22,10 @@ public class TC0016_1_VerifyBillingDetails_EBill extends BaseClass {
 
 	public String locationID = "LOC@0001";
 	public String locationID2 = "LOC@0002";
-
 	CommonMethods cmnMethods = new CommonMethods();
-	String Ebill = "ON";
-	String Ebilloff = "OFF";
-	String AutoPayURL = "https://www.invoicecloud.com/integrations/redirect/Csr?BillerGUID";
+	String ebill = "ON";
+	String ebilloff = "OFF";
+	String autoPayURL = "https://www.invoicecloud.com/integrations/redirect/Csr?BillerGUID";
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -37,18 +36,18 @@ public class TC0016_1_VerifyBillingDetails_EBill extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Billing Information
-		cmnMethods.verifyString(dashBoard.getEBill(), Ebill);
+		cmnMethods.verifyString(dashBoard.getEBill(), ebill);
 		dashBoard.logout();
 		// Verifying Ebill Location off
 		login();
 		dbSrch.enterSearchText(locationID2);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID2, dashBoard.getLoggedCustomerName());
+		cmnMethods.verifyString(locationID2, dashBoard.getLoggedCustomerLocationId());
 		// Verify Billing Information
-		cmnMethods.verifyString(dashBoard.getEBill(), Ebilloff);
+		cmnMethods.verifyString(dashBoard.getEBill(), ebilloff);
 		dashBoard.logout();
 	}
 

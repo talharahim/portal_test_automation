@@ -27,8 +27,8 @@ public class TC0022_VerifyAction_ServiceOrder extends BaseClass {
 	 */
 
 	public String locationID = "LOC@0007";
-	public String CustomerID = "0000011111";
-	public String ServerURL = GetDrillBackServerURL();
+	public String customerId = "0000011111";
+	public String serverUrl = getDrillbackServerUrl();
 	public String SearchInput = "REQ-DEP-WATER";
 	public String DateDescription = "AutomationRequest";
 	public String Message = "Service Order successfully created";
@@ -40,13 +40,13 @@ public class TC0022_VerifyAction_ServiceOrder extends BaseClass {
 			throws IOException, InterruptedException, ClassNotFoundException, SQLServerException, SQLException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
-		MySQLDataExec Sql = new MySQLDataExec();
-		Sql.DeleteServiceOrders(locationID);
+		MySQLDataExec sql = new MySQLDataExec();
+		sql.deleteServiceorder(locationID);
 		login();
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
+		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
 		// cmnMethods.VerifyString(servTabURL, dashBoard.GetServiceTabDrillBackUrl());
 		dashBoard.clickActionDropDown();
@@ -59,11 +59,11 @@ public class TC0022_VerifyAction_ServiceOrder extends BaseClass {
 		dashBoard.verifySubmitMessage(Message);
 		dashBoard.ClickSerOrderDne();
 		
-		//Sql.VerifyServiceOrders(locationID, DateRequested);
+		//sql.VerifyServiceOrders(locationID, DateRequested);
 		// Verify Updated details IN SERVICE TAB order number from database
-		dashBoard.ClickServiceOrderLink();
-		String ServiceOrder = dashBoard.getServiceOrderNumber();
-		Sql.VerifyServiceOrders(locationID, ServiceOrder);
+		dashBoard.clickServiceorderLink();
+		String ServiceOrder = dashBoard.getserviceOrderNum();
+		sql.verifyServiceOrders(locationID, ServiceOrder);
 		dashBoard.logout();
 	}
 

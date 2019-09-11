@@ -38,24 +38,24 @@ public class TC0013_VerifyContactEdit extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-	    cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerName());
+	    cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
-		dashBoard.ClickContactEdit();
+		dashBoard.editContact();
 		dashBoard.updatePhone1("09007861112112");
 		dashBoard.updateEmail("automation1@cogsdale.com");
 		dashBoard.clickContactUpdate();
 		phone = "(090) 078-6111";
 		email = "automation1@cogsdale.com";
-		dashBoard.VerifyCustomerDetails(ssn, lic, phone, ext, email, add, acsz);
+		dashBoard.verifyCustDetails(ssn, lic, phone, ext, email, add, acsz);
 		
 		// Verify Updated details
 		phone = "(090) 078-6010";
 		email = "automation@cogsdale.com";
-		dashBoard.ClickContactEdit();
+		dashBoard.editContact();
 		dashBoard.updatePhone1("09007860102112");
 		dashBoard.updateEmail("automation@cogsdale.com");
 		dashBoard.clickContactUpdate();
-		dashBoard.VerifyCustomerDetails(ssn, lic, phone, ext, email, add, acsz);
+		dashBoard.verifyCustDetails(ssn, lic, phone, ext, email, add, acsz);
 		dashBoard.logout();
 	}
 

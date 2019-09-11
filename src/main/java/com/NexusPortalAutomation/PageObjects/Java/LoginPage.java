@@ -45,13 +45,13 @@ public class LoginPage extends CommonMethods {
 
 	public void Verifytitle(String title) {
 		waitForObject(driver, username);
-		Assert.assertEquals(driver.gettitle(), title, "Verifying title");
+		Assert.assertEquals(driver.getTitle(), title, "Verifying title");
 		log("Login Page title Verified");
 	}
 
 	public void Login(String username, String Password) throws InterruptedException {
-		waitForObject(driver, username);
-		username.sendKeys(username);
+		waitForObject(driver, this.username);
+		this.username.sendKeys(username);
 		waitForObject(driver, passWord);
 		passWord.sendKeys(Password);
 		waitForObject(driver, loginBtn);

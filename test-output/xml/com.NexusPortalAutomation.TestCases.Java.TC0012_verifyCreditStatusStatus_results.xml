@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="all-tests"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="47.096">
+  <properties />
+  
+  
+            <testcase name="TestCreditStatus" time="47.096" classname="com.NexusPortalAutomation.TestCases.Java.TC0012_verifyCreditStatusStatus" />
+      
+</testsuite>

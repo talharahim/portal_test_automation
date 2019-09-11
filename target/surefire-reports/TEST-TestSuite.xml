@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="2,609.638" tests="50" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\target\test-classes;F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\target\classes;C:\Users\Administrator\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\Administrator\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\Administrator\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-java\3.14.0\selenium-java-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-api\3.14.0\selenium-api-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.14.0\selenium-edge-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.14.0\selenium-ie-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.14.0\selenium-opera-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.14.0\selenium-remote-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.14.0\selenium-safari-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-support\3.14.0\selenium-support-3.14.0.jar;C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Administrator\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\Administrator\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Administrator\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Administrator\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Administrator\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;C:\Users\Administrator\.m2\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar;C:\Users\Administrator\.m2\repository\com\squareup\okio\okio\1.14.1\okio-1.14.1.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\apache\maven\reporting\maven-reporting-api\2.0.6\maven-reporting-api-2.0.6.jar;C:\Users\Administrator\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.0-alpha-7\doxia-sink-api-1.0-alpha-7.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\mysql\mysql-connector-java\8.0.15\mysql-connector-java-8.0.15.jar;C:\Users\Administrator\.m2\repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;C:\Users\Administrator\.m2\repository\org\apache\logging\log4j\log4j-core\2.11.2\log4j-core-2.11.2.jar;C:\Users\Administrator\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.2\log4j-api-2.11.2.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi\4.1.0\poi-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-collections4\4.3\commons-collections4-4.3.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml\4.1.0\poi-ooxml-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.0\poi-ooxml-schemas-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\Administrator\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\Administrator\.m2\repository\com\microsoft\sqlserver\mssql-jdbc\7.0.0.jre8\mssql-jdbc-7.0.0.jre8.jar;C:\Users\Administrator\.m2\repository\com\paulhammant\ngwebdriver\1.1.4\ngwebdriver-1.1.4.jar;C:\Users\Administrator\.m2\repository\com\aventstack\extentreports\4.0.5\extentreports-4.0.5.jar;C:\Users\Administrator\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\Administrator\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\Administrator\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;C:\Users\Administrator\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\Administrator\.m2\repository\org\uncommons\reportng\1.1.4\reportng-1.1.4.jar;C:\Users\Administrator\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\Administrator\.m2\repository\com\google\inject\guice\3.0\guice-3.0.jar;C:\Users\Administrator\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Administrator\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Administrator\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\Administrator\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows Server 2012 R2"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\Administrator\AppData\Local\Temp\surefire6185297545004336790\surefirebooter4514841719669298735.jar C:\Users\Administrator\AppData\Local\Temp\surefire6185297545004336790 2019-09-11T11-17-12_623-jvmRun1 surefire3745837904256663039tmp surefire_05932418358810571765tmp"/>
+    <property name="surefire.test.class.path" value="F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\target\test-classes;F:\CogsdaleWorkSpace\BitBucket\portal_test_automation\target\classes;C:\Users\Administrator\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\Administrator\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\Administrator\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-java\3.14.0\selenium-java-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-api\3.14.0\selenium-api-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.14.0\selenium-edge-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.14.0\selenium-ie-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.14.0\selenium-opera-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.14.0\selenium-remote-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.14.0\selenium-safari-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-support\3.14.0\selenium-support-3.14.0.jar;C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Administrator\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\Administrator\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Administrator\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Administrator\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Administrator\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;C:\Users\Administrator\.m2\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar;C:\Users\Administrator\.m2\repository\com\squareup\okio\okio\1.14.1\okio-1.14.1.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\apache\maven\reporting\maven-reporting-api\2.0.6\maven-reporting-api-2.0.6.jar;C:\Users\Administrator\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.0-alpha-7\doxia-sink-api-1.0-alpha-7.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\mysql\mysql-connector-java\8.0.15\mysql-connector-java-8.0.15.jar;C:\Users\Administrator\.m2\repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;C:\Users\Administrator\.m2\repository\org\apache\logging\log4j\log4j-core\2.11.2\log4j-core-2.11.2.jar;C:\Users\Administrator\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.2\log4j-api-2.11.2.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi\4.1.0\poi-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-collections4\4.3\commons-collections4-4.3.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml\4.1.0\poi-ooxml-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.0\poi-ooxml-schemas-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\Administrator\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\Administrator\.m2\repository\com\microsoft\sqlserver\mssql-jdbc\7.0.0.jre8\mssql-jdbc-7.0.0.jre8.jar;C:\Users\Administrator\.m2\repository\com\paulhammant\ngwebdriver\1.1.4\ngwebdriver-1.1.4.jar;C:\Users\Administrator\.m2\repository\com\aventstack\extentreports\4.0.5\extentreports-4.0.5.jar;C:\Users\Administrator\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\Administrator\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\Administrator\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;C:\Users\Administrator\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\Administrator\.m2\repository\org\uncommons\reportng\1.1.4\reportng-1.1.4.jar;C:\Users\Administrator\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\Administrator\.m2\repository\com\google\inject\guice\3.0\guice-3.0.jar;C:\Users\Administrator\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Administrator\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Administrator\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\Administrator\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Administrator"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_201\jre"/>
+    <property name="basedir" value="F:\CogsdaleWorkSpace\BitBucket\portal_test_automation"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Administrator\AppData\Local\Temp\surefire6185297545004336790\surefirebooter4514841719669298735.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_201-b09"/>
+    <property name="user.name" value="Administrator"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="6.3"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Administrator\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_201"/>
+    <property name="user.dir" value="F:\CogsdaleWorkSpace\BitBucket\portal_test_automation"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;F:\apache-maven-3.6.0/bin;C:\Program Files\Java\jdk1.8.0_201/bin;C:\Program Files\Java\jdk1.8.0_201/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Python35\Scripts\;C:\Program Files\Python35\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\nodejs\;C:\CSM_API\API\CSR_Portal\;C:\Server\npm\;F:\apache-maven-3.6.0\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Local\GitHubDesktop\bin;F:\apache-maven-3.6.0\bin;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.201-b09"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="TestBookMark" classname="com.NexusPortalAutomation.TestCases.Java.TC0011_VerifyBookMark" time="56.589"/>
+  <testcase name="VerifyTransactionsSaperatebill_saperate" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_VerifyBillSaperately" time="24.076"/>
+  <testcase name="verifyDrillbackTransactions" classname="com.NexusPortalAutomation.TestCases.Java.TC0019_verifyDrillbackTransactions" time="23.193"/>
+  <testcase name="TestDrillBackServices" classname="com.NexusPortalAutomation.TestCases.Java.TC0020_verifyDrillbackServices" time="32.174"/>
+  <testcase name="TestserviceOrderDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0021_VerifyservicesOrderDetails" time="41.49"/>
+  <testcase name="TestCustomerDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0010_verifyCustDetails" time="35.106"/>
+  <testcase name="VerifyBillingDetails_SPA" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_SPA" time="22.068"/>
+  <testcase name="verifyDrillbacksGeneral" classname="com.NexusPortalAutomation.TestCases.Java.TC0018_verifyDrillbacksGeneral" time="28.895"/>
+  <testcase name="TestCustomerDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0010_2_verifyCustDetails_Blank" time="30.393"/>
+  <testcase name="VerifyBillingDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_EBill" time="54.086"/>
+  <testcase name="TestBillingStatements" classname="com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue" time="27.251"/>
+  <testcase name="TestCustomerDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0010_1_verifyCustDetails_Business" time="28.606"/>
+  <testcase name="VerifyBillingDetails_budgetSPA" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget_SPA" time="29.901"/>
+  <testcase name="VerifyBillingDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails" time="40.153"/>
+  <testcase name="TestSearchAccount" classname="com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch" time="35.491"/>
+  <testcase name="VerifyBillingDetails_Budget" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget" time="27.673"/>
+  <testcase name="TestSearchAccount" classname="com.NexusPortalAutomation.TestCases.Java.TC0009_1_VerifyAccountSearch_NoAccounts" time="24.702"/>
+  <testcase name="VerifyBillingDetailsAutoPay" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_AutoPay" time="25.167"/>
+  <testcase name="TestSearchbylocationID" classname="com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbylocationID" time="27.376"/>
+  <testcase name="TestSecondayContact" classname="com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact" time="25.917"/>
+  <testcase name="TestContactLogs" classname="com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs" time="25.647"/>
+  <testcase name="TestCreditStatus" classname="com.NexusPortalAutomation.TestCases.Java.TC0012_verifyCreditStatusStatus" time="48.384"/>
+  <testcase name="TestContactEdit" classname="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit" time="39.353"/>
+  <testcase name="TestSearchID" classname="com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID" time="26.874"/>
+  <testcase name="VerifyActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0022_VerifyAction_ServiceOrder" time="40.239"/>
+  <testcase name="VerifyActionServiceOrder_Transfers_NotSchedule" classname="com.NexusPortalAutomation.TestCases.Java.TC0025_VerifyAction_Transfers_NotScheduled" time="57.525"/>
+  <testcase name="VerifyActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0029_VerifyAction_Transfers_Scheduled" time="71.718"/>
+  <testcase name="VerifyRecentWidget" classname="com.NexusPortalAutomation.TestCases.Java.TC0023_VerifyRecentWidget" time="31.568"/>
+  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0026_VerifyAction_Transfers_StartService_NotScheduled" time="48.419"/>
+  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0030_VerifyAction_Transfers_StartService_Scheduled" time="54.267"/>
+  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0027_VerifyAction_Transfers_StopService_NotScheduled" time="37.862"/>
+  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0031_VerifyAction_Transfers_StopService_Scheduled" time="55.72"/>
+  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled" time="99.909"/>
+  <testcase name="VerifyAction_Transfers_Stack_StartService_Scheduled" classname="com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled" time="96.04"/>
+  <testcase name="VerifyAction_Transfers_Stack_TwoLocations" classname="com.NexusPortalAutomation.TestCases.Java.TC0034_VerifyAction_Transfers_Stack_TwoLocations" time="111.084"/>
+  <testcase name="VerifyAction_Transfers_StopService" classname="com.NexusPortalAutomation.TestCases.Java.TC0035_VerifyAction_Transfers_StopService" time="81.647">
+    <failure message="Actual Value &apos;Mr. Movein Cus (Moveincus2)&apos; not Matched the expected value &apos;Mr. Automation Mate (0000011111)&apos; " type="java.lang.AssertionError">java.lang.AssertionError: Actual Value 'Mr. Movein Cus (Moveincus2)' not Matched the expected value 'Mr. Automation Mate (0000011111)' 
+	at com.NexusPortalAutomation.TestCases.Java.TC0035_VerifyAction_Transfers_StopService.VerifyAction_Transfers_StopService(TC0035_VerifyAction_Transfers_StopService.java:123)
+</failure>
+    <system-out><![CDATA[Test completed successfully- VerifyAction_Transfers_Stack_TwoLocations
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- VerifyAction_Transfers_StopService
+SORD00000001943
+SORD00000001944
+SORD00000001946
+Deleting Records for SORD00000001946
+0
+0
+0
+Deleting Records for LOC@0004
+Deleting Records for 
+Deleting Records for 
+Angular Request Completed in 59ms
+Log in to Nexus View
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: username] displayed in 78ms
+Login Page title Verified
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: username] displayed in 26ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: password] displayed in 72ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: kc-login] displayed in 557ms
+Angular Request Completed in 17ms
+User signed Admin
+Enter Text for Search =LOC@0004
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: SRCH_Input] displayed in 113ms
+Angular request time 1154ms
+Click Customer
+Angular request time 2042ms
+Angular request time 10ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: 'LOC_Location_Id'] displayed in 66ms
+get Text Text CustomerLocId
+Angular request time 15ms
+Customer Location Id found LOC@0004
+Strings Matched: LOC@0004 = LOC@0004
+Click Action Dropdown
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: ACTION_Button] displayed in 211ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: ACTION_Button] displayed in 24ms
+Angular request time 10ms
+Click Action Drop down
+Angular request time 11ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: ACTION_Transfer_Service] displayed in 69ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: ACTION_Transfer_Service] displayed in 107ms
+Angular request time 150ms
+Click Action Transfer Service Drop down
+Angular request time 12ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Select] displayed in 60ms
+Angular request time 12ms
+Click Transfer Combo
+Angular request time 13ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Select_Option_3] displayed in 121ms
+Angular request time 388ms
+Click Transfer Option 3
+Angular request time 351ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Date_Picker_Requested] displayed in 85ms
+09/11/2019 11:44
+Submit Transfer Request
+TRANSFER
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: CLO_Service_Order_Input] displayed in 93ms
+Set Text Search Request
+Angular request time 10ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Date_Picker_Scheduled] displayed in 65ms
+Enter Schedule Date Date
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Date_Picker_Scheduled] displayed in 141ms
+Set Text DatePicket
+Angular request time 842ms
+Strings Matched: Mr. VACANT VACANT = Mr. VACANT VACANT
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Search_Input] displayed in 62ms
+Set Text Customer Name Request
+Angular request time 16ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Search_Option_1] displayed in 939ms
+Angular request time 34ms
+Click XFER_Search_Option_1_Customer_Name
+Angular request time 11ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Description] displayed in 91ms
+Set Text Description Request
+Angular request time 10ms
+Click Submit
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Button_Action] displayed in 67ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Button_Action] displayed in 53ms
+Angular request time 344ms
+Click MoveInSubmit Button
+Angular request time 12ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Button_Done] displayed in 104ms
+Angular request time 839ms
+Click Done Button for Transfer
+Angular request time 16ms
+Clicking Servic Order Link
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> css selector: #mat-tab-label-0-2 > div] displayed in 85ms
+Angular request time 1643ms
+Click Service Order Link
+Angular request time 22ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: SOLV_Service_Order_1] displayed in 91ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: SOLV_Service_Order_1] displayed in 61ms
+Angular request time 13ms
+Click Clicking Service Order 1
+Angular request time 12ms
+Angular request time 11ms
+Capturing Servic Order Number
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: SODV_Service_Order_Id] displayed in 250ms
+get Text Text Service Order Number
+Angular request time 12ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: ACTION_Refresh_Page] displayed in 111ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: ACTION_Refresh_Page] displayed in 55ms
+Angular request time 1748ms
+Click Refresh Button
+Angular request time 17ms
+Refresh Page
+Click Action Dropdown
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: ACTION_Button] displayed in 280ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: ACTION_Button] displayed in 121ms
+Angular request time 22ms
+Click Action Drop down
+Angular request time 15ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: ACTION_Transfer_Service] displayed in 246ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: ACTION_Transfer_Service] displayed in 85ms
+Angular request time 372ms
+Click Action Transfer Service Drop down
+Angular request time 30ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Select] displayed in 157ms
+Angular request time 13ms
+Click Transfer Combo
+Angular request time 10ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Select_Option_3] displayed in 84ms
+Angular request time 440ms
+Click Transfer Option 3
+Angular request time 17ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Warning_Message] displayed in 424ms
+Strings Matched: Service Order Exist. TRANSFER = Service Order Exist. TRANSFER
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: idPrefix + '_Warning_Drillback'] displayed in 43ms
+String Verified  =cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Prod=229&Act=OPEN&Func=ServiceOrder&LocationID=LOC@0004&ServiceOrderNumber=SORD00000001947&CogsDrillback=1 Contains = SORD00000001947
+Date after Addition of two days Sep 13, 2019
+Submit Transfer Request
+TRANSFER
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: CLO_Service_Order_Input] displayed in 97ms
+Set Text Search Request
+Angular request time 14ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Date_Picker_Scheduled] displayed in 88ms
+Enter Schedule Date Date
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Date_Picker_Scheduled] displayed in 64ms
+Set Text DatePicket
+Angular request time 739ms
+Strings Matched: Mr. VACANT VACANT = Mr. VACANT VACANT
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Search_Input] displayed in 58ms
+Set Text Customer Name Request
+Angular request time 10ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Search_Option_1] displayed in 964ms
+Angular request time 22ms
+Click XFER_Search_Option_1_Customer_Name
+Angular request time 14ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Description] displayed in 83ms
+Set Text Description Request
+Angular request time 17ms
+Click Submit
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Button_Action] displayed in 75ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Button_Action] displayed in 52ms
+Angular request time 348ms
+Click MoveInSubmit Button
+Angular request time 22ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Button_Done] displayed in 369ms
+Angular request time 520ms
+Click Done Button for Transfer
+Angular request time 16ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: ACTION_Refresh_Page] displayed in 51ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: ACTION_Refresh_Page] displayed in 78ms
+Angular request time 1542ms
+Click Refresh Button
+Angular request time 13ms
+Refresh Page
+Clicking Servic Order Link
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> css selector: #mat-tab-label-0-2 > div] displayed in 27ms
+Angular request time 10ms
+Click Service Order Link
+Angular request time 8ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: SOLV_Service_Order_2] displayed in 50ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: SOLV_Service_Order_2] displayed in 39ms
+Angular request time 208ms
+Click Clicking Service Order 2
+Angular request time 12ms
+Angular request time 10ms
+Capturing Servic Order Number
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: SODV_Service_Order_Id] displayed in 45ms
+get Text Text Service Order Number
+Angular request time 8ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: ACTION_Refresh_Page] displayed in 39ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: ACTION_Refresh_Page] displayed in 54ms
+Angular request time 1873ms
+Click Refresh Button
+Angular request time 11ms
+Refresh Page
+Click Action Dropdown
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: ACTION_Button] displayed in 29ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: ACTION_Button] displayed in 27ms
+Angular request time 7ms
+Click Action Drop down
+Angular request time 9ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: ACTION_Transfer_Service] displayed in 55ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: ACTION_Transfer_Service] displayed in 413ms
+Angular request time 231ms
+Click Action Transfer Service Drop down
+Angular request time 26ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Select] displayed in 93ms
+Angular request time 43ms
+Click Transfer Combo
+Angular request time 86ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Select_Option_3] displayed in 130ms
+Angular request time 802ms
+Click Transfer Option 3
+Angular request time 16ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Warning_Message] displayed in 52ms
+Strings Matched: Multiple Service Orders Exist. TRANSFER = Multiple Service Orders Exist. TRANSFER
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: idPrefix + '_Warning_Drillback'] displayed in 40ms
+String Verified  =cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Prod=229&Act=OPEN&Func=ServiceOrder&LocationID=LOC@0004&ServiceOrderNumber=SORD00000001948&CogsDrillback=1 Contains = SORD00000001948
+Submit Transfer Request
+TRANSFER
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: CLO_Service_Order_Input] displayed in 77ms
+Set Text Search Request
+Angular request time 12ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Date_Picker_Scheduled] displayed in 52ms
+Enter Schedule Date Date
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Date_Picker_Scheduled] displayed in 52ms
+Set Text DatePicket
+Angular request time 762ms
+Strings Matched: Mr. VACANT VACANT = Mr. VACANT VACANT
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Search_Input] displayed in 80ms
+Set Text Customer Name Request
+Angular request time 24ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Search_Option_1] displayed in 314ms
+Angular request time 25ms
+Click XFER_Search_Option_1_Customer_Name
+Angular request time 15ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Description] displayed in 81ms
+Set Text Description Request
+Angular request time 8ms
+Click Submit
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Button_Action] displayed in 71ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Button_Action] displayed in 59ms
+Angular request time 657ms
+Click MoveInSubmit Button
+Angular request time 24ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: XFER_Button_Done] displayed in 92ms
+Angular request time 1268ms
+Click Done Button for Transfer
+Angular request time 10ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: ACTION_Refresh_Page] displayed in 60ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: ACTION_Refresh_Page] displayed in 103ms
+Angular request time 2309ms
+Click Refresh Button
+Angular request time 4ms
+Refresh Page
+Clicking Servic Order Link
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> css selector: #mat-tab-label-0-2 > div] displayed in 51ms
+Angular request time 11ms
+Click Service Order Link
+Angular request time 15ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: SOLV_Service_Order_3] displayed in 74ms
+Element [[ChromeDriver: chrome on XP (d59effa8db845cf0baa2f11a8f704d8b)] -> id: SOLV_Service_Order_3] displayed in 55ms
+Angular request time 377ms
+Click Clicking Service Order 3
+Angular request time 16ms
+Angular request time 16ms
+get Requested Customer Name
+Strings Matched: Mr. Automation Mate = Mr. Automation Mate
+get Move Out Customer Date
+Strings Matched: Mr. Automation Mate = Mr. Automation Mate
+get Movein Customer Name Date
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 12070
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Sep 11, 2019 11:44:22 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService" time="96.24"/>
+  <testcase name="VerifyAction_Transfers_Stack_TwoLocations_NotScheduled" classname="com.NexusPortalAutomation.TestCases.Java.TC0037_VerifyAction_Transfers_Stack_TwoLocations_NotScheduled" time="117.434"/>
+  <testcase name="VerifyAction_Transfers_Stack_TwoLocations_defaultCustomerLocationBased_NotScheduled" classname="com.NexusPortalAutomation.TestCases.Java.TC0038_VerifyAction_Transfers_Stack_TwoLocations_defaultCustomerLocationBased_NotScheduled" time="0.155"/>
+  <testcase name="VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled" classname="com.NexusPortalAutomation.TestCases.Java.TC0039_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled" time="112.283"/>
+  <testcase name="VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled" classname="com.NexusPortalAutomation.TestCases.Java.TC0040_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled" time="121.526"/>
+  <testcase name="VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled" classname="com.NexusPortalAutomation.TestCases.Java.TC0041_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled" time="117.885"/>
+  <testcase name="TestSearchAutobyRecent" classname="com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction" time="61.48"/>
+  <testcase name="TestSearchAutobyBookMark" classname="com.NexusPortalAutomation.TestCases.Java.TC0005_TestBookMarks" time="29.938"/>
+  <testcase name="TestSummarySectionOnChange" classname="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection" time="26.32"/>
+  <testcase name="TestSearchAutobyFirstName" classname="com.NexusPortalAutomation.TestCases.Java.TC0024_TestCustDetailSearch" time="54.167"/>
+  <testcase name="TestSearchAutobyFirstName" classname="com.NexusPortalAutomation.TestCases.Java.TC0028_TestEnhancedNotes" time="32.645"/>
+  <testcase name="TestSearchAlertOnLoad" classname="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad" time="21.989"/>
+  <testcase name="TestSearchAutobyFirstName" classname="com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName" time="19.498"/>
+  <testcase name="TestSearchAutobyLastName" classname="com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName" time="26.641"/>
+</testsuite>

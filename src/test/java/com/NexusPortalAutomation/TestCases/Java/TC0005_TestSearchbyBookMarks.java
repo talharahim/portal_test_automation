@@ -13,7 +13,7 @@ public class TC0005_TestSearchbyBookMarks extends BaseClass {
 	public String username = "Noel Ford";
 	public CommonMethods cmnMethods = new CommonMethods();
 
-	@Test(priority = 2)
+	//@Test(priority = 2)
 	public void TestSearchAutobyBookMark() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
@@ -22,11 +22,11 @@ public class TC0005_TestSearchbyBookMarks extends BaseClass {
 		cmnMethods.waitObjectByXpath(driver, "//input[@id='SRCH_Input']");
 		cmnMethods.waitforObjectById(driver, "toolbar-saved");
 		WaitAngular();
-		dbSrch.ClickHistoryCustomer();
+		dbSrch.clickHistoryCustomer();
 		dbSrch.clickCustomerName();
 		cmnMethods.waitObjectByXpath(driver, "//div[@class='address-details']");
 		// Verify Login Name
-		boolean Match = cmnMethods.verifyString(username, dashBoard.getLoggedCustomerName());
+		boolean Match = cmnMethods.verifyString(username, dashBoard.getLoggedCustomerLocationId());
 		if (!Match) {
 			log("User Name Not Verified for Bookmark Functionality");
 		} else {
