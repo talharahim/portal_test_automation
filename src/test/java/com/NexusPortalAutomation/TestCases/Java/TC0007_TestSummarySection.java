@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
+import com.NexusPortalAutomation.Utilities.Java.ExcelData;
 
 public class TC0007_TestSummarySection extends BaseClass {
 
@@ -21,7 +22,7 @@ public class TC0007_TestSummarySection extends BaseClass {
 	 * 
 	 * @Since 2019-04-11
 	 */
-	public String username = "Automation Mate";
+	public String username = ExcelData.getExcelData("Customers","username");// "AUTOLOC001";"Automation Mate";
 	public CommonMethods cmnMethods = new CommonMethods();
 
 	@Test(priority = 2)

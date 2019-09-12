@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
+import com.NexusPortalAutomation.Utilities.Java.ExcelData;
 
 public class TC0005_TestBookMarks extends BaseClass {
 
@@ -20,7 +21,7 @@ public class TC0005_TestBookMarks extends BaseClass {
 	 * 
 	 * @Since 2019-04-11
 	 */
-	public String locationID = "STATEMENTS001";
+	public String locationID = ExcelData.getExcelData("Locations","stLocationID");//"STATEMENTS001";
 	public CommonMethods cmnMethods = new CommonMethods();
 
 	@Test(priority = 1)

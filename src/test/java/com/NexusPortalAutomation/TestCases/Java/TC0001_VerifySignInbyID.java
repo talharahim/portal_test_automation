@@ -2,6 +2,7 @@ package com.NexusPortalAutomation.TestCases.Java;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
@@ -12,7 +13,7 @@ import com.NexusPortalAutomation.Utilities.Java.ExcelData;
 public class TC0001_VerifySignInbyID extends BaseClass {
 
 	
-	public String customerID = ExcelData.ReadVariant("Customers",1,1);
+	public String customerID = ExcelData.getExcelData("Customers","customerID");
 	//public String customerID = "0000011111";
 	CommonMethods commonMethod = new CommonMethods();
 	/*

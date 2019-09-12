@@ -21,7 +21,7 @@ public class TC0003_TestSearchAutobyLastName extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String username =  ExcelData.ReadVariant("Customers",2,1);
+	public String username =   ExcelData.getExcelData("Customers","username");;
 	public String title = "Mr.";
 	public CommonMethods cmnMethods = new CommonMethods();
 

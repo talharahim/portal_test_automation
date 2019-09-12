@@ -11,7 +11,7 @@ import com.NexusPortalAutomation.Utilities.Java.ExcelData;
 
 public class TC0002_TestSearchAutobyFirstName extends BaseClass {
 
-	public String username = ExcelData.ReadVariant("Customers",2,1);
+	public String username =  ExcelData.getExcelData("Customers","username");
 	CommonMethods commonMethod = new CommonMethods();
 	public String title = "Mr.";
 	/*

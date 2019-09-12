@@ -7,10 +7,11 @@ import org.testng.annotations.Test;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
+import com.NexusPortalAutomation.Utilities.Java.ExcelData;
 
 public class TC0005_TestSearchbyBookMarks extends BaseClass {
 
-	public String username = "Noel Ford";
+	public String username =  ExcelData.getExcelData("Customers","bmUsername");//"Noel Ford";
 	public CommonMethods cmnMethods = new CommonMethods();
 
 	//@Test(priority = 2)

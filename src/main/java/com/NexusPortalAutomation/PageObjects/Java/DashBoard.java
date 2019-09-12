@@ -365,16 +365,27 @@ public class DashBoard extends CommonMethods {
 	WebElement Action_ServiceOrder;
 
 	@FindBy(id = "REC_1_Document_Type")
-	@CacheLookup
 	WebElement Recent_Record1_Type;
+	
+	@FindBy(id = "REC_2_Document_Type")
+	@CacheLookup
+	WebElement Recent_Record2_Type;
 
 	@FindBy(id = "REC_1_Document_Date")
 	@CacheLookup
 	WebElement Recent_Record1_Date;
+	
+	@FindBy(id = "REC_2_Document_Date")
+	@CacheLookup
+	WebElement Recent_Record2_Date;
 
 	@FindBy(id = "REC_1_Amount")
 	@CacheLookup
 	WebElement Recent_Record1_Amount;
+	
+	@FindBy(id = "REC_2_Amount")
+	@CacheLookup
+	WebElement Recent_Record2_Amount;
 
 	@FindBy(id = "REC_Footer_Button_Label")
 	@CacheLookup
@@ -466,28 +477,8 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "BILL_Budget")
 	WebElement BILLBudget;
 	
-	@FindBy(xpath = "//mat-select[@id='mat-select-2']//div[@class='mat-select-arrow']")
-	WebElement Trans_type;
-	
-	@FindBy(id = "TRAN_Select_Type_Option_0")
-	WebElement TransType_all;
-	
-	
-	@FindBy(id = "TRAN_Select_Type_Option_3")
-	WebElement TransType_bill;
-	
-	public void transaction_filterbyBill() throws InterruptedException
-	{
-		Trans_type.click();
-		TransType_all.click();
-		Thread.sleep(2000);
-		TransType_all.click();
-		Thread.sleep(2000);
-		TransType_bill.click();
-		
-		
-	}
-	
+
+
 	public String getBillBudgetURL() {
 
 		waitForObject(driver, BILLBudget);
@@ -637,13 +628,22 @@ public class DashBoard extends CommonMethods {
 
 	}
 
-	public void verifyRecent(String Type, String Date, String Amount) {
+	public void verifyRecentRecord1(String Type, String Date, String Amount) {
 		log("Verifying Recent Records");
 		verifyString(Type, getElementText(Recent_Record1_Type, "Recent Record Type"));
 		verifyString(Date, getElementText(Recent_Record1_Date, "Recent Record Date"));
 		verifyString(Amount, getElementText(Recent_Record1_Amount, "Recent Record Amount"));
 
 	}
+	
+	public void verifyRecentRecord2(String Type, String Date, String Amount) {
+		log("Verifying Recent Records");
+		verifyString(Type, getElementText(Recent_Record2_Type, "Recent Record Type"));
+		verifyString(Date, getElementText(Recent_Record2_Date, "Recent Record Date"));
+		verifyString(Amount, getElementText(Recent_Record2_Amount, "Recent Record Amount"));
+
+	}
+	
 
 	public void clickRecentSearch_ViewAll() {
 		ClickElement(Recent_ViewAll, "Recent View All");

@@ -39,7 +39,7 @@ public class TC0023_VerifyRecentWidget extends BaseClass {
 		// Verify Customer Location Id Updated for Test
 		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
-		dashBoard.verifyRecent(recordType, recordDate, recordAmount);
+		dashBoard.verifyRecentRecord1(recordType, recordDate, recordAmount);
 		dashBoard.clickRecentSearch_ViewAll();
 		cmnMethods.verifyString(title, dashBoard.getTransactionPageTitle());
 		// Verify Updated details

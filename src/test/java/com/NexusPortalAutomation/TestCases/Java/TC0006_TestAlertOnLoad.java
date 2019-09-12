@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
+import com.NexusPortalAutomation.Utilities.Java.ExcelData;
 
 public class TC0006_TestAlertOnLoad extends BaseClass {
 
@@ -20,7 +21,7 @@ public class TC0006_TestAlertOnLoad extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String username = "AUTOLOC001";
+	public String username = ExcelData.getExcelData("Customers","alUsername");// "AUTOLOC001";
 	public CommonMethods cmnMethods = new CommonMethods();
 
 	@Test(priority = 2)

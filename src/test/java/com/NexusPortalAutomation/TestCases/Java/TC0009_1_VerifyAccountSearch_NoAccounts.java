@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
+import com.NexusPortalAutomation.Utilities.Java.ExcelData;
 
 public class TC0009_1_VerifyAccountSearch_NoAccounts extends BaseClass {
 
@@ -19,7 +20,7 @@ public class TC0009_1_VerifyAccountSearch_NoAccounts extends BaseClass {
 	 * 
 	 * @Since 2019-04-11
 	 */
- String locationID = "SINGLECUST01";
+ String locationID = ExcelData.getExcelData("Locations","singleLoc1");//"SINGLECUST01";
  String text ="No Other Accounts";
  CommonMethods cmnMethods = new CommonMethods();
 

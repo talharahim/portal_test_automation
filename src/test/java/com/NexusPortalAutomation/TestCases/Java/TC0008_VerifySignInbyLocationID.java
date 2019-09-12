@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
+import com.NexusPortalAutomation.Utilities.Java.ExcelData;
 
 public class TC0008_VerifySignInbylocationID extends BaseClass {
 
@@ -20,7 +21,7 @@ public class TC0008_VerifySignInbylocationID extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String locationID = "LOC@0001";
+	public String locationID = ExcelData.getExcelData("Locations","loc1");// "AUTOLOC001";"LOC@0001";
 	CommonMethods cmnMethods = new CommonMethods();
 	String addLine = "007 Aut Automation Street Rt 20001 Apt";
 	String addCity = "Cloudy";

@@ -140,7 +140,7 @@ public class CommonMethods {
 
 	}
 
-	public void waitforObjectById(WebDriver driver, String id) {
+	public WebElement waitforObjectById(WebDriver driver, String id) {
 		long begin = System.currentTimeMillis();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id(id)));
@@ -151,6 +151,7 @@ public class CommonMethods {
 			HighlightElement(element, driver);
 			log("Element '" + id + "' is displayed in " + dt + "ms");
 		}
+		return element;
 	}
 
 	public void WaitForObjectbyElement(WebDriver driver, WebElement webElement) {
