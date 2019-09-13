@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
+import com.NexusPortalAutomation.Utilities.Java.ExcelData;
 
 public class TC0009_VerifyAccountSearch extends BaseClass {
 
@@ -20,21 +21,21 @@ public class TC0009_VerifyAccountSearch extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	String locationID = "500001";
-	String locationID2 = "CUS@0004";
-	String accSrchResult = "1 Water 1 Bldg";
-	String addLine = "8 Orchard";
-	String addCity = "Troy";
-	String addState = "NY";
-	String addZip = "12180";
-	String AccountId = "TESTLOCATION05";
+	String locationID =  ExcelData.getExcelData("Locations","accSearchLoc1");//"500001";
+	String locationID2 =  ExcelData.getExcelData("Locations","accSearchLoc2");//"CUS@0004";
+	String accSrchResult =  ExcelData.getExcelData("Locations","accSearchRslt");//"1 Water 1 Bldg";
+	String addLine =  ExcelData.getExcelData("Locations","accAddLine");//"8 Orchard";
+	String addCity =  ExcelData.getExcelData("Locations","accAddCity");//"Troy";
+	String addState =  ExcelData.getExcelData("Locations","accAddState");//"NY";
+	String addZip =  ExcelData.getExcelData("Locations","accAddZip");//"12180";
+	String AccountId =  ExcelData.getExcelData("Locations","accAddId");//"TESTLOCATION05";
 	
-	String address1 = "8 Orchard";
-	String address2 = "8 Orchard";
-	String address3 = "8 Orchard";
-	String cityzip1 = "Troy NY 12180";
-	String cityzip2 = "Troy NY 12180";
-	String cityzip3 = "Troy NY 12180";
+	String address1 =  ExcelData.getExcelData("Locations","accAddLine");//"8 Orchard";
+	String address2 =  ExcelData.getExcelData("Locations","accAddLine");//"8 Orchard";
+	String address3 =  ExcelData.getExcelData("Locations","accAddLine");//"8 Orchard";
+	String cityzip1 =  ExcelData.getExcelData("Locations","accCityZip");//"Troy NY 12180";
+	String cityzip2 =  ExcelData.getExcelData("Locations","accCityZip");//"Troy NY 12180";
+	String cityzip3 =  ExcelData.getExcelData("Locations","accCityZip");//"Troy NY 12180";
 	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID

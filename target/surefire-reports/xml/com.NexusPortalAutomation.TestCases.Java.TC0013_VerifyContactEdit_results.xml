@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="NexusTest"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="39.914">
+  <properties />
+  
+  
+            <testcase name="TestContactEdit" time="39.914" classname="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit" />
+      
+</testsuite>
