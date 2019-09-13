@@ -20,9 +20,9 @@ public class TC0012_verifyCreditStatusStatus extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String locationID = "LOC@0001";
-	public String locationID2 = "TESTLOCATION01";
-	public String locationID3 = "TESTLOCATION03";
+	public String locationID = getCellvalue("Locations", "loc1");// "LOC@0001";
+	public String locationID2 = getCellvalue("Locations", "creditlocationID1");// "TESTLOCATION01";
+	public String locationID3 = getCellvalue("Locations", "creditlocationID2");// "TESTLOCATION03";
 	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID
@@ -46,15 +46,6 @@ public class TC0012_verifyCreditStatusStatus extends BaseClass {
 		// Verify Good Credit
 		dashBoard.verifyCreditStatus("BAD");
 		dashBoard.logout();
-//		login();
-//		dbSrch.enterSearchText(locationID2);
-//		dbSrch.clickCustomerName();
-//		// Verify Customer Location Id Updated for Test
-//		cmnMethods.VerifyString(locationID2, dashBoard.GetLoggedCustomerlocationID());
-//		// Verify Good Credit
-//		dashBoard.verifyCreditStatus("WORST");
-//		dashBoard.logout();
-
 	}
 
 }

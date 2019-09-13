@@ -53,6 +53,11 @@ public class BaseClass extends ReadProjectProperties {
 		Reporter.log(message);
 		System.out.println(message);
 	}
+	
+	public static String getCellvalue(String sheet, String var)
+	{
+		return ExcelData.getExcelData(sheet, var);
+	}
 
 	public static void WaitAngular() {
 		long begin = System.currentTimeMillis();

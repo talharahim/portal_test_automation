@@ -20,14 +20,14 @@ public class TC0010_2_verifyCustDetails_Blank extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	String locationID = "FRESHLOC01";
-	String ssn = "none";
-	String lic = "none";
-	String phone = "none";
-	String ext = null;
-	String email = "none";
-	String add = "02 02 Test Te 042";
-	String acsz = "Karachi SINDH";
+	String locationID = getCellvalue("Customers","blankLocation");//"FRESHLOC01";
+	String ssn = getCellvalue("Customers","blankssn");//"none";
+	String lic = getCellvalue("Customers","blanklic");//"none";
+	String phone = getCellvalue("Customers","blankphone");//"none";
+	String ext = getCellvalue("Customers","blankext");//null;
+	String email = getCellvalue("Customers","blankemail");//"none";
+	String add = getCellvalue("Customers","blankadd");//"02 02 Test Te 042";
+	String acsz = getCellvalue("Customers","blankacsz");//"Karachi SINDH";
 	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID

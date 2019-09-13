@@ -20,14 +20,14 @@ public class TC0010_verifyCustDetails extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	String locationID = "LOC@0001";
-	String ssn = "2312";
-	String lic = "Driv12312OUL312";
-	String phone = "(090) 078-6010";
-	String ext = "+ Ext. 2112";
-	String email = "automation@cogsdale.com";
-	String add = "007 Test Apt";
-	String acsz = "New York NY 12345-67890";
+	String locationID = getCellvalue("Locations","loc1");
+	String ssn = getCellvalue("Customers","ssn");// "2312";
+	String lic = getCellvalue("Customers","lic");//"Driv12312OUL312";
+	String phone = getCellvalue("Customers","phone");//"(090) 078-6010";
+	String ext = getCellvalue("Customers","ext");//"+ Ext. 2112";
+	String email = getCellvalue("Customers","email");//"automation@cogsdale.com";
+	String add = getCellvalue("Customers","add");//"007 Test Apt";
+	String acsz = getCellvalue("Customers","acsz");//"New York NY 12345-67890";
 	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID
