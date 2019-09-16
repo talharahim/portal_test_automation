@@ -23,7 +23,7 @@ public class TC0015_VerifyContactLogs extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String locationID = "LOC@0004";
+	public String locationID = getCellvalue("Locations", "locationEdit");//"LOC@0004";
 	CommonMethods cmnMethods = new CommonMethods();
 	DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 	Date date = new Date();

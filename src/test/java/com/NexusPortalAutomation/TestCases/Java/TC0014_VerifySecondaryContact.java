@@ -20,9 +20,9 @@ public class TC0014_VerifySecondaryContact extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String locationID = "LOC@0004";
-	public String SecondCust = "Secondary Customer (SECONDARY)";
-	public String SecondCustCnt = "Secondary Customers (1)";
+	public String locationID = getCellvalue("Locations", "locationEdit");//"LOC@0004";
+	public String SecondCust = getCellvalue("Customers", "secondaryCust");//"Secondary Customer (SECONDARY)";
+	public String SecondCustCnt = getCellvalue("Customers", "secondaryCustNum");//"Secondary Customers (1)";
 	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID

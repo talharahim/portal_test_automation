@@ -16,10 +16,10 @@ public class TC0020_verifyDrillbackServices extends BaseClass {
 	 * @version 1.0
 	 * @Since 2019-06-11
 	 */
-	public String locationID = "LOC@0001";
-	public String customerId = "0000011111";
+	public String locationID = getCellvalue("Locations", "loc1");//"LOC@0001";
+	public String customerId = getCellvalue("Customers", "drillbackCustId");//"0000011111";
 	public String serverUrl = getDrillbackServerUrl();
-	public String serviceOrderNum = "SORD00000000057";
+	public String serviceOrderNum = getCellvalue("Transactions", "drillbackSNum");//"SORD00000000057";
 		
 	// ServiceOrder
 	public String serviceOrderUrl = serverUrl + "&Prod=229&Act=OPEN&Func=ServiceOrderInquiry&serviceOrderNum="+serviceOrderNum+"&CogsDrillback=1";

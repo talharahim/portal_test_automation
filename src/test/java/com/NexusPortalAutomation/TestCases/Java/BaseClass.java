@@ -14,6 +14,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
@@ -53,10 +54,16 @@ public class BaseClass extends ReadProjectProperties {
 		Reporter.log(message);
 		System.out.println(message);
 	}
-	
-	public static String getCellvalue(String sheet, String var)
-	{
-		return ExcelData.getExcelData(sheet, var);
+
+	public static String getCellvalue(String sheet, String var) {
+		String value = null;
+
+		value = ExcelData.getExcelData(sheet, var);
+		if (value == null) {
+			Assert.fail("Null value found, please check excel sheet");
+		}
+
+		return value;
 	}
 
 	public static void WaitAngular() {
@@ -134,7 +141,7 @@ public class BaseClass extends ReadProjectProperties {
 		driver.get(Read.ReadFile("PortalUrl"));
 		LoginPage lpage = new LoginPage(driver);
 		WaitAngular();
-	    System.out.println(driver.getTitle());
+		System.out.println(driver.getTitle());
 		lpage.Verifytitle("Log in to Nexus View");
 		lpage.Login(Read.ReadFile("username"), Read.ReadFile("PassWord"));
 		WaitAngular();

@@ -17,12 +17,12 @@ public class TC0016_1_VerifyBillingDetails_SPA extends BaseClass {
 	 * 
 	 * @version 1.0
 	 * 
-	 * @Since 2019-04-11
+	 * @Since 2019-06-11
 	 */
 
-	public String locationID = "LOC@0001";
+	public String locationID = getCellvalue("Locations", "loc1");// "LOC@0001";
 	CommonMethods cmnMethods = new CommonMethods();
-	String spaURL = "CustomerID=0000011111&LocationID=LOC@0001&CogsDrillback=1";
+	String spaURL =  getCellvalue("Billing1", "spaURL");//"CustomerID=0000011111&LocationID=LOC@0001&CogsDrillback=1";
 	String paymentArrangementAmount = "$0.00";
 
 //This Test will test the search by Customer ID

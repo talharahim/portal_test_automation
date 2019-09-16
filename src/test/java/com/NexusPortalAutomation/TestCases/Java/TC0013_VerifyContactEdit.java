@@ -19,14 +19,14 @@ public class TC0013_VerifyContactEdit extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String locationID = "LOC@0004";
-	String ssn = "2312";
-	String lic = "Driv12312OUL312";
-	String phone = "(090) 078-6010";
-	String ext = "+ Ext. 2112";
-	String email = "automation@cogsdale.com";
-	String add = "007 Test Apt";
-	String acsz = "New York NY 12345-67890";
+	public String locationID = getCellvalue("Locations", "locationEdit");//"LOC@0004";
+	String ssn = getCellvalue("Customers", "ssnEdit");//"2312";
+	String lic = getCellvalue("Customers", "licEdit");//"Driv12312OUL312";
+	String phone = getCellvalue("Customers", "phoneEdit");//"(090) 078-6010";
+	String ext = getCellvalue("Customers", "extEdit");//"+ Ext. 2112";
+	String email = getCellvalue("Customers", "emailEdit");//"automation@cogsdale.com";
+	String add = getCellvalue("Customers", "addEdit");//"007 Test Apt";
+	String acsz = getCellvalue("Customers", "acszEdit");//"New York NY 12345-67890";
 	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID

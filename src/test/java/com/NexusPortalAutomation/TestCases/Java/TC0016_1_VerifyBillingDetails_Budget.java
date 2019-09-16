@@ -23,18 +23,18 @@ public class TC0016_1_VerifyBillingDetails_Budget extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String locationID = "BUDGETLOC02";
+	public String locationID = getCellvalue("Locations", "budgetLOC2");//"BUDGETLOC02";
 	CommonMethods cmnMethods = new CommonMethods();
-	String due = "$100.00";
-	String current = "$0.00";
-	String unposted = "$0.00";
-	String account = "$255.00";
-	String installment = "$100.00";
-	String overDue = "$155.00";
-	String amountDue = "$100.00";
-	String autoPay = "OFF";
-	String eBill = "OFF";
-	String deposit = "$0.00";
+	String due =  getCellvalue("Billing1", "dueBudget");//"$100.00";
+	String current = getCellvalue("Billing1", "currentBudget");//"$0.00";
+	String unposted = getCellvalue("Billing1", "unpostedBudget");//"$0.00";
+	String account = getCellvalue("Billing1", "accountBudget");//"$255.00";
+	String installment = getCellvalue("Billing1", "installmentBudget");//"$100.00";
+	String overDue =getCellvalue("Billing1", "overDueBudget");// "$155.00";
+	String amountDue = getCellvalue("Billing1", "amountDueBudget");//"$100.00";
+	String autoPay = getCellvalue("Billing1", "autoPayBudget");//"OFF";
+	String eBill = getCellvalue("Billing1", "eBillBudget");//"OFF";
+	String deposit = getCellvalue("Billing1", "depositBudget");//"$0.00";
 
 	List<String> Electric = Arrays.asList("ELECTRIC", "163598645", "GS-PK ENERGY", "1.00000", "Active");
 	List<String> Gas1 = Arrays.asList("GAS", "EQUIP-GAS-3", "GRESMTR40", "1.00000", "Active");
