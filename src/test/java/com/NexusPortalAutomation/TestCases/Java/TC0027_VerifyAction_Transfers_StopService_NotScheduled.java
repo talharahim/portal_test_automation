@@ -28,21 +28,22 @@ public class TC0027_VerifyAction_Transfers_StopService_NotScheduled extends Base
 	 * @Since 2019-06-10
 	 */
 
-	public String locationID = "LOC@0004";
-	public String locationID2 = "LOC@0005";
+	public String locationID = getCellvalue("TC0027", "locationID");//"LOC@0004";
+	public String locationID2 = getCellvalue("TC0027", "locationID2");//"LOC@0005";
+	public String defaultCustomer = getCellvalue("TC0027", "defaultCustomer");//"Mr. VACANT VACANT";
+	public String requestedbY = getCellvalue("TC0027", "requestedbY");//"Mr. Automation Mate";
+	public String moveOutCustomer = getCellvalue("TC0027", "moveOutCustomer");//"Mr. Automation Mate";
+	public String loc2moveOutCustomer = getCellvalue("TC0027", "loc2moveOutCustomer");//"Mr. Movein Cus";
+	public String moveInCustomer = getCellvalue("TC0027", "moveInCustomer");//"Mr. Vacant Vacant (Vacant)";
+	public String loc2moveInCustomer = getCellvalue("TC0027", "loc2moveInCustomer");//"Mr. Automation Mate (0000011111)";
 	public String serverUrl = getDrillbackServerUrl();
-	public String defaultCustomer = "Mr. VACANT VACANT";
-	public String requestedbY = "Mr. Automation Mate";
-	public String moveOutCustomer = "Mr. Automation Mate";
-	public String loc2moveOutCustomer = "Mr. Movein Cus";
-	public String moveInCustomer = "Mr. Vacant Vacant (Vacant)";
-	public String loc2moveInCustomer = "Mr. Automation Mate (0000011111)";
-	public String task1 = "Meter Reading-electric";
-	public String task2 = "Charge New Customer";
-	public String task3 = "Property Transfer";
-	public String task4 = "Deposit Request-new Customer";
-	public String task5 = "Deposit Payment-new Customer E";
-	public String task6 = "Prepayment Required-new Custom";
+	public String task1 = getCellvalue("TC0027", "task1");//"Meter Reading-electric";
+	public String task2 = getCellvalue("TC0027", "task2");//"Charge New Customer";
+	public String task3 = getCellvalue("TC0027", "task3");//"Property Transfer";
+	public String task4 = getCellvalue("TC0027", "task4");//"Deposit Request-new Customer";
+	public String task5 = getCellvalue("TC0027", "task5");//"Deposit Payment-new Customer E";
+	public String task6 = getCellvalue("TC0027", "task6");//"Prepayment Required-new Custom";
+	public String message = getCellvalue("TC0027", "message");//"Transfer initiated";
 	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID

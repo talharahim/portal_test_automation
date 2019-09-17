@@ -30,23 +30,25 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 	 */
 	public String[] task = { "Meter Reading-electric", "Charge New Customer", "Property Transfer",
 			"Deposit Request-new Customer", "Deposit Payment-new Customer E", "Prepayment Required-new Custom" };
-	public String locationId = "LOC@0004";
-	public String locationID2 = "LOC@0005";
-	public String locationID3 = "AUTOLOC001";
-	public String locationID4 = "STATEMENTS001";
+	public String locationId = getCellvalue("TC0033", "locationID");//"LOC@0004";
+	public String locationID3 = getCellvalue("TC0033", "locationID3");//"AUTOLOC001";
+	public String locationID4 = getCellvalue("TC0033", "locationID4");//"STATEMENTS001";
 	public String serverUrl = getDrillbackServerUrl();
-	public String defaultCustomer = "Mr. VACANT VACANT";
-	public String requestedbY = "Mr. Automation Mate";
-	public String moveOutCustomer = "Mr. Automation Mate";
-	public String loc2moveOutCustomer = "Mr. Movein Cus";
-	public String moveInCustomer = "Mr. Vacant Vacant (Vacant)";
-	public String loc2moveInCustomer = "Mr. Automation Mate (0000011111)";
-	public String Task1 = "Meter Reading-electric";
-	public String Task2 = "Charge New Customer";
-	public String Task3 = "Property Transfer";
-	public String Task4 = "Deposit Request-new Customer";
-	public String Task5 = "Deposit Payment-new Customer E";
-	public String Task6 = "Prepayment Required-new Custom";
+	public String locationID = getCellvalue("TC0033", "locationID");//"LOC@0004";
+	public String locationID2 = getCellvalue("TC0033", "locationID2");//"LOC@0005";
+	public String defaultCustomer = getCellvalue("TC0033", "defaultCustomer");//"Mr. VACANT VACANT";
+	public String requestedbY = getCellvalue("TC0033", "requestedbY");//"Mr. Automation Mate";
+	public String moveOutCustomer = getCellvalue("TC0033", "moveOutCustomer");//"Mr. Automation Mate";
+	public String loc2moveOutCustomer = getCellvalue("TC0033", "loc2moveOutCustomer");//"Mr. Movein Cus";
+	public String moveInCustomer = getCellvalue("TC0033", "moveInCustomer");//"Mr. Vacant Vacant (Vacant)";
+	public String loc2moveInCustomer = getCellvalue("TC0033", "loc2moveInCustomer");//"Mr. Automation Mate (0000011111)";
+	public String task1 = getCellvalue("TC0033", "task1");//"Meter Reading-electric";
+	public String task2 = getCellvalue("TC0033", "task2");//"Charge New Customer";
+	public String task3 = getCellvalue("TC0033", "task3");//"Property Transfer";
+	public String task4 = getCellvalue("TC0033", "task4");//"Deposit Request-new Customer";
+	public String task5 = getCellvalue("TC0033", "task5");//"Deposit Payment-new Customer E";
+	public String task6 = getCellvalue("TC0033", "task6");//"Prepayment Required-new Custom";
+	public String message = getCellvalue("TC0033", "message");//"Transfer initiated";
 	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID

@@ -26,12 +26,12 @@ public class TC0022_VerifyAction_ServiceOrder extends BaseClass {
 	 * @Since 2019-06-10
 	 */
 
-	public String locationID = "LOC@0007";
-	public String customerId = "0000011111";
+	public String locationID = getCellvalue("TC0022", "loc7");//"LOC@0007";
+	public String customerId = getCellvalue("TC0022", "drillbackCustId");//"0000011111";
 	public String serverUrl = getDrillbackServerUrl();
-	public String SearchInput = "REQ-DEP-WATER";
-	public String DateDescription = "AutomationRequest";
-	public String Message = "Service Order successfully created";
+	public String searchInput = getCellvalue("TC0022", "SearchInput");//"REQ-DEP-WATER";
+	public String dateDescription = getCellvalue("TC0022", "DateDescription");//"AutomationRequest";
+	public String message = getCellvalue("TC0022", "Message");//"Service Order successfully created";
 	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID
@@ -54,9 +54,9 @@ public class TC0022_VerifyAction_ServiceOrder extends BaseClass {
 		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
 		Date date = new Date();
 		String DateRequested = dateFormat.format(date);
-		dashBoard.submitServiceRequest(SearchInput, DateRequested, DateRequested, DateDescription);
+		dashBoard.submitServiceRequest(searchInput, DateRequested, DateRequested, dateDescription);
 		Thread.sleep(1000);
-		dashBoard.verifySubmitMessage(Message);
+		dashBoard.verifySubmitMessage(message);
 		dashBoard.ClickSerOrderDne();
 		
 		//sql.VerifyServiceOrders(locationID, DateRequested);

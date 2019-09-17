@@ -29,14 +29,14 @@ public class TC0038_VerifyAction_Transfers_Stack_TwoLocations_defaultCustomerLoc
 	 * @Since 2019-07-29
 	 */
 
-	public String locationID = "TESTLOCATION01";
-	public String locationID2 = "LOC@0004";
-	public String serverUrl = getDrillbackServerUrl();
-	public String defaultCustomer1= "Mr. Talha Rahim";
-	public String defaultCustomer2 = "Mr. VACANT VACANT";
-	public String message = "Transfer initiated";
+	public String locationID =getCellvalue("TC0038", "locationID");// "TESTLOCATION01";
+	public String locationID2 = getCellvalue("TC0038", "locationID2");//"LOC@0004";
+	public String defaultCustomer1= getCellvalue("TC0038", "defaultCustomer1");//"Mr. Talha Rahim";
+	public String defaultCustomer2 = getCellvalue("TC0038", "defaultCustomer2");//"Mr. VACANT VACANT";
+	public String message = getCellvalue("TC0038", "message");//"Transfer initiated";
 	public String[] task = {"Meter Reading-electric", "Charge New Customer","Property Transfer", "Deposit Request-new Customer", "Deposit Payment-new Customer E","Prepayment Required-new Custom"};
 	CommonMethods cmnMethods = new CommonMethods();
+	public String serverUrl = getDrillbackServerUrl();
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)

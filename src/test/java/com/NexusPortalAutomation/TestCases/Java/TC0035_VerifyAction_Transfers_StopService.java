@@ -29,11 +29,12 @@ public class TC0035_VerifyAction_Transfers_StopService extends BaseClass {
 	 * @Since 2019-07-29
 	 */
 
-	public String locationID = "LOC@0004";
-	public String locationID2 = "LOC@0005";
-	public String locationID3 = "TESTLOCATION02";
-	public String serverUrl = getDrillbackServerUrl();
-	public String defaultCustomer = "Mr. VACANT VACANT";
+	
+	public String locationID = getCellvalue("TC0035", "locationID");//"LOC@0004";
+	public String locationID2 =getCellvalue("TC0035", "locationID2");// "LOC@0002";
+	public String locationID3 = getCellvalue("TC0035", "locationID3");// "TESTLOCATION02";
+	public String defaultCustomer = getCellvalue("TC0035", "defaultCustomer");//"Mr. VACANT VACANT";
+	public String Message = getCellvalue("TC0035", "message");//"Transfer initiated";
 	
 	public String[] Task = {"Meter Reading-electric", "Charge New Customer","Property Transfer", "Deposit Request-new Customer", "Deposit Payment-new Customer E","Prepayment Required-new Custom"};
 	CommonMethods cmnMethods = new CommonMethods();

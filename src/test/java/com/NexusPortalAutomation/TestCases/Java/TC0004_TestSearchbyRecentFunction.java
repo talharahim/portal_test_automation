@@ -20,7 +20,7 @@ public class TC0004_TestSearchbyRecentFunction extends BaseClass {
 	 * 
 	 * @Since 2019-04-11
 	 */
-	public String locationID =   ExcelData.getExcelData("Locations","locationID");//"ELECWAT001";
+	public String locationID =   ExcelData.getExcelData("TC0004","locationID");//"ELECWAT001";
 	public String customerAddress;
 	public CommonMethods cmnMethods = new CommonMethods();
 

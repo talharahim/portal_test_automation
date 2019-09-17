@@ -20,9 +20,9 @@ public class TC0012_verifyCreditStatusStatus extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String locationID = getCellvalue("Locations", "loc1");// "LOC@0001";
-	public String locationID2 = getCellvalue("Locations", "creditlocationID1");// "TESTLOCATION01";
-	public String locationID3 = getCellvalue("Locations", "creditlocationID2");// "TESTLOCATION03";
+	public String locationID = getCellvalue("TC0012", "loc1");// "LOC@0001";
+	public String locationID2 = getCellvalue("TC0012", "creditlocationID1");// "TESTLOCATION01";
+	public String locationID3 = getCellvalue("TC0012", "creditlocationID2");// "TESTLOCATION03";
 	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID

@@ -19,12 +19,12 @@ public class TC0019_verifyDrillbackTransactions extends BaseClass {
 	 * 
 	 * @Since 2019-08-11
 	 */
-	public String locationID = getCellvalue("Locations", "loc1");//"LOC@0001";
-	public String customerId = getCellvalue("Customers", "drillbackCustId");//"0000011111";
+	public String locationID = getCellvalue("TC0019", "loc1");//"LOC@0001";
+	public String customerId = getCellvalue("TC0019", "drillbackCustId");//"0000011111";
 	public String serverUrl = getDrillbackServerUrl();
-	public String payDocNum = getCellvalue("Transactions", "payDocNum");//"PYMT00000000425";
-	public String billDocNum = getCellvalue("Transactions", "billDocNum");//"BILL00000000563";
-	public String metDocNum = getCellvalue("Transactions", "metDocNum");//"READ00000000813";
+	public String payDocNum = getCellvalue("TC0019", "payDocNum");//"PYMT00000000425";
+	public String billDocNum = getCellvalue("TC0019", "billDocNum");//"BILL00000000563";
+	public String metDocNum = getCellvalue("TC0019", "metDocNum");//"READ00000000813";
 	// Payment
 	public String paymentUrl = serverUrl + "Prod=229&Act=OPEN&Func=TransactionPymtOrCreditMemoInquiry&DocumentNumber="
 			+ payDocNum + "&CogsDrillback=1";

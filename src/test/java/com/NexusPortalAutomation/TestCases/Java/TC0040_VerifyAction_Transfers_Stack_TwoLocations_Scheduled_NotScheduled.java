@@ -28,12 +28,10 @@ public class TC0040_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotSched
 	 * 
 	 * @Since 2019-07-29
 	 */
-
-	public String locationID = "LOC@0004";
-	public String locationID2 = "LOC@0002";
-	public String serverUrl = getDrillbackServerUrl();
-	public String defaultCustomer = "Mr. VACANT VACANT";
-	public String message = "Transfer initiated";
+	public String locationID = getCellvalue("TC0039", "locationID");// "LOC@0004";
+	public String locationID2 = getCellvalue("TC0039", "locationID2");//"LOC@0002";
+	public String defaultCustomer = getCellvalue("TC0039", "defaultCustomer");//"Mr. VACANT VACANT";
+	public String message = getCellvalue("TC0039", "message");//"Transfer initiated";
 	public String[] task = {"Meter Reading-electric", "Charge New Customer","Property Transfer", "Deposit Request-new Customer", "Deposit Payment-new Customer E","Prepayment Required-new Custom"};
 	CommonMethods cmnMethods = new CommonMethods();
 

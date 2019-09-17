@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="all-tests"
+<testsuite name="NexusTest"
            tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="29.063">
+           time="26.022">
   <properties />
   
   
-            <testcase name="verifyDrillbackTransactions" time="29.063" classname="com.NexusPortalAutomation.TestCases.Java.TC0019_verifyDrillbackTransactions" />
+            <testcase name="verifyDrillbackTransactions" time="26.022" classname="com.NexusPortalAutomation.TestCases.Java.TC0019_verifyDrillbackTransactions" />
       
 </testsuite>

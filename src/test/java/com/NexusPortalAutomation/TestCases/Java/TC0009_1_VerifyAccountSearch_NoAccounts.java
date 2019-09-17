@@ -20,7 +20,7 @@ public class TC0009_1_VerifyAccountSearch_NoAccounts extends BaseClass {
 	 * 
 	 * @Since 2019-04-11
 	 */
- String locationID = ExcelData.getExcelData("Locations","singleLoc1");//"SINGLECUST01";
+ String locationID = ExcelData.getExcelData("TC0009","singleLoc1");//"SINGLECUST01";
  String text ="No Other Accounts";
  CommonMethods cmnMethods = new CommonMethods();
 

@@ -29,11 +29,11 @@ public class TC0037_VerifyAction_Transfers_Stack_TwoLocations_NotScheduled exten
 	 * @Since 2019-07-29
 	 */
 
-	public String locationID = "LOC@0004";
-	public String locationID2 = "LOC@0002";
-	public String serverUrl = getDrillbackServerUrl();
-	public String defaultCustomer = "Mr. VACANT VACANT";
-	public String message = "Transfer initiated";
+	
+	public String locationID = getCellvalue("TC0037", "locationID");//"LOC@0004";
+	public String locationID2 =getCellvalue("TC0037", "locationID2");// "LOC@0002";
+	public String defaultCustomer = getCellvalue("TC0037", "defaultCustomer");//"Mr. VACANT VACANT";
+	public String message = getCellvalue("TC0037", "message");//"Transfer initiated";
 	public String[] task = {"Meter Reading-electric", "Charge New Customer","Property Transfer", "Deposit Request-new Customer", "Deposit Payment-new Customer E","Prepayment Required-new Custom"};
 	CommonMethods cmnMethods = new CommonMethods();
 
@@ -131,7 +131,7 @@ public class TC0037_VerifyAction_Transfers_Stack_TwoLocations_NotScheduled exten
 		dashBoard.clickServiceorderLink();
 		dashBoard.clickServiceOrder3();
 		String moveOutCustomer = "Mr. Automation Mate";
-		moveInCustomer = "Mrs. Gail M Dewar (Customer010)";
+		moveInCustomer = "Mr. Automation Mate (0000011111)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,task,locationID,"Move In From Location Loc@0004");
 		
 		//Verifying Service Order 2

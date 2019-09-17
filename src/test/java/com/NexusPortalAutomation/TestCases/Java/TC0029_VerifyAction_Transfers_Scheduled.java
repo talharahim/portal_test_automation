@@ -28,21 +28,22 @@ public class TC0029_VerifyAction_Transfers_Scheduled extends BaseClass {
 	 * @Since 2019-06-10
 	 */
 
-	public String locationID = "LOC@0004";
-	public String locationID2 = "LOC@0005";
-	public String defaultCustomer = "Mr. VACANT VACANT";
-	public String requestedbY = "Mr. Automation Mate";
-	public String moveOutCustomer = "Mr. Automation Mate";
-	public String loc2moveOutCustomer = "Mr. Movein Cus";
-	public String moveInCustomer = "Mr. Vacant Vacant (Vacant)";
-	public String loc2moveInCustomer = "Mr. Automation Mate (0000011111)";
+	public String locationID = getCellvalue("TC0027", "locationID");//"LOC@0004";
+	public String locationID2 = getCellvalue("TC0027", "locationID2");//"LOC@0005";
+	public String defaultCustomer = getCellvalue("TC0027", "defaultCustomer");//"Mr. VACANT VACANT";
+	public String requestedbY = getCellvalue("TC0027", "requestedbY");//"Mr. Automation Mate";
+	public String moveOutCustomer = getCellvalue("TC0027", "moveOutCustomer");//"Mr. Automation Mate";
+	public String loc2moveOutCustomer = getCellvalue("TC0027", "loc2moveOutCustomer");//"Mr. Movein Cus";
+	public String moveInCustomer = getCellvalue("TC0027", "moveInCustomer");//"Mr. Vacant Vacant (Vacant)";
+	public String loc2moveInCustomer = getCellvalue("TC0027", "loc2moveInCustomer");//"Mr. Automation Mate (0000011111)";
 	public String serverUrl = getDrillbackServerUrl();
-	public String Task1 = "Meter Reading-electric";
-	public String Task2 = "Charge New Customer";
-	public String Task3 = "Property Transfer";
-	public String Task4 = "Deposit Request-new Customer";
-	public String Task5 = "Deposit Payment-new Customer E";
-	public String Task6 = "Prepayment Required-new Custom";
+	public String task1 = getCellvalue("TC0027", "task1");//"Meter Reading-electric";
+	public String task2 = getCellvalue("TC0027", "task2");//"Charge New Customer";
+	public String task3 = getCellvalue("TC0027", "task3");//"Property Transfer";
+	public String task4 = getCellvalue("TC0027", "task4");//"Deposit Request-new Customer";
+	public String task5 = getCellvalue("TC0027", "task5");//"Deposit Payment-new Customer E";
+	public String task6 = getCellvalue("TC0027", "task6");//"Prepayment Required-new Custom";
+	public String message = getCellvalue("TC0027", "message");//"Transfer initiated";
 	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID
@@ -131,12 +132,12 @@ public class TC0029_VerifyAction_Transfers_Scheduled extends BaseClass {
 		cmnMethods.verifyString(dashBoard.getSOscheduledDate(), moveOutstart_dtfinalString);
 		cmnMethods.verifyString(dashBoard.getMoveOutSOcustomerName(), moveOutCustomer);
 		cmnMethods.verifyString(dashBoard.getMoveInSOcustomerName(), moveInCustomer);
-		cmnMethods.verifyString(dashBoard.getSOTask1Description(), Task1);
-		cmnMethods.verifyString(dashBoard.getSOTask2Description(), Task2);
-		cmnMethods.verifyString(dashBoard.getSOTask3Description(), Task3);
-		cmnMethods.verifyString(dashBoard.getSOTask4Description(), Task4);
-		cmnMethods.verifyString(dashBoard.getSOTask5Description(), Task5);
-		cmnMethods.verifyString(dashBoard.getSOTask6Description(), Task6);
+		cmnMethods.verifyString(dashBoard.getSOTask1Description(), task1);
+		cmnMethods.verifyString(dashBoard.getSOTask2Description(), task2);
+		cmnMethods.verifyString(dashBoard.getSOTask3Description(), task3);
+		cmnMethods.verifyString(dashBoard.getSOTask4Description(), task4);
+		cmnMethods.verifyString(dashBoard.getSOTask5Description(), task5);
+		cmnMethods.verifyString(dashBoard.getSOTask6Description(), task6);
 		log(serviceOrder);
 		sql.verifyServiceOrders(locationID, serviceOrder);
 		// Entering location ID 2 and verifying
@@ -154,12 +155,12 @@ public class TC0029_VerifyAction_Transfers_Scheduled extends BaseClass {
 		cmnMethods.verifyString(dashBoard.getSOscheduledDate(), moveOutstart_dtfinalString);
 		cmnMethods.verifyString(dashBoard.getMoveOutSOcustomerName(), loc2moveOutCustomer);
 		cmnMethods.verifyString(dashBoard.getMoveInSOcustomerName(), loc2moveInCustomer);
-		cmnMethods.verifyString(dashBoard.getSOTask1Description(), Task1);
-		cmnMethods.verifyString(dashBoard.getSOTask2Description(), Task2);
-		cmnMethods.verifyString(dashBoard.getSOTask3Description(), Task3);
-		cmnMethods.verifyString(dashBoard.getSOTask4Description(), Task4);
-		cmnMethods.verifyString(dashBoard.getSOTask5Description(), Task5);
-		cmnMethods.verifyString(dashBoard.getSOTask6Description(), Task6);
+		cmnMethods.verifyString(dashBoard.getSOTask1Description(), task1);
+		cmnMethods.verifyString(dashBoard.getSOTask2Description(), task2);
+		cmnMethods.verifyString(dashBoard.getSOTask3Description(), task3);
+		cmnMethods.verifyString(dashBoard.getSOTask4Description(), task4);
+		cmnMethods.verifyString(dashBoard.getSOTask5Description(), task5);
+		cmnMethods.verifyString(dashBoard.getSOTask6Description(), task6);
 
 		log(serviceOrder);
 		sql.verifyServiceOrders(locationID2, serviceOrder);

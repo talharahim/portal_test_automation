@@ -20,7 +20,7 @@ public class TC0016_1_VerifyBillingDetails_AutoPay extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String locationID =getCellvalue("Locations", "loc1");// "LOC@0001";
+	public String locationID =getCellvalue("TC0016", "loc1");// "LOC@0001";
 
 	CommonMethods cmnMethods = new CommonMethods();
 	String autoPay = "OFF";

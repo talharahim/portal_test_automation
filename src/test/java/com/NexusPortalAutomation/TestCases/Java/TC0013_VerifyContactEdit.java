@@ -19,14 +19,14 @@ public class TC0013_VerifyContactEdit extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String locationID = getCellvalue("Locations", "locationEdit");//"LOC@0004";
-	String ssn = getCellvalue("Customers", "ssnEdit");//"2312";
-	String lic = getCellvalue("Customers", "licEdit");//"Driv12312OUL312";
-	String phone = getCellvalue("Customers", "phoneEdit");//"(090) 078-6010";
-	String ext = getCellvalue("Customers", "extEdit");//"+ Ext. 2112";
-	String email = getCellvalue("Customers", "emailEdit");//"automation@cogsdale.com";
-	String add = getCellvalue("Customers", "addEdit");//"007 Test Apt";
-	String acsz = getCellvalue("Customers", "acszEdit");//"New York NY 12345-67890";
+	public String locationID = getCellvalue("TC0013", "locationEdit");//"LOC@0004";
+	String ssn = getCellvalue("TC0013", "ssnEdit");//"2312";
+	String lic = getCellvalue("TC0013", "licEdit");//"Driv12312OUL312";
+	String phone = getCellvalue("TC0013", "phoneEdit");//"(090) 078-6010";
+	String ext = getCellvalue("TC0013", "extEdit");//"+ Ext. 2112";
+	String email = getCellvalue("TC0013", "emailEdit");//"automation@cogsdale.com";
+	String add = getCellvalue("TC0013", "addEdit");//"007 Test Apt";
+	String acsz = getCellvalue("TC0013", "acszEdit");//"New York NY 12345-67890";
 	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID

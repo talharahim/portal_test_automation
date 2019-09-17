@@ -21,7 +21,7 @@ public class TC0008_VerifySignInbylocationID extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String locationID = ExcelData.getExcelData("Locations","loc1");// "AUTOLOC001";"LOC@0001";
+	public String locationID = ExcelData.getExcelData("TC0008","loc1");// "AUTOLOC001";"LOC@0001";
 	CommonMethods cmnMethods = new CommonMethods();
 	String addLine = "007 Aut Automation Street Rt 20001 Apt";
 	String addCity = "Cloudy";

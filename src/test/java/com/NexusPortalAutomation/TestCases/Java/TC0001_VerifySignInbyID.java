@@ -13,7 +13,7 @@ import com.NexusPortalAutomation.Utilities.Java.ExcelData;
 public class TC0001_VerifySignInbyID extends BaseClass {
 
 	
-	public String customerID = ExcelData.getExcelData("Customers","customerID");
+	public String customerID = ExcelData.getExcelData("TC0001","customerID");
 	//public String customerID = "0000011111";
 	CommonMethods commonMethod = new CommonMethods();
 	/*

@@ -19,12 +19,11 @@ public class TC0028_TestEnhancedNotes extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String username = "Automation Mate";
+	public String username = getCellvalue("TC0028", "username");// "Automation Mate";
+	public String notes1 =  getCellvalue("TC0028", "notes1");//"Customer Test notes for AuTOMation";
+	public String notes2 =  getCellvalue("TC0028", "notes2");//"Location Test Notes for Automation";
+	public String title =  getCellvalue("TC0028", "title");//"Mr.";
 	CommonMethods cmnMethods = new CommonMethods();
-	public String notes1 = "Customer Test notes for AuTOMation";
-	public String notes2 = "Location Test Notes for Automation";
-	public String title = "Mr.";
-
 //This Test will test the search by Customer's First Name
 	@Test(priority = 2)
 	public void TestSearchAutobyFirstName() throws IOException, InterruptedException {

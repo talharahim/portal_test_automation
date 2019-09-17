@@ -22,9 +22,9 @@ public class TC0017_StatementsValue extends BaseClass {
 	 * @Since 2019-06-11
 	 */
 
-	public String locationID = getCellvalue("Locations", "stLocationID");//""STATEMENTS001";
-	public String satementDateValue = getCellvalue("Locations", "stDateValue");//""Jul 31, 2019";
-	public String statementValue = getCellvalue("Locations", "stValue");//""$56.71";
+	public String locationID = getCellvalue("TC0017", "stLocationID");//""STATEMENTS001";
+	public String satementDateValue = getCellvalue("TC0017", "stDateValue");//""Jul 31, 2019";
+	public String statementValue = getCellvalue("TC0017", "stValue");//""$56.71";
 	
 
 	CommonMethods cmnMethods = new CommonMethods();

@@ -20,11 +20,11 @@ public class TC0023_VerifyRecentWidget extends BaseClass {
 	 * @Since 2019-06-10
 	 */
 
-	public String locationID = "LOC@0001";
-	public String recordType = "Payment";
-	public String recordAmount = "$14.74";
-	public String recordDate = "Apr 12, 2027";
-	public String title = "Transactions";
+	public String locationID = getCellvalue("TC0023", "loc1");//"LOC@0001";
+	public String recordType = getCellvalue("TC0023", "recordType");// "Payment";
+	public String recordAmount = getCellvalue("TC0023", "recordAmount");//"$14.74";
+	public String recordDate = getCellvalue("TC0023", "recordDate");//"Apr 12, 2027";
+	public String title = getCellvalue("TC0023", "title");//"TC0023";
 
 	CommonMethods cmnMethods = new CommonMethods();
 

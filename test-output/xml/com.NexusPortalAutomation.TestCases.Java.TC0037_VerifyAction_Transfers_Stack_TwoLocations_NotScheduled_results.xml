@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="all-tests"
+<testsuite name="NexusTest"
            tests="1"
            failures="1"
            errors="0"
            skipped="0"
-           time="0.127">
+           time="94.514">
   <properties />
-            <testcase name="VerifyTransferActionServiceOrder" time="0.127" classname="com.NexusPortalAutomation.TestCases.Java.TC0037_VerifyAction_Transfers_Stack_TwoLocations_NotScheduled">
-                <failure type="com.microsoft.sqlserver.jdbc.SQLServerException"
-                  message="The column name soserviceOrderNum is not valid."
+            <testcase name="VerifyAction_Transfers_Stack_TwoLocations_NotScheduled" time="94.514" classname="com.NexusPortalAutomation.TestCases.Java.TC0037_VerifyAction_Transfers_Stack_TwoLocations_NotScheduled">
+                <failure type="java.lang.AssertionError"
+                  message="Actual Value &apos;Mrs. Gail M Dewar (Customer010)&apos; not Matched the expected value &apos;Mr. Automation Mate (0000011111)&apos; "
               >
-<![CDATA[com.microsoft.sqlserver.jdbc.SQLServerException: The column name soserviceOrderNum is not valid.
-  com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:226)
-  com.microsoft.sqlserver.jdbc.SQLServerResultSet.findColumn(SQLServerResultSet.java:687)
-  com.microsoft.sqlserver.jdbc.SQLServerResultSet.getString(SQLServerResultSet.java:2468)
-  com.NexusPortalAutomation.Utilities.Java.CommonMethods.selectFromDb(CommonMethods.java:86)
-  com.NexusPortalAutomation.Utilities.Java.MySQLDataExec.deleteServiceorder(MySQLDataExec.java:20)
-  com.NexusPortalAutomation.TestCases.Java.TC0037_VerifyAction_Transfers_Stack_TwoLocations_NotScheduled.VerifyTransferActionServiceOrder(TC0037_VerifyAction_Transfers_Stack_TwoLocations_NotScheduled.java:47)
+<![CDATA[java.lang.AssertionError: Actual Value 'Mrs. Gail M Dewar (Customer010)' not Matched the expected value 'Mr. Automation Mate (0000011111)' 
+  org.testng.Assert.fail(Assert.java:96)
+  com.NexusPortalAutomation.Utilities.Java.CommonMethods.verifyString(CommonMethods.java:68)
+  com.NexusPortalAutomation.PageObjects.Java.Dashboard_Transfers.verifyServiceOrderdetails(Dashboard_Transfers.java:450)
+  com.NexusPortalAutomation.TestCases.Java.TC0037_VerifyAction_Transfers_Stack_TwoLocations_NotScheduled.VerifyAction_Transfers_Stack_TwoLocations_NotScheduled(TC0037_VerifyAction_Transfers_Stack_TwoLocations_NotScheduled.java:135)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

@@ -21,7 +21,7 @@ public class TC0006_TestAlertOnLoad extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String username = ExcelData.getExcelData("Customers","alUsername");// "AUTOLOC001";
+	public String username = ExcelData.getExcelData("TC0006","alUsername");// "AUTOLOC001";
 	public CommonMethods cmnMethods = new CommonMethods();
 
 	@Test(priority = 2)

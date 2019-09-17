@@ -11,7 +11,7 @@ import com.NexusPortalAutomation.Utilities.Java.ExcelData;
 
 public class TC0005_TestSearchbyBookMarks extends BaseClass {
 
-	public String username =  ExcelData.getExcelData("Customers","bmUsername");//"Noel Ford";
+	public String username =  ExcelData.getExcelData("TC0005","bmUsername");//"Noel Ford";
 	public CommonMethods cmnMethods = new CommonMethods();
 
 	//@Test(priority = 2)

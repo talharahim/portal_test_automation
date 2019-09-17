@@ -20,9 +20,9 @@ public class TC0018_verifyDrillbacksGeneral extends BaseClass {
 	 * @Since 2019-06-10
 	 */
 
-	public String locationID = getCellvalue("Locations", "drillbackLoc");//"LOC@0004";
-	public String locationID2 =getCellvalue("Locations", "loc1");// "LOC@0001";
-	public String customerId =getCellvalue("Customers", "drillbackCustId");// "0000011111";
+	public String locationID = getCellvalue("TC0018", "drillbackLoc");//"LOC@0004";
+	public String locationID2 =getCellvalue("TC0018", "loc1");// "LOC@0001";
+	public String customerId =getCellvalue("TC0018", "drillbackCustId");// "0000011111";
 	public String serverUrl = getDrillbackServerUrl();
 
 	public String custURL = serverUrl + "Prod=229&Act=OPEN&Func=CustomerMaintenance&CustomerID=" + customerId

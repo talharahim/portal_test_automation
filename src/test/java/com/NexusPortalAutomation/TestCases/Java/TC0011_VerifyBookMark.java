@@ -20,7 +20,7 @@ public class TC0011_VerifyBookMark extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String customerName = getCellvalue("Customers","statementuser");// "Statement Pdf";
+	public String customerName = getCellvalue("TC0011","statementuser");// "Statement Pdf";
 	CommonMethods cmnMethods = new CommonMethods();
 
 //This Test will test the search by Customer ID

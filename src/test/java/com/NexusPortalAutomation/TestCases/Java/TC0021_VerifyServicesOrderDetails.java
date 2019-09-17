@@ -20,24 +20,24 @@ public class TC0021_VerifyservicesOrderDetails extends BaseClass {
 	 * 
 	 * @Since 2019-06-14
 	 */
-	public String locationID = getCellvalue("Locations", "loc1");//"LOC@0001";
-	public String customerId = getCellvalue("Customers", "drillbackCustId");//"0000011111";
+	public String locationID = getCellvalue("TC0021", "loc1");//"LOC@0001";
+	public String customerId = getCellvalue("TC0021", "drillbackCustId");//"0000011111";
 	public String serverUrl = getDrillbackServerUrl();
 	CommonMethods cmnMethods = new CommonMethods();
-	String serviceOrderReqId = getCellvalue("Transactions", "serviceOrderReqId");//"REQ-EST-ELE";
-	String serviceOrderDescription = getCellvalue("Transactions", "serviceOrderDescription");//"Meter Reading For Estimate Electric";
-	String serviceOrderScheduledDate = getCellvalue("Transactions", "serviceOrderScheduledDate");//"May 17, 2019";
-	String solvserviceOrderId = getCellvalue("Transactions", "solvserviceOrderId");//"SORD00000000057";
-	String sodvStatus = getCellvalue("Transactions", "sodvStatus");//"Completed";
-	String sodvDescriptionRequest = getCellvalue("Transactions", "sodvDescriptionRequest");//"Meter Reading For Estimate Electric";
-	String sodvRequestId = getCellvalue("Transactions", "sodvRequestId");//"REQ-EST-ELE";
-	String sodvRequestedDate = getCellvalue("Transactions", "sodvRequestedDate");//"May 17, 2019";
-	String sodvRequestedTime = getCellvalue("Transactions", "sodvRequestedTime");//"5:53 AM";
-	String sodvScheduledDate = getCellvalue("Transactions", "sodvScheduledDate");//"May 17, 2019";
-	String sodvScheduledTime = getCellvalue("Transactions", "sodvScheduledTime");//"5:53 AM";
-	String sodvTaskDescription = getCellvalue("Transactions", "sodvTaskDescription");//"Meter Reading-electric";
-	String sodvTaskEmployeeId = getCellvalue("Transactions", "sodvTaskEmployeeId");// "CARN0001";
-	String sodvTaskCompletedDate = getCellvalue("Transactions", "sodvTaskCompletedDate");//"Apr 12, 2027";
+	String serviceOrderReqId = getCellvalue("TC0021", "serviceOrderReqId");//"REQ-EST-ELE";
+	String serviceOrderDescription = getCellvalue("TC0021", "serviceOrderDescription");//"Meter Reading For Estimate Electric";
+	String serviceOrderScheduledDate = getCellvalue("TC0021", "serviceOrderScheduledDate");//"May 17, 2019";
+	String solvserviceOrderId = getCellvalue("TC0021", "solvserviceOrderId");//"SORD00000000057";
+	String sodvStatus = getCellvalue("TC0021", "sodvStatus");//"Completed";
+	String sodvDescriptionRequest = getCellvalue("TC0021", "sodvDescriptionRequest");//"Meter Reading For Estimate Electric";
+	String sodvRequestId = getCellvalue("TC0021", "sodvRequestId");//"REQ-EST-ELE";
+	String sodvRequestedDate = getCellvalue("TC0021", "sodvRequestedDate");//"May 17, 2019";
+	String sodvRequestedTime = getCellvalue("TC0021", "sodvRequestedTime");//"5:53 AM";
+	String sodvScheduledDate = getCellvalue("TC0021", "sodvScheduledDate");//"May 17, 2019";
+	String sodvScheduledTime = getCellvalue("TC0021", "sodvScheduledTime");//"5:53 AM";
+	String sodvTaskDescription = getCellvalue("TC0021", "sodvTaskDescription");//"Meter Reading-electric";
+	String sodvTaskEmployeeId = getCellvalue("TC0021", "sodvTaskEmployeeId");// "CARN0001";
+	String sodvTaskCompletedDate = getCellvalue("TC0021", "sodvTaskCompletedDate");//"Apr 12, 2027";
 	// This Test will test the search by Customer ID
 
 	@Test

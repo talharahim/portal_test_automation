@@ -22,7 +22,7 @@ public class TC0007_TestSummarySection extends BaseClass {
 	 * 
 	 * @Since 2019-04-11
 	 */
-	public String username = ExcelData.getExcelData("Customers","username");// "AUTOLOC001";"Automation Mate";
+	public String username = ExcelData.getExcelData("TC0007","username");// "AUTOLOC001";"Automation Mate";
 	public CommonMethods cmnMethods = new CommonMethods();
 
 	@Test(priority = 2)

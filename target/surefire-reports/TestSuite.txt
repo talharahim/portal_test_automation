@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 50, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 57,039.695 s - in TestSuite
+Tests run: 50, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 2,430.997 s <<< FAILURE! - in TestSuite
+VerifyAction_Transfers_Stack_TwoLocations_NotScheduled(com.NexusPortalAutomation.TestCases.Java.TC0037_VerifyAction_Transfers_Stack_TwoLocations_NotScheduled)  Time elapsed: 85.7 s  <<< FAILURE!
+java.lang.AssertionError: Actual Value 'Mrs. Gail M Dewar (Customer010)' not Matched the expected value 'Mr. Automation Mate (0000011111)' 
+	at com.NexusPortalAutomation.TestCases.Java.TC0037_VerifyAction_Transfers_Stack_TwoLocations_NotScheduled.VerifyAction_Transfers_Stack_TwoLocations_NotScheduled(TC0037_VerifyAction_Transfers_Stack_TwoLocations_NotScheduled.java:135)
+
+TestSearchAutobyFirstName(com.NexusPortalAutomation.TestCases.Java.TC0028_TestEnhancedNotes)  Time elapsed: 19.25 s  <<< FAILURE!
+java.lang.AssertionError: Actual Value 'Automation Mate' not Matched the expected value 'LOC@0004' 
+	at com.NexusPortalAutomation.TestCases.Java.TC0028_TestEnhancedNotes.TestSearchAutobyFirstName(TC0028_TestEnhancedNotes.java:38)
+

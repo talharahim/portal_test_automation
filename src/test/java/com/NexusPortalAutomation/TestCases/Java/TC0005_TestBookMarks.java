@@ -21,7 +21,7 @@ public class TC0005_TestBookMarks extends BaseClass {
 	 * 
 	 * @Since 2019-04-11
 	 */
-	public String locationID = ExcelData.getExcelData("Locations","stLocationID");//"STATEMENTS001";
+	public String locationID = ExcelData.getExcelData("TC0005","stLocationID");//"STATEMENTS001";
 	public CommonMethods cmnMethods = new CommonMethods();
 
 	@Test(priority = 1)

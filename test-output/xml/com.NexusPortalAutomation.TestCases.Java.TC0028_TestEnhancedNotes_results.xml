@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="all-tests"
+<testsuite name="NexusTest"
            tests="1"
            failures="1"
            errors="0"
            skipped="0"
-           time="57.526">
+           time="16.627">
   <properties />
-            <testcase name="TestSearchAutobyFirstName" time="57.526" classname="com.NexusPortalAutomation.TestCases.Java.TC0028_TestEnhancedNotes">
+            <testcase name="TestSearchAutobyFirstName" time="16.627" classname="com.NexusPortalAutomation.TestCases.Java.TC0028_TestEnhancedNotes">
                 <failure type="java.lang.AssertionError"
-                  message="Object Not Found Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: CUST_title&apos; (tried for 20 second(s) with 500 milliseconds interval)"
+                  message="Actual Value &apos;Mr.&apos; not Matched the expected value &apos;LOC@0004&apos; "
               >
-<![CDATA[java.lang.AssertionError: Object Not Found Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: CUST_title' (tried for 20 second(s) with 500 milliseconds interval)
+<![CDATA[java.lang.AssertionError: Actual Value 'Mr.' not Matched the expected value 'LOC@0004' 
   org.testng.Assert.fail(Assert.java:96)
-  com.NexusPortalAutomation.Utilities.Java.CommonMethods.waitForObject(CommonMethods.java:224)
-  com.NexusPortalAutomation.PageObjects.Java.DashBoard.getCustomertitle(DashBoard.java:671)
-  com.NexusPortalAutomation.TestCases.Java.TC0028_TestEnhancedNotes.TestSearchAutobyFirstName(TC0028_TestEnhancedNotes.java:38)
+  com.NexusPortalAutomation.Utilities.Java.CommonMethods.verifyString(CommonMethods.java:68)
+  com.NexusPortalAutomation.TestCases.Java.TC0028_TestEnhancedNotes.TestSearchAutobyFirstName(TC0028_TestEnhancedNotes.java:37)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

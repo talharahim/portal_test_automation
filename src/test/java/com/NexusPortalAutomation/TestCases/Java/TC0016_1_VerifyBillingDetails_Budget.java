@@ -23,18 +23,18 @@ public class TC0016_1_VerifyBillingDetails_Budget extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String locationID = getCellvalue("Locations", "budgetLOC2");//"BUDGETLOC02";
+	public String locationID = getCellvalue("TC0016", "budgetLOC2");//"BUDGETLOC02";
 	CommonMethods cmnMethods = new CommonMethods();
-	String due =  getCellvalue("Billing1", "dueBudget");//"$100.00";
-	String current = getCellvalue("Billing1", "currentBudget");//"$0.00";
-	String unposted = getCellvalue("Billing1", "unpostedBudget");//"$0.00";
-	String account = getCellvalue("Billing1", "accountBudget");//"$255.00";
-	String installment = getCellvalue("Billing1", "installmentBudget");//"$100.00";
-	String overDue =getCellvalue("Billing1", "overDueBudget");// "$155.00";
-	String amountDue = getCellvalue("Billing1", "amountDueBudget");//"$100.00";
-	String autoPay = getCellvalue("Billing1", "autoPayBudget");//"OFF";
-	String eBill = getCellvalue("Billing1", "eBillBudget");//"OFF";
-	String deposit = getCellvalue("Billing1", "depositBudget");//"$0.00";
+	String due =  getCellvalue("TC0016", "dueBudget");//"$100.00";
+	String current = getCellvalue("TC0016", "currentBudget");//"$0.00";
+	String unposted = getCellvalue("TC0016", "unpostedBudget");//"$0.00";
+	String account = getCellvalue("TC0016", "accountBudget");//"$255.00";
+	String installment = getCellvalue("TC0016", "installmentBudget");//"$100.00";
+	String overDue =getCellvalue("TC0016", "overDueBudget");// "$155.00";
+	String amountDue = getCellvalue("TC0016", "amountDueBudget");//"$100.00";
+	String autoPay = getCellvalue("TC0016", "autoPayBudget");//"OFF";
+	String eBill = getCellvalue("TC0016", "eBillBudget");//"OFF";
+	String deposit = getCellvalue("TC0016", "depositBudget");//"$0.00";
 
 	List<String> Electric = Arrays.asList("ELECTRIC", "163598645", "GS-PK ENERGY", "1.00000", "Active");
 	List<String> Gas1 = Arrays.asList("GAS", "EQUIP-GAS-3", "GRESMTR40", "1.00000", "Active");

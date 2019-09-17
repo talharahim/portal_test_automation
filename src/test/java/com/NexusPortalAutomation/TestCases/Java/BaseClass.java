@@ -63,7 +63,7 @@ public class BaseClass extends ReadProjectProperties {
 			Assert.fail("Null value found, please check excel sheet");
 		}
 
-		return value;
+		return value.trim();
 	}
 
 	public static void WaitAngular() {

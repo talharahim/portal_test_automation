@@ -10,14 +10,14 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 
 public class TC0024_TestCustDetailSearch extends BaseClass {
 
-	public String username = "Automation Mate";
-	public String Result1 = "Mate, Automation";
-	public String userFname = "Automation";
-	public String userLname = "Mate";
-	public String customerId = "AUTO1001";
-	public String locationID = "LOC@0002";
+	public String username = getCellvalue("TC0024", "username");// "Automation Mate";
+	public String Result1 = getCellvalue("TC0024", "Result1");// "Mate, Automation";
+	public String userFname = getCellvalue("TC0024", "userFname");// "Automation";
+	public String userLname = getCellvalue("TC0024", "userLname");// "Mate";
+	public String customerId = getCellvalue("TC0024", "customerId");// "AUTO1001";
+	public String locationID = getCellvalue("TC0024", "locationID");// "LOC@0002";
 	CommonMethods cmnMethods = new CommonMethods();
-	public String title = "Mr.";
+	public String title = getCellvalue("TC0024", "title");// "Mr.";
 	/*
 	 * This test the search by Customer's First Name
 	 * 

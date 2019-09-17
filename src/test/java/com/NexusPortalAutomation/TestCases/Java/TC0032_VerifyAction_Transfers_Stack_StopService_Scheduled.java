@@ -29,10 +29,10 @@ public class TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled extends B
 	 * @Since 2019-07-29
 	 */
 
-	public String locationId = "LOC@0004";
-	public String locationId2 = "LOC@0005";
+	public String locationId = getCellvalue("TC0032", "locationID");//"LOC@0004";
+	public String locationId2 = getCellvalue("TC0032", "locationID2");//"LOC@0005";
 	public String serverUrl = getDrillbackServerUrl();
-	public String defaultCustomer = "Mr. VACANT VACANT";
+	public String defaultCustomer =getCellvalue("TC0032", "defaultCustomer");// "Mr. VACANT VACANT";
 	
 	public String[] task = {"Meter Reading-electric", "Charge New Customer","Property Transfer", "Deposit Request-new Customer", "Deposit Payment-new Customer E","Prepayment Required-new Custom"};
 	CommonMethods cmnMethods = new CommonMethods();

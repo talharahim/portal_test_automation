@@ -21,33 +21,33 @@ public class TC0016_1_VerifyBillingDetails_VerifyBillSaperately extends BaseClas
 	 * 
 	 * @Since 2019-06-11
 	 */
-	public String locationID = "BILLSAPERATE01";
-	public String recordType = "Regular Bill";
-	public String recordAmount = "$17.10";
-	public String recordDate = "Sep 30, 2019";
+	public String locationID = getCellvalue("TC0016", "locationID");// "BILLSAPERATE01";
+	public String recordType =  getCellvalue("TC0016", "recordType");//"Regular Bill";
+	public String recordAmount =  getCellvalue("TC0016", "recordAmount");//"$17.10";
+	public String recordDate =  getCellvalue("TC0016", "recordDate");//"Sep 30, 2019";
 
-	public String recordType2 = "Regular Bill";
-	public String recordAmount2 = "$27.12";
-	public String recordDate2 = "Sep 30, 2019";
-	public String title = "Transactions";
+	public String recordType2 =  getCellvalue("TC0016", "recordType2");//"Regular Bill";
+	public String recordAmount2 =  getCellvalue("TC0016", "recordAmount2");//"$27.12";
+	public String recordDate2 = getCellvalue("TC0016", "recordDate2");// "Sep 30, 2019";
+	public String title = getCellvalue("TC0016", "title");// "Transactions";
 
-	String drillback = "&Func=TransactionBillInquiry&DocumentNumber=BILL00000000612&CogsDrillback=1";
-	String docType = "Bill";
-	String documentNum = "BILL00000000612";
-	String status = "Open";
-	String transAmount = "$27.12";
-	String transDocDate = "Sep 30, 2019";
-	String transDueDate = "Oct 31, 2019";
-	String outstanding = "$27.12";
+	String drillback = getCellvalue("TC0016", "drillback");// "&Func=TransactionBillInquiry&DocumentNumber=BILL00000000612&CogsDrillback=1";
+	String docType =  getCellvalue("TC0016", "docType");//"Bill";
+	String documentNum =  getCellvalue("TC0016", "documentNum");//"BILL00000000612";
+	String status =  getCellvalue("TC0016", "status");//"Open";
+	String transAmount =  getCellvalue("TC0016", "transAmount");//"$27.12";
+	String transDocDate =  getCellvalue("TC0016", "transDocDate");//"Sep 30, 2019";
+	String transDueDate =  getCellvalue("TC0016", "transDueDate");//"Oct 31, 2019";
+	String outstanding =  getCellvalue("TC0016", "outstanding");//"$27.12";
 
-	String drillbackBill2 = "&Func=TransactionBillInquiry&DocumentNumber=BILL00000000611&CogsDrillback=1";
-	String docTypeBill2 = "Bill";
-	String documentNumBill2 = "BILL00000000611";
-	String statusBill2 = "Open";
-	String transAmountBill2 = "$17.10";
-	String transDocDateBill2 = "Sep 30, 2019";
-	String transDueDateBill2 = "Oct 31, 2019";
-	String outstandingBill2 = "$17.10";
+	String drillbackBill2 = getCellvalue("TC0016", "drillbackBill2");// "&Func=TransactionBillInquiry&DocumentNumber=BILL00000000611&CogsDrillback=1";
+	String docTypeBill2 =  getCellvalue("TC0016", "docTypeBill2");//"Bill";
+	String documentNumBill2 =  getCellvalue("TC0016", "documentNumBill2");//"BILL00000000611";
+	String statusBill2 = getCellvalue("TC0016", "statusBill2");// "Open";
+	String transAmountBill2 =  getCellvalue("TC0016", "transAmountBill2");//"$17.10";
+	String transDocDateBill2 = getCellvalue("TC0016", "transDocDateBill2");// "Sep 30, 2019";
+	String transDueDateBill2 =  getCellvalue("TC0016", "transDueDateBill2");//"Oct 31, 2019";
+	String outstandingBill2 =  getCellvalue("TC0016", "outstandingBill2");//"$17.10";
 
 	@Test
 	public void VerifyTransactionsSaperatebill_saperate() throws IOException, InterruptedException {
