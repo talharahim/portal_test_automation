@@ -22,9 +22,42 @@ public class Dashboard_Transactions extends DashBoard {
 	@FindBy(id = "TRAN_Select_Type_Option_3")
 	WebElement TransType_bill;
 
+	@FindBy(xpath = "//button[contains(text(),'Date')]")
+	WebElement dateFilter;
+	
+	@FindBy(xpath = "//button[contains(text(),'Due/Billed')]")
+	WebElement dueFilter;
+	
+	@FindBy(xpath = "//button[contains(text(),'Amount')]")
+	WebElement amountFilter;
+
+	@FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]")
+	WebElement overlay;
+
 	public Dashboard_Transactions(WebDriver driver) {
 		super(driver);
 		// TODO Auto-generated constructor stub
+	}
+
+	public void clickDateFilter_TransactionsRecord() {
+
+		waitForObject(driver, dateFilter);
+		dateFilter.click();
+
+	}
+	
+	public void clickDueFilter_TransactionsRecord() {
+
+		waitForObject(driver, dueFilter);
+		dueFilter.click();
+
+	}
+	
+	public void clickAmountFilter_TransactionsRecord() {
+
+		waitForObject(driver, amountFilter);
+		amountFilter.click();
+
 	}
 
 	public void transaction_filterbyBill() throws InterruptedException {

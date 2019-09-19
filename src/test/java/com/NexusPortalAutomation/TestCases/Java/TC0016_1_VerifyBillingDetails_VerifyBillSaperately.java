@@ -69,7 +69,7 @@ public class TC0016_1_VerifyBillingDetails_VerifyBillSaperately extends BaseClas
 		cmnMethods.verifyString(title, dashBoardTransactions.getTransactionPageTitle());
 		dashBoardTransactions.clickTransactionLink();
 		dashBoardTransactions.transaction_filterbyBill();
-		// Verify Transaction details for Bill 1
+		//Verify Transaction details for Bill 1
 		HashMap<String, String> billingInfo1 = dashBoardTransactions.getTransactionsRecord(1);
 		cmnMethods.verifyStringContains(billingInfo1.get("drillback"), drillback);
 		cmnMethods.verifyString(billingInfo1.get("docType"), docType);
