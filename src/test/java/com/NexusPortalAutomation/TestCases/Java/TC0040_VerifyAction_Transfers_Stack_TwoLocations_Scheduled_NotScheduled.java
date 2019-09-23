@@ -127,7 +127,7 @@ public class TC0040_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotSched
 		//Navigate to Service Order
 		dashBoard.clickrefreshPage();
 		dashBoard.clickServiceorderLink();
-		dashBoard.clickServiceOrder3();
+		dashBoard.clickServiceorder1();
 		String moveOutCustomer = "Mr. Vacant Vacant";
 		moveInCustomer = "Mrs. Gail M Dewar (Customer010)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,newDate2,moveOutstart_dtfinalString,task,locationID,"Move In From Location Loc@0004");
@@ -138,7 +138,7 @@ public class TC0040_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotSched
 		moveInCustomer = "Mr. Vacant Vacant (Vacant)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,task,locationID,"Description For Stop Service");
 		// Verifying Third Transfer order in the stack
- 		dashBoard.clickServiceorder1();
+ 		dashBoard.clickServiceorder3();
  	   	moveOutCustomer = "Mr. Automation Mate";
  		moveInCustomer = "Mr. Vacant Vacant (Vacant)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,task,locationID,"Description For Stop Service");

@@ -16,7 +16,7 @@ public class MySQLDataExec extends CommonMethods {
 	public void deleteServiceorder(String Location) throws ClassNotFoundException, SQLException, SQLServerException {
 
 		String columnName = "soServiceOrderNumber";
-		String Command1 = "select * from [SO10100] where umLocationID ='" + Location + "'";
+		String Command1 = "select * from [SO10100] where umLocationID ='" + Location + "' and soRequestID ='TRANSFER'";
 		String Result = selectFromDb(Command1, ConnectionString, columnName);
 		log("Deleting Records for ServiceOrder = " + Result);
 		String Command2 = "delete from [SO10101] WHERE " + columnName + " ='" + Result + "'";

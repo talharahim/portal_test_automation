@@ -127,7 +127,7 @@ public class TC0034_VerifyAction_Transfers_Stack_TwoLocations extends BaseClass 
 		//Navigate to Service Order
 		dashBoard.clickrefreshPage();
 		dashBoard.clickServiceorderLink();
-		dashBoard.clickServiceOrder3();
+		dashBoard.clickServiceorder1();
 		String moveOutCustomer = "Mr. Vacant Vacant";
 		moveInCustomer = "Mrs. Gail M Dewar (Customer010)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,newDate2,moveOutstart_dtfinalString,Task,locationID);
@@ -138,7 +138,7 @@ public class TC0034_VerifyAction_Transfers_Stack_TwoLocations extends BaseClass 
 		moveInCustomer = "Mr. Automation Mate (0000011111)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,newDate,moveOutstart_dtfinalString,Task,locationID);
 		// Verifying Third Transfer order in the stack
- 		dashBoard.clickServiceorder1();
+ 		dashBoard.clickServiceorder3();
  	   	moveOutCustomer = "Mr. Automation Mate";
  		moveInCustomer = "Mr. Vacant Vacant (Vacant)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,moveOutstart_dtfinalString,moveOutstart_dtfinalString,Task,locationID);

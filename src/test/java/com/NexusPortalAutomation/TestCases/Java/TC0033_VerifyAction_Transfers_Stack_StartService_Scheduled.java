@@ -140,7 +140,7 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 				moveInCustomer,"Description for Start Service");
 		dashBoard.clickrefreshPage();
 
-		dashBoard.clickServiceOrder3();
+		dashBoard.clickServiceorder1();
 		// Verify First Service Order in the Stack
 		moveOutCustomer = "Mr. Movein Cus";
 		moveInCustomer = "Mr. Alert Test (Customeralert01)";
@@ -157,7 +157,7 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 				moveOutstart_dtfinalString, task, locationId);
 
 		// Verifying Third Transfer order in the stack
-		dashBoard.clickServiceorder1();
+		dashBoard.clickServiceorder3();
 		moveOutCustomer = "Mr. Automation Mate";
 		moveInCustomer = "Mr. Movein Cus (Moveincus2)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer, moveOutCustomer, moveInCustomer,

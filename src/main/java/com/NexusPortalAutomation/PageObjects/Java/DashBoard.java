@@ -256,7 +256,7 @@ public class DashBoard extends CommonMethods {
 	@CacheLookup
 	WebElement ServInternetIcon;
 
-	@FindBy(id = "ACTION_DRILLBACK")
+	@FindBy(id = "ACTION_Drillback")
 	@CacheLookup
 	WebElement CustDrillBack;
 
@@ -848,9 +848,9 @@ public class DashBoard extends CommonMethods {
 	// This method will find the elements of Transaction Panel using the URL
 	public void verifyTransDrillbacks(String payment, String bill, String meter) throws InterruptedException {
 		Thread.sleep(1000);
-		findElementByid("TRAN_Drillback_1").getAttribute(payment);
-		findElementByid("TRAN_Drillback_2").getAttribute(bill);
-		findElementByid("TRAN_Drillback_3").getAttribute(meter);
+		findElementByid("TRAN_1_Drillback").getAttribute(payment);
+		findElementByid("TRAN_2_Drillback").getAttribute(bill);
+		findElementByid("TRAN_3_Drillback").getAttribute(meter);
 		log("Verify Transfer Drillback", driver);
 
 	}
@@ -898,19 +898,19 @@ public class DashBoard extends CommonMethods {
 
 	public void verifyServiceWarningSingleSO(String serviceOrder) {
 		verifyString(findElementByid("XFER_Warning_Message").getText(), "Service Order Exist. TRANSFER");
-		verifyStringContains(findElementByid("idPrefix + '_Warning_Drillback'").getAttribute("href"), serviceOrder);
+		verifyStringContains(findElementByid("XFER_Warning_Drillback").getAttribute("href"), serviceOrder);
 
 	}
 
 	public void verifyServiceWarningMultiSO(String serviceOrder) {
 		verifyString(findElementByid("XFER_Warning_Message").getText(), "Multiple Service Orders Exist. TRANSFER");
-		verifyStringContains(findElementByid("idPrefix + '_Warning_Drillback'").getAttribute("href"), serviceOrder);
+		verifyStringContains(findElementByid("XFER_Warning_Drillback").getAttribute("href"), serviceOrder);
 
 	}
 
 	public void verifyServiceWarningSOExists(String serviceOrder) {
 		verifyString(findElementByid("XFER_Warning_Message").getText(), "Service Order Exist. TRANSFER");
-		verifyStringContains(findElementByid("idPrefix + '_Warning_Drillback'").getAttribute("href"), serviceOrder);
+		verifyStringContains(findElementByid("XFER_Warning_Drillback").getAttribute("href"), serviceOrder);
 
 	}
 

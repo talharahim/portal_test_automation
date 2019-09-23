@@ -178,7 +178,7 @@ public class Dashboard_Transfers extends DashBoard {
 
 	}
 
-	public void clickServiceOrder3() {
+	public void clickServiceorder3() {
 		waitForObject(driver, ServiceOrder3);
 		ClickElement(ServiceOrder3, "Clicking Service Order 3");
 		WaitAngular(driver);

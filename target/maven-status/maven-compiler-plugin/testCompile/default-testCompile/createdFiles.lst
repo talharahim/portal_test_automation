@@ -14,6 +14,7 @@ com\NexusPortalAutomation\TestCases\Java\TC0005_TestBookMarks.class
 com\NexusPortalAutomation\TestCases\Java\TC0016_1_VerifyBillingDetails_SPA.class
 com\NexusPortalAutomation\TestCases\Java\TC0001_VerifySignInbyID.class
 com\NexusPortalAutomation\TestCases\Java\TC0007_TestSummarySection.class
+com\NexusPortalAutomation\TestCases\Java\TC0042_1_Transactions_OrderbyAmount.class
 com\NexusPortalAutomation\TestCases\Java\TC0016_VerifyBillingDetails.class
 com\NexusPortalAutomation\TestCases\Java\TC0041_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled.class
 com\NexusPortalAutomation\TestCases\Java\DataRestore.class
@@ -25,6 +26,7 @@ com\NexusPortalAutomation\TestCases\Java\TC0027_VerifyAction_Transfers_StopServi
 com\NexusPortalAutomation\TestCases\Java\TC0017_StatementsValue.class
 com\NexusPortalAutomation\TestCases\Java\BaseClass.class
 com\NexusPortalAutomation\TestCases\Java\TC0037_VerifyAction_Transfers_Stack_TwoLocations_NotScheduled.class
+com\NexusPortalAutomation\TestCases\Java\TC0042_Transactions_OrderbyDate.class
 com\NexusPortalAutomation\TestCases\Java\TC0020_verifyDrillbackServices.class
 com\NexusPortalAutomation\TestCases\Java\TC0031_VerifyAction_Transfers_StopService_Scheduled.class
 com\NexusPortalAutomation\TestCases\Java\TC0010_verifyCustDetails.class
@@ -37,6 +39,7 @@ com\NexusPortalAutomation\TestCases\Java\TC0011_VerifyBookMark.class
 com\NexusPortalAutomation\TestCases\Java\TC0018_verifyDrillbacksGeneral.class
 com\NexusPortalAutomation\TestCases\Java\TC0013_VerifyContactEdit.class
 com\NexusPortalAutomation\TestCases\Java\TC0030_VerifyAction_Transfers_StartService_Scheduled.class
+com\NexusPortalAutomation\TestCases\Java\TC0042_1_Transactions_OrderbyDueBilled.class
 com\NexusPortalAutomation\TestCases\Java\DataBackup.class
 com\NexusPortalAutomation\TestCases\Java\TC0016_1_VerifyBillingDetails_VerifyBillSaperately.class
 com\NexusPortalAutomation\TestCases\Java\TC0016_1_VerifyBillingDetails_EBill.class

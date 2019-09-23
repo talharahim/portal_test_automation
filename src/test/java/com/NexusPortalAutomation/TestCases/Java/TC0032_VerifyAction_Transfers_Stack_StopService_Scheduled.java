@@ -116,7 +116,7 @@ public class TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled extends B
 	
 		// Verify First Service Order in the Stack
 		dashBoard.clickServiceorderLink();
-		dashBoard.clickServiceOrder3();
+		dashBoard.clickServiceorder1();
 		String moveOutCustomer = "Mr. Vacant Vacant";
 		moveInCustomer = "Mr. Movein Cus (Moveincus2)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,newDate2,moveOutstart_dtfinalString,task,locationId);
@@ -128,7 +128,7 @@ public class TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled extends B
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,newDate,moveOutstart_dtfinalString,task,locationId);
 
 		// Verifying Third Transfer order in the stack
-		dashBoard.clickServiceorder1();
+		dashBoard.clickServiceorder3();
 	   	moveOutCustomer = "Mr. Automation Mate";
 		moveInCustomer = "Mr. Vacant Vacant (Vacant)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,moveOutstart_dtfinalString,moveOutstart_dtfinalString,task,locationId);

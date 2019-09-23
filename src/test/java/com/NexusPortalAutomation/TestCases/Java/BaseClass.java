@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -119,6 +120,7 @@ public class BaseClass extends ReadProjectProperties {
 			String browserPath = Read.ReadFile("ChromeInstallPath");
 			System.setProperty("webdriver.chrome.driver", cDriver);
 			// Creating Instance for Chrome
+			ChromeDriverService service = ChromeDriverService.createDefaultService();
 			ChromeOptions ChromeOptions = new ChromeOptions();
 			ChromeOptions.setBinary(browserPath);
 			driver = new ChromeDriver(ChromeOptions);

@@ -109,7 +109,7 @@ public class TC0036_VerifyAction_Transfers_StartService extends BaseClass {
 
 		dashBoard.clickrefreshPage();
 		dashBoard.clickServiceorderLink();
-		dashBoard.clickServiceorder2();
+		dashBoard.clickServiceorder1();
 		String ServiceOrder2 = dashBoard.getserviceOrderNum();
 		String ServiceOrderURL2 = dashBoard.getServiceOrderDrillbackURL();
 		cmnMethods.verifyStringContains(ServiceOrderURL2, ServiceOrder2);
@@ -139,7 +139,7 @@ public class TC0036_VerifyAction_Transfers_StartService extends BaseClass {
 		dashBoard.clickrefreshPage();
 
 		// Verify First Service Order in the Stack
-		dashBoard.clickServiceOrder3();
+		dashBoard.clickServiceorder1();
 		moveOutCustomer = "Mr. Automation Mate";
 		moveInCustomer = "Mr. Alert Test (Customeralert01)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer, moveOutCustomer, moveInCustomer, "Not Scheduled",
@@ -155,7 +155,7 @@ public class TC0036_VerifyAction_Transfers_StartService extends BaseClass {
 				moveOutstart_dtfinalString, Task, locationID);
 
 		// Verifying Third Transfer order in the stack
-		dashBoard.clickServiceorder1();
+		dashBoard.clickServiceorder3();
 		moveOutCustomer = "Mr. Automation Mate";
 		moveInCustomer = "Mr. Movein Cus (Moveincus2)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer, moveOutCustomer, moveInCustomer,

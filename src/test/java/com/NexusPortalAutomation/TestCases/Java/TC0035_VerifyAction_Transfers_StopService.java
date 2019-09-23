@@ -118,7 +118,7 @@ public class TC0035_VerifyAction_Transfers_StopService extends BaseClass {
 	
 		// Verify First Service Order in the Stack
 		dashBoard.clickServiceorderLink();
-		dashBoard.clickServiceOrder3();
+		dashBoard.clickServiceorder1();
 		String moveOutCustomer = "Mr. Automation Mate";
 		moveInCustomer = "Mr. Movein Cus (Moveincus2)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,locationID);
@@ -130,7 +130,7 @@ public class TC0035_VerifyAction_Transfers_StopService extends BaseClass {
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,locationID);
 
 		// Verifying Third Transfer order in the stack
-		dashBoard.clickServiceorder1();
+		dashBoard.clickServiceorder3();
 	   	moveOutCustomer = "Mr. Automation Mate";
 		moveInCustomer = "Mr. Vacant Vacant (Vacant)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,Task,locationID);
