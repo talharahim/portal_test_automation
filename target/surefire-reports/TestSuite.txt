@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 53, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 1,524.715 s <<< FAILURE! - in TestSuite
+VerifyBillingDetails_budgetSPA(com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget_SPA)  Time elapsed: 11.651 s  <<< FAILURE!
+java.lang.AssertionError: Actual Value '$35.26' not Matched the expected value '$0.00' 
+	at com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget_SPA.VerifyBillingDetails_budgetSPA(TC0016_1_VerifyBillingDetails_Budget_SPA.java:57)
+
+VerifyBillingDetails(com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails)  Time elapsed: 13.016 s  <<< FAILURE!
+java.lang.AssertionError: Actual Value '$35.26' not Matched the expected value '$0.00' 
+	at com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails.VerifyBillingDetails(TC0016_VerifyBillingDetails.java:59)
+
+VerifyBillingDetails_Budget(com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget)  Time elapsed: 10.642 s  <<< FAILURE!
+java.lang.AssertionError: Actual Value '$100.00' not Matched the expected value '$0.00' 
+	at com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget.VerifyBillingDetails_Budget(TC0016_1_VerifyBillingDetails_Budget.java:59)
+

@@ -111,7 +111,7 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		dashBoard.clickrefreshPage();
 		dashBoard.clickServiceorderLink();
 		
-		dashBoard.clickServiceorder2();
+		dashBoard.clickServiceorder1();
 		String ServiceOrder2 = dashBoard.getserviceOrderNum();
 		String ServiceOrderURL2 = dashBoard.getServiceOrderDrillbackURL();
 		cmnMethods.verifyStringContains(ServiceOrderURL2, ServiceOrder2);

@@ -24,10 +24,10 @@ public class Dashboard_Transactions extends DashBoard {
 
 	@FindBy(xpath = "//button[contains(text(),'Date')]")
 	WebElement dateFilter;
-	
+
 	@FindBy(xpath = "//button[contains(text(),'Due/Billed')]")
 	WebElement dueFilter;
-	
+
 	@FindBy(xpath = "//button[contains(text(),'Amount')]")
 	WebElement amountFilter;
 
@@ -45,14 +45,14 @@ public class Dashboard_Transactions extends DashBoard {
 		dateFilter.click();
 
 	}
-	
+
 	public void clickDueFilter_TransactionsRecord() {
 
 		waitForObject(driver, dueFilter);
 		dueFilter.click();
 
 	}
-	
+
 	public void clickAmountFilter_TransactionsRecord() {
 
 		waitForObject(driver, amountFilter);
@@ -71,7 +71,7 @@ public class Dashboard_Transactions extends DashBoard {
 
 	public HashMap<String, String> getTransactionsRecord(int index) {
 		WaitAngular(driver);
-		WebElement drillback = waitforObjectById(driver, "TRAN_Drillback_" + index);
+		WebElement drillback = waitforObjectById(driver, "TRAN_" + index + "_Drillback");
 		WebElement docType = waitforObjectById(driver, "TRAN_Document_Type_" + index);
 		WebElement transDesc = waitforObjectById(driver, "TRAN_Description_" + index);
 		WebElement documentNum = waitforObjectById(driver, "TRAN__Document_Number_" + index);

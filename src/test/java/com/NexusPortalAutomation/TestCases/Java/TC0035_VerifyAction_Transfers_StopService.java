@@ -95,7 +95,8 @@ public class TC0035_VerifyAction_Transfers_StopService extends BaseClass {
    		dashBoard.submitStartStopServiceTransferOrder(newDate, "", "TRANSFER", defaultCustomer, moveInCustomer,"Description for Stop Service");
 		dashBoard.clickrefreshPage();
 		dashBoard.clickServiceorderLink();
-		dashBoard.clickServiceorder2();
+		//Getting order number for warning message verification
+		dashBoard.clickServiceorder1();
 		String ServiceOrder2 = dashBoard.getserviceOrderNum();
 		dashBoard.clickrefreshPage();
 		/*

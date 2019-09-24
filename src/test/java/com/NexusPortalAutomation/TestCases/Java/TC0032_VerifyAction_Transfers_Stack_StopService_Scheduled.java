@@ -92,7 +92,7 @@ public class TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled extends B
    		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, newDate, "TRANSFER", defaultCustomer, moveInCustomer, "Description for Move from Service");
 		dashBoard.clickrefreshPage();
 		dashBoard.clickServiceorderLink();
-		dashBoard.clickServiceorder2();
+		dashBoard.clickServiceorder1();
 		String serviceOrder2 = dashBoard.getserviceOrderNum();
 		dashBoard.clickrefreshPage();
 		
