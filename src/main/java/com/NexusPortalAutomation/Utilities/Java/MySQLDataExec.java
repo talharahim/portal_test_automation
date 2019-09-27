@@ -3,6 +3,7 @@ package com.NexusPortalAutomation.Utilities.Java;
 import java.sql.SQLException;
 
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import com.microsoft.sqlserver.jdbc.SQLServerException;
 
@@ -12,6 +13,13 @@ public class MySQLDataExec extends CommonMethods {
 	public String ConnectionString = Read.ReadFile("ConnectionStringServTWO");
 	String Result;
 
+	
+   //@Test
+   void TestDEL() throws ClassNotFoundException, SQLServerException, SQLException
+   {
+	   deleteServiceorder("LOC@0001");
+	   deleteServiceorderHistory("LOC@0001");
+   }
 	// This Method will delete Service Orders by Location
 	public void deleteServiceorder(String Location) throws ClassNotFoundException, SQLException, SQLServerException {
 

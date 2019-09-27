@@ -95,6 +95,10 @@ public class TC0034_VerifyAction_Transfers_Stack_TwoLocations extends BaseClass 
 		//String ServiceOrder2 = dashBoard.getserviceOrderNum();
 		dashBoard.clickrefreshPage();
 		
+		
+		/*
+		// Adding Thir Service with one day ahead of current date
+		*/
 		dashBoard.enterDashBoardSearch(locationID2);
 		dashBoard.clickDashBoardSearchResult1();
 		

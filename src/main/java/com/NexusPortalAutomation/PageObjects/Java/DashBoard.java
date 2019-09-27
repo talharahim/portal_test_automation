@@ -366,7 +366,7 @@ public class DashBoard extends CommonMethods {
 
 	@FindBy(id = "REC_1_Document_Type")
 	WebElement Recent_Record1_Type;
-	
+
 	@FindBy(id = "REC_2_Document_Type")
 	@CacheLookup
 	WebElement Recent_Record2_Type;
@@ -374,7 +374,7 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "REC_1_Document_Date")
 	@CacheLookup
 	WebElement Recent_Record1_Date;
-	
+
 	@FindBy(id = "REC_2_Document_Date")
 	@CacheLookup
 	WebElement Recent_Record2_Date;
@@ -382,7 +382,7 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "REC_1_Amount")
 	@CacheLookup
 	WebElement Recent_Record1_Amount;
-	
+
 	@FindBy(id = "REC_2_Amount")
 	@CacheLookup
 	WebElement Recent_Record2_Amount;
@@ -470,14 +470,12 @@ public class DashBoard extends CommonMethods {
 
 	@FindBy(xpath = "/html/body/wo-root/wo-dashboard/div/mat-drawer-container/mat-drawer-content/div/div/div[2]/csm-customer-balances/csm-generic-widget/div/div/div[2]/div[1]/div[3]/div[1]/a")
 	WebElement PaymentArrangementDueURL;
-	
+
 	@FindBy(id = "BILL_Installment_SPA")
 	WebElement PaymentArrangementDueAmount;
-	
+
 	@FindBy(id = "BILL_Budget")
 	WebElement BILLBudget;
-	
-
 
 	public String getBillBudgetURL() {
 
@@ -485,15 +483,13 @@ public class DashBoard extends CommonMethods {
 		log("get Payments Arrangement Due", driver);
 		return BILLBudget.getAttribute("href");
 	}
-	
-	
+
 	public String getPaymentArrangementDueAmount() {
 
 		waitForObject(driver, PaymentArrangementDueAmount);
 		log("get Payments Arrangement Due", driver);
 		return PaymentArrangementDueAmount.getText();
 	}
-	
 
 	public String getPaymentArrangementDue() {
 
@@ -635,7 +631,7 @@ public class DashBoard extends CommonMethods {
 		verifyString(Amount, getElementText(Recent_Record1_Amount, "Recent Record Amount"));
 
 	}
-	
+
 	public void verifyRecentRecord2(String Type, String Date, String Amount) {
 		log("Verifying Recent Records");
 		verifyString(Type, getElementText(Recent_Record2_Type, "Recent Record Type"));
@@ -643,7 +639,6 @@ public class DashBoard extends CommonMethods {
 		verifyString(Amount, getElementText(Recent_Record2_Amount, "Recent Record Amount"));
 
 	}
-	
 
 	public void clickRecentSearch_ViewAll() {
 		ClickElement(Recent_ViewAll, "Recent View All");
@@ -727,8 +722,8 @@ public class DashBoard extends CommonMethods {
 
 		try {
 			waitForObject(driver, element);
-			log("get Text Text " + ElementName, driver);
 			WaitAngular(driver);
+			log("got Text " + ElementName + " = " + element.getText(), driver);
 			return element.getText();
 
 		} catch (NoSuchElementException e) {
@@ -744,7 +739,7 @@ public class DashBoard extends CommonMethods {
 		try {
 
 			waitForObject(driver, element);
-			log("Set Text " + ElementName, driver);
+			log("Setting Text on " + ElementName + " with Text = " + Text, driver);
 			WaitAngular(driver);
 			element.clear();
 			if (element.isDisplayed() && element.isEnabled()) {

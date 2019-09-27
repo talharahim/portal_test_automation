@@ -37,6 +37,7 @@ public class Dashboard_Transfers extends DashBoard {
 	WebElement SearchRequest;
 
 	@FindBy(id = "XFER_Search_Input")
+	public
 	WebElement DefaultCsutomer;
 
 	@FindBy(id = "XFER_Description")
@@ -149,6 +150,21 @@ public class Dashboard_Transfers extends DashBoard {
 
 	@FindBy(xpath = "//div[@class='requiered-field text ng-star-inserted']")
 	WebElement invalidDate;
+	
+	@FindBy(xpath = "//div[@class='requiered-field text ng-star-inserted']")
+	WebElement invalidCustomer;
+	
+	
+	public void verifySamemoveinCustomer()
+	{
+		String Message = "It is not allowed to have the same Customer and Move In Customer";
+		if(!invalidCustomer.getText().matches(Message))
+		{
+			log(invalidCustomer.getText());
+			Assert.fail("Customer Message not found");
+		}
+		
+	}
 
 	public String getInvalidDate() {
 		waitForObject(driver, invalidDate);
@@ -387,8 +403,9 @@ public class Dashboard_Transfers extends DashBoard {
 
 	public String startService_getRequestedDate() {
 
+		
 		waitForObject(driver, XFERDatePickerRequested);
-		log(XFERDatePickerRequested.getAttribute("value"));
+		log("Entered Request Date = "+XFERDatePickerRequested.getAttribute("value"));
 		return XFERDatePickerRequested.getAttribute("value");
 
 	}

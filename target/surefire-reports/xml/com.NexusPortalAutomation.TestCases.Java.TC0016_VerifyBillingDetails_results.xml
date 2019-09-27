@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="12.685">
+           time="34.251">
   <properties />
-            <testcase name="VerifyBillingDetails" time="12.685" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails">
+            <testcase name="VerifyBillingDetails" time="34.251" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails">
                 <failure type="java.lang.AssertionError"
                   message="Actual Value &apos;$35.26&apos; not Matched the expected value &apos;$0.00&apos; "
               >
