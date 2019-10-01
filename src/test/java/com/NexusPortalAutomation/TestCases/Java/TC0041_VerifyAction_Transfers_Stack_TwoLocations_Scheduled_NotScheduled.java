@@ -57,7 +57,7 @@ public class TC0041_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotSched
 		String moveOutrequestedDate = dashBoard.startService_getRequestedDate();
 		// Entering data for Move Out
 		// Scroll down
-		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, moveOutrequestedDate, "TRANSFER", defaultCustomer, defaultCustomer, "Description for Stop Service");
+		dashBoard.submitStartStopServiceTransferOrder( moveOutrequestedDate, "TRANSFER", defaultCustomer, defaultCustomer, "Description for Stop Service");
 		// Verify Updated details IN SERVICE TAB order number from database
 		dashBoard.clickServiceorderLink();
 		dashBoard.clickServiceorder1();
@@ -87,7 +87,7 @@ public class TC0041_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotSched
 		// Entering data for Move Out
 		// Scroll down
    		String moveInCustomer = "Mrs. Gail M Dewar";
-   		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, newDate, "TRANSFER", defaultCustomer, moveInCustomer,"Description for Stop Service");
+   		dashBoard.submitStartStopServiceTransferOrder(newDate, "TRANSFER", defaultCustomer, moveInCustomer,"Description for Stop Service");
 		dashBoard.clickrefreshPage();
 		dashBoard.clickServiceorderLink();
 		dashBoard.clickServiceorder1();

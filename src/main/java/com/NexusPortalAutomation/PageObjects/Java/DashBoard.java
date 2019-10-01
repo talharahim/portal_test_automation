@@ -514,7 +514,7 @@ public class DashBoard extends CommonMethods {
 
 	}
 
-	public void verifyEnhancedNotes(String CusNotes, String LocNotes) {
+	public void verifyEnhancedNotes(String LocNotes,String CusNotes) {
 
 		verifyString(getElementText(CustomerNotes, "Customer Notes"), CusNotes);
 		verifyString(getElementText(LocationNotes, "Location Notes"), LocNotes);
@@ -724,7 +724,7 @@ public class DashBoard extends CommonMethods {
 			waitForObject(driver, element);
 			WaitAngular(driver);
 			log("got Text " + ElementName + " = " + element.getText(), driver);
-			return element.getText();
+			return element.getText().trim();
 
 		} catch (NoSuchElementException e) {
 			log(e.getMessage(), driver);

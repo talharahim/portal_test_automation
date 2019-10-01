@@ -15,7 +15,7 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 import com.NexusPortalAutomation.Utilities.Java.MySQLDataExec;
 import com.microsoft.sqlserver.jdbc.SQLServerException;
 
-public class TC0025_1_VerifyAction_Transfers_NotScheduled_CurrentMoveinCustomer extends BaseClass {
+public class TC0025_1_VerifyAction_Transfers_Scheduled_CurrentMoveinCustomer extends BaseClass {
 
 	/*
 	 * This test the search by Recent Customer Name
@@ -69,6 +69,7 @@ public class TC0025_1_VerifyAction_Transfers_NotScheduled_CurrentMoveinCustomer 
 		dashBoard.enterRequest("Transfer");
 		// Move Out
 		String moveOutrequestedDate = dashBoard.Movin_getMoveOutRequestedDate();
+		dashBoard.moveinScheduledate(moveOutrequestedDate);
 		dashBoard.verifydefaultCustomer(defaultCustomer);
 		dashBoard.enterdefaultCustomer(requestedbY);
 		dashBoard.enterDescription("AUTOMATION TEST");

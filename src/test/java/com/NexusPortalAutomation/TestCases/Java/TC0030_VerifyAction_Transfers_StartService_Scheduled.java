@@ -75,7 +75,7 @@ public class TC0030_VerifyAction_Transfers_StartService_Scheduled extends BaseCl
 	
 		// Entering data for Move Out
 		//Scroll down
-		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, moveOutrequestedDate, "TRANSFER", defaultCustomer, defaultCustomer,"Description for Start Service");
+		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, "TRANSFER", defaultCustomer, defaultCustomer,"Description for Start Service");
 		// Verify Updated details IN SERVICE TAB order number from database
 		dashBoard.clickServiceorderLink();
 		String ServiceOrder = dashBoard.getserviceOrderNum();

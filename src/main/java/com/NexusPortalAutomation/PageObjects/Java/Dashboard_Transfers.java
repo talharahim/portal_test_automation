@@ -3,6 +3,7 @@ package com.NexusPortalAutomation.PageObjects.Java;
 import java.sql.SQLException;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -37,8 +38,7 @@ public class Dashboard_Transfers extends DashBoard {
 	WebElement SearchRequest;
 
 	@FindBy(id = "XFER_Search_Input")
-	public
-	WebElement DefaultCsutomer;
+	public WebElement DefaultCsutomer;
 
 	@FindBy(id = "XFER_Description")
 	WebElement Description;
@@ -67,8 +67,7 @@ public class Dashboard_Transfers extends DashBoard {
 	WebElement XFERMoveToDatePickerRequested;
 
 	@FindBy(id = "XFER_MoveFrom_Date_Picker_Scheduled")
-	public
-	WebElement XFERMoveFromDatePickerScheduled;
+	public WebElement XFERMoveFromDatePickerScheduled;
 
 	@FindBy(id = "XFER_MoveFrom_Date_Picker_Requested")
 	WebElement XFERMoveFromDatePickerRequested;
@@ -150,20 +149,17 @@ public class Dashboard_Transfers extends DashBoard {
 
 	@FindBy(xpath = "//div[@class='requiered-field text ng-star-inserted']")
 	WebElement invalidDate;
-	
+
 	@FindBy(xpath = "//div[@class='requiered-field text ng-star-inserted']")
 	WebElement invalidCustomer;
-	
-	
-	public void verifySamemoveinCustomer()
-	{
+
+	public void verifySamemoveinCustomer() {
 		String Message = "It is not allowed to have the same Customer and Move In Customer";
-		if(!invalidCustomer.getText().matches(Message))
-		{
+		if (!invalidCustomer.getText().matches(Message)) {
 			log(invalidCustomer.getText());
 			Assert.fail("Customer Message not found");
 		}
-		
+
 	}
 
 	public String getInvalidDate() {
@@ -279,7 +275,9 @@ public class Dashboard_Transfers extends DashBoard {
 	}
 
 	public void clickDone() {
+
 		ClickElement(XFERButtonDone, "Done Button for Transfer");
+
 	}
 
 	public void selectTransferTypeTransfer() {
@@ -403,9 +401,8 @@ public class Dashboard_Transfers extends DashBoard {
 
 	public String startService_getRequestedDate() {
 
-		
 		waitForObject(driver, XFERDatePickerRequested);
-		log("Entered Request Date = "+XFERDatePickerRequested.getAttribute("value"));
+		log("Entered Request Date = " + XFERDatePickerRequested.getAttribute("value"));
 		return XFERDatePickerRequested.getAttribute("value");
 
 	}
@@ -438,11 +435,15 @@ public class Dashboard_Transfers extends DashBoard {
 
 	}
 
-	public void submitStartStopServiceTransferOrder(String startDate, String scheduleDate, String serviceName,
+	public void submitStartStopServiceTransferOrder(String scheduleDate, String serviceName,
 			String defaultCustomer, String requestCustomer, String description) throws InterruptedException {
 		log("Submit Transfer Request");
 		enterRequest("TRANSFER");
-		enterScheduleDate_StartService(scheduleDate);
+		if (scheduleDate != "") {
+			enterScheduleDate_StartService(scheduleDate + "01:00");
+		} else {
+			enterScheduleDate_StartService(scheduleDate);
+		}
 		JavascriptExecutor jsx = (JavascriptExecutor) driver;
 		jsx = (JavascriptExecutor) driver;
 		jsx.executeScript("window.scrollBy(0,450)", "");

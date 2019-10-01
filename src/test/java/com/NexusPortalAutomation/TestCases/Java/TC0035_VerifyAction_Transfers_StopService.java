@@ -63,7 +63,7 @@ public class TC0035_VerifyAction_Transfers_StopService extends BaseClass {
 		String moveOutrequestedDate = dashBoard.startService_getRequestedDate();
 		// Entering data for Move Out
 		// Scroll down
-		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, "", "TRANSFER", defaultCustomer, defaultCustomer, "Description for Stop Service");
+		dashBoard.submitStartStopServiceTransferOrder("", "TRANSFER", defaultCustomer, defaultCustomer, "Description for Stop Service");
 		// Verify Updated details IN SERVICE TAB order number from database
 		dashBoard.clickServiceorderLink();
 		dashBoard.clickServiceorder1();
@@ -92,7 +92,7 @@ public class TC0035_VerifyAction_Transfers_StopService extends BaseClass {
 		// Entering data for Move Out
 		// Scroll down
    		String moveInCustomer = "TestCust";
-   		dashBoard.submitStartStopServiceTransferOrder(newDate, "", "TRANSFER", defaultCustomer, moveInCustomer,"Description for Stop Service");
+   		dashBoard.submitStartStopServiceTransferOrder("", "TRANSFER", defaultCustomer, moveInCustomer,"Description for Stop Service");
 		dashBoard.clickrefreshPage();
 		dashBoard.clickServiceorderLink();
 		//Getting order number for warning message verification
@@ -113,7 +113,7 @@ public class TC0035_VerifyAction_Transfers_StopService extends BaseClass {
 		String newDate2 = newFormat.format(c.getTime());
 		// Displaying the new Date after addition of Days
 		moveInCustomer =  "MOVEIN";
-		dashBoard.submitStartStopServiceTransferOrder(newDate2, "", "TRANSFER", defaultCustomer, moveInCustomer,"Description for Stop Service");
+		dashBoard.submitStartStopServiceTransferOrder( "", "TRANSFER", defaultCustomer, moveInCustomer,"Description for Stop Service");
 		dashBoard.clickrefreshPage();
 
 	

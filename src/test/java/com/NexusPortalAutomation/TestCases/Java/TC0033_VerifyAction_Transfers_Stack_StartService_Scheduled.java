@@ -78,7 +78,7 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		// Entering data for Move Out
 		// Scroll down
 		String moveInCustomer = "MoveinCus";
-		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, moveOutrequestedDate, "TRANSFER",
+		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, "TRANSFER",
 				defaultCustomer, moveInCustomer,"Description for Start Service");
 		// Verify Updated details IN SERVICE TAB order number from database
 		dashBoard.clickServiceorderLink();
@@ -105,7 +105,7 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		c.add(Calendar.DAY_OF_MONTH, 2);
 		// Date after adding the days to the given date
 		String newDate = newFormat.format(c.getTime());
-		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, newDate, "TRANSFER", defaultCustomer,
+		dashBoard.submitStartStopServiceTransferOrder(newDate, "TRANSFER", defaultCustomer,
 				moveInCustomer,"Description for Start Service");
 
 		dashBoard.clickrefreshPage();
@@ -136,7 +136,7 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		// Entering data for Move Out
 		// Scroll down
 		moveInCustomer = "Alert";
-		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, newDate2, "TRANSFER", defaultCustomer,
+		dashBoard.submitStartStopServiceTransferOrder(newDate2, "TRANSFER", defaultCustomer,
 				moveInCustomer,"Description for Start Service");
 		dashBoard.clickrefreshPage();
 

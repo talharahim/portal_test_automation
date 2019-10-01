@@ -14,11 +14,11 @@ public class MySQLDataExec extends CommonMethods {
 	String Result;
 
 	
-   //@Test
+   @Test
    void TestDEL() throws ClassNotFoundException, SQLServerException, SQLException
    {
-	   deleteServiceorder("LOC@0001");
-	   deleteServiceorderHistory("LOC@0001");
+	   deleteServiceorder("LOC@0002");
+	   deleteServiceorderHistory("LOC@0002");
    }
 	// This Method will delete Service Orders by Location
 	public void deleteServiceorder(String Location) throws ClassNotFoundException, SQLException, SQLServerException {

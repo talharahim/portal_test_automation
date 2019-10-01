@@ -63,7 +63,8 @@ public class BaseClass extends ReadProjectProperties {
 		if (value == null) {
 			Assert.fail("Null value found, please check excel sheet");
 		}
-
+		Reporter.log("Value for Key '" + var + "' found from sheet =" + value.trim());
+		System.out.println("Value for Key '" + var + "' found from sheet =" + value.trim());
 		return value.trim();
 	}
 

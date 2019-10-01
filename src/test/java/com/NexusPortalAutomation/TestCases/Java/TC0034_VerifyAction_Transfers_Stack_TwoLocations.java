@@ -58,7 +58,7 @@ public class TC0034_VerifyAction_Transfers_Stack_TwoLocations extends BaseClass 
 		String moveOutrequestedDate = dashBoard.startService_getRequestedDate();
 		// Entering data for Move Out
 		// Scroll down
-		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, moveOutrequestedDate, "TRANSFER", defaultCustomer, defaultCustomer,"Description for Stop Service");
+		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, "TRANSFER", defaultCustomer, defaultCustomer,"Description for Stop Service");
 		// Verify Updated details IN SERVICE TAB order number from database
 		dashBoard.clickServiceorderLink();
 		dashBoard.clickServiceorder1();
@@ -88,7 +88,7 @@ public class TC0034_VerifyAction_Transfers_Stack_TwoLocations extends BaseClass 
 		// Entering data for Move Out
 		// Scroll down
    		String moveInCustomer = "Mr. Automation Mate";
-   		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, newDate, "TRANSFER", defaultCustomer, moveInCustomer,"Description for Stop Service");
+   		dashBoard.submitStartStopServiceTransferOrder(newDate, "TRANSFER", defaultCustomer, moveInCustomer,"Description for Stop Service");
 		dashBoard.clickrefreshPage();
 		dashBoard.clickServiceorderLink();
 		dashBoard.clickServiceorder1();

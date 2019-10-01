@@ -33,7 +33,7 @@ public class TC0016_VerifyBillingDetails extends BaseClass {
 	String account = getCellvalue("TC0016", "account");// "$212.50";
 	String installment = getCellvalue("TC0016", "installment");// "$50.00";
 	String overDue = getCellvalue("TC0016", "overDue");// "$57.24";
-	String amountDue = getCellvalue("TC0016", "amountDue");// "$35.26";
+	String amountDue = getCellvalue("TC0016", "amountDueBill");// "$0.00";
 	String autoPay = getCellvalue("TC0016", "autoPay");// "OFF";
 	String eBill = getCellvalue("TC0016", "eBill");// "ON";
 	String deposit = getCellvalue("TC0016", "deposit");// "$0.00";

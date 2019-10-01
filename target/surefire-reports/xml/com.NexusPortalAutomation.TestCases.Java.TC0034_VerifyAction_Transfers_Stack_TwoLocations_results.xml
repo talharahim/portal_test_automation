@@ -4,17 +4,17 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="94.878">
+           time="70.608">
   <properties />
-            <testcase name="VerifyAction_Transfers_Stack_TwoLocations" time="94.878" classname="com.NexusPortalAutomation.TestCases.Java.TC0034_VerifyAction_Transfers_Stack_TwoLocations">
+            <testcase name="VerifyAction_Transfers_Stack_TwoLocations" time="70.608" classname="com.NexusPortalAutomation.TestCases.Java.TC0034_VerifyAction_Transfers_Stack_TwoLocations">
                 <failure type="java.lang.AssertionError"
-                  message="Actual Value &apos;Sep 28, 2019&apos; not Matched the expected value &apos;Sep 27, 2019&apos; "
+                  message="Actual Value &apos;Oct 2, 2019&apos; not Matched the expected value &apos;Oct 1, 2019&apos; "
               >
-<![CDATA[java.lang.AssertionError: Actual Value 'Sep 28, 2019' not Matched the expected value 'Sep 27, 2019' 
+<![CDATA[java.lang.AssertionError: Actual Value 'Oct 2, 2019' not Matched the expected value 'Oct 1, 2019' 
   org.testng.Assert.fail(Assert.java:96)
   com.NexusPortalAutomation.Utilities.Java.CommonMethods.verifyString(CommonMethods.java:68)
-  com.NexusPortalAutomation.PageObjects.Java.Dashboard_Transfers.verifyServiceOrderdetails(Dashboard_Transfers.java:471)
-  com.NexusPortalAutomation.TestCases.Java.TC0034_VerifyAction_Transfers_Stack_TwoLocations.VerifyAction_Transfers_Stack_TwoLocations(TC0034_VerifyAction_Transfers_Stack_TwoLocations.java:133)
+  com.NexusPortalAutomation.PageObjects.Java.Dashboard_Transfers.verifyServiceOrderdetails(Dashboard_Transfers.java:489)
+  com.NexusPortalAutomation.TestCases.Java.TC0034_VerifyAction_Transfers_Stack_TwoLocations.VerifyAction_Transfers_Stack_TwoLocations(TC0034_VerifyAction_Transfers_Stack_TwoLocations.java:137)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
