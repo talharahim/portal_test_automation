@@ -4,16 +4,16 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="62.022">
+           time="68.270">
   <properties />
-            <testcase name="VerifyTransferActionServiceOrder" time="62.022" classname="com.NexusPortalAutomation.TestCases.Java.TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled">
+            <testcase name="VerifyTransferActionServiceOrder" time="68.270" classname="com.NexusPortalAutomation.TestCases.Java.TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled">
                 <failure type="java.lang.AssertionError"
-                  message="Actual Value &apos;Mr. Vacant Vacant&apos; not Matched the expected value &apos;Mr. Automation Mate&apos; "
+                  message="Actual Value &apos;Oct 3, 2019&apos; not Matched the expected value &apos;Oct 2, 2019&apos; "
               >
-<![CDATA[java.lang.AssertionError: Actual Value 'Mr. Vacant Vacant' not Matched the expected value 'Mr. Automation Mate' 
+<![CDATA[java.lang.AssertionError: Actual Value 'Oct 3, 2019' not Matched the expected value 'Oct 2, 2019' 
   org.testng.Assert.fail(Assert.java:96)
   com.NexusPortalAutomation.Utilities.Java.CommonMethods.verifyString(CommonMethods.java:68)
-  com.NexusPortalAutomation.PageObjects.Java.Dashboard_Transfers.verifyServiceOrderdetails(Dashboard_Transfers.java:486)
+  com.NexusPortalAutomation.PageObjects.Java.Dashboard_Transfers.verifyServiceOrderdetails(Dashboard_Transfers.java:489)
   com.NexusPortalAutomation.TestCases.Java.TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled.VerifyTransferActionServiceOrder(TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled.java:122)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)

@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="27.104">
+           time="16.471">
   <properties />
   
   
-            <testcase name="VerifyTransactionsSaperatebill_saperate" time="27.104" classname="com.NexusPortalAutomation.TestCases.Java.TC0042_Transactions_OrderbyDate" />
+            <testcase name="VerifyTransactionsSaperatebill_saperate" time="16.471" classname="com.NexusPortalAutomation.TestCases.Java.TC0042_Transactions_OrderbyDate" />
       
 </testsuite>

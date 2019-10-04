@@ -4,13 +4,13 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="43.232">
+           time="35.800">
   <properties />
-            <testcase name="VerifyActionServiceOrder" time="43.232" classname="com.NexusPortalAutomation.TestCases.Java.TC0029_VerifyAction_Transfers_Scheduled">
+            <testcase name="VerifyActionServiceOrder" time="35.800" classname="com.NexusPortalAutomation.TestCases.Java.TC0029_VerifyAction_Transfers_Scheduled">
                 <failure type="java.lang.AssertionError"
-                  message="Actual Value &apos;Oct 1, 2019&apos; not Matched the expected value &apos;Sep 30, 2019&apos; "
+                  message="Actual Value &apos;Oct 2, 2019&apos; not Matched the expected value &apos;Oct 1, 2019&apos; "
               >
-<![CDATA[java.lang.AssertionError: Actual Value 'Oct 1, 2019' not Matched the expected value 'Sep 30, 2019' 
+<![CDATA[java.lang.AssertionError: Actual Value 'Oct 2, 2019' not Matched the expected value 'Oct 1, 2019' 
   org.testng.Assert.fail(Assert.java:96)
   com.NexusPortalAutomation.Utilities.Java.CommonMethods.verifyString(CommonMethods.java:68)
   com.NexusPortalAutomation.TestCases.Java.TC0029_VerifyAction_Transfers_Scheduled.VerifyActionServiceOrder(TC0029_VerifyAction_Transfers_Scheduled.java:132)

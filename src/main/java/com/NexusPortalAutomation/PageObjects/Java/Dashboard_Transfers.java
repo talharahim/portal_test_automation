@@ -439,11 +439,11 @@ public class Dashboard_Transfers extends DashBoard {
 			String defaultCustomer, String requestCustomer, String description) throws InterruptedException {
 		log("Submit Transfer Request");
 		enterRequest("TRANSFER");
-		if (scheduleDate != "") {
-			enterScheduleDate_StartService(scheduleDate + "01:00");
-		} else {
+		//if (scheduleDate != "") {
 			enterScheduleDate_StartService(scheduleDate);
-		}
+		//} else {
+		//	enterScheduleDate_StartService(scheduleDate);
+		//}
 		JavascriptExecutor jsx = (JavascriptExecutor) driver;
 		jsx = (JavascriptExecutor) driver;
 		jsx.executeScript("window.scrollBy(0,450)", "");

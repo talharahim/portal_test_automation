@@ -477,6 +477,30 @@ public class DashBoard extends CommonMethods {
 	@FindBy(id = "BILL_Budget")
 	WebElement BILLBudget;
 
+	@FindBy(id = "SERV_Service_1_Service_Type_1")
+	WebElement service_Service1;
+
+	@FindBy(id = "SERV_Service_1_Service_Type_2")
+	WebElement service_Service2;
+
+	public void clickService1()
+
+	{
+		WaitAngular(driver);
+		waitForObject(driver, service_Service1);
+		service_Service1.click();
+
+	}
+
+	public void clickService2()
+
+	{
+		WaitAngular(driver);
+		waitForObject(driver, service_Service2);
+		service_Service2.click();
+
+	}
+
 	public String getBillBudgetURL() {
 
 		waitForObject(driver, BILLBudget);
@@ -514,7 +538,7 @@ public class DashBoard extends CommonMethods {
 
 	}
 
-	public void verifyEnhancedNotes(String LocNotes,String CusNotes) {
+	public void verifyEnhancedNotes(String LocNotes, String CusNotes) {
 
 		verifyString(getElementText(CustomerNotes, "Customer Notes"), CusNotes);
 		verifyString(getElementText(LocationNotes, "Location Notes"), LocNotes);

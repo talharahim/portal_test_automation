@@ -4,19 +4,17 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="70.671">
+           time="55.079">
   <properties />
-            <testcase name="VerifyAction_Transfers_Stack_StartService_Scheduled" time="70.671" classname="com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled">
+            <testcase name="VerifyAction_Transfers_Stack_StartService_Scheduled" time="55.079" classname="com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled">
                 <failure type="java.lang.AssertionError"
-                  message="Object Not Found Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: XFER_Button_Done&apos; (tried for 20 second(s) with 500 milliseconds interval)"
+                  message="Actual Value &apos;Oct 3, 2019&apos; not Matched the expected value &apos;Oct 2, 2019&apos; "
               >
-<![CDATA[java.lang.AssertionError: Object Not Found Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: XFER_Button_Done' (tried for 20 second(s) with 500 milliseconds interval)
+<![CDATA[java.lang.AssertionError: Actual Value 'Oct 3, 2019' not Matched the expected value 'Oct 2, 2019' 
   org.testng.Assert.fail(Assert.java:96)
-  com.NexusPortalAutomation.Utilities.Java.CommonMethods.waitForObject(CommonMethods.java:225)
-  com.NexusPortalAutomation.PageObjects.Java.DashBoard.ClickElement(DashBoard.java:706)
-  com.NexusPortalAutomation.PageObjects.Java.Dashboard_Transfers.clickDone(Dashboard_Transfers.java:279)
-  com.NexusPortalAutomation.PageObjects.Java.Dashboard_Transfers.submitStartStopServiceTransferOrder(Dashboard_Transfers.java:458)
-  com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled.VerifyAction_Transfers_Stack_StartService_Scheduled(TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled.java:81)
+  com.NexusPortalAutomation.Utilities.Java.CommonMethods.verifyString(CommonMethods.java:68)
+  com.NexusPortalAutomation.PageObjects.Java.Dashboard_Transfers.verifyServiceOrderdetails(Dashboard_Transfers.java:489)
+  com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled.VerifyAction_Transfers_Stack_StartService_Scheduled(TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled.java:147)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

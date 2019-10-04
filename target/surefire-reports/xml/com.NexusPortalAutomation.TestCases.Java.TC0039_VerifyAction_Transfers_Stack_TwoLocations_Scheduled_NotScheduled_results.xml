@@ -4,13 +4,13 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="97.223">
+           time="53.481">
   <properties />
-            <testcase name="VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled" time="97.223" classname="com.NexusPortalAutomation.TestCases.Java.TC0039_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled">
+            <testcase name="VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled" time="53.481" classname="com.NexusPortalAutomation.TestCases.Java.TC0039_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled">
                 <failure type="java.lang.AssertionError"
-                  message="Actual Value &apos;Oct 2, 2019&apos; not Matched the expected value &apos;Oct 1, 2019&apos; "
+                  message="Actual Value &apos;Oct 3, 2019&apos; not Matched the expected value &apos;Oct 2, 2019&apos; "
               >
-<![CDATA[java.lang.AssertionError: Actual Value 'Oct 2, 2019' not Matched the expected value 'Oct 1, 2019' 
+<![CDATA[java.lang.AssertionError: Actual Value 'Oct 3, 2019' not Matched the expected value 'Oct 2, 2019' 
   org.testng.Assert.fail(Assert.java:96)
   com.NexusPortalAutomation.Utilities.Java.CommonMethods.verifyString(CommonMethods.java:68)
   com.NexusPortalAutomation.PageObjects.Java.Dashboard_Transfers.verifyServiceOrderdetails(Dashboard_Transfers.java:469)
