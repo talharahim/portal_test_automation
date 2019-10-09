@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="12.930">
+           time="16.544">
   <properties />
   
   
-            <testcase name="VerifyBillingDetailsAutoPay" time="12.930" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_AutoPay" />
+            <testcase name="VerifyBillingDetailsAutoPay" time="16.544" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_AutoPay" />
       
 </testsuite>

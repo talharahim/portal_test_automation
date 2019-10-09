@@ -3,6 +3,7 @@ package com.NexusPortalAutomation.Utilities.Java;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.sikuli.script.FindFailed;
+import org.sikuli.script.Match;
 import org.sikuli.script.Pattern;
 import org.sikuli.script.Screen;
 import org.testng.Assert;
@@ -18,21 +19,20 @@ public class SikuliUtility extends CommonMethods {
 		// methods provided by Sikuli.
 		Screen screen = new Screen();
 		// Creating Object of Pattern class and specify the path of specified images
-		// I have captured images of Facebook Email id field, Password field and Login
+		// I have captured images of portal field, Password field and Login
 		// button and placed in my local directory
-		// Facebook user id image
 		Pattern username = new Pattern("./\\TestData\\sikuliimages\\username.png");
-		// Facebook password image
+		// portal password image
 		Pattern password = new Pattern("./\\TestData\\sikuliimages\\password.png");
-		// Facebook login button image
+		// portal login button image
 		Pattern login = new Pattern("./\\TestData\\sikuliimages\\signinbutton.png");
 		// Initialization of driver object to launch firefox browser
 		System.setProperty("webdriver.gecko.driver", "./\\drivers\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();
 		// To maximize the browser
 		driver.manage().window().maximize();
-		// Open Facebook
-		driver.get("http://localhost:3000");
+		// Open portal
+		driver.get("http:localhost:3000");
 		screen.wait(username, 3);
 		// Calling 'type' method to enter username in the email field using 'screen'
 		// object
@@ -44,16 +44,16 @@ public class SikuliUtility extends CommonMethods {
 	}
 
 	public void compareImage(String path) {
+		
 		Screen screen = new Screen();
 		Pattern image = new Pattern(path);
-		try {
-			if (screen.wait(image, 10) != null) {
-				log("image verified at " + path);
-			}
-		} catch (FindFailed e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			Assert.fail("image at " + path + " not verified");
+		Match m = screen.exists(image.exact());
+		if (m != null) {
+			
+			log("image verified at " + path);
+		}
+		else {
+			Assert.fail("Image not matched "+ path);
 		}
 
 	}

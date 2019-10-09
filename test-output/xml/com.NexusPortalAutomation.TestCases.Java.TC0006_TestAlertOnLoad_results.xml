@@ -1,13 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="NexusTest"
            tests="1"
-           failures="0"
+           failures="1"
            errors="0"
            skipped="0"
-           time="14.534">
+           time="250.966">
   <properties />
+            <testcase name="TestSearchAlertOnLoad" time="250.966" classname="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad">
+                <failure type="org.openqa.selenium.TimeoutException"
+                  message="Expected condition failed: waiting for element to be clickable: By.xpath: //input[@id=&apos;SRCH_Input&apos;] (tried for 10 second(s) with 500 milliseconds interval)"
+              >
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //input[@id='SRCH_Input'] (tried for 10 second(s) with 500 milliseconds interval)
+  org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+  com.NexusPortalAutomation.Utilities.Java.CommonMethods.waitObjectByXpath(CommonMethods.java:174)
+  com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad.TestSearchAlertOnLoad(TC0006_TestAlertOnLoad.java:32)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+  org.testng.SuiteRunner.run(SuiteRunner.java:364)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+  org.testng.TestNG.runSuites(TestNG.java:1049)
+  org.testng.TestNG.run(TestNG.java:1017)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //input[@id='SRCH_Input']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'RND-BASE-A', ip: '10.0.2.15', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+  org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+  java.util.Optional.orElseThrow(Unknown Source)
+  org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+  org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+  org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+  org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
+  org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+  com.NexusPortalAutomation.Utilities.Java.CommonMethods.waitObjectByXpath(CommonMethods.java:174)
+  com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad.TestSearchAlertOnLoad(TC0006_TestAlertOnLoad.java:32)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+  org.testng.SuiteRunner.run(SuiteRunner.java:364)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+  org.testng.TestNG.runSuites(TestNG.java:1049)
+  org.testng.TestNG.run(TestNG.java:1017)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+      </failure>
+
+          </testcase>
   
   
-            <testcase name="TestSearchAlertOnLoad" time="14.534" classname="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad" />
-      
+  
 </testsuite>

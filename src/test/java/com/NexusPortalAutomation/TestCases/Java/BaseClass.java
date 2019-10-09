@@ -159,7 +159,8 @@ public class BaseClass extends ReadProjectProperties {
 	void TearDown() {
 
 		log("Closing Browser");
-		driver.close();
+		//Not using close as it close current window only
+		driver.quit(); //dispose sessions
 		log("Test Completed...");
 
 	}

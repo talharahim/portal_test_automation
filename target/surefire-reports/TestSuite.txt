@@ -1,52 +1,36 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 55, Failures: 13, Errors: 0, Skipped: 0, Time elapsed: 1,867.423 s <<< FAILURE! - in TestSuite
-VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled(com.NexusPortalAutomation.TestCases.Java.TC0041_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled)  Time elapsed: 57.423 s  <<< FAILURE!
-java.lang.AssertionError: Actual Value 'Oct 4, 2019' not Matched the expected value 'Oct 3, 2019' 
-	at com.NexusPortalAutomation.TestCases.Java.TC0041_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled.VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled(TC0041_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled.java:139)
+Tests run: 56, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 1,570.844 s <<< FAILURE! - in TestSuite
+VerifyBillingDetails_SPA(com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_SPA)  Time elapsed: 10.108 s  <<< FAILURE!
+java.lang.AssertionError: Actual Value '$0.00' not Matched the expected value '$80.00' 
+	at com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_SPA.VerifyBillingDetails_SPA(TC0016_1_VerifyBillingDetails_SPA.java:41)
 
-VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled(com.NexusPortalAutomation.TestCases.Java.TC0040_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled)  Time elapsed: 48.896 s  <<< FAILURE!
-java.lang.AssertionError: Actual Value 'Oct 3, 2019' not Matched the expected value 'Oct 2, 2019' 
-	at com.NexusPortalAutomation.TestCases.Java.TC0040_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled.VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled(TC0040_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled.java:133)
+VerifyBillingDetails_budgetSPA(com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget_SPA)  Time elapsed: 10.381 s  <<< FAILURE!
+java.lang.AssertionError: Actual Value '$35.26' not Matched the expected value '$75.26' 
+	at com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget_SPA.VerifyBillingDetails_budgetSPA(TC0016_1_VerifyBillingDetails_Budget_SPA.java:57)
 
-VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled(com.NexusPortalAutomation.TestCases.Java.TC0039_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled)  Time elapsed: 53.858 s  <<< FAILURE!
-java.lang.AssertionError: Actual Value 'Oct 3, 2019' not Matched the expected value 'Oct 2, 2019' 
-	at com.NexusPortalAutomation.TestCases.Java.TC0039_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled.VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled(TC0039_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled.java:135)
+VerifyBillingDetails(com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails_UsageGraph)  Time elapsed: 17.087 s  <<< FAILURE!
+java.lang.AssertionError: Image not matched ./\TestData\sikuliimages\billgraphwater1.png
+	at com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails_UsageGraph.VerifyBillingDetails(TC0016_VerifyBillingDetails_UsageGraph.java:42)
 
-VerifyBillingDetails_Budget(com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget)  Time elapsed: 18.656 s  <<< FAILURE!
-java.lang.AssertionError: Actual Value '$0.00' not Matched the expected value '$100.00' 
-	at com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget.VerifyBillingDetails_Budget(TC0016_1_VerifyBillingDetails_Budget.java:65)
+VerifyBillingDetails(com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails)  Time elapsed: 10.305 s  <<< FAILURE!
+java.lang.AssertionError: Actual Value '$35.26' not Matched the expected value '$75.26' 
+	at com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails.VerifyBillingDetails(TC0016_VerifyBillingDetails.java:59)
 
-VerifyTransferActionServiceOrder(com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService)  Time elapsed: 64.406 s  <<< FAILURE!
+VerifyTransferActionServiceOrder(com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService)  Time elapsed: 46.542 s  <<< FAILURE!
 java.lang.AssertionError: Object Not Found Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: XFER_Button_Done' (tried for 20 second(s) with 500 milliseconds interval)
-	at com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService.VerifyTransferActionServiceOrder(TC0036_VerifyAction_Transfers_StartService.java:107)
+	at com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService.VerifyTransferActionServiceOrder(TC0036_VerifyAction_Transfers_StartService.java:80)
 
-VerifyAction_Transfers_Stack_TwoLocations(com.NexusPortalAutomation.TestCases.Java.TC0034_VerifyAction_Transfers_Stack_TwoLocations)  Time elapsed: 80.473 s  <<< FAILURE!
-java.lang.AssertionError: Actual Value 'Oct 3, 2019' not Matched the expected value 'Oct 2, 2019' 
-	at com.NexusPortalAutomation.TestCases.Java.TC0034_VerifyAction_Transfers_Stack_TwoLocations.VerifyAction_Transfers_Stack_TwoLocations(TC0034_VerifyAction_Transfers_Stack_TwoLocations.java:137)
+VerifyAction_Transfers_Stack_StartService_Scheduled(com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled)  Time elapsed: 49.392 s  <<< FAILURE!
+java.lang.AssertionError: Object Not Found Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: XFER_Button_Done' (tried for 20 second(s) with 500 milliseconds interval)
+	at com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled.VerifyAction_Transfers_Stack_StartService_Scheduled(TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled.java:81)
 
-VerifyTransferActionServiceOrder(com.NexusPortalAutomation.TestCases.Java.TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled)  Time elapsed: 68.652 s  <<< FAILURE!
-java.lang.AssertionError: Actual Value 'Oct 3, 2019' not Matched the expected value 'Oct 2, 2019' 
-	at com.NexusPortalAutomation.TestCases.Java.TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled.VerifyTransferActionServiceOrder(TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled.java:122)
+VerifyTransferActionServiceOrder(com.NexusPortalAutomation.TestCases.Java.TC0030_VerifyAction_Transfers_StartService_Scheduled)  Time elapsed: 53.447 s  <<< FAILURE!
+java.lang.AssertionError: Object Not Found Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: XFER_Button_Done' (tried for 20 second(s) with 500 milliseconds interval)
+	at com.NexusPortalAutomation.TestCases.Java.TC0030_VerifyAction_Transfers_StartService_Scheduled.VerifyTransferActionServiceOrder(TC0030_VerifyAction_Transfers_StartService_Scheduled.java:78)
 
-VerifyAction_Transfers_Stack_StartService_Scheduled(com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled)  Time elapsed: 55.422 s  <<< FAILURE!
-java.lang.AssertionError: Actual Value 'Oct 3, 2019' not Matched the expected value 'Oct 2, 2019' 
-	at com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled.VerifyAction_Transfers_Stack_StartService_Scheduled(TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled.java:147)
-
-VerifyTransferActionServiceOrder(com.NexusPortalAutomation.TestCases.Java.TC0030_VerifyAction_Transfers_StartService_Scheduled)  Time elapsed: 38.218 s  <<< FAILURE!
-java.lang.AssertionError: Actual Value 'Oct 2, 2019' not Matched the expected value 'Oct 1, 2019' 
-	at com.NexusPortalAutomation.TestCases.Java.TC0030_VerifyAction_Transfers_StartService_Scheduled.VerifyTransferActionServiceOrder(TC0030_VerifyAction_Transfers_StartService_Scheduled.java:88)
-
-VerifyTransferActionServiceOrder(com.NexusPortalAutomation.TestCases.Java.TC0031_VerifyAction_Transfers_StopService_Scheduled)  Time elapsed: 20.547 s  <<< FAILURE!
-java.lang.AssertionError: Actual Value 'Oct 2, 2019' not Matched the expected value 'Oct 1, 2019' 
-	at com.NexusPortalAutomation.TestCases.Java.TC0031_VerifyAction_Transfers_StopService_Scheduled.VerifyTransferActionServiceOrder(TC0031_VerifyAction_Transfers_StopService_Scheduled.java:88)
-
-VerifyActionServiceOrder(com.NexusPortalAutomation.TestCases.Java.TC0029_VerifyAction_Transfers_Scheduled)  Time elapsed: 36.157 s  <<< FAILURE!
-java.lang.AssertionError: Actual Value 'Oct 2, 2019' not Matched the expected value 'Oct 1, 2019' 
-	at com.NexusPortalAutomation.TestCases.Java.TC0029_VerifyAction_Transfers_Scheduled.VerifyActionServiceOrder(TC0029_VerifyAction_Transfers_Scheduled.java:132)
-
-VerifyTransferActionServiceOrder(com.NexusPortalAutomation.TestCases.Java.TC0030_1_VerifyAction_Transfers_StartService_Scheduled_SameCustomerMovein)  Time elapsed: 50.391 s  <<< FAILURE!
+VerifyActionServiceOrder_Transfers_NotSchedule(com.NexusPortalAutomation.TestCases.Java.TC0025_1_VerifyAction_Transfers_Scheduled_CurrentMoveinCustomer)  Time elapsed: 29.663 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='requiered-field text ng-star-inserted']"}
   (Session info: chrome=77.0.3865.90)
@@ -54,21 +38,12 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'RND-BASE-A', ip: '10.0.2.15', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54126}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: da57436780624f69350d6bdc3b6b16e7
-*** Element info: {Using=xpath, value=//div[@class='requiered-field text ng-star-inserted']}
-	at com.NexusPortalAutomation.TestCases.Java.TC0030_1_VerifyAction_Transfers_StartService_Scheduled_SameCustomerMovein.VerifyTransferActionServiceOrder(TC0030_1_VerifyAction_Transfers_StartService_Scheduled_SameCustomerMovein.java:89)
-
-VerifyActionServiceOrder_Transfers_NotSchedule(com.NexusPortalAutomation.TestCases.Java.TC0025_1_VerifyAction_Transfers_Scheduled_CurrentMoveinCustomer)  Time elapsed: 48.234 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='requiered-field text ng-star-inserted']"}
-  (Session info: chrome=77.0.3865.90)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'RND-BASE-A', ip: '10.0.2.15', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54288}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: fe6bcaf39b90d7740f1b234a445d6702
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64472}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 744bdf3360276d0fa0d7e4e66f352faa
 *** Element info: {Using=xpath, value=//div[@class='requiered-field text ng-star-inserted']}
 	at com.NexusPortalAutomation.TestCases.Java.TC0025_1_VerifyAction_Transfers_Scheduled_CurrentMoveinCustomer.VerifyActionServiceOrder_Transfers_NotSchedule(TC0025_1_VerifyAction_Transfers_Scheduled_CurrentMoveinCustomer.java:91)
+
+VerifyTransferActionServiceOrder(com.NexusPortalAutomation.TestCases.Java.TC0026_VerifyAction_Transfers_StartService_NotScheduled)  Time elapsed: 46.701 s  <<< FAILURE!
+java.lang.AssertionError: Object Not Found Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: XFER_Button_Done' (tried for 20 second(s) with 500 milliseconds interval)
+	at com.NexusPortalAutomation.TestCases.Java.TC0026_VerifyAction_Transfers_StartService_NotScheduled.VerifyTransferActionServiceOrder(TC0026_VerifyAction_Transfers_StartService_NotScheduled.java:78)
 

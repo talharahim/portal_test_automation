@@ -4,18 +4,18 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="52.074">
+           time="56.519">
   <properties />
-            <testcase name="VerifyAction_Transfers_Stack_StartService_Scheduled" time="52.074" classname="com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled">
+            <testcase name="VerifyAction_Transfers_Stack_StartService_Scheduled" time="56.519" classname="com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled">
                 <failure type="java.lang.AssertionError"
                   message="Object Not Found Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: XFER_Button_Done&apos; (tried for 20 second(s) with 500 milliseconds interval)"
               >
 <![CDATA[java.lang.AssertionError: Object Not Found Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: XFER_Button_Done' (tried for 20 second(s) with 500 milliseconds interval)
   org.testng.Assert.fail(Assert.java:96)
   com.NexusPortalAutomation.Utilities.Java.CommonMethods.waitForObject(CommonMethods.java:225)
-  com.NexusPortalAutomation.PageObjects.Java.DashBoard.ClickElement(DashBoard.java:706)
-  com.NexusPortalAutomation.PageObjects.Java.Dashboard_Transfers.clickDone(Dashboard_Transfers.java:282)
-  com.NexusPortalAutomation.PageObjects.Java.Dashboard_Transfers.submitStartStopServiceTransferOrder(Dashboard_Transfers.java:457)
+  com.NexusPortalAutomation.PageObjects.Java.DashBoard.ClickElement(DashBoard.java:730)
+  com.NexusPortalAutomation.PageObjects.Java.Dashboard_Transfers.clickDone(Dashboard_Transfers.java:279)
+  com.NexusPortalAutomation.PageObjects.Java.Dashboard_Transfers.submitStartStopServiceTransferOrder(Dashboard_Transfers.java:458)
   com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled.VerifyAction_Transfers_Stack_StartService_Scheduled(TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled.java:81)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
