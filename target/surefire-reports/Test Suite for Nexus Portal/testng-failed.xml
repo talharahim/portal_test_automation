@@ -8,13 +8,20 @@
   </listeners>
   <test thread-count="10" verbose="0" name="NexusTest(failed)">
     <classes>
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad">
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0030_1_VerifyAction_Transfers_StartService_Scheduled_SameCustomerMovein">
         <methods>
-          <include name="TestSearchAlertOnLoad"/>
+          <include name="VerifyTransferActionServiceOrder"/>
           <include name="TearDown"/>
           <include name="readProp"/>
         </methods>
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad -->
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0030_1_VerifyAction_Transfers_StartService_Scheduled_SameCustomerMovein -->
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget">
+        <methods>
+          <include name="VerifyBillingDetails_Budget"/>
+          <include name="TearDown"/>
+          <include name="readProp"/>
+        </methods>
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget -->
       <class name="com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService">
         <methods>
           <include name="VerifyTransferActionServiceOrder"/>
@@ -29,27 +36,13 @@
           <include name="readProp"/>
         </methods>
       </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget_SPA -->
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0026_VerifyAction_Transfers_StartService_NotScheduled">
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0034_VerifyAction_Transfers_Stack_TwoLocations">
         <methods>
-          <include name="VerifyTransferActionServiceOrder"/>
+          <include name="VerifyAction_Transfers_Stack_TwoLocations"/>
           <include name="TearDown"/>
           <include name="readProp"/>
         </methods>
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0026_VerifyAction_Transfers_StartService_NotScheduled -->
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0039_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled">
-        <methods>
-          <include name="TearDown"/>
-          <include name="readProp"/>
-          <include name="VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled"/>
-        </methods>
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0039_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled -->
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0025_VerifyAction_Transfers_NotScheduled">
-        <methods>
-          <include name="VerifyActionServiceOrder_Transfers_NotSchedule"/>
-          <include name="TearDown"/>
-          <include name="readProp"/>
-        </methods>
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0025_VerifyAction_Transfers_NotScheduled -->
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0034_VerifyAction_Transfers_Stack_TwoLocations -->
       <class name="com.NexusPortalAutomation.TestCases.Java.TC0025_1_VerifyAction_Transfers_Scheduled_CurrentMoveinCustomer">
         <methods>
           <include name="VerifyActionServiceOrder_Transfers_NotSchedule"/>
@@ -64,27 +57,6 @@
           <include name="VerifyBillingDetails_SPA"/>
         </methods>
       </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_SPA -->
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails">
-        <methods>
-          <include name="VerifyBillingDetails"/>
-          <include name="TearDown"/>
-          <include name="readProp"/>
-        </methods>
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails -->
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled">
-        <methods>
-          <include name="TearDown"/>
-          <include name="readProp"/>
-          <include name="VerifyAction_Transfers_Stack_StartService_Scheduled"/>
-        </methods>
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled -->
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0030_VerifyAction_Transfers_StartService_Scheduled">
-        <methods>
-          <include name="TearDown"/>
-          <include name="VerifyTransferActionServiceOrder"/>
-          <include name="readProp"/>
-        </methods>
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0030_VerifyAction_Transfers_StartService_Scheduled -->
       <class name="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails_UsageGraph">
         <methods>
           <include name="TearDown"/>

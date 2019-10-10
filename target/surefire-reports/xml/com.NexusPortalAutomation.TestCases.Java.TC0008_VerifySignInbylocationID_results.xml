@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="14.868">
+           time="17.477">
   <properties />
   
   
-            <testcase name="TestSearchbylocationID" time="14.868" classname="com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbylocationID" />
+            <testcase name="TestSearchbylocationID" time="17.477" classname="com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbylocationID" />
       
 </testsuite>

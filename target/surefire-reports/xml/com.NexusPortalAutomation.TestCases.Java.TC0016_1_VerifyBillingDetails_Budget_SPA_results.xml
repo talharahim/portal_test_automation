@@ -4,16 +4,16 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="11.390">
+           time="14.154">
   <properties />
-            <testcase name="VerifyBillingDetails_budgetSPA" time="11.390" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget_SPA">
+            <testcase name="VerifyBillingDetails_budgetSPA" time="14.154" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget_SPA">
                 <failure type="java.lang.AssertionError"
-                  message="Actual Value &apos;$35.26&apos; not Matched the expected value &apos;$75.26&apos; "
+                  message="Actual Value &apos;$0.00&apos; not Matched the expected value &apos;$80.00&apos; "
               >
-<![CDATA[java.lang.AssertionError: Actual Value '$35.26' not Matched the expected value '$75.26' 
+<![CDATA[java.lang.AssertionError: Actual Value '$0.00' not Matched the expected value '$80.00' 
   org.testng.Assert.fail(Assert.java:96)
   com.NexusPortalAutomation.Utilities.Java.CommonMethods.verifyString(CommonMethods.java:68)
-  com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget_SPA.VerifyBillingDetails_budgetSPA(TC0016_1_VerifyBillingDetails_Budget_SPA.java:57)
+  com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget_SPA.VerifyBillingDetails_budgetSPA(TC0016_1_VerifyBillingDetails_Budget_SPA.java:69)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

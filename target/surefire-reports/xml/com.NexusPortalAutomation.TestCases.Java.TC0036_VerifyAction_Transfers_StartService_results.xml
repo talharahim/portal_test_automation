@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="53.956">
+           time="69.303">
   <properties />
-            <testcase name="VerifyTransferActionServiceOrder" time="53.956" classname="com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService">
+            <testcase name="VerifyTransferActionServiceOrder" time="69.303" classname="com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService">
                 <failure type="java.lang.AssertionError"
                   message="Object Not Found Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: XFER_Button_Done&apos; (tried for 20 second(s) with 500 milliseconds interval)"
               >
@@ -16,7 +16,7 @@
   com.NexusPortalAutomation.PageObjects.Java.DashBoard.ClickElement(DashBoard.java:730)
   com.NexusPortalAutomation.PageObjects.Java.Dashboard_Transfers.clickDone(Dashboard_Transfers.java:279)
   com.NexusPortalAutomation.PageObjects.Java.Dashboard_Transfers.submitStartStopServiceTransferOrder(Dashboard_Transfers.java:458)
-  com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService.VerifyTransferActionServiceOrder(TC0036_VerifyAction_Transfers_StartService.java:80)
+  com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService.VerifyTransferActionServiceOrder(TC0036_VerifyAction_Transfers_StartService.java:107)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

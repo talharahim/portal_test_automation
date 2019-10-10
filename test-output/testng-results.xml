@@ -1,8 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
     <line>
-      <![CDATA[Value for Key 'loc1' found from sheet =BILLGRAPH]]>
+      <![CDATA[Value for Key 'budgetLOC2' found from sheet =BUDGETLOC02]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'dueBudget' found from sheet =$100.00]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'currentBudget' found from sheet =$0.00]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'unpostedBudget' found from sheet =$0.00]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'accountBudget' found from sheet =$255.00]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'installmentBudget' found from sheet =$100.00]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'overDueBudget' found from sheet =$155.00]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'amountDueBudget' found from sheet =$0.00]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'autoPayBudget' found from sheet =OFF]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'eBillBudget' found from sheet =OFF]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'depositBudget' found from sheet =$0.00]]>
     </line>
     <line>
       <![CDATA[Launching Chrome]]>
@@ -11,97 +41,109 @@
       <![CDATA[Browser Maximised]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 60ms]]>
+      <![CDATA[Angular Request Completed in 71ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: username] displayed in 194ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (5c6e9aafb8292e98fda7452094889924)] -> id: username] displayed in 82ms]]>
     </line>
     <line>
       <![CDATA[Login Page title Verified]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: username] displayed in 19ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (5c6e9aafb8292e98fda7452094889924)] -> id: username] displayed in 23ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: password] displayed in 39ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (5c6e9aafb8292e98fda7452094889924)] -> id: password] displayed in 50ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: kc-login] displayed in 36ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (5c6e9aafb8292e98fda7452094889924)] -> id: kc-login] displayed in 44ms]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 12ms]]>
+      <![CDATA[Angular Request Completed in 55ms]]>
     </line>
     <line>
       <![CDATA[User signed Admin]]>
     </line>
     <line>
-      <![CDATA[Enter Text for Search =BILLGRAPH]]>
+      <![CDATA[Enter Text for Search =BUDGETLOC02]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: SRCH_Input] displayed in 41ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (5c6e9aafb8292e98fda7452094889924)] -> id: SRCH_Input] displayed in 97ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 938ms]]>
+      <![CDATA[Angular request time 707ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: SRCH_Option_1_Address_Line] displayed in 35ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (5c6e9aafb8292e98fda7452094889924)] -> id: SRCH_Option_1_Address_Line] displayed in 66ms]]>
     </line>
     <line>
       <![CDATA[Click Customer]]>
     </line>
     <line>
-      <![CDATA[Angular request time 2311ms]]>
+      <![CDATA[Angular request time 2157ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 16ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (5c6e9aafb8292e98fda7452094889924)] -> id: 'LOC_Location_Id'] displayed in 46ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 11ms]]>
+    </line>
+    <line>
+      <![CDATA[got Text CustomerLocId = BUDGETLOC02]]>
+    </line>
+    <line>
+      <![CDATA[Customer Location Id found BUDGETLOC02]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: BUDGETLOC02 = BUDGETLOC02]]>
+    </line>
+    <line>
+      <![CDATA[This will verify budget icon]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Budget = Budget]]>
     </line>
     <line>
       <![CDATA[Angular request time 13ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: SERV_Service_1_Service_Type_1] displayed in 524ms]]>
+      <![CDATA[Element 'BILL_Current_Balance' is displayed in 78ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 26ms]]>
+      <![CDATA[Element 'BILL_Unposted_Balance' is displayed in 47ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: SERV_Service_1_Service_Type_2] displayed in 20ms]]>
+      <![CDATA[Element 'BILL_Account_Balance' is displayed in 554ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 9ms]]>
+      <![CDATA[Element 'BILL_Past_Due' is displayed in 58ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 9ms]]>
+      <![CDATA[Element 'BILL_Installment_Budget' is displayed in 504ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: USR_Name] displayed in 70ms]]>
+      <![CDATA[Element 'BILL_Over_Short' is displayed in 46ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: USR_Name] displayed in 48ms]]>
+      <![CDATA[Strings Matched: $100.00 = $100.00]]>
     </line>
     <line>
-      <![CDATA[Angular request time 40ms]]>
+      <![CDATA[Strings Matched: $0.00 = $0.00]]>
     </line>
     <line>
-      <![CDATA[Click Logged User Link]]>
+      <![CDATA[Strings Matched: $0.00 = $0.00]]>
     </line>
     <line>
-      <![CDATA[Angular request time 26ms]]>
+      <![CDATA[Strings Matched: $255.00 = $255.00]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: ACTION_Logout] displayed in 169ms]]>
+      <![CDATA[Strings Matched: $100.00 = $100.00]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: ACTION_Logout] displayed in 158ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 83ms]]>
-    </line>
-    <line>
-      <![CDATA[Click logout Link]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 12ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 10ms]]>
+      <![CDATA[Strings Matched: $155.00 = $155.00]]>
     </line>
     <line>
       <![CDATA[Closing Browser]]>
@@ -110,16 +152,16 @@
       <![CDATA[Test Completed...]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27687" started-at="2019-10-09T16:17:51Z" finished-at="2019-10-09T16:18:19Z">
+  <suite name="Default suite" duration-ms="19176" started-at="2019-10-10T17:29:10Z" finished-at="2019-10-10T17:29:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27687" started-at="2019-10-09T16:17:51Z" finished-at="2019-10-09T16:18:19Z">
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails_UsageGraph">
-        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails_UsageGraph@4f83df68]" name="readProp" is-config="true" duration-ms="5408" started-at="2019-10-09T16:17:51Z" finished-at="2019-10-09T16:17:57Z">
+    <test name="Default test" duration-ms="19176" started-at="2019-10-10T17:29:10Z" finished-at="2019-10-10T17:29:29Z">
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget">
+        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget@3738449f]" name="readProp" is-config="true" duration-ms="4139" started-at="2019-10-10T17:29:10Z" finished-at="2019-10-10T17:29:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3153ddfc]]>
+                <![CDATA[org.testng.TestRunner@3704122f]]>
               </value>
             </param>
           </params>
@@ -132,104 +174,153 @@
             </line>
           </reporter-output>
         </test-method> <!-- readProp -->
-        <test-method status="PASS" signature="VerifyBillingDetails()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails_UsageGraph@4f83df68]" name="VerifyBillingDetails" duration-ms="20967" started-at="2019-10-09T16:17:57Z" finished-at="2019-10-09T16:18:18Z">
+        <test-method status="FAIL" signature="VerifyBillingDetails_Budget()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget@3738449f]" name="VerifyBillingDetails_Budget" duration-ms="14422" started-at="2019-10-10T17:29:14Z" finished-at="2019-10-10T17:29:28Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Actual Value '$0.00' not Matched the expected value '$100.00' ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Actual Value '$0.00' not Matched the expected value '$100.00' 
+at org.testng.Assert.fail(Assert.java:96)
+at com.NexusPortalAutomation.Utilities.Java.CommonMethods.verifyString(CommonMethods.java:68)
+at com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget.VerifyBillingDetails_Budget(TC0016_1_VerifyBillingDetails_Budget.java:65)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Angular Request Completed in 60ms]]>
+              <![CDATA[Angular Request Completed in 71ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: username] displayed in 194ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (5c6e9aafb8292e98fda7452094889924)] -> id: username] displayed in 82ms]]>
             </line>
             <line>
               <![CDATA[Login Page title Verified]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: username] displayed in 19ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (5c6e9aafb8292e98fda7452094889924)] -> id: username] displayed in 23ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: password] displayed in 39ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (5c6e9aafb8292e98fda7452094889924)] -> id: password] displayed in 50ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: kc-login] displayed in 36ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (5c6e9aafb8292e98fda7452094889924)] -> id: kc-login] displayed in 44ms]]>
             </line>
             <line>
-              <![CDATA[Angular Request Completed in 12ms]]>
+              <![CDATA[Angular Request Completed in 55ms]]>
             </line>
             <line>
               <![CDATA[User signed Admin]]>
             </line>
             <line>
-              <![CDATA[Enter Text for Search =BILLGRAPH]]>
+              <![CDATA[Enter Text for Search =BUDGETLOC02]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: SRCH_Input] displayed in 41ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (5c6e9aafb8292e98fda7452094889924)] -> id: SRCH_Input] displayed in 97ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 938ms]]>
+              <![CDATA[Angular request time 707ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: SRCH_Option_1_Address_Line] displayed in 35ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (5c6e9aafb8292e98fda7452094889924)] -> id: SRCH_Option_1_Address_Line] displayed in 66ms]]>
             </line>
             <line>
               <![CDATA[Click Customer]]>
             </line>
             <line>
-              <![CDATA[Angular request time 2311ms]]>
+              <![CDATA[Angular request time 2157ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 16ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (5c6e9aafb8292e98fda7452094889924)] -> id: 'LOC_Location_Id'] displayed in 46ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 11ms]]>
+            </line>
+            <line>
+              <![CDATA[got Text CustomerLocId = BUDGETLOC02]]>
+            </line>
+            <line>
+              <![CDATA[Customer Location Id found BUDGETLOC02]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: BUDGETLOC02 = BUDGETLOC02]]>
+            </line>
+            <line>
+              <![CDATA[This will verify budget icon]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Budget = Budget]]>
             </line>
             <line>
               <![CDATA[Angular request time 13ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: SERV_Service_1_Service_Type_1] displayed in 524ms]]>
+              <![CDATA[Element 'BILL_Current_Balance' is displayed in 78ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 26ms]]>
+              <![CDATA[Element 'BILL_Unposted_Balance' is displayed in 47ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: SERV_Service_1_Service_Type_2] displayed in 20ms]]>
+              <![CDATA[Element 'BILL_Account_Balance' is displayed in 554ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 9ms]]>
+              <![CDATA[Element 'BILL_Past_Due' is displayed in 58ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 9ms]]>
+              <![CDATA[Element 'BILL_Installment_Budget' is displayed in 504ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: USR_Name] displayed in 70ms]]>
+              <![CDATA[Element 'BILL_Over_Short' is displayed in 46ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: USR_Name] displayed in 48ms]]>
+              <![CDATA[Strings Matched: $100.00 = $100.00]]>
             </line>
             <line>
-              <![CDATA[Angular request time 40ms]]>
+              <![CDATA[Strings Matched: $0.00 = $0.00]]>
             </line>
             <line>
-              <![CDATA[Click Logged User Link]]>
+              <![CDATA[Strings Matched: $0.00 = $0.00]]>
             </line>
             <line>
-              <![CDATA[Angular request time 26ms]]>
+              <![CDATA[Strings Matched: $255.00 = $255.00]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: ACTION_Logout] displayed in 169ms]]>
+              <![CDATA[Strings Matched: $100.00 = $100.00]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (36330f257e2ce1cb43a629bf63d4971f)] -> id: ACTION_Logout] displayed in 158ms]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 83ms]]>
-            </line>
-            <line>
-              <![CDATA[Click logout Link]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 12ms]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 10ms]]>
+              <![CDATA[Strings Matched: $155.00 = $155.00]]>
             </line>
           </reporter-output>
-        </test-method> <!-- VerifyBillingDetails -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails_UsageGraph@4f83df68]" name="TearDown" is-config="true" duration-ms="1299" started-at="2019-10-09T16:18:18Z" finished-at="2019-10-09T16:18:19Z">
+        </test-method> <!-- VerifyBillingDetails_Budget -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget@3738449f]" name="TearDown" is-config="true" duration-ms="582" started-at="2019-10-10T17:29:28Z" finished-at="2019-10-10T17:29:29Z">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
@@ -239,7 +330,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails_UsageGraph -->
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
