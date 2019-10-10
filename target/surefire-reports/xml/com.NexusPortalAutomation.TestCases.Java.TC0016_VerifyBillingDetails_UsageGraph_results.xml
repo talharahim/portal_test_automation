@@ -4,16 +4,16 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="17.085">
+           time="12.094">
   <properties />
-            <testcase name="VerifyBillingDetails" time="17.085" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails_UsageGraph">
+            <testcase name="VerifyBillingDetails" time="12.094" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails_UsageGraph">
                 <failure type="java.lang.AssertionError"
-                  message="Image not matched ./\TestData\sikuliimages\billgraphwater1.png"
+                  message="image not matched"
               >
-<![CDATA[java.lang.AssertionError: Image not matched ./\TestData\sikuliimages\billgraphwater1.png
+<![CDATA[java.lang.AssertionError: image not matched
   org.testng.Assert.fail(Assert.java:96)
-  com.NexusPortalAutomation.Utilities.Java.SikuliUtility.compareImage(SikuliUtility.java:56)
-  com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails_UsageGraph.VerifyBillingDetails(TC0016_VerifyBillingDetails_UsageGraph.java:42)
+  com.NexusPortalAutomation.Utilities.Java.SikuliUtility.compareImage(SikuliUtility.java:79)
+  com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails_UsageGraph.VerifyBillingDetails(TC0016_VerifyBillingDetails_UsageGraph.java:44)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

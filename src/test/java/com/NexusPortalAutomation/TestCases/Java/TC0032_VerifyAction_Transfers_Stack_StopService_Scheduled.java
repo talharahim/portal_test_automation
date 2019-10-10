@@ -35,7 +35,7 @@ public class TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled extends B
 	public String defaultCustomer =getCellvalue("TC0032", "defaultCustomer");// "Mr. VACANT VACANT";
 	
 	public String[] task = {"Meter Reading-electric", "Charge New Customer","Property Transfer", "Deposit Request-new Customer", "Deposit Payment-new Customer E","Prepayment Required-new Custom"};
-	CommonMethods cmnMethods = new CommonMethods();
+	
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -52,7 +52,7 @@ public class TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled extends B
 		dbSrch.enterSearchText(locationId);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationId, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationId, dashBoard.getLoggedCustomerLocationId());
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
 		dashBoard.selectTransferStop();

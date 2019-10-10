@@ -21,7 +21,7 @@ public class TC0011_VerifyBookMark extends BaseClass {
 	 */
 
 	public String customerName = getCellvalue("TC0011","statementuser");// "Statement Pdf";
-	CommonMethods cmnMethods = new CommonMethods();
+	
 
 //This Test will test the search by Customer ID
 	@Test
@@ -32,14 +32,14 @@ public class TC0011_VerifyBookMark extends BaseClass {
 		dbSrch.enterSearchText(customerName);
 		dbSrch.clickRecentSearchCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(customerName, dashBoard.getLoggedCustomerName());
+		CommonMethods.verifyString(customerName, dashBoard.getLoggedCustomerName());
 		// Click BookMark
 		dashBoard.clickBookmarkDisabled();
 		dashBoard.logout();
 		login();
 		dbSrch.clickHistoryCustomer();
 		dbSrch.clickRecentSearchCustomerName();
-		cmnMethods.verifyString(customerName, dashBoard.getLoggedCustomerName());
+		CommonMethods.verifyString(customerName, dashBoard.getLoggedCustomerName());
 		// Clear BookMark
 		dashBoard.clickBookmarkEnabled();
 		// Verify if it is Marked

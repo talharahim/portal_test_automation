@@ -52,67 +52,67 @@ public class TC0042_Transactions_OrderbyDate extends BaseClass {
 	@Test
 	public void VerifyTransactionsSaperatebill_saperate() throws IOException, InterruptedException {
 
-		CommonMethods cmnMethods = new CommonMethods();
+		
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		Dashboard_Transactions dashBoardTransactions = new Dashboard_Transactions(driver);
 		login();
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoardTransactions.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoardTransactions.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
 
 		// Verify Recent
 		dashBoardTransactions.verifyRecentRecord1(recordType, recordDate, recordAmount);
 		dashBoardTransactions.verifyRecentRecord2(recordType2, recordDate2, recordAmount2);
 		dashBoardTransactions.clickRecentSearch_ViewAll();
-		cmnMethods.verifyString(title, dashBoardTransactions.getTransactionPageTitle());
+		CommonMethods.verifyString(title, dashBoardTransactions.getTransactionPageTitle());
 		dashBoardTransactions.clickTransactionLink();
 		//dashBoardTransactions.transaction_filterbyBill();
 		
 		// Verify Transaction details for Bill 1
 		HashMap<String, String> billingInfo1 = dashBoardTransactions.getTransactionsRecord(1);
-		cmnMethods.verifyStringContains(billingInfo1.get("drillback"), drillback);
-		cmnMethods.verifyString(billingInfo1.get("docType"), docType);
-		cmnMethods.verifyString(billingInfo1.get("documentNum"), documentNum);
-		cmnMethods.verifyString(billingInfo1.get("status"), status);
-		cmnMethods.verifyString(billingInfo1.get("transAmount"), transAmount);
-		cmnMethods.verifyString(billingInfo1.get("transDocDate"), transDocDate);
-		cmnMethods.verifyString(billingInfo1.get("transDueDate"), transDueDate);
-		cmnMethods.verifyString(billingInfo1.get("outstanding"), outstanding);
+		CommonMethods.verifyStringContains(billingInfo1.get("drillback"), drillback);
+		CommonMethods.verifyString(billingInfo1.get("docType"), docType);
+		CommonMethods.verifyString(billingInfo1.get("documentNum"), documentNum);
+		CommonMethods.verifyString(billingInfo1.get("status"), status);
+		CommonMethods.verifyString(billingInfo1.get("transAmount"), transAmount);
+		CommonMethods.verifyString(billingInfo1.get("transDocDate"), transDocDate);
+		CommonMethods.verifyString(billingInfo1.get("transDueDate"), transDueDate);
+		CommonMethods.verifyString(billingInfo1.get("outstanding"), outstanding);
 
 		// Verify Transaction details for Bill 2
 		HashMap<String, String> billingInfo2 = dashBoardTransactions.getTransactionsRecord(2);
-		cmnMethods.verifyStringContains(billingInfo2.get("drillback"), drillbackBill2);
-		cmnMethods.verifyString(billingInfo2.get("docType"), docTypeBill2);
-		cmnMethods.verifyString(billingInfo2.get("documentNum"), documentNumBill2);
-		cmnMethods.verifyString(billingInfo2.get("status"), statusBill2);
-		cmnMethods.verifyString(billingInfo2.get("transAmount"), transAmountBill2);
-		cmnMethods.verifyString(billingInfo2.get("transDocDate"), transDocDateBill2);
-		cmnMethods.verifyString(billingInfo2.get("transDueDate"), transDueDateBill2);
-		cmnMethods.verifyString(billingInfo2.get("outstanding"), outstandingBill2);
+		CommonMethods.verifyStringContains(billingInfo2.get("drillback"), drillbackBill2);
+		CommonMethods.verifyString(billingInfo2.get("docType"), docTypeBill2);
+		CommonMethods.verifyString(billingInfo2.get("documentNum"), documentNumBill2);
+		CommonMethods.verifyString(billingInfo2.get("status"), statusBill2);
+		CommonMethods.verifyString(billingInfo2.get("transAmount"), transAmountBill2);
+		CommonMethods.verifyString(billingInfo2.get("transDocDate"), transDocDateBill2);
+		CommonMethods.verifyString(billingInfo2.get("transDueDate"), transDueDateBill2);
+		CommonMethods.verifyString(billingInfo2.get("outstanding"), outstandingBill2);
 
 		
 		dashBoardTransactions.clickDateFilter_TransactionsRecord();
 		billingInfo1 = dashBoardTransactions.getTransactionsRecord(3);
-		cmnMethods.verifyStringContains(billingInfo1.get("drillback"), drillback);
-		cmnMethods.verifyString(billingInfo1.get("docType"), docType);
-		cmnMethods.verifyString(billingInfo1.get("documentNum"), documentNum);
-		cmnMethods.verifyString(billingInfo1.get("status"), status);
-		cmnMethods.verifyString(billingInfo1.get("transAmount"), transAmount);
-		cmnMethods.verifyString(billingInfo1.get("transDocDate"), transDocDate);
-		cmnMethods.verifyString(billingInfo1.get("transDueDate"), transDueDate);
-		cmnMethods.verifyString(billingInfo1.get("outstanding"), outstanding);
+		CommonMethods.verifyStringContains(billingInfo1.get("drillback"), drillback);
+		CommonMethods.verifyString(billingInfo1.get("docType"), docType);
+		CommonMethods.verifyString(billingInfo1.get("documentNum"), documentNum);
+		CommonMethods.verifyString(billingInfo1.get("status"), status);
+		CommonMethods.verifyString(billingInfo1.get("transAmount"), transAmount);
+		CommonMethods.verifyString(billingInfo1.get("transDocDate"), transDocDate);
+		CommonMethods.verifyString(billingInfo1.get("transDueDate"), transDueDate);
+		CommonMethods.verifyString(billingInfo1.get("outstanding"), outstanding);
 
 		billingInfo2 = dashBoardTransactions.getTransactionsRecord(4);
-		cmnMethods.verifyStringContains(billingInfo2.get("drillback"), drillbackBill2);
-		cmnMethods.verifyString(billingInfo2.get("docType"), docTypeBill2);
-		cmnMethods.verifyString(billingInfo2.get("documentNum"), documentNumBill2);
-		cmnMethods.verifyString(billingInfo2.get("status"), statusBill2);
-		cmnMethods.verifyString(billingInfo2.get("transAmount"), transAmountBill2);
-		cmnMethods.verifyString(billingInfo2.get("transDocDate"), transDocDateBill2);
-		cmnMethods.verifyString(billingInfo2.get("transDueDate"), transDueDateBill2);
-		cmnMethods.verifyString(billingInfo2.get("outstanding"), outstandingBill2);
+		CommonMethods.verifyStringContains(billingInfo2.get("drillback"), drillbackBill2);
+		CommonMethods.verifyString(billingInfo2.get("docType"), docTypeBill2);
+		CommonMethods.verifyString(billingInfo2.get("documentNum"), documentNumBill2);
+		CommonMethods.verifyString(billingInfo2.get("status"), statusBill2);
+		CommonMethods.verifyString(billingInfo2.get("transAmount"), transAmountBill2);
+		CommonMethods.verifyString(billingInfo2.get("transDocDate"), transDocDateBill2);
+		CommonMethods.verifyString(billingInfo2.get("transDueDate"), transDueDateBill2);
+		CommonMethods.verifyString(billingInfo2.get("outstanding"), outstandingBill2);
 
 		dashBoardTransactions.logout();
 	}

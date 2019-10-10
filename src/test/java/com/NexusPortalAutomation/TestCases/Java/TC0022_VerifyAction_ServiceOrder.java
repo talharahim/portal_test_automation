@@ -32,7 +32,7 @@ public class TC0022_VerifyAction_ServiceOrder extends BaseClass {
 	public String searchInput = getCellvalue("TC0022", "SearchInput");//"REQ-DEP-WATER";
 	public String dateDescription = getCellvalue("TC0022", "DateDescription");//"AutomationRequest";
 	public String message = getCellvalue("TC0022", "Message");//"Service Order successfully created";
-	CommonMethods cmnMethods = new CommonMethods();
+	
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -46,9 +46,9 @@ public class TC0022_VerifyAction_ServiceOrder extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
-		// cmnMethods.VerifyString(servTabURL, dashBoard.GetServiceTabDrillBackUrl());
+		// CommonMethods.VerifyString(servTabURL, dashBoard.GetServiceTabDrillBackUrl());
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_ServiceOrder();
 		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");

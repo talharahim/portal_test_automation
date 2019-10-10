@@ -45,7 +45,7 @@ public class TC0031_VerifyAction_Transfers_StopService_Scheduled extends BaseCla
 	public String task6 = getCellvalue("TC0031", "task6");//"Prepayment Required-new Custom";
 	public String message = getCellvalue("TC0031", "message");//"Transfer initiated";
 	public String[] Task = {"Meter Reading-electric", "Charge New Customer","Property Transfer", "Deposit Request-new Customer", "Deposit Payment-new Customer E","Prepayment Required-new Custom"};
-	CommonMethods cmnMethods = new CommonMethods();
+	
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -60,9 +60,9 @@ public class TC0031_VerifyAction_Transfers_StopService_Scheduled extends BaseCla
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
-		// cmnMethods.VerifyString(servTabURL, dashBoard.GetServiceTabDrillBackUrl());
+		// CommonMethods.VerifyString(servTabURL, dashBoard.GetServiceTabDrillBackUrl());
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
 		//DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");

@@ -20,7 +20,7 @@ public class TC0028_TestEnhancedNotes extends BaseClass {
 	public String notes2 =  getCellvalue("TC0028", "notes2");//"Customer Test notes for AuTOMation";
 	public String notes1 =  getCellvalue("TC0028", "notes1");//"Location Test Notes for Automation";
 	public String title =  getCellvalue("TC0028", "title");//"Mr.";
-	CommonMethods cmnMethods = new CommonMethods();
+	
 //This Test will test the search by Customer's First Name
 	@Test(priority = 2)
 	public void TestSearchAutobyFirstName() throws IOException, InterruptedException {
@@ -30,8 +30,8 @@ public class TC0028_TestEnhancedNotes extends BaseClass {
 		dbSrch.enterSearchText(username);
 		dbSrch.clickCustomerName();
 		// Verify Login Name
-		cmnMethods.verifyString(title, dashBoard.getCustomertitle());
-		cmnMethods.verifyString(username, dashBoard.getLoggedCustomerName());
+		CommonMethods.verifyString(title, dashBoard.getCustomertitle());
+		CommonMethods.verifyString(username, dashBoard.getLoggedCustomerName());
 		dashBoard.verifyEnhancedNotes(notes2, notes1);
 		dashBoard.logout();
 

@@ -15,7 +15,7 @@ public class TC0001_VerifySignInbyID extends BaseClass {
 	
 	public String customerID = ExcelData.getExcelData("TC0001","customerID");
 	//public String customerID = "0000011111";
-	CommonMethods commonMethod = new CommonMethods();
+	//CommonMethods commonMethod = new CommonMethods();
 	/*
 	 * This Class Will Test the search by Customer ID
 	 * @author Talha Rahim
@@ -31,7 +31,7 @@ public class TC0001_VerifySignInbyID extends BaseClass {
 		dashBoardSearch.enterSearchText(customerID);
 		dashBoardSearch.clickCustomerName();
 		// Verify Login Name Updated for Test
-		commonMethod.verifyString(customerID, dashBoard.getLoggedCustId());
+		CommonMethods.verifyString(customerID, dashBoard.getLoggedCustId());
 		dashBoard.logout();
 	}
 

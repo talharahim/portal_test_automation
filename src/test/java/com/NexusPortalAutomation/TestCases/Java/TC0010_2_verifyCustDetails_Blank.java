@@ -28,7 +28,7 @@ public class TC0010_2_verifyCustDetails_Blank extends BaseClass {
 	String email = getCellvalue("TC0010","blankemail");//"none";
 	String add = getCellvalue("TC0010","blankadd");//"02 02 Test Te 042";
 	String acsz = getCellvalue("TC0010","blankacsz");//"Karachi SINDH";
-	CommonMethods cmnMethods = new CommonMethods();
+	//
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -39,7 +39,7 @@ public class TC0010_2_verifyCustDetails_Blank extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		dashBoard.verifyCustDetailsNoEmailExt(ssn, lic, phone, add, acsz);
 		dashBoard.logout();
 	}

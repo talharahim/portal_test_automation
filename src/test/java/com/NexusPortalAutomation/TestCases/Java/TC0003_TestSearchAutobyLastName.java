@@ -23,7 +23,7 @@ public class TC0003_TestSearchAutobyLastName extends BaseClass {
 
 	public String username =   ExcelData.getExcelData("TC0003","username");;
 	public String title = "Mr.";
-	public CommonMethods cmnMethods = new CommonMethods();
+	//public 
 
 	@Test(priority = 3)
 	public void TestSearchAutobyLastName() throws IOException, InterruptedException {
@@ -33,8 +33,8 @@ public class TC0003_TestSearchAutobyLastName extends BaseClass {
 		dbSrch.enterSearchText("Mate");
 		dbSrch.clickCustomerName();
 		// Verify Login by Last Name
-		cmnMethods.verifyString(title, dashBoard.getCustomertitle());
-		cmnMethods.verifyString(username, dashBoard.getLoggedCustomerName());
+		CommonMethods.verifyString(title, dashBoard.getCustomertitle());
+		CommonMethods.verifyString(username, dashBoard.getLoggedCustomerName());
 		dashBoard.logout();
 
 	}

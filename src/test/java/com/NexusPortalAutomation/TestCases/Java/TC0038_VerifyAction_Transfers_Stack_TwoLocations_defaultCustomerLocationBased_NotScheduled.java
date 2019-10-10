@@ -35,7 +35,7 @@ public class TC0038_VerifyAction_Transfers_Stack_TwoLocations_defaultCustomerLoc
 	public String defaultCustomer2 = getCellvalue("TC0038", "defaultCustomer2");//"Mr. VACANT VACANT";
 	public String message = getCellvalue("TC0038", "message");//"Transfer initiated";
 	public String[] task = {"Meter Reading-electric", "Charge New Customer","Property Transfer", "Deposit Request-new Customer", "Deposit Payment-new Customer E","Prepayment Required-new Custom"};
-	CommonMethods cmnMethods = new CommonMethods();
+	
 	public String serverUrl = getDrillbackServerUrl();
 
 //This Test will test the search by Customer ID
@@ -53,7 +53,7 @@ public class TC0038_VerifyAction_Transfers_Stack_TwoLocations_defaultCustomerLoc
 //		dbSrch.enterSearchText(locationID);
 //		dbSrch.clickCustomerName();
 //		// Verify Customer Location Id Updated for Test
-//		cmnMethods.VerifyString(locationID, dashBoard.GetLoggedCustomerlocationID());
+//		CommonMethods.VerifyString(locationID, dashBoard.GetLoggedCustomerlocationID());
 //		dashBoard.clickActionDropDown();
 //		dashBoard.clickActionDropDown_TransferService();
 //		dashBoard.SelectTransferType_Transfer_Stop();

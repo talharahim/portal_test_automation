@@ -24,7 +24,7 @@ public class TC0015_VerifyContactLogs extends BaseClass {
 	 */
 
 	public String locationID = getCellvalue("TC0015", "locationEdit");//"LOC@0004";
-	CommonMethods cmnMethods = new CommonMethods();
+	
 	DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 	Date date = new Date();
 	//String comments = "Notes added" + dateFormat.format(date);
@@ -38,11 +38,11 @@ public class TC0015_VerifyContactLogs extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
 		///dashBoard.AddNotes(Comments);  -- Functionality Removed
 		// Verify Updated details
-		//cmnMethods.VerifyString(dashBoard.GetNotes(), Comments);  -- Functionality Removed
+		//CommonMethods.VerifyString(dashBoard.GetNotes(), Comments);  -- Functionality Removed
 		dashBoard.verifyNotesDrillbacks();
 		dashBoard.logout();
 	}

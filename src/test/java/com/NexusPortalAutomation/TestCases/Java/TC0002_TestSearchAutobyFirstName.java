@@ -12,7 +12,7 @@ import com.NexusPortalAutomation.Utilities.Java.ExcelData;
 public class TC0002_TestSearchAutobyFirstName extends BaseClass {
 
 	public String username =  ExcelData.getExcelData("TC0002","username");
-	CommonMethods commonMethod = new CommonMethods();
+	//CommonMethods commonMethod = new CommonMethods();
 	public String title = "Mr.";
 	/*
 	 * This test the search by Customer's First Name
@@ -34,8 +34,8 @@ public class TC0002_TestSearchAutobyFirstName extends BaseClass {
 		dbSrch.clickCustomerName();
 		// Verify Login Name
 		
-		commonMethod.verifyString(title, dashBoard.getCustomertitle());
-		commonMethod.verifyString(username, dashBoard.getLoggedCustomerName());
+		CommonMethods.verifyString(title, dashBoard.getCustomertitle());
+		CommonMethods.verifyString(username, dashBoard.getLoggedCustomerName());
 		dashBoard.logout();
 
 	}

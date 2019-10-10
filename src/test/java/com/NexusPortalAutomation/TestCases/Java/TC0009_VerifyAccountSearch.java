@@ -36,7 +36,7 @@ public class TC0009_VerifyAccountSearch extends BaseClass {
 	String cityzip1 =  ExcelData.getExcelData("TC0009","accCityZip");//"Troy NY 12180";
 	String cityzip2 =  ExcelData.getExcelData("TC0009","accCityZip");//"Troy NY 12180";
 	String cityzip3 =  ExcelData.getExcelData("TC0009","accCityZip");//"Troy NY 12180";
-	CommonMethods cmnMethods = new CommonMethods();
+	//
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -47,7 +47,7 @@ public class TC0009_VerifyAccountSearch extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustId());
 		// Verify Customer Details for location Provided
 		dashBoard.clickSarchAccountWidget();
 		// Verify the type/status of the account

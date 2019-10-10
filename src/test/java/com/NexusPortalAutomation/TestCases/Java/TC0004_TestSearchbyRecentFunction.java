@@ -22,7 +22,7 @@ public class TC0004_TestSearchbyRecentFunction extends BaseClass {
 	 */
 	public String locationID =   ExcelData.getExcelData("TC0004","locationID");//"ELECWAT001";
 	public String customerAddress;
-	public CommonMethods cmnMethods = new CommonMethods();
+	//public 
 
 	@Test(priority = 1)
 	public void TestSearchAutobyRecent() throws IOException, InterruptedException {
@@ -32,20 +32,20 @@ public class TC0004_TestSearchbyRecentFunction extends BaseClass {
 		login();
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		dashBoard.logout(); 
 		// Search Using Recent Icon
 		login();
-		cmnMethods.waitObjectByXpath(driver, "//input[@id='SRCH_Input']");
+		CommonMethods.waitObjectByXpath(driver, "//input[@id='SRCH_Input']");
 		dbSrch.clickRecentSearch();
 		customerAddress = dbSrch.getRecentCustomerCity();
 		dbSrch.clickCustomerName();
 		dashBoard.clickDynamicOk();
-		cmnMethods.waitObjectByXpath(driver, "//div[@class='address-details']");
+		CommonMethods.waitObjectByXpath(driver, "//div[@class='address-details']");
 		// Verify correct address is loaded
-		cmnMethods.verifyString(customerAddress, dashBoard.getLoggedCustomerAddress());
+		CommonMethods.verifyString(customerAddress, dashBoard.getLoggedCustomerAddress());
 		// Verify correct Customer is loaded
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		dashBoard.logout();
 
 	}

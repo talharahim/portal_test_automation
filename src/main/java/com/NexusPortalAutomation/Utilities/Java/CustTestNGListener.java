@@ -50,7 +50,7 @@ public class CustTestNGListener implements ITestListener {
 		try {
 			String filePath = Read.ReadFile("ScreenShots");
 			String screenShotName = filePath + fileName;
-			FileUtils.copyFile(scrFile, new File(filePath + fileName));
+			FileUtils.copyFile(scrFile, new File(screenShotName));
 			/*
 			 * Reporter.log("<p>***Placed screen shot at " + filePath + " ***</p>");
 			 * Reporter.log("<p>  <img src='" + filePath + fileName +

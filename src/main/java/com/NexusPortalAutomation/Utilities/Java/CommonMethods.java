@@ -38,7 +38,7 @@ public class CommonMethods {
 	public static ReadProjectProperties Read = new ReadProjectProperties();
 	public static NgWebDriver ngWebDriver;
 
-	public boolean HighLight = true;
+	public static boolean HighLight = true;
 	public static boolean takescreentshots = false;
 
 	public CommonMethods() {
@@ -55,7 +55,7 @@ public class CommonMethods {
 		log("Angular request time " + dt + "ms");
 	}
 
-	public boolean verifyString(String str1, String str2) {
+	public static boolean verifyString(String str1, String str2) {
 		boolean result = false;
 		if (str1 == null || str2 == null) {
 			Assert.fail("Null values found");
@@ -72,7 +72,7 @@ public class CommonMethods {
 
 	}
 
-	public String selectFromDb(String Command, String ConnectionString, String columnName)
+	public static String selectFromDb(String Command, String ConnectionString, String columnName)
 			throws ClassNotFoundException, SQLException {
 		// Following will created database
 		String Result = "";
@@ -92,7 +92,8 @@ public class CommonMethods {
 
 	}
 
-	public boolean deleteFromDb(String Command, String ConnectionString) throws ClassNotFoundException, SQLException {
+	public static boolean deleteFromDb(String Command, String ConnectionString)
+			throws ClassNotFoundException, SQLException {
 		// Following will created database
 		boolean Result = false;
 		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
@@ -111,7 +112,7 @@ public class CommonMethods {
 		return Result;
 	}
 
-	public boolean verifyStringContains(String str1, String str2) {
+	public static boolean verifyStringContains(String str1, String str2) {
 		boolean result = false;
 		if (str1 != null && str2 != null) {
 			if (str1.contains(str2)) {
@@ -140,7 +141,7 @@ public class CommonMethods {
 
 	}
 
-	public WebElement waitforObjectById(WebDriver driver, String id) {
+	public static WebElement waitforObjectById(WebDriver driver, String id) {
 		long begin = System.currentTimeMillis();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id(id)));
@@ -167,7 +168,7 @@ public class CommonMethods {
 		}
 	}
 
-	public void waitObjectByXpath(WebDriver driver, String path) {
+	public static void waitObjectByXpath(WebDriver driver, String path) {
 		long begin = System.currentTimeMillis();
 
 		WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -197,7 +198,7 @@ public class CommonMethods {
 		}
 	}
 
-	public void HighlightElement(WebElement element, WebDriver driver) {
+	public static void HighlightElement(WebElement element, WebDriver driver) {
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 
 		if (HighLight == true) {
@@ -205,7 +206,7 @@ public class CommonMethods {
 		}
 	}
 
-	public void ClearHighlightElement(WebElement element, WebDriver driver) {
+	public static void ClearHighlightElement(WebElement element, WebDriver driver) {
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 
 		if (HighLight == true) {
@@ -213,7 +214,7 @@ public class CommonMethods {
 		}
 	}
 
-	public void waitForObject(WebDriver driver, WebElement element) {
+	public static void waitForObject(WebDriver driver, WebElement element) {
 		long begin = System.currentTimeMillis();
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		try {
@@ -223,14 +224,14 @@ public class CommonMethods {
 		} catch (TimeoutException e) {
 
 			Assert.fail("Object Not Found " + e.getMessage());
-			}
+		}
 		long end = System.currentTimeMillis();
 		long dt = end - begin;
 		log("Element " + element.toString() + " displayed in " + dt + "ms");
 		// ClearHighlightElement(element, driver);
 	}
 
-	public boolean CheckStringmapsAreEqual(Map<String, String> mapA, Map<String, String> mapB) {
+	public static boolean CheckStringmapsAreEqual(Map<String, String> mapA, Map<String, String> mapB) {
 
 		try {
 			for (String k : mapB.keySet()) {

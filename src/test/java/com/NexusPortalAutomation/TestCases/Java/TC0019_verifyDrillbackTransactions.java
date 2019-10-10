@@ -35,7 +35,7 @@ public class TC0019_verifyDrillbackTransactions extends BaseClass {
 	// Meter
 	public String meterUrl = serverUrl + "Prod=229&Act=OPEN&Func=TransactionReadInquiry&DocumentNumber=" + metDocNum
 			+ "&DocumentLocation=3&CogsDrillback=1";
-	CommonMethods cmnMethods = new CommonMethods();
+	
     //This Test will test the search by Customer ID
 	@Test
 	public void verifyDrillbackTransactions() throws IOException, InterruptedException {
@@ -45,7 +45,7 @@ public class TC0019_verifyDrillbackTransactions extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
 		dashBoard.clickTransactionLink();
 		// Verify Transaction details

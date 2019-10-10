@@ -28,7 +28,7 @@ public class TC0010_1_verifyCustDetails_Business extends BaseClass {
 	String email =  getCellvalue("TC0010","businessEmail");//"automation@cogsdale.com";
 	String add =  getCellvalue("TC0010","businessAdd");//"Iqbal";
 	String acsz = getCellvalue("TC0010","businessAcsz");// "Miami Beach FL";
-	CommonMethods cmnMethods = new CommonMethods();
+	//
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -39,7 +39,7 @@ public class TC0010_1_verifyCustDetails_Business extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		dashBoard.verifyCustDetails(ssn, lic, phone, ext, email, add, acsz);
 		dashBoard.logout();
 	}

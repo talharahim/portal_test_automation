@@ -47,7 +47,7 @@ public class TC0030_1_VerifyAction_Transfers_StartService_Scheduled_SameCustomer
 	public String message = getCellvalue("TC0030", "message");// "Transfer initiated";
 	public String[] Task = { "Meter Reading-electric", "Charge New Customer", "Property Transfer",
 			"Deposit Request-new Customer", "Deposit Payment-new Customer E", "Prepayment Required-new Custom" };
-	CommonMethods cmnMethods = new CommonMethods();
+	
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -62,9 +62,9 @@ public class TC0030_1_VerifyAction_Transfers_StartService_Scheduled_SameCustomer
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
-		// cmnMethods.VerifyString(servTabURL, dashBoard.GetServiceTabDrillBackUrl());
+		// CommonMethods.VerifyString(servTabURL, dashBoard.GetServiceTabDrillBackUrl());
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
 		// DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");

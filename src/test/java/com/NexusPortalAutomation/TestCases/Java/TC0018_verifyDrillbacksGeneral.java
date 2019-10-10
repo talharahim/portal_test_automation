@@ -83,7 +83,7 @@ public class TC0018_verifyDrillbacksGeneral extends BaseClass {
 	public String enhancedNotesLocURL = serverUrl + "Prod=0&Act=OPEN&Func=EnhansedNote&NoteID=" + locationID2
 			+ "&NoteIndex=52.00000&CogsDrillback=1";
 
-	CommonMethods cmnMethods = new CommonMethods();
+	
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -94,15 +94,15 @@ public class TC0018_verifyDrillbacksGeneral extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
 
-		cmnMethods.verifyString(custURL, dashBoard.GetCustDrillBackUrl());
+		CommonMethods.verifyString(custURL, dashBoard.GetCustDrillBackUrl());
 		/*
 		 * Secondary Customer URL NOT Present
-		 * cmnMethods.VerifyString(secondCustURL,dashBoard.GetSecondCustDrillBackUrl());
+		 * CommonMethods.VerifyString(secondCustURL,dashBoard.GetSecondCustDrillBackUrl());
 		 */
-		cmnMethods.verifyString(contLogURL, dashBoard.getContLogDrillBackUrl());
+		CommonMethods.verifyString(contLogURL, dashBoard.getContLogDrillBackUrl());
 		dashBoard.clickActionDropDown();
 		// Action DrillBacks
 		dashBoard.VerifyActionDrillBacks(cashieringURL, creditMemoURL, depositURL, miscChargesURL, paymentArrURL,

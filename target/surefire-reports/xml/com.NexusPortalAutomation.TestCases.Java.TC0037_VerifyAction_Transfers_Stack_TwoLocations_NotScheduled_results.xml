@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="57.868">
+           time="73.577">
   <properties />
   
   
-            <testcase name="VerifyAction_Transfers_Stack_TwoLocations_NotScheduled" time="57.868" classname="com.NexusPortalAutomation.TestCases.Java.TC0037_VerifyAction_Transfers_Stack_TwoLocations_NotScheduled" />
+            <testcase name="VerifyAction_Transfers_Stack_TwoLocations_NotScheduled" time="73.577" classname="com.NexusPortalAutomation.TestCases.Java.TC0037_VerifyAction_Transfers_Stack_TwoLocations_NotScheduled" />
       
 </testsuite>

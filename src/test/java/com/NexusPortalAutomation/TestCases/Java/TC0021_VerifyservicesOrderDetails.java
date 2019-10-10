@@ -26,7 +26,7 @@ public class TC0021_VerifyservicesOrderDetails extends BaseClass {
 	public String locationID = getCellvalue("TC0021", "loc1");//"LOC@0001";
 	public String customerId = getCellvalue("TC0021", "drillbackCustId");//"0000011111";
 	public String serverUrl = getDrillbackServerUrl();
-	CommonMethods cmnMethods = new CommonMethods();
+	
 	String serviceOrderReqId = getCellvalue("TC0021", "serviceOrderReqId");//"REQ-EST-ELE";
 	String serviceOrderDescription = getCellvalue("TC0021", "serviceOrderDescription");//"Meter Reading For Estimate Electric";
 	String serviceOrderScheduledDate = getCellvalue("TC0021", "serviceOrderScheduledDate");//"May 17, 2019";
@@ -47,7 +47,7 @@ public class TC0021_VerifyservicesOrderDetails extends BaseClass {
 	public void TestserviceOrderDetails() throws IOException, InterruptedException, ClassNotFoundException, SQLServerException, SQLException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
-		CommonMethods cmnMethods = new CommonMethods();
+		
 		MySQLDataExec sql = new MySQLDataExec();
 		sql.deleteServiceorder(locationID);
 		sql.deleteServiceorderHistory(locationID);
@@ -55,27 +55,27 @@ public class TC0021_VerifyservicesOrderDetails extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
 		dashBoard.clickServiceorderLink();
 		dashBoard.ServOrd_SelectDateAnyTime();
 		// Verify service Order details
 		WaitAngular();
 		HashMap<String, String> serviceOrderInfo = dashBoard.GetServiceOrderDetails();
-		cmnMethods.verifyString(serviceOrderReqId, serviceOrderInfo.get("serviceOrderReqId"));
-		cmnMethods.verifyString(serviceOrderDescription, serviceOrderInfo.get("serviceOrderDescription"));
-		cmnMethods.verifyString(serviceOrderScheduledDate, serviceOrderInfo.get("serviceOrderScheduledDate"));
-		cmnMethods.verifyString(solvserviceOrderId, serviceOrderInfo.get("solvserviceOrderId"));
-		cmnMethods.verifyString(sodvStatus, serviceOrderInfo.get("sodvStatus"));
-		cmnMethods.verifyString(sodvDescriptionRequest, serviceOrderInfo.get("sodvDescriptionRequest"));
-		cmnMethods.verifyString(sodvRequestId, serviceOrderInfo.get("sodvRequestId"));
-		cmnMethods.verifyString(sodvRequestedDate, serviceOrderInfo.get("sodvRequestedDate"));
-		cmnMethods.verifyString(sodvRequestedTime, serviceOrderInfo.get("sodvRequestedTime"));
-		cmnMethods.verifyString(sodvScheduledDate, serviceOrderInfo.get("sodvScheduledDate"));
-		cmnMethods.verifyString(sodvScheduledTime, serviceOrderInfo.get("sodvScheduledTime"));
-		cmnMethods.verifyString(sodvTaskDescription, serviceOrderInfo.get("sodvTaskDescription"));
-		cmnMethods.verifyString(sodvTaskEmployeeId, serviceOrderInfo.get("sodvTaskEmployeeId"));
-		cmnMethods.verifyString(sodvTaskCompletedDate, serviceOrderInfo.get("sodvTaskCompletedDate"));
+		CommonMethods.verifyString(serviceOrderReqId, serviceOrderInfo.get("serviceOrderReqId"));
+		CommonMethods.verifyString(serviceOrderDescription, serviceOrderInfo.get("serviceOrderDescription"));
+		CommonMethods.verifyString(serviceOrderScheduledDate, serviceOrderInfo.get("serviceOrderScheduledDate"));
+		CommonMethods.verifyString(solvserviceOrderId, serviceOrderInfo.get("solvserviceOrderId"));
+		CommonMethods.verifyString(sodvStatus, serviceOrderInfo.get("sodvStatus"));
+		CommonMethods.verifyString(sodvDescriptionRequest, serviceOrderInfo.get("sodvDescriptionRequest"));
+		CommonMethods.verifyString(sodvRequestId, serviceOrderInfo.get("sodvRequestId"));
+		CommonMethods.verifyString(sodvRequestedDate, serviceOrderInfo.get("sodvRequestedDate"));
+		CommonMethods.verifyString(sodvRequestedTime, serviceOrderInfo.get("sodvRequestedTime"));
+		CommonMethods.verifyString(sodvScheduledDate, serviceOrderInfo.get("sodvScheduledDate"));
+		CommonMethods.verifyString(sodvScheduledTime, serviceOrderInfo.get("sodvScheduledTime"));
+		CommonMethods.verifyString(sodvTaskDescription, serviceOrderInfo.get("sodvTaskDescription"));
+		CommonMethods.verifyString(sodvTaskEmployeeId, serviceOrderInfo.get("sodvTaskEmployeeId"));
+		CommonMethods.verifyString(sodvTaskCompletedDate, serviceOrderInfo.get("sodvTaskCompletedDate"));
 		dashBoard.logout();
 	}
 

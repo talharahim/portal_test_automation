@@ -43,7 +43,7 @@ public class TC0025_1_VerifyAction_Transfers_Scheduled_CurrentMoveinCustomer ext
 	public String task5 = getCellvalue("TC0025", "task5");//"Deposit Payment-new Customer E";
 	public String task6 = getCellvalue("TC0025", "task6");//"Prepayment Required-new Custom";
 	public String message = getCellvalue("TC0025", "message");//"Transfer initiated";
-	CommonMethods cmnMethods = new CommonMethods();
+	
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -60,7 +60,7 @@ public class TC0025_1_VerifyAction_Transfers_Scheduled_CurrentMoveinCustomer ext
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
 		dashBoard.clickActionDropDown();
 
@@ -98,9 +98,9 @@ public class TC0025_1_VerifyAction_Transfers_Scheduled_CurrentMoveinCustomer ext
 		// Verifying Service Order details
 		String ServiceOrder = dashBoard.getserviceOrderNum();
 		String ServiceOrderURL = dashBoard.getServiceOrderDrillbackURL();
-		cmnMethods.verifyStringContains(ServiceOrderURL, ServiceOrder);
+		CommonMethods.verifyStringContains(ServiceOrderURL, ServiceOrder);
 		//
-		cmnMethods.verifyString(dashBoard.getRequestedSOcustomerName(), requestedbY);
+		CommonMethods.verifyString(dashBoard.getRequestedSOcustomerName(), requestedbY);
 		// Get request Date and Compare
 		String[] arrOfStr = moveInrequestedDate.split(" ", 2);
 		String[] arrOfStr2 = moveOutrequestedDate.split(" ", 2);
@@ -109,16 +109,16 @@ public class TC0025_1_VerifyAction_Transfers_Scheduled_CurrentMoveinCustomer ext
 		Date date = (Date) formatter.parse(moveOutstart_dt);
 		SimpleDateFormat newFormat = new SimpleDateFormat("MMM d, yyyy");
 		String moveOutstart_dtfinalString = newFormat.format(date);
-		cmnMethods.verifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
+		CommonMethods.verifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
 		//
-		cmnMethods.verifyString(dashBoard.getMoveOutSOcustomerName(), moveOutCustomer);
-		cmnMethods.verifyString(dashBoard.getMoveInSOcustomerName(), moveInCustomer);
-		cmnMethods.verifyString(dashBoard.getSOTask1Description(), task1);
-		cmnMethods.verifyString(dashBoard.getSOTask2Description(), task2);
-		cmnMethods.verifyString(dashBoard.getSOTask3Description(), task3);
-		cmnMethods.verifyString(dashBoard.getSOTask4Description(), task4);
-		cmnMethods.verifyString(dashBoard.getSOTask5Description(), task5);
-		cmnMethods.verifyString(dashBoard.getSOTask6Description(), task6);
+		CommonMethods.verifyString(dashBoard.getMoveOutSOcustomerName(), moveOutCustomer);
+		CommonMethods.verifyString(dashBoard.getMoveInSOcustomerName(), moveInCustomer);
+		CommonMethods.verifyString(dashBoard.getSOTask1Description(), task1);
+		CommonMethods.verifyString(dashBoard.getSOTask2Description(), task2);
+		CommonMethods.verifyString(dashBoard.getSOTask3Description(), task3);
+		CommonMethods.verifyString(dashBoard.getSOTask4Description(), task4);
+		CommonMethods.verifyString(dashBoard.getSOTask5Description(), task5);
+		CommonMethods.verifyString(dashBoard.getSOTask6Description(), task6);
 
 		log(ServiceOrder);
 		sql.verifyServiceOrders(locationID, ServiceOrder);
@@ -128,22 +128,22 @@ public class TC0025_1_VerifyAction_Transfers_Scheduled_CurrentMoveinCustomer ext
 		dashBoard.clickServiceorderLink();
 		ServiceOrder = dashBoard.getserviceOrderNum();
 		ServiceOrderURL = dashBoard.getServiceOrderDrillbackURL();
-		cmnMethods.verifyStringContains(ServiceOrderURL, ServiceOrder);
+		CommonMethods.verifyStringContains(ServiceOrderURL, ServiceOrder);
 
 		String moveInstart_dt = arrOfStr2[0];
 		date = (Date) formatter.parse(moveInstart_dt);
 		String moveInstart_dtfinalString = newFormat.format(date);
-		cmnMethods.verifyString(dashBoard.getSOrequestedDate(), moveInstart_dtfinalString);
+		CommonMethods.verifyString(dashBoard.getSOrequestedDate(), moveInstart_dtfinalString);
 		//
 
-		cmnMethods.verifyString(dashBoard.getMoveOutSOcustomerName(), loc2moveOutCustomer);
-		cmnMethods.verifyString(dashBoard.getMoveInSOcustomerName(), loc2moveInCustomer);
-		cmnMethods.verifyString(dashBoard.getSOTask1Description(), task1);
-		cmnMethods.verifyString(dashBoard.getSOTask2Description(), task2);
-		cmnMethods.verifyString(dashBoard.getSOTask3Description(), task3);
-		cmnMethods.verifyString(dashBoard.getSOTask4Description(), task4);
-		cmnMethods.verifyString(dashBoard.getSOTask5Description(), task5);
-		cmnMethods.verifyString(dashBoard.getSOTask6Description(), task6);
+		CommonMethods.verifyString(dashBoard.getMoveOutSOcustomerName(), loc2moveOutCustomer);
+		CommonMethods.verifyString(dashBoard.getMoveInSOcustomerName(), loc2moveInCustomer);
+		CommonMethods.verifyString(dashBoard.getSOTask1Description(), task1);
+		CommonMethods.verifyString(dashBoard.getSOTask2Description(), task2);
+		CommonMethods.verifyString(dashBoard.getSOTask3Description(), task3);
+		CommonMethods.verifyString(dashBoard.getSOTask4Description(), task4);
+		CommonMethods.verifyString(dashBoard.getSOTask5Description(), task5);
+		CommonMethods.verifyString(dashBoard.getSOTask6Description(), task6);
 
 		log(ServiceOrder);
 		sql.verifyServiceOrders(locationID2, ServiceOrder);

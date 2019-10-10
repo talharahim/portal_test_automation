@@ -22,20 +22,20 @@ public class TC0006_TestAlertOnLoad extends BaseClass {
 	 */
 
 	public String username = ExcelData.getExcelData("TC0006","alUsername");// "AUTOLOC001";
-	public CommonMethods cmnMethods = new CommonMethods();
+	//public 
 
 	@Test(priority = 2)
 	public void TestSearchAlertOnLoad() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		cmnMethods.waitObjectByXpath(driver, "//input[@id='SRCH_Input']");
-		cmnMethods.waitforObjectById(driver, "toolbar-saved");
+		CommonMethods.waitObjectByXpath(driver, "//input[@id='SRCH_Input']");
+		CommonMethods.waitforObjectById(driver, "toolbar-saved");
 		dbSrch.enterSearchText("Alert");
 		dbSrch.clickCustomerName();
-		cmnMethods.waitObjectByXpath(driver, "//div[@class='address-details']");
+		CommonMethods.waitObjectByXpath(driver, "//div[@class='address-details']");
 		// Verify Login Name
-		cmnMethods.verifyString(username, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(username, dashBoard.getLoggedCustomerLocationId());
 		dashBoard.clickOk();
 		log("Alert on Load Clicked");
 		dashBoard.clickAlertdesc();

@@ -12,7 +12,7 @@ import com.NexusPortalAutomation.Utilities.Java.ExcelData;
 public class TC0005_TestSearchbyBookMarks extends BaseClass {
 
 	public String username =  ExcelData.getExcelData("TC0005","bmUsername");//"Noel Ford";
-	public CommonMethods cmnMethods = new CommonMethods();
+	//public 
 
 	//@Test(priority = 2)
 	public void TestSearchAutobyBookMark() throws IOException, InterruptedException {
@@ -20,14 +20,14 @@ public class TC0005_TestSearchbyBookMarks extends BaseClass {
 		DashBoard dashBoard = new DashBoard(driver);
 		WaitAngular();
 		login();
-		cmnMethods.waitObjectByXpath(driver, "//input[@id='SRCH_Input']");
-		cmnMethods.waitforObjectById(driver, "toolbar-saved");
+		CommonMethods.waitObjectByXpath(driver, "//input[@id='SRCH_Input']");
+		CommonMethods.waitforObjectById(driver, "toolbar-saved");
 		WaitAngular();
 		dbSrch.clickHistoryCustomer();
 		dbSrch.clickCustomerName();
-		cmnMethods.waitObjectByXpath(driver, "//div[@class='address-details']");
+		CommonMethods.waitObjectByXpath(driver, "//div[@class='address-details']");
 		// Verify Login Name
-		boolean Match = cmnMethods.verifyString(username, dashBoard.getLoggedCustomerLocationId());
+		boolean Match = CommonMethods.verifyString(username, dashBoard.getLoggedCustomerLocationId());
 		if (!Match) {
 			log("User Name Not Verified for Bookmark Functionality");
 		} else {

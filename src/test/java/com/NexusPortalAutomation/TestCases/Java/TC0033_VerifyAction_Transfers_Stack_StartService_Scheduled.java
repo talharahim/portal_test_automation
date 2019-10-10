@@ -49,7 +49,7 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 	public String task5 = getCellvalue("TC0033", "task5");//"Deposit Payment-new Customer E";
 	public String task6 = getCellvalue("TC0033", "task6");//"Prepayment Required-new Custom";
 	public String message = getCellvalue("TC0033", "message");//"Transfer initiated";
-	CommonMethods cmnMethods = new CommonMethods();
+	
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -70,7 +70,7 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		dbSrch.enterSearchText(locationId);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationId, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationId, dashBoard.getLoggedCustomerLocationId());
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
 		dashBoard.selectTransferStart();
@@ -114,8 +114,8 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		dashBoard.clickServiceorder1();
 		String ServiceOrder2 = dashBoard.getserviceOrderNum();
 		String ServiceOrderURL2 = dashBoard.getServiceOrderDrillbackURL();
-		cmnMethods.verifyStringContains(ServiceOrderURL2, ServiceOrder2);
-		cmnMethods.verifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
+		CommonMethods.verifyStringContains(ServiceOrderURL2, ServiceOrder2);
+		CommonMethods.verifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
 		log(ServiceOrder2);
 		sql.verifyServiceOrders(locationId, ServiceOrder2);
 		dashBoard.clickrefreshPage();
@@ -149,8 +149,8 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 
 		// Verifying Second order in the stack
 		dashBoard.clickServiceorder2();
-		cmnMethods.verifyStringContains(ServiceOrderURL2, ServiceOrder2);
-		cmnMethods.verifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
+		CommonMethods.verifyStringContains(ServiceOrderURL2, ServiceOrder2);
+		CommonMethods.verifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
 		moveOutCustomer = "Mr. Alert Test";
 		moveInCustomer = "Mr. Movein Cus (Moveincus2)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer, moveOutCustomer, moveInCustomer, newDate,

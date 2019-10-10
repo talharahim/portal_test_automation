@@ -23,7 +23,7 @@ public class TC0012_verifyCreditStatusStatus extends BaseClass {
 	public String locationID = getCellvalue("TC0012", "loc1");// "LOC@0001";
 	public String locationID2 = getCellvalue("TC0012", "creditlocationID1");// "TESTLOCATION01";
 	public String locationID3 = getCellvalue("TC0012", "creditlocationID2");// "TESTLOCATION03";
-	CommonMethods cmnMethods = new CommonMethods();
+	
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -34,7 +34,7 @@ public class TC0012_verifyCreditStatusStatus extends BaseClass {
 		dbSrch.enterSearchText(locationID3);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID3, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID3, dashBoard.getLoggedCustomerLocationId());
 		// Verify Good Credit
 		dashBoard.verifyCreditStatus("EXCELLEN");
 		dashBoard.logout();
@@ -42,7 +42,7 @@ public class TC0012_verifyCreditStatusStatus extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Good Credit
 		dashBoard.verifyCreditStatus("BAD");
 		dashBoard.logout();

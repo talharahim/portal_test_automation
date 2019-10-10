@@ -22,7 +22,7 @@ public class TC0009_1_VerifyAccountSearch_NoAccounts extends BaseClass {
 	 */
  String locationID = ExcelData.getExcelData("TC0009","singleLoc1");//"SINGLECUST01";
  String text ="No Other Accounts";
- CommonMethods cmnMethods = new CommonMethods();
+ 
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -33,9 +33,9 @@ public class TC0009_1_VerifyAccountSearch_NoAccounts extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustId());
 		// Verify Customer Details for location Provided
-		cmnMethods.verifyString(text,dashBoard.getNoOtherAccount());
+		CommonMethods.verifyString(text,dashBoard.getNoOtherAccount());
 		// Verify the type/status of the account
 		dashBoard.logout();
 	}

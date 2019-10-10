@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="1,570.844" tests="56" errors="0" skipped="0" failures="9">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="1,824.855" tests="56" errors="0" skipped="0" failures="12">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\Administrator\AppData\Local\Temp\1\surefire8380470952007456392\surefirebooter8409046570692796135.jar C:\Users\Administrator\AppData\Local\Temp\1\surefire8380470952007456392 2019-10-08T09-27-39_995-jvmRun1 surefire8852641488850919581tmp surefire_06401677720272609797tmp"/>
+    <property name="sun.java.command" value="C:\Users\Administrator\AppData\Local\Temp\1\surefire935940292657284907\surefirebooter789149188098144892.jar C:\Users\Administrator\AppData\Local\Temp\1\surefire935940292657284907 2019-10-09T14-21-54_320-jvmRun1 surefire7124057457793311867tmp surefire_03066894073365786405tmp"/>
     <property name="surefire.test.class.path" value="D:\CogsdaleWorkspace\BitBucket\portal_test_automation\target\test-classes;D:\CogsdaleWorkspace\BitBucket\portal_test_automation\target\classes;C:\Users\Administrator\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\Administrator\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\Administrator\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-java\3.14.0\selenium-java-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-api\3.14.0\selenium-api-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.14.0\selenium-edge-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.14.0\selenium-ie-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.14.0\selenium-opera-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.14.0\selenium-remote-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.14.0\selenium-safari-driver-3.14.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-support\3.14.0\selenium-support-3.14.0.jar;C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Administrator\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\Administrator\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Administrator\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Administrator\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Administrator\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;C:\Users\Administrator\.m2\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar;C:\Users\Administrator\.m2\repository\com\squareup\okio\okio\1.14.1\okio-1.14.1.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\apache\maven\reporting\maven-reporting-api\2.0.6\maven-reporting-api-2.0.6.jar;C:\Users\Administrator\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.0-alpha-7\doxia-sink-api-1.0-alpha-7.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\mysql\mysql-connector-java\8.0.15\mysql-connector-java-8.0.15.jar;C:\Users\Administrator\.m2\repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;C:\Users\Administrator\.m2\repository\org\apache\logging\log4j\log4j-core\2.11.2\log4j-core-2.11.2.jar;C:\Users\Administrator\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.2\log4j-api-2.11.2.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi\3.17\poi-3.17.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-collections4\4.1\commons-collections4-4.1.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml\3.17\poi-ooxml-3.17.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.17\poi-ooxml-schemas-3.17.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlbeans\xmlbeans\2.6.0\xmlbeans-2.6.0.jar;C:\Users\Administrator\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Users\Administrator\.m2\repository\com\github\virtuald\curvesapi\1.04\curvesapi-1.04.jar;C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\Administrator\.m2\repository\com\microsoft\sqlserver\mssql-jdbc\7.0.0.jre8\mssql-jdbc-7.0.0.jre8.jar;C:\Users\Administrator\.m2\repository\com\paulhammant\ngwebdriver\1.1.4\ngwebdriver-1.1.4.jar;C:\Users\Administrator\.m2\repository\com\aventstack\extentreports\4.0.5\extentreports-4.0.5.jar;C:\Users\Administrator\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\Administrator\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\Administrator\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;C:\Users\Administrator\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\Administrator\.m2\repository\org\uncommons\reportng\1.1.4\reportng-1.1.4.jar;C:\Users\Administrator\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\Administrator\.m2\repository\com\google\inject\guice\3.0\guice-3.0.jar;C:\Users\Administrator\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Administrator\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Administrator\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\Administrator\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\Administrator\.m2\repository\com\sikulix\sikulixapi\1.1.0\sikulixapi-1.1.0.jar;C:\Users\Administrator\.m2\repository\commons-cli\commons-cli\1.2\commons-cli-1.2.jar;C:\Users\Administrator\.m2\repository\com\melloware\jintellitype\1.3.7\jintellitype-1.3.7.jar;C:\Users\Administrator\.m2\repository\jxgrabkey\jxgrabkey\1.0\jxgrabkey-1.0.jar;C:\Users\Administrator\.m2\repository\org\swinglabs\swing-layout\1.0.3\swing-layout-1.0.3.jar;C:\Users\Administrator\.m2\repository\com\nativelibs4java\bridj\0.6.2\bridj-0.6.2.jar;C:\Users\Administrator\.m2\repository\com\sikulix\sikulixlibswin\1.1.0\sikulixlibswin-1.1.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Administrator"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Administrator\AppData\Local\Temp\1\surefire8380470952007456392\surefirebooter8409046570692796135.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Administrator\AppData\Local\Temp\1\surefire935940292657284907\surefirebooter789149188098144892.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,16 +61,16 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="TestBookMark" classname="com.NexusPortalAutomation.TestCases.Java.TC0011_VerifyBookMark" time="24.218"/>
-  <testcase name="VerifyTransactionsSaperatebill_saperate" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_VerifyBillSaperately" time="24.645"/>
-  <testcase name="verifyDrillbackTransactions" classname="com.NexusPortalAutomation.TestCases.Java.TC0019_verifyDrillbackTransactions" time="16.171"/>
-  <testcase name="VerifyTransactionsSaperatebill_saperate" classname="com.NexusPortalAutomation.TestCases.Java.TC0042_1_Transactions_OrderbyAmount" time="16.87"/>
-  <testcase name="TestDrillBackServices" classname="com.NexusPortalAutomation.TestCases.Java.TC0020_verifyDrillbackServices" time="12.413"/>
-  <testcase name="VerifyTransactionsSaperatebill_saperate" classname="com.NexusPortalAutomation.TestCases.Java.TC0042_1_Transactions_OrderbyDueBilled" time="16.946"/>
-  <testcase name="TestserviceOrderDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0021_VerifyservicesOrderDetails" time="13.434"/>
-  <testcase name="VerifyTransactionsSaperatebill_saperate" classname="com.NexusPortalAutomation.TestCases.Java.TC0042_Transactions_OrderbyDate" time="17.306"/>
-  <testcase name="TestCustomerDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0010_verifyCustDetails" time="14.102"/>
-  <testcase name="VerifyBillingDetails_SPA" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_SPA" time="10.108">
+  <testcase name="TestBookMark" classname="com.NexusPortalAutomation.TestCases.Java.TC0011_VerifyBookMark" time="31.458"/>
+  <testcase name="VerifyTransactionsSaperatebill_saperate" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_VerifyBillSaperately" time="38.979"/>
+  <testcase name="verifyDrillbackTransactions" classname="com.NexusPortalAutomation.TestCases.Java.TC0019_verifyDrillbackTransactions" time="19.966"/>
+  <testcase name="VerifyTransactionsSaperatebill_saperate" classname="com.NexusPortalAutomation.TestCases.Java.TC0042_1_Transactions_OrderbyAmount" time="21.924"/>
+  <testcase name="TestDrillBackServices" classname="com.NexusPortalAutomation.TestCases.Java.TC0020_verifyDrillbackServices" time="15.191"/>
+  <testcase name="VerifyTransactionsSaperatebill_saperate" classname="com.NexusPortalAutomation.TestCases.Java.TC0042_1_Transactions_OrderbyDueBilled" time="19.795"/>
+  <testcase name="TestserviceOrderDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0021_VerifyservicesOrderDetails" time="16.461"/>
+  <testcase name="VerifyTransactionsSaperatebill_saperate" classname="com.NexusPortalAutomation.TestCases.Java.TC0042_Transactions_OrderbyDate" time="18.592"/>
+  <testcase name="TestCustomerDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0010_verifyCustDetails" time="14.035"/>
+  <testcase name="VerifyBillingDetails_SPA" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_SPA" time="11.141">
     <failure message="Actual Value &apos;$0.00&apos; not Matched the expected value &apos;$80.00&apos; " type="java.lang.AssertionError">java.lang.AssertionError: Actual Value '$0.00' not Matched the expected value '$80.00' 
 	at com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_SPA.VerifyBillingDetails_SPA(TC0016_1_VerifyBillingDetails_SPA.java:41)
 </failure>
@@ -80,49 +80,49 @@ Test Completed...
 Launching Chrome
 Browser Maximised
 Test started- VerifyBillingDetails_SPA
-Angular Request Completed in 31ms
+Angular Request Completed in 14ms
 Log in to Nexus View
-Element [[ChromeDriver: chrome on XP (638c2bedacc9598a72bd4b3bff9a30e4)] -> id: username] displayed in 40ms
+Element [[ChromeDriver: chrome on XP (c7f9f8b4c6c2774491c39438e1faf683)] -> id: username] displayed in 46ms
 Login Page title Verified
-Element [[ChromeDriver: chrome on XP (638c2bedacc9598a72bd4b3bff9a30e4)] -> id: username] displayed in 18ms
-Element [[ChromeDriver: chrome on XP (638c2bedacc9598a72bd4b3bff9a30e4)] -> id: password] displayed in 42ms
-Element [[ChromeDriver: chrome on XP (638c2bedacc9598a72bd4b3bff9a30e4)] -> id: kc-login] displayed in 38ms
-Angular Request Completed in 24ms
+Element [[ChromeDriver: chrome on XP (c7f9f8b4c6c2774491c39438e1faf683)] -> id: username] displayed in 19ms
+Element [[ChromeDriver: chrome on XP (c7f9f8b4c6c2774491c39438e1faf683)] -> id: password] displayed in 32ms
+Element [[ChromeDriver: chrome on XP (c7f9f8b4c6c2774491c39438e1faf683)] -> id: kc-login] displayed in 31ms
+Angular Request Completed in 15ms
 User signed Admin
 Enter Text for Search =LOC@0001
-Element [[ChromeDriver: chrome on XP (638c2bedacc9598a72bd4b3bff9a30e4)] -> id: SRCH_Input] displayed in 40ms
-Angular request time 727ms
-Element [[ChromeDriver: chrome on XP (638c2bedacc9598a72bd4b3bff9a30e4)] -> id: SRCH_Option_1_Address_Line] displayed in 47ms
+Element [[ChromeDriver: chrome on XP (c7f9f8b4c6c2774491c39438e1faf683)] -> id: SRCH_Input] displayed in 60ms
+Angular request time 1036ms
+Element [[ChromeDriver: chrome on XP (c7f9f8b4c6c2774491c39438e1faf683)] -> id: SRCH_Option_1_Address_Line] displayed in 42ms
 Click Customer
-Angular request time 1537ms
-Angular request time 13ms
-Element [[ChromeDriver: chrome on XP (638c2bedacc9598a72bd4b3bff9a30e4)] -> id: 'LOC_Location_Id'] displayed in 32ms
-Angular request time 7ms
+Angular request time 1970ms
+Angular request time 15ms
+Element [[ChromeDriver: chrome on XP (c7f9f8b4c6c2774491c39438e1faf683)] -> id: 'LOC_Location_Id'] displayed in 36ms
+Angular request time 6ms
 got Text CustomerLocId = LOC@0001
 Customer Location Id found LOC@0001
 Strings Matched: LOC@0001 = LOC@0001
-Element [[ChromeDriver: chrome on XP (638c2bedacc9598a72bd4b3bff9a30e4)] -> xpath: //span[contains(text(),'Payment Arrangement Due')]] displayed in 55ms
+Element [[ChromeDriver: chrome on XP (c7f9f8b4c6c2774491c39438e1faf683)] -> xpath: //span[contains(text(),'Payment Arrangement Due')]] displayed in 53ms
 get Payments Arrangement Due
 Strings Matched: Payment Arrangement Due = Payment Arrangement Due
-Element [[ChromeDriver: chrome on XP (638c2bedacc9598a72bd4b3bff9a30e4)] -> id: BILL_Installment_SPA] displayed in 51ms
+Element [[ChromeDriver: chrome on XP (c7f9f8b4c6c2774491c39438e1faf683)] -> id: BILL_Installment_SPA] displayed in 58ms
 get Payments Arrangement Due
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 4603
+    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 21033
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1570545091.161][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
-Oct 08, 2019 9:31:32 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1570649180.254][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
+Oct 09, 2019 2:26:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="verifyDrillbacksGeneral" classname="com.NexusPortalAutomation.TestCases.Java.TC0018_verifyDrillbacksGeneral" time="18.444"/>
-  <testcase name="VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled" classname="com.NexusPortalAutomation.TestCases.Java.TC0041_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled" time="59.105"/>
-  <testcase name="TestCustomerDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0010_2_verifyCustDetails_Blank" time="10.662"/>
-  <testcase name="VerifyBillingDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_EBill" time="20.036"/>
-  <testcase name="TestBillingStatements" classname="com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue" time="11.229"/>
-  <testcase name="VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled" classname="com.NexusPortalAutomation.TestCases.Java.TC0040_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled" time="61.397"/>
-  <testcase name="TestCustomerDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0010_1_verifyCustDetails_Business" time="10.8"/>
-  <testcase name="VerifyBillingDetails_budgetSPA" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget_SPA" time="10.381">
+  <testcase name="verifyDrillbacksGeneral" classname="com.NexusPortalAutomation.TestCases.Java.TC0018_verifyDrillbacksGeneral" time="23.362"/>
+  <testcase name="VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled" classname="com.NexusPortalAutomation.TestCases.Java.TC0041_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled" time="69.211"/>
+  <testcase name="TestCustomerDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0010_2_verifyCustDetails_Blank" time="14.423"/>
+  <testcase name="VerifyBillingDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_EBill" time="26.591"/>
+  <testcase name="TestBillingStatements" classname="com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue" time="12.041"/>
+  <testcase name="VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled" classname="com.NexusPortalAutomation.TestCases.Java.TC0040_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled" time="71.898"/>
+  <testcase name="TestCustomerDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0010_1_verifyCustDetails_Business" time="11.831"/>
+  <testcase name="VerifyBillingDetails_budgetSPA" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget_SPA" time="11.39">
     <failure message="Actual Value &apos;$35.26&apos; not Matched the expected value &apos;$75.26&apos; " type="java.lang.AssertionError">java.lang.AssertionError: Actual Value '$35.26' not Matched the expected value '$75.26' 
 	at com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget_SPA.VerifyBillingDetails_budgetSPA(TC0016_1_VerifyBillingDetails_Budget_SPA.java:57)
 </failure>
@@ -132,48 +132,48 @@ Test Completed...
 Launching Chrome
 Browser Maximised
 Test started- VerifyBillingDetails_budgetSPA
-Angular Request Completed in 40ms
+Angular Request Completed in 19ms
 Log in to Nexus View
-Element [[ChromeDriver: chrome on XP (72fb17a7e24aaa7e51260ff92bad4ee7)] -> id: username] displayed in 46ms
+Element [[ChromeDriver: chrome on XP (0298ecbfb9d85d5df97c325b3a09a069)] -> id: username] displayed in 57ms
 Login Page title Verified
-Element [[ChromeDriver: chrome on XP (72fb17a7e24aaa7e51260ff92bad4ee7)] -> id: username] displayed in 15ms
-Element [[ChromeDriver: chrome on XP (72fb17a7e24aaa7e51260ff92bad4ee7)] -> id: password] displayed in 35ms
-Element [[ChromeDriver: chrome on XP (72fb17a7e24aaa7e51260ff92bad4ee7)] -> id: kc-login] displayed in 36ms
-Angular Request Completed in 20ms
+Element [[ChromeDriver: chrome on XP (0298ecbfb9d85d5df97c325b3a09a069)] -> id: username] displayed in 21ms
+Element [[ChromeDriver: chrome on XP (0298ecbfb9d85d5df97c325b3a09a069)] -> id: password] displayed in 32ms
+Element [[ChromeDriver: chrome on XP (0298ecbfb9d85d5df97c325b3a09a069)] -> id: kc-login] displayed in 29ms
+Angular Request Completed in 30ms
 User signed Admin
 Enter Text for Search =LOC@0001
-Element [[ChromeDriver: chrome on XP (72fb17a7e24aaa7e51260ff92bad4ee7)] -> id: SRCH_Input] displayed in 41ms
-Angular request time 729ms
-Element [[ChromeDriver: chrome on XP (72fb17a7e24aaa7e51260ff92bad4ee7)] -> id: SRCH_Option_1_Address_Line] displayed in 38ms
+Element [[ChromeDriver: chrome on XP (0298ecbfb9d85d5df97c325b3a09a069)] -> id: SRCH_Input] displayed in 370ms
+Angular request time 628ms
+Element [[ChromeDriver: chrome on XP (0298ecbfb9d85d5df97c325b3a09a069)] -> id: SRCH_Option_1_Address_Line] displayed in 46ms
 Click Customer
-Angular request time 1436ms
+Angular request time 1660ms
 Angular request time 10ms
-Element [[ChromeDriver: chrome on XP (72fb17a7e24aaa7e51260ff92bad4ee7)] -> id: 'LOC_Location_Id'] displayed in 37ms
-Angular request time 8ms
+Element [[ChromeDriver: chrome on XP (0298ecbfb9d85d5df97c325b3a09a069)] -> id: 'LOC_Location_Id'] displayed in 68ms
+Angular request time 6ms
 got Text CustomerLocId = LOC@0001
 Customer Location Id found LOC@0001
 Strings Matched: LOC@0001 = LOC@0001
 This will verify budget icon
 Strings Matched: Budget = Budget
-Angular request time 8ms
-Element 'BILL_Current_Balance' is displayed in 57ms
-Element 'BILL_Unposted_Balance' is displayed in 59ms
-Element 'BILL_Account_Balance' is displayed in 73ms
-Element 'BILL_Past_Due' is displayed in 57ms
-Element 'BILL_Installment_Budget' is displayed in 54ms
-Element 'BILL_Over_Short' is displayed in 52ms
+Angular request time 7ms
+Element 'BILL_Current_Balance' is displayed in 53ms
+Element 'BILL_Unposted_Balance' is displayed in 56ms
+Element 'BILL_Account_Balance' is displayed in 56ms
+Element 'BILL_Past_Due' is displayed in 41ms
+Element 'BILL_Installment_Budget' is displayed in 55ms
+Element 'BILL_Over_Short' is displayed in 39ms
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 37421
+    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 17747
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1570545326.973][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
-Oct 08, 2019 9:35:28 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1570649454.909][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
+Oct 09, 2019 2:30:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="VerifyBillingDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails_UsageGraph" time="17.087">
-    <failure message="Image not matched ./\TestData\sikuliimages\billgraphwater1.png" type="java.lang.AssertionError">java.lang.AssertionError: Image not matched ./\TestData\sikuliimages\billgraphwater1.png
-	at com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails_UsageGraph.VerifyBillingDetails(TC0016_VerifyBillingDetails_UsageGraph.java:42)
+  <testcase name="VerifyBillingDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails_UsageGraph" time="12.094">
+    <failure message="image not matched" type="java.lang.AssertionError">java.lang.AssertionError: image not matched
+	at com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails_UsageGraph.VerifyBillingDetails(TC0016_VerifyBillingDetails_UsageGraph.java:44)
 </failure>
     <system-out><![CDATA[***** Error VerifyBillingDetails_budgetSPA test has failed *****
 Closing Browser
@@ -181,54 +181,366 @@ Test Completed...
 Launching Chrome
 Browser Maximised
 Test started- VerifyBillingDetails
-Angular Request Completed in 32ms
+Angular Request Completed in 29ms
 Log in to Nexus View
-Element [[ChromeDriver: chrome on XP (320e92345054b773e9bcff154638eb26)] -> id: username] displayed in 40ms
+Element [[ChromeDriver: chrome on XP (6da2d1d90e6bd8a66470c0355c5acc50)] -> id: username] displayed in 46ms
 Login Page title Verified
-Element [[ChromeDriver: chrome on XP (320e92345054b773e9bcff154638eb26)] -> id: username] displayed in 17ms
-Element [[ChromeDriver: chrome on XP (320e92345054b773e9bcff154638eb26)] -> id: password] displayed in 37ms
-Element [[ChromeDriver: chrome on XP (320e92345054b773e9bcff154638eb26)] -> id: kc-login] displayed in 40ms
-Angular Request Completed in 18ms
+Element [[ChromeDriver: chrome on XP (6da2d1d90e6bd8a66470c0355c5acc50)] -> id: username] displayed in 18ms
+Element [[ChromeDriver: chrome on XP (6da2d1d90e6bd8a66470c0355c5acc50)] -> id: password] displayed in 27ms
+Element [[ChromeDriver: chrome on XP (6da2d1d90e6bd8a66470c0355c5acc50)] -> id: kc-login] displayed in 32ms
+Angular Request Completed in 15ms
 User signed Admin
 Enter Text for Search =BILLGRAPH
-Element [[ChromeDriver: chrome on XP (320e92345054b773e9bcff154638eb26)] -> id: SRCH_Input] displayed in 40ms
-Angular request time 727ms
-Element [[ChromeDriver: chrome on XP (320e92345054b773e9bcff154638eb26)] -> id: SRCH_Option_1_Address_Line] displayed in 44ms
+Element [[ChromeDriver: chrome on XP (6da2d1d90e6bd8a66470c0355c5acc50)] -> id: SRCH_Input] displayed in 40ms
+Angular request time 737ms
+Element [[ChromeDriver: chrome on XP (6da2d1d90e6bd8a66470c0355c5acc50)] -> id: SRCH_Option_1_Address_Line] displayed in 30ms
 Click Customer
-Angular request time 1554ms
-Angular request time 6ms
-Element [[ChromeDriver: chrome on XP (320e92345054b773e9bcff154638eb26)] -> id: SERV_Service_1_Service_Type_1] displayed in 42ms
+Angular request time 1435ms
+Angular request time 28ms
+Element [[ChromeDriver: chrome on XP (6da2d1d90e6bd8a66470c0355c5acc50)] -> id: SERV_Service_1_Service_Type_1] displayed in 28ms
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 5493
+    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 44143
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1570545341.620][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
-Oct 08, 2019 9:35:42 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1570649471.107][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
+Oct 09, 2019 2:31:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Oct 08, 2019 9:35:53 AM org.bridj.BridJ log
+Oct 09, 2019 2:31:25 PM org.bridj.BridJ log
 INFO: Registering type org.sikuli.util.SysJNA$WinKernel32
-Oct 08, 2019 9:35:53 AM org.bridj.BridJ log
+Oct 09, 2019 2:31:25 PM org.bridj.BridJ log
 INFO: Registering type org.bridj.TimeT
-Oct 08, 2019 9:35:53 AM org.bridj.BridJ log
+Oct 09, 2019 2:31:25 PM org.bridj.BridJ log
 INFO: Registering type org.bridj.TimeT$timeval_customizer
-Oct 08, 2019 9:35:53 AM org.bridj.BridJ log
+Oct 09, 2019 2:31:25 PM org.bridj.BridJ log
 INFO: Registering type org.bridj.StructIO$DefaultCustomizer
-Oct 08, 2019 9:35:53 AM org.bridj.BridJ log
+Oct 09, 2019 2:31:25 PM org.bridj.BridJ log
 INFO: Registering type org.bridj.TimeT$timeval
-Oct 08, 2019 9:35:53 AM org.bridj.BridJ log
+Oct 09, 2019 2:31:25 PM org.bridj.BridJ log
 INFO: Registering type org.bridj.StructObject
-Oct 08, 2019 9:35:53 AM org.bridj.BridJ log
+Oct 09, 2019 2:31:25 PM org.bridj.BridJ log
 INFO: Registering type org.bridj.NativeObject
-Oct 08, 2019 9:35:53 AM org.bridj.BridJ log
+Oct 09, 2019 2:31:25 PM org.bridj.BridJ log
 INFO: Registering type org.bridj.AbstractIntegral
-Oct 08, 2019 9:35:53 AM org.bridj.BridJ log
+Oct 09, 2019 2:31:25 PM org.bridj.BridJ log
 INFO: Registering type java.lang.Number
 ]]></system-err>
   </testcase>
-  <testcase name="VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled" classname="com.NexusPortalAutomation.TestCases.Java.TC0039_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled" time="57.148"/>
-  <testcase name="TestSearchAccount" classname="com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch" time="16.501"/>
-  <testcase name="VerifyBillingDetails_Budget" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget" time="11.909"/>
-  <testcase name="VerifyBillingDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails" time="10.305">
+  <testcase name="VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled" classname="com.NexusPortalAutomation.TestCases.Java.TC0039_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled" time="72.404">
+    <failure message="Actual Value &apos;Mr. Vacant Vacant&apos; not Matched the expected value &apos;Noel Ford&apos; " type="java.lang.AssertionError">java.lang.AssertionError: Actual Value 'Mr. Vacant Vacant' not Matched the expected value 'Noel Ford' 
+	at com.NexusPortalAutomation.TestCases.Java.TC0039_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled.VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled(TC0039_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled.java:135)
+</failure>
+    <system-out><![CDATA[***** Error VerifyBillingDetails test has failed *****
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled
+SORD00000002736
+SORD00000002737
+SORD00000002739
+Deleting Records for ServiceOrder = SORD00000002739
+0
+0
+0
+Deleting Records for Location =  LOC@0004
+SORD00000002738
+Deleting Records for ServiceOrder = SORD00000002738
+0
+Deleting Records for Location =  LOC@0002
+Angular Request Completed in 34ms
+Log in to Nexus View
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: username] displayed in 30ms
+Login Page title Verified
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: username] displayed in 13ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: password] displayed in 26ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: kc-login] displayed in 25ms
+Angular Request Completed in 11ms
+User signed Admin
+Enter Text for Search =LOC@0004
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: SRCH_Input] displayed in 32ms
+Angular request time 1136ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: SRCH_Option_1_Address_Line] displayed in 32ms
+Click Customer
+Angular request time 478ms
+Angular request time 19ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: 'LOC_Location_Id'] displayed in 27ms
+Angular request time 9ms
+got Text CustomerLocId = LOC@0004
+Customer Location Id found LOC@0004
+Strings Matched: LOC@0004 = LOC@0004
+Click Action Dropdown
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: ACTION_Button] displayed in 25ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: ACTION_Button] displayed in 10ms
+Angular request time 7ms
+Click Action Drop down
+Angular request time 15ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: ACTION_Transfer_Service] displayed in 60ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: ACTION_Transfer_Service] displayed in 410ms
+Angular request time 67ms
+Click Action Transfer Service Drop down
+Angular request time 13ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Select] displayed in 53ms
+Angular request time 30ms
+Click Transfer Combo
+Angular request time 13ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Select_Option_3] displayed in 32ms
+Angular request time 13ms
+Click Transfer Option 3
+Angular request time 8ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Date_Picker_Requested] displayed in 33ms
+Entered Request Date = 10/09/2019 02:31
+Submit Transfer Request
+TRANSFER
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: CLO_Service_Order_Input] displayed in 24ms
+Setting Text on Search Request with Text = TRANSFER
+Angular request time 7ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Date_Picker_Scheduled] displayed in 108ms
+Enter Schedule Date Date
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Date_Picker_Scheduled] displayed in 19ms
+Setting Text on DatePicket with Text = 
+Angular request time 911ms
+Strings Matched: Mr. VACANT VACANT = Mr. VACANT VACANT
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Search_Input] displayed in 23ms
+Setting Text on Customer Name Request with Text = Mr. VACANT VACANT
+Angular request time 7ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Search_Option_1] displayed in 850ms
+Angular request time 15ms
+Click XFER_Search_Option_1_Customer_Name
+Angular request time 8ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Description] displayed in 26ms
+Setting Text on Description Request with Text = Description for Stop Service
+Angular request time 7ms
+Click Submit
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Button_Action] displayed in 23ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Button_Action] displayed in 15ms
+Angular request time 113ms
+Click MoveInSubmit Button
+Angular request time 14ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Button_Done] displayed in 29ms
+Angular request time 39ms
+Click Done Button for Transfer
+Angular request time 16ms
+Clicking Servic Order Link
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> css selector: #mat-tab-label-0-2 > div] displayed in 45ms
+Angular request time 1042ms
+Click Service Order Link
+Angular request time 11ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: SOLV_Service_Order_1] displayed in 32ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: SOLV_Service_Order_1] displayed in 22ms
+Angular request time 398ms
+Click Clicking Service Order 1
+Angular request time 11ms
+Angular request time 16ms
+Capturing Servic Order Number
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: SODV_Service_Order_Id] displayed in 65ms
+Angular request time 5ms
+got Text Service Order Number = SORD00000002740
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: ACTION_Refresh_Page] displayed in 31ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: ACTION_Refresh_Page] displayed in 39ms
+Angular request time 470ms
+Click Refresh Button
+Angular request time 8ms
+Refresh Page
+Click Action Dropdown
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: ACTION_Button] displayed in 459ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: ACTION_Button] displayed in 9ms
+Angular request time 12ms
+Click Action Drop down
+Angular request time 8ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: ACTION_Transfer_Service] displayed in 525ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: ACTION_Transfer_Service] displayed in 19ms
+Angular request time 30ms
+Click Action Transfer Service Drop down
+Angular request time 15ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Select] displayed in 41ms
+Angular request time 536ms
+Click Transfer Combo
+Angular request time 17ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Select_Option_3] displayed in 18ms
+Angular request time 23ms
+Click Transfer Option 3
+Angular request time 13ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Warning_Message] displayed in 17ms
+Strings Matched: Service Order Exist. TRANSFER = Service Order Exist. TRANSFER
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Warning_Drillback] displayed in 18ms
+String Verified  =cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Prod=229&Act=OPEN&Func=ServiceOrder&LocationID=LOC@0004&ServiceOrderNumber=SORD00000002740&CogsDrillback=1 Contains = SORD00000002740
+Date after Addition of two days Oct 11, 2019
+Submit Transfer Request
+TRANSFER
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: CLO_Service_Order_Input] displayed in 16ms
+Setting Text on Search Request with Text = TRANSFER
+Angular request time 7ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Date_Picker_Scheduled] displayed in 30ms
+Enter Schedule Date Date
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Date_Picker_Scheduled] displayed in 25ms
+Setting Text on DatePicket with Text = Oct 11, 2019
+Angular request time 575ms
+Strings Matched: Mr. VACANT VACANT = Mr. VACANT VACANT
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Search_Input] displayed in 28ms
+Setting Text on Customer Name Request with Text = Mr. VACANT VACANT
+Angular request time 9ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Search_Option_1] displayed in 741ms
+Angular request time 518ms
+Click XFER_Search_Option_1_Customer_Name
+Angular request time 7ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Description] displayed in 21ms
+Setting Text on Description Request with Text = Description for Stop Service
+Angular request time 16ms
+Click Submit
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Button_Action] displayed in 168ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Button_Action] displayed in 52ms
+Angular request time 134ms
+Click MoveInSubmit Button
+Angular request time 17ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Button_Done] displayed in 31ms
+Angular request time 118ms
+Click Done Button for Transfer
+Angular request time 15ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: ACTION_Refresh_Page] displayed in 27ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: ACTION_Refresh_Page] displayed in 24ms
+Angular request time 1021ms
+Click Refresh Button
+Angular request time 9ms
+Refresh Page
+Clicking Servic Order Link
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> css selector: #mat-tab-label-0-2 > div] displayed in 31ms
+Angular request time 8ms
+Click Service Order Link
+Angular request time 7ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: SOLV_Service_Order_1] displayed in 79ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: SOLV_Service_Order_1] displayed in 20ms
+Angular request time 8ms
+Click Clicking Service Order 1
+Angular request time 6ms
+Angular request time 5ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: ACTION_Refresh_Page] displayed in 17ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: ACTION_Refresh_Page] displayed in 17ms
+Angular request time 475ms
+Click Refresh Button
+Angular request time 9ms
+Refresh Page
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: SRCH_Input] displayed in 61ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: SRCH_Input] displayed in 16ms
+Setting Text on Search Text with Text = LOC@0002
+Angular request time 16ms
+Search Text
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: SRCH_Option_1_Customer_Name] displayed in 679ms
+Click DashBoard Search Result 
+Angular request time 595ms
+Click Action Dropdown
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: ACTION_Button] displayed in 23ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: ACTION_Button] displayed in 13ms
+Angular request time 105ms
+Click Action Drop down
+Angular request time 10ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: ACTION_Transfer_Service] displayed in 309ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: ACTION_Transfer_Service] displayed in 27ms
+Angular request time 20ms
+Click Action Transfer Service Drop down
+Angular request time 12ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Select] displayed in 31ms
+Angular request time 393ms
+Click Transfer Combo
+Angular request time 18ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Select_Option_1] displayed in 31ms
+Angular request time 13ms
+Click Transfer Option 1
+Angular request time 8ms
+TRANSFER
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: CLO_Service_Order_Input] displayed in 30ms
+Setting Text on Search Request with Text = Transfer
+Angular request time 11ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_MoveFrom_Date_Picker_Requested] displayed in 29ms
+10/09/2019 02:32
+Strings Matched: Mr. VACANT VACANT = Mr. VACANT VACANT
+TEST DEFAULT VALUE FOR CUSTOMER ===Mr. VACANT VACANT
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Search_Input] displayed in 20ms
+Setting Text on Customer Name Request with Text = Mr. VACANT VACANT
+Angular request time 113ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Search_Option_1_Customer_Name] displayed in 1220ms
+Angular request time 31ms
+Click XFER_Search_Option_1_Customer_Name
+Angular request time 19ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Description] displayed in 49ms
+Setting Text on Description Request with Text = AUTOMATION TEST
+Angular request time 35ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_MoveTo_Tab] displayed in 27ms
+Angular request time 37ms
+Click Move To Tab (Transfers)
+Angular request time 11ms
+Enter Schedule Date
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_MoveTo_Date_Picker_Scheduled] displayed in 903ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_MoveTo_Date_Picker_Scheduled] displayed in 22ms
+Setting Text on DatePicket with Text = Oct 10, 2019
+Angular request time 9ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: CLO_Service_Order_Input] displayed in 274ms
+Enter Request Name
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: CLO_Service_Order_Input] displayed in 538ms
+Setting Text on Service Order Input with Text = TRANSFER
+Angular request time 7ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Search_Input] displayed in 20ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Search_Input] displayed in 17ms
+Setting Text on XFERSearchInput with Text = LOC@0004
+Angular request time 614ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Search_Option_1_Customer_Name] displayed in 756ms
+Angular request time 205ms
+Click XFER_Search_Option_1_Customer_Name
+Angular request time 5ms
+Enter Request Description
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Description] displayed in 527ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Description] displayed in 28ms
+Setting Text on XFER Description with Text = Move in from location LOC@0004
+Angular request time 15ms
+Click Submit
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Button_Action] displayed in 25ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Button_Action] displayed in 17ms
+Angular request time 574ms
+Click MoveInSubmit Button
+Angular request time 12ms
+String Verified  =check
+Transfer initiated Contains = Transfer initiated
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: XFER_Button_Done] displayed in 297ms
+Angular request time 156ms
+Click Done Button for Transfer
+Angular request time 13ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: SRCH_Input] displayed in 16ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: SRCH_Input] displayed in 16ms
+Setting Text on Search Text with Text = LOC@0004
+Angular request time 8ms
+Search Text
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: SRCH_Option_1_Customer_Name] displayed in 330ms
+Click DashBoard Search Result 
+Angular request time 580ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: ACTION_Refresh_Page] displayed in 14ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: ACTION_Refresh_Page] displayed in 31ms
+Angular request time 460ms
+Click Refresh Button
+Angular request time 14ms
+Refresh Page
+Clicking Servic Order Link
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> css selector: #mat-tab-label-0-2 > div] displayed in 15ms
+Angular request time 9ms
+Click Service Order Link
+Angular request time 7ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: SOLV_Service_Order_1] displayed in 27ms
+Element [[ChromeDriver: chrome on XP (f0c6853febc7f8ed50c31fd0a2853cdb)] -> id: SOLV_Service_Order_1] displayed in 201ms
+Angular request time 7ms
+Click Clicking Service Order 1
+Angular request time 6ms
+Angular request time 6ms
+get Requested Customer Name
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 21320
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1570649487.966][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
+Oct 09, 2019 2:31:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="TestSearchAccount" classname="com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch" time="14.7"/>
+  <testcase name="VerifyBillingDetails_Budget" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_Budget" time="14.447"/>
+  <testcase name="VerifyBillingDetails" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails" time="12.716">
     <failure message="Actual Value &apos;$35.26&apos; not Matched the expected value &apos;$75.26&apos; " type="java.lang.AssertionError">java.lang.AssertionError: Actual Value '$35.26' not Matched the expected value '$75.26' 
 	at com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails.VerifyBillingDetails(TC0016_VerifyBillingDetails.java:59)
 </failure>
@@ -238,50 +550,50 @@ Test Completed...
 Launching Chrome
 Browser Maximised
 Test started- VerifyBillingDetails
-Angular Request Completed in 29ms
+Angular Request Completed in 13ms
 Log in to Nexus View
-Element [[ChromeDriver: chrome on XP (b9ef766efc1fae44ba7464212cd563a1)] -> id: username] displayed in 51ms
+Element [[ChromeDriver: chrome on XP (26401d4e32022d61ba9c85a6fadbe2c2)] -> id: username] displayed in 40ms
 Login Page title Verified
-Element [[ChromeDriver: chrome on XP (b9ef766efc1fae44ba7464212cd563a1)] -> id: username] displayed in 20ms
-Element [[ChromeDriver: chrome on XP (b9ef766efc1fae44ba7464212cd563a1)] -> id: password] displayed in 41ms
-Element [[ChromeDriver: chrome on XP (b9ef766efc1fae44ba7464212cd563a1)] -> id: kc-login] displayed in 42ms
-Angular Request Completed in 16ms
+Element [[ChromeDriver: chrome on XP (26401d4e32022d61ba9c85a6fadbe2c2)] -> id: username] displayed in 13ms
+Element [[ChromeDriver: chrome on XP (26401d4e32022d61ba9c85a6fadbe2c2)] -> id: password] displayed in 32ms
+Element [[ChromeDriver: chrome on XP (26401d4e32022d61ba9c85a6fadbe2c2)] -> id: kc-login] displayed in 30ms
+Angular Request Completed in 19ms
 User signed Admin
 Enter Text for Search =LOC@0001
-Element [[ChromeDriver: chrome on XP (b9ef766efc1fae44ba7464212cd563a1)] -> id: SRCH_Input] displayed in 40ms
-Angular request time 729ms
-Element [[ChromeDriver: chrome on XP (b9ef766efc1fae44ba7464212cd563a1)] -> id: SRCH_Option_1_Address_Line] displayed in 45ms
+Element [[ChromeDriver: chrome on XP (26401d4e32022d61ba9c85a6fadbe2c2)] -> id: SRCH_Input] displayed in 40ms
+Angular request time 1133ms
+Element [[ChromeDriver: chrome on XP (26401d4e32022d61ba9c85a6fadbe2c2)] -> id: SRCH_Option_1_Address_Line] displayed in 63ms
 Click Customer
-Angular request time 1406ms
-Angular request time 7ms
-Element [[ChromeDriver: chrome on XP (b9ef766efc1fae44ba7464212cd563a1)] -> id: 'LOC_Location_Id'] displayed in 31ms
-Angular request time 9ms
+Angular request time 1513ms
+Angular request time 8ms
+Element [[ChromeDriver: chrome on XP (26401d4e32022d61ba9c85a6fadbe2c2)] -> id: 'LOC_Location_Id'] displayed in 24ms
+Angular request time 8ms
 got Text CustomerLocId = LOC@0001
 Customer Location Id found LOC@0001
 Strings Matched: LOC@0001 = LOC@0001
-Angular request time 7ms
-Element 'BILL_Current_Balance' is displayed in 47ms
-Element 'BILL_Unposted_Balance' is displayed in 52ms
-Element 'BILL_Account_Balance' is displayed in 61ms
-Element 'BILL_Past_Due' is displayed in 59ms
-Element 'BILL_Installment_Budget' is displayed in 62ms
-Element 'BILL_Over_Short' is displayed in 53ms
+Angular request time 16ms
+Element 'BILL_Current_Balance' is displayed in 78ms
+Element 'BILL_Unposted_Balance' is displayed in 63ms
+Element 'BILL_Account_Balance' is displayed in 62ms
+Element 'BILL_Past_Due' is displayed in 57ms
+Element 'BILL_Installment_Budget' is displayed in 53ms
+Element 'BILL_Over_Short' is displayed in 62ms
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 36215
+    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 23462
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1570545460.711][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
-Oct 08, 2019 9:37:41 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1570649603.281][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
+Oct 09, 2019 2:33:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="VerifyAction_Transfers_Stack_TwoLocations_defaultCustomerLocationBased_NotScheduled" classname="com.NexusPortalAutomation.TestCases.Java.TC0038_VerifyAction_Transfers_Stack_TwoLocations_defaultCustomerLocationBased_NotScheduled" time="0.111"/>
-  <testcase name="TestSearchAccount" classname="com.NexusPortalAutomation.TestCases.Java.TC0009_1_VerifyAccountSearch_NoAccounts" time="11.949"/>
-  <testcase name="VerifyBillingDetailsAutoPay" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_AutoPay" time="11.161"/>
-  <testcase name="VerifyAction_Transfers_Stack_TwoLocations_NotScheduled" classname="com.NexusPortalAutomation.TestCases.Java.TC0037_VerifyAction_Transfers_Stack_TwoLocations_NotScheduled" time="57.869"/>
-  <testcase name="TestSearchbylocationID" classname="com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbylocationID" time="12.858"/>
-  <testcase name="TestContactLogs" classname="com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs" time="10.888"/>
-  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService" time="46.542">
+  <testcase name="VerifyAction_Transfers_Stack_TwoLocations_defaultCustomerLocationBased_NotScheduled" classname="com.NexusPortalAutomation.TestCases.Java.TC0038_VerifyAction_Transfers_Stack_TwoLocations_defaultCustomerLocationBased_NotScheduled" time="0.092"/>
+  <testcase name="TestSearchAccount" classname="com.NexusPortalAutomation.TestCases.Java.TC0009_1_VerifyAccountSearch_NoAccounts" time="13.535"/>
+  <testcase name="VerifyBillingDetailsAutoPay" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_1_VerifyBillingDetails_AutoPay" time="17.499"/>
+  <testcase name="VerifyAction_Transfers_Stack_TwoLocations_NotScheduled" classname="com.NexusPortalAutomation.TestCases.Java.TC0037_VerifyAction_Transfers_Stack_TwoLocations_NotScheduled" time="73.574"/>
+  <testcase name="TestSearchbylocationID" classname="com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbylocationID" time="14.866"/>
+  <testcase name="TestContactLogs" classname="com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs" time="12.589"/>
+  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService" time="53.956">
     <failure message="Object Not Found Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: XFER_Button_Done&apos; (tried for 20 second(s) with 500 milliseconds interval)" type="java.lang.AssertionError">java.lang.AssertionError: Object Not Found Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: XFER_Button_Done' (tried for 20 second(s) with 500 milliseconds interval)
 	at com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService.VerifyTransferActionServiceOrder(TC0036_VerifyAction_Transfers_StartService.java:80)
 </failure>
@@ -291,105 +603,105 @@ Test Completed...
 Launching Chrome
 Browser Maximised
 Test started- VerifyTransferActionServiceOrder
-SORD00000002707
-SORD00000002708
-SORD00000002710
-Deleting Records for ServiceOrder = SORD00000002710
+SORD00000002744
+SORD00000002745
+SORD00000002747
+Deleting Records for ServiceOrder = SORD00000002747
 0
 0
 0
 Deleting Records for Location =  LOC@0004
-SORD00000002709
-Deleting Records for ServiceOrder = SORD00000002709
+SORD00000002746
+Deleting Records for ServiceOrder = SORD00000002746
 0
 Deleting Records for Location =  LOC@0005
 Deleting Records for ServiceOrder = 
 Deleting Records for ServiceOrder = 
-Angular Request Completed in 41ms
+Angular Request Completed in 511ms
 Log in to Nexus View
-Element [[ChromeDriver: chrome on XP (3d76385505d781b56770665b936066c8)] -> id: username] displayed in 43ms
+Element [[ChromeDriver: chrome on XP (fb937a4aa6923343dfe8cfd994ceb8b3)] -> id: username] displayed in 34ms
 Login Page title Verified
-Element [[ChromeDriver: chrome on XP (3d76385505d781b56770665b936066c8)] -> id: username] displayed in 17ms
-Element [[ChromeDriver: chrome on XP (3d76385505d781b56770665b936066c8)] -> id: password] displayed in 31ms
-Element [[ChromeDriver: chrome on XP (3d76385505d781b56770665b936066c8)] -> id: kc-login] displayed in 37ms
-Angular Request Completed in 19ms
+Element [[ChromeDriver: chrome on XP (fb937a4aa6923343dfe8cfd994ceb8b3)] -> id: username] displayed in 12ms
+Element [[ChromeDriver: chrome on XP (fb937a4aa6923343dfe8cfd994ceb8b3)] -> id: password] displayed in 23ms
+Element [[ChromeDriver: chrome on XP (fb937a4aa6923343dfe8cfd994ceb8b3)] -> id: kc-login] displayed in 31ms
+Angular Request Completed in 31ms
 User signed Admin
 Enter Text for Search =LOC@0004
-Element [[ChromeDriver: chrome on XP (3d76385505d781b56770665b936066c8)] -> id: SRCH_Input] displayed in 39ms
-Angular request time 725ms
-Element [[ChromeDriver: chrome on XP (3d76385505d781b56770665b936066c8)] -> id: SRCH_Option_1_Address_Line] displayed in 68ms
+Element [[ChromeDriver: chrome on XP (fb937a4aa6923343dfe8cfd994ceb8b3)] -> id: SRCH_Input] displayed in 63ms
+Angular request time 630ms
+Element [[ChromeDriver: chrome on XP (fb937a4aa6923343dfe8cfd994ceb8b3)] -> id: SRCH_Option_1_Address_Line] displayed in 26ms
 Click Customer
-Angular request time 304ms
-Angular request time 9ms
-Element [[ChromeDriver: chrome on XP (3d76385505d781b56770665b936066c8)] -> id: 'LOC_Location_Id'] displayed in 30ms
-Angular request time 8ms
+Angular request time 442ms
+Angular request time 11ms
+Element [[ChromeDriver: chrome on XP (fb937a4aa6923343dfe8cfd994ceb8b3)] -> id: 'LOC_Location_Id'] displayed in 536ms
+Angular request time 7ms
 got Text CustomerLocId = LOC@0004
 Customer Location Id found LOC@0004
 Strings Matched: LOC@0004 = LOC@0004
 Click Action Dropdown
-Element [[ChromeDriver: chrome on XP (3d76385505d781b56770665b936066c8)] -> id: ACTION_Button] displayed in 57ms
-Element [[ChromeDriver: chrome on XP (3d76385505d781b56770665b936066c8)] -> id: ACTION_Button] displayed in 28ms
+Element [[ChromeDriver: chrome on XP (fb937a4aa6923343dfe8cfd994ceb8b3)] -> id: ACTION_Button] displayed in 31ms
+Element [[ChromeDriver: chrome on XP (fb937a4aa6923343dfe8cfd994ceb8b3)] -> id: ACTION_Button] displayed in 22ms
 Angular request time 14ms
 Click Action Drop down
-Angular request time 9ms
-Element [[ChromeDriver: chrome on XP (3d76385505d781b56770665b936066c8)] -> id: ACTION_Transfer_Service] displayed in 72ms
-Element [[ChromeDriver: chrome on XP (3d76385505d781b56770665b936066c8)] -> id: ACTION_Transfer_Service] displayed in 27ms
-Angular request time 30ms
+Angular request time 8ms
+Element [[ChromeDriver: chrome on XP (fb937a4aa6923343dfe8cfd994ceb8b3)] -> id: ACTION_Transfer_Service] displayed in 36ms
+Element [[ChromeDriver: chrome on XP (fb937a4aa6923343dfe8cfd994ceb8b3)] -> id: ACTION_Transfer_Service] displayed in 47ms
+Angular request time 56ms
 Click Action Transfer Service Drop down
 Angular request time 16ms
-Element [[ChromeDriver: chrome on XP (3d76385505d781b56770665b936066c8)] -> id: XFER_Select] displayed in 132ms
-Angular request time 16ms
+Element [[ChromeDriver: chrome on XP (fb937a4aa6923343dfe8cfd994ceb8b3)] -> id: XFER_Select] displayed in 45ms
+Angular request time 13ms
 Click Transfer Combo
-Angular request time 11ms
-Element [[ChromeDriver: chrome on XP (3d76385505d781b56770665b936066c8)] -> id: XFER_Select_Option_2] displayed in 46ms
-Angular request time 11ms
+Angular request time 12ms
+Element [[ChromeDriver: chrome on XP (fb937a4aa6923343dfe8cfd994ceb8b3)] -> id: XFER_Select_Option_2] displayed in 41ms
+Angular request time 24ms
 Click Transfer Option 2
-Angular request time 5ms
-Element [[ChromeDriver: chrome on XP (3d76385505d781b56770665b936066c8)] -> id: XFER_Date_Picker_Requested] displayed in 37ms
-Entered Request Date = 10/08/2019 09:40
+Angular request time 9ms
+Element [[ChromeDriver: chrome on XP (fb937a4aa6923343dfe8cfd994ceb8b3)] -> id: XFER_Date_Picker_Requested] displayed in 32ms
+Entered Request Date = 10/09/2019 02:36
 Submit Transfer Request
 TRANSFER
-Element [[ChromeDriver: chrome on XP (3d76385505d781b56770665b936066c8)] -> id: CLO_Service_Order_Input] displayed in 64ms
+Element [[ChromeDriver: chrome on XP (fb937a4aa6923343dfe8cfd994ceb8b3)] -> id: CLO_Service_Order_Input] displayed in 39ms
 Setting Text on Search Request with Text = TRANSFER
-Angular request time 13ms
-Element [[ChromeDriver: chrome on XP (3d76385505d781b56770665b936066c8)] -> id: XFER_Date_Picker_Scheduled] displayed in 44ms
+Angular request time 8ms
+Element [[ChromeDriver: chrome on XP (fb937a4aa6923343dfe8cfd994ceb8b3)] -> id: XFER_Date_Picker_Scheduled] displayed in 34ms
 Enter Schedule Date Date
-Element [[ChromeDriver: chrome on XP (3d76385505d781b56770665b936066c8)] -> id: XFER_Date_Picker_Scheduled] displayed in 57ms
+Element [[ChromeDriver: chrome on XP (fb937a4aa6923343dfe8cfd994ceb8b3)] -> id: XFER_Date_Picker_Scheduled] displayed in 20ms
 Setting Text on DatePicket with Text = 
-Angular request time 422ms
+Angular request time 814ms
 Strings Matched: Mr. VACANT VACANT = Mr. VACANT VACANT
-Element [[ChromeDriver: chrome on XP (3d76385505d781b56770665b936066c8)] -> id: XFER_Search_Input] displayed in 41ms
+Element [[ChromeDriver: chrome on XP (fb937a4aa6923343dfe8cfd994ceb8b3)] -> id: XFER_Search_Input] displayed in 531ms
 Setting Text on Customer Name Request with Text = MoveinCus
-Angular request time 9ms
-Element [[ChromeDriver: chrome on XP (3d76385505d781b56770665b936066c8)] -> id: XFER_Search_Option_1] displayed in 603ms
-Angular request time 40ms
+Angular request time 8ms
+Element [[ChromeDriver: chrome on XP (fb937a4aa6923343dfe8cfd994ceb8b3)] -> id: XFER_Search_Option_1] displayed in 946ms
+Angular request time 26ms
 Click XFER_Search_Option_1_Customer_Name
-Angular request time 9ms
-Element [[ChromeDriver: chrome on XP (3d76385505d781b56770665b936066c8)] -> id: XFER_Description] displayed in 46ms
+Angular request time 8ms
+Element [[ChromeDriver: chrome on XP (fb937a4aa6923343dfe8cfd994ceb8b3)] -> id: XFER_Description] displayed in 30ms
 Setting Text on Description Request with Text = Description for Start Service
 Angular request time 8ms
 Click Submit
-Element [[ChromeDriver: chrome on XP (3d76385505d781b56770665b936066c8)] -> id: XFER_Button_Action] displayed in 42ms
-Element [[ChromeDriver: chrome on XP (3d76385505d781b56770665b936066c8)] -> id: XFER_Button_Action] displayed in 28ms
-Angular request time 7ms
+Element [[ChromeDriver: chrome on XP (fb937a4aa6923343dfe8cfd994ceb8b3)] -> id: XFER_Button_Action] displayed in 529ms
+Element [[ChromeDriver: chrome on XP (fb937a4aa6923343dfe8cfd994ceb8b3)] -> id: XFER_Button_Action] displayed in 22ms
+Angular request time 608ms
 Click MoveInSubmit Button
-Angular request time 10ms
+Angular request time 6ms
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 39444
+    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 43778
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1570545603.209][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
-Oct 08, 2019 9:40:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1570649780.330][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
+Oct 09, 2019 2:36:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="TestSecondayContact" classname="com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact" time="10.747"/>
-  <testcase name="VerifyAction_Transfers_StopService" classname="com.NexusPortalAutomation.TestCases.Java.TC0035_VerifyAction_Transfers_StopService" time="44.617"/>
-  <testcase name="TestContactEdit" classname="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit" time="18.961"/>
-  <testcase name="VerifyAction_Transfers_Stack_TwoLocations" classname="com.NexusPortalAutomation.TestCases.Java.TC0034_VerifyAction_Transfers_Stack_TwoLocations" time="59.527"/>
-  <testcase name="TestCreditStatus" classname="com.NexusPortalAutomation.TestCases.Java.TC0012_verifyCreditStatusStatus" time="19.07"/>
-  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled" time="47.976"/>
-  <testcase name="VerifyAction_Transfers_Stack_StartService_Scheduled" classname="com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled" time="49.392">
+  <testcase name="TestSecondayContact" classname="com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact" time="11.147"/>
+  <testcase name="VerifyAction_Transfers_StopService" classname="com.NexusPortalAutomation.TestCases.Java.TC0035_VerifyAction_Transfers_StopService" time="61.408"/>
+  <testcase name="TestContactEdit" classname="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit" time="20.966"/>
+  <testcase name="VerifyAction_Transfers_Stack_TwoLocations" classname="com.NexusPortalAutomation.TestCases.Java.TC0034_VerifyAction_Transfers_Stack_TwoLocations" time="77.349"/>
+  <testcase name="TestCreditStatus" classname="com.NexusPortalAutomation.TestCases.Java.TC0012_verifyCreditStatusStatus" time="25.796"/>
+  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled" time="60.475"/>
+  <testcase name="VerifyAction_Transfers_Stack_StartService_Scheduled" classname="com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled" time="51.106">
     <failure message="Object Not Found Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: XFER_Button_Done&apos; (tried for 20 second(s) with 500 milliseconds interval)" type="java.lang.AssertionError">java.lang.AssertionError: Object Not Found Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: XFER_Button_Done' (tried for 20 second(s) with 500 milliseconds interval)
 	at com.NexusPortalAutomation.TestCases.Java.TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled.VerifyAction_Transfers_Stack_StartService_Scheduled(TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled.java:81)
 </failure>
@@ -399,10 +711,10 @@ Test Completed...
 Launching Chrome
 Browser Maximised
 Test started- VerifyAction_Transfers_Stack_StartService_Scheduled
-SORD00000002718
-SORD00000002719
-SORD00000002720
-Deleting Records for ServiceOrder = SORD00000002720
+SORD00000002755
+SORD00000002756
+SORD00000002757
+Deleting Records for ServiceOrder = SORD00000002757
 0
 0
 0
@@ -410,85 +722,85 @@ Deleting Records for Location =  LOC@0004
 Deleting Records for ServiceOrder = 
 Deleting Records for ServiceOrder = 
 Deleting Records for ServiceOrder = 
-Angular Request Completed in 34ms
+Angular Request Completed in 33ms
 Log in to Nexus View
-Element [[ChromeDriver: chrome on XP (178ba5d4cd65d796db955d6d179efe7c)] -> id: username] displayed in 48ms
+Element [[ChromeDriver: chrome on XP (d940f58e516b9cd8bc161e6b3673733a)] -> id: username] displayed in 33ms
 Login Page title Verified
-Element [[ChromeDriver: chrome on XP (178ba5d4cd65d796db955d6d179efe7c)] -> id: username] displayed in 18ms
-Element [[ChromeDriver: chrome on XP (178ba5d4cd65d796db955d6d179efe7c)] -> id: password] displayed in 38ms
-Element [[ChromeDriver: chrome on XP (178ba5d4cd65d796db955d6d179efe7c)] -> id: kc-login] displayed in 30ms
-Angular Request Completed in 20ms
+Element [[ChromeDriver: chrome on XP (d940f58e516b9cd8bc161e6b3673733a)] -> id: username] displayed in 11ms
+Element [[ChromeDriver: chrome on XP (d940f58e516b9cd8bc161e6b3673733a)] -> id: password] displayed in 29ms
+Element [[ChromeDriver: chrome on XP (d940f58e516b9cd8bc161e6b3673733a)] -> id: kc-login] displayed in 92ms
+Angular Request Completed in 27ms
 User signed Admin
 Enter Text for Search =LOC@0004
-Element [[ChromeDriver: chrome on XP (178ba5d4cd65d796db955d6d179efe7c)] -> id: SRCH_Input] displayed in 50ms
-Angular request time 732ms
-Element [[ChromeDriver: chrome on XP (178ba5d4cd65d796db955d6d179efe7c)] -> id: SRCH_Option_1_Address_Line] displayed in 51ms
+Element [[ChromeDriver: chrome on XP (d940f58e516b9cd8bc161e6b3673733a)] -> id: SRCH_Input] displayed in 54ms
+Angular request time 694ms
+Element [[ChromeDriver: chrome on XP (d940f58e516b9cd8bc161e6b3673733a)] -> id: SRCH_Option_1_Address_Line] displayed in 15ms
 Click Customer
-Angular request time 402ms
-Angular request time 18ms
-Element [[ChromeDriver: chrome on XP (178ba5d4cd65d796db955d6d179efe7c)] -> id: 'LOC_Location_Id'] displayed in 51ms
-Angular request time 9ms
+Angular request time 313ms
+Angular request time 8ms
+Element [[ChromeDriver: chrome on XP (d940f58e516b9cd8bc161e6b3673733a)] -> id: 'LOC_Location_Id'] displayed in 21ms
+Angular request time 6ms
 got Text CustomerLocId = LOC@0004
 Customer Location Id found LOC@0004
 Strings Matched: LOC@0004 = LOC@0004
 Click Action Dropdown
-Element [[ChromeDriver: chrome on XP (178ba5d4cd65d796db955d6d179efe7c)] -> id: ACTION_Button] displayed in 30ms
-Element [[ChromeDriver: chrome on XP (178ba5d4cd65d796db955d6d179efe7c)] -> id: ACTION_Button] displayed in 18ms
-Angular request time 9ms
-Click Action Drop down
-Angular request time 26ms
-Element [[ChromeDriver: chrome on XP (178ba5d4cd65d796db955d6d179efe7c)] -> id: ACTION_Transfer_Service] displayed in 125ms
-Element [[ChromeDriver: chrome on XP (178ba5d4cd65d796db955d6d179efe7c)] -> id: ACTION_Transfer_Service] displayed in 28ms
-Angular request time 36ms
-Click Action Transfer Service Drop down
-Angular request time 32ms
-Element [[ChromeDriver: chrome on XP (178ba5d4cd65d796db955d6d179efe7c)] -> id: XFER_Select] displayed in 148ms
-Angular request time 12ms
-Click Transfer Combo
+Element [[ChromeDriver: chrome on XP (d940f58e516b9cd8bc161e6b3673733a)] -> id: ACTION_Button] displayed in 25ms
+Element [[ChromeDriver: chrome on XP (d940f58e516b9cd8bc161e6b3673733a)] -> id: ACTION_Button] displayed in 10ms
 Angular request time 10ms
-Element [[ChromeDriver: chrome on XP (178ba5d4cd65d796db955d6d179efe7c)] -> id: XFER_Select_Option_2] displayed in 47ms
-Angular request time 15ms
+Click Action Drop down
+Angular request time 12ms
+Element [[ChromeDriver: chrome on XP (d940f58e516b9cd8bc161e6b3673733a)] -> id: ACTION_Transfer_Service] displayed in 33ms
+Element [[ChromeDriver: chrome on XP (d940f58e516b9cd8bc161e6b3673733a)] -> id: ACTION_Transfer_Service] displayed in 19ms
+Angular request time 544ms
+Click Action Transfer Service Drop down
+Angular request time 14ms
+Element [[ChromeDriver: chrome on XP (d940f58e516b9cd8bc161e6b3673733a)] -> id: XFER_Select] displayed in 35ms
+Angular request time 10ms
+Click Transfer Combo
+Angular request time 9ms
+Element [[ChromeDriver: chrome on XP (d940f58e516b9cd8bc161e6b3673733a)] -> id: XFER_Select_Option_2] displayed in 38ms
+Angular request time 10ms
 Click Transfer Option 2
 Angular request time 9ms
-Element [[ChromeDriver: chrome on XP (178ba5d4cd65d796db955d6d179efe7c)] -> id: XFER_Date_Picker_Requested] displayed in 45ms
-Entered Request Date = 10/08/2019 09:44
+Element [[ChromeDriver: chrome on XP (d940f58e516b9cd8bc161e6b3673733a)] -> id: XFER_Date_Picker_Requested] displayed in 25ms
+Entered Request Date = 10/09/2019 02:42
 Submit Transfer Request
 TRANSFER
-Element [[ChromeDriver: chrome on XP (178ba5d4cd65d796db955d6d179efe7c)] -> id: CLO_Service_Order_Input] displayed in 51ms
+Element [[ChromeDriver: chrome on XP (d940f58e516b9cd8bc161e6b3673733a)] -> id: CLO_Service_Order_Input] displayed in 84ms
 Setting Text on Search Request with Text = TRANSFER
-Angular request time 6ms
-Element [[ChromeDriver: chrome on XP (178ba5d4cd65d796db955d6d179efe7c)] -> id: XFER_Date_Picker_Scheduled] displayed in 41ms
-Enter Schedule Date Date
-Element [[ChromeDriver: chrome on XP (178ba5d4cd65d796db955d6d179efe7c)] -> id: XFER_Date_Picker_Scheduled] displayed in 58ms
-Setting Text on DatePicket with Text = 10/08/2019 09:44
-Angular request time 420ms
-Strings Matched: Mr. VACANT VACANT = Mr. VACANT VACANT
-Element [[ChromeDriver: chrome on XP (178ba5d4cd65d796db955d6d179efe7c)] -> id: XFER_Search_Input] displayed in 40ms
-Setting Text on Customer Name Request with Text = MoveinCus
 Angular request time 9ms
-Element [[ChromeDriver: chrome on XP (178ba5d4cd65d796db955d6d179efe7c)] -> id: XFER_Search_Option_1] displayed in 827ms
-Angular request time 81ms
+Element [[ChromeDriver: chrome on XP (d940f58e516b9cd8bc161e6b3673733a)] -> id: XFER_Date_Picker_Scheduled] displayed in 31ms
+Enter Schedule Date Date
+Element [[ChromeDriver: chrome on XP (d940f58e516b9cd8bc161e6b3673733a)] -> id: XFER_Date_Picker_Scheduled] displayed in 19ms
+Setting Text on DatePicket with Text = 10/09/2019 02:42
+Angular request time 1045ms
+Strings Matched: Mr. VACANT VACANT = Mr. VACANT VACANT
+Element [[ChromeDriver: chrome on XP (d940f58e516b9cd8bc161e6b3673733a)] -> id: XFER_Search_Input] displayed in 17ms
+Setting Text on Customer Name Request with Text = MoveinCus
+Angular request time 8ms
+Element [[ChromeDriver: chrome on XP (d940f58e516b9cd8bc161e6b3673733a)] -> id: XFER_Search_Option_1] displayed in 645ms
+Angular request time 15ms
 Click XFER_Search_Option_1_Customer_Name
-Angular request time 29ms
-Element [[ChromeDriver: chrome on XP (178ba5d4cd65d796db955d6d179efe7c)] -> id: XFER_Description] displayed in 161ms
+Angular request time 8ms
+Element [[ChromeDriver: chrome on XP (d940f58e516b9cd8bc161e6b3673733a)] -> id: XFER_Description] displayed in 24ms
 Setting Text on Description Request with Text = Description for Start Service
-Angular request time 21ms
+Angular request time 23ms
 Click Submit
-Element [[ChromeDriver: chrome on XP (178ba5d4cd65d796db955d6d179efe7c)] -> id: XFER_Button_Action] displayed in 170ms
-Element [[ChromeDriver: chrome on XP (178ba5d4cd65d796db955d6d179efe7c)] -> id: XFER_Button_Action] displayed in 122ms
-Angular request time 147ms
+Element [[ChromeDriver: chrome on XP (d940f58e516b9cd8bc161e6b3673733a)] -> id: XFER_Button_Action] displayed in 28ms
+Element [[ChromeDriver: chrome on XP (d940f58e516b9cd8bc161e6b3673733a)] -> id: XFER_Button_Action] displayed in 26ms
+Angular request time 11ms
 Click MoveInSubmit Button
-Angular request time 28ms
+Angular request time 7ms
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 22909
+    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 31066
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1570545878.022][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
-Oct 08, 2019 9:44:39 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1570650123.930][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
+Oct 09, 2019 2:42:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0030_VerifyAction_Transfers_StartService_Scheduled" time="53.447">
+  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0030_VerifyAction_Transfers_StartService_Scheduled" time="53.872">
     <failure message="Object Not Found Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: XFER_Button_Done&apos; (tried for 20 second(s) with 500 milliseconds interval)" type="java.lang.AssertionError">java.lang.AssertionError: Object Not Found Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: XFER_Button_Done' (tried for 20 second(s) with 500 milliseconds interval)
 	at com.NexusPortalAutomation.TestCases.Java.TC0030_VerifyAction_Transfers_StartService_Scheduled.VerifyTransferActionServiceOrder(TC0030_VerifyAction_Transfers_StartService_Scheduled.java:78)
 </failure>
@@ -499,110 +811,110 @@ Launching Chrome
 Browser Maximised
 Test started- VerifyTransferActionServiceOrder
 Deleting Records for ServiceOrder = 
-Angular Request Completed in 54ms
+Angular Request Completed in 14ms
 Log in to Nexus View
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: username] displayed in 44ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: username] displayed in 29ms
 Login Page title Verified
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: username] displayed in 15ms
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: password] displayed in 31ms
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: kc-login] displayed in 34ms
-Angular Request Completed in 19ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: username] displayed in 11ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: password] displayed in 31ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: kc-login] displayed in 24ms
+Angular Request Completed in 16ms
 User signed Admin
 Enter Text for Search =LOC@0004
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: SRCH_Input] displayed in 53ms
-Angular request time 730ms
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: SRCH_Option_1_Address_Line] displayed in 89ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: SRCH_Input] displayed in 31ms
+Angular request time 628ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: SRCH_Option_1_Address_Line] displayed in 34ms
 Click Customer
-Angular request time 589ms
-Angular request time 10ms
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: 'LOC_Location_Id'] displayed in 42ms
-Angular request time 8ms
+Angular request time 856ms
+Angular request time 22ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: 'LOC_Location_Id'] displayed in 16ms
+Angular request time 15ms
 got Text CustomerLocId = LOC@0004
 Customer Location Id found LOC@0004
 Strings Matched: LOC@0004 = LOC@0004
 Click Action Dropdown
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: ACTION_Button] displayed in 46ms
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: ACTION_Button] displayed in 25ms
-Angular request time 13ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: ACTION_Button] displayed in 22ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: ACTION_Button] displayed in 15ms
+Angular request time 8ms
 Click Action Drop down
-Angular request time 24ms
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: ACTION_Transfer_Service] displayed in 263ms
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: ACTION_Transfer_Service] displayed in 123ms
-Angular request time 287ms
+Angular request time 11ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: ACTION_Transfer_Service] displayed in 29ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: ACTION_Transfer_Service] displayed in 32ms
+Angular request time 36ms
 Click Action Transfer Service Drop down
-Angular request time 69ms
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: XFER_Select] displayed in 358ms
-Angular request time 120ms
+Angular request time 14ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: XFER_Select] displayed in 47ms
+Angular request time 12ms
 Click Transfer Combo
-Angular request time 61ms
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: XFER_Select_Option_2] displayed in 178ms
-Angular request time 20ms
+Angular request time 8ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: XFER_Select_Option_2] displayed in 40ms
+Angular request time 14ms
 Click Transfer Option 2
-Angular request time 10ms
+Angular request time 12ms
 TRANSFER
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: CLO_Service_Order_Input] displayed in 49ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: CLO_Service_Order_Input] displayed in 36ms
 Setting Text on Search Request with Text = TRANSFER
-Angular request time 10ms
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: XFER_Date_Picker_Requested] displayed in 55ms
-Entered Request Date = 10/08/2019 09:45
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: XFER_Date_Picker_Scheduled] displayed in 47ms
+Angular request time 16ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: XFER_Date_Picker_Requested] displayed in 436ms
+Entered Request Date = 10/09/2019 02:43
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: XFER_Date_Picker_Scheduled] displayed in 42ms
 Enter Schedule Date Date
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: XFER_Date_Picker_Scheduled] displayed in 40ms
-Setting Text on DatePicket with Text = 10/08/2019 09:45
-Angular request time 319ms
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: XFER_Date_Picker_Requested] displayed in 46ms
-Entered Request Date = 10/08/2019 09:45
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: XFER_Date_Picker_Scheduled] displayed in 21ms
+Setting Text on DatePicket with Text = 10/09/2019 02:43
+Angular request time 7ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: XFER_Date_Picker_Requested] displayed in 23ms
+Entered Request Date = 10/09/2019 02:43
 Submit Transfer Request
 TRANSFER
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: CLO_Service_Order_Input] displayed in 33ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: CLO_Service_Order_Input] displayed in 26ms
 Setting Text on Search Request with Text = TRANSFER
-Angular request time 6ms
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: XFER_Date_Picker_Scheduled] displayed in 36ms
+Angular request time 11ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: XFER_Date_Picker_Scheduled] displayed in 569ms
 Enter Schedule Date Date
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: XFER_Date_Picker_Scheduled] displayed in 33ms
-Setting Text on DatePicket with Text = 10/08/2019 09:45
-Angular request time 520ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: XFER_Date_Picker_Scheduled] displayed in 52ms
+Setting Text on DatePicket with Text = 10/09/2019 02:43
+Angular request time 187ms
 Strings Matched: Mr. VACANT VACANT = Mr. VACANT VACANT
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: XFER_Search_Input] displayed in 45ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: XFER_Search_Input] displayed in 528ms
 Setting Text on Customer Name Request with Text = Mr. VACANT VACANT
-Angular request time 15ms
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: XFER_Search_Option_1] displayed in 1014ms
-Angular request time 62ms
+Angular request time 7ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: XFER_Search_Option_1] displayed in 599ms
+Angular request time 9ms
 Click XFER_Search_Option_1_Customer_Name
-Angular request time 26ms
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: XFER_Description] displayed in 155ms
+Angular request time 7ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: XFER_Description] displayed in 167ms
 Setting Text on Description Request with Text = Description for Start Service
-Angular request time 25ms
+Angular request time 17ms
 Click Submit
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: XFER_Button_Action] displayed in 51ms
-Element [[ChromeDriver: chrome on XP (3f5502ece6ed60cfe11e3bb8e8440a06)] -> id: XFER_Button_Action] displayed in 40ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: XFER_Button_Action] displayed in 24ms
+Element [[ChromeDriver: chrome on XP (30074dcc9d85440602a47dc6865e7f0b)] -> id: XFER_Button_Action] displayed in 17ms
 Angular request time 11ms
 Click MoveInSubmit Button
 Angular request time 9ms
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 47960
+    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 18844
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1570545931.421][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
-Oct 08, 2019 9:45:32 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1570650180.106][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
+Oct 09, 2019 2:43:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0031_VerifyAction_Transfers_StopService_Scheduled" time="23.838"/>
-  <testcase name="VerifyActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0029_VerifyAction_Transfers_Scheduled" time="36.392"/>
-  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0030_1_VerifyAction_Transfers_StartService_Scheduled_SameCustomerMovein" time="19.322"/>
-  <testcase name="VerifySignInbyID" classname="com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID" time="11.104"/>
-  <testcase name="VerifyActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0022_VerifyAction_ServiceOrder" time="19.204"/>
-  <testcase name="VerifyActionServiceOrder_Transfers_NotSchedule" classname="com.NexusPortalAutomation.TestCases.Java.TC0025_1_VerifyAction_Transfers_Scheduled_CurrentMoveinCustomer" time="29.663">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;requiered-field text ng-star-inserted&apos;]&quot;}&#10;  (Session info: chrome=77.0.3865.90)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;RND-BASE-A&apos;, ip: &apos;10.0.2.15&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64472}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 744bdf3360276d0fa0d7e4e66f352faa&#10;*** Element info: {Using=xpath, value=//div[@class=&apos;requiered-field text ng-star-inserted&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0031_VerifyAction_Transfers_StopService_Scheduled" time="28.814"/>
+  <testcase name="VerifyActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0029_VerifyAction_Transfers_Scheduled" time="39.06"/>
+  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0030_1_VerifyAction_Transfers_StartService_Scheduled_SameCustomerMovein" time="22.081"/>
+  <testcase name="VerifySignInbyID" classname="com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID" time="13.414"/>
+  <testcase name="VerifyActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0022_VerifyAction_ServiceOrder" time="19.682"/>
+  <testcase name="VerifyActionServiceOrder_Transfers_NotSchedule" classname="com.NexusPortalAutomation.TestCases.Java.TC0025_1_VerifyAction_Transfers_Scheduled_CurrentMoveinCustomer" time="34.769">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;requiered-field text ng-star-inserted&apos;]&quot;}&#10;  (Session info: chrome=77.0.3865.90)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;RND-BASE-A&apos;, ip: &apos;10.0.2.15&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59750}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 61d0af8eb8f733fed67f85f77cd26fa0&#10;*** Element info: {Using=xpath, value=//div[@class=&apos;requiered-field text ng-star-inserted&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='requiered-field text ng-star-inserted']"}
   (Session info: chrome=77.0.3865.90)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'RND-BASE-A', ip: '10.0.2.15', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64472}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 744bdf3360276d0fa0d7e4e66f352faa
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59750}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 61d0af8eb8f733fed67f85f77cd26fa0
 *** Element info: {Using=xpath, value=//div[@class='requiered-field text ng-star-inserted']}
 	at com.NexusPortalAutomation.TestCases.Java.TC0025_1_VerifyAction_Transfers_Scheduled_CurrentMoveinCustomer.VerifyActionServiceOrder_Transfers_NotSchedule(TC0025_1_VerifyAction_Transfers_Scheduled_CurrentMoveinCustomer.java:91)
 </failure>
@@ -613,216 +925,388 @@ Launching Chrome
 Browser Maximised
 Test started- VerifyActionServiceOrder_Transfers_NotSchedule
 Deleting Records for ServiceOrder = 
-SORD00000002723
-Deleting Records for ServiceOrder = SORD00000002723
+SORD00000002760
+Deleting Records for ServiceOrder = SORD00000002760
 0
 Deleting Records for Location =  LOC@0005
-Angular Request Completed in 62ms
+Angular Request Completed in 41ms
 Log in to Nexus View
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: username] displayed in 46ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: username] displayed in 531ms
 Login Page title Verified
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: username] displayed in 19ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: password] displayed in 33ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: kc-login] displayed in 41ms
-Angular Request Completed in 20ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: username] displayed in 20ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: password] displayed in 40ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: kc-login] displayed in 29ms
+Angular Request Completed in 23ms
 User signed Admin
 Enter Text for Search =LOC@0004
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: SRCH_Input] displayed in 42ms
-Angular request time 731ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: SRCH_Option_1_Address_Line] displayed in 54ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: SRCH_Input] displayed in 33ms
+Angular request time 1137ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: SRCH_Option_1_Address_Line] displayed in 35ms
 Click Customer
-Angular request time 374ms
-Angular request time 12ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: 'LOC_Location_Id'] displayed in 32ms
+Angular request time 527ms
 Angular request time 7ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: 'LOC_Location_Id'] displayed in 19ms
+Angular request time 6ms
 got Text CustomerLocId = LOC@0004
 Customer Location Id found LOC@0004
 Strings Matched: LOC@0004 = LOC@0004
 Click Action Dropdown
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: ACTION_Button] displayed in 45ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: ACTION_Button] displayed in 20ms
-Angular request time 11ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: ACTION_Button] displayed in 24ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: ACTION_Button] displayed in 11ms
+Angular request time 9ms
 Click Action Drop down
-Angular request time 20ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: ACTION_Transfer_Service] displayed in 61ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: ACTION_Transfer_Service] displayed in 54ms
-Angular request time 75ms
+Angular request time 12ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: ACTION_Transfer_Service] displayed in 28ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: ACTION_Transfer_Service] displayed in 31ms
+Angular request time 532ms
 Click Action Transfer Service Drop down
-Angular request time 41ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: XFER_Select] displayed in 116ms
-Angular request time 17ms
-Click Transfer Combo
-Angular request time 8ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: XFER_Select_Option_1] displayed in 55ms
-Angular request time 14ms
-Click Transfer Option 1
-Angular request time 10ms
-TRANSFER
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: CLO_Service_Order_Input] displayed in 66ms
-Setting Text on Search Request with Text = Transfer
 Angular request time 11ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: XFER_MoveFrom_Date_Picker_Requested] displayed in 53ms
-10/08/2019 09:48
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: XFER_Select] displayed in 37ms
+Angular request time 15ms
+Click Transfer Combo
+Angular request time 9ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: XFER_Select_Option_1] displayed in 30ms
+Angular request time 9ms
+Click Transfer Option 1
+Angular request time 7ms
+TRANSFER
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: CLO_Service_Order_Input] displayed in 38ms
+Setting Text on Search Request with Text = Transfer
+Angular request time 15ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: XFER_MoveFrom_Date_Picker_Requested] displayed in 24ms
+10/09/2019 02:46
 Enter Schedule Date
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: XFER_MoveFrom_Date_Picker_Scheduled] displayed in 58ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: XFER_MoveFrom_Date_Picker_Scheduled] displayed in 77ms
-Setting Text on DatePicket with Text = 10/08/2019 09:48
-Angular request time 319ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: XFER_MoveFrom_Date_Picker_Scheduled] displayed in 25ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: XFER_MoveFrom_Date_Picker_Scheduled] displayed in 33ms
+Setting Text on DatePicket with Text = 10/09/2019 02:46
+Angular request time 7ms
 Strings Matched: Mr. VACANT VACANT = Mr. VACANT VACANT
 TEST DEFAULT VALUE FOR CUSTOMER ===Mr. VACANT VACANT
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: XFER_Search_Input] displayed in 39ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: XFER_Search_Input] displayed in 21ms
 Setting Text on Customer Name Request with Text = Mr. Automation Mate
-Angular request time 9ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: XFER_Search_Option_1_Customer_Name] displayed in 606ms
-Angular request time 15ms
+Angular request time 6ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: XFER_Search_Option_1_Customer_Name] displayed in 584ms
+Angular request time 13ms
 Click XFER_Search_Option_1_Customer_Name
 Angular request time 8ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: XFER_Description] displayed in 47ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: XFER_Description] displayed in 32ms
 Setting Text on Description Request with Text = AUTOMATION TEST
 Angular request time 10ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: XFER_MoveTo_Tab] displayed in 43ms
-Angular request time 13ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: XFER_MoveTo_Tab] displayed in 28ms
+Angular request time 9ms
 Click Move To Tab (Transfers)
-Angular request time 8ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: XFER_MoveTo_Date_Picker_Requested] displayed in 124ms
-10/08/2019 09:48
+Angular request time 7ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: XFER_MoveTo_Date_Picker_Requested] displayed in 29ms
+10/09/2019 02:46
 Enter Request Date
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: XFER_MoveTo_Date_Picker_Requested] displayed in 46ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: XFER_MoveTo_Date_Picker_Requested] displayed in 47ms
-Setting Text on DatePicket with Text = 10/08/2019 09:48
-Angular request time 14ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: CLO_Service_Order_Input] displayed in 41ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: XFER_MoveTo_Date_Picker_Requested] displayed in 22ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: XFER_MoveTo_Date_Picker_Requested] displayed in 21ms
+Setting Text on DatePicket with Text = 10/09/2019 02:46
+Angular request time 8ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: CLO_Service_Order_Input] displayed in 474ms
 Enter Request Name
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: CLO_Service_Order_Input] displayed in 37ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: CLO_Service_Order_Input] displayed in 21ms
 Setting Text on Service Order Input with Text = TRANSFER
 Angular request time 6ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: XFER_Search_Input] displayed in 38ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: XFER_Search_Input] displayed in 33ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: XFER_Search_Input] displayed in 21ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: XFER_Search_Input] displayed in 135ms
 Setting Text on XFERSearchInput with Text = LOC@0005
-Angular request time 523ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: XFER_Search_Option_1_Customer_Name] displayed in 656ms
-Angular request time 31ms
+Angular request time 372ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: XFER_Search_Option_1_Customer_Name] displayed in 634ms
+Angular request time 118ms
 Click XFER_Search_Option_1_Customer_Name
-Angular request time 12ms
+Angular request time 10ms
 Enter Request Description
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: XFER_Description] displayed in 45ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: XFER_Description] displayed in 35ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: XFER_Description] displayed in 20ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: XFER_Description] displayed in 31ms
 Setting Text on XFER Description with Text = Move in from location
-Angular request time 12ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: XFER_Search_Input] displayed in 19ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: XFER_Search_Input] displayed in 20ms
+Angular request time 126ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: XFER_Search_Input] displayed in 18ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: XFER_Search_Input] displayed in 11ms
 Setting Text on Customer Name Request with Text = Mr. Automation Mate
-Angular request time 8ms
-Click Submit
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: XFER_Button_Action] displayed in 44ms
-Element [[ChromeDriver: chrome on XP (744bdf3360276d0fa0d7e4e66f352faa)] -> id: XFER_Button_Action] displayed in 32ms
-Angular request time 117ms
-Click MoveInSubmit Button
 Angular request time 7ms
+Click Submit
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: XFER_Button_Action] displayed in 24ms
+Element [[ChromeDriver: chrome on XP (61d0af8eb8f733fed67f85f77cd26fa0)] -> id: XFER_Button_Action] displayed in 16ms
+Angular request time 127ms
+Click MoveInSubmit Button
+Angular request time 15ms
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 45253
+    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 3558
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1570546117.524][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
-Oct 08, 2019 9:48:38 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1570650383.987][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
+Oct 09, 2019 2:46:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="VerifyRecentWidget" classname="com.NexusPortalAutomation.TestCases.Java.TC0023_VerifyRecentWidget" time="11.867"/>
-  <testcase name="VerifyActionServiceOrder_Transfers_NotSchedule" classname="com.NexusPortalAutomation.TestCases.Java.TC0025_VerifyAction_Transfers_NotScheduled" time="24.116"/>
-  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0026_VerifyAction_Transfers_StartService_NotScheduled" time="46.701">
+  <testcase name="VerifyRecentWidget" classname="com.NexusPortalAutomation.TestCases.Java.TC0023_VerifyRecentWidget" time="13.779"/>
+  <testcase name="VerifyActionServiceOrder_Transfers_NotSchedule" classname="com.NexusPortalAutomation.TestCases.Java.TC0025_VerifyAction_Transfers_NotScheduled" time="19.378">
+    <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=77.0.3865.90)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;RND-BASE-A&apos;, ip: &apos;10.0.2.15&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59851}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 5bed6fa069d4f1ede46aa57d2552b526" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=77.0.3865.90)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'RND-BASE-A', ip: '10.0.2.15', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59851}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5bed6fa069d4f1ede46aa57d2552b526
+	at com.NexusPortalAutomation.TestCases.Java.TC0025_VerifyAction_Transfers_NotScheduled.VerifyActionServiceOrder_Transfers_NotSchedule(TC0025_VerifyAction_Transfers_NotScheduled.java:78)
+</failure>
+    <system-out><![CDATA[Test completed successfully- VerifyRecentWidget
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- VerifyActionServiceOrder_Transfers_NotSchedule
+SORD00000002762
+Deleting Records for ServiceOrder = SORD00000002762
+SORD00000002763
+Deleting Records for ServiceOrder = SORD00000002763
+0
+Deleting Records for Location =  LOC@0004
+0
+Deleting Records for Location =  LOC@0005
+Angular Request Completed in 16ms
+Log in to Nexus View
+Element [[ChromeDriver: chrome on XP (5bed6fa069d4f1ede46aa57d2552b526)] -> id: username] displayed in 49ms
+Login Page title Verified
+Element [[ChromeDriver: chrome on XP (5bed6fa069d4f1ede46aa57d2552b526)] -> id: username] displayed in 11ms
+Element [[ChromeDriver: chrome on XP (5bed6fa069d4f1ede46aa57d2552b526)] -> id: password] displayed in 28ms
+Element [[ChromeDriver: chrome on XP (5bed6fa069d4f1ede46aa57d2552b526)] -> id: kc-login] displayed in 26ms
+Angular Request Completed in 16ms
+User signed Admin
+Enter Text for Search =LOC@0004
+Element [[ChromeDriver: chrome on XP (5bed6fa069d4f1ede46aa57d2552b526)] -> id: SRCH_Input] displayed in 44ms
+Angular request time 627ms
+Element [[ChromeDriver: chrome on XP (5bed6fa069d4f1ede46aa57d2552b526)] -> id: SRCH_Option_1_Address_Line] displayed in 28ms
+Click Customer
+Angular request time 449ms
+Angular request time 13ms
+Element [[ChromeDriver: chrome on XP (5bed6fa069d4f1ede46aa57d2552b526)] -> id: 'LOC_Location_Id'] displayed in 37ms
+Angular request time 15ms
+got Text CustomerLocId = LOC@0004
+Customer Location Id found LOC@0004
+Strings Matched: LOC@0004 = LOC@0004
+Click Action Dropdown
+Element [[ChromeDriver: chrome on XP (5bed6fa069d4f1ede46aa57d2552b526)] -> id: ACTION_Button] displayed in 25ms
+Element [[ChromeDriver: chrome on XP (5bed6fa069d4f1ede46aa57d2552b526)] -> id: ACTION_Button] displayed in 10ms
+Angular request time 13ms
+Click Action Drop down
+Angular request time 518ms
+Element [[ChromeDriver: chrome on XP (5bed6fa069d4f1ede46aa57d2552b526)] -> id: ACTION_Transfer_Service] displayed in 40ms
+Element [[ChromeDriver: chrome on XP (5bed6fa069d4f1ede46aa57d2552b526)] -> id: ACTION_Transfer_Service] displayed in 46ms
+Angular request time 31ms
+Click Action Transfer Service Drop down
+Angular request time 56ms
+Element [[ChromeDriver: chrome on XP (5bed6fa069d4f1ede46aa57d2552b526)] -> id: XFER_Select] displayed in 567ms
+Angular request time 269ms
+Click Transfer Combo
+Angular request time 517ms
+Element [[ChromeDriver: chrome on XP (5bed6fa069d4f1ede46aa57d2552b526)] -> id: XFER_Select_Option_1] displayed in 32ms
+Angular request time 10ms
+Click Transfer Option 1
+Angular request time 8ms
+TRANSFER
+Element [[ChromeDriver: chrome on XP (5bed6fa069d4f1ede46aa57d2552b526)] -> id: CLO_Service_Order_Input] displayed in 24ms
+Setting Text on Search Request with Text = Transfer
+Angular request time 21ms
+Element [[ChromeDriver: chrome on XP (5bed6fa069d4f1ede46aa57d2552b526)] -> id: XFER_MoveFrom_Date_Picker_Requested] displayed in 543ms
+10/09/2019 02:47
+Strings Matched: Mr. VACANT VACANT = Mr. VACANT VACANT
+TEST DEFAULT VALUE FOR CUSTOMER ===Mr. VACANT VACANT
+Element [[ChromeDriver: chrome on XP (5bed6fa069d4f1ede46aa57d2552b526)] -> id: XFER_Search_Input] displayed in 25ms
+Setting Text on Customer Name Request with Text = Mr. VACANT VACANT
+Angular request time 15ms
+Element [[ChromeDriver: chrome on XP (5bed6fa069d4f1ede46aa57d2552b526)] -> id: XFER_Search_Option_1_Customer_Name] displayed in 937ms
+Angular request time 16ms
+Click XFER_Search_Option_1_Customer_Name
+Angular request time 6ms
+Element [[ChromeDriver: chrome on XP (5bed6fa069d4f1ede46aa57d2552b526)] -> id: XFER_Description] displayed in 27ms
+Setting Text on Description Request with Text = AUTOMATION TEST
+Angular request time 16ms
+Element [[ChromeDriver: chrome on XP (5bed6fa069d4f1ede46aa57d2552b526)] -> id: XFER_MoveTo_Tab] displayed in 26ms
+Angular request time 16ms
+Click Move To Tab (Transfers)
+Angular request time 9ms
+Element [[ChromeDriver: chrome on XP (5bed6fa069d4f1ede46aa57d2552b526)] -> id: XFER_MoveTo_Date_Picker_Requested] displayed in 33ms
+10/09/2019 02:47
+Enter Request Date
+Element [[ChromeDriver: chrome on XP (5bed6fa069d4f1ede46aa57d2552b526)] -> id: XFER_MoveTo_Date_Picker_Requested] displayed in 25ms
+Element [[ChromeDriver: chrome on XP (5bed6fa069d4f1ede46aa57d2552b526)] -> id: XFER_MoveTo_Date_Picker_Requested] displayed in 22ms
+Setting Text on DatePicket with Text = 10/09/2019 02:47
+Angular request time 11ms
+Element [[ChromeDriver: chrome on XP (5bed6fa069d4f1ede46aa57d2552b526)] -> id: CLO_Service_Order_Input] displayed in 29ms
+Enter Request Name
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 23453
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1570650441.559][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
+Oct 09, 2019 2:47:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0026_VerifyAction_Transfers_StartService_NotScheduled" time="49.474">
     <failure message="Object Not Found Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: XFER_Button_Done&apos; (tried for 20 second(s) with 500 milliseconds interval)" type="java.lang.AssertionError">java.lang.AssertionError: Object Not Found Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: XFER_Button_Done' (tried for 20 second(s) with 500 milliseconds interval)
 	at com.NexusPortalAutomation.TestCases.Java.TC0026_VerifyAction_Transfers_StartService_NotScheduled.VerifyTransferActionServiceOrder(TC0026_VerifyAction_Transfers_StartService_NotScheduled.java:78)
 </failure>
-    <system-out><![CDATA[Test completed successfully- VerifyActionServiceOrder_Transfers_NotSchedule
+    <system-out><![CDATA[***** Error VerifyActionServiceOrder_Transfers_NotSchedule test has failed *****
 Closing Browser
 Test Completed...
 Launching Chrome
 Browser Maximised
 Test started- VerifyTransferActionServiceOrder
-SORD00000002727
-Deleting Records for ServiceOrder = SORD00000002727
-0
-Deleting Records for Location =  LOC@0004
-Angular Request Completed in 60ms
+Deleting Records for ServiceOrder = 
+Angular Request Completed in 24ms
 Log in to Nexus View
-Element [[ChromeDriver: chrome on XP (b6973567a5fa1f4d0d722a7aa6e941c1)] -> id: username] displayed in 53ms
+Element [[ChromeDriver: chrome on XP (2080e7cc784f397c654a316a52271f89)] -> id: username] displayed in 38ms
 Login Page title Verified
-Element [[ChromeDriver: chrome on XP (b6973567a5fa1f4d0d722a7aa6e941c1)] -> id: username] displayed in 17ms
-Element [[ChromeDriver: chrome on XP (b6973567a5fa1f4d0d722a7aa6e941c1)] -> id: password] displayed in 41ms
-Element [[ChromeDriver: chrome on XP (b6973567a5fa1f4d0d722a7aa6e941c1)] -> id: kc-login] displayed in 49ms
+Element [[ChromeDriver: chrome on XP (2080e7cc784f397c654a316a52271f89)] -> id: username] displayed in 12ms
+Element [[ChromeDriver: chrome on XP (2080e7cc784f397c654a316a52271f89)] -> id: password] displayed in 28ms
+Element [[ChromeDriver: chrome on XP (2080e7cc784f397c654a316a52271f89)] -> id: kc-login] displayed in 292ms
 Angular Request Completed in 18ms
 User signed Admin
 Enter Text for Search =LOC@0004
-Element [[ChromeDriver: chrome on XP (b6973567a5fa1f4d0d722a7aa6e941c1)] -> id: SRCH_Input] displayed in 43ms
-Angular request time 729ms
-Element [[ChromeDriver: chrome on XP (b6973567a5fa1f4d0d722a7aa6e941c1)] -> id: SRCH_Option_1_Address_Line] displayed in 37ms
+Element [[ChromeDriver: chrome on XP (2080e7cc784f397c654a316a52271f89)] -> id: SRCH_Input] displayed in 27ms
+Angular request time 649ms
+Element [[ChromeDriver: chrome on XP (2080e7cc784f397c654a316a52271f89)] -> id: SRCH_Option_1_Address_Line] displayed in 61ms
 Click Customer
-Angular request time 313ms
-Angular request time 13ms
-Element [[ChromeDriver: chrome on XP (b6973567a5fa1f4d0d722a7aa6e941c1)] -> id: 'LOC_Location_Id'] displayed in 46ms
-Angular request time 10ms
+Angular request time 439ms
+Angular request time 14ms
+Element [[ChromeDriver: chrome on XP (2080e7cc784f397c654a316a52271f89)] -> id: 'LOC_Location_Id'] displayed in 39ms
+Angular request time 17ms
 got Text CustomerLocId = LOC@0004
 Customer Location Id found LOC@0004
 Strings Matched: LOC@0004 = LOC@0004
 Click Action Dropdown
-Element [[ChromeDriver: chrome on XP (b6973567a5fa1f4d0d722a7aa6e941c1)] -> id: ACTION_Button] displayed in 44ms
-Element [[ChromeDriver: chrome on XP (b6973567a5fa1f4d0d722a7aa6e941c1)] -> id: ACTION_Button] displayed in 29ms
-Angular request time 9ms
+Element [[ChromeDriver: chrome on XP (2080e7cc784f397c654a316a52271f89)] -> id: ACTION_Button] displayed in 30ms
+Element [[ChromeDriver: chrome on XP (2080e7cc784f397c654a316a52271f89)] -> id: ACTION_Button] displayed in 11ms
+Angular request time 7ms
 Click Action Drop down
-Angular request time 17ms
-Element [[ChromeDriver: chrome on XP (b6973567a5fa1f4d0d722a7aa6e941c1)] -> id: ACTION_Transfer_Service] displayed in 80ms
-Element [[ChromeDriver: chrome on XP (b6973567a5fa1f4d0d722a7aa6e941c1)] -> id: ACTION_Transfer_Service] displayed in 30ms
-Angular request time 81ms
+Angular request time 11ms
+Element [[ChromeDriver: chrome on XP (2080e7cc784f397c654a316a52271f89)] -> id: ACTION_Transfer_Service] displayed in 31ms
+Element [[ChromeDriver: chrome on XP (2080e7cc784f397c654a316a52271f89)] -> id: ACTION_Transfer_Service] displayed in 143ms
+Angular request time 39ms
 Click Action Transfer Service Drop down
-Angular request time 38ms
-Element [[ChromeDriver: chrome on XP (b6973567a5fa1f4d0d722a7aa6e941c1)] -> id: XFER_Select] displayed in 179ms
-Angular request time 20ms
+Angular request time 24ms
+Element [[ChromeDriver: chrome on XP (2080e7cc784f397c654a316a52271f89)] -> id: XFER_Select] displayed in 69ms
+Angular request time 27ms
 Click Transfer Combo
-Angular request time 13ms
-Element [[ChromeDriver: chrome on XP (b6973567a5fa1f4d0d722a7aa6e941c1)] -> id: XFER_Select_Option_2] displayed in 60ms
-Angular request time 16ms
+Angular request time 6ms
+Element [[ChromeDriver: chrome on XP (2080e7cc784f397c654a316a52271f89)] -> id: XFER_Select_Option_2] displayed in 41ms
+Angular request time 14ms
 Click Transfer Option 2
 Angular request time 7ms
 TRANSFER
-Element [[ChromeDriver: chrome on XP (b6973567a5fa1f4d0d722a7aa6e941c1)] -> id: CLO_Service_Order_Input] displayed in 45ms
+Element [[ChromeDriver: chrome on XP (2080e7cc784f397c654a316a52271f89)] -> id: CLO_Service_Order_Input] displayed in 22ms
 Setting Text on Search Request with Text = TRANSFER
-Angular request time 10ms
-Element [[ChromeDriver: chrome on XP (b6973567a5fa1f4d0d722a7aa6e941c1)] -> id: XFER_Date_Picker_Requested] displayed in 58ms
-Entered Request Date = 10/08/2019 09:50
+Angular request time 5ms
+Element [[ChromeDriver: chrome on XP (2080e7cc784f397c654a316a52271f89)] -> id: XFER_Date_Picker_Requested] displayed in 28ms
+Entered Request Date = 10/09/2019 02:48
 Strings Matched: Mr. VACANT VACANT = Mr. VACANT VACANT
-Element [[ChromeDriver: chrome on XP (b6973567a5fa1f4d0d722a7aa6e941c1)] -> id: XFER_Search_Input] displayed in 37ms
+Element [[ChromeDriver: chrome on XP (2080e7cc784f397c654a316a52271f89)] -> id: XFER_Search_Input] displayed in 23ms
 Setting Text on Customer Name Request with Text = Mr. VACANT VACANT
-Angular request time 420ms
-Element [[ChromeDriver: chrome on XP (b6973567a5fa1f4d0d722a7aa6e941c1)] -> id: XFER_Search_Option_1] displayed in 614ms
-Angular request time 19ms
+Angular request time 761ms
+Element [[ChromeDriver: chrome on XP (2080e7cc784f397c654a316a52271f89)] -> id: XFER_Search_Option_1] displayed in 560ms
+Angular request time 16ms
 Click XFER_Search_Option_1_Customer_Name
-Angular request time 9ms
-Element [[ChromeDriver: chrome on XP (b6973567a5fa1f4d0d722a7aa6e941c1)] -> id: XFER_Description] displayed in 43ms
+Angular request time 10ms
+Element [[ChromeDriver: chrome on XP (2080e7cc784f397c654a316a52271f89)] -> id: XFER_Description] displayed in 34ms
 Setting Text on Description Request with Text = AUTOMATION TEST
-Angular request time 7ms
+Angular request time 6ms
 Click Submit
-Element [[ChromeDriver: chrome on XP (b6973567a5fa1f4d0d722a7aa6e941c1)] -> id: XFER_Button_Action] displayed in 45ms
-Element [[ChromeDriver: chrome on XP (b6973567a5fa1f4d0d722a7aa6e941c1)] -> id: XFER_Button_Action] displayed in 33ms
-Angular request time 9ms
+Element [[ChromeDriver: chrome on XP (2080e7cc784f397c654a316a52271f89)] -> id: XFER_Button_Action] displayed in 26ms
+Element [[ChromeDriver: chrome on XP (2080e7cc784f397c654a316a52271f89)] -> id: XFER_Button_Action] displayed in 19ms
+Angular request time 8ms
 Click MoveInSubmit Button
-Angular request time 7ms
+Angular request time 208ms
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 46701
+    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 44216
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1570546194.554][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
-Oct 08, 2019 9:49:55 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1570650465.510][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
+Oct 09, 2019 2:47:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0027_VerifyAction_Transfers_StopService_NotScheduled" time="21.686"/>
-  <testcase name="TestSearchAutobyRecent" classname="com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction" time="30.414"/>
-  <testcase name="TestSearchAutobyBookMark" classname="com.NexusPortalAutomation.TestCases.Java.TC0005_TestBookMarks" time="11.853"/>
-  <testcase name="TestSummarySectionOnChange" classname="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection" time="16.868"/>
-  <testcase name="TestSearchAutobyFirstName" classname="com.NexusPortalAutomation.TestCases.Java.TC0028_TestEnhancedNotes" time="11.629"/>
-  <testcase name="TestSearchAutobyFirstName" classname="com.NexusPortalAutomation.TestCases.Java.TC0024_TestCustDetailSearch" time="23.407"/>
-  <testcase name="TestSearchAlertOnLoad" classname="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad" time="14.238"/>
-  <testcase name="TestSearchAutobyFirstName" classname="com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName" time="10.941"/>
-  <testcase name="TestSearchAutobyLastName" classname="com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName" time="11.198"/>
+  <testcase name="VerifyTransferActionServiceOrder" classname="com.NexusPortalAutomation.TestCases.Java.TC0027_VerifyAction_Transfers_StopService_NotScheduled" time="28.457"/>
+  <testcase name="TestSearchAutobyRecent" classname="com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction" time="36.016"/>
+  <testcase name="TestSearchAutobyBookMark" classname="com.NexusPortalAutomation.TestCases.Java.TC0005_TestBookMarks" time="14.161"/>
+  <testcase name="TestSummarySectionOnChange" classname="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection" time="18.167"/>
+  <testcase name="TestSearchAutobyFirstName" classname="com.NexusPortalAutomation.TestCases.Java.TC0028_TestEnhancedNotes" time="12.904"/>
+  <testcase name="TestSearchAutobyFirstName" classname="com.NexusPortalAutomation.TestCases.Java.TC0024_TestCustDetailSearch" time="32.554"/>
+  <testcase name="TestSearchAlertOnLoad" classname="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad" time="12.823">
+    <failure message="javascript error: Cannot read property &apos;left&apos; of undefined&#10;  (Session info: chrome=77.0.3865.90)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;RND-BASE-A&apos;, ip: &apos;10.0.2.15&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60260}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 543428f8017109c43a96ce91360220d2" type="org.openqa.selenium.JavascriptException">org.openqa.selenium.JavascriptException: 
+javascript error: Cannot read property 'left' of undefined
+  (Session info: chrome=77.0.3865.90)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'RND-BASE-A', ip: '10.0.2.15', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60260}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 543428f8017109c43a96ce91360220d2
+	at com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad.TestSearchAlertOnLoad(TC0006_TestAlertOnLoad.java:45)
+</failure>
+    <system-out><![CDATA[Test completed successfully- TestSearchAutobyFirstName
+Closing Browser
+Test Completed...
+Launching Chrome
+Browser Maximised
+Test started- TestSearchAlertOnLoad
+Angular Request Completed in 16ms
+Log in to Nexus View
+Element [[ChromeDriver: chrome on XP (543428f8017109c43a96ce91360220d2)] -> id: username] displayed in 33ms
+Login Page title Verified
+Element [[ChromeDriver: chrome on XP (543428f8017109c43a96ce91360220d2)] -> id: username] displayed in 10ms
+Element [[ChromeDriver: chrome on XP (543428f8017109c43a96ce91360220d2)] -> id: password] displayed in 30ms
+Element [[ChromeDriver: chrome on XP (543428f8017109c43a96ce91360220d2)] -> id: kc-login] displayed in 32ms
+Angular Request Completed in 16ms
+User signed Admin
+Element '//input[@id='SRCH_Input']' is displayed in 63ms
+Element 'toolbar-saved' is displayed in 62ms
+Enter Text for Search =Alert
+Element [[ChromeDriver: chrome on XP (543428f8017109c43a96ce91360220d2)] -> id: SRCH_Input] displayed in 31ms
+Angular request time 1222ms
+Element [[ChromeDriver: chrome on XP (543428f8017109c43a96ce91360220d2)] -> id: SRCH_Option_1_Address_Line] displayed in 32ms
+Click Customer
+Angular request time 954ms
+Element '//div[@class='address-details']' is displayed in 51ms
+Angular request time 5ms
+Element [[ChromeDriver: chrome on XP (543428f8017109c43a96ce91360220d2)] -> id: 'LOC_Location_Id'] displayed in 32ms
+Angular request time 16ms
+got Text CustomerLocId = AUTOLOC001
+Customer Location Id found AUTOLOC001
+Strings Matched: AUTOLOC001 = AUTOLOC001
+Element 'ALERTO_Action_Button' is displayed in 41ms
+Element [[ChromeDriver: chrome on XP (543428f8017109c43a96ce91360220d2)] -> id: ALERTO_Action_Button] displayed in 20ms
+Angular request time 8ms
+Click Alert OK
+Angular request time 13ms
+Alert on Load Clicked
+Click Alert Description
+Element [[ChromeDriver: chrome on XP (543428f8017109c43a96ce91360220d2)] -> id: ALERT_1_Description] displayed in 40ms
+Angular request time 18ms
+Click Alert Description
+Angular request time 24ms
+Click Description
+Element 'ALERTO_Action_Button' is displayed in 575ms
+Element [[ChromeDriver: chrome on XP (543428f8017109c43a96ce91360220d2)] -> id: ALERTO_Action_Button] displayed in 64ms
+Angular request time 31ms
+Click Alert OK
+Angular request time 150ms
+Alert on description Clicked
+Angular request time 51ms
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 47266
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1570650687.676][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
+Oct 09, 2019 2:51:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Oct 09, 2019 2:51:42 PM org.openqa.selenium.interactions.Actions moveToElement
+INFO: When using the W3C Action commands, offsets are from the center of element
+]]></system-err>
+  </testcase>
+  <testcase name="TestSearchAutobyFirstName" classname="com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName" time="12.523"/>
+  <testcase name="TestSearchAutobyLastName" classname="com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName" time="13.671"/>
 </testsuite>

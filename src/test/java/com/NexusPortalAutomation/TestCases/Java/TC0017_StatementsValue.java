@@ -27,7 +27,7 @@ public class TC0017_StatementsValue extends BaseClass {
 	public String statementValue = getCellvalue("TC0017", "stValue");//""$56.71";
 	
 
-	CommonMethods cmnMethods = new CommonMethods();
+	
 
 //This Test will test the 
 	@Test(priority = 1)
@@ -39,11 +39,11 @@ public class TC0017_StatementsValue extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
 		dashBoard.ClickBillStatementBtn();
-		cmnMethods.verifyString(satementDateValue,dashBoard.getBillStatementDate());
-		cmnMethods.verifyString(statementValue,dashBoard.getBillStatementAmount());
+		CommonMethods.verifyString(satementDateValue,dashBoard.getBillStatementDate());
+		CommonMethods.verifyString(statementValue,dashBoard.getBillStatementAmount());
 		sql.VerifyStatementsData(locationID,statementValue.substring(1));
 		dashBoard.logout();
 	}

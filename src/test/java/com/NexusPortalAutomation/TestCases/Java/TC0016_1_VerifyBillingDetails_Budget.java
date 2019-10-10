@@ -24,7 +24,7 @@ public class TC0016_1_VerifyBillingDetails_Budget extends BaseClass {
 	 */
 
 	public String locationID = getCellvalue("TC0016", "budgetLOC2");//"BUDGETLOC02";
-	CommonMethods cmnMethods = new CommonMethods();
+	
 	String due =  getCellvalue("TC0016", "dueBudget");//"$100.00";
 	String current = getCellvalue("TC0016", "currentBudget");//"$0.00";
 	String unposted = getCellvalue("TC0016", "unpostedBudget");//"$0.00";
@@ -50,22 +50,22 @@ public class TC0016_1_VerifyBillingDetails_Budget extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 
-		cmnMethods.verifyString(dashBoard.GetBudgetIcon(), "Budget");
+		CommonMethods.verifyString(dashBoard.GetBudgetIcon(), "Budget");
 		// Verify Contact is updated accordingly
 		// Verify Billing Information
 		HashMap<String, String> BillingInfo = dashBoard.GetBillingInfo();
-		cmnMethods.verifyString(BillingInfo.get("BillDue"), due);
-		cmnMethods.verifyString(BillingInfo.get("BillCurrent"), current);
-		cmnMethods.verifyString(BillingInfo.get("BillUnposted"), unposted);
-		cmnMethods.verifyString(BillingInfo.get("BillAccount"), account);
-		cmnMethods.verifyString(BillingInfo.get("BillInstallment"), installment);
-		cmnMethods.verifyString(BillingInfo.get("BillOverDue"), overDue);
-		cmnMethods.verifyString(BillingInfo.get("AmountDue"), amountDue);
-		cmnMethods.verifyString(dashBoard.getEBill(), eBill);
-		cmnMethods.verifyString(dashBoard.getAutoPay(), autoPay);
-		cmnMethods.verifyString(dashBoard.getDepositAmount(), deposit);
+		CommonMethods.verifyString(BillingInfo.get("BillDue"), due);
+		CommonMethods.verifyString(BillingInfo.get("BillCurrent"), current);
+		CommonMethods.verifyString(BillingInfo.get("BillUnposted"), unposted);
+		CommonMethods.verifyString(BillingInfo.get("BillAccount"), account);
+		CommonMethods.verifyString(BillingInfo.get("BillInstallment"), installment);
+		CommonMethods.verifyString(BillingInfo.get("BillOverDue"), overDue);
+		CommonMethods.verifyString(BillingInfo.get("AmountDue"), amountDue);
+		CommonMethods.verifyString(dashBoard.getEBill(), eBill);
+		CommonMethods.verifyString(dashBoard.getAutoPay(), autoPay);
+		CommonMethods.verifyString(dashBoard.getDepositAmount(), deposit);
 		dashBoard.logout();
 	}
 

@@ -23,7 +23,7 @@ public class TC0014_VerifySecondaryContact extends BaseClass {
 	public String locationID = getCellvalue("TC0014", "locationEdit");//"LOC@0004";
 	public String SecondCust = getCellvalue("TC0014", "secondaryCust");//"Secondary Customer (SECONDARY)";
 	public String SecondCustCnt = getCellvalue("TC0014", "secondaryCustNum");//"Secondary TC0014 (1)";
-	CommonMethods cmnMethods = new CommonMethods();
+	
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -35,11 +35,11 @@ public class TC0014_VerifySecondaryContact extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
 		dashBoard.clickSecondaryCustomer();
-		cmnMethods.verifyString(dashBoard.getSecondCustName(), SecondCust);
-		cmnMethods.verifyString(dashBoard.getSecondCustomerCount(), SecondCustCnt);
+		CommonMethods.verifyString(dashBoard.getSecondCustName(), SecondCust);
+		CommonMethods.verifyString(dashBoard.getSecondCustomerCount(), SecondCustCnt);
 		// Verify Updated details
 		dashBoard.logout();
 	}

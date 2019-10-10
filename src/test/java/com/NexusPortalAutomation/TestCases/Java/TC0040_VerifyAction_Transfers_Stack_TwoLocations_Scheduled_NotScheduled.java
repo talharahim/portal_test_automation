@@ -33,7 +33,7 @@ public class TC0040_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotSched
 	public String defaultCustomer = getCellvalue("TC0039", "defaultCustomer");//"Mr. VACANT VACANT";
 	public String message = getCellvalue("TC0039", "message");//"Transfer initiated";
 	public String[] task = {"Meter Reading-electric", "Charge New Customer","Property Transfer", "Deposit Request-new Customer", "Deposit Payment-new Customer E","Prepayment Required-new Custom"};
-	CommonMethods cmnMethods = new CommonMethods();
+	
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -50,7 +50,7 @@ public class TC0040_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotSched
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
 		dashBoard.selectTransferStop();

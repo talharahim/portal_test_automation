@@ -21,7 +21,7 @@ public class TC0016_1_VerifyBillingDetails_SPA extends BaseClass {
 	 */
 
 	public String locationID = getCellvalue("TC0016", "loc1");// "LOC@0001";
-	CommonMethods cmnMethods = new CommonMethods();
+	
 	String spaURL =  getCellvalue("TC0016", "spaURL");//"CustomerID=0000011111&LocationID=LOC@0001&CogsDrillback=1";
 	String paymentArrangementAmount = "$0.00";
 
@@ -34,12 +34,12 @@ public class TC0016_1_VerifyBillingDetails_SPA extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
 		// Verify SPA Information
-		cmnMethods.verifyString(dashBoard.getPaymentArrangementDue(), "Payment Arrangement Due");
-		cmnMethods.verifyString(dashBoard.getPaymentArrangementDueAmount(), paymentArrangementAmount);
-		cmnMethods.verifyStringContains(dashBoard.getPaymentArrangementDueURL(), spaURL);
+		CommonMethods.verifyString(dashBoard.getPaymentArrangementDue(), "Payment Arrangement Due");
+		CommonMethods.verifyString(dashBoard.getPaymentArrangementDueAmount(), paymentArrangementAmount);
+		CommonMethods.verifyStringContains(dashBoard.getPaymentArrangementDueURL(), spaURL);
 		dashBoard.logout();
 	}
 

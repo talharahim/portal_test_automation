@@ -24,7 +24,7 @@ public class TC0016_VerifyBillingDetails extends BaseClass {
 	 */
 
 	public String locationID = getCellvalue("TC0016", "loc1");//"LOC@0001";
-	CommonMethods cmnMethods = new CommonMethods();
+	
 	String spaURL = getCellvalue("TC0016", "spaURL");// "SPA&CustomerID=0000011111&LocationID=LOC@0001&CogsDrillback=1";
 	String spaAmnt = getCellvalue("TC0016", "spaAmnt");// "$0.00";
 	String due = getCellvalue("TC0016", "due");// "$35.26";
@@ -52,72 +52,72 @@ public class TC0016_VerifyBillingDetails extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
 		// "Verify Billing Information
 		HashMap<String, String> BillingInfo = dashBoard.GetBillingInfo();
-		cmnMethods.verifyString(BillingInfo.get("BillDue"), due);
-		cmnMethods.verifyString(BillingInfo.get("BillCurrent"), current);
-		cmnMethods.verifyString(BillingInfo.get("BillUnposted"), unposted);
-		cmnMethods.verifyString(BillingInfo.get("BillAccount"), account);
-		cmnMethods.verifyString(BillingInfo.get("BillInstallment"), installment);
-		cmnMethods.verifyString(BillingInfo.get("BillOverDue"), overDue);
-		cmnMethods.verifyString(BillingInfo.get("AmountDue"), amountDue);
-		cmnMethods.verifyString(dashBoard.getEBill(), eBill);
-		cmnMethods.verifyString(dashBoard.getAutoPay(), autoPay);
-		cmnMethods.verifyString(dashBoard.getDepositAmount(), deposit);
+		CommonMethods.verifyString(BillingInfo.get("BillDue"), due);
+		CommonMethods.verifyString(BillingInfo.get("BillCurrent"), current);
+		CommonMethods.verifyString(BillingInfo.get("BillUnposted"), unposted);
+		CommonMethods.verifyString(BillingInfo.get("BillAccount"), account);
+		CommonMethods.verifyString(BillingInfo.get("BillInstallment"), installment);
+		CommonMethods.verifyString(BillingInfo.get("BillOverDue"), overDue);
+		CommonMethods.verifyString(BillingInfo.get("AmountDue"), amountDue);
+		CommonMethods.verifyString(dashBoard.getEBill(), eBill);
+		CommonMethods.verifyString(dashBoard.getAutoPay(), autoPay);
+		CommonMethods.verifyString(dashBoard.getDepositAmount(), deposit);
 		/*
 		 * Verify Text required for Service Order Section
 		 */
 		HashMap<String, String> BillingSrvInfo = dashBoard.GetBillingServiceElectricInfo();
-		cmnMethods.verifyString(BillingSrvInfo.get("Service1"), electric.get(0));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service1Equipment"), electric.get(1));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service1Rate"), electric.get(2));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service1Multi"), electric.get(3));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service1Status"), electric.get(4));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service1"), electric.get(0));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service1Equipment"), electric.get(1));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service1Rate"), electric.get(2));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service1Multi"), electric.get(3));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service1Status"), electric.get(4));
 
 		BillingSrvInfo = dashBoard.GetBillingServiceGasInfo();
 
-		cmnMethods.verifyString(BillingSrvInfo.get("Service2"), gas1.get(0));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service2Equipment"), gas1.get(1));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service2Rate"), gas1.get(2));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service2Multi"), gas1.get(3));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service2Status"), gas1.get(4));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service2"), gas1.get(0));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service2Equipment"), gas1.get(1));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service2Rate"), gas1.get(2));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service2Multi"), gas1.get(3));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service2Status"), gas1.get(4));
 
 		BillingSrvInfo = dashBoard.GetBillingServiceInternetInfo();
 
-		cmnMethods.verifyString(BillingSrvInfo.get("Service3"), internet.get(0));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service3Equipment"), internet.get(1));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service3Rate"), internet.get(2));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service3Multi"), internet.get(3));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service3Status"), internet.get(4));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service3"), internet.get(0));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service3Equipment"), internet.get(1));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service3Rate"), internet.get(2));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service3Multi"), internet.get(3));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service3Status"), internet.get(4));
 
 		// Verify Service by Clicking on Electricity icon
 		dashBoard.ClickServElecIcon();
 		BillingSrvInfo = dashBoard.GetBillingServiceElectricTABInfo();
-		cmnMethods.verifyString(BillingSrvInfo.get("Service1"), electric.get(0));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service1Equipment"), electric.get(1));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service1Rate"), electric.get(2));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service1Multi"), electric.get(3));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service1Status"), electric.get(4));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service1"), electric.get(0));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service1Equipment"), electric.get(1));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service1Rate"), electric.get(2));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service1Multi"), electric.get(3));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service1Status"), electric.get(4));
 
 		dashBoard.ClickServGasIcon();
 		BillingSrvInfo = dashBoard.GetBillingServiceGasTABInfo();
 		
-		cmnMethods.verifyString(BillingSrvInfo.get("Service2"), gas1.get(0));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service2Equipment"), gas1.get(1));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service2Rate"), gas1.get(2));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service2Multi"), gas1.get(3));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service2Status"), gas1.get(4));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service2"), gas1.get(0));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service2Equipment"), gas1.get(1));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service2Rate"), gas1.get(2));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service2Multi"), gas1.get(3));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service2Status"), gas1.get(4));
 
 		dashBoard.ClickServInternetIcon();
 		BillingSrvInfo = dashBoard.GetBillingServiceInternetTABInfo();
 
-		cmnMethods.verifyString(BillingSrvInfo.get("Service3"), internet.get(0));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service3Equipment"), internet.get(1));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service3Rate"), internet.get(2));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service3Multi"), internet.get(3));
-		cmnMethods.verifyString(BillingSrvInfo.get("Service3Status"), internet.get(4));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service3"), internet.get(0));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service3Equipment"), internet.get(1));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service3Rate"), internet.get(2));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service3Multi"), internet.get(3));
+		CommonMethods.verifyString(BillingSrvInfo.get("Service3Status"), internet.get(4));
 
 		dashBoard.logout();
 	}

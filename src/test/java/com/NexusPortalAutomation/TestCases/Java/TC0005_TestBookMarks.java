@@ -22,21 +22,21 @@ public class TC0005_TestBookMarks extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 	public String locationID = ExcelData.getExcelData("TC0005","stLocationID");//"STATEMENTS001";
-	public CommonMethods cmnMethods = new CommonMethods();
+	//public 
 
 	@Test(priority = 1)
 	public void TestSearchAutobyBookMark() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		cmnMethods.waitObjectByXpath(driver, "//input[@id='SRCH_Input']");
-		cmnMethods.waitforObjectById(driver, "SRCH_Button_Favorites");
+		CommonMethods.waitObjectByXpath(driver, "//input[@id='SRCH_Input']");
+		CommonMethods.waitforObjectById(driver, "SRCH_Button_Favorites");
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickRecentSearchCustomerName();
 		dashBoard.clickBookmarkDisabled();
 		dashBoard.clickDashBoardBookMark();
 		if (dashBoard.getDashBoardBookMarkValue().equals(locationID)) {
-			cmnMethods.waitObjectByXpath(driver, "//div[@class='address-details']");
+			CommonMethods.waitObjectByXpath(driver, "//div[@class='address-details']");
 			log("Bookmark saved successfully");
 			dashBoard.clickBookmarkEnabled();
 		} else {

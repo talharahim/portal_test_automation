@@ -24,7 +24,7 @@ public class TC0016_1_VerifyBillingDetails_Budget_SPA extends BaseClass {
 	 */
 
 	public String locationID = getCellvalue("TC0016", "loc1");// "LOC@0001";
-	CommonMethods cmnMethods = new CommonMethods();
+	
 	String spaURL = getCellvalue("TC0016", "spaURL");// "SPA&CustomerID=0000011111&LocationID=LOC@0001&CogsDrillback=1";
 	String spaAmnt = getCellvalue("TC0016", "spaAmnt");// "$0.00";
 	String due = getCellvalue("TC0016", "due");// "$35.26";
@@ -48,26 +48,26 @@ public class TC0016_1_VerifyBillingDetails_Budget_SPA extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 
-		cmnMethods.verifyString(dashBoard.GetBudgetIcon(), "Budget");
+		CommonMethods.verifyString(dashBoard.GetBudgetIcon(), "Budget");
 		// Verify Contact is updated accordingly
 		// Verify Billing Information
 		HashMap<String, String> BillingInfo = dashBoard.GetBillingInfo();
-		cmnMethods.verifyString(BillingInfo.get("BillDue"), due);
-		cmnMethods.verifyString(BillingInfo.get("BillCurrent"), current);
-		cmnMethods.verifyString(BillingInfo.get("BillUnposted"), unposted);
-		cmnMethods.verifyString(BillingInfo.get("BillAccount"), account);
-		cmnMethods.verifyString(BillingInfo.get("BillInstallment"), installment);
-		cmnMethods.verifyString(BillingInfo.get("BillOverDue"), overDue);
-		cmnMethods.verifyString(BillingInfo.get("AmountDue"), amountDue);
-		cmnMethods.verifyStringContains(dashBoard.getBillBudgetURL(), budgetUrl);
-		cmnMethods.verifyString(dashBoard.getEBill(), ebill);
-		cmnMethods.verifyString(dashBoard.getAutoPay(), autoPay);
-		cmnMethods.verifyString(dashBoard.getDepositAmount(), deposit);
-		cmnMethods.verifyString(dashBoard.getPaymentArrangementDue(), "Payment Arrangement Due");
-		cmnMethods.verifyString(dashBoard.getPaymentArrangementDueAmount(), spaAmnt);
-		cmnMethods.verifyStringContains(dashBoard.getPaymentArrangementDueURL(), spaURL);
+		CommonMethods.verifyString(BillingInfo.get("BillDue"), due);
+		CommonMethods.verifyString(BillingInfo.get("BillCurrent"), current);
+		CommonMethods.verifyString(BillingInfo.get("BillUnposted"), unposted);
+		CommonMethods.verifyString(BillingInfo.get("BillAccount"), account);
+		CommonMethods.verifyString(BillingInfo.get("BillInstallment"), installment);
+		CommonMethods.verifyString(BillingInfo.get("BillOverDue"), overDue);
+		CommonMethods.verifyString(BillingInfo.get("AmountDue"), amountDue);
+		CommonMethods.verifyStringContains(dashBoard.getBillBudgetURL(), budgetUrl);
+		CommonMethods.verifyString(dashBoard.getEBill(), ebill);
+		CommonMethods.verifyString(dashBoard.getAutoPay(), autoPay);
+		CommonMethods.verifyString(dashBoard.getDepositAmount(), deposit);
+		CommonMethods.verifyString(dashBoard.getPaymentArrangementDue(), "Payment Arrangement Due");
+		CommonMethods.verifyString(dashBoard.getPaymentArrangementDueAmount(), spaAmnt);
+		CommonMethods.verifyStringContains(dashBoard.getPaymentArrangementDueURL(), spaURL);
 
 		dashBoard.logout();
 	}

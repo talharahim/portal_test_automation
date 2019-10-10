@@ -26,7 +26,7 @@ public class TC0023_VerifyRecentWidget extends BaseClass {
 	public String recordDate = getCellvalue("TC0023", "recordDate");//"Apr 12, 2027";
 	public String title = getCellvalue("TC0023", "title");//"TC0023";
 
-	CommonMethods cmnMethods = new CommonMethods();
+	
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -37,11 +37,11 @@ public class TC0023_VerifyRecentWidget extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
 		dashBoard.verifyRecentRecord1(recordType, recordDate, recordAmount);
 		dashBoard.clickRecentSearch_ViewAll();
-		cmnMethods.verifyString(title, dashBoard.getTransactionPageTitle());
+		CommonMethods.verifyString(title, dashBoard.getTransactionPageTitle());
 		// Verify Updated details
 		dashBoard.logout();
 	}

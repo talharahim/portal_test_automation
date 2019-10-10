@@ -1,8 +1,17 @@
 package com.NexusPortalAutomation.Utilities.Java;
 
+import java.awt.geom.Point2D;
+import java.io.File;
+import java.io.IOException;
+import java.util.Calendar;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.sikuli.script.FindFailed;
+import org.sikuli.script.Finder;
 import org.sikuli.script.Match;
 import org.sikuli.script.Pattern;
 import org.sikuli.script.Screen;
@@ -11,6 +20,7 @@ import org.testng.annotations.Test;
 
 public class SikuliUtility extends CommonMethods {
 
+	public static double tolerance = 0.9;
 	// @Test
 	public void nexusPortalLogin() throws FindFailed {
 
@@ -43,17 +53,30 @@ public class SikuliUtility extends CommonMethods {
 		screen.click(login);
 	}
 
-	public void compareImage(String path) {
-		
-		Screen screen = new Screen();
-		Pattern image = new Pattern(path);
-		Match m = screen.exists(image.exact());
-		if (m != null) {
-			
-			log("image verified at " + path);
+	public static void compareImage(String path, WebDriver driver) throws IOException {
+
+		String fileName = String.format("Screenshot-%s.jpg", Calendar.getInstance().getTimeInMillis());
+		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		// The below method will save the screen shot in d drive with test method name
+		String filePath = Read.ReadFile("ScreenShots");
+		String screenShotName = filePath + fileName;
+		FileUtils.copyFile(scrFile, new File(screenShotName));
+
+		Pattern searchImage = new Pattern(path).similar((float) tolerance);
+		String ScreenImage = screenShotName; // In this case, the image you want to search
+		Finder objFinder = null;
+		Match objMatch = null;
+		objFinder = new Finder(ScreenImage);
+		objFinder.find(searchImage); // searchImage is the image you want to search within ScreenImage
+		int counter = 0;
+		while (objFinder.hasNext()) {
+			objMatch = objFinder.next(); // objMatch gives you the matching region.
+			counter++;
 		}
-		else {
-			Assert.fail("Image not matched "+ path);
+		if (counter != 0) {
+			System.out.println("Match Found at x:" + objMatch.x + " y:" + objMatch.y);
+		} else {
+			Assert.fail("image not matched");
 		}
 
 	}

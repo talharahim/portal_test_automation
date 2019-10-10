@@ -22,7 +22,7 @@ public class TC0016_1_VerifyBillingDetails_AutoPay extends BaseClass {
 
 	public String locationID =getCellvalue("TC0016", "loc1");// "LOC@0001";
 
-	CommonMethods cmnMethods = new CommonMethods();
+	
 	String autoPay = "OFF";
 	String autoPayURL = "https://www.invoicecloud.com/integrations/redirect/Csr?BillerGUID";
 
@@ -35,11 +35,11 @@ public class TC0016_1_VerifyBillingDetails_AutoPay extends BaseClass {
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		cmnMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
 		// Verify Billing Information
-		cmnMethods.verifyString(dashBoard.getAutoPay(), autoPay);
-		cmnMethods.verifyStringContains(dashBoard.getAutoPayURL(), autoPayURL);
+		CommonMethods.verifyString(dashBoard.getAutoPay(), autoPay);
+		CommonMethods.verifyStringContains(dashBoard.getAutoPayURL(), autoPayURL);
 		dashBoard.logout();
 	}
 
