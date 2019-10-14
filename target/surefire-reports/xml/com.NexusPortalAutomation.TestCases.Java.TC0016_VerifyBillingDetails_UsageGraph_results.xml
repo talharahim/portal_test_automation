@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="11.806">
+           time="16.391">
   <properties />
-            <testcase name="VerifyBillingDetails" time="11.806" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails_UsageGraph">
+            <testcase name="VerifyBillingDetails" time="16.391" classname="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails_UsageGraph">
                 <failure type="java.lang.AssertionError"
                   message="image not matched"
               >
