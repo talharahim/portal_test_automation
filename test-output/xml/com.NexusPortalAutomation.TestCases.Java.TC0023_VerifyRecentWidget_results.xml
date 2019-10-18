@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="18.742">
+           time="13.697">
   <properties />
   
   
-            <testcase name="VerifyRecentWidget" time="18.742" classname="com.NexusPortalAutomation.TestCases.Java.TC0023_VerifyRecentWidget" />
+            <testcase name="VerifyRecentWidget" time="13.697" classname="com.NexusPortalAutomation.TestCases.Java.TC0023_VerifyRecentWidget" />
       
 </testsuite>

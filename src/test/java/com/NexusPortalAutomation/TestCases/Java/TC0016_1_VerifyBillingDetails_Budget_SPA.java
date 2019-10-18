@@ -26,7 +26,7 @@ public class TC0016_1_VerifyBillingDetails_Budget_SPA extends BaseClass {
 	public String locationID = getCellvalue("TC0016", "loc1");// "LOC@0001";
 	
 	String spaURL = getCellvalue("TC0016", "spaURL");// "SPA&CustomerID=0000011111&LocationID=LOC@0001&CogsDrillback=1";
-	String spaAmnt = getCellvalue("TC0016", "spaAmnt");// "$0.00";
+	String spaAmnt = getCellvalue("TC0016", "spaAmount");// "$0.00";
 	String due = getCellvalue("TC0016", "due");// "$35.26";
 	String current = getCellvalue("TC0016", "current");// "$0.00";
 	String unposted = getCellvalue("TC0016", "unposted");// "$0.00";

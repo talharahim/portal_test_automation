@@ -114,8 +114,8 @@ public class TC0018_verifyDrillbacksGeneral extends BaseClass {
 		dashBoard.clickDashBoardSearchResult1();
 		// Service Drillback
 		dashBoard.verifyDrillback("SERV_Tab_Drillback", serviceURL);
-		dashBoard.verifyDrillback("ENH_Drillback_Customer", enhancedNotesCustURL);
-		dashBoard.verifyDrillback("ENH_Drillback_Location", enhancedNotesLocURL);
+		dashBoard.verifyDrillback("customer-person", enhancedNotesCustURL);
+		dashBoard.verifyDrillback("ENH_Location_Drillback", enhancedNotesLocURL);
 		// Verify Updated details
 		dashBoard.logout();
 	}

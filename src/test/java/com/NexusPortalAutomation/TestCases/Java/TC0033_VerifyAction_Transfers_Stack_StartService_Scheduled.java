@@ -79,7 +79,7 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		// Scroll down
 		String moveInCustomer = "MoveinCus";
 		dashBoard.submitStartStopServiceTransferOrder(moveOutrequestedDate, "TRANSFER",
-				defaultCustomer, moveInCustomer,"Description for Start Service");
+				defaultCustomer, defaultCustomer,"Description for Start Service");
 		// Verify Updated details IN SERVICE TAB order number from database
 		dashBoard.clickServiceorderLink();
 		dashBoard.clickServiceorder1();
@@ -142,7 +142,7 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 
 		dashBoard.clickServiceorder1();
 		// Verify First Service Order in the Stack
-		moveOutCustomer = "Mr. Movein Cus";
+		moveOutCustomer = "Mr. Vacant Vacant";
 		moveInCustomer = "Mr. Alert Test (Customeralert01)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer, moveOutCustomer, moveInCustomer, newDate2,
 				moveOutstart_dtfinalString, task, locationId);
@@ -159,7 +159,7 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		// Verifying Third Transfer order in the stack
 		dashBoard.clickServiceorder3();
 		moveOutCustomer = "Mr. Automation Mate";
-		moveInCustomer = "Mr. Movein Cus (Moveincus2)";
+		moveInCustomer = "Mr. Vacant Vacant (Vacant)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer, moveOutCustomer, moveInCustomer,
 				moveOutstart_dtfinalString, moveOutstart_dtfinalString, task, locationId);
 		dashBoard.logout();

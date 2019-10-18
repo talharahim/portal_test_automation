@@ -76,7 +76,7 @@ public class SikuliUtility extends CommonMethods {
 		if (counter != 0) {
 			System.out.println("Match Found at x:" + objMatch.x + " y:" + objMatch.y);
 		} else {
-			Assert.fail("image not matched");
+			Assert.fail("image not matched ");
 		}
 
 	}

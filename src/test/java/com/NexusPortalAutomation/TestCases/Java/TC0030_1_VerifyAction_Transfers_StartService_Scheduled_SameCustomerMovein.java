@@ -83,6 +83,7 @@ public class TC0030_1_VerifyAction_Transfers_StartService_Scheduled_SameCustomer
 		jsx = (JavascriptExecutor) driver;
 		jsx.executeScript("window.scrollBy(0,450)", "");
 		dashBoard.setElementText(dashBoard.findElementByid("XFER_Search_Input"), requestedbY, "Customer Name Request");
+		Delay();
 		// Entering data for Move In
 		dashBoard.clickMoveInSubmit();
 		Thread.sleep(500);

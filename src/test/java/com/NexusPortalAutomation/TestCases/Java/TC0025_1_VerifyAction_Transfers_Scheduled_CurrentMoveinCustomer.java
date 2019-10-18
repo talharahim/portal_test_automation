@@ -72,6 +72,7 @@ public class TC0025_1_VerifyAction_Transfers_Scheduled_CurrentMoveinCustomer ext
 		dashBoard.moveinScheduledate(moveOutrequestedDate);
 		dashBoard.verifydefaultCustomer(defaultCustomer);
 		dashBoard.enterdefaultCustomer(requestedbY);
+		Delay();
 		dashBoard.enterDescription("AUTOMATION TEST");
 
 		// Move In
