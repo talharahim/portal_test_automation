@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0018_verifyDrillbacksGeneral">
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0025_1_VerifyAction_Transfers_Scheduled_CurrentMoveinCustomer">
         <methods>
-          <include name="verifyDrillbacksGeneral"/>
+          <include name="VerifyActionServiceOrder_Transfers_NotSchedule"/>
           <include name="TearDown"/>
           <include name="readProp"/>
         </methods>
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0018_verifyDrillbacksGeneral -->
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0025_1_VerifyAction_Transfers_Scheduled_CurrentMoveinCustomer -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
