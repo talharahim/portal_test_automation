@@ -4,6 +4,7 @@ D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPor
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0002_TestSearchAutobyFirstName.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0019_verifyDrillbackTransactions.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0031_VerifyAction_Transfers_StopService_Scheduled.java
+D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\apiTestCases\Java\TC0001_isValidCustomer.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0011_VerifyBookMark.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0013_VerifyContactEdit.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0030_VerifyAction_Transfers_StartService_Scheduled.java
@@ -21,6 +22,7 @@ D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPor
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0022_VerifyAction_ServiceOrder.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0016_1_VerifyBillingDetails_EBill.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0016_VerifyBillingDetails_UsageGraph.java
+D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\apiTestCases\Java\TC0002_getaccountbalanceInvalidCustomer.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0034_VerifyAction_Transfers_Stack_TwoLocations.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0027_VerifyAction_Transfers_StopService_NotScheduled.java
@@ -58,4 +60,5 @@ D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPor
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0009_VerifyAccountSearch.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0009_1_VerifyAccountSearch_NoAccounts.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0025_VerifyAction_Transfers_NotScheduled.java
+D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\apiTestCases\Java\TC0003_getdefaultcustomerforlocation.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0005_TestSearchbyBookMarks.java

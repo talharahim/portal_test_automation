@@ -1,5 +1,6 @@
 package com.NexusPortalAutomation.apiTestCases.Java;
 
+import org.json.JSONException;
 import org.testng.annotations.Test;
 
 import com.NexusPortalAutomation.ApiMain.Java.commonApiMethods;
@@ -7,7 +8,7 @@ import com.NexusPortalAutomation.ApiMain.Java.commonApiMethods;
 public class TC0002_getaccountbalanceInvalidCustomer {
 
     @Test
-    public void testaccountbalanceresponseforInvalidCustomer() {
+    public void testaccountbalanceresponseforInvalidCustomer() throws JSONException {
 	String customerId = "0000011111";
 	String locationId = "ELECWAT001";
 	String date = "2019-11-20";

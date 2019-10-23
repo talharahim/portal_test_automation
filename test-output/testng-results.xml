@@ -1,17 +1,2399 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[Value for Key 'locationID' found from sheet =LOC@0004]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'locationID2' found from sheet =LOC@0005]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'locationID3' found from sheet =AUTOLOC001]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'locationID4' found from sheet =STATEMENTS001]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'defaultCustomer' found from sheet =Mr. VACANT VACANT]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'requestedbY' found from sheet =Mr. Automation Mate]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'moveOutCustomer' found from sheet =Mr. Automation Mate]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'loc2moveOutCustomer' found from sheet =Mr. Movein Cus]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'moveInCustomer' found from sheet =Mr. Vacant Vacant (Vacant)]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'loc2moveInCustomer' found from sheet =Mr. Automation Mate (0000011111)]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'task1' found from sheet =Meter Reading-electric]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'task2' found from sheet =Charge New Customer]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'task3' found from sheet =Property Transfer]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'task4' found from sheet =Deposit Request-new Customer]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'task5' found from sheet =Deposit Payment-new Customer E]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'task6' found from sheet =Prepayment Required-new Custom]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'message' found from sheet =Transfer initiated]]>
+    </line>
+    <line>
+      <![CDATA[Launching Chrome]]>
+    </line>
+    <line>
+      <![CDATA[Browser Maximised]]>
+    </line>
+    <line>
+      <![CDATA[Deleting Records for ServiceOrder = SORD00000003585]]>
+    </line>
+    <line>
+      <![CDATA[Deleting Records for Location =  LOC@0004]]>
+    </line>
+    <line>
+      <![CDATA[Deleting Records for ServiceOrder = ]]>
+    </line>
+    <line>
+      <![CDATA[Deleting Records for ServiceOrder = ]]>
+    </line>
+    <line>
+      <![CDATA[Deleting Records for ServiceOrder = ]]>
+    </line>
+    <line>
+      <![CDATA[Angular Request Completed in 57ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: username] displayed in 86ms]]>
+    </line>
+    <line>
+      <![CDATA[Login Page title Verified]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: username] displayed in 24ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: password] displayed in 36ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: kc-login] displayed in 39ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular Request Completed in 21ms]]>
+    </line>
+    <line>
+      <![CDATA[User signed Admin]]>
+    </line>
+    <line>
+      <![CDATA[Enter Text for Search =LOC@0004]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SRCH_Input] displayed in 49ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 731ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SRCH_Option_1_Address_Line] displayed in 47ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Customer]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 387ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 45ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: 'LOC_Location_Id'] displayed in 34ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 11ms]]>
+    </line>
+    <line>
+      <![CDATA[got Text CustomerLocId = LOC@0004]]>
+    </line>
+    <line>
+      <![CDATA[Customer Location Id found LOC@0004]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: LOC@0004 = LOC@0004]]>
+    </line>
+    <line>
+      <![CDATA[Click Action Dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Button] displayed in 34ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Button] displayed in 25ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 10ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Action Drop down]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 17ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Transfer_Service] displayed in 76ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Transfer_Service] displayed in 44ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 47ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Action Transfer Service Drop down]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 23ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Select] displayed in 190ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 15ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Transfer Combo]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 8ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Select_Option_2] displayed in 49ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 19ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Transfer Option 2]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 10ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Date_Picker_Requested] displayed in 49ms]]>
+    </line>
+    <line>
+      <![CDATA[Entered Request Date = 10/23/2019 00:31]]>
+    </line>
+    <line>
+      <![CDATA[Submit Transfer Request]]>
+    </line>
+    <line>
+      <![CDATA[TRANSFER]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: CLO_Service_Order_Input] displayed in 77ms]]>
+    </line>
+    <line>
+      <![CDATA[Setting Text on Search Request with Text = TRANSFER]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 9ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Date_Picker_Scheduled] displayed in 47ms]]>
+    </line>
+    <line>
+      <![CDATA[Enter Schedule Date Date]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Date_Picker_Scheduled] displayed in 38ms]]>
+    </line>
+    <line>
+      <![CDATA[Setting Text on DatePicket with Text = ]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 420ms]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Mr. VACANT VACANT = Mr. VACANT VACANT]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Search_Input] displayed in 46ms]]>
+    </line>
+    <line>
+      <![CDATA[Setting Text on Customer Name Request with Text = MoveinCus]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 8ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Search_Option_1] displayed in 623ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 29ms]]>
+    </line>
+    <line>
+      <![CDATA[Click XFER_Search_Option_1_Customer_Name]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 8ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Description] displayed in 49ms]]>
+    </line>
+    <line>
+      <![CDATA[Setting Text on Description Request with Text = Description for Start Service]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 19ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Submit]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Button_Action] displayed in 58ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Button_Action] displayed in 48ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 112ms]]>
+    </line>
+    <line>
+      <![CDATA[Click MoveInSubmit Button]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 31ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Button_Done] displayed in 69ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 42ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Done Button for Transfer]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 35ms]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Servic Order Link]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> css selector: #mat-tab-label-0-2 > div] displayed in 77ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 575ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Service Order Link]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 14ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SOLV_Service_Order_1] displayed in 58ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SOLV_Service_Order_1] displayed in 54ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 19ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Clicking Service Order 1]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 13ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 15ms]]>
+    </line>
+    <line>
+      <![CDATA[Capturing Servic Order Number]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Service_Order_Id] displayed in 86ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 10ms]]>
+    </line>
+    <line>
+      <![CDATA[got Text Service Order Number = SORD00000003586]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Refresh_Page] displayed in 56ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Refresh_Page] displayed in 49ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 645ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Refresh Button]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 33ms]]>
+    </line>
+    <line>
+      <![CDATA[Refresh Page]]>
+    </line>
+    <line>
+      <![CDATA[Click Action Dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Button] displayed in 90ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Button] displayed in 49ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 86ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Action Drop down]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 80ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Transfer_Service] displayed in 231ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Transfer_Service] displayed in 33ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 146ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Action Transfer Service Drop down]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 31ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Select] displayed in 154ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 17ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Transfer Combo]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 10ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Select_Option_2] displayed in 53ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 11ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Transfer Option 2]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 10ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Warning_Message] displayed in 24ms]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Service Order Exist. TRANSFER = Service Order Exist. TRANSFER]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Warning_Drillback] displayed in 25ms]]>
+    </line>
+    <line>
+      <![CDATA[String Verified  =cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Prod=229&Act=OPEN&Func=ServiceOrder&LocationID=LOC@0004&ServiceOrderNumber=SORD00000003586&CogsDrillback=1 Contains = SORD00000003586]]>
+    </line>
+    <line>
+      <![CDATA[Submit Transfer Request]]>
+    </line>
+    <line>
+      <![CDATA[TRANSFER]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: CLO_Service_Order_Input] displayed in 46ms]]>
+    </line>
+    <line>
+      <![CDATA[Setting Text on Search Request with Text = TRANSFER]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 7ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Date_Picker_Scheduled] displayed in 58ms]]>
+    </line>
+    <line>
+      <![CDATA[Enter Schedule Date Date]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Date_Picker_Scheduled] displayed in 44ms]]>
+    </line>
+    <line>
+      <![CDATA[Setting Text on DatePicket with Text = ]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 418ms]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Mr. VACANT VACANT = Mr. VACANT VACANT]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Search_Input] displayed in 48ms]]>
+    </line>
+    <line>
+      <![CDATA[Setting Text on Customer Name Request with Text = Mr. VACANT VACANT]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 11ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Search_Option_1] displayed in 602ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 18ms]]>
+    </line>
+    <line>
+      <![CDATA[Click XFER_Search_Option_1_Customer_Name]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 9ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Description] displayed in 57ms]]>
+    </line>
+    <line>
+      <![CDATA[Setting Text on Description Request with Text = Description for Start Service]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 9ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Submit]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Button_Action] displayed in 46ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Button_Action] displayed in 40ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 113ms]]>
+    </line>
+    <line>
+      <![CDATA[Click MoveInSubmit Button]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 8ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Button_Done] displayed in 61ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 48ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Done Button for Transfer]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 19ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Refresh_Page] displayed in 74ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Refresh_Page] displayed in 75ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 494ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Refresh Button]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 10ms]]>
+    </line>
+    <line>
+      <![CDATA[Refresh Page]]>
+    </line>
+    <line>
+      <![CDATA[Clicking Servic Order Link]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> css selector: #mat-tab-label-0-2 > div] displayed in 46ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 9ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Service Order Link]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 8ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SOLV_Service_Order_1] displayed in 38ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SOLV_Service_Order_1] displayed in 35ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 9ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Clicking Service Order 1]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 8ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 7ms]]>
+    </line>
+    <line>
+      <![CDATA[Capturing Servic Order Number]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Service_Order_Id] displayed in 42ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 8ms]]>
+    </line>
+    <line>
+      <![CDATA[got Text Service Order Number = SORD00000003587]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Drillback] displayed in 22ms]]>
+    </line>
+    <line>
+      <![CDATA[String Verified  =cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Prod=229&Act=OPEN&Func=ServiceOrder&LocationID=LOC@0004&ServiceOrderNumber=SORD00000003587&CogsDrillback=1 Contains = SORD00000003587]]>
+    </line>
+    <line>
+      <![CDATA[get Requested Date]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Oct 23, 2019 = Oct 23, 2019]]>
+    </line>
+    <line>
+      <![CDATA[SORD00000003587]]>
+    </line>
+    <line>
+      <![CDATA[Service Order verified = SORD00000003587]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Refresh_Page] displayed in 34ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Refresh_Page] displayed in 41ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 508ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Refresh Button]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 8ms]]>
+    </line>
+    <line>
+      <![CDATA[Refresh Page]]>
+    </line>
+    <line>
+      <![CDATA[Click Action Dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Button] displayed in 27ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Button] displayed in 22ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 13ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Action Drop down]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 12ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Transfer_Service] displayed in 48ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Transfer_Service] displayed in 62ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 38ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Action Transfer Service Drop down]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 16ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Select] displayed in 142ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 27ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Transfer Combo]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 12ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Select_Option_2] displayed in 47ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 12ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Transfer Option 2]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 10ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Warning_Message] displayed in 42ms]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Multiple Service Orders Exist. TRANSFER = Multiple Service Orders Exist. TRANSFER]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Warning_Drillback] displayed in 35ms]]>
+    </line>
+    <line>
+      <![CDATA[String Verified  =cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Prod=229&Act=OPEN&Func=ServiceOrder&LocationID=LOC@0004&ServiceOrderNumber=SORD00000003587&CogsDrillback=1 Contains = SORD00000003587]]>
+    </line>
+    <line>
+      <![CDATA[TRANSFER]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: CLO_Service_Order_Input] displayed in 62ms]]>
+    </line>
+    <line>
+      <![CDATA[Setting Text on Search Request with Text = TRANSFER]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 10ms]]>
+    </line>
+    <line>
+      <![CDATA[Submit Transfer Request]]>
+    </line>
+    <line>
+      <![CDATA[TRANSFER]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: CLO_Service_Order_Input] displayed in 39ms]]>
+    </line>
+    <line>
+      <![CDATA[Setting Text on Search Request with Text = TRANSFER]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 523ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Date_Picker_Scheduled] displayed in 52ms]]>
+    </line>
+    <line>
+      <![CDATA[Enter Schedule Date Date]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Date_Picker_Scheduled] displayed in 36ms]]>
+    </line>
+    <line>
+      <![CDATA[Setting Text on DatePicket with Text = ]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 446ms]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Mr. VACANT VACANT = Mr. VACANT VACANT]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Search_Input] displayed in 44ms]]>
+    </line>
+    <line>
+      <![CDATA[Setting Text on Customer Name Request with Text = Alert]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 7ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Search_Option_1] displayed in 647ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 14ms]]>
+    </line>
+    <line>
+      <![CDATA[Click XFER_Search_Option_1_Customer_Name]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 8ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Description] displayed in 61ms]]>
+    </line>
+    <line>
+      <![CDATA[Setting Text on Description Request with Text = Description for Start Service]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 7ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Submit]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Button_Action] displayed in 49ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Button_Action] displayed in 35ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 117ms]]>
+    </line>
+    <line>
+      <![CDATA[Click MoveInSubmit Button]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 4ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Button_Done] displayed in 66ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 33ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Done Button for Transfer]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 11ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Refresh_Page] displayed in 64ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Refresh_Page] displayed in 52ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 490ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Refresh Button]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 6ms]]>
+    </line>
+    <line>
+      <![CDATA[Refresh Page]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SOLV_Service_Order_1] displayed in 59ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SOLV_Service_Order_1] displayed in 37ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 7ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Clicking Service Order 1]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 7ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 7ms]]>
+    </line>
+    <line>
+      <![CDATA[get Requested Customer Name]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Mr. Automation Mate = Mr. Automation Mate]]>
+    </line>
+    <line>
+      <![CDATA[get Move Out Customer Date]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Mr. Automation Mate = Mr. Automation Mate]]>
+    </line>
+    <line>
+      <![CDATA[get Movein Customer Name Date]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Mr. Alert Test (Customeralert01) = Mr. Alert Test (Customeralert01)]]>
+    </line>
+    <line>
+      <![CDATA[get Scheduled Date]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Not Scheduled = Not Scheduled]]>
+    </line>
+    <line>
+      <![CDATA[get Requested Date]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Oct 23, 2019 = Oct 23, 2019]]>
+    </line>
+    <line>
+      <![CDATA[Meter Reading-electric]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Meter Reading-electric = Meter Reading-electric]]>
+    </line>
+    <line>
+      <![CDATA[get Task Description]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Charge New Customer = Charge New Customer]]>
+    </line>
+    <line>
+      <![CDATA[get Task Description]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Property Transfer = Property Transfer]]>
+    </line>
+    <line>
+      <![CDATA[get Task Description]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Deposit Request-new Customer = Deposit Request-new Customer]]>
+    </line>
+    <line>
+      <![CDATA[Deposit Payment-new Customer E]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Deposit Payment-new Customer E = Deposit Payment-new Customer E]]>
+    </line>
+    <line>
+      <![CDATA[Prepayment Required-new Custom]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Prepayment Required-new Custom = Prepayment Required-new Custom]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Drillback] displayed in 22ms]]>
+    </line>
+    <line>
+      <![CDATA[Capturing Servic Order Number]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Service_Order_Id] displayed in 43ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 7ms]]>
+    </line>
+    <line>
+      <![CDATA[got Text Service Order Number = SORD00000003588]]>
+    </line>
+    <line>
+      <![CDATA[String Verified  =cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Prod=229&Act=OPEN&Func=ServiceOrder&LocationID=LOC@0004&ServiceOrderNumber=SORD00000003588&CogsDrillback=1 Contains = SORD00000003588]]>
+    </line>
+    <line>
+      <![CDATA[Capturing Servic Order Number]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Service_Order_Id] displayed in 56ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 16ms]]>
+    </line>
+    <line>
+      <![CDATA[got Text Service Order Number = SORD00000003588]]>
+    </line>
+    <line>
+      <![CDATA[Service Order verified = SORD00000003588]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SOLV_Service_Order_2] displayed in 71ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SOLV_Service_Order_2] displayed in 29ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 9ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Clicking Service Order 2]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 11ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 11ms]]>
+    </line>
+    <line>
+      <![CDATA[String Verified  =cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Prod=229&Act=OPEN&Func=ServiceOrder&LocationID=LOC@0004&ServiceOrderNumber=SORD00000003587&CogsDrillback=1 Contains = SORD00000003587]]>
+    </line>
+    <line>
+      <![CDATA[get Requested Date]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Oct 23, 2019 = Oct 23, 2019]]>
+    </line>
+    <line>
+      <![CDATA[get Requested Customer Name]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Mr. Automation Mate = Mr. Automation Mate]]>
+    </line>
+    <line>
+      <![CDATA[get Move Out Customer Date]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Mr. Automation Mate = Mr. Automation Mate]]>
+    </line>
+    <line>
+      <![CDATA[get Movein Customer Name Date]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Mr. Vacant Vacant (Vacant) = Mr. Vacant Vacant (Vacant)]]>
+    </line>
+    <line>
+      <![CDATA[get Scheduled Date]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Not Scheduled = Not Scheduled]]>
+    </line>
+    <line>
+      <![CDATA[get Requested Date]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Oct 23, 2019 = Oct 23, 2019]]>
+    </line>
+    <line>
+      <![CDATA[Meter Reading-electric]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Meter Reading-electric = Meter Reading-electric]]>
+    </line>
+    <line>
+      <![CDATA[get Task Description]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Charge New Customer = Charge New Customer]]>
+    </line>
+    <line>
+      <![CDATA[get Task Description]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Property Transfer = Property Transfer]]>
+    </line>
+    <line>
+      <![CDATA[get Task Description]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Deposit Request-new Customer = Deposit Request-new Customer]]>
+    </line>
+    <line>
+      <![CDATA[Deposit Payment-new Customer E]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Deposit Payment-new Customer E = Deposit Payment-new Customer E]]>
+    </line>
+    <line>
+      <![CDATA[Prepayment Required-new Custom]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Prepayment Required-new Custom = Prepayment Required-new Custom]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Drillback] displayed in 16ms]]>
+    </line>
+    <line>
+      <![CDATA[Capturing Servic Order Number]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Service_Order_Id] displayed in 32ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 7ms]]>
+    </line>
+    <line>
+      <![CDATA[got Text Service Order Number = SORD00000003587]]>
+    </line>
+    <line>
+      <![CDATA[String Verified  =cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Prod=229&Act=OPEN&Func=ServiceOrder&LocationID=LOC@0004&ServiceOrderNumber=SORD00000003587&CogsDrillback=1 Contains = SORD00000003587]]>
+    </line>
+    <line>
+      <![CDATA[Capturing Servic Order Number]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Service_Order_Id] displayed in 32ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 8ms]]>
+    </line>
+    <line>
+      <![CDATA[got Text Service Order Number = SORD00000003587]]>
+    </line>
+    <line>
+      <![CDATA[Service Order verified = SORD00000003587]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SOLV_Service_Order_3] displayed in 62ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SOLV_Service_Order_3] displayed in 31ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 11ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Clicking Service Order 3]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 9ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 7ms]]>
+    </line>
+    <line>
+      <![CDATA[get Requested Customer Name]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Mr. Automation Mate = Mr. Automation Mate]]>
+    </line>
+    <line>
+      <![CDATA[get Move Out Customer Date]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Mr. Automation Mate = Mr. Automation Mate]]>
+    </line>
+    <line>
+      <![CDATA[get Movein Customer Name Date]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Mr. Movein Cus (Moveincus2) = Mr. Movein Cus (Moveincus2)]]>
+    </line>
+    <line>
+      <![CDATA[get Scheduled Date]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Not Scheduled = Not Scheduled]]>
+    </line>
+    <line>
+      <![CDATA[get Requested Date]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Oct 23, 2019 = Oct 23, 2019]]>
+    </line>
+    <line>
+      <![CDATA[Meter Reading-electric]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Meter Reading-electric = Meter Reading-electric]]>
+    </line>
+    <line>
+      <![CDATA[get Task Description]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Charge New Customer = Charge New Customer]]>
+    </line>
+    <line>
+      <![CDATA[get Task Description]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Property Transfer = Property Transfer]]>
+    </line>
+    <line>
+      <![CDATA[get Task Description]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Deposit Request-new Customer = Deposit Request-new Customer]]>
+    </line>
+    <line>
+      <![CDATA[Deposit Payment-new Customer E]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Deposit Payment-new Customer E = Deposit Payment-new Customer E]]>
+    </line>
+    <line>
+      <![CDATA[Prepayment Required-new Custom]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Prepayment Required-new Custom = Prepayment Required-new Custom]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Drillback] displayed in 15ms]]>
+    </line>
+    <line>
+      <![CDATA[Capturing Servic Order Number]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Service_Order_Id] displayed in 42ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 16ms]]>
+    </line>
+    <line>
+      <![CDATA[got Text Service Order Number = SORD00000003586]]>
+    </line>
+    <line>
+      <![CDATA[String Verified  =cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Prod=229&Act=OPEN&Func=ServiceOrder&LocationID=LOC@0004&ServiceOrderNumber=SORD00000003586&CogsDrillback=1 Contains = SORD00000003586]]>
+    </line>
+    <line>
+      <![CDATA[Capturing Servic Order Number]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Service_Order_Id] displayed in 62ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 16ms]]>
+    </line>
+    <line>
+      <![CDATA[got Text Service Order Number = SORD00000003586]]>
+    </line>
+    <line>
+      <![CDATA[Service Order verified = SORD00000003586]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 8ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 9ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: USR_Name] displayed in 38ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: USR_Name] displayed in 30ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 12ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Logged User Link]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 9ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Logout] displayed in 41ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Logout] displayed in 33ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 16ms]]>
+    </line>
+    <line>
+      <![CDATA[Click logout Link]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 16ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 9ms]]>
+    </line>
+    <line>
+      <![CDATA[Closing Browser]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed...]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1968" started-at="2019-10-22T08:56:11Z" finished-at="2019-10-22T08:56:13Z">
+  <suite name="Default suite" duration-ms="53625" started-at="2019-10-23T05:30:57Z" finished-at="2019-10-23T05:31:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1968" started-at="2019-10-22T08:56:11Z" finished-at="2019-10-22T08:56:13Z">
-      <class name="com.NexusPortalAutomation.apiTestCases.Java.TC0002_getaccountbalanceInvalidCustomer">
-        <test-method status="PASS" signature="testaccountbalanceresponseforInvalidCustomer()[pri:0, instance:com.NexusPortalAutomation.apiTestCases.Java.TC0002_getaccountbalanceInvalidCustomer@13805618]" name="testaccountbalanceresponseforInvalidCustomer" duration-ms="1953" started-at="2019-10-22T08:56:11Z" finished-at="2019-10-22T08:56:13Z">
+    <test name="Default test" duration-ms="53625" started-at="2019-10-23T05:30:57Z" finished-at="2019-10-23T05:31:50Z">
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService">
+        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService@2e8c1c9b]" name="readProp" is-config="true" duration-ms="5637" started-at="2019-10-23T05:30:57Z" finished-at="2019-10-23T05:31:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6451a288]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[Launching Chrome]]>
+            </line>
+            <line>
+              <![CDATA[Browser Maximised]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- testaccountbalanceresponseforInvalidCustomer -->
-      </class> <!-- com.NexusPortalAutomation.apiTestCases.Java.TC0002_getaccountbalanceInvalidCustomer -->
+        </test-method> <!-- readProp -->
+        <test-method status="PASS" signature="VerifyTransferActionServiceOrder()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService@2e8c1c9b]" name="VerifyTransferActionServiceOrder" duration-ms="47372" started-at="2019-10-23T05:31:02Z" finished-at="2019-10-23T05:31:50Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Deleting Records for ServiceOrder = SORD00000003585]]>
+            </line>
+            <line>
+              <![CDATA[Deleting Records for Location =  LOC@0004]]>
+            </line>
+            <line>
+              <![CDATA[Deleting Records for ServiceOrder = ]]>
+            </line>
+            <line>
+              <![CDATA[Deleting Records for ServiceOrder = ]]>
+            </line>
+            <line>
+              <![CDATA[Deleting Records for ServiceOrder = ]]>
+            </line>
+            <line>
+              <![CDATA[Angular Request Completed in 57ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: username] displayed in 86ms]]>
+            </line>
+            <line>
+              <![CDATA[Login Page title Verified]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: username] displayed in 24ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: password] displayed in 36ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: kc-login] displayed in 39ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular Request Completed in 21ms]]>
+            </line>
+            <line>
+              <![CDATA[User signed Admin]]>
+            </line>
+            <line>
+              <![CDATA[Enter Text for Search =LOC@0004]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SRCH_Input] displayed in 49ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 731ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SRCH_Option_1_Address_Line] displayed in 47ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Customer]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 387ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 45ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: 'LOC_Location_Id'] displayed in 34ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 11ms]]>
+            </line>
+            <line>
+              <![CDATA[got Text CustomerLocId = LOC@0004]]>
+            </line>
+            <line>
+              <![CDATA[Customer Location Id found LOC@0004]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: LOC@0004 = LOC@0004]]>
+            </line>
+            <line>
+              <![CDATA[Click Action Dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Button] displayed in 34ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Button] displayed in 25ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 10ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Action Drop down]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 17ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Transfer_Service] displayed in 76ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Transfer_Service] displayed in 44ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 47ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Action Transfer Service Drop down]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 23ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Select] displayed in 190ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 15ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Transfer Combo]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 8ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Select_Option_2] displayed in 49ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 19ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Transfer Option 2]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 10ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Date_Picker_Requested] displayed in 49ms]]>
+            </line>
+            <line>
+              <![CDATA[Entered Request Date = 10/23/2019 00:31]]>
+            </line>
+            <line>
+              <![CDATA[Submit Transfer Request]]>
+            </line>
+            <line>
+              <![CDATA[TRANSFER]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: CLO_Service_Order_Input] displayed in 77ms]]>
+            </line>
+            <line>
+              <![CDATA[Setting Text on Search Request with Text = TRANSFER]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 9ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Date_Picker_Scheduled] displayed in 47ms]]>
+            </line>
+            <line>
+              <![CDATA[Enter Schedule Date Date]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Date_Picker_Scheduled] displayed in 38ms]]>
+            </line>
+            <line>
+              <![CDATA[Setting Text on DatePicket with Text = ]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 420ms]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Mr. VACANT VACANT = Mr. VACANT VACANT]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Search_Input] displayed in 46ms]]>
+            </line>
+            <line>
+              <![CDATA[Setting Text on Customer Name Request with Text = MoveinCus]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 8ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Search_Option_1] displayed in 623ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 29ms]]>
+            </line>
+            <line>
+              <![CDATA[Click XFER_Search_Option_1_Customer_Name]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 8ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Description] displayed in 49ms]]>
+            </line>
+            <line>
+              <![CDATA[Setting Text on Description Request with Text = Description for Start Service]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 19ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Submit]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Button_Action] displayed in 58ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Button_Action] displayed in 48ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 112ms]]>
+            </line>
+            <line>
+              <![CDATA[Click MoveInSubmit Button]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 31ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Button_Done] displayed in 69ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 42ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Done Button for Transfer]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 35ms]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Servic Order Link]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> css selector: #mat-tab-label-0-2 > div] displayed in 77ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 575ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Service Order Link]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 14ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SOLV_Service_Order_1] displayed in 58ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SOLV_Service_Order_1] displayed in 54ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 19ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Clicking Service Order 1]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 13ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 15ms]]>
+            </line>
+            <line>
+              <![CDATA[Capturing Servic Order Number]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Service_Order_Id] displayed in 86ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 10ms]]>
+            </line>
+            <line>
+              <![CDATA[got Text Service Order Number = SORD00000003586]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Refresh_Page] displayed in 56ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Refresh_Page] displayed in 49ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 645ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Refresh Button]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 33ms]]>
+            </line>
+            <line>
+              <![CDATA[Refresh Page]]>
+            </line>
+            <line>
+              <![CDATA[Click Action Dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Button] displayed in 90ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Button] displayed in 49ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 86ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Action Drop down]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 80ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Transfer_Service] displayed in 231ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Transfer_Service] displayed in 33ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 146ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Action Transfer Service Drop down]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 31ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Select] displayed in 154ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 17ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Transfer Combo]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 10ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Select_Option_2] displayed in 53ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 11ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Transfer Option 2]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 10ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Warning_Message] displayed in 24ms]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Service Order Exist. TRANSFER = Service Order Exist. TRANSFER]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Warning_Drillback] displayed in 25ms]]>
+            </line>
+            <line>
+              <![CDATA[String Verified  =cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Prod=229&Act=OPEN&Func=ServiceOrder&LocationID=LOC@0004&ServiceOrderNumber=SORD00000003586&CogsDrillback=1 Contains = SORD00000003586]]>
+            </line>
+            <line>
+              <![CDATA[Submit Transfer Request]]>
+            </line>
+            <line>
+              <![CDATA[TRANSFER]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: CLO_Service_Order_Input] displayed in 46ms]]>
+            </line>
+            <line>
+              <![CDATA[Setting Text on Search Request with Text = TRANSFER]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 7ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Date_Picker_Scheduled] displayed in 58ms]]>
+            </line>
+            <line>
+              <![CDATA[Enter Schedule Date Date]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Date_Picker_Scheduled] displayed in 44ms]]>
+            </line>
+            <line>
+              <![CDATA[Setting Text on DatePicket with Text = ]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 418ms]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Mr. VACANT VACANT = Mr. VACANT VACANT]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Search_Input] displayed in 48ms]]>
+            </line>
+            <line>
+              <![CDATA[Setting Text on Customer Name Request with Text = Mr. VACANT VACANT]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 11ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Search_Option_1] displayed in 602ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 18ms]]>
+            </line>
+            <line>
+              <![CDATA[Click XFER_Search_Option_1_Customer_Name]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 9ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Description] displayed in 57ms]]>
+            </line>
+            <line>
+              <![CDATA[Setting Text on Description Request with Text = Description for Start Service]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 9ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Submit]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Button_Action] displayed in 46ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Button_Action] displayed in 40ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 113ms]]>
+            </line>
+            <line>
+              <![CDATA[Click MoveInSubmit Button]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 8ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Button_Done] displayed in 61ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 48ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Done Button for Transfer]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 19ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Refresh_Page] displayed in 74ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Refresh_Page] displayed in 75ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 494ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Refresh Button]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 10ms]]>
+            </line>
+            <line>
+              <![CDATA[Refresh Page]]>
+            </line>
+            <line>
+              <![CDATA[Clicking Servic Order Link]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> css selector: #mat-tab-label-0-2 > div] displayed in 46ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 9ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Service Order Link]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 8ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SOLV_Service_Order_1] displayed in 38ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SOLV_Service_Order_1] displayed in 35ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 9ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Clicking Service Order 1]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 8ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 7ms]]>
+            </line>
+            <line>
+              <![CDATA[Capturing Servic Order Number]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Service_Order_Id] displayed in 42ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 8ms]]>
+            </line>
+            <line>
+              <![CDATA[got Text Service Order Number = SORD00000003587]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Drillback] displayed in 22ms]]>
+            </line>
+            <line>
+              <![CDATA[String Verified  =cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Prod=229&Act=OPEN&Func=ServiceOrder&LocationID=LOC@0004&ServiceOrderNumber=SORD00000003587&CogsDrillback=1 Contains = SORD00000003587]]>
+            </line>
+            <line>
+              <![CDATA[get Requested Date]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Oct 23, 2019 = Oct 23, 2019]]>
+            </line>
+            <line>
+              <![CDATA[SORD00000003587]]>
+            </line>
+            <line>
+              <![CDATA[Service Order verified = SORD00000003587]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Refresh_Page] displayed in 34ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Refresh_Page] displayed in 41ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 508ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Refresh Button]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 8ms]]>
+            </line>
+            <line>
+              <![CDATA[Refresh Page]]>
+            </line>
+            <line>
+              <![CDATA[Click Action Dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Button] displayed in 27ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Button] displayed in 22ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 13ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Action Drop down]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 12ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Transfer_Service] displayed in 48ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Transfer_Service] displayed in 62ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 38ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Action Transfer Service Drop down]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 16ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Select] displayed in 142ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 27ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Transfer Combo]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 12ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Select_Option_2] displayed in 47ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 12ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Transfer Option 2]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 10ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Warning_Message] displayed in 42ms]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Multiple Service Orders Exist. TRANSFER = Multiple Service Orders Exist. TRANSFER]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Warning_Drillback] displayed in 35ms]]>
+            </line>
+            <line>
+              <![CDATA[String Verified  =cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Prod=229&Act=OPEN&Func=ServiceOrder&LocationID=LOC@0004&ServiceOrderNumber=SORD00000003587&CogsDrillback=1 Contains = SORD00000003587]]>
+            </line>
+            <line>
+              <![CDATA[TRANSFER]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: CLO_Service_Order_Input] displayed in 62ms]]>
+            </line>
+            <line>
+              <![CDATA[Setting Text on Search Request with Text = TRANSFER]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 10ms]]>
+            </line>
+            <line>
+              <![CDATA[Submit Transfer Request]]>
+            </line>
+            <line>
+              <![CDATA[TRANSFER]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: CLO_Service_Order_Input] displayed in 39ms]]>
+            </line>
+            <line>
+              <![CDATA[Setting Text on Search Request with Text = TRANSFER]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 523ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Date_Picker_Scheduled] displayed in 52ms]]>
+            </line>
+            <line>
+              <![CDATA[Enter Schedule Date Date]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Date_Picker_Scheduled] displayed in 36ms]]>
+            </line>
+            <line>
+              <![CDATA[Setting Text on DatePicket with Text = ]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 446ms]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Mr. VACANT VACANT = Mr. VACANT VACANT]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Search_Input] displayed in 44ms]]>
+            </line>
+            <line>
+              <![CDATA[Setting Text on Customer Name Request with Text = Alert]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 7ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Search_Option_1] displayed in 647ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 14ms]]>
+            </line>
+            <line>
+              <![CDATA[Click XFER_Search_Option_1_Customer_Name]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 8ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Description] displayed in 61ms]]>
+            </line>
+            <line>
+              <![CDATA[Setting Text on Description Request with Text = Description for Start Service]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 7ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Submit]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Button_Action] displayed in 49ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Button_Action] displayed in 35ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 117ms]]>
+            </line>
+            <line>
+              <![CDATA[Click MoveInSubmit Button]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 4ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: XFER_Button_Done] displayed in 66ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 33ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Done Button for Transfer]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 11ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Refresh_Page] displayed in 64ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Refresh_Page] displayed in 52ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 490ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Refresh Button]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 6ms]]>
+            </line>
+            <line>
+              <![CDATA[Refresh Page]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SOLV_Service_Order_1] displayed in 59ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SOLV_Service_Order_1] displayed in 37ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 7ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Clicking Service Order 1]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 7ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 7ms]]>
+            </line>
+            <line>
+              <![CDATA[get Requested Customer Name]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Mr. Automation Mate = Mr. Automation Mate]]>
+            </line>
+            <line>
+              <![CDATA[get Move Out Customer Date]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Mr. Automation Mate = Mr. Automation Mate]]>
+            </line>
+            <line>
+              <![CDATA[get Movein Customer Name Date]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Mr. Alert Test (Customeralert01) = Mr. Alert Test (Customeralert01)]]>
+            </line>
+            <line>
+              <![CDATA[get Scheduled Date]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Not Scheduled = Not Scheduled]]>
+            </line>
+            <line>
+              <![CDATA[get Requested Date]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Oct 23, 2019 = Oct 23, 2019]]>
+            </line>
+            <line>
+              <![CDATA[Meter Reading-electric]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Meter Reading-electric = Meter Reading-electric]]>
+            </line>
+            <line>
+              <![CDATA[get Task Description]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Charge New Customer = Charge New Customer]]>
+            </line>
+            <line>
+              <![CDATA[get Task Description]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Property Transfer = Property Transfer]]>
+            </line>
+            <line>
+              <![CDATA[get Task Description]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Deposit Request-new Customer = Deposit Request-new Customer]]>
+            </line>
+            <line>
+              <![CDATA[Deposit Payment-new Customer E]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Deposit Payment-new Customer E = Deposit Payment-new Customer E]]>
+            </line>
+            <line>
+              <![CDATA[Prepayment Required-new Custom]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Prepayment Required-new Custom = Prepayment Required-new Custom]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Drillback] displayed in 22ms]]>
+            </line>
+            <line>
+              <![CDATA[Capturing Servic Order Number]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Service_Order_Id] displayed in 43ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 7ms]]>
+            </line>
+            <line>
+              <![CDATA[got Text Service Order Number = SORD00000003588]]>
+            </line>
+            <line>
+              <![CDATA[String Verified  =cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Prod=229&Act=OPEN&Func=ServiceOrder&LocationID=LOC@0004&ServiceOrderNumber=SORD00000003588&CogsDrillback=1 Contains = SORD00000003588]]>
+            </line>
+            <line>
+              <![CDATA[Capturing Servic Order Number]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Service_Order_Id] displayed in 56ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 16ms]]>
+            </line>
+            <line>
+              <![CDATA[got Text Service Order Number = SORD00000003588]]>
+            </line>
+            <line>
+              <![CDATA[Service Order verified = SORD00000003588]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SOLV_Service_Order_2] displayed in 71ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SOLV_Service_Order_2] displayed in 29ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 9ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Clicking Service Order 2]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 11ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 11ms]]>
+            </line>
+            <line>
+              <![CDATA[String Verified  =cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Prod=229&Act=OPEN&Func=ServiceOrder&LocationID=LOC@0004&ServiceOrderNumber=SORD00000003587&CogsDrillback=1 Contains = SORD00000003587]]>
+            </line>
+            <line>
+              <![CDATA[get Requested Date]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Oct 23, 2019 = Oct 23, 2019]]>
+            </line>
+            <line>
+              <![CDATA[get Requested Customer Name]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Mr. Automation Mate = Mr. Automation Mate]]>
+            </line>
+            <line>
+              <![CDATA[get Move Out Customer Date]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Mr. Automation Mate = Mr. Automation Mate]]>
+            </line>
+            <line>
+              <![CDATA[get Movein Customer Name Date]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Mr. Vacant Vacant (Vacant) = Mr. Vacant Vacant (Vacant)]]>
+            </line>
+            <line>
+              <![CDATA[get Scheduled Date]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Not Scheduled = Not Scheduled]]>
+            </line>
+            <line>
+              <![CDATA[get Requested Date]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Oct 23, 2019 = Oct 23, 2019]]>
+            </line>
+            <line>
+              <![CDATA[Meter Reading-electric]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Meter Reading-electric = Meter Reading-electric]]>
+            </line>
+            <line>
+              <![CDATA[get Task Description]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Charge New Customer = Charge New Customer]]>
+            </line>
+            <line>
+              <![CDATA[get Task Description]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Property Transfer = Property Transfer]]>
+            </line>
+            <line>
+              <![CDATA[get Task Description]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Deposit Request-new Customer = Deposit Request-new Customer]]>
+            </line>
+            <line>
+              <![CDATA[Deposit Payment-new Customer E]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Deposit Payment-new Customer E = Deposit Payment-new Customer E]]>
+            </line>
+            <line>
+              <![CDATA[Prepayment Required-new Custom]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Prepayment Required-new Custom = Prepayment Required-new Custom]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Drillback] displayed in 16ms]]>
+            </line>
+            <line>
+              <![CDATA[Capturing Servic Order Number]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Service_Order_Id] displayed in 32ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 7ms]]>
+            </line>
+            <line>
+              <![CDATA[got Text Service Order Number = SORD00000003587]]>
+            </line>
+            <line>
+              <![CDATA[String Verified  =cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Prod=229&Act=OPEN&Func=ServiceOrder&LocationID=LOC@0004&ServiceOrderNumber=SORD00000003587&CogsDrillback=1 Contains = SORD00000003587]]>
+            </line>
+            <line>
+              <![CDATA[Capturing Servic Order Number]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Service_Order_Id] displayed in 32ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 8ms]]>
+            </line>
+            <line>
+              <![CDATA[got Text Service Order Number = SORD00000003587]]>
+            </line>
+            <line>
+              <![CDATA[Service Order verified = SORD00000003587]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SOLV_Service_Order_3] displayed in 62ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SOLV_Service_Order_3] displayed in 31ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 11ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Clicking Service Order 3]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 9ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 7ms]]>
+            </line>
+            <line>
+              <![CDATA[get Requested Customer Name]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Mr. Automation Mate = Mr. Automation Mate]]>
+            </line>
+            <line>
+              <![CDATA[get Move Out Customer Date]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Mr. Automation Mate = Mr. Automation Mate]]>
+            </line>
+            <line>
+              <![CDATA[get Movein Customer Name Date]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Mr. Movein Cus (Moveincus2) = Mr. Movein Cus (Moveincus2)]]>
+            </line>
+            <line>
+              <![CDATA[get Scheduled Date]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Not Scheduled = Not Scheduled]]>
+            </line>
+            <line>
+              <![CDATA[get Requested Date]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Oct 23, 2019 = Oct 23, 2019]]>
+            </line>
+            <line>
+              <![CDATA[Meter Reading-electric]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Meter Reading-electric = Meter Reading-electric]]>
+            </line>
+            <line>
+              <![CDATA[get Task Description]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Charge New Customer = Charge New Customer]]>
+            </line>
+            <line>
+              <![CDATA[get Task Description]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Property Transfer = Property Transfer]]>
+            </line>
+            <line>
+              <![CDATA[get Task Description]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Deposit Request-new Customer = Deposit Request-new Customer]]>
+            </line>
+            <line>
+              <![CDATA[Deposit Payment-new Customer E]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Deposit Payment-new Customer E = Deposit Payment-new Customer E]]>
+            </line>
+            <line>
+              <![CDATA[Prepayment Required-new Custom]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Prepayment Required-new Custom = Prepayment Required-new Custom]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Drillback] displayed in 15ms]]>
+            </line>
+            <line>
+              <![CDATA[Capturing Servic Order Number]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Service_Order_Id] displayed in 42ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 16ms]]>
+            </line>
+            <line>
+              <![CDATA[got Text Service Order Number = SORD00000003586]]>
+            </line>
+            <line>
+              <![CDATA[String Verified  =cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Prod=229&Act=OPEN&Func=ServiceOrder&LocationID=LOC@0004&ServiceOrderNumber=SORD00000003586&CogsDrillback=1 Contains = SORD00000003586]]>
+            </line>
+            <line>
+              <![CDATA[Capturing Servic Order Number]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: SODV_Service_Order_Id] displayed in 62ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 16ms]]>
+            </line>
+            <line>
+              <![CDATA[got Text Service Order Number = SORD00000003586]]>
+            </line>
+            <line>
+              <![CDATA[Service Order verified = SORD00000003586]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 8ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 9ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: USR_Name] displayed in 38ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: USR_Name] displayed in 30ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 12ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Logged User Link]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 9ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Logout] displayed in 41ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (9c3c0d02c1822bc076cd95c1af5d3b5c)] -> id: ACTION_Logout] displayed in 33ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 16ms]]>
+            </line>
+            <line>
+              <![CDATA[Click logout Link]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 16ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 9ms]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- VerifyTransferActionServiceOrder -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService@2e8c1c9b]" name="TearDown" is-config="true" duration-ms="581" started-at="2019-10-23T05:31:50Z" finished-at="2019-10-23T05:31:50Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing Browser]]>
+            </line>
+            <line>
+              <![CDATA[Test Completed...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

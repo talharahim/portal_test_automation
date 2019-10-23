@@ -32,8 +32,8 @@ public class TC0018_verifyDrillbacksGeneral extends BaseClass {
 
 	public String servTabURL = serverUrl + "kk";
 
-	public String contLogURL = serverUrl + "Prod=229&Act=OPEN&Func=ContactLog&CustomerID=" + customerId + "&LocationID="
-			+ locationID + "&ContactLog=1&CogsDrillback=1";
+	public String contLogURL = serverUrl + "Prod=229&Act=OPEN&Func=ServiceOrder&CustomerID=" + customerId + "&LocationID="
+			+ locationID + "&ServiceOrder=1&CogsDrillback=1";
 
 	// Cashiering
 	public String cashieringURL = serverUrl + "Prod=229&Act=OPEN&Func=Cashiering&CustomerID=" + customerId

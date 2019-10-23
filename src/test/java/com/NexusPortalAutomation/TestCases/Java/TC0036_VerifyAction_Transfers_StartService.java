@@ -105,7 +105,7 @@ public class TC0036_VerifyAction_Transfers_StartService extends BaseClass {
 		// Date after adding the days to the given date
 		String newDate = newFormat.format(c.getTime());
 		dashBoard.submitStartStopServiceTransferOrder("", "TRANSFER", defaultCustomer,
-				moveInCustomer,"Description for Start Service");
+			defaultCustomer,"Description for Start Service");
 
 		dashBoard.clickrefreshPage();
 		dashBoard.clickServiceorderLink();
@@ -135,7 +135,7 @@ public class TC0036_VerifyAction_Transfers_StartService extends BaseClass {
 		// Scroll down
 		moveInCustomer = "Alert";
 		dashBoard.submitStartStopServiceTransferOrder("", "TRANSFER", defaultCustomer,
-				moveInCustomer,"Description for Start Service");
+			moveInCustomer,"Description for Start Service");
 		dashBoard.clickrefreshPage();
 
 		// Verify First Service Order in the Stack
@@ -150,7 +150,7 @@ public class TC0036_VerifyAction_Transfers_StartService extends BaseClass {
 		CommonMethods.verifyStringContains(ServiceOrderURL2, ServiceOrder2);
 		CommonMethods.verifyString(dashBoard.getSOrequestedDate(), moveOutstart_dtfinalString);
 		moveOutCustomer = "Mr. Automation Mate";
-		moveInCustomer = "Mr. Movein Cus (Moveincus2)";
+		moveInCustomer = "Mr. Vacant Vacant (Vacant)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer, moveOutCustomer, moveInCustomer,  "Not Scheduled",
 				moveOutstart_dtfinalString, Task, locationID);
 
