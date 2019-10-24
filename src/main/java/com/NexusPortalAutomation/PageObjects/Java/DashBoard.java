@@ -116,27 +116,21 @@ public class DashBoard extends CommonMethods {
 	WebElement SummaryLink;
 
 	@FindBy(id = "'LOC_Address_Line'")
-	@CacheLookup
 	WebElement AddressLine;
 
 	@FindBy(id = "'LOC_Address_City'")
-	@CacheLookup
 	WebElement AddressCity;
 
 	@FindBy(id = "'LOC_Address_State'")
-	@CacheLookup
 	WebElement AddressState;
 
 	@FindBy(id = "'LOC_Address_ZipCode'")
-	@CacheLookup
 	WebElement AddressZipCode;
 
 	@FindBy(id = "SRCH_Accounts_Label")
-	@CacheLookup
 	WebElement AccountDropdown;
 
 	@FindBy(id = "SRCH_Accounts")
-	@CacheLookup
 	WebElement AccountSearchText;
 
 	@FindBy(id = "SRCH_Accounts_Result1")
@@ -551,7 +545,7 @@ public class DashBoard extends CommonMethods {
 		waitForObject(driver, RefreshButton);
 		ClickElement(RefreshButton, "Refresh Button");
 		log("Refresh Page", driver);
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 	}
 
 	public void enterDashBoardSearch(String SearchText) {

@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService">
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0009_1_VerifyAccountSearchRefresh">
         <methods>
-          <include name="VerifyTransferActionServiceOrder"/>
+          <include name="TestSearchAccount"/>
           <include name="TearDown"/>
           <include name="readProp"/>
         </methods>
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService -->
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0009_1_VerifyAccountSearchRefresh -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
