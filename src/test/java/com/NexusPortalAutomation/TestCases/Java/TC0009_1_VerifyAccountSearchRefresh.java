@@ -81,10 +81,6 @@ public class TC0009_1_VerifyAccountSearchRefresh extends BaseClass {
 		dashBoard.verifySearchAccountResult("Aug 08, 2019", "SRCH_Accounts_Result2_Move_In_Date");
 
 		// Verify Current Date
-		//dashBoard.verifySearchAccountResult("- Current", "SRCH_Accounts_Result1_Current_Date");
-		//dashBoard.verifySearchAccountResult("Aug 08, 2019", "SRCH_Accounts_Result2_Current_Date");
-		//dashBoard.verifySearchAccountResult("Aug 09, 2019", "SRCH_Accounts_Result3_Current_Date");
-
 		// Select account and verify the change
 		dashBoard.clickSearchAccountResult("SRCH_Accounts_Result2_Address_Line");
 		dashBoard.verifyAddressDetails(addLine, addCity, addState, addZip);
@@ -94,12 +90,13 @@ public class TC0009_1_VerifyAccountSearchRefresh extends BaseClass {
 		dashBoard.enterDashBoardSearch(locationID2);
 		dashBoard.clickDashBoardSearchResult1();
 		dashBoard.verifyAddressDetails(addLine2, addCity2, addState2, addZip2);
+		dashBoard.findElementByxpath("//div[contains(text(),'No Other Accounts')]");
 		dashBoard.clickrefreshPage();
 		dashBoard.verifyAddressDetails(addLine2, addCity2, addState2, addZip2);
-		
-		
-		
 		dashBoard.findElementByxpath("//div[contains(text(),'No Other Accounts')]");
+		
+		
+;
 
 		dashBoard.logout();
 	}
