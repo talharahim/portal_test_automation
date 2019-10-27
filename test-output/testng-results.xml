@@ -2,217 +2,178 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
+      <![CDATA[Value for Key 'stLocationID' found from sheet =SEWER001]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'stDateValue' found from sheet =Aug 31, 1998]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'stDateValue2' found from sheet =Jun 30, 1998]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'stDateValue3' found from sheet =Apr 30, 1998]]>
+    </line>
+    <line>
+      <![CDATA[Value for Key 'stDateValue4' found from sheet =Feb 28, 1998]]>
+    </line>
+    <line>
       <![CDATA[Launching Chrome]]>
     </line>
     <line>
       <![CDATA[Browser Maximised]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 63ms]]>
+      <![CDATA[Angular Request Completed in 50ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: username] displayed in 102ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: username] displayed in 89ms]]>
     </line>
     <line>
       <![CDATA[Login Page title Verified]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: username] displayed in 18ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: username] displayed in 20ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: password] displayed in 37ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: password] displayed in 36ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: kc-login] displayed in 37ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: kc-login] displayed in 554ms]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 386ms]]>
+      <![CDATA[Angular Request Completed in 20ms]]>
     </line>
     <line>
       <![CDATA[User signed Admin]]>
     </line>
     <line>
-      <![CDATA[Element '//input[@id='SRCH_Input']' is displayed in 74ms]]>
+      <![CDATA[Enter Text for Search =SEWER001]]>
     </line>
     <line>
-      <![CDATA[Element 'toolbar-saved' is displayed in 176ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: SRCH_Input] displayed in 58ms]]>
     </line>
     <line>
-      <![CDATA[Enter Text for Search =Alert]]>
+      <![CDATA[Angular request time 647ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: SRCH_Input] displayed in 50ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 578ms]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: SRCH_Option_1_Address_Line] displayed in 55ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: SRCH_Option_1_Address_Line] displayed in 66ms]]>
     </line>
     <line>
       <![CDATA[Click Customer]]>
     </line>
     <line>
-      <![CDATA[Angular request time 443ms]]>
-    </line>
-    <line>
-      <![CDATA[Element '//div[@class='address-details']' is displayed in 134ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 28ms]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: 'LOC_Location_Id'] displayed in 41ms]]>
+      <![CDATA[Angular request time 954ms]]>
     </line>
     <line>
       <![CDATA[Angular request time 9ms]]>
     </line>
     <line>
-      <![CDATA[got Text CustomerLocId = AUTOLOC001]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: 'LOC_Location_Id'] displayed in 38ms]]>
     </line>
     <line>
-      <![CDATA[Customer Location Id found AUTOLOC001]]>
+      <![CDATA[Angular request time 9ms]]>
     </line>
     <line>
-      <![CDATA[Strings Matched: AUTOLOC001 = AUTOLOC001]]>
+      <![CDATA[got Text CustomerLocId = SEWER001]]>
     </line>
     <line>
-      <![CDATA[Element 'ALERTO_Action_Button' is displayed in 46ms]]>
+      <![CDATA[Customer Location Id found SEWER001]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: ALERTO_Action_Button] displayed in 47ms]]>
+      <![CDATA[Strings Matched: SEWER001 = SEWER001]]>
     </line>
     <line>
-      <![CDATA[Angular request time 13ms]]>
+      <![CDATA[Click Bill Statement Button]]>
     </line>
     <line>
-      <![CDATA[Click Alert OK]]>
+      <![CDATA[Angular request time 8ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 19ms]]>
-    </line>
-    <line>
-      <![CDATA[Alert on Load Clicked]]>
-    </line>
-    <line>
-      <![CDATA[Click Alert Description]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: ALERT_1_Description] displayed in 102ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 32ms]]>
-    </line>
-    <line>
-      <![CDATA[Click Alert Description]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 22ms]]>
-    </line>
-    <line>
-      <![CDATA[Click Description]]>
-    </line>
-    <line>
-      <![CDATA[Element 'ALERTO_Action_Button' is displayed in 372ms]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: ALERTO_Action_Button] displayed in 50ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 15ms]]>
-    </line>
-    <line>
-      <![CDATA[Click Alert OK]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 18ms]]>
-    </line>
-    <line>
-      <![CDATA[Alert on description Clicked]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: ACTION_Refresh_Page] displayed in 134ms]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: ACTION_Refresh_Page] displayed in 69ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 328ms]]>
-    </line>
-    <line>
-      <![CDATA[Click Refresh Button]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 7ms]]>
-    </line>
-    <line>
-      <![CDATA[Refresh Page]]>
-    </line>
-    <line>
-      <![CDATA[Page refreshed verify no alets loaded]]>
-    </line>
-    <line>
-      <![CDATA[Alert not visible]]>
-    </line>
-    <line>
-      <![CDATA[Clicking Transaction Link]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> css selector: #mat-tab-label-0-1 > div:nth-child(1)] displayed in 547ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 1308ms]]>
-    </line>
-    <line>
-      <![CDATA[Click Transaction Link]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 511ms]]>
-    </line>
-    <line>
-      <![CDATA[Clicking Summary Link]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> css selector: #mat-tab-label-0-0 > div:nth-child(1)] displayed in 33ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 45ms]]>
-    </line>
-    <line>
-      <![CDATA[Click Summary Link]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 12ms]]>
-    </line>
-    <line>
-      <![CDATA[Alert not visible]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 11ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 7ms]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: USR_Name] displayed in 51ms]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: USR_Name] displayed in 33ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: BILL_Statement_Button] displayed in 541ms]]>
     </line>
     <line>
       <![CDATA[Angular request time 10ms]]>
     </line>
     <line>
-      <![CDATA[Click Logged User Link]]>
+      <![CDATA[Click Bill Statement Button]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 25ms]]>
+    </line>
+    <line>
+      <![CDATA[Verify Bill Statement Date]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 12ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: BILL_Statement_1] displayed in 49ms]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Aug 31, 1998 = Aug 31, 1998]]>
+    </line>
+    <line>
+      <![CDATA[Verify Bill Statement Date]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 13ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: BILL_Statement_2] displayed in 53ms]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Jun 30, 1998 = Jun 30, 1998]]>
+    </line>
+    <line>
+      <![CDATA[Verify Bill Statement Date]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 8ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: BILL_Statement_3] displayed in 61ms]]>
+    </line>
+    <line>
+      <![CDATA[Strings Matched: Apr 30, 1998 = Apr 30, 1998]]>
+    </line>
+    <line>
+      <![CDATA[Verify Bill Statement Date]]>
     </line>
     <line>
       <![CDATA[Angular request time 9ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: ACTION_Logout] displayed in 47ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: BILL_Statement_4] displayed in 575ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: ACTION_Logout] displayed in 31ms]]>
+      <![CDATA[Strings Matched: Feb 28, 1998 = Feb 28, 1998]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 247ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 15ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: USR_Name] displayed in 553ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: USR_Name] displayed in 286ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 43ms]]>
+    </line>
+    <line>
+      <![CDATA[Click Logged User Link]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 32ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: ACTION_Logout] displayed in 47ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: ACTION_Logout] displayed in 41ms]]>
     </line>
     <line>
       <![CDATA[Angular request time 30ms]]>
@@ -221,10 +182,10 @@
       <![CDATA[Click logout Link]]>
     </line>
     <line>
-      <![CDATA[Angular request time 14ms]]>
+      <![CDATA[Angular request time 16ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 13ms]]>
+      <![CDATA[Angular request time 16ms]]>
     </line>
     <line>
       <![CDATA[Closing Browser]]>
@@ -233,16 +194,16 @@
       <![CDATA[Test Completed...]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43645" started-at="2019-10-24T16:34:00Z" finished-at="2019-10-24T16:34:44Z">
+  <suite name="Default suite" duration-ms="19978" started-at="2019-10-27T09:13:14Z" finished-at="2019-10-27T09:13:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43645" started-at="2019-10-24T16:34:00Z" finished-at="2019-10-24T16:34:44Z">
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0006_1_TestAlertOnLoadOnce">
-        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0006_1_TestAlertOnLoadOnce@368f2016]" name="readProp" is-config="true" duration-ms="3872" started-at="2019-10-24T16:34:00Z" finished-at="2019-10-24T16:34:04Z">
+    <test name="Default test" duration-ms="19978" started-at="2019-10-27T09:13:14Z" finished-at="2019-10-27T09:13:34Z">
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsOrderByDate">
+        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsOrderByDate@c0c2f8d]" name="readProp" is-config="true" duration-ms="3922" started-at="2019-10-27T09:13:14Z" finished-at="2019-10-27T09:13:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@383f3558]]>
+                <![CDATA[org.testng.TestRunner@2ba45490]]>
               </value>
             </param>
           </params>
@@ -255,214 +216,160 @@
             </line>
           </reporter-output>
         </test-method> <!-- readProp -->
-        <test-method status="PASS" signature="TestSearchAlertOnLoad()[pri:2, instance:com.NexusPortalAutomation.TestCases.Java.TC0006_1_TestAlertOnLoadOnce@368f2016]" name="TestSearchAlertOnLoad" duration-ms="38689" started-at="2019-10-24T16:34:04Z" finished-at="2019-10-24T16:34:43Z">
+        <test-method status="PASS" signature="TestBillingStatements()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsOrderByDate@c0c2f8d]" name="TestBillingStatements" duration-ms="14548" started-at="2019-10-27T09:13:18Z" finished-at="2019-10-27T09:13:32Z">
           <reporter-output>
             <line>
-              <![CDATA[Angular Request Completed in 63ms]]>
+              <![CDATA[Angular Request Completed in 50ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: username] displayed in 102ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: username] displayed in 89ms]]>
             </line>
             <line>
               <![CDATA[Login Page title Verified]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: username] displayed in 18ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: username] displayed in 20ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: password] displayed in 37ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: password] displayed in 36ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: kc-login] displayed in 37ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: kc-login] displayed in 554ms]]>
             </line>
             <line>
-              <![CDATA[Angular Request Completed in 386ms]]>
+              <![CDATA[Angular Request Completed in 20ms]]>
             </line>
             <line>
               <![CDATA[User signed Admin]]>
             </line>
             <line>
-              <![CDATA[Element '//input[@id='SRCH_Input']' is displayed in 74ms]]>
+              <![CDATA[Enter Text for Search =SEWER001]]>
             </line>
             <line>
-              <![CDATA[Element 'toolbar-saved' is displayed in 176ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: SRCH_Input] displayed in 58ms]]>
             </line>
             <line>
-              <![CDATA[Enter Text for Search =Alert]]>
+              <![CDATA[Angular request time 647ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: SRCH_Input] displayed in 50ms]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 578ms]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: SRCH_Option_1_Address_Line] displayed in 55ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: SRCH_Option_1_Address_Line] displayed in 66ms]]>
             </line>
             <line>
               <![CDATA[Click Customer]]>
             </line>
             <line>
-              <![CDATA[Angular request time 443ms]]>
-            </line>
-            <line>
-              <![CDATA[Element '//div[@class='address-details']' is displayed in 134ms]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 28ms]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: 'LOC_Location_Id'] displayed in 41ms]]>
+              <![CDATA[Angular request time 954ms]]>
             </line>
             <line>
               <![CDATA[Angular request time 9ms]]>
             </line>
             <line>
-              <![CDATA[got Text CustomerLocId = AUTOLOC001]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: 'LOC_Location_Id'] displayed in 38ms]]>
             </line>
             <line>
-              <![CDATA[Customer Location Id found AUTOLOC001]]>
+              <![CDATA[Angular request time 9ms]]>
             </line>
             <line>
-              <![CDATA[Strings Matched: AUTOLOC001 = AUTOLOC001]]>
+              <![CDATA[got Text CustomerLocId = SEWER001]]>
             </line>
             <line>
-              <![CDATA[Element 'ALERTO_Action_Button' is displayed in 46ms]]>
+              <![CDATA[Customer Location Id found SEWER001]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: ALERTO_Action_Button] displayed in 47ms]]>
+              <![CDATA[Strings Matched: SEWER001 = SEWER001]]>
             </line>
             <line>
-              <![CDATA[Angular request time 13ms]]>
+              <![CDATA[Click Bill Statement Button]]>
             </line>
             <line>
-              <![CDATA[Click Alert OK]]>
+              <![CDATA[Angular request time 8ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 19ms]]>
-            </line>
-            <line>
-              <![CDATA[Alert on Load Clicked]]>
-            </line>
-            <line>
-              <![CDATA[Click Alert Description]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: ALERT_1_Description] displayed in 102ms]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 32ms]]>
-            </line>
-            <line>
-              <![CDATA[Click Alert Description]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 22ms]]>
-            </line>
-            <line>
-              <![CDATA[Click Description]]>
-            </line>
-            <line>
-              <![CDATA[Element 'ALERTO_Action_Button' is displayed in 372ms]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: ALERTO_Action_Button] displayed in 50ms]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 15ms]]>
-            </line>
-            <line>
-              <![CDATA[Click Alert OK]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 18ms]]>
-            </line>
-            <line>
-              <![CDATA[Alert on description Clicked]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: ACTION_Refresh_Page] displayed in 134ms]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: ACTION_Refresh_Page] displayed in 69ms]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 328ms]]>
-            </line>
-            <line>
-              <![CDATA[Click Refresh Button]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 7ms]]>
-            </line>
-            <line>
-              <![CDATA[Refresh Page]]>
-            </line>
-            <line>
-              <![CDATA[Page refreshed verify no alets loaded]]>
-            </line>
-            <line>
-              <![CDATA[Alert not visible]]>
-            </line>
-            <line>
-              <![CDATA[Clicking Transaction Link]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> css selector: #mat-tab-label-0-1 > div:nth-child(1)] displayed in 547ms]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 1308ms]]>
-            </line>
-            <line>
-              <![CDATA[Click Transaction Link]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 511ms]]>
-            </line>
-            <line>
-              <![CDATA[Clicking Summary Link]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> css selector: #mat-tab-label-0-0 > div:nth-child(1)] displayed in 33ms]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 45ms]]>
-            </line>
-            <line>
-              <![CDATA[Click Summary Link]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 12ms]]>
-            </line>
-            <line>
-              <![CDATA[Alert not visible]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 11ms]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 7ms]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: USR_Name] displayed in 51ms]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: USR_Name] displayed in 33ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: BILL_Statement_Button] displayed in 541ms]]>
             </line>
             <line>
               <![CDATA[Angular request time 10ms]]>
             </line>
             <line>
-              <![CDATA[Click Logged User Link]]>
+              <![CDATA[Click Bill Statement Button]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 25ms]]>
+            </line>
+            <line>
+              <![CDATA[Verify Bill Statement Date]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 12ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: BILL_Statement_1] displayed in 49ms]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Aug 31, 1998 = Aug 31, 1998]]>
+            </line>
+            <line>
+              <![CDATA[Verify Bill Statement Date]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 13ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: BILL_Statement_2] displayed in 53ms]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Jun 30, 1998 = Jun 30, 1998]]>
+            </line>
+            <line>
+              <![CDATA[Verify Bill Statement Date]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 8ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: BILL_Statement_3] displayed in 61ms]]>
+            </line>
+            <line>
+              <![CDATA[Strings Matched: Apr 30, 1998 = Apr 30, 1998]]>
+            </line>
+            <line>
+              <![CDATA[Verify Bill Statement Date]]>
             </line>
             <line>
               <![CDATA[Angular request time 9ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: ACTION_Logout] displayed in 47ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: BILL_Statement_4] displayed in 575ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (ce065f9934738361b1c133a10acbe8de)] -> id: ACTION_Logout] displayed in 31ms]]>
+              <![CDATA[Strings Matched: Feb 28, 1998 = Feb 28, 1998]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 247ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 15ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: USR_Name] displayed in 553ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: USR_Name] displayed in 286ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 43ms]]>
+            </line>
+            <line>
+              <![CDATA[Click Logged User Link]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 32ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: ACTION_Logout] displayed in 47ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (6f81aa7538f475c82ac702e0a893db25)] -> id: ACTION_Logout] displayed in 41ms]]>
             </line>
             <line>
               <![CDATA[Angular request time 30ms]]>
@@ -471,14 +378,14 @@
               <![CDATA[Click logout Link]]>
             </line>
             <line>
-              <![CDATA[Angular request time 14ms]]>
+              <![CDATA[Angular request time 16ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 13ms]]>
+              <![CDATA[Angular request time 16ms]]>
             </line>
           </reporter-output>
-        </test-method> <!-- TestSearchAlertOnLoad -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0006_1_TestAlertOnLoadOnce@368f2016]" name="TearDown" is-config="true" duration-ms="1072" started-at="2019-10-24T16:34:43Z" finished-at="2019-10-24T16:34:44Z">
+        </test-method> <!-- TestBillingStatements -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsOrderByDate@c0c2f8d]" name="TearDown" is-config="true" duration-ms="1496" started-at="2019-10-27T09:13:32Z" finished-at="2019-10-27T09:13:34Z">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
@@ -488,7 +395,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0006_1_TestAlertOnLoadOnce -->
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsOrderByDate -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

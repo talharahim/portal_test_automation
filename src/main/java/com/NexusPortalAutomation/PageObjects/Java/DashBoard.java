@@ -232,6 +232,15 @@ public class DashBoard extends CommonMethods {
 
     @FindBy(id = "BILL_Statement_1")
     WebElement BillStatementDate;
+    
+    @FindBy(id = "BILL_Statement_2")
+    WebElement BillStatementDate2;
+    
+    @FindBy(id = "BILL_Statement_3")
+    WebElement BillStatementDate3;
+    
+    @FindBy(id = "BILL_Statement_4")
+    WebElement BillStatementDate4;
 
     @FindBy(id = "BILL_Statement_Value_1")
     WebElement BillStatementValue;
@@ -1049,6 +1058,7 @@ public class DashBoard extends CommonMethods {
 	ClickElement(BILLStatement1, "Statement");
 
     }
+    
 
     public String getBillStatementDate() {
 	log("Verify Bill Statement Date");
@@ -1063,7 +1073,49 @@ public class DashBoard extends CommonMethods {
 	return BillStatementDate.getText();
 
     }
+    public String getBillStatementDate2() {
+	log("Verify Bill Statement Date");
+	try {
+	    WaitAngular(driver);
+	    waitForObject(driver, BillStatementDate2);
+	} catch (NoSuchElementException e) {
+	    log(e.getMessage());
+	    Assert.assertTrue(false, "BILL Statement Button not found");
+	}
 
+	return BillStatementDate2.getText();
+
+    }
+
+
+    public String getBillStatementDate3() {
+	log("Verify Bill Statement Date");
+	try {
+	    WaitAngular(driver);
+	    waitForObject(driver, BillStatementDate3);
+	} catch (NoSuchElementException e) {
+	    log(e.getMessage());
+	    Assert.assertTrue(false, "BILL Statement Button not found");
+	}
+
+	return BillStatementDate3.getText();
+
+    }
+    
+
+    public String getBillStatementDate4() {
+	log("Verify Bill Statement Date");
+	try {
+	    WaitAngular(driver);
+	    waitForObject(driver, BillStatementDate4);
+	} catch (NoSuchElementException e) {
+	    log(e.getMessage());
+	    Assert.assertTrue(false, "BILL Statement Button not found");
+	}
+
+	return BillStatementDate4.getText();
+
+    }
     public String getBillStatementAmount() {
 	try {
 	    WaitAngular(driver);
