@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsOrderByDate">
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0050_VerifyMoveiinCustomerAppearing">
         <methods>
-          <include name="TestBillingStatements"/>
           <include name="TearDown"/>
           <include name="readProp"/>
+          <include name="VerifyTransferActionServiceOrder"/>
         </methods>
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsOrderByDate -->
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0050_VerifyMoveiinCustomerAppearing -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

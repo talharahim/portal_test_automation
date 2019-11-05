@@ -27,7 +27,7 @@ public class DashBoard extends CommonMethods {
 
     public boolean HighLight = false;
 
-    WebDriver driver;
+    static WebDriver driver;
     @FindBy(id = "USR_Name")
     WebElement LoggedUserLink;
 
@@ -232,13 +232,13 @@ public class DashBoard extends CommonMethods {
 
     @FindBy(id = "BILL_Statement_1")
     WebElement BillStatementDate;
-    
+
     @FindBy(id = "BILL_Statement_2")
     WebElement BillStatementDate2;
-    
+
     @FindBy(id = "BILL_Statement_3")
     WebElement BillStatementDate3;
-    
+
     @FindBy(id = "BILL_Statement_4")
     WebElement BillStatementDate4;
 
@@ -486,6 +486,43 @@ public class DashBoard extends CommonMethods {
 
     @FindBy(id = "SERV_Service_1_Service_Type_2")
     WebElement service_Service2;
+
+    @FindBy(xpath = "//*[@id=\"SRCH_Customers_Button_Trigger\"]/span/mat-icon")
+    WebElement arrow_drop_down;
+
+    @FindBy(id = "SRCH_Customers_Option_1_Customer_Name")
+    static WebElement SRCH_Customers_Option_1_Customer_Name;
+
+    public String SRCH_Customers_Option_1_Customer_Name()
+
+    {
+	WaitAngular(driver);
+	waitForObject(driver, SRCH_Customers_Option_1_Customer_Name);
+	WaitAngular(driver);
+
+	return SRCH_Customers_Option_1_Customer_Name.getText();
+
+    }
+
+    public void SRCH_Customers_Option_1_Customer_NameClick()
+
+    {
+	WaitAngular(driver);
+	waitForObject(driver, SRCH_Customers_Option_1_Customer_Name);
+	WaitAngular(driver);
+
+	SRCH_Customers_Option_1_Customer_Name.click();
+
+    }
+
+    public void clickarrow_drop_down()
+
+    {
+	WaitAngular(driver);
+	waitForObject(driver, arrow_drop_down);
+	arrow_drop_down.click();
+
+    }
 
     public void clickService1()
 
@@ -1058,7 +1095,6 @@ public class DashBoard extends CommonMethods {
 	ClickElement(BILLStatement1, "Statement");
 
     }
-    
 
     public String getBillStatementDate() {
 	log("Verify Bill Statement Date");
@@ -1073,6 +1109,7 @@ public class DashBoard extends CommonMethods {
 	return BillStatementDate.getText();
 
     }
+
     public String getBillStatementDate2() {
 	log("Verify Bill Statement Date");
 	try {
@@ -1087,7 +1124,6 @@ public class DashBoard extends CommonMethods {
 
     }
 
-
     public String getBillStatementDate3() {
 	log("Verify Bill Statement Date");
 	try {
@@ -1101,7 +1137,6 @@ public class DashBoard extends CommonMethods {
 	return BillStatementDate3.getText();
 
     }
-    
 
     public String getBillStatementDate4() {
 	log("Verify Bill Statement Date");
@@ -1116,6 +1151,7 @@ public class DashBoard extends CommonMethods {
 	return BillStatementDate4.getText();
 
     }
+
     public String getBillStatementAmount() {
 	try {
 	    WaitAngular(driver);

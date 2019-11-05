@@ -136,6 +136,7 @@ public class BaseClass extends ReadProjectProperties {
 		driver.manage().window().maximize();
 		log("Browser Maximised");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 		context.setAttribute("webDriver", driver);
 
 	}

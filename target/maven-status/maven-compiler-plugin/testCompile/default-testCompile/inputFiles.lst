@@ -1,6 +1,7 @@
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0018_verifyDrillbacksGeneral.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0029_VerifyAction_Transfers_Scheduled.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\ngWebDriver.java
+D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0009_1_VerifyAccountSearchRefresh.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0002_TestSearchAutobyFirstName.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0019_verifyDrillbackTransactions.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0031_VerifyAction_Transfers_StopService_Scheduled.java
@@ -20,12 +21,14 @@ D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPor
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0005_TestBookMarks.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0016_1_VerifyBillingDetails_Budget_SPA.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0022_VerifyAction_ServiceOrder.java
+D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0050_VerifyMoveiinCustomerAppearing.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0016_1_VerifyBillingDetails_EBill.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0016_VerifyBillingDetails_UsageGraph.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\apiTestCases\Java\TC0002_getaccountbalanceInvalidCustomer.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0034_VerifyAction_Transfers_Stack_TwoLocations.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0027_VerifyAction_Transfers_StopService_NotScheduled.java
+D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0006_1_TestAlertOnLoadOnce.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0016_1_VerifyBillingDetails_SPA.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0024_TestCustDetailSearch.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0020_verifyDrillbackServices.java
@@ -47,6 +50,7 @@ D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPor
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\DataRestore.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0028_TestEnhancedNotes.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0016_1_VerifyBillingDetails_AutoPay.java
+D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0017_StatementsOrderByDate.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\BaseClass.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0007_TestSummarySection.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0021_VerifyservicesOrderDetails.java
