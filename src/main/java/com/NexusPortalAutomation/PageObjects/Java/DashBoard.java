@@ -276,6 +276,10 @@ public class DashBoard extends CommonMethods {
     @CacheLookup
     WebElement contLogTabDrillBack;
 
+    @FindBy(id = "ACCIT_1_Description")
+    @CacheLookup
+    WebElement accountItemsDescription;
+
     @FindBy(id = "ACTION_Button")
     @CacheLookup
     WebElement actionDropDown;
@@ -656,9 +660,9 @@ public class DashBoard extends CommonMethods {
     }
 
     public void verifySubmitMessage(String Message) {
-	if (transferSuccessMessage.isDisplayed()) {
+	try {
 	    verifyStringContains(transferSuccessMessage.getText(), Message);
-	} else {
+	} catch (NoSuchElementException e) {
 	    Assert.fail("Order not submitted");
 	}
     }
@@ -936,6 +940,10 @@ public class DashBoard extends CommonMethods {
 
     public String getContLogDrillBackUrl() {
 	try {
+
+	    waitForObject(driver, accountItemsDescription);
+	    Actions action = new Actions(driver);
+	    action.moveToElement(accountItemsDescription).build().perform();
 	    waitForObject(driver, contLogTabDrillBack);
 
 	} catch (NoSuchElementException e) {

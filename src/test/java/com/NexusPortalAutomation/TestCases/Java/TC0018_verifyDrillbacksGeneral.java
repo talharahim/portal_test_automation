@@ -102,6 +102,8 @@ public class TC0018_verifyDrillbacksGeneral extends BaseClass {
 		 * Secondary Customer URL NOT Present
 		 * CommonMethods.VerifyString(secondCustURL,dashBoard.GetSecondCustDrillBackUrl());
 		 */
+		
+		//Get Accoutn items drillback 
 		CommonMethods.verifyString(contLogURL, dashBoard.getContLogDrillBackUrl());
 		dashBoard.clickActionDropDown();
 		// Action DrillBacks

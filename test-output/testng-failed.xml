@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0050_VerifyMoveiinCustomerAppearing">
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0041_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled">
         <methods>
           <include name="TearDown"/>
+          <include name="VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled"/>
           <include name="readProp"/>
-          <include name="VerifyTransferActionServiceOrder"/>
         </methods>
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0050_VerifyMoveiinCustomerAppearing -->
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0041_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

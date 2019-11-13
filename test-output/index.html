@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Administrator\AppData\Local\Temp\1\testng-eclipse--263171322\testng-customsuite.xml</span>
+                    <span>C:\Users\Administrator\AppData\Local\Temp\1\testng-eclipse--845733632\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content failed suite-Default_suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.NexusPortalAutomation.TestCases.Java.TC0050_VerifyMoveiinCustomerAppearing" hash-for-method="VerifyTransferActionServiceOrder">VerifyTransferActionServiceOrder</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.NexusPortalAutomation.TestCases.Java.TC0041_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled" hash-for-method="VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled">VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,25 +117,56 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0050_VerifyMoveiinCustomerAppearing</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0041_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyTransferActionServiceOrder">
-                  </a> <!-- VerifyTransferActionServiceOrder -->
-                  <span class="method-name">VerifyTransferActionServiceOrder</span>
+                  <a name="VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled">
+                  </a> <!-- VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled -->
+                  <span class="method-name">VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled</span>
+                  <div class="stack-trace">java.lang.AssertionError: Order not submitted
+	at org.testng.Assert.fail(Assert.java:96)
+	at com.NexusPortalAutomation.PageObjects.Java.DashBoard.verifySubmitMessage(DashBoard.java:666)
+	at com.NexusPortalAutomation.TestCases.Java.TC0041_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled.VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled(TC0041_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
+          </div> <!-- suite-Default_suite-class-failed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Administrator\AppData\Local\Temp\1\testng-eclipse--263171322\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Administrator\AppData\Local\Temp\1\testng-eclipse--845733632\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,7 +175,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.NexusPortalAutomation.TestCases.Java.TC0050_VerifyMoveiinCustomerAppearing&quot;/&gt;
+      &lt;class name=&quot;com.NexusPortalAutomation.TestCases.Java.TC0041_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -186,14 +217,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'VerifyTransferActionServiceOrder')
-data.setCell(0, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0050_VerifyMoveiinCustomerAppearing')
-data.setCell(0, 3, 32958);
+data.setCell(0, 1, 'VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled')
+data.setCell(0, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0041_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled')
+data.setCell(0, 3, 56844);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <span class="suite-total-time">Total running time: 56 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -205,107 +236,253 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">VerifyTransferActionServiceOrder</span>
+              <span class="reporter-method-name">VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Deleting Records for ServiceOrder = SORD00000003764</span>
+                <span class="reporter-method-output">Deleting Records for ServiceOrder = SORD00000003932</span>
                 <span class="reporter-method-output">Deleting Records for Location =  LOC@0004</span>
-                <span class="reporter-method-output">Angular Request Completed in 37ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: username] displayed in 68ms</span>
+                <span class="reporter-method-output">Deleting Records for ServiceOrder = </span>
+                <span class="reporter-method-output">Angular Request Completed in 40ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: username] displayed in 73ms</span>
                 <span class="reporter-method-output">Login Page title Verified</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: username] displayed in 17ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: password] displayed in 35ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: kc-login] displayed in 49ms</span>
-                <span class="reporter-method-output">Angular Request Completed in 27ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: username] displayed in 26ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: password] displayed in 37ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: kc-login] displayed in 35ms</span>
+                <span class="reporter-method-output">Angular Request Completed in 15ms</span>
                 <span class="reporter-method-output">User signed Admin</span>
                 <span class="reporter-method-output">Enter Text for Search =LOC@0004</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: SRCH_Input] displayed in 57ms</span>
-                <span class="reporter-method-output">Angular request time 1111ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: SRCH_Option_1_Address_Line] displayed in 40ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: SRCH_Input] displayed in 68ms</span>
+                <span class="reporter-method-output">Angular request time 624ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: SRCH_Option_1_Address_Line] displayed in 50ms</span>
                 <span class="reporter-method-output">Click Customer</span>
-                <span class="reporter-method-output">Angular request time 305ms</span>
-                <span class="reporter-method-output">Angular request time 13ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: 'LOC_Location_Id'] displayed in 36ms</span>
+                <span class="reporter-method-output">Angular request time 471ms</span>
                 <span class="reporter-method-output">Angular request time 7ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: 'LOC_Location_Id'] displayed in 52ms</span>
+                <span class="reporter-method-output">Angular request time 11ms</span>
                 <span class="reporter-method-output">got Text CustomerLocId = LOC@0004</span>
                 <span class="reporter-method-output">Customer Location Id found LOC@0004</span>
                 <span class="reporter-method-output">Strings Matched: LOC@0004 = LOC@0004</span>
                 <span class="reporter-method-output">Click Action Dropdown</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: ACTION_Button] displayed in 36ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: ACTION_Button] displayed in 19ms</span>
-                <span class="reporter-method-output">Angular request time 18ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: ACTION_Button] displayed in 41ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: ACTION_Button] displayed in 26ms</span>
+                <span class="reporter-method-output">Angular request time 10ms</span>
                 <span class="reporter-method-output">Click Action Drop down</span>
-                <span class="reporter-method-output">Angular request time 11ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: ACTION_Transfer_Service] displayed in 55ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: ACTION_Transfer_Service] displayed in 47ms</span>
-                <span class="reporter-method-output">Angular request time 59ms</span>
+                <span class="reporter-method-output">Angular request time 9ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: ACTION_Transfer_Service] displayed in 53ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: ACTION_Transfer_Service] displayed in 78ms</span>
+                <span class="reporter-method-output">Angular request time 27ms</span>
                 <span class="reporter-method-output">Click Action Transfer Service Drop down</span>
-                <span class="reporter-method-output">Angular request time 20ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: XFER_Select] displayed in 82ms</span>
                 <span class="reporter-method-output">Angular request time 8ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Select] displayed in 55ms</span>
+                <span class="reporter-method-output">Angular request time 13ms</span>
                 <span class="reporter-method-output">Click Transfer Combo</span>
                 <span class="reporter-method-output">Angular request time 8ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: XFER_Select_Option_2] displayed in 198ms</span>
-                <span class="reporter-method-output">Angular request time 14ms</span>
-                <span class="reporter-method-output">Click Transfer Option 2</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Select_Option_3] displayed in 69ms</span>
+                <span class="reporter-method-output">Angular request time 11ms</span>
+                <span class="reporter-method-output">Click Transfer Option 3</span>
                 <span class="reporter-method-output">Angular request time 7ms</span>
-                <span class="reporter-method-output">TRANSFER</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: CLO_Service_Order_Input] displayed in 54ms</span>
-                <span class="reporter-method-output">Setting Text on Search Request with Text = TRANSFER</span>
-                <span class="reporter-method-output">Angular request time 13ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: XFER_Date_Picker_Requested] displayed in 59ms</span>
-                <span class="reporter-method-output">Entered Request Date = 10/27/2019 11:39</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: XFER_Date_Picker_Scheduled] displayed in 63ms</span>
-                <span class="reporter-method-output">Enter Schedule Date Date</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: XFER_Date_Picker_Scheduled] displayed in 37ms</span>
-                <span class="reporter-method-output">Setting Text on DatePicket with Text = 10/27/2019 11:39</span>
-                <span class="reporter-method-output">Angular request time 7ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: XFER_Date_Picker_Requested] displayed in 33ms</span>
-                <span class="reporter-method-output">Entered Request Date = 10/27/2019 11:39</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Date_Picker_Requested] displayed in 49ms</span>
+                <span class="reporter-method-output">Entered Request Date = 11/08/2019 11:47</span>
                 <span class="reporter-method-output">Submit Transfer Request</span>
                 <span class="reporter-method-output">TRANSFER</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: CLO_Service_Order_Input] displayed in 385ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: CLO_Service_Order_Input] displayed in 38ms</span>
                 <span class="reporter-method-output">Setting Text on Search Request with Text = TRANSFER</span>
-                <span class="reporter-method-output">Angular request time 12ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: XFER_Date_Picker_Scheduled] displayed in 34ms</span>
+                <span class="reporter-method-output">Angular request time 10ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Date_Picker_Scheduled] displayed in 42ms</span>
                 <span class="reporter-method-output">Enter Schedule Date Date</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: XFER_Date_Picker_Scheduled] displayed in 38ms</span>
-                <span class="reporter-method-output">Setting Text on DatePicket with Text = 10/27/2019 11:39</span>
-                <span class="reporter-method-output">Angular request time 522ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Date_Picker_Scheduled] displayed in 44ms</span>
+                <span class="reporter-method-output">Setting Text on DatePicket with Text = 11/08/2019 11:47</span>
+                <span class="reporter-method-output">Angular request time 421ms</span>
                 <span class="reporter-method-output">Strings Matched: Mr. VACANT VACANT = Mr. VACANT VACANT</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: XFER_Search_Input] displayed in 42ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Search_Input] displayed in 36ms</span>
                 <span class="reporter-method-output">Setting Text on Customer Name Request with Text = Mr. VACANT VACANT</span>
-                <span class="reporter-method-output">Angular request time 9ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: XFER_Search_Option_1] displayed in 940ms</span>
-                <span class="reporter-method-output">Angular request time 19ms</span>
+                <span class="reporter-method-output">Angular request time 10ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Search_Option_1] displayed in 594ms</span>
+                <span class="reporter-method-output">Angular request time 18ms</span>
                 <span class="reporter-method-output">Click XFER_Search_Option_1_Customer_Name</span>
+                <span class="reporter-method-output">Angular request time 8ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Description] displayed in 59ms</span>
+                <span class="reporter-method-output">Setting Text on Description Request with Text = Description for Stop Service</span>
+                <span class="reporter-method-output">Angular request time 7ms</span>
+                <span class="reporter-method-output">Click Submit</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Button_Action] displayed in 41ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Button_Action] displayed in 32ms</span>
+                <span class="reporter-method-output">Angular request time 116ms</span>
+                <span class="reporter-method-output">Click MoveInSubmit Button</span>
+                <span class="reporter-method-output">Angular request time 15ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Button_Done] displayed in 84ms</span>
+                <span class="reporter-method-output">Angular request time 122ms</span>
+                <span class="reporter-method-output">Click Done Button for Transfer</span>
                 <span class="reporter-method-output">Angular request time 9ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: XFER_Description] displayed in 46ms</span>
-                <span class="reporter-method-output">Setting Text on Description Request with Text = Description for Start Service</span>
+                <span class="reporter-method-output">Clicking Servic Order Link</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> css selector: #mat-tab-label-0-2 > div] displayed in 44ms</span>
+                <span class="reporter-method-output">Angular request time 661ms</span>
+                <span class="reporter-method-output">Click Service Order Link</span>
+                <span class="reporter-method-output">Angular request time 9ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: SOLV_Service_Order_1] displayed in 40ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: SOLV_Service_Order_1] displayed in 35ms</span>
+                <span class="reporter-method-output">Angular request time 15ms</span>
+                <span class="reporter-method-output">Click Clicking Service Order 1</span>
+                <span class="reporter-method-output">Angular request time 9ms</span>
+                <span class="reporter-method-output">Angular request time 8ms</span>
+                <span class="reporter-method-output">Capturing Servic Order Number</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: SODV_Service_Order_Id] displayed in 53ms</span>
+                <span class="reporter-method-output">Angular request time 8ms</span>
+                <span class="reporter-method-output">got Text Service Order Number = SORD00000003933</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: ACTION_Refresh_Page] displayed in 85ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: ACTION_Refresh_Page] displayed in 47ms</span>
+                <span class="reporter-method-output">Angular request time 581ms</span>
+                <span class="reporter-method-output">Click Refresh Button</span>
+                <span class="reporter-method-output">Angular request time 9ms</span>
+                <span class="reporter-method-output">Refresh Page</span>
+                <span class="reporter-method-output">Click Action Dropdown</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: ACTION_Button] displayed in 31ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: ACTION_Button] displayed in 32ms</span>
+                <span class="reporter-method-output">Angular request time 10ms</span>
+                <span class="reporter-method-output">Click Action Drop down</span>
+                <span class="reporter-method-output">Angular request time 11ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: ACTION_Transfer_Service] displayed in 40ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: ACTION_Transfer_Service] displayed in 63ms</span>
+                <span class="reporter-method-output">Angular request time 125ms</span>
+                <span class="reporter-method-output">Click Action Transfer Service Drop down</span>
+                <span class="reporter-method-output">Angular request time 10ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Select] displayed in 50ms</span>
+                <span class="reporter-method-output">Angular request time 10ms</span>
+                <span class="reporter-method-output">Click Transfer Combo</span>
+                <span class="reporter-method-output">Angular request time 10ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Select_Option_3] displayed in 57ms</span>
+                <span class="reporter-method-output">Angular request time 10ms</span>
+                <span class="reporter-method-output">Click Transfer Option 3</span>
+                <span class="reporter-method-output">Angular request time 8ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Warning_Message] displayed in 19ms</span>
+                <span class="reporter-method-output">Strings Matched: Service Order Exist. TRANSFER = Service Order Exist. TRANSFER</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Warning_Drillback] displayed in 24ms</span>
+                <span class="reporter-method-output">String Verified  =cogsdrillback://DGPB/?Db=SQL_2017&Srv=RND-BASE-A&Cmp=TWO&Prod=229&Act=OPEN&Func=ServiceOrder&LocationID=LOC@0004&ServiceOrderNumber=SORD00000003933&CogsDrillback=1 Contains = SORD00000003933</span>
+                <span class="reporter-method-output">Submit Transfer Request</span>
+                <span class="reporter-method-output">TRANSFER</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: CLO_Service_Order_Input] displayed in 36ms</span>
+                <span class="reporter-method-output">Setting Text on Search Request with Text = TRANSFER</span>
+                <span class="reporter-method-output">Angular request time 9ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Date_Picker_Scheduled] displayed in 37ms</span>
+                <span class="reporter-method-output">Enter Schedule Date Date</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Date_Picker_Scheduled] displayed in 36ms</span>
+                <span class="reporter-method-output">Setting Text on DatePicket with Text = Nov 10, 2019</span>
+                <span class="reporter-method-output">Angular request time 523ms</span>
+                <span class="reporter-method-output">Strings Matched: Mr. VACANT VACANT = Mr. VACANT VACANT</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Search_Input] displayed in 33ms</span>
+                <span class="reporter-method-output">Setting Text on Customer Name Request with Text = Mrs. Gail M Dewar</span>
+                <span class="reporter-method-output">Angular request time 9ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Search_Option_1] displayed in 582ms</span>
+                <span class="reporter-method-output">Angular request time 13ms</span>
+                <span class="reporter-method-output">Click XFER_Search_Option_1_Customer_Name</span>
+                <span class="reporter-method-output">Angular request time 8ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Description] displayed in 49ms</span>
+                <span class="reporter-method-output">Setting Text on Description Request with Text = Description for Stop Service</span>
                 <span class="reporter-method-output">Angular request time 9ms</span>
                 <span class="reporter-method-output">Click Submit</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: XFER_Button_Action] displayed in 395ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: XFER_Button_Action] displayed in 36ms</span>
-                <span class="reporter-method-output">Angular request time 115ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Button_Action] displayed in 37ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Button_Action] displayed in 36ms</span>
+                <span class="reporter-method-output">Angular request time 112ms</span>
                 <span class="reporter-method-output">Click MoveInSubmit Button</span>
-                <span class="reporter-method-output">Angular request time 8ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: XFER_Button_Done] displayed in 556ms</span>
-                <span class="reporter-method-output">Angular request time 34ms</span>
-                <span class="reporter-method-output">Click Done Button for Transfer</span>
                 <span class="reporter-method-output">Angular request time 16ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: ACTION_Refresh_Page] displayed in 75ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: ACTION_Refresh_Page] displayed in 90ms</span>
-                <span class="reporter-method-output">Angular request time 523ms</span>
-                <span class="reporter-method-output">Click Refresh Button</span>
-                <span class="reporter-method-output">Angular request time 13ms</span>
-                <span class="reporter-method-output">Refresh Page</span>
-                <span class="reporter-method-output">Angular request time 13ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> xpath: //*[@id="SRCH_Customers_Button_Trigger"]/span/mat-icon] displayed in 45ms</span>
-                <span class="reporter-method-output">Angular request time 19ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: SRCH_Customers_Option_1_Customer_Name] displayed in 50ms</span>
-                <span class="reporter-method-output">Angular request time 7ms</span>
-                <span class="reporter-method-output">Strings Matched: Mr. Vacant Vacant = Mr. Vacant Vacant</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Button_Done] displayed in 85ms</span>
+                <span class="reporter-method-output">Angular request time 128ms</span>
+                <span class="reporter-method-output">Click Done Button for Transfer</span>
                 <span class="reporter-method-output">Angular request time 10ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (eb7f5e43552b41b557ef6b532027e903)] -> id: SRCH_Customers_Option_1_Customer_Name] displayed in 31ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: ACTION_Refresh_Page] displayed in 39ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: ACTION_Refresh_Page] displayed in 38ms</span>
+                <span class="reporter-method-output">Angular request time 535ms</span>
+                <span class="reporter-method-output">Click Refresh Button</span>
+                <span class="reporter-method-output">Angular request time 7ms</span>
+                <span class="reporter-method-output">Refresh Page</span>
+                <span class="reporter-method-output">Clicking Servic Order Link</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> css selector: #mat-tab-label-0-2 > div] displayed in 30ms</span>
+                <span class="reporter-method-output">Angular request time 7ms</span>
+                <span class="reporter-method-output">Click Service Order Link</span>
+                <span class="reporter-method-output">Angular request time 7ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: SOLV_Service_Order_1] displayed in 43ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: SOLV_Service_Order_1] displayed in 33ms</span>
+                <span class="reporter-method-output">Angular request time 6ms</span>
+                <span class="reporter-method-output">Click Clicking Service Order 1</span>
+                <span class="reporter-method-output">Angular request time 10ms</span>
+                <span class="reporter-method-output">Angular request time 7ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: ACTION_Refresh_Page] displayed in 36ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: ACTION_Refresh_Page] displayed in 33ms</span>
+                <span class="reporter-method-output">Angular request time 546ms</span>
+                <span class="reporter-method-output">Click Refresh Button</span>
+                <span class="reporter-method-output">Angular request time 3ms</span>
+                <span class="reporter-method-output">Refresh Page</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: SRCH_Input] displayed in 70ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: SRCH_Input] displayed in 21ms</span>
+                <span class="reporter-method-output">Setting Text on Search Text with Text = LOC@0002</span>
+                <span class="reporter-method-output">Angular request time 9ms</span>
+                <span class="reporter-method-output">Search Text</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: SRCH_Option_1_Customer_Name] displayed in 665ms</span>
+                <span class="reporter-method-output">Click DashBoard Search Result </span>
+                <span class="reporter-method-output">Angular request time 546ms</span>
+                <span class="reporter-method-output">Click Action Dropdown</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: ACTION_Button] displayed in 18ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: ACTION_Button] displayed in 17ms</span>
+                <span class="reporter-method-output">Angular request time 10ms</span>
+                <span class="reporter-method-output">Click Action Drop down</span>
+                <span class="reporter-method-output">Angular request time 8ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: ACTION_Transfer_Service] displayed in 40ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: ACTION_Transfer_Service] displayed in 108ms</span>
+                <span class="reporter-method-output">Angular request time 126ms</span>
+                <span class="reporter-method-output">Click Action Transfer Service Drop down</span>
+                <span class="reporter-method-output">Angular request time 9ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Select] displayed in 57ms</span>
+                <span class="reporter-method-output">Angular request time 8ms</span>
+                <span class="reporter-method-output">Click Transfer Combo</span>
+                <span class="reporter-method-output">Angular request time 11ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Select_Option_1] displayed in 36ms</span>
+                <span class="reporter-method-output">Angular request time 15ms</span>
+                <span class="reporter-method-output">Click Transfer Option 1</span>
+                <span class="reporter-method-output">Angular request time 14ms</span>
+                <span class="reporter-method-output">TRANSFER</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: CLO_Service_Order_Input] displayed in 78ms</span>
+                <span class="reporter-method-output">Setting Text on Search Request with Text = Transfer</span>
+                <span class="reporter-method-output">Angular request time 9ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_MoveFrom_Date_Picker_Requested] displayed in 37ms</span>
+                <span class="reporter-method-output">11/08/2019 11:48</span>
+                <span class="reporter-method-output">Strings Matched: Mr. VACANT VACANT = Mr. VACANT VACANT</span>
+                <span class="reporter-method-output">TEST DEFAULT VALUE FOR CUSTOMER ===Mr. VACANT VACANT</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Search_Input] displayed in 32ms</span>
+                <span class="reporter-method-output">Setting Text on Customer Name Request with Text = Mr. VACANT VACANT</span>
+                <span class="reporter-method-output">Angular request time 425ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Search_Option_1_Customer_Name] displayed in 619ms</span>
+                <span class="reporter-method-output">Angular request time 11ms</span>
+                <span class="reporter-method-output">Click XFER_Search_Option_1_Customer_Name</span>
+                <span class="reporter-method-output">Angular request time 9ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Description] displayed in 39ms</span>
+                <span class="reporter-method-output">Setting Text on Description Request with Text = AUTOMATION TEST</span>
+                <span class="reporter-method-output">Angular request time 10ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_MoveTo_Tab] displayed in 39ms</span>
+                <span class="reporter-method-output">Angular request time 14ms</span>
+                <span class="reporter-method-output">Click Move To Tab (Transfers)</span>
+                <span class="reporter-method-output">Angular request time 7ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: CLO_Service_Order_Input] displayed in 70ms</span>
+                <span class="reporter-method-output">Enter Request Name</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: CLO_Service_Order_Input] displayed in 33ms</span>
+                <span class="reporter-method-output">Setting Text on Service Order Input with Text = TRANSFER</span>
+                <span class="reporter-method-output">Angular request time 12ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Search_Input] displayed in 36ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Search_Input] displayed in 32ms</span>
+                <span class="reporter-method-output">Setting Text on XFERSearchInput with Text = LOC@0004</span>
+                <span class="reporter-method-output">Angular request time 522ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Search_Option_1_Customer_Name] displayed in 644ms</span>
+                <span class="reporter-method-output">Angular request time 119ms</span>
+                <span class="reporter-method-output">Click XFER_Search_Option_1_Customer_Name</span>
+                <span class="reporter-method-output">Angular request time 16ms</span>
+                <span class="reporter-method-output">Enter Request Description</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Description] displayed in 68ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Description] displayed in 36ms</span>
+                <span class="reporter-method-output">Setting Text on XFER Description with Text = Move in from location LOC@0004</span>
+                <span class="reporter-method-output">Angular request time 15ms</span>
+                <span class="reporter-method-output">Click Submit</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Button_Action] displayed in 39ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (9c4ed8ecd16f90ddd861f60933635da7)] -> id: XFER_Button_Action] displayed in 38ms</span>
+                <span class="reporter-method-output">Angular request time 12ms</span>
+                <span class="reporter-method-output">Click MoveInSubmit Button</span>
                 <span class="reporter-method-output">Angular request time 7ms</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
@@ -324,18 +501,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0050_VerifyMoveiinCustomerAppearing</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0041_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">readProp(org.testng.TestRunner@140d1230)</span>
+                <span class="method-name">readProp(org.testng.TestRunner@53314f76)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">VerifyTransferActionServiceOrder</span>
-                <span class="method-start">6679 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotScheduled</span>
+                <span class="method-start">3796 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">39639 ms</span>
+                <span class="method-start">60640 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
