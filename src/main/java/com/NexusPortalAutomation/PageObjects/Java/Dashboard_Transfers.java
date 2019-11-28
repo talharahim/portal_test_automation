@@ -155,9 +155,15 @@ public class Dashboard_Transfers extends DashBoard {
 
     public void verifySamemoveinCustomer() {
 	String Message = "It is not allowed to have the same Customer and Move In Customer";
-	if (!invalidCustomer.getText().matches(Message)) {
-	    log(invalidCustomer.getText());
-	    Assert.fail("Customer Message not found");
+	try {
+	    if (!invalidCustomer.getText().matches(Message)) {
+
+		log(invalidCustomer.getText());
+		Assert.fail("Customer Message not found");
+	    }
+	} catch (NoSuchElementException e) {
+
+	    log("Customer Message not found");
 	}
 
     }
@@ -346,6 +352,7 @@ public class Dashboard_Transfers extends DashBoard {
 
     public void ClickMoveTo() throws InterruptedException {
 	ClickElement(MoveTo, "Move To Tab (Transfers)");
+	WaitAngular(driver);
     }
 
     public void clickActionDropDown_TransferService() throws InterruptedException {
@@ -408,6 +415,7 @@ public class Dashboard_Transfers extends DashBoard {
     }
 
     public void movinEnterRequest(String Request) {
+	WaitAngular(driver);
 	waitForObject(driver, CLOServiceOrderInput);
 	log("Enter Request Name");
 	setElementText(CLOServiceOrderInput, Request, "Service Order Input");

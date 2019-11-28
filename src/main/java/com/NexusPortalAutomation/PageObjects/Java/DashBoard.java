@@ -394,8 +394,8 @@ public class DashBoard extends CommonMethods {
     @FindBy(id = "REC_2_Amount")
     @CacheLookup
     WebElement Recent_Record2_Amount;
-
-    @FindBy(id = "REC_Footer_Button_Label")
+    
+    @FindBy(id = "REC_Footer_Button_Label_large")
     @CacheLookup
     WebElement Recent_ViewAll;
 
@@ -924,7 +924,7 @@ public class DashBoard extends CommonMethods {
 	Thread.sleep(1000);
 	findElementByid("ENH_Location_Drillback");
 	findElementByid("customer-person");
-	findElementByid("ENH_Title");
+	findElementByid("ENH_Title_small");
 	log("Verify Notes Drillback ", driver);
 
     }

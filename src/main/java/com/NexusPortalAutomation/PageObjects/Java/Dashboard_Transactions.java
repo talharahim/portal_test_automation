@@ -13,7 +13,7 @@ public class Dashboard_Transactions extends DashBoard {
 	 * @author Talha Rahim
 	 * @since 2019-09-12
 	 */
-	@FindBy(xpath = "//mat-select[@id='mat-select-2']//div[@class='mat-select-arrow']")
+	@FindBy(id = "TRAN_Select_Type")
 	WebElement Trans_type;
 
 	@FindBy(id = "TRAN_Select_Type_Option_0")

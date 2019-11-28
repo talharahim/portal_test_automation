@@ -14,6 +14,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.ScriptTimeoutException;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -46,10 +47,12 @@ public class CommonMethods {
     }
 
     // This method will be utilized in for PF classes not in TestCases
-    public static void WaitAngular(WebDriver driver) {
+    public static void WaitAngular(WebDriver driver) throws ScriptTimeoutException{
 	long begin = System.currentTimeMillis();
 	NgWebDriver ngWebDriver = new NgWebDriver((JavascriptExecutor) driver);
-	ngWebDriver.waitForAngularRequestsToFinish();
+	//ngWebDriver.waitForAngularRequestsToFinish(); //updated on 11/26/2019
+	ngWebDriver.withRootSelector("\"app-root\"").waitForAngularRequestsToFinish();
+ 
 	long end = System.currentTimeMillis();
 	long dt = end - begin;
 	log("Angular request time " + dt + "ms");
