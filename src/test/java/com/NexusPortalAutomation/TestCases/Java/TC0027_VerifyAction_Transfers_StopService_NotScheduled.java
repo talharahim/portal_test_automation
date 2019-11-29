@@ -77,7 +77,7 @@ public class TC0027_VerifyAction_Transfers_StopService_NotScheduled extends Base
 		//
 		dashBoard.verifydefaultCustomerStartService(defaultCustomer);
 		dashBoard.enterdefaultCustomerStartService(defaultCustomer);
-		dashBoard.enterDescription("AUTOMATION TEST");
+		dashBoard.enterDescription("AUTOMATION TEST - STOP SERVICE");
 		// Entering data for Move In
 		dashBoard.clickMoveInSubmit();
 		Thread.sleep(1000);

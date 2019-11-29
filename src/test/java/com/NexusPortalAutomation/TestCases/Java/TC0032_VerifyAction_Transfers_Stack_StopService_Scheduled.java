@@ -78,7 +78,7 @@ public class TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled extends B
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
 		dashBoard.selectTransferStop();
-		dashBoard.verifyServiceWarningSingleSO(ServiceOrder);
+		dashBoard.verifyServiceWarningSOSingleStop(ServiceOrder);
 		Calendar c = Calendar.getInstance();
 		c.setTime(newFormat.parse(moveOutstart_dtfinalString));
 		c.add(Calendar.DAY_OF_MONTH, 2);
@@ -102,7 +102,7 @@ public class TC0032_VerifyAction_Transfers_Stack_StopService_Scheduled extends B
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
 		dashBoard.selectTransferStop();
-		dashBoard.verifyServiceWarningMultiSO(serviceOrder2);
+		dashBoard.verifyServiceWarningMultiSOStop(serviceOrder2);
 		c = Calendar.getInstance();
 		c.setTime(newFormat.parse(moveOutstart_dtfinalString));
 		c.add(Calendar.DAY_OF_MONTH, 1);

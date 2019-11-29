@@ -76,7 +76,7 @@ public class TC0041_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotSched
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
 		dashBoard.selectTransferStop();
-		dashBoard.verifyServiceWarningSingleSO(serviceOrder);
+		dashBoard.verifyServiceWarningSOSingleStart(serviceOrder);
 		Calendar c = Calendar.getInstance();
 		c.setTime(newFormat.parse(moveOutstart_dtfinalString));
 		c.add(Calendar.DAY_OF_MONTH, 2);

@@ -394,7 +394,7 @@ public class DashBoard extends CommonMethods {
     @FindBy(id = "REC_2_Amount")
     @CacheLookup
     WebElement Recent_Record2_Amount;
-    
+
     @FindBy(id = "REC_Footer_Button_Label_large")
     @CacheLookup
     WebElement Recent_ViewAll;
@@ -496,6 +496,14 @@ public class DashBoard extends CommonMethods {
 
     @FindBy(id = "SRCH_Customers_Option_1_Customer_Name")
     static WebElement SRCH_Customers_Option_1_Customer_Name;
+    
+    @FindBy(id = "XFER_Warning_Message2")
+    static WebElement XFER_SO_Warning_Message;
+    
+    @FindBy(id = "XFER_Warning_Message2")
+    static WebElement XFER_Multi_Warning_Message;
+    
+    
 
     public String SRCH_Customers_Option_1_Customer_Name()
 
@@ -776,9 +784,12 @@ public class DashBoard extends CommonMethods {
 	    if (element.isDisplayed()) {
 		element.click();
 		WaitAngular(driver);
+	        log("Click " + ElementName, driver);
+	        WaitAngular(driver);
 	    }
-	    log("Click " + ElementName, driver);
-	    WaitAngular(driver);
+	    else {
+		Assert.fail("Element not displayed");
+	    }
 
 	} catch (NoSuchElementException e) {
 	    log(e.getMessage());
@@ -862,7 +873,7 @@ public class DashBoard extends CommonMethods {
 
 	} catch (NoSuchElementException e) {
 	    log(e.getMessage());
-	    Assert.assertTrue(false, "Element not found using id " + id);
+	    Assert.fail("Element not found using id " + id);
 
 	}
 	return element;
@@ -965,13 +976,27 @@ public class DashBoard extends CommonMethods {
     }
 
     public void verifyServiceWarningSingleSO(String serviceOrder) {
-	verifyString(findElementByid("XFER_Warning_Message").getText(), "Service Order Exist. TRANSFER");
+	verifyString(XFER_SO_Warning_Message.getText(), "Service Order Exist. TRANSFER");
 	verifyStringContains(findElementByid("XFER_Warning_Drillback").getAttribute("href"), serviceOrder);
 
     }
+     
 
     public void verifyServiceWarningMultiSO(String serviceOrder) {
 	verifyString(findElementByid("XFER_Warning_Message").getText(), "Multiple Service Orders Exist. TRANSFER");
+	verifyStringContains(findElementByid("XFER_Warning_Drillback").getAttribute("href"), serviceOrder);
+
+    }
+    
+    public void verifyServiceWarningMultiSOTrans(String serviceOrder) {
+	verifyString(findElementByid("XFER_Warning_Message2").getText(), "Multiple Service Orders Exist. TRANSFER");
+	verifyStringContains(findElementByid("XFER_Warning_Drillback").getAttribute("href"), serviceOrder);
+
+    }
+    
+    
+    public void verifyServiceWarningMultiSOStop(String serviceOrder) {
+	verifyString(findElementByid("XFER_Warning_Message3").getText(), "Multiple Service Orders Exist. TRANSFER");
 	verifyStringContains(findElementByid("XFER_Warning_Drillback").getAttribute("href"), serviceOrder);
 
     }
@@ -981,6 +1006,20 @@ public class DashBoard extends CommonMethods {
 	verifyStringContains(findElementByid("XFER_Warning_Drillback").getAttribute("href"), serviceOrder);
 
     }
+    
+    public void verifyServiceWarningSOSingleStart(String serviceOrder) {
+	verifyString(findElementByid("XFER_Warning_Message3").getText(), "Service Order Exist. TRANSFER");
+	verifyStringContains(findElementByid("XFER_Warning_Drillback").getAttribute("href"), serviceOrder);
+
+    }
+    
+    
+    public void verifyServiceWarningSOSingleStop(String serviceOrder) {
+	verifyString(findElementByid("XFER_Warning_Message3").getText(), "Service Order Exist. TRANSFER");
+	verifyStringContains(findElementByid("XFER_Warning_Drillback").getAttribute("href"), serviceOrder);
+
+    }
+
 
     public String GetSecondCustDrillBackUrl() {
 	try {

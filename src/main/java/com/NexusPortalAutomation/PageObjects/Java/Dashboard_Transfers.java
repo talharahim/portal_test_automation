@@ -60,6 +60,9 @@ public class Dashboard_Transfers extends DashBoard {
     @FindBy(id = "XFER_Search_Option_1_Customer_Name")
     WebElement XFERSearchOption1CustomerName;
 
+    @FindBy(id = "CLO_Service_Order_Option_1_Request_Id")
+    WebElement XFERSearchOption1RequestName;
+
     @FindBy(id = "XFER_Search_Option_1")
     WebElement XFERSearchOption1;
 
@@ -310,6 +313,8 @@ public class Dashboard_Transfers extends DashBoard {
     public void enterRequest(String Request) {
 	log(SearchRequest.getAttribute("value"));
 	setElementText(SearchRequest, Request, "Search Request");
+	ClickElement(XFERSearchOption1RequestName, "XFER_Search_Option_1_Customer_Name");
+
     }
 
     public void enterdefaultCustomer(String Customer) {
