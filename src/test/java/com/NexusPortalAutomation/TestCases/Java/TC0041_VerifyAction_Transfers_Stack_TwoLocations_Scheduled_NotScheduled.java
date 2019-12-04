@@ -104,7 +104,7 @@ public class TC0041_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotSched
 		// Move Out
 		moveOutrequestedDate = dashBoard.Movin_getMoveOutRequestedDate();
 		dashBoard.verifydefaultCustomer(defaultCustomer);
-		dashBoard.enterdefaultCustomer(defaultCustomer);
+		dashBoard.enterdefaultCustomerTransfer(defaultCustomer);
 		dashBoard.enterDescription("AUTOMATION TEST");
 		// Move In
 		dashBoard.ClickMoveTo();

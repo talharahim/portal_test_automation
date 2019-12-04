@@ -446,7 +446,7 @@ public class DashBoard extends CommonMethods {
     @FindBy(id = "SRCH_Option_2_Customer_Name")
     WebElement DashboardSearchResult1Name;
 
-    @FindBy(id = "SRCH_Option_1_Customer_Id")
+    @FindBy(id = "SRCH_Option_4_Customer_Id")
     WebElement DashboardSearchResult1CustomerId;
 
     @FindBy(id = "SRCH_Option_1_Location_Id")

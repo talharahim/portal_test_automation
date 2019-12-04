@@ -76,7 +76,7 @@ public class TC0040_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotSched
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
 		dashBoard.selectTransferStop();
-		dashBoard.verifyServiceWarningSingleSO(ServiceOrder);
+		dashBoard.verifyServiceWarningSOSingleStop(ServiceOrder);
 		Calendar c = Calendar.getInstance();
 		c.setTime(newFormat.parse(moveOutstart_dtfinalString));
 		c.add(Calendar.DAY_OF_MONTH, 2);
@@ -104,7 +104,7 @@ public class TC0040_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotSched
 		// Move Out
 		moveOutrequestedDate = dashBoard.Movin_getMoveOutRequestedDate();
 		dashBoard.verifydefaultCustomer(defaultCustomer);
-		dashBoard.enterdefaultCustomer(defaultCustomer);
+		dashBoard.enterdefaultCustomerTransfer(defaultCustomer);
 		dashBoard.enterDescription("AUTOMATION TEST");
 		// Move In
 		dashBoard.ClickMoveTo();

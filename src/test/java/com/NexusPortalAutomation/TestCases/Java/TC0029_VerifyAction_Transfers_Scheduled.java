@@ -96,7 +96,7 @@ public class TC0029_VerifyAction_Transfers_Scheduled extends BaseClass {
 		// Move Out
 
 		dashBoard.verifydefaultCustomer(defaultCustomer);
-		dashBoard.enterdefaultCustomer(defaultCustomer);
+		dashBoard.enterdefaultCustomerTransfer(defaultCustomer);
 		dashBoard.enterDescription("AUTOMATION TEST");
 
 		// Move In

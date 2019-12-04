@@ -71,7 +71,7 @@ public class TC0025_1_VerifyAction_Transfers_Scheduled_CurrentMoveinCustomer ext
 		String moveOutrequestedDate = dashBoard.Movin_getMoveOutRequestedDate();
 		dashBoard.moveinScheduledate(moveOutrequestedDate);
 		dashBoard.verifydefaultCustomer(defaultCustomer);
-		dashBoard.enterdefaultCustomer(requestedbY);
+		dashBoard.enterdefaultCustomerTransfer(requestedbY);
 		Delay();
 		dashBoard.enterDescription("AUTOMATION TEST");
 

@@ -81,7 +81,7 @@ public class TC0035_VerifyAction_Transfers_StopService extends BaseClass {
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
 		dashBoard.selectTransferStop();
-		dashBoard.verifyServiceWarningSingleSO(ServiceOrder);
+		dashBoard.verifyServiceWarningSOSingleStop(ServiceOrder);
 		Calendar c = Calendar.getInstance();
 		c.setTime(newFormat.parse(moveOutstart_dtfinalString));
 		c.add(Calendar.DAY_OF_MONTH, 2);

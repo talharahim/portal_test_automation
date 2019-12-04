@@ -68,7 +68,7 @@ public class TC0025_VerifyAction_Transfers_NotScheduled extends BaseClass {
 		// Move Out
 		String moveOutrequestedDate = dashBoard.Movin_getMoveOutRequestedDate();
 		dashBoard.verifydefaultCustomer(defaultCustomer);
-		dashBoard.enterdefaultCustomer(defaultCustomer);
+		dashBoard.enterdefaultCustomerTransfer(defaultCustomer);
 		dashBoard.enterDescription("AUTOMATION TEST");
 
 		// Move In
