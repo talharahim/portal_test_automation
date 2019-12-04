@@ -1,6 +1,7 @@
 package com.NexusPortalAutomation.TestCases.Java;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import org.testng.annotations.Test;
 
@@ -8,6 +9,8 @@ import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 import com.NexusPortalAutomation.Utilities.Java.ExcelData;
+import com.NexusPortalAutomation.Utilities.Java.MySQLDataExec;
+import com.microsoft.sqlserver.jdbc.SQLServerException;
 
 public class TC0009_1_VerifyAccountSearch_NoAccounts extends BaseClass {
 
@@ -26,9 +29,12 @@ public class TC0009_1_VerifyAccountSearch_NoAccounts extends BaseClass {
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
-	public void TestSearchAccount() throws IOException, InterruptedException {
+	public void TestSearchAccount() throws IOException, InterruptedException, ClassNotFoundException, SQLServerException, SQLException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
+		MySQLDataExec sql = new MySQLDataExec();
+		sql.deleteServiceorder(locationID);
+		sql.deleteServiceorderHistory(locationID);
 		login();
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
