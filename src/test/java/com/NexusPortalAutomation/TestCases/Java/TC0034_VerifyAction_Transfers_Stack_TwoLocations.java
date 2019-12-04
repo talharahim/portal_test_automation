@@ -77,7 +77,7 @@ public class TC0034_VerifyAction_Transfers_Stack_TwoLocations extends BaseClass 
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
 		dashBoard.selectTransferStop();
-		dashBoard.verifyServiceWarningSingleSO(ServiceOrder);
+		dashBoard.verifyServiceWarningSOSingleStop(ServiceOrder);
 		Calendar c = Calendar.getInstance();
 		c.setTime(newFormat.parse(moveOutstart_dtfinalString));
 		c.add(Calendar.DAY_OF_MONTH, 2);
@@ -95,10 +95,10 @@ public class TC0034_VerifyAction_Transfers_Stack_TwoLocations extends BaseClass 
 		//String ServiceOrder2 = dashBoard.getserviceOrderNum();
 		dashBoard.clickrefreshPage();
 		
-		
+		/*
 		/*
 		// Adding Thir Service with one day ahead of current date
-		*/
+		
 		dashBoard.enterDashBoardSearch(locationID2);
 		dashBoard.clickDashBoardSearchResult1();
 		
@@ -109,7 +109,7 @@ public class TC0034_VerifyAction_Transfers_Stack_TwoLocations extends BaseClass 
 		// Move Out
 		moveOutrequestedDate = dashBoard.Movin_getMoveOutRequestedDate();
 		dashBoard.verifydefaultCustomer(defaultCustomer);
-		dashBoard.enterdefaultCustomer(defaultCustomer);
+		dashBoard.enterdefaultCustomerTransfer(defaultCustomer);
 		dashBoard.enterDescription("AUTOMATION TEST");
 		// Move In
 		dashBoard.ClickMoveTo();
@@ -130,22 +130,26 @@ public class TC0034_VerifyAction_Transfers_Stack_TwoLocations extends BaseClass 
 		dashBoard.clickDashBoardSearchResult1();
 		//Navigate to Service Order
 		dashBoard.clickrefreshPage();
+		*/
+		Calendar c1 = Calendar.getInstance();
+		//c1.add(Calendar.DAY_OF_MONTH, 1);
+		String newDate2 = newFormat.format(c1.getTime());
 		dashBoard.clickServiceorderLink();
 		dashBoard.clickServiceorder1();
 		String moveOutCustomer = "Mr. Vacant Vacant";
-		moveInCustomer = "Mrs. Gail M Dewar (Customer010)";
-		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,newDate2,moveOutstart_dtfinalString,Task,locationID);
+		moveInCustomer = "Mr. Automation Mate (0000011111)";
+		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,newDate,moveOutstart_dtfinalString,Task,locationID);
 		
 		//Verifying Service Order 2
 		dashBoard.clickServiceorder2();
-		moveOutCustomer = "Mrs. Gail M Dewar";
-		moveInCustomer = "Mr. Automation Mate (0000011111)";
-		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,newDate,moveOutstart_dtfinalString,Task,locationID);
+		moveOutCustomer = "Mr. Automation Mate";
+		moveInCustomer = "Mr. Vacant Vacant (Vacant)";
+		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,newDate2,moveOutstart_dtfinalString,Task,locationID);
 		// Verifying Third Transfer order in the stack
- 		dashBoard.clickServiceorder3();
- 	   	moveOutCustomer = "Mr. Automation Mate";
- 		moveInCustomer = "Mr. Vacant Vacant (Vacant)";
-		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,moveOutstart_dtfinalString,moveOutstart_dtfinalString,Task,locationID);
+ 		//dashBoard.clickServiceorder3();
+ 	   	//moveOutCustomer = "Mr. Automation Mate";
+ 		//moveInCustomer = "Mr. Vacant Vacant (Vacant)";
+		//dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,moveOutstart_dtfinalString,moveOutstart_dtfinalString,Task,locationID);
 		dashBoard.logout();
 	}
 

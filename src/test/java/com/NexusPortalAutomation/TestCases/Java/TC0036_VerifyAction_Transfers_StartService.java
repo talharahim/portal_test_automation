@@ -97,7 +97,7 @@ public class TC0036_VerifyAction_Transfers_StartService extends BaseClass {
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
 		dashBoard.selectTransferStart();
-		dashBoard.verifyServiceWarningSingleSO(ServiceOrder);
+		dashBoard.verifyServiceWarningSOSingleStart(ServiceOrder);
 
 		Calendar c = Calendar.getInstance();
 		c.setTime(newFormat.parse(moveOutstart_dtfinalString));

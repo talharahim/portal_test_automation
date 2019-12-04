@@ -98,7 +98,7 @@ public class TC0033_VerifyAction_Transfers_Stack_StartService_Scheduled extends 
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
 		dashBoard.selectTransferStart();
-		dashBoard.verifyServiceWarningSingleSO(ServiceOrder);
+		dashBoard.verifyServiceWarningSOSingleStart(ServiceOrder);
 
 		Calendar c = Calendar.getInstance();
 		c.setTime(newFormat.parse(moveOutstart_dtfinalString));

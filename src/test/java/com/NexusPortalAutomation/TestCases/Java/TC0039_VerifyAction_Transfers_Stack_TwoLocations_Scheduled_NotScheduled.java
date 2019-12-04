@@ -31,7 +31,10 @@ public class TC0039_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotSched
 
 	public String locationID = getCellvalue("TC0039", "locationID");// "LOC@0004";
 	public String locationID2 = getCellvalue("TC0039", "locationID2");//"LOC@0002";
+	public String locationID3 = getCellvalue("TC0039", "locationID3");//"ELECWAT003";
+	public String locationID4 = getCellvalue("TC0039", "locationID4");//"ELECWAT003";
 	public String defaultCustomer = getCellvalue("TC0039", "defaultCustomer");//"Mr. VACANT VACANT";
+	public String defaultCustomer2 = getCellvalue("TC0039", "defaultCustomer2");//"Mr. VACANT VACANT";
 	public String message = getCellvalue("TC0039", "message");//"Transfer initiated";
 	public String[] task = {"Meter Reading-electric", "Charge New Customer","Property Transfer", "Deposit Request-new Customer", "Deposit Payment-new Customer E","Prepayment Required-new Custom"};
 	
@@ -48,6 +51,10 @@ public class TC0039_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotSched
 		sql.deleteServiceorderHistory(locationID);
 		sql.deleteServiceorder(locationID2);
 		sql.deleteServiceorderHistory(locationID2);
+		sql.deleteServiceorder(locationID3);
+		sql.deleteServiceorderHistory(locationID3);
+		sql.deleteServiceorder(locationID4);
+		sql.deleteServiceorderHistory(locationID4);
 		login();
 		dbSrch.enterSearchText(locationID);
 		dbSrch.clickCustomerName();
@@ -78,7 +85,7 @@ public class TC0039_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotSched
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_TransferService();
 		dashBoard.selectTransferStop();
-		dashBoard.verifyServiceWarningSingleSO(ServiceOrder);
+		dashBoard.verifyServiceWarningSOSingleStop(ServiceOrder);
 		Calendar c = Calendar.getInstance();
 		c.setTime(newFormat.parse(moveOutstart_dtfinalString));
 		c.add(Calendar.DAY_OF_MONTH, 2);
@@ -106,7 +113,7 @@ public class TC0039_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotSched
 		// Move Out
 		moveOutrequestedDate = dashBoard.Movin_getMoveOutRequestedDate();
 		dashBoard.verifydefaultCustomer(defaultCustomer);
-		dashBoard.enterdefaultCustomer(defaultCustomer);
+		dashBoard.enterdefaultCustomerTransfer(defaultCustomer2);
 		dashBoard.enterDescription("AUTOMATION TEST");
 		// Move In
 		dashBoard.ClickMoveTo();
@@ -117,8 +124,8 @@ public class TC0039_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotSched
 		dashBoard.movinEnterMoveToScheduleDate(newDate2);
 		Thread.sleep(1000);
 		dashBoard.movinEnterRequest("TRANSFER");
-		dashBoard.movinEnterLocation(locationID);
-		dashBoard.movinEnterDescription("Move in from location "+locationID);
+		dashBoard.movinEnterLocation(locationID4);
+		dashBoard.movinEnterDescription("Move in from location "+locationID4);
 		dashBoard.clickMoveInSubmit();
 		Thread.sleep(1000);
 		dashBoard.verifySubmitMessage(message);
@@ -127,23 +134,28 @@ public class TC0039_VerifyAction_Transfers_Stack_TwoLocations_Scheduled_NotSched
 		dashBoard.enterDashBoardSearch(locationID);
 		dashBoard.clickDashBoardSearchResult1();
 		//Navigate to Service Order
+		
 		dashBoard.clickrefreshPage();
 		dashBoard.clickServiceorderLink();
 		dashBoard.clickServiceorder1();
 		String moveOutCustomer = "Mr. Vacant Vacant";
-		moveInCustomer = "Mrs. Gail M Dewar (Customer010)";
-		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,newDate2,moveOutstart_dtfinalString,task,locationID,"Move In From Location Loc@0004");
+		moveInCustomer = "Mr. Vacant Vacant (Vacant)";
+		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,newDate,moveOutstart_dtfinalString,task,locationID,"Description For Stop Service");
 		
 		//Verifying Service Order 2
 		dashBoard.clickServiceorder2();
-		moveOutCustomer = "Mrs. Gail M Dewar";
+		moveOutCustomer = "Mr. Automation Mate";
 		moveInCustomer = "Mr. Vacant Vacant (Vacant)";
-		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,newDate,moveOutstart_dtfinalString,task,locationID,"Description For Stop Service");
-		// Verifying Third Transfer order in the stack
- 		dashBoard.clickServiceorder3();
- 	   	moveOutCustomer = "Mr. Automation Mate";
- 		moveInCustomer = "Mr. Vacant Vacant (Vacant)";
 		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,"Not Scheduled",moveOutstart_dtfinalString,task,locationID,"Description For Stop Service");
+		// Verifying Third Transfer order in the stack
+		
+		dashBoard.enterDashBoardSearch(locationID4);
+		dashBoard.clickDashBoardSearchResult1();
+		
+ 		dashBoard.clickServiceorder1();
+ 	   	moveOutCustomer = "Dr. Single Cust";
+ 		moveInCustomer = "Mrs. Gail M Dewar (Customer010)";
+		dashBoard.verifyServiceOrderdetails(moveOutCustomer,moveOutCustomer,moveInCustomer,newDate2,moveOutstart_dtfinalString,task,locationID4,"Move In From Location " + locationID4);
 		dashBoard.logout();
 	}
 

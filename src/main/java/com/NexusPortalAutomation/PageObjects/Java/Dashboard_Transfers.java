@@ -57,8 +57,12 @@ public class Dashboard_Transfers extends DashBoard {
     @FindBy(id = "XFER_Select_Option_3")
     WebElement XFER_Select_Option_3;
 
-    @FindBy(id = "XFER_Search_Option_1_Customer_Name")
+    @FindBy(id = "XFER_Search_Option_2_Customer_Name")
     WebElement XFERSearchOption1CustomerName;
+    
+    @FindBy(id = "XFER_Search_Option_1_Customer_Name")
+    WebElement XFERSearchOption1CustomerName1;
+
 
     @FindBy(id = "CLO_Service_Order_Option_1_Request_Id")
     WebElement XFERSearchOption1RequestName;
@@ -80,6 +84,10 @@ public class Dashboard_Transfers extends DashBoard {
 
     @FindBy(id = "CLO_Service_Order_Input")
     WebElement CLOServiceOrderInput;
+    
+    @FindBy(id = "CLO_Service_Order_Option_2")
+    WebElement CLO_Service_Order_Option_1_Request_Id;
+    
 
     @FindBy(id = "XFER_Search_Input")
     WebElement XFERSearchInput;
@@ -323,6 +331,13 @@ public class Dashboard_Transfers extends DashBoard {
 	ClickElement(XFERSearchOption1CustomerName, "XFER_Search_Option_1_Customer_Name");
 
     }
+    
+    public void enterdefaultCustomerTransfer(String Customer) {
+	log("TEST DEFAULT VALUE FOR CUSTOMER ===" + DefaultCsutomer.getAttribute("value"));
+	setElementText(DefaultCsutomer, Customer, "Customer Name Request");
+	ClickElement(XFERSearchOption1CustomerName1, "XFER_Search_Option_1_Customer_Name1");
+
+    }
 
     public void enterdefaultCustomerStartService(String Customer) {
 	setElementText(DefaultCsutomer, Customer, "Customer Name Request");
@@ -424,13 +439,14 @@ public class Dashboard_Transfers extends DashBoard {
 	waitForObject(driver, CLOServiceOrderInput);
 	log("Enter Request Name");
 	setElementText(CLOServiceOrderInput, Request, "Service Order Input");
+	ClickElement(CLO_Service_Order_Option_1_Request_Id, "CLO_Service_Order_Option_1_Request_Id");
 
     }
 
     public void movinEnterLocation(String Location) {
 	waitForObject(driver, XFERSearchInput);
 	setElementText(XFERSearchInput, Location, "XFERSearchInput");
-	ClickElement(XFERSearchOption1CustomerName, "XFER_Search_Option_1_Customer_Name");
+	ClickElement(XFERSearchOption1CustomerName, "XFER_Search_Option_2_Customer_Name");
 
     }
 

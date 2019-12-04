@@ -443,7 +443,7 @@ public class DashBoard extends CommonMethods {
     @CacheLookup
     WebElement DashboardSearch;
 
-    @FindBy(id = "SRCH_Option_1_Customer_Name")
+    @FindBy(id = "SRCH_Option_2_Customer_Name")
     WebElement DashboardSearchResult1Name;
 
     @FindBy(id = "SRCH_Option_1_Customer_Id")
@@ -497,7 +497,7 @@ public class DashBoard extends CommonMethods {
     @FindBy(id = "SRCH_Customers_Option_1_Customer_Name")
     static WebElement SRCH_Customers_Option_1_Customer_Name;
     
-    @FindBy(id = "XFER_Warning_Message2")
+    @FindBy(id = "XFER_Warning_Message")
     static WebElement XFER_SO_Warning_Message;
     
     @FindBy(id = "XFER_Warning_Message2")
@@ -981,9 +981,15 @@ public class DashBoard extends CommonMethods {
 
     }
      
+    public void verifyServiceWarningSOSingleStart(String serviceOrder) {
+	verifyString(findElementByid("XFER_Warning_Message3").getText(), "Service Order Exist. TRANSFER");
+	verifyStringContains(findElementByid("XFER_Warning_Drillback").getAttribute("href"), serviceOrder);
+
+    }
+    
 
     public void verifyServiceWarningMultiSO(String serviceOrder) {
-	verifyString(findElementByid("XFER_Warning_Message").getText(), "Multiple Service Orders Exist. TRANSFER");
+	verifyString(findElementByid("XFER_Warning_Message3").getText(), "Multiple Service Orders Exist. TRANSFER");
 	verifyStringContains(findElementByid("XFER_Warning_Drillback").getAttribute("href"), serviceOrder);
 
     }
@@ -994,6 +1000,12 @@ public class DashBoard extends CommonMethods {
 
     }
     
+    public void verifyServiceWarningMultiSOStart(String serviceOrder) {
+	verifyString(findElementByid("XFER_Warning_Message3").getText(), "Multiple Service Orders Exist. TRANSFER");
+	verifyStringContains(findElementByid("XFER_Warning_Drillback").getAttribute("href"), serviceOrder);
+
+    }
+
     
     public void verifyServiceWarningMultiSOStop(String serviceOrder) {
 	verifyString(findElementByid("XFER_Warning_Message3").getText(), "Multiple Service Orders Exist. TRANSFER");
@@ -1007,11 +1019,7 @@ public class DashBoard extends CommonMethods {
 
     }
     
-    public void verifyServiceWarningSOSingleStart(String serviceOrder) {
-	verifyString(findElementByid("XFER_Warning_Message3").getText(), "Service Order Exist. TRANSFER");
-	verifyStringContains(findElementByid("XFER_Warning_Drillback").getAttribute("href"), serviceOrder);
 
-    }
     
     
     public void verifyServiceWarningSOSingleStop(String serviceOrder) {
