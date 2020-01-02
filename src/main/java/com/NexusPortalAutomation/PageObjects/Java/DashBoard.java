@@ -62,6 +62,14 @@ public class DashBoard extends CommonMethods {
     @CacheLookup
     WebElement AlertDesc;
 
+    @FindBy(xpath = "//span[@class='master-location-item location-title']")
+    @CacheLookup
+    WebElement MasterAccountLocation;
+
+    @FindBy(xpath = "//span[contains(text(),'Included Account')]")
+    @CacheLookup
+    WebElement IncludedAccountLocation;
+
     @FindBy(id = "BILL_Past_Due")
     WebElement BILL_PastDue;
 
@@ -496,14 +504,53 @@ public class DashBoard extends CommonMethods {
 
     @FindBy(id = "SRCH_Customers_Option_1_Customer_Name")
     static WebElement SRCH_Customers_Option_1_Customer_Name;
-    
+
     @FindBy(id = "XFER_Warning_Message")
     static WebElement XFER_SO_Warning_Message;
-    
+
     @FindBy(id = "XFER_Warning_Message2")
     static WebElement XFER_Multi_Warning_Message;
-    
-    
+
+    @FindBy(id = "ACTION_Global_Options")
+    static WebElement GlobalOptions;
+
+    public void clickglobaloptions() {
+	WaitAngular(driver);
+	waitForObject(driver, LoggedUserLink);
+	LoggedUserLink.click();
+	WaitAngular(driver);
+	waitForObject(driver, GlobalOptions);
+	if (GlobalOptions.isDisplayed()) {
+	    GlobalOptions.click();
+	} else {
+	    Assert.fail("Global Options not visible");
+	}
+
+    }
+
+    public void clickIncludedaccountlabel() {
+
+	WaitAngular(driver);
+	waitForObject(driver, IncludedAccountLocation);
+	if (IncludedAccountLocation.isDisplayed()) {
+	    IncludedAccountLocation.click();
+	} else {
+	    Assert.fail("Included account not visible");
+	}
+
+    }
+
+    public void clickMasteraccountlabel() {
+
+	WaitAngular(driver);
+	waitForObject(driver, MasterAccountLocation);
+	if (MasterAccountLocation.isDisplayed()) {
+	    MasterAccountLocation.click();
+	} else {
+	    Assert.fail("Master account not visible");
+	}
+
+    }
 
     public String SRCH_Customers_Option_1_Customer_Name()
 
@@ -784,10 +831,9 @@ public class DashBoard extends CommonMethods {
 	    if (element.isDisplayed()) {
 		element.click();
 		WaitAngular(driver);
-	        log("Click " + ElementName, driver);
-	        WaitAngular(driver);
-	    }
-	    else {
+		log("Click " + ElementName, driver);
+		WaitAngular(driver);
+	    } else {
 		Assert.fail("Element not displayed");
 	    }
 
@@ -980,33 +1026,31 @@ public class DashBoard extends CommonMethods {
 	verifyStringContains(findElementByid("XFER_Warning_Drillback").getAttribute("href"), serviceOrder);
 
     }
-     
+
     public void verifyServiceWarningSOSingleStart(String serviceOrder) {
 	verifyString(findElementByid("XFER_Warning_Message3").getText(), "Service Order Exist. TRANSFER");
 	verifyStringContains(findElementByid("XFER_Warning_Drillback").getAttribute("href"), serviceOrder);
 
     }
-    
 
     public void verifyServiceWarningMultiSO(String serviceOrder) {
 	verifyString(findElementByid("XFER_Warning_Message3").getText(), "Multiple Service Orders Exist. TRANSFER");
 	verifyStringContains(findElementByid("XFER_Warning_Drillback").getAttribute("href"), serviceOrder);
 
     }
-    
+
     public void verifyServiceWarningMultiSOTrans(String serviceOrder) {
 	verifyString(findElementByid("XFER_Warning_Message2").getText(), "Multiple Service Orders Exist. TRANSFER");
 	verifyStringContains(findElementByid("XFER_Warning_Drillback").getAttribute("href"), serviceOrder);
 
     }
-    
+
     public void verifyServiceWarningMultiSOStart(String serviceOrder) {
 	verifyString(findElementByid("XFER_Warning_Message3").getText(), "Multiple Service Orders Exist. TRANSFER");
 	verifyStringContains(findElementByid("XFER_Warning_Drillback").getAttribute("href"), serviceOrder);
 
     }
 
-    
     public void verifyServiceWarningMultiSOStop(String serviceOrder) {
 	verifyString(findElementByid("XFER_Warning_Message3").getText(), "Multiple Service Orders Exist. TRANSFER");
 	verifyStringContains(findElementByid("XFER_Warning_Drillback").getAttribute("href"), serviceOrder);
@@ -1018,16 +1062,12 @@ public class DashBoard extends CommonMethods {
 	verifyStringContains(findElementByid("XFER_Warning_Drillback").getAttribute("href"), serviceOrder);
 
     }
-    
 
-    
-    
     public void verifyServiceWarningSOSingleStop(String serviceOrder) {
 	verifyString(findElementByid("XFER_Warning_Message3").getText(), "Service Order Exist. TRANSFER");
 	verifyStringContains(findElementByid("XFER_Warning_Drillback").getAttribute("href"), serviceOrder);
 
     }
-
 
     public String GetSecondCustDrillBackUrl() {
 	try {
