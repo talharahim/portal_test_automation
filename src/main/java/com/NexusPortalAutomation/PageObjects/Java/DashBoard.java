@@ -28,6 +28,12 @@ public class DashBoard extends CommonMethods {
     public boolean HighLight = false;
 
     static WebDriver driver;
+
+    public DashBoard(WebDriver driver) {
+	this.driver = driver;
+	PageFactory.initElements(driver, this);
+    }
+
     @FindBy(id = "USR_Name")
     WebElement LoggedUserLink;
 
@@ -514,7 +520,7 @@ public class DashBoard extends CommonMethods {
     @FindBy(id = "ACTION_Global_Options")
     static WebElement GlobalOptions;
 
-    public void clickglobaloptions() {
+    public void clickglobaloptions() throws InterruptedException {
 	WaitAngular(driver);
 	waitForObject(driver, LoggedUserLink);
 	LoggedUserLink.click();
@@ -522,6 +528,8 @@ public class DashBoard extends CommonMethods {
 	waitForObject(driver, GlobalOptions);
 	if (GlobalOptions.isDisplayed()) {
 	    GlobalOptions.click();
+	    WaitAngular(driver);
+	    Thread.sleep(1000);
 	} else {
 	    Assert.fail("Global Options not visible");
 	}
@@ -536,6 +544,20 @@ public class DashBoard extends CommonMethods {
 	    IncludedAccountLocation.click();
 	} else {
 	    Assert.fail("Included account not visible");
+	}
+
+    }
+
+    public void clickIncludedaccountlabelNormal() {
+
+	WaitAngular(driver);
+	try {
+	    waitForObjectNonExist(driver, IncludedAccountLocation);
+	    if (IncludedAccountLocation.isDisplayed()) {
+		Assert.fail("Label should not be visible");
+	    }
+	} catch (NoSuchElementException ObjectNotFound) {
+
 	}
 
     }
@@ -1089,11 +1111,6 @@ public class DashBoard extends CommonMethods {
 	    Assert.fail("Service Drillback not found");
 	}
 	return ServiceTabDrillBack.getAttribute("href");
-    }
-
-    public DashBoard(WebDriver driver) {
-	this.driver = driver;
-	PageFactory.initElements(driver, this);
     }
 
     public void ClickServElecIcon() {

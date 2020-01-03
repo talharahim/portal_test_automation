@@ -1,13 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="NexusTest"
            tests="1"
-           failures="0"
+           failures="1"
            errors="0"
            skipped="0"
-           time="43.624">
+           time="28.025">
   <properties />
+            <testcase name="VerifyAction_Transfers_StopService" time="28.025" classname="com.NexusPortalAutomation.TestCases.Java.TC0035_VerifyAction_Transfers_StopService">
+                <failure type="java.lang.AssertionError"
+                  message="Actual Value &apos;Service Order Exist. TRANSFER&apos; not Matched the expected value &apos;Multiple Service Orders Exist. TRANSFER&apos; "
+              >
+<![CDATA[java.lang.AssertionError: Actual Value 'Service Order Exist. TRANSFER' not Matched the expected value 'Multiple Service Orders Exist. TRANSFER' 
+  org.testng.Assert.fail(Assert.java:96)
+  com.NexusPortalAutomation.Utilities.Java.CommonMethods.verifyString(CommonMethods.java:73)
+  com.NexusPortalAutomation.PageObjects.Java.DashBoard.verifyServiceWarningSOSingleStop(DashBoard.java:1067)
+  com.NexusPortalAutomation.TestCases.Java.TC0035_VerifyAction_Transfers_StopService.VerifyAction_Transfers_StopService(TC0035_VerifyAction_Transfers_StopService.java:84)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+  org.testng.SuiteRunner.run(SuiteRunner.java:364)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+  org.testng.TestNG.runSuites(TestNG.java:1049)
+  org.testng.TestNG.run(TestNG.java:1017)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+      </failure>
+
+          </testcase>
   
   
-            <testcase name="VerifyAction_Transfers_StopService" time="43.624" classname="com.NexusPortalAutomation.TestCases.Java.TC0035_VerifyAction_Transfers_StopService" />
-      
+  
 </testsuite>

@@ -235,6 +235,23 @@ public class CommonMethods {
 	log("Element " + element.toString() + " displayed in " + dt + "ms");
 	// ClearHighlightElement(element, driver);
     }
+    
+    public static void waitForObjectNonExist(WebDriver driver, WebElement element) {
+	long begin = System.currentTimeMillis();
+	WebDriverWait wait = new WebDriverWait(driver, 20);
+	try {
+	    wait.until(ExpectedConditions.visibilityOf(element));
+	    HighlightElement(element, driver);
+
+	} catch (TimeoutException  e) {
+
+	    log("Object Not Found" + e.getMessage());
+	}
+	long end = System.currentTimeMillis();
+	long dt = end - begin;
+	log("Element " + element.toString() + " displayed in " + dt + "ms");
+	// ClearHighlightElement(element, driver);
+    }
 
     public static boolean CheckStringmapsAreEqual(Map<String, String> mapA, Map<String, String> mapB) {
 
