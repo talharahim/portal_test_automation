@@ -40,6 +40,9 @@ public class GlobalOptions extends CommonMethods {
     @FindBy(xpath = "/html/body/wo-root/wo-dashboard/csm-global-options/div/header/div[2]/div")
     public static WebElement backtoaccounts;
     
+    @FindBy(xpath = "/html/body/wo-root/wo-dashboard/csm-global-options/div/div/div/form/h3")
+    public static WebElement contactLogTitle;
+    
     public static String getPageHeader()
     {
 	waitForObject(driver, Header);
@@ -56,6 +59,12 @@ public class GlobalOptions extends CommonMethods {
     {
 	waitForObject(driver, transferRequest);
 	return transferRequest.getText();
+    }
+    
+    public static String contactLogTitle()
+    {
+	waitForObject(driver, contactLogTitle);
+	return contactLogTitle.getText();
     }
     
     public static void backtoaccounts()

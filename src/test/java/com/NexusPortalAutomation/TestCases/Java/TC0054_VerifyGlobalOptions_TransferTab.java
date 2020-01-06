@@ -21,7 +21,7 @@ import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
 import com.NexusPortalAutomation.Utilities.Java.MySQLDataExec;
 import com.microsoft.sqlserver.jdbc.SQLServerException;
 
-public class TC0053_VerifyGlobalOptions_pagetitle extends BaseClass {
+public class TC0054_VerifyGlobalOptions_TransferTab extends BaseClass {
 
     /*
      * This test the search by Recent Customer Name
@@ -39,7 +39,6 @@ public class TC0053_VerifyGlobalOptions_pagetitle extends BaseClass {
     public String extitle = "Global Options";
     public String contLog = "Contact Log";
     public String transTab = "Transfer Request";
-    public String contactTabTitle = "Contact Log";
     public String serverUrl = getDrillbackServerUrl();
 
 //This Test will test the search by Customer ID
@@ -63,9 +62,6 @@ public class TC0053_VerifyGlobalOptions_pagetitle extends BaseClass {
 	CommonMethods.verifyString(GlobalOptions.getPageHeader(), extitle);
 	CommonMethods.verifyString(GlobalOptions.contactLogtab(), contLog);
 	CommonMethods.verifyString(GlobalOptions.transferRequest(), transTab);
-
-	CommonMethods.verifyString(GlobalOptions.contactLogTitle(), contactTabTitle);
-
 	GlobalOptions.backtoaccounts();
 
 	dashBoard.logout();

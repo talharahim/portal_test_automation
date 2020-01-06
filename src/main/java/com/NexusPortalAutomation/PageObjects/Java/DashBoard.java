@@ -519,6 +519,19 @@ public class DashBoard extends CommonMethods {
 
     @FindBy(id = "ACTION_Global_Options")
     static WebElement GlobalOptions;
+    
+    @FindBy(xpath = "/html/body/wo-root/wo-dashboard/csm-global-options/div/div/div/form/h3")
+    static WebElement contactLogTitle;
+    
+    
+    public String getcontactLogTitle()
+    {
+	waitForObject(driver, contactLogTitle);
+	return contactLogTitle.getText();
+    }
+    
+    
+    
 
     public void clickglobaloptions() throws InterruptedException {
 	WaitAngular(driver);
