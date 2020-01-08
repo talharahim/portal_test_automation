@@ -14,6 +14,7 @@ com\NexusPortalAutomation\TestCases\Java\TC0010_2_verifyCustDetails_Blank.class
 com\NexusPortalAutomation\TestCases\Java\TC0023_VerifyRecentWidget.class
 com\NexusPortalAutomation\TestCases\Java\TC0005_TestBookMarks.class
 com\NexusPortalAutomation\TestCases\Java\TC0016_1_VerifyBillingDetails_SPA.class
+com\NexusPortalAutomation\TestCases\Java\TC0054_VerifyGlobalOptions_TransferTab.class
 com\NexusPortalAutomation\TestCases\Java\TC0001_VerifySignInbyID.class
 com\NexusPortalAutomation\TestCases\Java\TC0007_TestSummarySection.class
 com\NexusPortalAutomation\TestCases\Java\TC0042_1_Transactions_OrderbyAmount.class

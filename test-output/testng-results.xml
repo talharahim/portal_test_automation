@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
-    <line>
-      <![CDATA[Value for Key 'locationID' found from sheet =LOC@0004]]>
-    </line>
-    <line>
-      <![CDATA[Value for Key 'defaultCustomer' found from sheet =Mr. VACANT VACANT]]>
-    </line>
-    <line>
-      <![CDATA[Value for Key 'moveInCustomer' found from sheet =Mr. Vacant Vacant]]>
-    </line>
     <line>
       <![CDATA[Launching Chrome]]>
     </line>
@@ -17,151 +8,91 @@
       <![CDATA[Browser Maximised]]>
     </line>
     <line>
-      <![CDATA[Deleting Records for ServiceOrder = SORD00000004982]]>
+      <![CDATA[Angular Request Completed in 77ms]]>
     </line>
     <line>
-      <![CDATA[Deleting Records for Location =  LOC@0004]]>
-    </line>
-    <line>
-      <![CDATA[Angular Request Completed in 83ms]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: username] displayed in 69ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: username] displayed in 86ms]]>
     </line>
     <line>
       <![CDATA[Login Page title Verified]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: username] displayed in 26ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: username] displayed in 25ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: password] displayed in 31ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: password] displayed in 31ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: kc-login] displayed in 34ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: kc-login] displayed in 38ms]]>
     </line>
     <line>
-      <![CDATA[Angular Request Completed in 16ms]]>
+      <![CDATA[Angular Request Completed in 22ms]]>
     </line>
     <line>
       <![CDATA[User signed Admin]]>
     </line>
     <line>
-      <![CDATA[Enter Text for Search =LOC@0004]]>
+      <![CDATA[Element '//input[@id='SRCH_Input']' is displayed in 75ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: SRCH_Input] displayed in 118ms]]>
+      <![CDATA[Element 'toolbar-saved' is displayed in 47ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 23ms]]>
+      <![CDATA[Angular Request Completed in 8ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: SRCH_Option_1_Address_Line] displayed in 644ms]]>
+      <![CDATA[Enter Text for Search =Automation]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: SRCH_Input] displayed in 54ms]]>
+    </line>
+    <line>
+      <![CDATA[Angular request time 16ms]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: SRCH_Option_1_Address_Line] displayed in 723ms]]>
     </line>
     <line>
       <![CDATA[Click Customer]]>
     </line>
     <line>
-      <![CDATA[Angular request time 610ms]]>
+      <![CDATA[Angular request time 343ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 36ms]]>
+      <![CDATA[Element '//div[@class='address-details']' is displayed in 120ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: 'LOC_Location_Id'] displayed in 54ms]]>
+      <![CDATA[Angular request time 67ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 7ms]]>
-    </line>
-    <line>
-      <![CDATA[got Text CustomerLocId = LOC@0004]]>
-    </line>
-    <line>
-      <![CDATA[Customer Location Id found LOC@0004]]>
-    </line>
-    <line>
-      <![CDATA[Strings Matched: LOC@0004 = LOC@0004]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 9ms]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: USR_Name] displayed in 37ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 9ms]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: ACTION_Global_Options] displayed in 47ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 14ms]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> xpath: /html/body/wo-root/wo-dashboard/csm-global-options/div/header/div[1]] displayed in 49ms]]>
-    </line>
-    <line>
-      <![CDATA[Strings Matched: Global Options = Global Options]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> xpath: /html/body/wo-root/wo-dashboard/csm-global-options/div/div/div/div/mat-expansion-panel/div/div/p[1]] displayed in 90ms]]>
-    </line>
-    <line>
-      <![CDATA[Strings Matched: Contact Log = Contact Log]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> xpath: /html/body/wo-root/wo-dashboard/csm-global-options/div/div/div/div/mat-expansion-panel/div/div/p[2]] displayed in 41ms]]>
-    </line>
-    <line>
-      <![CDATA[Strings Matched: Transfer Request = Transfer Request]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> xpath: /html/body/wo-root/wo-dashboard/csm-global-options/div/div/div/form/h3] displayed in 59ms]]>
-    </line>
-    <line>
-      <![CDATA[Strings Matched: Contact Log = Contact Log]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> xpath: /html/body/wo-root/wo-dashboard/csm-global-options/div/header/div[2]/div] displayed in 41ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 94ms]]>
+      <![CDATA[Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: CUST_First_Last_Name] displayed in 52ms]]>
     </line>
     <line>
       <![CDATA[Angular request time 11ms]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: USR_Name] displayed in 40ms]]>
+      <![CDATA[got Text Customer Name = Automation Mate]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: USR_Name] displayed in 56ms]]>
+      <![CDATA[Customer Name found Automation Mate]]>
     </line>
     <line>
-      <![CDATA[Angular request time 9ms]]>
-    </line>
-    <line>
-      <![CDATA[Click Logged User Link]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 8ms]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: ACTION_Logout] displayed in 53ms]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: ACTION_Logout] displayed in 66ms]]>
-    </line>
-    <line>
-      <![CDATA[Angular request time 39ms]]>
-    </line>
-    <line>
-      <![CDATA[Click logout Link]]>
+      <![CDATA[Strings Matched: Automation Mate = Automation Mate]]>
     </line>
     <line>
       <![CDATA[Angular request time 9ms]]>
     </line>
     <line>
-      <![CDATA[Angular request time 7ms]]>
+      <![CDATA[Element 'BILL_Current_Balance' is displayed in 61ms]]>
+    </line>
+    <line>
+      <![CDATA[Element 'BILL_Unposted_Balance' is displayed in 68ms]]>
+    </line>
+    <line>
+      <![CDATA[Element 'BILL_Account_Balance' is displayed in 61ms]]>
+    </line>
+    <line>
+      <![CDATA[Element 'BILL_Past_Due' is displayed in 74ms]]>
     </line>
     <line>
       <![CDATA[Closing Browser]]>
@@ -170,16 +101,16 @@
       <![CDATA[Test Completed...]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17001" started-at="2020-01-06T13:58:20Z" finished-at="2020-01-06T13:58:37Z">
+  <suite name="Default suite" duration-ms="23654" started-at="2020-01-08T17:13:14Z" finished-at="2020-01-08T17:13:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17001" started-at="2020-01-06T13:58:20Z" finished-at="2020-01-06T13:58:37Z">
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0053_VerifyGlobalOptions_pagetitle">
-        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0053_VerifyGlobalOptions_pagetitle@198b6731]" name="readProp" is-config="true" duration-ms="3795" started-at="2020-01-06T13:58:20Z" finished-at="2020-01-06T13:58:23Z">
+    <test name="Default test" duration-ms="23654" started-at="2020-01-08T17:13:14Z" finished-at="2020-01-08T17:13:38Z">
+      <class name="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection">
+        <test-method status="PASS" signature="readProp(org.testng.ITestContext)[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection@692f203f]" name="readProp" is-config="true" duration-ms="3734" started-at="2020-01-08T17:13:14Z" finished-at="2020-01-08T17:13:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5f84abe8]]>
+                <![CDATA[org.testng.TestRunner@4de025bf]]>
               </value>
             </param>
           </params>
@@ -192,158 +123,152 @@
             </line>
           </reporter-output>
         </test-method> <!-- readProp -->
-        <test-method status="PASS" signature="VerifyTransferActionServiceOrder()[pri:1, instance:com.NexusPortalAutomation.TestCases.Java.TC0053_VerifyGlobalOptions_pagetitle@198b6731]" name="VerifyTransferActionServiceOrder" duration-ms="12592" started-at="2020-01-06T13:58:23Z" finished-at="2020-01-06T13:58:36Z">
+        <test-method status="FAIL" signature="TestSummarySectionOnChange()[pri:2, instance:com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection@692f203f]" name="TestSummarySectionOnChange" duration-ms="19316" started-at="2020-01-08T17:13:18Z" finished-at="2020-01-08T17:13:37Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.id: BILL_Installment_Budget (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: BILL_Installment_Budget (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+at com.NexusPortalAutomation.Utilities.Java.CommonMethods.waitforObjectById(CommonMethods.java:152)
+at com.NexusPortalAutomation.PageObjects.Java.DashBoard.GetBillingInfo(DashBoard.java:1651)
+at com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection.TestSummarySectionOnChange(TC0007_TestSummarySection.java:41)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: BILL_Installment_Budget
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'RND-BASE-A', ip: '10.0.2.15', os.name: 'Windows Server 2012 R2', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+at java.util.Optional.orElseThrow(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
+at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
             <line>
-              <![CDATA[Deleting Records for ServiceOrder = SORD00000004982]]>
+              <![CDATA[Angular Request Completed in 77ms]]>
             </line>
             <line>
-              <![CDATA[Deleting Records for Location =  LOC@0004]]>
-            </line>
-            <line>
-              <![CDATA[Angular Request Completed in 83ms]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: username] displayed in 69ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: username] displayed in 86ms]]>
             </line>
             <line>
               <![CDATA[Login Page title Verified]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: username] displayed in 26ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: username] displayed in 25ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: password] displayed in 31ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: password] displayed in 31ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: kc-login] displayed in 34ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: kc-login] displayed in 38ms]]>
             </line>
             <line>
-              <![CDATA[Angular Request Completed in 16ms]]>
+              <![CDATA[Angular Request Completed in 22ms]]>
             </line>
             <line>
               <![CDATA[User signed Admin]]>
             </line>
             <line>
-              <![CDATA[Enter Text for Search =LOC@0004]]>
+              <![CDATA[Element '//input[@id='SRCH_Input']' is displayed in 75ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: SRCH_Input] displayed in 118ms]]>
+              <![CDATA[Element 'toolbar-saved' is displayed in 47ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 23ms]]>
+              <![CDATA[Angular Request Completed in 8ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: SRCH_Option_1_Address_Line] displayed in 644ms]]>
+              <![CDATA[Enter Text for Search =Automation]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: SRCH_Input] displayed in 54ms]]>
+            </line>
+            <line>
+              <![CDATA[Angular request time 16ms]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: SRCH_Option_1_Address_Line] displayed in 723ms]]>
             </line>
             <line>
               <![CDATA[Click Customer]]>
             </line>
             <line>
-              <![CDATA[Angular request time 610ms]]>
+              <![CDATA[Angular request time 343ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 36ms]]>
+              <![CDATA[Element '//div[@class='address-details']' is displayed in 120ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: 'LOC_Location_Id'] displayed in 54ms]]>
+              <![CDATA[Angular request time 67ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 7ms]]>
-            </line>
-            <line>
-              <![CDATA[got Text CustomerLocId = LOC@0004]]>
-            </line>
-            <line>
-              <![CDATA[Customer Location Id found LOC@0004]]>
-            </line>
-            <line>
-              <![CDATA[Strings Matched: LOC@0004 = LOC@0004]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 9ms]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: USR_Name] displayed in 37ms]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 9ms]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: ACTION_Global_Options] displayed in 47ms]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 14ms]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> xpath: /html/body/wo-root/wo-dashboard/csm-global-options/div/header/div[1]] displayed in 49ms]]>
-            </line>
-            <line>
-              <![CDATA[Strings Matched: Global Options = Global Options]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> xpath: /html/body/wo-root/wo-dashboard/csm-global-options/div/div/div/div/mat-expansion-panel/div/div/p[1]] displayed in 90ms]]>
-            </line>
-            <line>
-              <![CDATA[Strings Matched: Contact Log = Contact Log]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> xpath: /html/body/wo-root/wo-dashboard/csm-global-options/div/div/div/div/mat-expansion-panel/div/div/p[2]] displayed in 41ms]]>
-            </line>
-            <line>
-              <![CDATA[Strings Matched: Transfer Request = Transfer Request]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> xpath: /html/body/wo-root/wo-dashboard/csm-global-options/div/div/div/form/h3] displayed in 59ms]]>
-            </line>
-            <line>
-              <![CDATA[Strings Matched: Contact Log = Contact Log]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> xpath: /html/body/wo-root/wo-dashboard/csm-global-options/div/header/div[2]/div] displayed in 41ms]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 94ms]]>
+              <![CDATA[Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: CUST_First_Last_Name] displayed in 52ms]]>
             </line>
             <line>
               <![CDATA[Angular request time 11ms]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: USR_Name] displayed in 40ms]]>
+              <![CDATA[got Text Customer Name = Automation Mate]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: USR_Name] displayed in 56ms]]>
+              <![CDATA[Customer Name found Automation Mate]]>
             </line>
             <line>
-              <![CDATA[Angular request time 9ms]]>
-            </line>
-            <line>
-              <![CDATA[Click Logged User Link]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 8ms]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: ACTION_Logout] displayed in 53ms]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: ACTION_Logout] displayed in 66ms]]>
-            </line>
-            <line>
-              <![CDATA[Angular request time 39ms]]>
-            </line>
-            <line>
-              <![CDATA[Click logout Link]]>
+              <![CDATA[Strings Matched: Automation Mate = Automation Mate]]>
             </line>
             <line>
               <![CDATA[Angular request time 9ms]]>
             </line>
             <line>
-              <![CDATA[Angular request time 7ms]]>
+              <![CDATA[Element 'BILL_Current_Balance' is displayed in 61ms]]>
+            </line>
+            <line>
+              <![CDATA[Element 'BILL_Unposted_Balance' is displayed in 68ms]]>
+            </line>
+            <line>
+              <![CDATA[Element 'BILL_Account_Balance' is displayed in 61ms]]>
+            </line>
+            <line>
+              <![CDATA[Element 'BILL_Past_Due' is displayed in 74ms]]>
             </line>
           </reporter-output>
-        </test-method> <!-- VerifyTransferActionServiceOrder -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0053_VerifyGlobalOptions_pagetitle@198b6731]" name="TearDown" is-config="true" duration-ms="596" started-at="2020-01-06T13:58:36Z" finished-at="2020-01-06T13:58:37Z">
+        </test-method> <!-- TestSummarySectionOnChange -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection@692f203f]" name="TearDown" is-config="true" duration-ms="586" started-at="2020-01-08T17:13:37Z" finished-at="2020-01-08T17:13:38Z">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
@@ -353,7 +278,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0053_VerifyGlobalOptions_pagetitle -->
+      </class> <!-- com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

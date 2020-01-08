@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Administrator\AppData\Local\Temp\1\testng-eclipse-1594413314\testng-customsuite.xml</span>
+                    <span>C:\Users\Administrator\AppData\Local\Temp\1\testng-eclipse--1737337652\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content failed suite-Default_suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.NexusPortalAutomation.TestCases.Java.TC0053_VerifyGlobalOptions_pagetitle" hash-for-method="VerifyTransferActionServiceOrder">VerifyTransferActionServiceOrder</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection" hash-for-method="TestSummarySectionOnChange">TestSummarySectionOnChange</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,25 +117,73 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0053_VerifyGlobalOptions_pagetitle</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyTransferActionServiceOrder">
-                  </a> <!-- VerifyTransferActionServiceOrder -->
-                  <span class="method-name">VerifyTransferActionServiceOrder</span>
+                  <a name="TestSummarySectionOnChange">
+                  </a> <!-- TestSummarySectionOnChange -->
+                  <span class="method-name">TestSummarySectionOnChange</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: BILL_Installment_Budget (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.NexusPortalAutomation.Utilities.Java.CommonMethods.waitforObjectById(CommonMethods.java:152)
+	at com.NexusPortalAutomation.PageObjects.Java.DashBoard.GetBillingInfo(DashBoard.java:1651)
+	at com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection.TestSummarySectionOnChange(TC0007_TestSummarySection.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: BILL_Installment_Budget
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;RND-BASE-A&apos;, ip: &apos;10.0.2.15&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 28 more
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
+          </div> <!-- suite-Default_suite-class-failed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Administrator\AppData\Local\Temp\1\testng-eclipse-1594413314\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Administrator\AppData\Local\Temp\1\testng-eclipse--1737337652\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,7 +192,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.NexusPortalAutomation.TestCases.Java.TC0053_VerifyGlobalOptions_pagetitle&quot;/&gt;
+      &lt;class name=&quot;com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -186,14 +234,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'VerifyTransferActionServiceOrder')
-data.setCell(0, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0053_VerifyGlobalOptions_pagetitle')
-data.setCell(0, 3, 12592);
+data.setCell(0, 1, 'TestSummarySectionOnChange')
+data.setCell(0, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection')
+data.setCell(0, 3, 19316);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -205,57 +253,37 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">VerifyTransferActionServiceOrder</span>
+              <span class="reporter-method-name">TestSummarySectionOnChange</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Deleting Records for ServiceOrder = SORD00000004982</span>
-                <span class="reporter-method-output">Deleting Records for Location =  LOC@0004</span>
-                <span class="reporter-method-output">Angular Request Completed in 83ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: username] displayed in 69ms</span>
+                <span class="reporter-method-output">Angular Request Completed in 77ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: username] displayed in 86ms</span>
                 <span class="reporter-method-output">Login Page title Verified</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: username] displayed in 26ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: password] displayed in 31ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: kc-login] displayed in 34ms</span>
-                <span class="reporter-method-output">Angular Request Completed in 16ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: username] displayed in 25ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: password] displayed in 31ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: kc-login] displayed in 38ms</span>
+                <span class="reporter-method-output">Angular Request Completed in 22ms</span>
                 <span class="reporter-method-output">User signed Admin</span>
-                <span class="reporter-method-output">Enter Text for Search =LOC@0004</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: SRCH_Input] displayed in 118ms</span>
-                <span class="reporter-method-output">Angular request time 23ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: SRCH_Option_1_Address_Line] displayed in 644ms</span>
+                <span class="reporter-method-output">Element '//input[@id='SRCH_Input']' is displayed in 75ms</span>
+                <span class="reporter-method-output">Element 'toolbar-saved' is displayed in 47ms</span>
+                <span class="reporter-method-output">Angular Request Completed in 8ms</span>
+                <span class="reporter-method-output">Enter Text for Search =Automation</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: SRCH_Input] displayed in 54ms</span>
+                <span class="reporter-method-output">Angular request time 16ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: SRCH_Option_1_Address_Line] displayed in 723ms</span>
                 <span class="reporter-method-output">Click Customer</span>
-                <span class="reporter-method-output">Angular request time 610ms</span>
-                <span class="reporter-method-output">Angular request time 36ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: 'LOC_Location_Id'] displayed in 54ms</span>
-                <span class="reporter-method-output">Angular request time 7ms</span>
-                <span class="reporter-method-output">got Text CustomerLocId = LOC@0004</span>
-                <span class="reporter-method-output">Customer Location Id found LOC@0004</span>
-                <span class="reporter-method-output">Strings Matched: LOC@0004 = LOC@0004</span>
-                <span class="reporter-method-output">Angular request time 9ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: USR_Name] displayed in 37ms</span>
-                <span class="reporter-method-output">Angular request time 9ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: ACTION_Global_Options] displayed in 47ms</span>
-                <span class="reporter-method-output">Angular request time 14ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> xpath: /html/body/wo-root/wo-dashboard/csm-global-options/div/header/div[1]] displayed in 49ms</span>
-                <span class="reporter-method-output">Strings Matched: Global Options = Global Options</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> xpath: /html/body/wo-root/wo-dashboard/csm-global-options/div/div/div/div/mat-expansion-panel/div/div/p[1]] displayed in 90ms</span>
-                <span class="reporter-method-output">Strings Matched: Contact Log = Contact Log</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> xpath: /html/body/wo-root/wo-dashboard/csm-global-options/div/div/div/div/mat-expansion-panel/div/div/p[2]] displayed in 41ms</span>
-                <span class="reporter-method-output">Strings Matched: Transfer Request = Transfer Request</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> xpath: /html/body/wo-root/wo-dashboard/csm-global-options/div/div/div/form/h3] displayed in 59ms</span>
-                <span class="reporter-method-output">Strings Matched: Contact Log = Contact Log</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> xpath: /html/body/wo-root/wo-dashboard/csm-global-options/div/header/div[2]/div] displayed in 41ms</span>
-                <span class="reporter-method-output">Angular request time 94ms</span>
+                <span class="reporter-method-output">Angular request time 343ms</span>
+                <span class="reporter-method-output">Element '//div[@class='address-details']' is displayed in 120ms</span>
+                <span class="reporter-method-output">Angular request time 67ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: CUST_First_Last_Name] displayed in 52ms</span>
                 <span class="reporter-method-output">Angular request time 11ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: USR_Name] displayed in 40ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: USR_Name] displayed in 56ms</span>
+                <span class="reporter-method-output">got Text Customer Name = Automation Mate</span>
+                <span class="reporter-method-output">Customer Name found Automation Mate</span>
+                <span class="reporter-method-output">Strings Matched: Automation Mate = Automation Mate</span>
                 <span class="reporter-method-output">Angular request time 9ms</span>
-                <span class="reporter-method-output">Click Logged User Link</span>
-                <span class="reporter-method-output">Angular request time 8ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: ACTION_Logout] displayed in 53ms</span>
-                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (1072249b37230f35d7936469049c8d08)] -> id: ACTION_Logout] displayed in 66ms</span>
-                <span class="reporter-method-output">Angular request time 39ms</span>
-                <span class="reporter-method-output">Click logout Link</span>
-                <span class="reporter-method-output">Angular request time 9ms</span>
-                <span class="reporter-method-output">Angular request time 7ms</span>
+                <span class="reporter-method-output">Element 'BILL_Current_Balance' is displayed in 61ms</span>
+                <span class="reporter-method-output">Element 'BILL_Unposted_Balance' is displayed in 68ms</span>
+                <span class="reporter-method-output">Element 'BILL_Account_Balance' is displayed in 61ms</span>
+                <span class="reporter-method-output">Element 'BILL_Past_Due' is displayed in 74ms</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -273,18 +301,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0053_VerifyGlobalOptions_pagetitle</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">readProp(org.testng.TestRunner@5f84abe8)</span>
+                <span class="method-name">readProp(org.testng.TestRunner@4de025bf)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">VerifyTransferActionServiceOrder</span>
-                <span class="method-start">3800 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestSummarySectionOnChange</span>
+                <span class="method-start">3741 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">16396 ms</span>
+                <span class="method-start">23060 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

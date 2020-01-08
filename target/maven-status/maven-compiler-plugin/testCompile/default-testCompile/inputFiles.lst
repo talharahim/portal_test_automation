@@ -67,5 +67,6 @@ D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPor
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0009_VerifyAccountSearch.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0009_1_VerifyAccountSearch_NoAccounts.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0025_VerifyAction_Transfers_NotScheduled.java
+D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0054_VerifyGlobalOptions_TransferTab.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\apiTestCases\Java\TC0003_getdefaultcustomerforlocation.java
 D:\CogsdaleWorkspace\BitBucket\portal_test_automation\src\test\java\com\NexusPortalAutomation\TestCases\Java\TC0005_TestSearchbyBookMarks.java

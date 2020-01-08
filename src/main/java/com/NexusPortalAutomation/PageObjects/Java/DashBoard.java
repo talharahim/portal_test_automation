@@ -68,7 +68,7 @@ public class DashBoard extends CommonMethods {
     @CacheLookup
     WebElement AlertDesc;
 
-    @FindBy(xpath = "//span[@class='master-location-item location-title']")
+    @FindBy(xpath = "/html/body/wo-root/wo-dashboard/div/mat-drawer-container/mat-drawer-content/div/div/div[2]/csm-customer-balances/csm-generic-widget/div/div/div[1]/div/div/span[1]")
     @CacheLookup
     WebElement MasterAccountLocation;
 
@@ -519,19 +519,14 @@ public class DashBoard extends CommonMethods {
 
     @FindBy(id = "ACTION_Global_Options")
     static WebElement GlobalOptions;
-    
+
     @FindBy(xpath = "/html/body/wo-root/wo-dashboard/csm-global-options/div/div/div/form/h3")
     static WebElement contactLogTitle;
-    
-    
-    public String getcontactLogTitle()
-    {
+
+    public String getcontactLogTitle() {
 	waitForObject(driver, contactLogTitle);
 	return contactLogTitle.getText();
     }
-    
-    
-    
 
     public void clickglobaloptions() throws InterruptedException {
 	WaitAngular(driver);
@@ -1001,6 +996,16 @@ public class DashBoard extends CommonMethods {
 	findElementByid(ElementID).getAttribute(drillBackURL);
     }
 
+    public void verifyDrillback(String ElementID, String drillBackURL, boolean enabled) throws InterruptedException {
+	Thread.sleep(1000);
+	log("Verifying Drill back for " + drillBackURL, driver);
+	if (enabled) {
+	    findElementByid(ElementID).getAttribute(drillBackURL);
+	} else {
+	    log("Enchance Notes not enabled", driver);
+	}
+    }
+
     // This method will find the elements of Transaction Panel using the URL
     public void verifyTransDrillbacks(String payment, String bill, String meter) throws InterruptedException {
 	Thread.sleep(1000);
@@ -1012,13 +1017,17 @@ public class DashBoard extends CommonMethods {
     }
 
     // This method will find the elements of Transaction Panel using the URL
-    public void verifyNotesDrillbacks() throws InterruptedException {
+    public void verifyNotesDrillbacks(boolean enabled) throws InterruptedException {
 	Thread.sleep(1000);
+	if(enabled) {
 	findElementByid("ENH_Location_Drillback");
 	findElementByid("customer-person");
 	findElementByid("ENH_Title_small");
 	log("Verify Notes Drillback ", driver);
-
+	}
+	else {
+	log("Enhanced Notes are disabled", driver);
+	}
     }
 
     // This method will find the elements of Transaction Panel using the URL
