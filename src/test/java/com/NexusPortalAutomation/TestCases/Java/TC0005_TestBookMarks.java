@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
+import com.NexusPortalAutomation.Utilities.Java.ExcelData;
 
 public class TC0005_TestBookMarks extends BaseClass {
 
@@ -20,30 +21,30 @@ public class TC0005_TestBookMarks extends BaseClass {
 	 * 
 	 * @Since 2019-04-11
 	 */
-	public String LocationID = "STATEMENTS001";
-	public CommonMethods ComMethd = new CommonMethods();
+	public String locationID = ExcelData.getExcelData("TC0005","stLocationID");//"STATEMENTS001";
+	//public 
 
 	@Test(priority = 1)
 	public void TestSearchAutobyBookMark() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		ComMethd.WaitForObjectbyXpath(driver, "//input[@id='SRCH_Input']");
-		ComMethd.WaitForObjectbyId(driver, "SRCH_Button_Favorites");
-		dbSrch.EnterSearchText(LocationID);
-		dbSrch.ClickRecentCustomerName();
-		dashBoard.ClickBookMarkDisabled();
+		CommonMethods.waitObjectByXpath(driver, "//input[@id='SRCH_Input']");
+		CommonMethods.waitforObjectById(driver, "SRCH_Button_Favorites");
+		dbSrch.enterSearchText(locationID);
+		dbSrch.clickRecentSearchCustomerName();
+		dashBoard.clickBookmarkDisabled();
 		dashBoard.clickDashBoardBookMark();
-		if (dashBoard.getDashBoardBookMarkValue().equals(LocationID)) {
-			ComMethd.WaitForObjectbyXpath(driver, "//div[@class='address-details']");
+		if (dashBoard.getDashBoardBookMarkValue().equals(locationID)) {
+			CommonMethods.waitObjectByXpath(driver, "//div[@class='address-details']");
 			log("Bookmark saved successfully");
-			dashBoard.ClickBookMarkEnabled();
+			dashBoard.clickBookmarkEnabled();
 		} else {
-			Assert.assertTrue(false,"Location Id not matched "+dashBoard.getDashBoardBookMarkValue());
+			Assert.fail("Location Id not matched "+dashBoard.getDashBoardBookMarkValue());
 		}
 
 		// Verify Correct User is appearing by Bookmark
-		dashBoard.LogOut();
+		dashBoard.logout();
 	}
 
 }

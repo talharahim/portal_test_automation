@@ -20,13 +20,13 @@ public class TC0023_VerifyRecentWidget extends BaseClass {
 	 * @Since 2019-06-10
 	 */
 
-	public String LocationID = "LOC@0001";
-	public String RecordType = "Payment";
-	public String RecordAmount = "$14.74";
-	public String RecordDate = "Apr 12, 2027";
-	public String Title = "Transactions";
+	public String locationID = getCellvalue("TC0023", "loc1");//"LOC@0001";
+	public String recordType = getCellvalue("TC0023", "recordType");// "Payment";
+	public String recordAmount = getCellvalue("TC0023", "recordAmount");//"$14.74";
+	public String recordDate = getCellvalue("TC0023", "recordDate");//"Apr 12, 2027";
+	public String title = getCellvalue("TC0023", "title");//"TC0023";
 
-	CommonMethods ComMethd = new CommonMethods();
+	
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -34,16 +34,16 @@ public class TC0023_VerifyRecentWidget extends BaseClass {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		dbSrch.EnterSearchText(LocationID);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(locationID);
+		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
-		dashBoard.verifyRecent(RecordType, RecordDate, RecordAmount);
-		dashBoard.ClickRecent_ViewAll();
-		ComMethd.VerifyString(Title, dashBoard.GetTransactionPageTile());
+		dashBoard.verifyRecentRecord1(recordType, recordDate, recordAmount);
+		dashBoard.clickRecentSearch_ViewAll();
+		CommonMethods.verifyString(title, dashBoard.getTransactionPageTitle());
 		// Verify Updated details
-		dashBoard.LogOut();
+		dashBoard.logout();
 	}
 
 }

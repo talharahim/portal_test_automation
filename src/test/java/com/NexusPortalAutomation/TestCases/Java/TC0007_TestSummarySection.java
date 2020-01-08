@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
+import com.NexusPortalAutomation.Utilities.Java.ExcelData;
 
 public class TC0007_TestSummarySection extends BaseClass {
 
@@ -21,24 +22,24 @@ public class TC0007_TestSummarySection extends BaseClass {
 	 * 
 	 * @Since 2019-04-11
 	 */
-	public String UserName = "Automation Mate";
-	public CommonMethods ComMethd = new CommonMethods();
+	public String username = ExcelData.getExcelData("TC0007","username");// "AUTOLOC001";"Automation Mate";
+	//public 
 
 	@Test(priority = 2)
 	public void TestSummarySectionOnChange() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		ComMethd.WaitForObjectbyXpath(driver, "//input[@id='SRCH_Input']");
-		ComMethd.WaitForObjectbyId(driver, "toolbar-saved");
+		CommonMethods.waitObjectByXpath(driver, "//input[@id='SRCH_Input']");
+		CommonMethods.waitforObjectById(driver, "toolbar-saved");
 		WaitAngular();
-		dbSrch.EnterSearchText("Automation");
-		dbSrch.ClickCustomer();
-		ComMethd.WaitForObjectbyXpath(driver, "//div[@class='address-details']");
+		dbSrch.enterSearchText("Automation");
+		dbSrch.clickCustomerName();
+		CommonMethods.waitObjectByXpath(driver, "//div[@class='address-details']");
 		// Verify Login Name
-		ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
+		CommonMethods.verifyString(username, dashBoard.getLoggedCustomerName());
 		HashMap<String, String> BillingMap1 = dashBoard.GetBillingInfo();
-		dashBoard.ClickTransactionLink();
+		dashBoard.clickTransactionLink();
 		dashBoard.ClickSummaryLink();
 		HashMap<String, String> BillingMap2 = dashBoard.GetBillingInfo();
 
@@ -61,10 +62,10 @@ public class TC0007_TestSummarySection extends BaseClass {
 				}
 			}
 		} catch (NullPointerException np) {
-			Assert.assertTrue(false);
+			Assert.fail("");
 		}
 
-		dashBoard.LogOut();
+		dashBoard.logout();
 
 	}
 

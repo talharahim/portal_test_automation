@@ -10,14 +10,14 @@ import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 
 public class ngWebDriver extends BaseClass {
 
-	@Test
+	//@Test
 	public void find_by_angular_model() throws IOException, InterruptedException {
 
 		// driver.get("http://www.angularjshub.com/code/examples/basics/02_TwoWayDataBinding_HTML/index.demo.php");
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		login();
-		dbSrch.EnterSearchText("Automation");
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText("Automation");
+		dbSrch.clickCustomerName();
 		WebElement test = driver.findElement(By.id("'CUST_Drillback_Button'"));
 		test.click();
 		Thread.sleep(5000);

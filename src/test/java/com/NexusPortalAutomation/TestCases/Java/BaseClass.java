@@ -11,15 +11,18 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import com.NexusPortalAutomation.PageObjects.Java.LoginPage;
+import com.NexusPortalAutomation.Utilities.Java.ExcelData;
 import com.NexusPortalAutomation.Utilities.Java.ReadProjectProperties;
 import com.paulhammant.ngwebdriver.NgWebDriver;
 
@@ -39,8 +42,9 @@ public class BaseClass extends ReadProjectProperties {
 	public static ReadProjectProperties Read = new ReadProjectProperties();
 	public static int delay = 2000;
 	public static String DrillBackServURL;
+	public static ExcelData excel = new ExcelData();
 
-	public String GetDrillBackServerURL() {
+	public String getDrillbackServerUrl() {
 		DrillBackServURL = Read.ReadFile("DrillBackServ");
 		return DrillBackServURL;
 
@@ -50,6 +54,18 @@ public class BaseClass extends ReadProjectProperties {
 	public void log(String message) {
 		Reporter.log(message);
 		System.out.println(message);
+	}
+
+	public static String getCellvalue(String sheet, String var) {
+		String value = null;
+
+		value = ExcelData.getExcelData(sheet, var);
+		if (value == null) {
+			Assert.fail("Null value found, please check excel sheet");
+		}
+		Reporter.log("Value for Key '" + var + "' found from sheet =" + value.trim());
+		System.out.println("Value for Key '" + var + "' found from sheet =" + value.trim());
+		return value.trim();
 	}
 
 	public static void WaitAngular() {
@@ -105,9 +121,11 @@ public class BaseClass extends ReadProjectProperties {
 			String browserPath = Read.ReadFile("ChromeInstallPath");
 			System.setProperty("webdriver.chrome.driver", cDriver);
 			// Creating Instance for Chrome
+			ChromeDriverService service = ChromeDriverService.createDefaultService();
 			ChromeOptions ChromeOptions = new ChromeOptions();
 			ChromeOptions.setBinary(browserPath);
 			driver = new ChromeDriver(ChromeOptions);
+			driver.manage().deleteAllCookies();
 
 		}
 
@@ -118,6 +136,7 @@ public class BaseClass extends ReadProjectProperties {
 		driver.manage().window().maximize();
 		log("Browser Maximised");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
 		context.setAttribute("webDriver", driver);
 
 	}
@@ -126,13 +145,14 @@ public class BaseClass extends ReadProjectProperties {
 		driver.get(Read.ReadFile("PortalUrl"));
 		LoginPage lpage = new LoginPage(driver);
 		WaitAngular();
-		lpage.VerifyTitle("NEXUS VIEW");
-		lpage.Login(Read.ReadFile("UserName"), Read.ReadFile("PassWord"));
+		System.out.println(driver.getTitle());
+		lpage.Verifytitle("Log in to Nexus View");
+		lpage.Login(Read.ReadFile("username"), Read.ReadFile("PassWord"));
 		WaitAngular();
-		String actualTitle = driver.getTitle();
-		String expectedTitle = "Portal";
-		assertEquals(actualTitle, expectedTitle);
-		log("User signed " + Read.ReadFile("UserName"));
+		String actualtitle = driver.getTitle();
+		String expectedtitle = "Nexus View";
+		assertEquals(actualtitle, expectedtitle);
+		log("User signed " + Read.ReadFile("username"));
 
 	}
 
@@ -140,7 +160,8 @@ public class BaseClass extends ReadProjectProperties {
 	void TearDown() {
 
 		log("Closing Browser");
-		driver.close();
+		//Not using close as it close current window only
+		driver.quit(); //dispose sessions
 		log("Test Completed...");
 
 	}

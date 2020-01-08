@@ -22,7 +22,7 @@ public class LoginPage extends CommonMethods {
 	WebDriver driver;
 	@FindBy(id = "username")
 	@CacheLookup
-	WebElement userName;
+	WebElement username;
 	
 	@FindBy(id = "password")
 	@CacheLookup
@@ -43,15 +43,15 @@ public class LoginPage extends CommonMethods {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void VerifyTitle(String title) {
-		waitForObject(driver, titleText);
-		Assert.assertEquals(titleText.getText(), title, "Verifying Title");
-		log("Login Page Title Verified");
+	public void Verifytitle(String title) {
+		waitForObject(driver, username);
+		Assert.assertEquals(driver.getTitle(), title, "Verifying title");
+		log("Login Page title Verified");
 	}
 
-	public void Login(String Username, String Password) throws InterruptedException {
-		waitForObject(driver, userName);
-		userName.sendKeys(Username);
+	public void Login(String username, String Password) throws InterruptedException {
+		waitForObject(driver, this.username);
+		this.username.sendKeys(username);
 		waitForObject(driver, passWord);
 		passWord.sendKeys(Password);
 		waitForObject(driver, loginBtn);

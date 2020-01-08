@@ -17,33 +17,12 @@ public class DataBackupRestore {
 	public String ApiDatabaseLocation = Read.ReadFile("ApiDatabaseLocation");
 	public String ConnectionString = Read.ReadFile("ConnectionStringServ");
 
-	public void CreateDb() throws ClassNotFoundException, SQLException {
-		// Following will created database
-		String CreatCommand1 = "USE [master] " + "CREATE DATABASE " + DatabaseName;
-		String CreatCommand2 = "USE [" + DatabaseName + "]" + "CREATE TABLE SQLTest (" + "ID INT NOT NULL PRIMARY KEY,"
-				+ "c1 VARCHAR(100) NOT NULL," + "dt1 DATETIME NOT NULL DEFAULT getdate())";
 
-		String CreateCommand3 = "USE [SQLTestDB] " + "INSERT INTO SQLTest (ID, c1) VALUES (1, 'test1') "
-				+ "INSERT INTO SQLTest (ID, c1) VALUES (2, 'test2') "
-				+ "INSERT INTO SQLTest (ID, c1) VALUES (3, 'test3') "
-				+ "INSERT INTO SQLTest (ID, c1) VALUES (4, 'test4') "
-				+ "INSERT INTO SQLTest (ID, c1) VALUES (5, 'test5') ";
-		// Load SQL SERVER JDBC Driver
-		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-		// Creating connection to the database
-		Connection con = DriverManager.getConnection(ConnectionString);
-		Statement st = con.createStatement();
-		// Executing the SQL Query and store the results in ResultSet
-		st.executeQuery(CreatCommand1);
-		st.executeQuery(CreatCommand2);
-		st.executeQuery(CreateCommand3);
-		// While loop to iterate through all data and print results
-		con.close();
+	// @Test(priority = 1)
+	public void CompanyDBBackup() throws SQLException, ClassNotFoundException {
 
-	}
-
-	@Test(priority = 1)
-	void CompanyDBBackup() throws SQLException, ClassNotFoundException {
+		// String DatabaseName = "[TEST2]";
+		// String DatabaseLocation = "'F:\\TestDBBackup\\TEST2.Bak'";
 
 		String Backup = "USE MASTER; BACKUP DATABASE " + DatabaseName + "TO DISK =" + DatabaseLocation
 				+ "  WITH FORMAT, MEDIANAME = 'Z_SQLServerBackups'," + "      NAME = 'Full Backup of " + DatabaseName
@@ -59,27 +38,12 @@ public class DataBackupRestore {
 		con.close();
 	}
 
-	@Test(priority = 2)
-	void ApiDBBackup() throws SQLException, ClassNotFoundException {
-
-		String Backup = "USE MASTER; BACKUP DATABASE " + ApiDatabaseName + "TO DISK =" + ApiDatabaseLocation
-				+ "  WITH FORMAT, MEDIANAME = 'Z_SQLServerBackups'," + "      NAME = 'Full Backup of " + ApiDatabaseName
-				+ "';";
-		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-		// Creating connection to the database
-		Connection con = DriverManager.getConnection(ConnectionString);
-		Statement st = con.createStatement();
-		// Executing the SQL command
-		st.executeUpdate(Backup);
-
-		con.close();
-	}
-
 	@Test(priority = 3)
-	void CompanyDBRestore() throws SQLException, ClassNotFoundException {
+	public void CompanyDBRestore() throws SQLException, ClassNotFoundException {
 
-		String Restore = "USE master; RESTORE DATABASE " + DatabaseName + " FROM DISK = " + DatabaseLocation
+	String Restore = "ALTER DATABASE " + DatabaseName +  "SET SINGLE_USER WITH ROLLBACK IMMEDIATE USE master; RESTORE DATABASE " + DatabaseName + " FROM DISK = " + DatabaseLocation
 				+ " WITH REPLACE;";
+		// + " ;";
 		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 		Connection con = DriverManager.getConnection(ConnectionString);
 		Statement st = con.createStatement();
@@ -88,18 +52,6 @@ public class DataBackupRestore {
 		con.close();
 	}
 
-	//@Test(priority = 4)
-	void ApiDBRestore() throws SQLException, ClassNotFoundException {
-
-		String Restore = "USE master; RESTORE DATABASE " + ApiDatabaseName + " FROM DISK = " + ApiDatabaseLocation
-				+ " WITH REPLACE;";
-		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-		Connection con = DriverManager.getConnection(ConnectionString);
-		Statement st = con.createStatement();
-		// Executing the SQL command a
-		st.executeUpdate(Restore);
-		con.close();
-	}
 
 	void GetDb() throws ClassNotFoundException {
 
@@ -116,7 +68,7 @@ public class DataBackupRestore {
 			// While loop to iterate through all data and print results
 
 			while (rs.next()) {
-				String locationID = rs.getString("umLocationID");
+				String locationID = rs.getString("umlocationID");
 				System.out.print(locationID);
 
 			}

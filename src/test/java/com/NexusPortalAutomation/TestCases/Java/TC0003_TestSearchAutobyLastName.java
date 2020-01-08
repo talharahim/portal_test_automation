@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
+import com.NexusPortalAutomation.Utilities.Java.ExcelData;
 
 public class TC0003_TestSearchAutobyLastName extends BaseClass {
 
@@ -20,21 +21,21 @@ public class TC0003_TestSearchAutobyLastName extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String UserName = "Automation Mate";
-	public String Title = "Mr.";
-	public CommonMethods ComMethd = new CommonMethods();
+	public String username =   ExcelData.getExcelData("TC0003","username");;
+	public String title = "Mr.";
+	//public 
 
 	@Test(priority = 3)
 	public void TestSearchAutobyLastName() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		dbSrch.EnterSearchText("Mate");
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText("Mate");
+		dbSrch.clickCustomerName();
 		// Verify Login by Last Name
-		ComMethd.VerifyString(Title, dashBoard.getCustomerTitle());
-		ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
-		dashBoard.LogOut();
+		CommonMethods.verifyString(title, dashBoard.getCustomertitle());
+		CommonMethods.verifyString(username, dashBoard.getLoggedCustomerName());
+		dashBoard.logout();
 
 	}
 

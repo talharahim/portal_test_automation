@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="NexusTest"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="19.267">
+  <properties />
+  
+  
+            <testcase name="VerifyTransactionsSaperatebill_saperate" time="19.267" classname="com.NexusPortalAutomation.TestCases.Java.TC0042_1_Transactions_OrderbyAmount" />
+      
+</testsuite>

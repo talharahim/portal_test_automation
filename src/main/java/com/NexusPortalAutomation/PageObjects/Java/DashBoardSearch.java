@@ -23,7 +23,6 @@ public class DashBoardSearch extends CommonMethods {
 
 	WebDriver driver;
 	@FindBy(id = "SRCH_Input")
-	@CacheLookup
 	WebElement searchBar;
 
 	@FindBy(id = "SRCH_Button_Recent")
@@ -49,53 +48,59 @@ public class DashBoardSearch extends CommonMethods {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void EnterSearchText(String txt) {
+	public void enterSearchText(String txt) {
 		try {
 			log("Enter Text for Search =" + txt);
 			waitForObject(this.driver, searchBar);
 			searchBar.sendKeys(txt);
 			WaitAngular(driver);
+			takeScreenShot(txt, driver);
 		} catch (NoSuchElementException e) {
 			e.getStackTrace();
 		}
 	}
 
-	public void ClickRecent() {
+	public void clickRecentSearch() {
 		log("Click Recent");
 		recentBar.click();
 	}
 
 	public void ClickSaved() throws InterruptedException {
-
-		log("Tool Bar Clicked");
+		log("Tool Bar Clicked", driver);
 		toolBarSaved.click();
 	}
 
-	public void ClickCustomer() {
-		log("Click Customer");
+	public void clickCustomerName() {
+
+		waitForObject(this.driver, SrchCustomer);
 		SrchCustomer.click();
+		log("Click Customer", driver);
 		WaitAngular(driver);
+
 	}
 
-	public String GetRecentCustomerStateCity() {
-		log("Recent Customer =" + RecentCustomerCityState.getText());
+	public String getRecentCustomerCity() {
+		log("Recent Customer =" + RecentCustomerCityState.getText(), driver);
 		return RecentCustomerCityState.getText();
 	}
 
-	public boolean ClickRecentCustomerName() {
-		log("Recent Customer =" + RecentCustomerCityState.getText());
+	public boolean clickRecentSearchCustomerName() {
+		log("Recent Customer =" + RecentCustomerCityState.getText(), driver);
 		try {
 			RecentCustomerCityState.click();
+			WaitAngular(driver);
 			return true;
 		} catch (NoSuchElementException e) {
-			log("Bookmark not found");
+			log("Bookmark not found", driver);
 		}
 		return false;
 	}
 
-	public void ClickHistoryCustomer() {
-		log("Click BookMarked Customer");
+	public void clickHistoryCustomer() {
+
 		BookMarked.click();
+		WaitAngular(driver);
+		log("Click BookMarked Customer", driver);
 	}
 
 }

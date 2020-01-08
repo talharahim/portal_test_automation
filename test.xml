@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite"
+<suite name="Test Suite for Nexus Portal"
 	configfailurepolicy="skip" thread-count="10" verbose="10">
 	<listeners>
 		<listener
@@ -9,9 +9,19 @@
 		<listener
 			class-name="org.uncommons.reportng.JUnitXMLReporter" />
 	</listeners>
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch"/>
-    </classes>
-  </test> <!-- Test -->
+	<test thread-count="5" name="NexusTest">
+		<classes>
+			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0029_VerifyAction_Transfers_Scheduled" />
+
+			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0034_VerifyAction_Transfers_Stack_TwoLocations" />
+
+			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0035_VerifyAction_Transfers_StopService" />
+			<class
+				name="com.NexusPortalAutomation.TestCases.Java.TC0036_VerifyAction_Transfers_StartService" />
+
+	</classes>
+</test> <!-- Test -->
 </suite> <!-- Suite -->

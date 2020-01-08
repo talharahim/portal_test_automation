@@ -9,72 +9,9 @@
 		<listener
 			class-name="org.uncommons.reportng.JUnitXMLReporter" />
 	</listeners>
-	<test thread-count="5" name="NexusTest">
-		<classes>
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0001_VerifySignInbyID" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0002_TestSearchAutobyFirstName" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0003_TestSearchAutobyLastName" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0005_TestBookMarks" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0006_TestAlertOnLoad" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0008_VerifySignInbyLocationID" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0009_VerifyAccountSearch" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0010_VerifyCustomerDetails" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0011_VerifyBookMark" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0012_VerifyCreditStatus" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0013_VerifyContactEdit" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0014_VerifySecondaryContact" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0015_VerifyContactLogs" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0016_VerifyBillingDetails" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0017_StatementsValue" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0018_VerifyDrillBacksGeneral" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0019_VerifyDrillBackTransactions" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0020_VerifyDrillBackServices" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0021_VerifyServicesOrderDetails" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0022_VerifyAction_ServiceOrder" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0023_VerifyRecentWidget" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0024_TestCustDetailSearch" />
-
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0025_VerifyAction_Transfers" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0026_VerifyAction_Transfers_StartService" />
-			<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0027_VerifyAction_Transfers_StopService" />
-				
-					<class
-				name="com.NexusPortalAutomation.TestCases.Java.TC0028_TestEnhancedNotes" />
-
-		</classes>
-
-
-
-
-
-	</test> <!-- Test -->
+	 <test thread-count="5" name="NexusTest">
+        <packages>
+            <package name="com.NexusPortalAutomation.TestCases.Java"/>
+        </packages>
+    </test>
 </suite> <!-- Suite -->

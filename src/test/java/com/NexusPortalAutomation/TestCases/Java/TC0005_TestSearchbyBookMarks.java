@@ -7,32 +7,33 @@ import org.testng.annotations.Test;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
+import com.NexusPortalAutomation.Utilities.Java.ExcelData;
 
 public class TC0005_TestSearchbyBookMarks extends BaseClass {
 
-	public String UserName = "Noel Ford";
-	public CommonMethods ComMethd = new CommonMethods();
+	public String username =  ExcelData.getExcelData("TC0005","bmUsername");//"Noel Ford";
+	//public 
 
-	@Test(priority = 2)
+	//@Test(priority = 2)
 	public void TestSearchAutobyBookMark() throws IOException, InterruptedException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		WaitAngular();
 		login();
-		ComMethd.WaitForObjectbyXpath(driver, "//input[@id='SRCH_Input']");
-		ComMethd.WaitForObjectbyId(driver, "toolbar-saved");
+		CommonMethods.waitObjectByXpath(driver, "//input[@id='SRCH_Input']");
+		CommonMethods.waitforObjectById(driver, "toolbar-saved");
 		WaitAngular();
-		dbSrch.ClickHistoryCustomer();
-		dbSrch.ClickCustomer();
-		ComMethd.WaitForObjectbyXpath(driver, "//div[@class='address-details']");
+		dbSrch.clickHistoryCustomer();
+		dbSrch.clickCustomerName();
+		CommonMethods.waitObjectByXpath(driver, "//div[@class='address-details']");
 		// Verify Login Name
-		boolean Match = ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
+		boolean Match = CommonMethods.verifyString(username, dashBoard.getLoggedCustomerLocationId());
 		if (!Match) {
 			log("User Name Not Verified for Bookmark Functionality");
 		} else {
 			log("User Name Verified for Bookmark Functionality");
 		}
-		dashBoard.LogOut();
+		dashBoard.logout();
 	
 	}
 

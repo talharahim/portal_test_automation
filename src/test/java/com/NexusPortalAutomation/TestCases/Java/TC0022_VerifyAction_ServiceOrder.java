@@ -26,12 +26,13 @@ public class TC0022_VerifyAction_ServiceOrder extends BaseClass {
 	 * @Since 2019-06-10
 	 */
 
-	public String LocationID = "LOC@0007";
-	public String CustomerID = "0000011111";
-	public String ServerURL = GetDrillBackServerURL();
-	public String SearchInput = "REQ-DEP-WATER";
-	public String DateDescription = "AutomationRequest";
-	CommonMethods ComMethd = new CommonMethods();
+	public String locationID = getCellvalue("TC0022", "loc7");//"LOC@0007";
+	public String customerId = getCellvalue("TC0022", "drillbackCustId");//"0000011111";
+	public String serverUrl = getDrillbackServerUrl();
+	public String searchInput = getCellvalue("TC0022", "SearchInput");//"REQ-DEP-WATER";
+	public String dateDescription = getCellvalue("TC0022", "DateDescription");//"AutomationRequest";
+	public String message = getCellvalue("TC0022", "Message");//"Service Order successfully created";
+	
 
 //This Test will test the search by Customer ID
 	@Test(priority = 1)
@@ -39,29 +40,31 @@ public class TC0022_VerifyAction_ServiceOrder extends BaseClass {
 			throws IOException, InterruptedException, ClassNotFoundException, SQLServerException, SQLException {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
-		MySQLDataExec Sql = new MySQLDataExec();
-		Sql.DeleteServiceOrders(LocationID);
+		MySQLDataExec sql = new MySQLDataExec();
+		sql.deleteServiceorder(locationID);
 		login();
-		dbSrch.EnterSearchText(LocationID);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(locationID);
+		dbSrch.clickCustomerName();
 		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+		CommonMethods.verifyString(locationID, dashBoard.getLoggedCustomerLocationId());
 		// Verify Contact is updated accordingly
-		// ComMethd.VerifyString(servTabURL, dashBoard.GetServiceTabDrillBackUrl());
+		// CommonMethods.VerifyString(servTabURL, dashBoard.GetServiceTabDrillBackUrl());
 		dashBoard.clickActionDropDown();
 		dashBoard.clickActionDropDown_ServiceOrder();
 		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
 		Date date = new Date();
 		String DateRequested = dateFormat.format(date);
-		dashBoard.submitServiceRequest(SearchInput, DateRequested, DateRequested, DateDescription);
+		dashBoard.submitServiceRequest(searchInput, DateRequested, DateRequested, dateDescription);
 		Thread.sleep(1000);
+		dashBoard.verifySubmitMessage(message);
+		dashBoard.ClickSerOrderDne();
 		
-		//Sql.VerifyServiceOrders(LocationID, DateRequested);
+		//sql.VerifyServiceOrders(locationID, DateRequested);
 		// Verify Updated details IN SERVICE TAB order number from database
-		dashBoard.ClickServiceOrderLink();
-		String ServiceOrder = dashBoard.getServiceOrderNumber();
-		Sql.VerifyServiceOrders(LocationID, ServiceOrder);
-		dashBoard.LogOut();
+		dashBoard.clickServiceorderLink();
+		String ServiceOrder = dashBoard.getserviceOrderNum();
+		sql.verifyServiceOrders(locationID, ServiceOrder);
+		dashBoard.logout();
 	}
 
 }

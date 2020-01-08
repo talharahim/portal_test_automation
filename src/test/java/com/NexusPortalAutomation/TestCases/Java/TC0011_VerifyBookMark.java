@@ -20,8 +20,8 @@ public class TC0011_VerifyBookMark extends BaseClass {
 	 * @Since 2019-04-11
 	 */
 
-	public String LocationID = "STATEMENTS001";
-	CommonMethods ComMethd = new CommonMethods();
+	public String customerName = getCellvalue("TC0011","statementuser");// "Statement Pdf";
+	
 
 //This Test will test the search by Customer ID
 	@Test
@@ -29,24 +29,24 @@ public class TC0011_VerifyBookMark extends BaseClass {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		dbSrch.EnterSearchText(LocationID);
-		dbSrch.ClickRecentCustomerName();
+		dbSrch.enterSearchText(customerName);
+		dbSrch.clickRecentSearchCustomerName();
 		// Verify Customer Location Id Updated for Test
-		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+		CommonMethods.verifyString(customerName, dashBoard.getLoggedCustomerName());
 		// Click BookMark
-		dashBoard.ClickBookMarkDisabled();
-		dashBoard.LogOut();
+		dashBoard.clickBookmarkDisabled();
+		dashBoard.logout();
 		login();
-		dbSrch.ClickHistoryCustomer();
-		dbSrch.ClickRecentCustomerName();
-		ComMethd.VerifyString(LocationID, dashBoard.GetLoggedCustomerLocationId());
+		dbSrch.clickHistoryCustomer();
+		dbSrch.clickRecentSearchCustomerName();
+		CommonMethods.verifyString(customerName, dashBoard.getLoggedCustomerName());
 		// Clear BookMark
-		dashBoard.ClickBookMarkEnabled();
+		dashBoard.clickBookmarkEnabled();
 		// Verify if it is Marked
 		// Click BookMark
 		// Verify if it is UnMarked
 
-		dashBoard.LogOut();
+		dashBoard.logout();
 
 	}
 

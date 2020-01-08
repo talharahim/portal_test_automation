@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="all-tests"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="21.357">
+  <properties />
+  
+  
+            <testcase name="TestCustomerDetails" time="21.357" classname="com.NexusPortalAutomation.TestCases.Java.TC0010_1_verifyCustDetails_Business" />
+      
+</testsuite>

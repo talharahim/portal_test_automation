@@ -7,12 +7,13 @@ import org.testng.annotations.Test;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoard;
 import com.NexusPortalAutomation.PageObjects.Java.DashBoardSearch;
 import com.NexusPortalAutomation.Utilities.Java.CommonMethods;
+import com.NexusPortalAutomation.Utilities.Java.ExcelData;
 
 public class TC0002_TestSearchAutobyFirstName extends BaseClass {
 
-	public String UserName = "Automation Mate";
-	CommonMethods ComMethd = new CommonMethods();
-	public String Title = "Mr.";
+	public String username =  ExcelData.getExcelData("TC0002","username");
+	//CommonMethods commonMethod = new CommonMethods();
+	public String title = "Mr.";
 	/*
 	 * This test the search by Customer's First Name
 	 * 
@@ -29,13 +30,13 @@ public class TC0002_TestSearchAutobyFirstName extends BaseClass {
 		DashBoardSearch dbSrch = new DashBoardSearch(driver);
 		DashBoard dashBoard = new DashBoard(driver);
 		login();
-		dbSrch.EnterSearchText(UserName);
-		dbSrch.ClickCustomer();
+		dbSrch.enterSearchText(username);
+		dbSrch.clickCustomerName();
 		// Verify Login Name
 		
-		ComMethd.VerifyString(Title, dashBoard.getCustomerTitle());
-		ComMethd.VerifyString(UserName, dashBoard.GetLoggedCustomerName());
-		dashBoard.LogOut();
+		CommonMethods.verifyString(title, dashBoard.getCustomertitle());
+		CommonMethods.verifyString(username, dashBoard.getLoggedCustomerName());
+		dashBoard.logout();
 
 	}
 

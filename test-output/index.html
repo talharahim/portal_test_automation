@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Administrator\AppData\Local\Temp\1\testng-eclipse-1717768460\testng-customsuite.xml</span>
+                    <span>C:\Users\Administrator\AppData\Local\Temp\1\testng-eclipse--1737337652\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction" hash-for-method="TestSearchAutobyLastName">TestSearchAutobyLastName</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection" hash-for-method="TestSummarySectionOnChange">TestSummarySectionOnChange</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -120,23 +120,24 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction</span>
+              <span class="class-name">com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TestSearchAutobyLastName">
-                  </a> <!-- TestSearchAutobyLastName -->
-                  <span class="method-name">TestSearchAutobyLastName</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[@class=&apos;login-title&apos;] (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.NexusPortalAutomation.Utilities.Java.CommonMethods.WaitForObject(CommonMethods.java:37)
-	at com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction.TestSearchAutobyLastName(TC0004_TestSearchbyRecentFunction.java:21)
+                  <a name="TestSummarySectionOnChange">
+                  </a> <!-- TestSummarySectionOnChange -->
+                  <span class="method-name">TestSummarySectionOnChange</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: BILL_Installment_Budget (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at com.NexusPortalAutomation.Utilities.Java.CommonMethods.waitforObjectById(CommonMethods.java:152)
+	at com.NexusPortalAutomation.PageObjects.Java.DashBoard.GetBillingInfo(DashBoard.java:1651)
+	at com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection.TestSummarySectionOnChange(TC0007_TestSummarySection.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
@@ -158,33 +159,21 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@class=&apos;login-title&apos;]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;RND-BASE-A&apos;, ip: &apos;10.14.13.193&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 12936, moz:profile: C:\Users\Administrator\AppD..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.3, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e884ad65-7085-4f37-95cc-dd4e57e932a3
-*** Element info: {Using=xpath, value=//div[@class=&apos;login-title&apos;]}
-	at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 27 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: BILL_Installment_Budget
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;RND-BASE-A&apos;, ip: &apos;10.0.2.15&apos;, os.name: &apos;Windows Server 2012 R2&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.util.Optional.orElseThrow(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 28 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -194,7 +183,7 @@ Session ID: e884ad65-7085-4f37-95cc-dd4e57e932a3
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Administrator\AppData\Local\Temp\1\testng-eclipse-1717768460\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Administrator\AppData\Local\Temp\1\testng-eclipse--1737337652\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -203,7 +192,7 @@ Session ID: e884ad65-7085-4f37-95cc-dd4e57e932a3
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction&quot;/&gt;
+      &lt;class name=&quot;com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -245,14 +234,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TestSearchAutobyLastName')
-data.setCell(0, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction')
-data.setCell(0, 3, 10328);
+data.setCell(0, 1, 'TestSummarySectionOnChange')
+data.setCell(0, 2, 'com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection')
+data.setCell(0, 3, 19316);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -263,6 +252,40 @@ return data;
             <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TestSummarySectionOnChange</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Angular Request Completed in 77ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: username] displayed in 86ms</span>
+                <span class="reporter-method-output">Login Page title Verified</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: username] displayed in 25ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: password] displayed in 31ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: kc-login] displayed in 38ms</span>
+                <span class="reporter-method-output">Angular Request Completed in 22ms</span>
+                <span class="reporter-method-output">User signed Admin</span>
+                <span class="reporter-method-output">Element '//input[@id='SRCH_Input']' is displayed in 75ms</span>
+                <span class="reporter-method-output">Element 'toolbar-saved' is displayed in 47ms</span>
+                <span class="reporter-method-output">Angular Request Completed in 8ms</span>
+                <span class="reporter-method-output">Enter Text for Search =Automation</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: SRCH_Input] displayed in 54ms</span>
+                <span class="reporter-method-output">Angular request time 16ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: SRCH_Option_1_Address_Line] displayed in 723ms</span>
+                <span class="reporter-method-output">Click Customer</span>
+                <span class="reporter-method-output">Angular request time 343ms</span>
+                <span class="reporter-method-output">Element '//div[@class='address-details']' is displayed in 120ms</span>
+                <span class="reporter-method-output">Angular request time 67ms</span>
+                <span class="reporter-method-output">Element [[ChromeDriver: chrome on XP (dac77c4a99c0d853e9fb171ed28d201a)] -> id: CUST_First_Last_Name] displayed in 52ms</span>
+                <span class="reporter-method-output">Angular request time 11ms</span>
+                <span class="reporter-method-output">got Text Customer Name = Automation Mate</span>
+                <span class="reporter-method-output">Customer Name found Automation Mate</span>
+                <span class="reporter-method-output">Strings Matched: Automation Mate = Automation Mate</span>
+                <span class="reporter-method-output">Angular request time 9ms</span>
+                <span class="reporter-method-output">Element 'BILL_Current_Balance' is displayed in 61ms</span>
+                <span class="reporter-method-output">Element 'BILL_Unposted_Balance' is displayed in 68ms</span>
+                <span class="reporter-method-output">Element 'BILL_Account_Balance' is displayed in 61ms</span>
+                <span class="reporter-method-output">Element 'BILL_Past_Due' is displayed in 74ms</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
@@ -278,20 +301,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0004_TestSearchbyRecentFunction</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.NexusPortalAutomation.TestCases.Java.TC0007_TestSummarySection</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">readProp(org.testng.TestRunner@78365cfa)</span>
+                <span class="method-name">readProp(org.testng.TestRunner@4de025bf)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">TestSearchAutobyLastName</span>
-                <span class="method-start">4032 ms</span>
+                <span class="method-name">TestSummarySectionOnChange</span>
+                <span class="method-start">3741 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">14375 ms</span>
+                <span class="method-start">23060 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
